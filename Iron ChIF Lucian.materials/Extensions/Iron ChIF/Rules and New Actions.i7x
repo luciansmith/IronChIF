@@ -35,10 +35,18 @@ Section New Actions
 Commenting is an action out of world applying to one topic.
 
 Report commenting:
-	say "Noted.";
+	say "Noted.";[: [the topic understood].";]
 	stop the action.
 
-Understand "# [text]" as commenting.  Understand "/ [text]" as commenting.  Understand "'[text]" as commenting.
+Understand "# [text]" as commenting.
 
+To say comment_regex:
+	say "<\p*#+=[']>"
+
+After reading a command when the player's command matches the regular expression "^([comment_regex] ?)\S":
+	let T be the "[player's command]";
+	replace the regular expression "^[comment_regex] ?" in T with "# ";
+	[say "(changed to '[T]')";]
+	change the text of the player's command to T;
 
 Rules and New Actions ends here.

@@ -3,26 +3,40 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-1">
     <command xml:space="preserve">Iron ChIF Lucian</command>
-    <result xml:space="preserve">INTRO TEXT.&#x000A;&#x000A;Iron ChIF Lucian&#x000A;An Interactive Rapid Prototype by Lucian Smith&#x000A;Release 0 / Serial number 260211 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Room1&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">INTRO TEXT.&#x000A;&#x000A;Iron ChIF Lucian&#x000A;An Interactive Rapid Prototype by Lucian Smith&#x000A;Release 0 / Serial number 260213 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Room1&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-2"/>
-      <child nodeId="node-3"/>
+      <child nodeId="node-406"/>
+      <child nodeId="node-4"/>
+      <child nodeId="node-7"/>
     </children>
   </item>
   <item nodeId="node-2">
-    <command xml:space="preserve">x me</command>
-    <result xml:space="preserve">As good-looking as ever.  Up yours, Katsaris!&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve"># typo: 'rapid'</command>
+    <result xml:space="preserve">Noted.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-4"/>
+      <child nodeId="node-3"/>
     </children>
   </item>
-  <item nodeId="node-4">
-    <command xml:space="preserve">#woot</command>
+  <item nodeId="node-3">
+    <command xml:space="preserve">#typo: 'rapid'</command>
     <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-406">
+    <command xml:space="preserve">#check</command>
+    <result xml:space="preserve">(changed to "# check")&#x000A;Noted.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-4">
+    <command xml:space="preserve">x me</command>
+    <result xml:space="preserve">As good-looking as ever.  Up yours, Katsaris!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -30,12 +44,21 @@
     </children>
   </item>
   <item nodeId="node-5">
+    <command xml:space="preserve">#woot</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-6"/>
+    </children>
+  </item>
+  <item nodeId="node-6">
     <command xml:space="preserve"># woot</command>
     <result xml:space="preserve">Noted.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-3">
+  <item nodeId="node-7">
     <command xml:space="preserve">x me.</command>
     <result xml:space="preserve">As good-looking as ever.  Up yours, Katsaris!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
