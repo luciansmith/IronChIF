@@ -1,4 +1,4 @@
-Version 7 of Hybrid Choices by AW Freyr begins here.
+Version 7.1.1 of Hybrid Choices by AW Freyr begins here.
 
 "Provides a choice-based interface that can be freely switched between interactive and non-interactive modes. Basically, it does CYOA."
 
@@ -7,13 +7,11 @@ Part - CYOA Mode
 The CYOA mode is a truth state that varies.
 
 To decide if in CYOA mode:
-	if CYOA mode is true:
-		decide yes;
-	decide no.
+	decide on whether or not CYOA mode is true;
+
 To decide if not in CYOA mode:
-	if CYOA mode is true:
-		decide no;
-	decide yes.
+	if CYOA mode is true, no;
+	yes.
 
 To execute page turning:
 	let passed pages be a list of pages;
@@ -34,7 +32,7 @@ To execute page turning:
 					say paragraph break;
 				follow the page-output rules for the current page;
 				follow the page-toggle rules for the current page;
-				now the displayed boolean of the current page is true;
+				now the current page is previously displayed;
 			else if in cyoa debug mode:
 				say "[bracket]Skipping past [current page]...[close bracket]";
 			now the current page is p1;
@@ -45,7 +43,7 @@ To execute page turning:
 				break;
 		else:
 			now the finish condition is true;
-			now the displayed boolean of the current page is true;
+			now the current page is previously displayed;
 			if in cyoa debug mode:
 				say "[bracket]Working through [current page]...[close bracket]";
 			follow the page-toggle rules for the current page;
@@ -80,6 +78,7 @@ To switch to CYOA at (x - a page), without looking:
 	execute page turning;
 	unless without looking:
 		try looking.
+
 To switch from CYOA, without looking:
 	now CYOA mode is false;
 	unset choice-window;
@@ -88,18 +87,14 @@ To switch from CYOA, without looking:
 
 Part - Pages and Choices
 
-A page is a kind of object. The no-page is a page.
-A page has a text called a description. A page has a truth state called the displayed boolean. A page has a text called a cdesc.
-
-[A choice is a kind of value. The no-choice is a choice.
-A choice has a text called a description. A choice has a truth state called chosen boolean. A choice has a truth state called displayed boolean.]
+A page is a kind of object.
+The no-page is a page.
+A page has a text called a description.
+A page can be previously displayed.
+A page has a text called a cdesc.
 
 The current page is a page that varies.
 The previous page is a page that varies.
-
-Definition: a page is previously displayed if its displayed boolean is true.
-[Definition: a choice is previously displayed if its displayed boolean is true.
-Definition: a choice is previously chosen if its chosen boolean is true. ]
 
 To decide whether reading (X - a page):
 	if X is the current page and in CYOA mode:
@@ -114,7 +109,8 @@ index	decision	choice-order
 with 32 blank rows.
 
 Page-turning relates various pages to various pages.
-The verb to turn to (he turns to, they turn to, he turned to, it is turned to, it is turning to) implies the page-turning relation.
+The verb to turn to implies the page-turning relation.
+The verb to be turned to by implies the reversed page-turning relation.
 The verb to be for implies the reversed page-turning relation.
 
 To clear choices:
@@ -125,11 +121,12 @@ Choice-displaying something is an activity on an object.
 The assigned index is a number that varies.
 
 [To say note dead-end for (X - a choice):
-	if in cyoa debug mode:
+    	if in cyoa debug mode:
 		if the next page of X offers no choices or the next page of X passes to nothing:
 			say "**".]
 
 [EXPERIMENTAL]
+
 Choice-priority is an object based rulebook producing a number.
 
 Last choice-priority rule:
@@ -143,14 +140,13 @@ To populate choice list with (n - an object):
 
 To populate choice list with (n - a description of objects):
 	repeat with the item running through n:
-		populate choice list with item. 
+		populate choice list with item.
 
 To populate choice lists for (n - a page):
-	repeat with K running through pages:
-		if N turns to K:
-			follow the choice-switch rules for K;
-			unless rule failed:
-				populate choice list with K;
+	repeat with K running through pages turned to by N:
+		follow the choice-switch rules for K;
+		unless rule failed:
+			populate choice list with K;
 	sort the table of currently available choices in choice-order order;
 	repeat through the table of currently available choices:
 		increment assigned index;
@@ -192,11 +188,10 @@ Rule for displaying available decisions of a page (called N):
 	clear choices;
 	let F be a truth state;
 	if N turns to a page:
-		repeat with K running through pages:
-			if N turns to K:
-				follow the choice-switch rules for K;
-				unless the rule failed:
-					carry out the choice-displaying activity with K;
+		repeat with K running through pages turned to by N:
+			follow the choice-switch rules for K;
+			unless the rule failed:
+				carry out the choice-displaying activity with K;
 		if F is true:
 			say line break;
 	now the assigned index is 0.]
@@ -244,9 +239,9 @@ Carry out choosing (this is the standard carry out choosing rule):
 
 Chapter - Selecting Activity
 
-[Page-turning relates various choices to a page (called the next page). The verb to turn to (he turns to, they turn to, he turned to, it is turned to, he is turning to) implies the page-turning relation.]
-
-Page-flipping relates various pages to one page (called the destination page). The verb to flip to (he flips to, they flip to, he flipped to, it is flipped to, it is flipping to) implies the page-flipping relation.
+Page-flipping relates various pages to one page (called the destination page).
+The verb to flip to implies the page-flipping relation.
+The verb to be flipped to by implies the reversed page-flipping relation.
 
 A page can be an end-page.
 
@@ -294,7 +289,7 @@ Carry out looking when in CYOA mode (this is the print passage whilst looking in
 		say the description of the current page;
 		say paragraph break;
 	follow the page-output rules for the current page;
-	now the displayed boolean of the current page is true;
+	now the current page is previously displayed;
 	refresh choices;
 	rule succeeds.
 
@@ -305,8 +300,7 @@ section a - One-Off Pages
 A page can be one-off.
 
 A choice-switch rule for a one-off page (called F) (this is the don't display choices turning to one-off pages again rule):
-	if F is previously displayed:
-		rule fails.
+	if F is previously displayed, rule fails.
 
 section b - Dead Ends
 
@@ -429,9 +423,11 @@ A page-toggle for a page (called X):
 
 Chapter - Item Invoking
 
-Item-invoking disabled is a truth state that varies. Item-invoking disabled is true.
+Item-invoking disabled is a truth state that varies.
+Item-invoking disabled is true.
 
-Item-invoking is an action applying to one visible thing. Understand "[a thing]" as item-invoking when in cyoa mode and item-invoking disabled is false.
+Item-invoking is an action applying to one visible thing.
+Understand "[a thing]" as item-invoking when in cyoa mode and item-invoking disabled is false.
 
 Check item-invoking (this is the can't use item-invoking mode outside of CYOA rule):
 	unless in cyoa mode:
@@ -528,9 +524,9 @@ When play begins (this is the set the choice-window size rule):
 	now the measurement of the choice window is the choice window size.
 
 For refreshing the choice window (this is the construct choices rule):
-	[move focus to choice-window, clearing the window;]
-	carry out the displaying available decisions activity with the current page.
-	[return to main screen.]
+	 [move focus to choice-window, clearing the window;]
+	 carry out the displaying available decisions activity with the current page.
+	 [return to main screen.]
 
 To set choice-window:
 	open up choice window.
@@ -546,7 +542,7 @@ To set choice-window:
 To unset choice-window:
 	do nothing.
 To refresh choices:
-	carry out the displaying available decisions activity with the current page.
+	 carry out the displaying available decisions activity with the current page.
 
 [Book - Testing
 
@@ -559,12 +555,12 @@ P1 is a page.
 
 P2 is a page. The cdesc is "P2". It is for P1.
 
-P3 is a page. The cdesc is "P3". It is for P2. It flips to P4.
+P3 is a page. The cdesc is "P3". It is for P2.
 
-P4 is a page. It flips to P5.
+P4 is a page. It is flipped to by P3.
 "Whoa. Interesting.".
 
-P5 is a page.
+P5 is a page. It is flipped to by P4.
 "Damn man. That's crazy shit."
 
 P6 is a page. The cdesc is "P6". It is for P5. It is a dead-end.
@@ -579,7 +575,7 @@ P8 is a page. The cdesc is "P8". It is for p5. It is inactive.
 Hybrid Choices ends here.
 
 
----- DOCUMENTATION ----
+---- Documentation ----
 
 
 Chapter: Introduction
@@ -597,6 +593,8 @@ Scenario 2: If you are getting repeated page descriptions in the beginning of th
 Scenario 3: Using a page-toggle rule to exit CYOA as opposed to simply labeling a page as an end-page will cause the room description to print twice. It is recommended you use the end-page property rather than a page-toggle rule, but if for some reason you need to use the page-toggle rules, you can use "switch from cyoa, without looking" as a temporary fix.
 
 Section: Version History
+
+	Version 7.1, 2023-04-01 updated for 10.1
 
 	Version 7, June 21st, 2016
 	-- Fixed a bug where passages were being printed twice (credit to Vince Laviano)
@@ -627,10 +625,6 @@ Section: Version History
 	Version 1, July 31st, 2014
 	-- Initial Release
 	
-Section: Contact
-
-You can contact me at anotherwannabe93@gmail.com with any questions/problems/suggestions you have. (Apparently, some people have been failing to reach me at that address. It is accurate, so I am not entirely sure what the issue is.)
-
 Section: Acknowledgements
 
 Thanks to Hanon Ondricek, who help test and draft this document. He wrote the funny stuff.
@@ -1227,40 +1221,39 @@ Section: Phrase Reference
 
 Example: * The Only Room - A very short and entirely abstract game used for testing.
 
-*:
-	"The Only Room" by AW Freyr
-
+	*: "The Only Room" by AW Freyr
+	
 	Include Hybrid Choices by AW Freyr.
 		
 	The only room is a room.
-
+	
 	After looking for the first time:
 		switch to cyoa at p1.
-
+	
 	P1 is a page.
-
+	
 	P2 is a page. The cdesc is "P2". It is for P1.
-
+	
 	P3 is a page. The cdesc is "P3". It is for P2.
-
-	P4 is a page. It is for P3.
+	
+	P4 is a page. It is flipped to by P3.
 	"Whoa. Interesting.".
-
-	P5 is a page. It is for P4.
+	
+	P5 is a page. It is flipped to by P4.
 	"Damn man. That's crazy stuff."
-
+	
 	P6 is a page. The cdesc is "P6". It is for P5. It is a dead-end.
 	"You've encountered something and ran away."
-
+	
 	P7 is a page. The cdesc is "P7". It is for p5.
-
+	
 	P8 is a page. The cdesc is "P8". It is for p5. It is inactive.
 	"You aren't supposed to see this."
-	
+
+
 Example: ** Eating a Banana - A simple demonstration of item-invoking and how it might be implemented in a large project.
 
-*:
-	"Eating a Banana" by AW Freyr
+*:	"Eating a Banana" by AW Freyr
 
 	Include Hybrid Choices by AW Freyr.
 
@@ -1296,21 +1289,19 @@ Example: *** Temple of Fear - A full, basic game demonstrating a lot of differen
 
 Here is a full example of a game made with Hybrid Choices, in the style of Fighting Fantasy adventure books that some of you might be familiar with. This example doesn't include switching to parser modes, but assumes the whole game will be in CYOA.
 
-*:
-
-	"Temple of Fear" by AW Freyr
+*:	"Temple of Fear" by AW Freyr
 
 	Include Hybrid Choices by AW Freyr.
 
 	Chapter - Set Up
 
 	The current stamina is a number that varies. The current stamina is 20.
-
 	The initial stamina is a number that varies. The initial stamina is 20.
 
 	The skill is a number that varies. The skill is 10.
 
 	The luck is a number that varies. The luck is 10.
+
 
 	After looking for the first time:
 		now the left hand status line is "Stamina: [current stamina]/[initial stamina] Skill: [skill] Luck: [luck]";
@@ -1318,7 +1309,6 @@ Here is a full example of a game made with Hybrid Choices, in the style of Fight
 		switch to cyoa at p1.
 
 	The sword is a thing. It is carried by the player.
-
 	A meal is a kind of thing. The player is carrying 4 meals.
 
 	The bronze key is a thing.
@@ -1330,44 +1320,47 @@ Here is a full example of a game made with Hybrid Choices, in the style of Fight
 	P1 is a page.
 	"You have just slain the Troll of Bigness, and are ready to make your way into the Temple of Fear. It's just over the bridge to the north."
 
-	P2 is a page. The cdesc is "Cross the bridge." It is for p1.
+	P2 is a page.
 	"[first time]You cross the bridge and find yourself in a huge forest. [only]The door to the Temple of Fear is north. There is a path through the forest to your left."
+	The cdesc is "Cross the bridge." It is for p1.
 
 	A page-toggle rule for p2:
 		now the cdesc of p2 is "Head back to the Temple of Fear."
 
 	p3 is a page.
-	It is for p2.
+	It is flipped to by p2.
 
-	p4 is for p3. The cdesc is "Check the door.". It is a dead-end.
+	p4 is for p3.
 	"You check the door, but it appears to have a lock or something. Damn."
+	The cdesc is "Check the door.". It is a dead-end.
 
 	A page-switch rule for p4:
 		if the player is carrying the bronze key:
 			now the current page is p12.
 
-	p5 is for p3. It is one-off. The cdesc is "Go to the forest.".
+	p5 is for p3. It is one-off.
 	"You travel through the forest and eventually encounter a troll."
+	The cdesc is "Go to the forest.".
 
 	A choice-switch rule for p5:
 		if the player carries the bronze key:
 			rule fails.
 
-	p6 is for p5. It flips to p9.
+	p6 is for p5.
 	"You slay the troll and lose 4 stamina in the process as it clubs you."
 	The cdesc is "Kill the troll by stabbing it.".
 
 	A page-toggle rule for p6:
 		now the current stamina is current stamina - 4.
 
-	p7 is for p5. It flips to p9.
+	p7 is for p5.
 	"You outwit the troll and it dies from outwitting. You lose 1 luck because yes.".
 	The cdesc is "Outwit the troll.".
 
 	A page-toggle rule for p7:
 		now the luck is luck - 1.
 
-	p8 is for p5. It flips to p9.
+	p8 is for p5.
 	"You flash some serious skills and the troll's head explodes, killing it. You lose 1 skill because you are so tired now.".
 	The cdesc is "Intimidate it with mad skillz.".
 
@@ -1376,6 +1369,7 @@ Here is a full example of a game made with Hybrid Choices, in the style of Fight
 
 	p9 is a page.
 	"OK, you've murdered the troll and now enter a clearing. There's a key here."
+	It is flipped to by p6, p7, p8.
 
 	p10 is for p9.
 	"You take the key. Now you can enter the Temple of Fear."
@@ -1396,7 +1390,6 @@ Here is a full example of a game made with Hybrid Choices, in the style of Fight
 
 	A page-toggle rule for p12:
 		end the story saying "DLC required: Temple of Fear. Now only $10!"
-
 		
 Example: *** Colored Rooms - Implementing a fast travel system using a basic implementation of object choices.
 
@@ -1404,8 +1397,7 @@ This example is a utilitarian example of how CYOA can fit into a mostly parser g
 
 In a larger project, you'll want to restrict when the player travels, and what rooms the player can fast travel to. If we have more than 36 options, we'll need to expand the table.
  
-*:
-	"Colored Rooms"
+*:	"Colored Rooms"
 
 	Include Hybrid Choices by AW Freyr.
 	
@@ -1446,6 +1438,8 @@ In a larger project, you'll want to restrict when the player travels, and what r
 	General choose object rule for rooms (called N):
 		move the player to N, without printing a room description.
 
+	test me with "travel".
+
 Example: **** The Lineup - An advanced implementation of object choices, demonstrating how Hybrid CYOA can be used to make a very powerful interface.
 
 This example doesn't include parser mode, but it does something that would be very cumbersome and laborious using just pages. The lineup has five people, and through those people the game state is tracked.
@@ -1453,13 +1447,12 @@ This example doesn't include parser mode, but it does something that would be ve
 Normally, you'd use pages for every single option. For each person, you'd need to include an examine page, step-forward, step-back, say-line and accuse, and then check and toggle rules for each one of those. Object choices simplifies this by allowing us to directly insert characters as choices. We can then apply rules to each of them directly. This saves us a lot of horribly boring work. It also makes it very easy to add additional characters; we don't need to add any new pages at all, we can just define a new person, their sayline rule, their accuse rule, and be done with it. You might see how this is useful in large projects.
 
 
-*:
-	"The Lineup"
+	*: "The Lineup"
 	
 	Include Hybrid Choices by AW Freyr.
-
+	
 	The lineup room is a room.
-
+	
 	Dirty Mosley is a man in the lineup room.
 		The description is "A sour-eyed man in a big black overcoat, draping him like a blanket. His skin is filthy, flies buzz around his collar."
 	Yellow Manny is a man in the lineup room.
@@ -1470,42 +1463,42 @@ Normally, you'd use pages for every single option. For each person, you'd need t
 		The description is "A wizened crone swathed in lilac scarves, her long-lashed lids are shut pensively and her long fingers levitate a crystal orb from the tips of her fingers."
 	Racist Marty is a man in the lineup room.
 		The description is "A grossly fat man whose lips quiver with suppressed slurs. He wears a grease-stained shirt over his stretched belly that reads: 'I Hate Fijians.'".
-
+	
 	A person can be stepped-forward or stepped-back. A person is usually stepped-back.
-
+	
 	Instead of looking for the first time:
 		say "One of the people in this room committed a terrible crime against you, and now it's time to point the finger at them. Who will you accuse?";
 		switch to cyoa at pmenu.
-
+	
 	pmenu is a page.
 		The cdesc is "Choose something else."
-
+	
 	Choice-priority for pmenu:
 		rule succeeds with result 200.
-		
+	
 	section - examining
-
+	
 	The lineupex rules is an object based rulebook.
-
+	
 	exp is a page. It is turned to by pmenu. It turns to pmenu.
 	The cdesc is "Examine suspects."
-
+	
 	A page-toggle rule for exp:
 		populate choice list with visible people who are not yourself;
 		now the object-choice-handler is the lineupex rules.
-
+	
 	Lineupex for people (called the individual):
 		say "[The description of the individual][paragraph break]";
 		populate choice list with visible people who are not yourself;
 		now the current page is exp.
-		
+	
 	section - step forward
-
+	
 	The stepforward rules is an object based rulebook.
-
+	
 	pstepforward is a page. It is turned to by pmenu. It turns to pmenu.
 	The cdesc is "Ask someone to step forward."
-
+	
 	A choice-switch rule for pstepforward:
 		repeat with X running through visible people:
 			if X is yourself:
@@ -1513,7 +1506,7 @@ Normally, you'd use pages for every single option. For each person, you'd need t
 			if X is stepped-back:
 				rule succeeds;
 		rule fails.
-
+	
 	A page-toggle rule for pstepforward:
 		repeat with X running through visible people:
 			if X is yourself:
@@ -1521,7 +1514,7 @@ Normally, you'd use pages for every single option. For each person, you'd need t
 			if X is stepped-back:
 				populate choice list with X;
 		now the object-choice-handler is stepforward rules.
-
+	
 	stepforward for people (called the individual):
 		say "[The individual] steps forward.";
 		now the individual is stepped-forward;
@@ -1531,14 +1524,14 @@ Normally, you'd use pages for every single option. For each person, you'd need t
 			if X is stepped-back:
 				populate choice list with X;
 		now the current page is pstepforward.
-		
+	
 	section - step back
-
+	
 	The stepback rules is an object based rulebook.
-
+	
 	pstepback is a page. It is turned to by pmenu. It turns to pmenu.
 	The cdesc is "Ask someone to step back."
-
+	
 	A choice-switch rule for pstepback:
 		repeat with X running through visible people:
 			if X is yourself:
@@ -1546,7 +1539,7 @@ Normally, you'd use pages for every single option. For each person, you'd need t
 			if X is stepped-forward:
 				rule succeeds;
 		rule fails.
-
+	
 	A page-toggle rule for pstepback:
 		repeat with X running through visible people:
 			if X is yourself:
@@ -1554,7 +1547,7 @@ Normally, you'd use pages for every single option. For each person, you'd need t
 			if X is stepped-forward:
 				populate choice list with X;
 		now the object-choice-handler is stepback rules.
-
+	
 	stepback for people (called the individual):
 		say "[The individual] steps back.";
 		now the individual is stepped-back;
@@ -1564,78 +1557,78 @@ Normally, you'd use pages for every single option. For each person, you'd need t
 			if X is stepped-forward:
 				populate choice list with X;
 		now the current page is pstepback.
-
+	
 	section - say a line
-
+	
 	The sayline rulebook is an object based rulebook.
-
+	
 	psayline is a page. It is turned to by pmenu. It turns to pmenu.
 	The cdesc is "Ask someone to say a line."
-
+	
 	A page-toggle rule for psayline:
 		populate choice list with visible people who are not yourself;
 		now the object-choice-handler is the sayline rules.
-
+	
 	sayline for Dirty Mosley:
 		say "Dirty Mosley gives you a once-over with bugged-out eyes. '[italic type]Wanna hug?[roman type]'[paragraph break]".
-
+	
 	sayline for Yellow Manny:
 		say "Yellow Manny scratches himself desperately. 'You have any yeller M&Ms? I gots to get that fine yeller!'".
-
+	
 	sayline for Greedy Macky:
 		say "Greedy Macky wiggles an eyebrow at you. 'Want to refinance your mortgage at low, low interest rates?'".
-
+	
 	sayline for Psychic May:
 		say "She intones prophetically: '[italic type]Give me your wallet, or I'll cut you!![roman type]'[paragraph break]".
-		
+	
 	sayline for Racist Marty:
 		say "He drawls, 'You look like one of dose Feejuns. Why don't you take you and your coconut bras somewhere else?'".
-
+	
 	sayline rule:
 		populate choice list with visible people who are not yourself;
 		now the current page is psayline.
-
-
-
+	
+	
+	
 	section - accuse
-
+	
 	The accuse rules are an object based rulebook.
-
+	
 	paccuse is a page. It is turned to by pmenu. It turns to pmenu.
 	The cdesc is "Accuse someone."
-
+	
 	A page-toggle rule for paccuse:
 		populate choice list with visible people who are not yourself;
 		now the object-choice-handler is the accuse rulebook.
-		
+	
 	accuse Dirty Mosley:
 		say "'What? No! I had so much to not live for!'
-		
+	
 		He is executed the next day. Method of execution: devoured by rabid bedbugs.".
-
+	
 	accuse Yellow Manny:
 		say "'I demand my last meal! I want a olympic swimmin['] pool of yeller M&Ms!'
-		
+	
 		He is executed the next day. Method of execution: clinically induced liver failure.".
-
+	
 	accuse Greedy Macky:
 		say "'Tell my bank statements I loved them.'
-		
+	
 		He is executed the next day. Method of execution: bones ground into cement.".
-
+	
 	accuse Psychic May:
 		say "'I [italic type]KNEW[roman type] you would accuse me!'
-		
+	
 		She is executed the next day. Method of execution: week-long Twilight marathon.".
-		
+	
 	accuse Racist Marty:
 		say "'As long as I don't have to share this cruel world with those horrible Feejuns!'
-		
+	
 		He is executed the next day. Method of execution: buried alive in Samoa.".
-
+	
 	Last accuse rule:
 		now the current page is pend;
 		end the story.
-
-
-	pend is a page.	
+	
+	
+	pend is a page.
