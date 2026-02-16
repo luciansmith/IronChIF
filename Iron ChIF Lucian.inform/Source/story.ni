@@ -5,7 +5,7 @@ The story headline is "An Interactive Rapid Prototype"
 The release number is 0.
 
 Include Response Assistant by Aaron Reed.
-Include Hybrid Choices by AW Freyr.
+Include Version 7.1.1 of Hybrid Choices by AW Freyr.
 Include Basic Screen Effects by Emily Short.
 
 Use the American dialect, serial comma, and VERBOSE room descriptions.
