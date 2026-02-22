@@ -1,0 +1,244 @@
+\>LOOK
+
+Backstage
+
+This small, cramped room has a single lightbulb hanging from a wire, illuminating a handful of shelves, a monitor, and a collection of props.  A door leads east to the stage.
+
+From the other side of the door comes the sound of your own voice saying "And when I’m a participant in that moment of communication, there’s nothing quite like it."
+
+A voice from your earpiece says, "OK, Lucian, you're on in 3."
+
+\>I
+
+You are carrying:
+  a grey wig (being worn)
+  an earpiece (being worn)
+  a script
+
+From the other side of the door comes the sound of cordial applause.
+
+A voice from your earpiece says, "OK, Lucian, you're on in 2."
+
+\>TURN ON MONITOR
+
+The monitor flares to life, showing the stage of Keyboard Stadium.  A screen is disappearing as it rises from the rear of the stage, up behind the curtain.
+
+From the monitor and from the other side of the door (slighty out of sync with each other) comes the sound of an orchestral fanfare.
+
+A voice from your earpiece says, "OK, Lucian, you're on in 1."
+
+\>X COLLECTION OF PROPS
+
+There's a odd mish-mash of props lying around, including an old keyboard, a Triage Mk 1, a useful rock, a book of matches, and a cane.  Most of them aren't useful, but you figure the cane might enhance the 'old guy' vibe you're going for, so you pick it up.
+
+From the monitor and from the other side of the door (slighty out of sync with each other) comes the sound of the voice of Otis T. Dog:  "Since audacity already has been amply demonstrated, we wish our challenger only luck in the coming match. lpsmith: May you receive inspiration suitable to the task before you, and may your dish speak truth in a way that can be heard on the other side."
+
+A voice from your earpiece says, "OK, Lucian, you're on!"
+
+\>E
+
+The door to the east is closed.
+
+From the monitor and from the other side of the door (slighty out of sync with each other) comes the sound of thunderous applause!
+
+A voice from your earpiece says, "Uh, Lucian?  You're on!"
+
+\>OPEN DOOR
+
+The door to the east is locked.
+
+From the monitor and from the other side of the door (slighty out of sync with each other) comes the sound of fading applause.
+
+A voice from your earpiece says, "Lucian?  Hello?"
+
+\>UNLOCK DOOR
+
+With what?
+
+\>WITH KEY
+
+(keyboard prop: taken)
+
+The keyboard prop doesn't seem to fit the lock.
+
+From the monitor and from the other side of the door (slighty out of sync with each other) comes the sound of scattered applause.
+
+A voice from your earpiece says, "I don't know; he's not responding."
+
+\>VOICE, HELLO
+
+You seem to want to talk to someone, but I can't see whom.
+
+\>TELL VOICE THAT THE DOOR IS LOCKED
+
+You can't see any such thing.
+
+\>I CAN'T SEE ANY SUCH THING BECAUSE IT'S JUST A VOICE IN MY EARPIECE!
+
+I only understood you as far as wanting to take inventory.
+
+\>TELL EARPIECE ABOUT DOOR
+
+You can only do that to something animate.
+
+\>X SHELVES
+
+The shelves are mostly empty, but in the dust you see a roll of tape, a mason jar with something in it, and two spare spotlights.
+
+From the monitor and from the other side of the door (slighty out of sync with each other) comes the sound of the orchestra playing a fanfare again.
+
+A voice from your earpiece says, "Lucian?  Are you okay?"
+
+\>UNDO
+
+The use of 'undo' is forbidden in this story.
+
+\>GET ALL FROM MASON JAR
+
+stage fluff: Taken
+brass key: Taken
+double-A battery: Taken
+
+From the monitor and from the other side of the door (slighty out of sync with each other) comes the sound of the slightly-panicked voice of Otis:  "That's right, folks!  Returning, um, from a hiatus of a, uh, number of years, it's Lucian Smith!  Who is *here* to *challenge* our Iron ChIF Inform 7!
+
+A voice from your earpiece says, "Lucian, for the love of all that's holy, get out on that stage."
+
+\>UNLOCK DOOR
+
+With what?
+
+\>WITH KEY
+
+What key do you mean, the keyboard prop, the brass key, or the double-A battery?
+
+\>HOW THE HELL IS KEY A SYNONYM FOR THE DOUBLE-A BATTERY?
+
+That's not a verb I recognize.
+
+\>BRASS KEY
+
+That's not a verb I recognize.
+
+\>UNLOCK DOOR WITH BRASS KEY
+
+Unlocked.
+
+From the monitor and from the other side of the door (slighty out of sync with each other) comes the sound of polite applause.
+
+A voice from your earpiece says, "I dunno, can you just read his challenge?  Didn't he email it to you?"
+
+\>E
+
+The door to the east is closed.
+
+From the monitor and from the other side of the door (slighty out of sync with each other) comes the sound of complete silence.
+
+A voice from your earpiece says, "<the sounds of typing\>"
+
+\>HOW IS ONE SILENCE OUT OF SYNC WITH ANOTHER SILENCE?  AND A VOICE *SAYS* THE SOUNDS OF TYPING?  WHAT?
+
+That's not a verb I recognize.
+
+\>OPEN DOOR
+
+You open the door to the east.
+
+On the monitor, the door in the back of the stage opens.
+
+From the monitor and from the other side of the door (slighty out of sync with each other) comes the sound of the voice of Otis T. Dog, saying "Since Lucian apparently can't come out, I'll share his prepared statement instead."
+
+A voice from your earpiece says, "OK, got it.  I'll read it to you."
+
+\>WAVE
+
+You wave, feeling foolish.
+
+From the monitor and from the other side of the door (slighty out of sync with each other) comes the sound of the voice of Otis T. Dog, saying "I, Lucian P. Smith, hereby present this the door's open, is he--"
+
+A voice from your earpiece says, "I, Lucian P. Smith, hereby present this... The door's open!  Is he there?"
+
+\>E
+
+Keyboard Stadium Stage
+
+The stage of Keyboard Stadium is currently mostly cleared off, though from the stage itself you can see the places where desks will be bolted on for the actual competition, along with the power and ethernet outlets in the floor.  A microphone on a microphone stand is placed in the center front of the stage, with Otis is standing at it.  Further east is the orchestra pit, and beyond that, the packed seats of the stadium.  A backstage door stands to the west, and stairs to the northeast and southeast lead down to the audience.
+
+Otis T. Dog is here, looking relieved.
+
+A spotlight picks you out, nearly blinding you!
+
+Otis announces, "Everybody!  It's Lucian!  A warm round of applause for our challenger.  Again."
+
+A voice from your earpiece says, "It's him!  Thank the good lord in heaven above."
+
+\>WAVE
+
+You wave your cane feebly in the air, and grin at the crowd.
+
+The audience applauds again, politely.
+
+Otis T. Dog steps back from the microphone.
+
+\>READ SCRIPT
+
+You read over your short challenge to Iron ChIF Inform 7, Ryan Veeder.  It's the same as when you wrote it.
+
+The audience waits politely.
+
+Otis T. Dog looks at you expectantly.
+
+\>READ SCRIPT ALOUD
+
+I only understood you as far as wanting to read the script.
+
+\>READ SCRIPT OUT LOUD
+
+I only understood you as far as wanting to read the script.
+
+\>READ SCRIPT WITH VOICE
+
+I only understood you as far as wanting to read the script.
+
+\>RECITE SCRIPT
+
+That's not a verb I recognize.
+
+\>ACT OUT SCRIPT
+
+That's not a verb I recognize.
+
+\>READ SCRIPT INTO MICROPHONE
+
+You read the script into the microphone, putting a quaver into your voice so you sound old.  "I, Lucian P. Smith, hereby present this challenge to Ryan Veeder, aka @Afterward, aka Iron ChIF Inform 7: I challenge you to a duel of game making!  From an inspirational ingredient we both find relatively unobjectionable.  With beta testers if we like.  In front of this audience.  In Inform 7, since that's the system you're the Iron ChIF of.  And have written a bunch of games in, including one we're both technically authors of, though the amount of work you put into it was--"
+
+Dammit, you didn't stick to the script.
+
+The audience starts to giggle.
+
+Otis T. Dog waves his hand at his neck; the universal symbol to wrap things up.
+
+\>WRAP THINGS UP
+
+You speak into the mic, 'Uh, in summary, BRING IT ON!!!'
+
+Otis T. Dog looks relieved, and signals for Ryan to come on stage.
+
+The audience cheers!
+
+*** YOU HAVE MANAGED TO CHALLENGE IRON CHIF INFORM 7 ***
+
+Would you like to RESTART, see some suggestions for AMUSING things to do, or QUIT?
+
+\>AMUSING
+
+Have you tried...
+ - Unlocking the door with the useful rock?
+ - Giving a match to Ryan Veeder?
+ - Staying backstage?
+ - Planting the stage fluff?
+
+\>QUIT
+ 
+Yeah, good idea, you're going to need the time to actually work on your game.
+
+Thank you for playing!
