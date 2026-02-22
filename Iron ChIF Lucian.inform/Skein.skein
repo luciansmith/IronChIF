@@ -1,66 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-1">
+<Skein rootNode="node-126">
   <generator>Windows Inform 10.1.2</generator>
-  <item nodeId="node-1">
+  <item nodeId="node-126">
     <command xml:space="preserve">Iron ChIF Lucian</command>
-    <result xml:space="preserve">INTRO TEXT.&#x000A;&#x000A;Iron ChIF Lucian&#x000A;An Interactive Rapid Prototype by Lucian Smith&#x000A;Release 0 / Serial number 260213 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Room1&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Your mother needs you.  The whole village needs you.  You can do this.  You must do this.&#x000A;&#x000A;It's a mantra repeating in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you--and all were banished years ago, yourself included.  Last time, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.&#x000A;&#x000A;By tonight, you will know.  You've promised yourself that.&#x000A;&#x000A;course correction&#x000A;An Interactive High Heist by Lucian Smith&#x000A;Release 0 / Serial number 260222 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Room1&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-2"/>
-      <child nodeId="node-406"/>
-      <child nodeId="node-4"/>
-      <child nodeId="node-7"/>
+      <child nodeId="node-127"/>
+      <child nodeId="node-129"/>
+      <child nodeId="node-130"/>
+      <child nodeId="node-133"/>
+      <child nodeId="node-143"/>
     </children>
   </item>
-  <item nodeId="node-2">
+  <item nodeId="node-127">
     <command xml:space="preserve"># typo: 'rapid'</command>
     <result xml:space="preserve">Noted.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-3"/>
+      <child nodeId="node-128"/>
     </children>
   </item>
-  <item nodeId="node-3">
+  <item nodeId="node-128">
     <command xml:space="preserve">#typo: 'rapid'</command>
     <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-406">
+  <item nodeId="node-129">
     <command xml:space="preserve">#check</command>
     <result xml:space="preserve">(changed to "# check")&#x000A;Noted.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-4">
+  <item nodeId="node-130">
     <command xml:space="preserve">x me</command>
     <result xml:space="preserve">As good-looking as ever.  Up yours, Katsaris!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-5"/>
+      <child nodeId="node-131"/>
     </children>
   </item>
-  <item nodeId="node-5">
+  <item nodeId="node-131">
     <command xml:space="preserve">#woot</command>
     <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-6"/>
+      <child nodeId="node-132"/>
     </children>
   </item>
-  <item nodeId="node-6">
+  <item nodeId="node-132">
     <command xml:space="preserve"># woot</command>
     <result xml:space="preserve">Noted.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-7">
+  <item nodeId="node-133">
     <command xml:space="preserve">x me.</command>
     <result xml:space="preserve">As good-looking as ever.  Up yours, Katsaris!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-143">
+    <command xml:space="preserve">x mist</command>
+    <result xml:space="preserve">The cloud layer today is too high for a naturally obscuring mist; you'll have to summon it yourself.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-144"/>
+    </children>
+  </item>
+  <item nodeId="node-144">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-145"/>
+    </children>
+  </item>
+  <item nodeId="node-145">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You summon an obscuring grey mist to surround you and hide you from prying eyes.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

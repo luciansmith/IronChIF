@@ -61,6 +61,7 @@ Attribute P_end_page;
 Attribute P_one_off;
 Attribute P_dead_end;
 Attribute P_active;
+Attribute P_summoned;
 Property add_to_scope;
 Property article;
 Property capacity;
@@ -500,6 +501,7 @@ Constant subterfuge_120 = P_active;
 Constant subterfuge_121 = P_page_turning_relation_stor;
 Constant subterfuge_122 = P_page_dependency_relation_s;
 Constant subterfuge_123 = P_page_cancellation_relation;
+Constant subterfuge_124 = P_summoned;
 Constant I_english_language_U1 = 1;
 Constant I_french_language_U1 = 2;
 Constant I_german_language_U1 = 3;
@@ -603,56 +605,56 @@ Constant RELS_LOOKUP_ALL_Y = 2;
 Constant RELS_LIST = 1;
 Constant TTF_sum = 3584;
 Constant REL_BLOCK_HEADER = 101515264;
-Constant relation_id_U1 = 101;
-Constant relation_id_U2 = 102;
-Constant relation_id_U3 = 103;
-Constant relation_id_U4 = 104;
-Constant relation_id_U5 = 105;
-Constant relation_id_U6 = 106;
-Constant relation_id_U7 = 107;
-Constant relation_id_U8 = 108;
-Constant relation_id_U9 = 109;
-Constant relation_id_U10 = 110;
-Constant relation_id_U11 = 111;
-Constant relation_id_U12 = 112;
-Constant relation_id_U13 = 113;
-Constant relation_id_U14 = 114;
-Constant relation_id_U15 = 115;
-Constant relation_id_U16 = 116;
-Constant relation_id_U17 = 117;
-Constant relation_id_U18 = 118;
-Constant relation_id_U19 = 119;
-Constant relation_id_U20 = 120;
-Constant relation_id_U21 = 121;
-Constant relation_id_U22 = 122;
-Constant relation_id_U23 = 123;
-Constant relation_id_U24 = 124;
-Constant relation_id_U25 = 125;
-Constant relation_id_U26 = 126;
-Constant relation_id_U27 = 127;
-Constant relation_id_U28 = 128;
-Constant relation_id_U29 = 129;
-Constant relation_id_U30 = 130;
-Constant relation_id_U31 = 131;
-Constant relation_id_U32 = 132;
-Constant relation_id_U33 = 133;
-Constant relation_id_U34 = 134;
-Constant relation_id_U35 = 135;
-Constant relation_id_U36 = 136;
-Constant relation_id_U37 = 137;
-Constant relation_id_U38 = 138;
-Constant relation_id_U39 = 139;
-Constant relation_id_U40 = 140;
-Constant relation_id_U41 = 141;
-Constant relation_id_U42 = 142;
-Constant relation_id_U43 = 143;
-Constant relation_id_U44 = 144;
-Constant relation_id_U45 = 145;
-Constant relation_id_U46 = 146;
-Constant relation_id_U47 = 147;
+Constant relation_id_U1 = 102;
+Constant relation_id_U2 = 103;
+Constant relation_id_U3 = 104;
+Constant relation_id_U4 = 105;
+Constant relation_id_U5 = 106;
+Constant relation_id_U6 = 107;
+Constant relation_id_U7 = 108;
+Constant relation_id_U8 = 109;
+Constant relation_id_U9 = 110;
+Constant relation_id_U10 = 111;
+Constant relation_id_U11 = 112;
+Constant relation_id_U12 = 113;
+Constant relation_id_U13 = 114;
+Constant relation_id_U14 = 115;
+Constant relation_id_U15 = 116;
+Constant relation_id_U16 = 117;
+Constant relation_id_U17 = 118;
+Constant relation_id_U18 = 119;
+Constant relation_id_U19 = 120;
+Constant relation_id_U20 = 121;
+Constant relation_id_U21 = 122;
+Constant relation_id_U22 = 123;
+Constant relation_id_U23 = 124;
+Constant relation_id_U24 = 125;
+Constant relation_id_U25 = 126;
+Constant relation_id_U26 = 127;
+Constant relation_id_U27 = 128;
+Constant relation_id_U28 = 129;
+Constant relation_id_U29 = 130;
+Constant relation_id_U30 = 131;
+Constant relation_id_U31 = 132;
+Constant relation_id_U32 = 133;
+Constant relation_id_U33 = 134;
+Constant relation_id_U34 = 135;
+Constant relation_id_U35 = 136;
+Constant relation_id_U36 = 137;
+Constant relation_id_U37 = 138;
+Constant relation_id_U38 = 139;
+Constant relation_id_U39 = 140;
+Constant relation_id_U40 = 141;
+Constant relation_id_U41 = 142;
+Constant relation_id_U42 = 143;
+Constant relation_id_U43 = 144;
+Constant relation_id_U44 = 145;
+Constant relation_id_U45 = 146;
+Constant relation_id_U46 = 147;
+Constant relation_id_U47 = 148;
 Constant kind_ref_U1 = 561;
 Constant OBJECT_TY = 24;
-Constant ICOUNT_OBJECT = 16;
+Constant ICOUNT_OBJECT = 17;
 #ifndef cap_short_name;
 Constant cap_short_name = A_short_name;
 #endif;
@@ -751,70 +753,71 @@ Constant kind_ref_U44 = 561;
 Constant VOID_TY = 67;
 Constant kind_ref_U45 = 561;
 Constant TUPLE_ENTRY_TY = 68;
-Constant property_id_U1 = 55;
-Constant property_id_U2 = 56;
-Constant property_id_U3 = 57;
-Constant property_id_U4 = 58;
-Constant property_id_U5 = 59;
-Constant property_id_U6 = 60;
-Constant property_id_U7 = 61;
-Constant property_id_U8 = 62;
-Constant property_id_U9 = 63;
-Constant property_id_U10 = 64;
-Constant property_id_U11 = 65;
-Constant property_id_U12 = 66;
-Constant property_id_U13 = 67;
-Constant property_id_U14 = 68;
-Constant property_id_U15 = 69;
-Constant property_id_U16 = 70;
-Constant property_id_U17 = 71;
-Constant property_id_U18 = 72;
-Constant property_id_U19 = 73;
-Constant property_id_U20 = 74;
-Constant property_id_U21 = 75;
-Constant property_id_U22 = 76;
-Constant property_id_U23 = 77;
-Constant property_id_U24 = 78;
-Constant property_id_U25 = 79;
-Constant property_id_U26 = 80;
-Constant property_id_U27 = 81;
-Constant property_id_U28 = 82;
-Constant property_id_U29 = 83;
-Constant property_id_U30 = 84;
-Constant property_id_U31 = 85;
-Constant property_id_U32 = 86;
-Constant property_id_U33 = 87;
-Constant property_id_U34 = 88;
-Constant property_id_U35 = 89;
-Constant property_id_U36 = 90;
-Constant property_id_U37 = 91;
-Constant property_id_U38 = 92;
-Constant property_id_U39 = 93;
-Constant property_id_U40 = 94;
-Constant property_id_U41 = 95;
-Constant property_id_U42 = 96;
-Constant property_id_U43 = 97;
-Constant property_id_U44 = 98;
-Constant property_id_U45 = 99;
-Constant property_id_U46 = 100;
-Constant property_id_U47 = 101;
-Constant property_id_U48 = 102;
-Constant property_id_U49 = 103;
-Constant property_id_U50 = 104;
-Constant property_id_U51 = 105;
-Constant property_id_U52 = 106;
-Constant property_id_U53 = 107;
-Constant property_id_U54 = 108;
-Constant CCOUNT_ACTION_NAME = 107;
-Constant AD_RECORDS = 107;
+Constant property_id_U1 = 56;
+Constant property_id_U2 = 57;
+Constant property_id_U3 = 58;
+Constant property_id_U4 = 59;
+Constant property_id_U5 = 60;
+Constant property_id_U6 = 61;
+Constant property_id_U7 = 62;
+Constant property_id_U8 = 63;
+Constant property_id_U9 = 64;
+Constant property_id_U10 = 65;
+Constant property_id_U11 = 66;
+Constant property_id_U12 = 67;
+Constant property_id_U13 = 68;
+Constant property_id_U14 = 69;
+Constant property_id_U15 = 70;
+Constant property_id_U16 = 71;
+Constant property_id_U17 = 72;
+Constant property_id_U18 = 73;
+Constant property_id_U19 = 74;
+Constant property_id_U20 = 75;
+Constant property_id_U21 = 76;
+Constant property_id_U22 = 77;
+Constant property_id_U23 = 78;
+Constant property_id_U24 = 79;
+Constant property_id_U25 = 80;
+Constant property_id_U26 = 81;
+Constant property_id_U27 = 82;
+Constant property_id_U28 = 83;
+Constant property_id_U29 = 84;
+Constant property_id_U30 = 85;
+Constant property_id_U31 = 86;
+Constant property_id_U32 = 87;
+Constant property_id_U33 = 88;
+Constant property_id_U34 = 89;
+Constant property_id_U35 = 90;
+Constant property_id_U36 = 91;
+Constant property_id_U37 = 92;
+Constant property_id_U38 = 93;
+Constant property_id_U39 = 94;
+Constant property_id_U40 = 95;
+Constant property_id_U41 = 96;
+Constant property_id_U42 = 97;
+Constant property_id_U43 = 98;
+Constant property_id_U44 = 99;
+Constant property_id_U45 = 100;
+Constant property_id_U46 = 101;
+Constant property_id_U47 = 102;
+Constant property_id_U48 = 103;
+Constant property_id_U49 = 104;
+Constant property_id_U50 = 105;
+Constant property_id_U51 = 106;
+Constant property_id_U52 = 107;
+Constant property_id_U53 = 108;
+Constant property_id_U54 = 109;
+Constant property_id_U55 = 110;
+Constant CCOUNT_ACTION_NAME = 108;
+Constant AD_RECORDS = 108;
 Constant NO_PAST_TENSE_CONDS = 0;
 Constant NO_PAST_TENSE_ACTIONS = 0;
 Constant BASE_KIND_HWM = 69;
 Constant RUCKSACK_CLASS = K15_player_s_holdall;
 Constant NO_EXTERNAL_FILES = 0;
-Constant CCOUNT_PROPERTY = 184;
-Constant CCOUNT_BINARY_PREDICATE = 148;
-Constant NUMBER_RULEBOOKS_CREATED = 401;
+Constant CCOUNT_PROPERTY = 186;
+Constant CCOUNT_BINARY_PREDICATE = 149;
+Constant NUMBER_RULEBOOKS_CREATED = 404;
 Constant NO_RESPONSES = 408;
 Constant RANKING_TABLE = 0;
 Constant NO_USE_OPTIONS = 29;
@@ -850,15 +853,15 @@ Constant use_option_id_U14 = 13;
 Constant use_option_id_U15 = 14;
 Constant use_option_id_U16 = 15;
 Constant use_option_id_U17 = 16;
-Constant property_id_U55 = 0;
-Constant property_id_U56 = 1;
-Constant property_id_U57 = 2;
-Constant property_id_U58 = 3;
-Constant property_id_U59 = 4;
-Constant property_id_U60 = 5;
-Constant property_id_U61 = 6;
-Constant property_id_U62 = 7;
-Constant property_id_U63 = 8;
+Constant property_id_U56 = 0;
+Constant property_id_U57 = 1;
+Constant property_id_U58 = 2;
+Constant property_id_U59 = 3;
+Constant property_id_U60 = 4;
+Constant property_id_U61 = 5;
+Constant property_id_U62 = 6;
+Constant property_id_U63 = 7;
+Constant property_id_U64 = 8;
 Constant rulebook_id_U1 = 0;
 Constant rulebook_id_U2 = 1;
 Constant call_U143 = EMPTY_RULEBOOK;
@@ -906,40 +909,40 @@ Constant ICOUNT_GRAMMATICAL_CASE = 2;
 Constant kind_ref_U50 = 561;
 Constant WEAK_ID_51 = 22;
 Constant ICOUNT_GRAMMATICAL_GENDER = 3;
-Constant property_id_U64 = 40;
+Constant property_id_U65 = 40;
 Constant extension_id_U2 = 2;
 Constant relation_id_U54 = 71;
-Constant property_id_U65 = 9;
-Constant property_id_U66 = 10;
-Constant property_id_U67 = 11;
-Constant property_id_U68 = 12;
-Constant property_id_U69 = 13;
-Constant property_id_U70 = 14;
-Constant property_id_U71 = 15;
-Constant property_id_U72 = 16;
-Constant property_id_U73 = 17;
-Constant property_id_U74 = 18;
-Constant property_id_U75 = 19;
-Constant property_id_U76 = 20;
-Constant property_id_U77 = 21;
-Constant property_id_U78 = 22;
-Constant property_id_U79 = 23;
-Constant property_id_U80 = 24;
-Constant property_id_U81 = 25;
-Constant property_id_U82 = 26;
-Constant property_id_U83 = 27;
-Constant property_id_U84 = 28;
-Constant property_id_U85 = 29;
-Constant property_id_U86 = 30;
-Constant property_id_U87 = 31;
-Constant property_id_U88 = 32;
-Constant property_id_U89 = 33;
-Constant property_id_U90 = 34;
-Constant property_id_U91 = 35;
-Constant property_id_U92 = 36;
-Constant property_id_U93 = 37;
-Constant property_id_U94 = 38;
-Constant property_id_U95 = 39;
+Constant property_id_U66 = 9;
+Constant property_id_U67 = 10;
+Constant property_id_U68 = 11;
+Constant property_id_U69 = 12;
+Constant property_id_U70 = 13;
+Constant property_id_U71 = 14;
+Constant property_id_U72 = 15;
+Constant property_id_U73 = 16;
+Constant property_id_U74 = 17;
+Constant property_id_U75 = 18;
+Constant property_id_U76 = 19;
+Constant property_id_U77 = 20;
+Constant property_id_U78 = 21;
+Constant property_id_U79 = 22;
+Constant property_id_U80 = 23;
+Constant property_id_U81 = 24;
+Constant property_id_U82 = 25;
+Constant property_id_U83 = 26;
+Constant property_id_U84 = 27;
+Constant property_id_U85 = 28;
+Constant property_id_U86 = 29;
+Constant property_id_U87 = 30;
+Constant property_id_U88 = 31;
+Constant property_id_U89 = 32;
+Constant property_id_U90 = 33;
+Constant property_id_U91 = 34;
+Constant property_id_U92 = 35;
+Constant property_id_U93 = 36;
+Constant property_id_U94 = 37;
+Constant property_id_U95 = 38;
+Constant property_id_U96 = 39;
 Constant table_column_id_U1 = 100;
 Constant table_column_id_U2 = 101;
 Constant table_column_id_U3 = 102;
@@ -1052,7 +1055,6 @@ Constant call_U405 = EMPTY_RULEBOOK;
 Constant rulebook_id_U31 = 30;
 Constant call_U406 = EMPTY_RULEBOOK;
 Constant rulebook_id_U32 = 31;
-Constant call_U407 = EMPTY_RULEBOOK;
 Constant rulebook_id_U33 = 32;
 Constant call_U408 = EMPTY_RULEBOOK;
 Constant rulebook_id_U34 = 33;
@@ -2525,7 +2527,7 @@ Constant ICOUNT_ROOM = 1;
 Constant K1_room_First = I_room1_U1;
 Constant kind_ref_U52 = 561;
 Constant WEAK_ID_53 = 4;
-Constant ICOUNT_THING = 2;
+Constant ICOUNT_THING = 3;
 Constant K2_thing_First = I_pc_U1;
 Constant kind_ref_U53 = 561;
 Constant WEAK_ID_54 = 5;
@@ -2542,7 +2544,8 @@ Constant WEAK_ID_57 = 8;
 Constant ICOUNT_SUPPORTER = 0;
 Constant kind_ref_U57 = 561;
 Constant WEAK_ID_58 = 9;
-Constant ICOUNT_BACKDROP = 0;
+Constant ICOUNT_BACKDROP = 1;
+Constant K7_backdrop_First = I_grey_mist_U1;
 Constant kind_ref_U58 = 561;
 Constant WEAK_ID_59 = 10;
 Constant ICOUNT_PERSON = 2;
@@ -2735,20 +2738,20 @@ Constant anchor_U380 = 1105;
 Constant anchor_U381 = 1105;
 Constant anchor_U382 = 1105;
 Constant anchor_U383 = 1105;
-Constant property_id_U96 = 41;
-Constant property_id_U97 = 42;
-Constant property_id_U98 = 43;
-Constant property_id_U99 = 44;
-Constant property_id_U100 = 45;
-Constant property_id_U101 = 46;
-Constant property_id_U102 = 47;
-Constant property_id_U103 = 48;
-Constant property_id_U104 = 49;
-Constant property_id_U105 = 50;
-Constant property_id_U106 = 51;
-Constant property_id_U107 = 52;
-Constant property_id_U108 = 53;
-Constant property_id_U109 = 54;
+Constant property_id_U97 = 41;
+Constant property_id_U98 = 42;
+Constant property_id_U99 = 43;
+Constant property_id_U100 = 44;
+Constant property_id_U101 = 45;
+Constant property_id_U102 = 46;
+Constant property_id_U103 = 47;
+Constant property_id_U104 = 48;
+Constant property_id_U105 = 49;
+Constant property_id_U106 = 50;
+Constant property_id_U107 = 51;
+Constant property_id_U108 = 52;
+Constant property_id_U109 = 53;
+Constant property_id_U110 = 54;
 Constant extension_id_U5 = 5;
 Constant column_bits_U8 = 17515;
 Constant column_blanks_U7 = 6;
@@ -2790,6 +2793,7 @@ Constant relation_id_U145 = 97;
 Constant relation_id_U146 = 98;
 Constant relation_id_U147 = 99;
 Constant relation_id_U148 = 100;
+Constant relation_id_U149 = 101;
 Constant call_U2145 = EMPTY_RULEBOOK;
 Constant rulebook_id_U399 = 398;
 Constant call_U2146 = EMPTY_RULEBOOK;
@@ -2797,10 +2801,20 @@ Constant rulebook_id_U400 = 399;
 Constant rulebook_id_U401 = 400;
 Constant action_id_U84 = 83;
 Constant var_id_U122 = 20083;
+Constant rulebook_id_U402 = 401;
+Constant rulebook_id_U403 = 402;
+Constant call_U2150 = EMPTY_RULEBOOK;
+Constant rulebook_id_U404 = 403;
+Constant action_id_U85 = 84;
+Constant var_id_U123 = 20084;
 Constant anchor_U385 = 1105;
 Constant anchor_U386 = 1105;
-Constant extension_id_U9 = 9;
 Constant anchor_U387 = 1105;
+Constant anchor_U388 = 1105;
+Constant anchor_U389 = 1105;
+Constant property_id_U111 = 55;
+Constant extension_id_U9 = 9;
+Constant anchor_U390 = 1105;
 Release 0;
 Constant No_Directions = 12;
 Constant line_ref_U1 = 561;
@@ -2986,11 +3000,13 @@ Constant line_ref_U180 = 561;
 Constant line_ref_U181 = 561;
 Constant line_ref_U182 = 561;
 Constant line_ref_U183 = 561;
-Constant NO_VERB_VERB_DEFINED = 1;
 Constant line_ref_U184 = 561;
+Constant NO_VERB_VERB_DEFINED = 1;
 Constant line_ref_U185 = 561;
 Constant line_ref_U186 = 561;
 Constant line_ref_U187 = 561;
+Constant line_ref_U188 = 561;
+Constant line_ref_U189 = 561;
 Constant KIT_CONFIGURATION_BITMAP = 452;
 Constant KIT_CONFIGURATION_LOOKMODE = 2;
 Constant MAX_FRAME_SIZE_NEEDED = 6;
@@ -3227,6 +3243,8 @@ Constant id_U229 = 561;
 Constant id_U230 = 561;
 Constant id_U231 = 561;
 Constant id_U232 = 561;
+Constant id_U233 = 561;
+Constant id_U234 = 561;
 Constant MEMORY_HEAP_SIZE = 32768;
 Constant BASICINFORMKIT = 1;
 Constant HDR_MAGICNUMBER = 0;
@@ -3817,8 +3835,6 @@ Constant Computed_Constant_Value_61_U1 = 32;
 Constant MAX_TIMERS = 0;
 Constant Computed_Constant_Value_14_U1 = 1;
 Constant Computed_Constant_Value_37_U1 = 2;
-Constant property_id_U110 = 109;
-Constant property_id_U111 = 110;
 Constant property_id_U112 = 111;
 Constant property_id_U113 = 112;
 Constant property_id_U114 = 113;
@@ -3892,6 +3908,8 @@ Constant property_id_U181 = 180;
 Constant property_id_U182 = 181;
 Constant property_id_U183 = 182;
 Constant property_id_U184 = 183;
+Constant property_id_U185 = 184;
+Constant property_id_U186 = 185;
 Constant ENGLISHLANGUAGEKIT = 1;
 Constant AGAIN1__WD = 'again';
 Constant AGAIN2__WD = 'g//';
@@ -3986,7 +4004,6 @@ Constant Computed_Constant_Value_15_U2 = 1;
 Constant Computed_Constant_Value_17_U2 = 1;
 Constant Computed_Constant_Value_19_U2 = 1;
 Constant Computed_Constant_Value_21_U2 = 1;
-Constant action_id_U85 = 84;
 Constant action_id_U86 = 85;
 Constant action_id_U87 = 86;
 Constant action_id_U88 = 87;
@@ -4009,6 +4026,7 @@ Constant action_id_U104 = 103;
 Constant action_id_U105 = 104;
 Constant action_id_U106 = 105;
 Constant action_id_U107 = 106;
+Constant action_id_U108 = 107;
 Constant COMMANDPARSERKIT = 1;
 Constant STUCK_PE = 1;
 Constant UPTO_PE = 2;
@@ -4059,28 +4077,28 @@ Constant HIGHEST_DPMR_SCORE = 4;
 Constant Computed_Constant_Value_0_U4 = 1;
 Constant EMPTY_TEXT_PACKED = "";
 Constant alphabetised_text_0 = "# ";
-Constant I7_VERSION_NUMBER = "10.1.2";
 Constant I7_FULL_VERSION_NUMBER = "10.1.2";
-Serial "260215";
+Constant I7_VERSION_NUMBER = "10.1.2";
+Serial "260222";
 Constant alphabetised_text_1 = ">";
-Constant alphabetised_text_2 = "An Interactive Rapid Prototype";
+Constant alphabetised_text_2 = "An Interactive High Heist";
 Constant alphabetised_text_3 = "As good-looking as ever.  Up yours, Katsaris!";
 Constant alphabetised_text_4 = "Fiction";
-Constant alphabetised_text_5 = "Iron ChIF Lucian";
-Constant alphabetised_text_6 = "Looking at yourself.";
-Constant alphabetised_text_7 = "Lucian Smith";
-Constant alphabetised_text_8 = "PC";
-Constant alphabetised_text_9 = "QUIT";
-Constant alphabetised_text_10 = "RESTART";
-Constant alphabetised_text_11 = "RESTORE a saved game";
-Constant alphabetised_text_12 = "Room1";
-Constant alphabetised_text_13 = "That command isn't available in choice mode.";
-Constant alphabetised_text_14 = "UNDO the last command";
+Constant alphabetised_text_5 = "Looking at yourself.";
+Constant alphabetised_text_6 = "Lucian Smith";
+Constant alphabetised_text_7 = "PC";
+Constant alphabetised_text_8 = "QUIT";
+Constant alphabetised_text_9 = "RESTART";
+Constant alphabetised_text_10 = "RESTORE a saved game";
+Constant alphabetised_text_11 = "Room1";
+Constant alphabetised_text_12 = "That command isn't available in choice mode.";
+Constant alphabetised_text_13 = "UNDO the last command";
 Constant outcome_allow_access_U1 = "allow access";
 Constant outcome_allow_startup_U1 = "allow startup";
-Constant alphabetised_text_15 = "animals";
-Constant alphabetised_text_16 = "backdrops";
-Constant alphabetised_text_17 = "containers";
+Constant alphabetised_text_14 = "animals";
+Constant alphabetised_text_15 = "backdrops";
+Constant alphabetised_text_16 = "containers";
+Constant alphabetised_text_17 = "course correction";
 Constant outcome_deny_access_U1 = "deny access";
 Constant outcome_deny_startup_U1 = "deny startup";
 Constant alphabetised_text_18 = "devices";
@@ -4088,7 +4106,8 @@ Constant alphabetised_text_19 = "directions";
 Constant alphabetised_text_20 = "doors";
 Constant alphabetised_text_21 = "down";
 Constant alphabetised_text_22 = "east";
-Constant alphabetised_text_23 = "inside";
+Constant alphabetised_text_23 = "grey mist";
+Constant alphabetised_text_24 = "inside";
 Constant outcome_it_does_U1 = "it does";
 Constant outcome_it_does_not_U1 = "it does not";
 Constant outcome_it_is_likely_U1 = "it is likely";
@@ -4096,31 +4115,31 @@ Constant outcome_it_is_possible_U1 = "it is possible";
 Constant outcome_it_is_unlikely_U1 = "it is unlikely";
 Constant outcome_it_is_very_likely_U1 = "it is very likely";
 Constant outcome_it_is_very_unlikely_U1 = "it is very unlikely";
-Constant alphabetised_text_24 = "men";
-Constant alphabetised_text_25 = "no-page";
-Constant alphabetised_text_26 = "north";
-Constant alphabetised_text_27 = "northeast";
-Constant alphabetised_text_28 = "northwest";
-Constant alphabetised_text_29 = "outside";
-Constant alphabetised_text_30 = "pages";
-Constant alphabetised_text_31 = "people";
+Constant alphabetised_text_25 = "men";
+Constant alphabetised_text_26 = "no-page";
+Constant alphabetised_text_27 = "north";
+Constant alphabetised_text_28 = "northeast";
+Constant alphabetised_text_29 = "northwest";
+Constant alphabetised_text_30 = "outside";
+Constant alphabetised_text_31 = "pages";
+Constant alphabetised_text_32 = "people";
 Constant outcome_persuasion_fails_U1 = "persuasion fails";
 Constant outcome_persuasion_succeeds_U1 = "persuasion succeeds";
-Constant alphabetised_text_32 = "player's holdalls";
-Constant alphabetised_text_33 = "regions";
-Constant alphabetised_text_34 = "see some suggestions for AMUSING things to do";
-Constant alphabetised_text_35 = "south";
-Constant alphabetised_text_36 = "southeast";
-Constant alphabetised_text_37 = "southwest";
-Constant alphabetised_text_38 = "supporters";
-Constant alphabetised_text_39 = "the";
+Constant alphabetised_text_33 = "player's holdalls";
+Constant alphabetised_text_34 = "regions";
+Constant alphabetised_text_35 = "see some suggestions for AMUSING things to do";
+Constant alphabetised_text_36 = "south";
+Constant alphabetised_text_37 = "southeast";
+Constant alphabetised_text_38 = "southwest";
+Constant alphabetised_text_39 = "supporters";
+Constant alphabetised_text_40 = "the";
 Constant outcome_there_is_insufficien_U1 = "there is insufficient light";
 Constant outcome_there_is_sufficient__U1 = "there is sufficient light";
-Constant alphabetised_text_40 = "up";
-Constant alphabetised_text_41 = "vehicles";
-Constant alphabetised_text_42 = "west";
-Constant alphabetised_text_43 = "women";
-Constant alphabetised_text_44 = "yourself";
+Constant alphabetised_text_41 = "up";
+Constant alphabetised_text_42 = "vehicles";
+Constant alphabetised_text_43 = "west";
+Constant alphabetised_text_44 = "women";
+Constant alphabetised_text_45 = "yourself";
 Constant abilities_U1 = (RELS_TEST);
 Constant abilities_U2 = (RELS_TEST);
 Constant abilities_U4 = (RELS_TEST);
@@ -4128,45 +4147,45 @@ Constant abilities_U5 = (RELS_TEST);
 Constant V1_starting_the_virtual_mach = activity_id_U1;
 Constant V2_printing_the_name = activity_id_U2;
 Constant V3_printing_the_plural_name = activity_id_U3;
-Constant text_U1 = alphabetised_text_26;
-Constant text_U2 = alphabetised_text_39;
+Constant text_U1 = alphabetised_text_27;
+Constant text_U2 = alphabetised_text_40;
 Constant text_U3 = alphabetised_text_19;
-Constant text_U4 = alphabetised_text_27;
-Constant text_U5 = alphabetised_text_39;
+Constant text_U4 = alphabetised_text_28;
+Constant text_U5 = alphabetised_text_40;
 Constant text_U6 = alphabetised_text_19;
-Constant text_U7 = alphabetised_text_28;
-Constant text_U8 = alphabetised_text_39;
+Constant text_U7 = alphabetised_text_29;
+Constant text_U8 = alphabetised_text_40;
 Constant text_U9 = alphabetised_text_19;
-Constant text_U10 = alphabetised_text_35;
-Constant text_U11 = alphabetised_text_39;
+Constant text_U10 = alphabetised_text_36;
+Constant text_U11 = alphabetised_text_40;
 Constant text_U12 = alphabetised_text_19;
-Constant text_U13 = alphabetised_text_36;
-Constant text_U14 = alphabetised_text_39;
+Constant text_U13 = alphabetised_text_37;
+Constant text_U14 = alphabetised_text_40;
 Constant text_U15 = alphabetised_text_19;
-Constant text_U16 = alphabetised_text_37;
-Constant text_U17 = alphabetised_text_39;
+Constant text_U16 = alphabetised_text_38;
+Constant text_U17 = alphabetised_text_40;
 Constant text_U18 = alphabetised_text_19;
 Constant text_U19 = alphabetised_text_22;
-Constant text_U20 = alphabetised_text_39;
+Constant text_U20 = alphabetised_text_40;
 Constant text_U21 = alphabetised_text_19;
-Constant text_U22 = alphabetised_text_42;
-Constant text_U23 = alphabetised_text_39;
+Constant text_U22 = alphabetised_text_43;
+Constant text_U23 = alphabetised_text_40;
 Constant text_U24 = alphabetised_text_19;
-Constant text_U25 = alphabetised_text_40;
-Constant text_U26 = alphabetised_text_39;
+Constant text_U25 = alphabetised_text_41;
+Constant text_U26 = alphabetised_text_40;
 Constant text_U27 = alphabetised_text_19;
 Constant text_U28 = alphabetised_text_21;
-Constant text_U29 = alphabetised_text_39;
+Constant text_U29 = alphabetised_text_40;
 Constant text_U30 = alphabetised_text_19;
-Constant text_U31 = alphabetised_text_23;
-Constant text_U32 = alphabetised_text_39;
+Constant text_U31 = alphabetised_text_24;
+Constant text_U32 = alphabetised_text_40;
 Constant text_U33 = alphabetised_text_19;
-Constant text_U34 = alphabetised_text_29;
-Constant text_U35 = alphabetised_text_39;
+Constant text_U34 = alphabetised_text_30;
+Constant text_U35 = alphabetised_text_40;
 Constant text_U36 = alphabetised_text_19;
-Constant text_U37 = alphabetised_text_44;
-Constant text_U38 = alphabetised_text_44;
-Constant text_U39 = alphabetised_text_31;
+Constant text_U37 = alphabetised_text_45;
+Constant text_U38 = alphabetised_text_45;
+Constant text_U39 = alphabetised_text_32;
 Constant RBNO0_OUTCOME_U1 = outcome_it_is_very_unlikely_U1;
 Constant RBNO4_OUTCOME_U1 = outcome_it_is_very_likely_U1;
 Constant RBNO3_OUTCOME_U1 = outcome_it_is_likely_U1;
@@ -4207,49 +4226,48 @@ Constant text_U40 = alphabetised_text_19;
 Constant K4_door_First = nothing;
 Constant text_U41 = alphabetised_text_20;
 Constant K5_container_First = nothing;
-Constant text_U42 = alphabetised_text_17;
+Constant text_U42 = alphabetised_text_16;
 Constant K6_supporter_First = nothing;
-Constant text_U43 = alphabetised_text_38;
-Constant K7_backdrop_First = nothing;
-Constant text_U44 = alphabetised_text_16;
-Constant text_U45 = alphabetised_text_31;
+Constant text_U43 = alphabetised_text_39;
+Constant text_U44 = alphabetised_text_15;
+Constant text_U45 = alphabetised_text_32;
 Constant K9_region_First = nothing;
-Constant text_U46 = alphabetised_text_33;
+Constant text_U46 = alphabetised_text_34;
 Constant K10_man_First = nothing;
-Constant text_U47 = alphabetised_text_24;
+Constant text_U47 = alphabetised_text_25;
 Constant K11_woman_First = nothing;
-Constant text_U48 = alphabetised_text_43;
+Constant text_U48 = alphabetised_text_44;
 Constant K12_animal_First = nothing;
-Constant text_U49 = alphabetised_text_15;
+Constant text_U49 = alphabetised_text_14;
 Constant K13_device_First = nothing;
 Constant text_U50 = alphabetised_text_18;
 Constant K14_vehicle_First = nothing;
-Constant text_U51 = alphabetised_text_41;
+Constant text_U51 = alphabetised_text_42;
 Constant K15_player_s_holdall_First = nothing;
-Constant text_U52 = alphabetised_text_32;
+Constant text_U52 = alphabetised_text_33;
 Constant text_U53 = alphabetised_text_1;
-Constant text_U54 = alphabetised_text_7;
+Constant text_U54 = alphabetised_text_6;
 Constant text_U55 = alphabetised_text_2;
 Constant text_U56 = alphabetised_text_4;
 Constant column_identity_U1 = table_column_id_U1;
-Constant text_U57 = alphabetised_text_10;
-Constant text_U58 = alphabetised_text_11;
-Constant text_U59 = alphabetised_text_34;
-Constant text_U60 = alphabetised_text_9;
-Constant text_U61 = alphabetised_text_14;
+Constant text_U57 = alphabetised_text_9;
+Constant text_U58 = alphabetised_text_10;
+Constant text_U59 = alphabetised_text_35;
+Constant text_U60 = alphabetised_text_8;
+Constant text_U61 = alphabetised_text_13;
 Constant column_identity_U2 = table_column_id_U2;
 Constant column_identity_U3 = table_column_id_U3;
 Constant column_identity_U4 = table_column_id_U4;
 Constant column_identity_U5 = table_column_id_U5;
 Constant column_identity_U6 = table_column_id_U6;
 Constant column_identity_U7 = table_column_id_U7;
-Constant text_U62 = alphabetised_text_25;
-Constant text_U63 = alphabetised_text_30;
+Constant text_U62 = alphabetised_text_26;
+Constant text_U63 = alphabetised_text_31;
 Constant V35_choice_displaying = activity_id_U35;
 Constant V36_displaying_available_deci = activity_id_U36;
 Constant V37_selecting = activity_id_U37;
-Constant text_U64 = alphabetised_text_30;
-Constant text_U65 = alphabetised_text_13;
+Constant text_U64 = alphabetised_text_31;
+Constant text_U65 = alphabetised_text_12;
 Constant column_identity_U8 = table_column_id_U8;
 Constant column_identity_U9 = table_column_id_U9;
 Constant column_identity_U10 = table_column_id_U10;
@@ -4257,15 +4275,17 @@ Constant V38_pausing_the_game = activity_id_U38;
 Constant column_identity_U11 = table_column_id_U11;
 Constant column_identity_U12 = table_column_id_U12;
 Constant column_identity_U13 = table_column_id_U13;
-Constant text_U66 = alphabetised_text_12;
-Constant text_U67 = alphabetised_text_8;
+Constant text_U66 = alphabetised_text_11;
+Constant text_U67 = alphabetised_text_7;
 Constant text_U68 = alphabetised_text_3;
-Constant text_U69 = alphabetised_text_6;
-Constant text_U70 = alphabetised_text_31;
-Constant text_U71 = alphabetised_text_0;
-Constant text_U72 = alphabetised_text_5;
-Constant text_U73 = alphabetised_text_2;
-Constant text_U74 = alphabetised_text_7;
+Constant text_U69 = alphabetised_text_5;
+Constant text_U70 = alphabetised_text_32;
+Constant text_U71 = alphabetised_text_23;
+Constant text_U72 = alphabetised_text_15;
+Constant text_U73 = alphabetised_text_0;
+Constant text_U74 = alphabetised_text_17;
+Constant text_U75 = alphabetised_text_2;
+Constant text_U76 = alphabetised_text_6;
 Constant GPR_REPARSE = REPARSE_CODE;
 Constant TABLE_NOVALUE = IMPROBABLE_VALUE;
 Constant RC_INFINITY = MAX_POSITIVE_NUMBER;
@@ -4379,9 +4399,9 @@ Constant Computed_Constant_Value_23_U1 = (BLK_DATA_OFFSET + Computed_Constant_Va
 Constant VALENCY_MASK = Computed_Constant_Value_60_U1;
 Constant Computed_Constant_Value_39_U1 = (Computed_Constant_Value_38_U1 * TEXT_TY_NoBuffers);
 Constant BLK_DATA_MULTI_OFFSET = Computed_Constant_Value_23_U1;
-Constant Story = bc_U191;
-Constant Headline = bc_U192;
-Constant Story_Author = bc_U193;
+Constant Story = bc_U196;
+Constant Headline = bc_U197;
+Constant Story_Author = bc_U198;
 Constant Computed_Constant_Value_24_U1 = (MEMORY_HEAP_SIZE + BLK_DATA_MULTI_OFFSET);
 Constant abilities_U3 = (RELS_TEST + RELS_LOOKUP_ANY + RELS_LOOKUP_ALL_X + RELS_LOOKUP_ALL_X + RELS_LIST + RELS_ASSERT_TRUE + RELS_ASSERT_FALSE + RELS_LOOKUP_ANY);
 Constant abilities_U6 = (RELS_TEST + RELS_LOOKUP_ANY + RELS_LOOKUP_ALL_X + RELS_LOOKUP_ALL_X + RELS_LIST + RELS_ASSERT_TRUE + RELS_ASSERT_FALSE + RELS_LOOKUP_ANY);
@@ -4449,7 +4469,7 @@ Array A_component_sibling --> [ 1; subterfuge_43; 0; "component_sibling"; K0_kin
 Array A_description --> [ 1; subterfuge_44; 0; "description"; K1_room; K2_thing; K16_page; NULL; ];
 Array A_door_dir --> [ 1; subterfuge_45; 0; "door_dir"; K0_kind; K1_room; K2_thing; K9_region; K3_direction; K16_page; NULL; ];
 Array A_door_to --> [ 1; subterfuge_46; 0; "leading-through destination"; K0_kind; K1_room; K2_thing; K9_region; K3_direction; K16_page; K4_door; NULL; ];
-Array A_found_in --> [ 1; subterfuge_47; 0; "<nameless>"; NULL; ];
+Array A_found_in --> [ 1; subterfuge_47; 0; "found_in"; K0_kind; K1_room; K2_thing; K9_region; K3_direction; K16_page; NULL; ];
 Array A_initial --> [ 1; subterfuge_48; 0; "initial appearance"; K2_thing; NULL; ];
 Array A_list_together --> [ 1; subterfuge_49; 0; "list grouping key"; K0_kind; K1_room; K2_thing; K9_region; K3_direction; K16_page; NULL; ];
 Array A_map_region --> [ 1; subterfuge_50; 0; "map region"; K1_room; NULL; ];
@@ -4526,6 +4546,7 @@ Array A_P_active --> [ 2; subterfuge_120; 1; "active"; K16_page; NULL; ];
 Array A_P_page_turning_relation_stor --> [ 1; subterfuge_121; 0; "page-turning relation storage"; NULL; ];
 Array A_P_page_dependency_relation_s --> [ 1; subterfuge_122; 0; "page-dependency relation storage"; NULL; ];
 Array A_P_page_cancellation_relation --> [ 1; subterfuge_123; 0; "page-cancellation relation storage"; NULL; ];
+Array A_P_summoned --> [ 2; subterfuge_124; 1; "summoned"; I_grey_mist_U1; NULL; ];
 Array Rel_Record9 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "equality relation"; abilities_U1; 0; DK7_relation_of_values; call_U7; "is"; ];
 Array Rel_Record10 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "meaning relation"; abilities_U2; 0; DK8_relation_of_objects; call_U8; "means"; ];
 Array Rel_Record11 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "possession relation"; abilities_U3; 0; DK8_relation_of_objects; call_U9; "has"; ];
@@ -4553,8 +4574,8 @@ Array DK9_relation_of_supporters_t --> [ RELATION_TY; 2; OBJECT_TY; OBJECT_TY; ]
 Array DK10_relation_of_things --> [ RELATION_TY; 2; OBJECT_TY; OBJECT_TY; ];
 Array DK11_relation_of_people_to_th --> [ RELATION_TY; 2; OBJECT_TY; OBJECT_TY; ];
 Array ActionHappened --> [ 0; 0; 0; 0; 0; 0; 0; 0; ];
-Array ActionCoding --> [ ##Inv; ##Take; ##Remove; ##Drop; ##PutOn; ##Insert; ##Eat; ##Go; ##Enter; ##Exit; ##GetOff; ##Look; ##Examine; ##LookUnder; ##Search; ##Consult; ##Lock; ##Unlock; ##SwitchOn; ##SwitchOff; ##Open; ##Close; ##Wear; ##Disrobe; ##Give; ##Show; ##WakeOther; ##ThrowAt; ##Attack; ##Kiss; ##Answer; ##Tell; ##Ask; ##AskFor; ##Wait; ##Touch; ##Wave; ##Pull; ##Push; ##Turn; ##PushDir; ##Squeeze; ##Yes; ##No; ##Burn; ##Wake; ##Think; ##Smell; ##Listen; ##Taste; ##Cut; ##Jump; ##Tie; ##Drink; ##Sorry; ##Swing; ##Rub; ##SetTo; ##WaveHands; ##Buy; ##Climb; ##Sleep; ##Quit; ##Save; ##Restore; ##Restart; ##Verify; ##ScriptOn; ##ScriptOff; ##Version; ##Score; ##LMode3; ##LMode2; ##LMode1; ##NotifyOn; ##NotifyOff; ##Pronouns; ##A_response_tracking; ##A_disabling_response_tr; ##A_requesting_response_i; ##A_choosing; ##A_item_invoking; ##A_toggling_cyoa_debug_m; ##A_commenting; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; ];
-Array ActionData table [ ##Inv; 0; OBJECT_TY; OBJECT_TY; 0; 20000; ##Take; 9; OBJECT_TY; OBJECT_TY; 0; 20001; ##Remove; 27; OBJECT_TY; OBJECT_TY; 0; 20002; ##Drop; 9; OBJECT_TY; OBJECT_TY; 0; 20003; ##PutOn; 27; OBJECT_TY; OBJECT_TY; 0; 20004; ##Insert; 27; OBJECT_TY; OBJECT_TY; 0; 20005; ##Eat; 9; OBJECT_TY; OBJECT_TY; 0; 20006; ##Go; 8; OBJECT_TY; OBJECT_TY; call_U531; 20007; ##Enter; 9; OBJECT_TY; OBJECT_TY; 0; 20008; ##Exit; 0; OBJECT_TY; OBJECT_TY; call_U538; 20009; ##GetOff; 9; OBJECT_TY; OBJECT_TY; 0; 20010; ##Look; 0; OBJECT_TY; OBJECT_TY; call_U545; 20011; ##Examine; 12; OBJECT_TY; OBJECT_TY; call_U549; 20012; ##LookUnder; 12; OBJECT_TY; OBJECT_TY; 0; 20013; ##Search; 13; OBJECT_TY; OBJECT_TY; 0; 20014; ##Consult; 25; OBJECT_TY; UNDERSTANDING_TY; 0; 20015; ##Lock; 155; OBJECT_TY; OBJECT_TY; 0; 20016; ##Unlock; 155; OBJECT_TY; OBJECT_TY; 0; 20017; ##SwitchOn; 9; OBJECT_TY; OBJECT_TY; 0; 20018; ##SwitchOff; 9; OBJECT_TY; OBJECT_TY; 0; 20019; ##Open; 9; OBJECT_TY; OBJECT_TY; 0; 20020; ##Close; 9; OBJECT_TY; OBJECT_TY; 0; 20021; ##Wear; 73; OBJECT_TY; OBJECT_TY; 0; 20022; ##Disrobe; 9; OBJECT_TY; OBJECT_TY; 0; 20023; ##Give; 91; OBJECT_TY; OBJECT_TY; 0; 20024; ##Show; 89; OBJECT_TY; OBJECT_TY; 0; 20025; ##WakeOther; 9; OBJECT_TY; OBJECT_TY; 0; 20026; ##ThrowAt; 89; OBJECT_TY; OBJECT_TY; 0; 20027; ##Attack; 9; OBJECT_TY; OBJECT_TY; 0; 20028; ##Kiss; 9; OBJECT_TY; OBJECT_TY; 0; 20029; ##Answer; 25; OBJECT_TY; UNDERSTANDING_TY; 0; 20030; ##Tell; 25; OBJECT_TY; UNDERSTANDING_TY; 0; 20031; ##Ask; 25; OBJECT_TY; UNDERSTANDING_TY; 0; 20032; ##AskFor; 27; OBJECT_TY; OBJECT_TY; 0; 20033; ##Wait; 0; OBJECT_TY; OBJECT_TY; 0; 20034; ##Touch; 9; OBJECT_TY; OBJECT_TY; 0; 20035; ##Wave; 9; OBJECT_TY; OBJECT_TY; 0; 20036; ##Pull; 9; OBJECT_TY; OBJECT_TY; 0; 20037; ##Push; 9; OBJECT_TY; OBJECT_TY; 0; 20038; ##Turn; 9; OBJECT_TY; OBJECT_TY; 0; 20039; ##PushDir; 25; OBJECT_TY; OBJECT_TY; 0; 20040; ##Squeeze; 9; OBJECT_TY; OBJECT_TY; 0; 20041; ##Yes; 0; OBJECT_TY; OBJECT_TY; 0; 20042; ##No; 0; OBJECT_TY; OBJECT_TY; 0; 20043; ##Burn; 9; OBJECT_TY; OBJECT_TY; 0; 20044; ##Wake; 0; OBJECT_TY; OBJECT_TY; 0; 20045; ##Think; 0; OBJECT_TY; OBJECT_TY; 0; 20046; ##Smell; 9; OBJECT_TY; OBJECT_TY; 0; 20047; ##Listen; 9; OBJECT_TY; OBJECT_TY; 0; 20048; ##Taste; 9; OBJECT_TY; OBJECT_TY; 0; 20049; ##Cut; 9; OBJECT_TY; OBJECT_TY; 0; 20050; ##Jump; 0; OBJECT_TY; OBJECT_TY; 0; 20051; ##Tie; 27; OBJECT_TY; OBJECT_TY; 0; 20052; ##Drink; 9; OBJECT_TY; OBJECT_TY; 0; 20053; ##Sorry; 0; OBJECT_TY; OBJECT_TY; 0; 20054; ##Swing; 9; OBJECT_TY; OBJECT_TY; 0; 20055; ##Rub; 9; OBJECT_TY; OBJECT_TY; 0; 20056; ##SetTo; 25; OBJECT_TY; UNDERSTANDING_TY; 0; 20057; ##WaveHands; 0; OBJECT_TY; OBJECT_TY; 0; 20058; ##Buy; 9; OBJECT_TY; OBJECT_TY; 0; 20059; ##Climb; 9; OBJECT_TY; OBJECT_TY; 0; 20060; ##Sleep; 0; OBJECT_TY; OBJECT_TY; 0; 20061; ##Quit; 32; OBJECT_TY; OBJECT_TY; 0; 20062; ##Save; 32; OBJECT_TY; OBJECT_TY; 0; 20063; ##Restore; 32; OBJECT_TY; OBJECT_TY; 0; 20064; ##Restart; 32; OBJECT_TY; OBJECT_TY; 0; 20065; ##Verify; 32; OBJECT_TY; OBJECT_TY; 0; 20066; ##ScriptOn; 32; OBJECT_TY; OBJECT_TY; 0; 20067; ##ScriptOff; 32; OBJECT_TY; OBJECT_TY; 0; 20068; ##Version; 32; OBJECT_TY; OBJECT_TY; 0; 20069; ##Score; 32; OBJECT_TY; OBJECT_TY; 0; 20070; ##LMode3; 32; OBJECT_TY; OBJECT_TY; 0; 20071; ##LMode2; 32; OBJECT_TY; OBJECT_TY; 0; 20072; ##LMode1; 32; OBJECT_TY; OBJECT_TY; 0; 20073; ##NotifyOn; 32; OBJECT_TY; OBJECT_TY; 0; 20074; ##NotifyOff; 32; OBJECT_TY; OBJECT_TY; 0; 20075; ##Pronouns; 32; OBJECT_TY; OBJECT_TY; 0; 20076; ##A_response_tracking; 32; OBJECT_TY; OBJECT_TY; 0; 20077; ##A_disabling_response_tr; 32; OBJECT_TY; OBJECT_TY; 0; 20078; ##A_requesting_response_i; 40; NUMBER_TY; OBJECT_TY; 0; 20079; ##A_choosing; 8; NUMBER_TY; OBJECT_TY; 0; 20080; ##A_item_invoking; 8; OBJECT_TY; OBJECT_TY; 0; 20081; ##A_toggling_cyoa_debug_m; 32; OBJECT_TY; OBJECT_TY; 0; 20082; ##A_commenting; 40; UNDERSTANDING_TY; OBJECT_TY; 0; 20083; 0; 0; 0; 0; 0; 20084; 0; 0; 0; 0; 0; 20085; 0; 0; 0; 0; 0; 20086; 0; 0; 0; 0; 0; 20087; 0; 0; 0; 0; 0; 20088; 0; 0; 0; 0; 0; 20089; 0; 0; 0; 0; 0; 20090; 0; 0; 0; 0; 0; 20091; 0; 0; 0; 0; 0; 20092; 0; 0; 0; 0; 0; 20093; 0; 0; 0; 0; 0; 20094; 0; 0; 0; 0; 0; 20095; 0; 0; 0; 0; 0; 20096; 0; 0; 0; 0; 0; 20097; 0; 0; 0; 0; 0; 20098; 0; 0; 0; 0; 0; 20099; 0; 0; 0; 0; 0; 20100; 0; 0; 0; 0; 0; 20101; 0; 0; 0; 0; 0; 20102; 0; 0; 0; 0; 0; 20103; 0; 0; 0; 0; 0; 20104; 0; 0; 0; 0; 0; 20105; 0; 0; 0; 0; 0; 20106; 0; ];
+Array ActionCoding --> [ ##Inv; ##Take; ##Remove; ##Drop; ##PutOn; ##Insert; ##Eat; ##Go; ##Enter; ##Exit; ##GetOff; ##Look; ##Examine; ##LookUnder; ##Search; ##Consult; ##Lock; ##Unlock; ##SwitchOn; ##SwitchOff; ##Open; ##Close; ##Wear; ##Disrobe; ##Give; ##Show; ##WakeOther; ##ThrowAt; ##Attack; ##Kiss; ##Answer; ##Tell; ##Ask; ##AskFor; ##Wait; ##Touch; ##Wave; ##Pull; ##Push; ##Turn; ##PushDir; ##Squeeze; ##Yes; ##No; ##Burn; ##Wake; ##Think; ##Smell; ##Listen; ##Taste; ##Cut; ##Jump; ##Tie; ##Drink; ##Sorry; ##Swing; ##Rub; ##SetTo; ##WaveHands; ##Buy; ##Climb; ##Sleep; ##Quit; ##Save; ##Restore; ##Restart; ##Verify; ##ScriptOn; ##ScriptOff; ##Version; ##Score; ##LMode3; ##LMode2; ##LMode1; ##NotifyOn; ##NotifyOff; ##Pronouns; ##A_response_tracking; ##A_disabling_response_tr; ##A_requesting_response_i; ##A_choosing; ##A_item_invoking; ##A_toggling_cyoa_debug_m; ##A_commenting; ##A_summoning; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; ];
+Array ActionData table [ ##Inv; 0; OBJECT_TY; OBJECT_TY; 0; 20000; ##Take; 9; OBJECT_TY; OBJECT_TY; 0; 20001; ##Remove; 27; OBJECT_TY; OBJECT_TY; 0; 20002; ##Drop; 9; OBJECT_TY; OBJECT_TY; 0; 20003; ##PutOn; 27; OBJECT_TY; OBJECT_TY; 0; 20004; ##Insert; 27; OBJECT_TY; OBJECT_TY; 0; 20005; ##Eat; 9; OBJECT_TY; OBJECT_TY; 0; 20006; ##Go; 8; OBJECT_TY; OBJECT_TY; call_U531; 20007; ##Enter; 9; OBJECT_TY; OBJECT_TY; 0; 20008; ##Exit; 0; OBJECT_TY; OBJECT_TY; call_U538; 20009; ##GetOff; 9; OBJECT_TY; OBJECT_TY; 0; 20010; ##Look; 0; OBJECT_TY; OBJECT_TY; call_U545; 20011; ##Examine; 12; OBJECT_TY; OBJECT_TY; call_U549; 20012; ##LookUnder; 12; OBJECT_TY; OBJECT_TY; 0; 20013; ##Search; 13; OBJECT_TY; OBJECT_TY; 0; 20014; ##Consult; 25; OBJECT_TY; UNDERSTANDING_TY; 0; 20015; ##Lock; 155; OBJECT_TY; OBJECT_TY; 0; 20016; ##Unlock; 155; OBJECT_TY; OBJECT_TY; 0; 20017; ##SwitchOn; 9; OBJECT_TY; OBJECT_TY; 0; 20018; ##SwitchOff; 9; OBJECT_TY; OBJECT_TY; 0; 20019; ##Open; 9; OBJECT_TY; OBJECT_TY; 0; 20020; ##Close; 9; OBJECT_TY; OBJECT_TY; 0; 20021; ##Wear; 73; OBJECT_TY; OBJECT_TY; 0; 20022; ##Disrobe; 9; OBJECT_TY; OBJECT_TY; 0; 20023; ##Give; 91; OBJECT_TY; OBJECT_TY; 0; 20024; ##Show; 89; OBJECT_TY; OBJECT_TY; 0; 20025; ##WakeOther; 9; OBJECT_TY; OBJECT_TY; 0; 20026; ##ThrowAt; 89; OBJECT_TY; OBJECT_TY; 0; 20027; ##Attack; 9; OBJECT_TY; OBJECT_TY; 0; 20028; ##Kiss; 9; OBJECT_TY; OBJECT_TY; 0; 20029; ##Answer; 25; OBJECT_TY; UNDERSTANDING_TY; 0; 20030; ##Tell; 25; OBJECT_TY; UNDERSTANDING_TY; 0; 20031; ##Ask; 25; OBJECT_TY; UNDERSTANDING_TY; 0; 20032; ##AskFor; 27; OBJECT_TY; OBJECT_TY; 0; 20033; ##Wait; 0; OBJECT_TY; OBJECT_TY; 0; 20034; ##Touch; 9; OBJECT_TY; OBJECT_TY; 0; 20035; ##Wave; 9; OBJECT_TY; OBJECT_TY; 0; 20036; ##Pull; 9; OBJECT_TY; OBJECT_TY; 0; 20037; ##Push; 9; OBJECT_TY; OBJECT_TY; 0; 20038; ##Turn; 9; OBJECT_TY; OBJECT_TY; 0; 20039; ##PushDir; 25; OBJECT_TY; OBJECT_TY; 0; 20040; ##Squeeze; 9; OBJECT_TY; OBJECT_TY; 0; 20041; ##Yes; 0; OBJECT_TY; OBJECT_TY; 0; 20042; ##No; 0; OBJECT_TY; OBJECT_TY; 0; 20043; ##Burn; 9; OBJECT_TY; OBJECT_TY; 0; 20044; ##Wake; 0; OBJECT_TY; OBJECT_TY; 0; 20045; ##Think; 0; OBJECT_TY; OBJECT_TY; 0; 20046; ##Smell; 9; OBJECT_TY; OBJECT_TY; 0; 20047; ##Listen; 9; OBJECT_TY; OBJECT_TY; 0; 20048; ##Taste; 9; OBJECT_TY; OBJECT_TY; 0; 20049; ##Cut; 9; OBJECT_TY; OBJECT_TY; 0; 20050; ##Jump; 0; OBJECT_TY; OBJECT_TY; 0; 20051; ##Tie; 27; OBJECT_TY; OBJECT_TY; 0; 20052; ##Drink; 9; OBJECT_TY; OBJECT_TY; 0; 20053; ##Sorry; 0; OBJECT_TY; OBJECT_TY; 0; 20054; ##Swing; 9; OBJECT_TY; OBJECT_TY; 0; 20055; ##Rub; 9; OBJECT_TY; OBJECT_TY; 0; 20056; ##SetTo; 25; OBJECT_TY; UNDERSTANDING_TY; 0; 20057; ##WaveHands; 0; OBJECT_TY; OBJECT_TY; 0; 20058; ##Buy; 9; OBJECT_TY; OBJECT_TY; 0; 20059; ##Climb; 9; OBJECT_TY; OBJECT_TY; 0; 20060; ##Sleep; 0; OBJECT_TY; OBJECT_TY; 0; 20061; ##Quit; 32; OBJECT_TY; OBJECT_TY; 0; 20062; ##Save; 32; OBJECT_TY; OBJECT_TY; 0; 20063; ##Restore; 32; OBJECT_TY; OBJECT_TY; 0; 20064; ##Restart; 32; OBJECT_TY; OBJECT_TY; 0; 20065; ##Verify; 32; OBJECT_TY; OBJECT_TY; 0; 20066; ##ScriptOn; 32; OBJECT_TY; OBJECT_TY; 0; 20067; ##ScriptOff; 32; OBJECT_TY; OBJECT_TY; 0; 20068; ##Version; 32; OBJECT_TY; OBJECT_TY; 0; 20069; ##Score; 32; OBJECT_TY; OBJECT_TY; 0; 20070; ##LMode3; 32; OBJECT_TY; OBJECT_TY; 0; 20071; ##LMode2; 32; OBJECT_TY; OBJECT_TY; 0; 20072; ##LMode1; 32; OBJECT_TY; OBJECT_TY; 0; 20073; ##NotifyOn; 32; OBJECT_TY; OBJECT_TY; 0; 20074; ##NotifyOff; 32; OBJECT_TY; OBJECT_TY; 0; 20075; ##Pronouns; 32; OBJECT_TY; OBJECT_TY; 0; 20076; ##A_response_tracking; 32; OBJECT_TY; OBJECT_TY; 0; 20077; ##A_disabling_response_tr; 32; OBJECT_TY; OBJECT_TY; 0; 20078; ##A_requesting_response_i; 40; NUMBER_TY; OBJECT_TY; 0; 20079; ##A_choosing; 8; NUMBER_TY; OBJECT_TY; 0; 20080; ##A_item_invoking; 8; OBJECT_TY; OBJECT_TY; 0; 20081; ##A_toggling_cyoa_debug_m; 32; OBJECT_TY; OBJECT_TY; 0; 20082; ##A_commenting; 40; UNDERSTANDING_TY; OBJECT_TY; 0; 20083; ##A_summoning; 9; OBJECT_TY; OBJECT_TY; 0; 20084; 0; 0; 0; 0; 0; 20085; 0; 0; 0; 0; 0; 20086; 0; 0; 0; 0; 0; 20087; 0; 0; 0; 0; 0; 20088; 0; 0; 0; 0; 0; 20089; 0; 0; 0; 0; 0; 20090; 0; 0; 0; 0; 0; 20091; 0; 0; 0; 0; 0; 20092; 0; 0; 0; 0; 0; 20093; 0; 0; 0; 0; 0; 20094; 0; 0; 0; 0; 0; 20095; 0; 0; 0; 0; 0; 20096; 0; 0; 0; 0; 0; 20097; 0; 0; 0; 0; 0; 20098; 0; 0; 0; 0; 0; 20099; 0; 0; 0; 0; 0; 20100; 0; 0; 0; 0; 0; 20101; 0; 0; 0; 0; 0; 20102; 0; 0; 0; 0; 0; 20103; 0; 0; 0; 0; 0; 20104; 0; 0; 0; 0; 0; 20105; 0; 0; 0; 0; 0; 20106; 0; 0; 0; 0; 0; 20107; 0; ];
 Array Activity_after_rulebooks --> [ rulebook_id_U5; rulebook_id_U8; rulebook_id_U11; rulebook_id_U41; rulebook_id_U44; rulebook_id_U47; rulebook_id_U50; rulebook_id_U53; rulebook_id_U56; rulebook_id_U59; rulebook_id_U62; rulebook_id_U65; rulebook_id_U68; rulebook_id_U71; rulebook_id_U74; rulebook_id_U77; rulebook_id_U80; rulebook_id_U83; rulebook_id_U86; rulebook_id_U89; rulebook_id_U92; rulebook_id_U95; rulebook_id_U98; rulebook_id_U101; rulebook_id_U104; rulebook_id_U107; rulebook_id_U110; rulebook_id_U113; rulebook_id_U116; rulebook_id_U119; rulebook_id_U122; rulebook_id_U125; rulebook_id_U128; rulebook_id_U131; rulebook_id_U374; rulebook_id_U377; rulebook_id_U380; rulebook_id_U398; ];
 Array Activity_atb_rulebooks -> [ 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 1; 0; 1; 1; 1; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; ];
 Array Activity_before_rulebooks --> [ rulebook_id_U3; rulebook_id_U6; rulebook_id_U9; rulebook_id_U39; rulebook_id_U42; rulebook_id_U45; rulebook_id_U48; rulebook_id_U51; rulebook_id_U54; rulebook_id_U57; rulebook_id_U60; rulebook_id_U63; rulebook_id_U66; rulebook_id_U69; rulebook_id_U72; rulebook_id_U75; rulebook_id_U78; rulebook_id_U81; rulebook_id_U84; rulebook_id_U87; rulebook_id_U90; rulebook_id_U93; rulebook_id_U96; rulebook_id_U99; rulebook_id_U102; rulebook_id_U105; rulebook_id_U108; rulebook_id_U111; rulebook_id_U114; rulebook_id_U117; rulebook_id_U120; rulebook_id_U123; rulebook_id_U126; rulebook_id_U129; rulebook_id_U372; rulebook_id_U375; rulebook_id_U378; rulebook_id_U396; ];
@@ -4568,13 +4589,13 @@ Array KindHierarchy --> [ K0_kind; 0; K1_room; 0; K2_thing; 0; K3_direction; 0; 
 Array ResourceIDsOfFigures --> [ 0; 1; 0; ];
 Array ResourceIDsOfSounds --> [ 0; 0; ];
 Array TableOfExternalFiles --> [ 0; 0; ];
-Array RulebookNames --> [ "Startup rulebook"; "Shutdown rulebook"; "before starting the virtual machine rulebook"; "for starting the virtual machine rulebook"; "after starting the virtual machine rulebook"; "before printing the name rulebook"; "for printing the name rulebook"; "after printing the name rulebook"; "before printing the plural name rulebook"; "for printing the plural name rulebook"; "after printing the plural name rulebook"; "Turn sequence rulebook"; "Scene changing rulebook"; "When play begins rulebook"; "When play ends rulebook"; "When scene begins rulebook"; "When scene ends rulebook"; "Every turn rulebook"; "Action-processing rulebook"; "Setting action variables rulebook"; "specific action-processing rulebook"; "player's action awareness rulebook"; "Accessibility rulebook"; "Reaching inside rulebook"; "Reaching outside rulebook"; "Visibility rulebook"; "Persuasion rulebook"; "Unsuccessful attempt by rulebook"; "Before rulebook"; "Instead rulebook"; "Check rulebook"; "Carry out rulebook"; "After rulebook"; "Report rulebook"; "does the player mean rulebook"; "multiple action processing rulebook"; "when Entire Game begins rulebook"; "when Entire Game ends rulebook"; "before issuing the response text rulebook"; "for issuing the response text rulebook"; "after issuing the response text rulebook"; "before printing a number rulebook"; "for printing a number rulebook"; "after printing a number rulebook"; "before printing room description details rulebook"; "for printing room description details rulebook"; "after printing room description details rulebook"; "before printing inventory details rulebook"; "for printing inventory details rulebook"; "after printing inventory details rulebook"; "before listing contents rulebook"; "for listing contents rulebook"; "after listing contents rulebook"; "before grouping together rulebook"; "for grouping together rulebook"; "after grouping together rulebook"; "before writing a paragraph about rulebook"; "for writing a paragraph about rulebook"; "after writing a paragraph about rulebook"; "before listing nondescript items rulebook"; "for listing nondescript items rulebook"; "after listing nondescript items rulebook"; "before printing the name of a dark room rulebook"; "for printing the name of a dark room rulebook"; "after printing the name of a dark room rulebook"; "before printing the description of a dark room rulebook"; "for printing the description of a dark room rulebook"; "after printing the description of a dark room rulebook"; "before printing the announcement of darkness rulebook"; "for printing the announcement of darkness rulebook"; "after printing the announcement of darkness rulebook"; "before printing the announcement of light rulebook"; "for printing the announcement of light rulebook"; "after printing the announcement of light rulebook"; "before printing a refusal to act in the dark rulebook"; "for printing a refusal to act in the dark rulebook"; "after printing a refusal to act in the dark rulebook"; "before constructing the status line rulebook"; "for constructing the status line rulebook"; "after constructing the status line rulebook"; "before printing the banner text rulebook"; "for printing the banner text rulebook"; "after printing the banner text rulebook"; "before reading a command rulebook"; "for reading a command rulebook"; "after reading a command rulebook"; "before deciding the scope rulebook"; "for deciding the scope rulebook"; "after deciding the scope rulebook"; "before deciding the concealed possessions rulebook"; "for deciding the concealed possessions rulebook"; "after deciding the concealed possessions rulebook"; "before deciding whether all includes rulebook"; "for deciding whether all includes rulebook"; "after deciding whether all includes rulebook"; "before clarifying the parser's choice rulebook"; "for clarifying the parser's choice rulebook"; "after clarifying the parser's choice rulebook"; "before asking which do you mean rulebook"; "for asking which do you mean rulebook"; "after asking which do you mean rulebook"; "before printing a parser error rulebook"; "for printing a parser error rulebook"; "after printing a parser error rulebook"; "before supplying a missing noun rulebook"; "for supplying a missing noun rulebook"; "after supplying a missing noun rulebook"; "before supplying a missing second noun rulebook"; "for supplying a missing second noun rulebook"; "after supplying a missing second noun rulebook"; "before implicitly taking rulebook"; "for implicitly taking rulebook"; "after implicitly taking rulebook"; "before amusing a victorious player rulebook"; "for amusing a victorious player rulebook"; "after amusing a victorious player rulebook"; "before printing the player's obituary rulebook"; "for printing the player's obituary rulebook"; "after printing the player's obituary rulebook"; "before handling the final question rulebook"; "for handling the final question rulebook"; "after handling the final question rulebook"; "before printing the locale description rulebook"; "for printing the locale description rulebook"; "after printing the locale description rulebook"; "before choosing notable locale objects rulebook"; "for choosing notable locale objects rulebook"; "after choosing notable locale objects rulebook"; "before printing a locale paragraph about rulebook"; "for printing a locale paragraph about rulebook"; "after printing a locale paragraph about rulebook"; "check taking inventory rulebook"; "carry out taking inventory rulebook"; "report taking inventory rulebook"; "check taking rulebook"; "carry out taking rulebook"; "report taking rulebook"; "check removing it from rulebook"; "carry out removing it from rulebook"; "report removing it from rulebook"; "check dropping rulebook"; "carry out dropping rulebook"; "report dropping rulebook"; "check putting it on rulebook"; "carry out putting it on rulebook"; "report putting it on rulebook"; "check inserting it into rulebook"; "carry out inserting it into rulebook"; "report inserting it into rulebook"; "check eating rulebook"; "carry out eating rulebook"; "report eating rulebook"; "check going rulebook"; "carry out going rulebook"; "report going rulebook"; "check entering rulebook"; "carry out entering rulebook"; "report entering rulebook"; "check exiting rulebook"; "carry out exiting rulebook"; "report exiting rulebook"; "check getting off rulebook"; "carry out getting off rulebook"; "report getting off rulebook"; "check looking rulebook"; "carry out looking rulebook"; "report looking rulebook"; "check examining rulebook"; "carry out examining rulebook"; "report examining rulebook"; "check looking under rulebook"; "carry out looking under rulebook"; "report looking under rulebook"; "check searching rulebook"; "carry out searching rulebook"; "report searching rulebook"; "check consulting it about rulebook"; "carry out consulting it about rulebook"; "report consulting it about rulebook"; "check locking it with rulebook"; "carry out locking it with rulebook"; "report locking it with rulebook"; "check unlocking it with rulebook"; "carry out unlocking it with rulebook"; "report unlocking it with rulebook"; "check switching on rulebook"; "carry out switching on rulebook"; "report switching on rulebook"; "check switching off rulebook"; "carry out switching off rulebook"; "report switching off rulebook"; "check opening rulebook"; "carry out opening rulebook"; "report opening rulebook"; "check closing rulebook"; "carry out closing rulebook"; "report closing rulebook"; "check wearing rulebook"; "carry out wearing rulebook"; "report wearing rulebook"; "check taking off rulebook"; "carry out taking off rulebook"; "report taking off rulebook"; "check giving it to rulebook"; "carry out giving it to rulebook"; "report giving it to rulebook"; "check showing it to rulebook"; "carry out showing it to rulebook"; "report showing it to rulebook"; "check waking rulebook"; "carry out waking rulebook"; "report waking rulebook"; "check throwing it at rulebook"; "carry out throwing it at rulebook"; "report throwing it at rulebook"; "check attacking rulebook"; "carry out attacking rulebook"; "report attacking rulebook"; "check kissing rulebook"; "carry out kissing rulebook"; "report kissing rulebook"; "check answering it that rulebook"; "carry out answering it that rulebook"; "report answering it that rulebook"; "check telling it about rulebook"; "carry out telling it about rulebook"; "report telling it about rulebook"; "check asking it about rulebook"; "carry out asking it about rulebook"; "report asking it about rulebook"; "check asking it for rulebook"; "carry out asking it for rulebook"; "report asking it for rulebook"; "check waiting rulebook"; "carry out waiting rulebook"; "report waiting rulebook"; "check touching rulebook"; "carry out touching rulebook"; "report touching rulebook"; "check waving rulebook"; "carry out waving rulebook"; "report waving rulebook"; "check pulling rulebook"; "carry out pulling rulebook"; "report pulling rulebook"; "check pushing rulebook"; "carry out pushing rulebook"; "report pushing rulebook"; "check turning rulebook"; "carry out turning rulebook"; "report turning rulebook"; "check pushing it to rulebook"; "carry out pushing it to rulebook"; "report pushing it to rulebook"; "check squeezing rulebook"; "carry out squeezing rulebook"; "report squeezing rulebook"; "check saying yes rulebook"; "carry out saying yes rulebook"; "report saying yes rulebook"; "check saying no rulebook"; "carry out saying no rulebook"; "report saying no rulebook"; "check burning rulebook"; "carry out burning rulebook"; "report burning rulebook"; "check waking up rulebook"; "carry out waking up rulebook"; "report waking up rulebook"; "check thinking rulebook"; "carry out thinking rulebook"; "report thinking rulebook"; "check smelling rulebook"; "carry out smelling rulebook"; "report smelling rulebook"; "check listening to rulebook"; "carry out listening to rulebook"; "report listening to rulebook"; "check tasting rulebook"; "carry out tasting rulebook"; "report tasting rulebook"; "check cutting rulebook"; "carry out cutting rulebook"; "report cutting rulebook"; "check jumping rulebook"; "carry out jumping rulebook"; "report jumping rulebook"; "check tying it to rulebook"; "carry out tying it to rulebook"; "report tying it to rulebook"; "check drinking rulebook"; "carry out drinking rulebook"; "report drinking rulebook"; "check saying sorry rulebook"; "carry out saying sorry rulebook"; "report saying sorry rulebook"; "check swinging rulebook"; "carry out swinging rulebook"; "report swinging rulebook"; "check rubbing rulebook"; "carry out rubbing rulebook"; "report rubbing rulebook"; "check setting it to rulebook"; "carry out setting it to rulebook"; "report setting it to rulebook"; "check waving hands rulebook"; "carry out waving hands rulebook"; "report waving hands rulebook"; "check buying rulebook"; "carry out buying rulebook"; "report buying rulebook"; "check climbing rulebook"; "carry out climbing rulebook"; "report climbing rulebook"; "check sleeping rulebook"; "carry out sleeping rulebook"; "report sleeping rulebook"; "check quitting the game rulebook"; "carry out quitting the game rulebook"; "report quitting the game rulebook"; "check saving the game rulebook"; "carry out saving the game rulebook"; "report saving the game rulebook"; "check restoring the game rulebook"; "carry out restoring the game rulebook"; "report restoring the game rulebook"; "check restarting the game rulebook"; "carry out restarting the game rulebook"; "report restarting the game rulebook"; "check verifying the story file rulebook"; "carry out verifying the story file rulebook"; "report verifying the story file rulebook"; "check switching the story transcript on rulebook"; "carry out switching the story transcript on rulebook"; "report switching the story transcript on rulebook"; "check switching the story transcript off rulebook"; "carry out switching the story transcript off rulebook"; "report switching the story transcript off rulebook"; "check requesting the story file version rulebook"; "carry out requesting the story file version rulebook"; "report requesting the story file version rulebook"; "check requesting the score rulebook"; "carry out requesting the score rulebook"; "report requesting the score rulebook"; "check preferring abbreviated room descriptions rulebook"; "carry out preferring abbreviated room descriptions rulebook"; "report preferring abbreviated room descriptions rulebook"; "check preferring unabbreviated room descriptions rulebook"; "carry out preferring unabbreviated room descriptions rulebook"; "report preferring unabbreviated room descriptions rulebook"; "check preferring sometimes abbreviated room descriptions rulebook"; "carry out preferring sometimes abbreviated room descriptions rulebook"; "report preferring sometimes abbreviated room descriptions rulebook"; "check switching score notification on rulebook"; "carry out switching score notification on rulebook"; "report switching score notification on rulebook"; "check switching score notification off rulebook"; "carry out switching score notification off rulebook"; "report switching score notification off rulebook"; "check requesting the pronoun meanings rulebook"; "carry out requesting the pronoun meanings rulebook"; "report requesting the pronoun meanings rulebook"; "check response tracking rulebook"; "carry out response tracking rulebook"; "report response tracking rulebook"; "check disabling response tracking rulebook"; "carry out disabling response tracking rulebook"; "report disabling response tracking rulebook"; "check requesting response info rulebook"; "carry out requesting response info rulebook"; "report requesting response info rulebook"; "before choice-displaying rulebook"; "for choice-displaying rulebook"; "after choice-displaying rulebook"; "before displaying available decisions rulebook"; "for displaying available decisions rulebook"; "after displaying available decisions rulebook"; "before selecting rulebook"; "for selecting rulebook"; "after selecting rulebook"; "Choice-priority rulebook"; "choice-switch rulebook"; "page-switch rulebook"; "page-toggle rulebook"; "page-output rulebook"; "general choose object rulebook"; "check choosing rulebook"; "carry out choosing rulebook"; "report choosing rulebook"; "check item-invoking rulebook"; "carry out item-invoking rulebook"; "report item-invoking rulebook"; "check toggling cyoa debug mode rulebook"; "carry out toggling cyoa debug mode rulebook"; "report toggling cyoa debug mode rulebook"; "before pausing the game rulebook"; "for pausing the game rulebook"; "after pausing the game rulebook"; "check commenting rulebook"; "carry out commenting rulebook"; "report commenting rulebook"; ];
-Array rulebook_var_creators --> [ 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; call_U392; 0; call_U395; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; ];
-Array rulebooks_array --> [ call_U141; call_U142; call_U143; call_U144; call_U145; call_U146; call_U147; call_U148; call_U149; call_U150; call_U151; call_U384; call_U385; call_U386; call_U387; call_U388; call_U389; call_U390; call_U391; call_U393; call_U394; call_U396; call_U397; call_U398; call_U399; call_U400; call_U401; call_U402; call_U403; call_U404; call_U405; call_U406; call_U407; call_U408; call_U409; call_U410; call_U411; call_U412; call_U413; call_U414; call_U415; call_U416; call_U417; call_U418; call_U419; call_U420; call_U421; call_U422; call_U423; call_U424; call_U425; call_U426; call_U427; call_U428; call_U429; call_U430; call_U431; call_U432; call_U433; call_U434; call_U435; call_U436; call_U437; call_U438; call_U439; call_U440; call_U441; call_U442; call_U443; call_U444; call_U445; call_U446; call_U447; call_U448; call_U449; call_U450; call_U451; call_U452; call_U453; call_U454; call_U455; call_U456; call_U457; call_U458; call_U459; call_U460; call_U462; call_U463; call_U464; call_U465; call_U466; call_U467; call_U468; call_U469; call_U470; call_U471; call_U472; call_U473; call_U474; call_U475; call_U476; call_U477; call_U478; call_U479; call_U480; call_U481; call_U482; call_U483; call_U484; call_U485; call_U486; call_U487; call_U488; call_U489; call_U490; call_U491; call_U492; call_U493; call_U494; call_U495; call_U496; call_U497; call_U498; call_U499; call_U500; call_U501; call_U502; call_U503; call_U504; call_U505; call_U506; call_U507; call_U508; call_U509; call_U510; call_U511; call_U512; call_U513; call_U514; call_U515; call_U516; call_U517; call_U518; call_U519; call_U520; call_U521; call_U522; call_U523; call_U524; call_U525; call_U526; call_U527; call_U528; call_U529; call_U530; call_U532; call_U533; call_U534; call_U535; call_U536; call_U537; call_U539; call_U540; call_U541; call_U542; call_U543; call_U544; call_U546; call_U547; call_U548; call_U550; call_U551; call_U552; call_U553; call_U554; call_U555; call_U556; call_U557; call_U558; call_U559; call_U560; call_U561; call_U562; call_U563; call_U564; call_U565; call_U566; call_U567; call_U568; call_U569; call_U570; call_U571; call_U572; call_U573; call_U574; call_U575; call_U576; call_U577; call_U578; call_U579; call_U580; call_U581; call_U582; call_U583; call_U584; call_U585; call_U586; call_U587; call_U588; call_U589; call_U590; call_U591; call_U592; call_U593; call_U594; call_U595; call_U596; call_U597; call_U598; call_U599; call_U600; call_U601; call_U602; call_U603; call_U604; call_U605; call_U606; call_U607; call_U608; call_U609; call_U610; call_U611; call_U612; call_U613; call_U614; call_U615; call_U616; call_U617; call_U618; call_U619; call_U620; call_U621; call_U622; call_U623; call_U624; call_U625; call_U626; call_U627; call_U628; call_U629; call_U630; call_U631; call_U632; call_U633; call_U634; call_U635; call_U636; call_U637; call_U638; call_U639; call_U640; call_U641; call_U642; call_U643; call_U644; call_U645; call_U646; call_U647; call_U648; call_U649; call_U650; call_U651; call_U652; call_U653; call_U654; call_U655; call_U656; call_U657; call_U658; call_U659; call_U660; call_U661; call_U662; call_U663; call_U664; call_U665; call_U666; call_U667; call_U668; call_U669; call_U670; call_U671; call_U672; call_U673; call_U674; call_U675; call_U676; call_U677; call_U678; call_U679; call_U680; call_U681; call_U682; call_U683; call_U684; call_U685; call_U686; call_U687; call_U688; call_U689; call_U690; call_U691; call_U692; call_U693; call_U694; call_U695; call_U696; call_U697; call_U698; call_U699; call_U700; call_U701; call_U702; call_U703; call_U704; call_U705; call_U706; call_U707; call_U708; call_U709; call_U710; call_U711; call_U712; call_U713; call_U714; call_U715; call_U716; call_U717; call_U718; call_U719; call_U720; call_U721; call_U722; call_U723; call_U724; call_U725; call_U726; call_U727; call_U728; call_U729; call_U730; call_U731; call_U732; call_U733; call_U734; call_U735; call_U736; call_U737; call_U738; call_U739; call_U740; call_U741; call_U1946; call_U1947; call_U1948; call_U1949; call_U1950; call_U1951; call_U1952; call_U1953; call_U1954; call_U2000; call_U2001; call_U2002; call_U2003; call_U2004; call_U2005; call_U2006; call_U2007; call_U2008; call_U2009; call_U2010; call_U2011; call_U2012; call_U2013; call_U2014; call_U2015; call_U2016; call_U2017; call_U2018; call_U2019; call_U2020; call_U2021; call_U2022; call_U2023; call_U2111; call_U2112; call_U2113; call_U2145; call_U2146; call_U2147; 0; ];
+Array RulebookNames --> [ "Startup rulebook"; "Shutdown rulebook"; "before starting the virtual machine rulebook"; "for starting the virtual machine rulebook"; "after starting the virtual machine rulebook"; "before printing the name rulebook"; "for printing the name rulebook"; "after printing the name rulebook"; "before printing the plural name rulebook"; "for printing the plural name rulebook"; "after printing the plural name rulebook"; "Turn sequence rulebook"; "Scene changing rulebook"; "When play begins rulebook"; "When play ends rulebook"; "When scene begins rulebook"; "When scene ends rulebook"; "Every turn rulebook"; "Action-processing rulebook"; "Setting action variables rulebook"; "specific action-processing rulebook"; "player's action awareness rulebook"; "Accessibility rulebook"; "Reaching inside rulebook"; "Reaching outside rulebook"; "Visibility rulebook"; "Persuasion rulebook"; "Unsuccessful attempt by rulebook"; "Before rulebook"; "Instead rulebook"; "Check rulebook"; "Carry out rulebook"; "After rulebook"; "Report rulebook"; "does the player mean rulebook"; "multiple action processing rulebook"; "when Entire Game begins rulebook"; "when Entire Game ends rulebook"; "before issuing the response text rulebook"; "for issuing the response text rulebook"; "after issuing the response text rulebook"; "before printing a number rulebook"; "for printing a number rulebook"; "after printing a number rulebook"; "before printing room description details rulebook"; "for printing room description details rulebook"; "after printing room description details rulebook"; "before printing inventory details rulebook"; "for printing inventory details rulebook"; "after printing inventory details rulebook"; "before listing contents rulebook"; "for listing contents rulebook"; "after listing contents rulebook"; "before grouping together rulebook"; "for grouping together rulebook"; "after grouping together rulebook"; "before writing a paragraph about rulebook"; "for writing a paragraph about rulebook"; "after writing a paragraph about rulebook"; "before listing nondescript items rulebook"; "for listing nondescript items rulebook"; "after listing nondescript items rulebook"; "before printing the name of a dark room rulebook"; "for printing the name of a dark room rulebook"; "after printing the name of a dark room rulebook"; "before printing the description of a dark room rulebook"; "for printing the description of a dark room rulebook"; "after printing the description of a dark room rulebook"; "before printing the announcement of darkness rulebook"; "for printing the announcement of darkness rulebook"; "after printing the announcement of darkness rulebook"; "before printing the announcement of light rulebook"; "for printing the announcement of light rulebook"; "after printing the announcement of light rulebook"; "before printing a refusal to act in the dark rulebook"; "for printing a refusal to act in the dark rulebook"; "after printing a refusal to act in the dark rulebook"; "before constructing the status line rulebook"; "for constructing the status line rulebook"; "after constructing the status line rulebook"; "before printing the banner text rulebook"; "for printing the banner text rulebook"; "after printing the banner text rulebook"; "before reading a command rulebook"; "for reading a command rulebook"; "after reading a command rulebook"; "before deciding the scope rulebook"; "for deciding the scope rulebook"; "after deciding the scope rulebook"; "before deciding the concealed possessions rulebook"; "for deciding the concealed possessions rulebook"; "after deciding the concealed possessions rulebook"; "before deciding whether all includes rulebook"; "for deciding whether all includes rulebook"; "after deciding whether all includes rulebook"; "before clarifying the parser's choice rulebook"; "for clarifying the parser's choice rulebook"; "after clarifying the parser's choice rulebook"; "before asking which do you mean rulebook"; "for asking which do you mean rulebook"; "after asking which do you mean rulebook"; "before printing a parser error rulebook"; "for printing a parser error rulebook"; "after printing a parser error rulebook"; "before supplying a missing noun rulebook"; "for supplying a missing noun rulebook"; "after supplying a missing noun rulebook"; "before supplying a missing second noun rulebook"; "for supplying a missing second noun rulebook"; "after supplying a missing second noun rulebook"; "before implicitly taking rulebook"; "for implicitly taking rulebook"; "after implicitly taking rulebook"; "before amusing a victorious player rulebook"; "for amusing a victorious player rulebook"; "after amusing a victorious player rulebook"; "before printing the player's obituary rulebook"; "for printing the player's obituary rulebook"; "after printing the player's obituary rulebook"; "before handling the final question rulebook"; "for handling the final question rulebook"; "after handling the final question rulebook"; "before printing the locale description rulebook"; "for printing the locale description rulebook"; "after printing the locale description rulebook"; "before choosing notable locale objects rulebook"; "for choosing notable locale objects rulebook"; "after choosing notable locale objects rulebook"; "before printing a locale paragraph about rulebook"; "for printing a locale paragraph about rulebook"; "after printing a locale paragraph about rulebook"; "check taking inventory rulebook"; "carry out taking inventory rulebook"; "report taking inventory rulebook"; "check taking rulebook"; "carry out taking rulebook"; "report taking rulebook"; "check removing it from rulebook"; "carry out removing it from rulebook"; "report removing it from rulebook"; "check dropping rulebook"; "carry out dropping rulebook"; "report dropping rulebook"; "check putting it on rulebook"; "carry out putting it on rulebook"; "report putting it on rulebook"; "check inserting it into rulebook"; "carry out inserting it into rulebook"; "report inserting it into rulebook"; "check eating rulebook"; "carry out eating rulebook"; "report eating rulebook"; "check going rulebook"; "carry out going rulebook"; "report going rulebook"; "check entering rulebook"; "carry out entering rulebook"; "report entering rulebook"; "check exiting rulebook"; "carry out exiting rulebook"; "report exiting rulebook"; "check getting off rulebook"; "carry out getting off rulebook"; "report getting off rulebook"; "check looking rulebook"; "carry out looking rulebook"; "report looking rulebook"; "check examining rulebook"; "carry out examining rulebook"; "report examining rulebook"; "check looking under rulebook"; "carry out looking under rulebook"; "report looking under rulebook"; "check searching rulebook"; "carry out searching rulebook"; "report searching rulebook"; "check consulting it about rulebook"; "carry out consulting it about rulebook"; "report consulting it about rulebook"; "check locking it with rulebook"; "carry out locking it with rulebook"; "report locking it with rulebook"; "check unlocking it with rulebook"; "carry out unlocking it with rulebook"; "report unlocking it with rulebook"; "check switching on rulebook"; "carry out switching on rulebook"; "report switching on rulebook"; "check switching off rulebook"; "carry out switching off rulebook"; "report switching off rulebook"; "check opening rulebook"; "carry out opening rulebook"; "report opening rulebook"; "check closing rulebook"; "carry out closing rulebook"; "report closing rulebook"; "check wearing rulebook"; "carry out wearing rulebook"; "report wearing rulebook"; "check taking off rulebook"; "carry out taking off rulebook"; "report taking off rulebook"; "check giving it to rulebook"; "carry out giving it to rulebook"; "report giving it to rulebook"; "check showing it to rulebook"; "carry out showing it to rulebook"; "report showing it to rulebook"; "check waking rulebook"; "carry out waking rulebook"; "report waking rulebook"; "check throwing it at rulebook"; "carry out throwing it at rulebook"; "report throwing it at rulebook"; "check attacking rulebook"; "carry out attacking rulebook"; "report attacking rulebook"; "check kissing rulebook"; "carry out kissing rulebook"; "report kissing rulebook"; "check answering it that rulebook"; "carry out answering it that rulebook"; "report answering it that rulebook"; "check telling it about rulebook"; "carry out telling it about rulebook"; "report telling it about rulebook"; "check asking it about rulebook"; "carry out asking it about rulebook"; "report asking it about rulebook"; "check asking it for rulebook"; "carry out asking it for rulebook"; "report asking it for rulebook"; "check waiting rulebook"; "carry out waiting rulebook"; "report waiting rulebook"; "check touching rulebook"; "carry out touching rulebook"; "report touching rulebook"; "check waving rulebook"; "carry out waving rulebook"; "report waving rulebook"; "check pulling rulebook"; "carry out pulling rulebook"; "report pulling rulebook"; "check pushing rulebook"; "carry out pushing rulebook"; "report pushing rulebook"; "check turning rulebook"; "carry out turning rulebook"; "report turning rulebook"; "check pushing it to rulebook"; "carry out pushing it to rulebook"; "report pushing it to rulebook"; "check squeezing rulebook"; "carry out squeezing rulebook"; "report squeezing rulebook"; "check saying yes rulebook"; "carry out saying yes rulebook"; "report saying yes rulebook"; "check saying no rulebook"; "carry out saying no rulebook"; "report saying no rulebook"; "check burning rulebook"; "carry out burning rulebook"; "report burning rulebook"; "check waking up rulebook"; "carry out waking up rulebook"; "report waking up rulebook"; "check thinking rulebook"; "carry out thinking rulebook"; "report thinking rulebook"; "check smelling rulebook"; "carry out smelling rulebook"; "report smelling rulebook"; "check listening to rulebook"; "carry out listening to rulebook"; "report listening to rulebook"; "check tasting rulebook"; "carry out tasting rulebook"; "report tasting rulebook"; "check cutting rulebook"; "carry out cutting rulebook"; "report cutting rulebook"; "check jumping rulebook"; "carry out jumping rulebook"; "report jumping rulebook"; "check tying it to rulebook"; "carry out tying it to rulebook"; "report tying it to rulebook"; "check drinking rulebook"; "carry out drinking rulebook"; "report drinking rulebook"; "check saying sorry rulebook"; "carry out saying sorry rulebook"; "report saying sorry rulebook"; "check swinging rulebook"; "carry out swinging rulebook"; "report swinging rulebook"; "check rubbing rulebook"; "carry out rubbing rulebook"; "report rubbing rulebook"; "check setting it to rulebook"; "carry out setting it to rulebook"; "report setting it to rulebook"; "check waving hands rulebook"; "carry out waving hands rulebook"; "report waving hands rulebook"; "check buying rulebook"; "carry out buying rulebook"; "report buying rulebook"; "check climbing rulebook"; "carry out climbing rulebook"; "report climbing rulebook"; "check sleeping rulebook"; "carry out sleeping rulebook"; "report sleeping rulebook"; "check quitting the game rulebook"; "carry out quitting the game rulebook"; "report quitting the game rulebook"; "check saving the game rulebook"; "carry out saving the game rulebook"; "report saving the game rulebook"; "check restoring the game rulebook"; "carry out restoring the game rulebook"; "report restoring the game rulebook"; "check restarting the game rulebook"; "carry out restarting the game rulebook"; "report restarting the game rulebook"; "check verifying the story file rulebook"; "carry out verifying the story file rulebook"; "report verifying the story file rulebook"; "check switching the story transcript on rulebook"; "carry out switching the story transcript on rulebook"; "report switching the story transcript on rulebook"; "check switching the story transcript off rulebook"; "carry out switching the story transcript off rulebook"; "report switching the story transcript off rulebook"; "check requesting the story file version rulebook"; "carry out requesting the story file version rulebook"; "report requesting the story file version rulebook"; "check requesting the score rulebook"; "carry out requesting the score rulebook"; "report requesting the score rulebook"; "check preferring abbreviated room descriptions rulebook"; "carry out preferring abbreviated room descriptions rulebook"; "report preferring abbreviated room descriptions rulebook"; "check preferring unabbreviated room descriptions rulebook"; "carry out preferring unabbreviated room descriptions rulebook"; "report preferring unabbreviated room descriptions rulebook"; "check preferring sometimes abbreviated room descriptions rulebook"; "carry out preferring sometimes abbreviated room descriptions rulebook"; "report preferring sometimes abbreviated room descriptions rulebook"; "check switching score notification on rulebook"; "carry out switching score notification on rulebook"; "report switching score notification on rulebook"; "check switching score notification off rulebook"; "carry out switching score notification off rulebook"; "report switching score notification off rulebook"; "check requesting the pronoun meanings rulebook"; "carry out requesting the pronoun meanings rulebook"; "report requesting the pronoun meanings rulebook"; "check response tracking rulebook"; "carry out response tracking rulebook"; "report response tracking rulebook"; "check disabling response tracking rulebook"; "carry out disabling response tracking rulebook"; "report disabling response tracking rulebook"; "check requesting response info rulebook"; "carry out requesting response info rulebook"; "report requesting response info rulebook"; "before choice-displaying rulebook"; "for choice-displaying rulebook"; "after choice-displaying rulebook"; "before displaying available decisions rulebook"; "for displaying available decisions rulebook"; "after displaying available decisions rulebook"; "before selecting rulebook"; "for selecting rulebook"; "after selecting rulebook"; "Choice-priority rulebook"; "choice-switch rulebook"; "page-switch rulebook"; "page-toggle rulebook"; "page-output rulebook"; "general choose object rulebook"; "check choosing rulebook"; "carry out choosing rulebook"; "report choosing rulebook"; "check item-invoking rulebook"; "carry out item-invoking rulebook"; "report item-invoking rulebook"; "check toggling cyoa debug mode rulebook"; "carry out toggling cyoa debug mode rulebook"; "report toggling cyoa debug mode rulebook"; "before pausing the game rulebook"; "for pausing the game rulebook"; "after pausing the game rulebook"; "check commenting rulebook"; "carry out commenting rulebook"; "report commenting rulebook"; "check summoning rulebook"; "carry out summoning rulebook"; "report summoning rulebook"; ];
+Array rulebook_var_creators --> [ 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; call_U392; 0; call_U395; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; ];
+Array rulebooks_array --> [ call_U141; call_U142; call_U143; call_U144; call_U145; call_U146; call_U147; call_U148; call_U149; call_U150; call_U151; call_U384; call_U385; call_U386; call_U387; call_U388; call_U389; call_U390; call_U391; call_U393; call_U394; call_U396; call_U397; call_U398; call_U399; call_U400; call_U401; call_U402; call_U403; call_U404; call_U405; call_U406; call_U407; call_U408; call_U409; call_U410; call_U411; call_U412; call_U413; call_U414; call_U415; call_U416; call_U417; call_U418; call_U419; call_U420; call_U421; call_U422; call_U423; call_U424; call_U425; call_U426; call_U427; call_U428; call_U429; call_U430; call_U431; call_U432; call_U433; call_U434; call_U435; call_U436; call_U437; call_U438; call_U439; call_U440; call_U441; call_U442; call_U443; call_U444; call_U445; call_U446; call_U447; call_U448; call_U449; call_U450; call_U451; call_U452; call_U453; call_U454; call_U455; call_U456; call_U457; call_U458; call_U459; call_U460; call_U462; call_U463; call_U464; call_U465; call_U466; call_U467; call_U468; call_U469; call_U470; call_U471; call_U472; call_U473; call_U474; call_U475; call_U476; call_U477; call_U478; call_U479; call_U480; call_U481; call_U482; call_U483; call_U484; call_U485; call_U486; call_U487; call_U488; call_U489; call_U490; call_U491; call_U492; call_U493; call_U494; call_U495; call_U496; call_U497; call_U498; call_U499; call_U500; call_U501; call_U502; call_U503; call_U504; call_U505; call_U506; call_U507; call_U508; call_U509; call_U510; call_U511; call_U512; call_U513; call_U514; call_U515; call_U516; call_U517; call_U518; call_U519; call_U520; call_U521; call_U522; call_U523; call_U524; call_U525; call_U526; call_U527; call_U528; call_U529; call_U530; call_U532; call_U533; call_U534; call_U535; call_U536; call_U537; call_U539; call_U540; call_U541; call_U542; call_U543; call_U544; call_U546; call_U547; call_U548; call_U550; call_U551; call_U552; call_U553; call_U554; call_U555; call_U556; call_U557; call_U558; call_U559; call_U560; call_U561; call_U562; call_U563; call_U564; call_U565; call_U566; call_U567; call_U568; call_U569; call_U570; call_U571; call_U572; call_U573; call_U574; call_U575; call_U576; call_U577; call_U578; call_U579; call_U580; call_U581; call_U582; call_U583; call_U584; call_U585; call_U586; call_U587; call_U588; call_U589; call_U590; call_U591; call_U592; call_U593; call_U594; call_U595; call_U596; call_U597; call_U598; call_U599; call_U600; call_U601; call_U602; call_U603; call_U604; call_U605; call_U606; call_U607; call_U608; call_U609; call_U610; call_U611; call_U612; call_U613; call_U614; call_U615; call_U616; call_U617; call_U618; call_U619; call_U620; call_U621; call_U622; call_U623; call_U624; call_U625; call_U626; call_U627; call_U628; call_U629; call_U630; call_U631; call_U632; call_U633; call_U634; call_U635; call_U636; call_U637; call_U638; call_U639; call_U640; call_U641; call_U642; call_U643; call_U644; call_U645; call_U646; call_U647; call_U648; call_U649; call_U650; call_U651; call_U652; call_U653; call_U654; call_U655; call_U656; call_U657; call_U658; call_U659; call_U660; call_U661; call_U662; call_U663; call_U664; call_U665; call_U666; call_U667; call_U668; call_U669; call_U670; call_U671; call_U672; call_U673; call_U674; call_U675; call_U676; call_U677; call_U678; call_U679; call_U680; call_U681; call_U682; call_U683; call_U684; call_U685; call_U686; call_U687; call_U688; call_U689; call_U690; call_U691; call_U692; call_U693; call_U694; call_U695; call_U696; call_U697; call_U698; call_U699; call_U700; call_U701; call_U702; call_U703; call_U704; call_U705; call_U706; call_U707; call_U708; call_U709; call_U710; call_U711; call_U712; call_U713; call_U714; call_U715; call_U716; call_U717; call_U718; call_U719; call_U720; call_U721; call_U722; call_U723; call_U724; call_U725; call_U726; call_U727; call_U728; call_U729; call_U730; call_U731; call_U732; call_U733; call_U734; call_U735; call_U736; call_U737; call_U738; call_U739; call_U740; call_U741; call_U1946; call_U1947; call_U1948; call_U1949; call_U1950; call_U1951; call_U1952; call_U1953; call_U1954; call_U2000; call_U2001; call_U2002; call_U2003; call_U2004; call_U2005; call_U2006; call_U2007; call_U2008; call_U2009; call_U2010; call_U2011; call_U2012; call_U2013; call_U2014; call_U2015; call_U2016; call_U2017; call_U2018; call_U2019; call_U2020; call_U2021; call_U2022; call_U2023; call_U2111; call_U2112; call_U2113; call_U2145; call_U2146; call_U2147; call_U2148; call_U2149; call_U2150; 0; ];
 Array ResponseTexts --> [ ts_array_U1; ts_array_U2; ts_array_U3; ts_array_U4; ts_array_U5; ts_array_U6; ts_array_U7; ts_array_U8; ts_array_U9; ts_array_U10; ts_array_U11; ts_array_U12; ts_array_U13; ts_array_U14; ts_array_U15; ts_array_U16; ts_array_U17; ts_array_U18; ts_array_U19; ts_array_U20; ts_array_U21; ts_array_U22; ts_array_U23; ts_array_U24; ts_array_U25; ts_array_U26; ts_array_U27; ts_array_U28; ts_array_U29; ts_array_U30; ts_array_U31; ts_array_U32; ts_array_U33; ts_array_U34; ts_array_U35; ts_array_U36; ts_array_U37; ts_array_U38; ts_array_U39; ts_array_U40; ts_array_U41; ts_array_U42; ts_array_U43; ts_array_U44; ts_array_U45; ts_array_U46; ts_array_U47; ts_array_U48; ts_array_U49; ts_array_U50; ts_array_U51; ts_array_U52; ts_array_U53; ts_array_U54; ts_array_U55; ts_array_U56; ts_array_U57; ts_array_U58; ts_array_U59; ts_array_U60; ts_array_U61; ts_array_U62; ts_array_U63; ts_array_U64; ts_array_U65; ts_array_U66; ts_array_U67; ts_array_U68; ts_array_U69; ts_array_U70; ts_array_U71; ts_array_U72; ts_array_U73; ts_array_U74; ts_array_U75; ts_array_U76; ts_array_U77; ts_array_U78; ts_array_U79; ts_array_U80; ts_array_U81; ts_array_U82; ts_array_U83; ts_array_U84; ts_array_U85; ts_array_U86; ts_array_U87; ts_array_U88; ts_array_U89; ts_array_U90; ts_array_U91; ts_array_U92; ts_array_U93; ts_array_U94; ts_array_U95; ts_array_U96; ts_array_U97; ts_array_U98; ts_array_U99; ts_array_U100; ts_array_U101; ts_array_U102; ts_array_U103; ts_array_U104; ts_array_U105; ts_array_U106; ts_array_U107; ts_array_U108; ts_array_U109; ts_array_U110; ts_array_U111; ts_array_U112; ts_array_U113; ts_array_U114; ts_array_U115; ts_array_U116; ts_array_U117; ts_array_U118; ts_array_U119; ts_array_U120; ts_array_U121; ts_array_U122; ts_array_U123; ts_array_U124; ts_array_U125; ts_array_U126; ts_array_U127; ts_array_U128; ts_array_U129; ts_array_U130; ts_array_U131; ts_array_U132; ts_array_U133; ts_array_U134; ts_array_U135; ts_array_U136; ts_array_U137; ts_array_U138; ts_array_U139; ts_array_U140; ts_array_U141; ts_array_U142; ts_array_U143; ts_array_U144; ts_array_U145; ts_array_U146; ts_array_U147; ts_array_U148; ts_array_U149; ts_array_U150; ts_array_U151; ts_array_U152; ts_array_U153; ts_array_U154; ts_array_U155; ts_array_U156; ts_array_U157; ts_array_U158; ts_array_U159; ts_array_U160; ts_array_U161; ts_array_U162; ts_array_U163; ts_array_U164; ts_array_U165; ts_array_U166; ts_array_U167; ts_array_U168; ts_array_U169; ts_array_U170; ts_array_U171; ts_array_U172; ts_array_U173; ts_array_U174; ts_array_U175; ts_array_U176; ts_array_U177; ts_array_U178; ts_array_U179; ts_array_U180; ts_array_U181; ts_array_U182; ts_array_U183; ts_array_U184; ts_array_U185; ts_array_U186; ts_array_U187; ts_array_U188; ts_array_U189; ts_array_U190; ts_array_U191; ts_array_U192; ts_array_U193; ts_array_U194; ts_array_U195; ts_array_U196; ts_array_U197; ts_array_U198; ts_array_U199; ts_array_U200; ts_array_U201; ts_array_U202; ts_array_U203; ts_array_U204; ts_array_U205; ts_array_U206; ts_array_U207; ts_array_U208; ts_array_U209; ts_array_U210; ts_array_U211; ts_array_U212; ts_array_U213; ts_array_U214; ts_array_U215; ts_array_U216; ts_array_U217; ts_array_U218; ts_array_U219; ts_array_U220; ts_array_U221; ts_array_U222; ts_array_U223; ts_array_U224; ts_array_U225; ts_array_U226; ts_array_U227; ts_array_U228; ts_array_U229; ts_array_U230; ts_array_U231; ts_array_U232; ts_array_U233; ts_array_U234; ts_array_U235; ts_array_U236; ts_array_U237; ts_array_U238; ts_array_U239; ts_array_U240; ts_array_U241; ts_array_U242; ts_array_U243; ts_array_U244; ts_array_U245; ts_array_U246; ts_array_U247; ts_array_U248; ts_array_U249; ts_array_U250; ts_array_U251; ts_array_U252; ts_array_U253; ts_array_U254; ts_array_U255; ts_array_U256; ts_array_U257; ts_array_U258; ts_array_U259; ts_array_U260; ts_array_U261; ts_array_U262; ts_array_U263; ts_array_U264; ts_array_U265; ts_array_U266; ts_array_U267; ts_array_U268; ts_array_U269; ts_array_U270; ts_array_U271; ts_array_U272; ts_array_U273; ts_array_U274; ts_array_U275; ts_array_U276; ts_array_U277; ts_array_U278; ts_array_U279; ts_array_U280; ts_array_U281; ts_array_U282; ts_array_U283; ts_array_U284; ts_array_U285; ts_array_U286; ts_array_U287; ts_array_U288; ts_array_U289; ts_array_U290; ts_array_U291; ts_array_U292; ts_array_U293; ts_array_U294; ts_array_U295; ts_array_U296; ts_array_U297; ts_array_U298; ts_array_U299; ts_array_U300; ts_array_U301; ts_array_U302; ts_array_U303; ts_array_U304; ts_array_U305; ts_array_U306; ts_array_U307; ts_array_U308; ts_array_U309; ts_array_U310; ts_array_U311; ts_array_U312; ts_array_U313; ts_array_U314; ts_array_U315; ts_array_U316; ts_array_U317; ts_array_U318; ts_array_U319; ts_array_U320; ts_array_U321; ts_array_U322; ts_array_U323; ts_array_U324; ts_array_U325; ts_array_U326; ts_array_U327; ts_array_U328; ts_array_U329; ts_array_U330; ts_array_U331; ts_array_U332; ts_array_U333; ts_array_U334; ts_array_U335; ts_array_U336; ts_array_U337; ts_array_U338; ts_array_U339; ts_array_U340; ts_array_U341; ts_array_U342; ts_array_U343; ts_array_U344; ts_array_U345; ts_array_U346; ts_array_U347; ts_array_U348; ts_array_U349; ts_array_U350; ts_array_U351; ts_array_U352; ts_array_U353; ts_array_U354; ts_array_U355; ts_array_U356; ts_array_U357; ts_array_U358; ts_array_U359; ts_array_U360; ts_array_U361; ts_array_U362; ts_array_U363; ts_array_U364; ts_array_U365; ts_array_U366; ts_array_U367; ts_array_U368; ts_array_U369; ts_array_U370; ts_array_U371; ts_array_U372; ts_array_U373; ts_array_U374; ts_array_U375; ts_array_U376; ts_array_U377; ts_array_U378; ts_array_U379; ts_array_U380; ts_array_U381; ts_array_U382; ts_array_U383; ts_array_U384; ts_array_U385; ts_array_U386; ts_array_U387; ts_array_U388; ts_array_U389; ts_array_U390; ts_array_U391; ts_array_U392; ts_array_U393; ts_array_U394; ts_array_U395; ts_array_U396; ts_array_U397; ts_array_U398; ts_array_U399; ts_array_U400; ts_array_U401; ts_array_U402; ts_array_U403; ts_array_U404; ts_array_U405; ts_array_U406; ts_array_U407; ts_array_U408; 0; 0; ];
 Array ResponseDivisions --> [ "Standard Rules"; 1; 393; "Hybrid Choices by AW Freyr"; 394; 407; "Basic Screen Effects by Emily Short"; 408; 408; 0; 0; 0; ];
 Array TableOfTables --> [ TheEmptyTable; table_data_U1; table_data_U2; table_data_U3; table_data_U4; 0; 0; ];
-Array TB_Blanks -> [ 0; 0; 0; 4; 27; 7; 255; 255; 255; 255; 1; 255; 255; 255; 255; 1; 0; 0; 0; 0; 0; ];
+Array TB_Blanks -> [ 0; 0; 0; 4; 27; 15; 255; 255; 255; 255; 1; 255; 255; 255; 255; 1; 0; 0; 0; 0; 0; ];
 Array closure_data_U1 --> [ DK4_phrase_real_number____re; call_U157; "rsqr function"; ];
 Array closure_data_U2 --> [ DK4_phrase_real_number____re; call_U158; "arcsinh function"; ];
 Array closure_data_U3 --> [ DK4_phrase_real_number____re; call_U159; "arccosh function"; ];
@@ -5559,8 +5580,8 @@ Array column_data_U3 table [ column_bits_U3; column_blanks_U3; Consult_Grammar1;
 Array column_data_U4 table [ column_bits_U4; column_blanks_U4; IMMEDIATELY_RESTART_VM_R; IMMEDIATELY_RESTORE_SAVED_R; TABLE_NOVALUE; IMMEDIATELY_QUIT_R; IMMEDIATELY_UNDO_R; ];
 Array column_data_U5 table [ column_bits_U5; column_blanks_U5; TABLE_NOVALUE; TABLE_NOVALUE; V29_amusing_a_victorious_play; TABLE_NOVALUE; TABLE_NOVALUE; ];
 Array table_data_U1 table [ column_data_U1; column_data_U2; column_data_U3; column_data_U4; column_data_U5; ];
-Array column_data_U6 table [ column_bits_U6; NULL; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; ];
-Array column_data_U7 table [ column_bits_U7; column_blanks_U6; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; ];
+Array column_data_U6 table [ column_bits_U6; NULL; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; ];
+Array column_data_U7 table [ column_bits_U7; column_blanks_U6; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; ];
 Array table_data_U2 table [ column_data_U6; column_data_U7; ];
 Array label_associated_storage_U1247 --> [ 0; 0; ];
 Array bc_U161 --> [ default_value_U1; 0; ];
@@ -5650,17 +5671,26 @@ Array bc_U186 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U69; ];
 Array bc_U187 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U70; ];
 Array bc_U188 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U189 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array ts_array_U411 --> [ CONSTANT_PACKED_TEXT_STORAGE; call_U2150; ];
-Array ts_array_U412 --> [ CONSTANT_PACKED_TEXT_STORAGE; call_U2151; ];
-Array ts_array_U413 --> [ CONSTANT_PACKED_TEXT_STORAGE; call_U2152; ];
+Array inline_U17 --> [ 0; 0; 0; 0; 0; 0; ];
 Array bc_U190 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U71; ];
-Array ts_array_U414 --> [ CONSTANT_PACKED_TEXT_STORAGE; call_U2160; ];
-Array ts_array_U415 --> [ CONSTANT_PACKED_TEXT_STORAGE; call_U2162; ];
+Array ts_array_U411 --> [ CONSTANT_PACKED_TEXT_STORAGE; call_U2152; ];
+Array bc_U191 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U192 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U72; ];
+Array bc_U193 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U194 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array ts_array_U412 --> [ CONSTANT_PACKED_TEXT_STORAGE; call_U2161; ];
+Array ts_array_U413 --> [ CONSTANT_PACKED_TEXT_STORAGE; call_U2162; ];
+Array ts_array_U414 --> [ CONSTANT_PACKED_TEXT_STORAGE; call_U2163; ];
+Array bc_U195 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U73; ];
+Array label_associated_storage_U1328 --> [ 0; 0; ];
+Array label_associated_storage_U1329 --> [ 0; 0; ];
+Array ts_array_U415 --> [ CONSTANT_PACKED_TEXT_STORAGE; call_U2174; ];
+Array ts_array_U416 --> [ CONSTANT_PACKED_TEXT_STORAGE; call_U2176; ];
 Array DK4_phrase_real_number____re --> [ PHRASE_TY; 2; REAL_NUMBER_TY; ];
 Array DK5_phrase_real_number____nu --> [ PHRASE_TY; 2; NUMBER_TY; ];
-Array bc_U191 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U72; ];
-Array bc_U192 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U73; ];
-Array bc_U193 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U74; ];
+Array bc_U196 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U74; ];
+Array bc_U197 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U75; ];
+Array bc_U198 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U76; ];
 Array UUID_ARRAY -> [ 45; 'U'; 'U'; 'I'; 'D'; ':'; '/'; '/'; '3'; '6'; 'D'; 'D'; '0'; '9'; 'B'; '2'; '-'; '2'; 'D'; '5'; 'C'; '-'; '4'; '0'; 'A'; 'A'; '-'; '8'; '3'; '4'; '4'; '-'; 'F'; 'E'; '2'; 'F'; 'C'; '1'; 'D'; 'F'; 'F'; '3'; 'E'; 'A'; '/'; '/'; ];
 Array InitialSituation --> [ I_pc_U1; I_room1_U1; I_room1_U1; 540; 0; ];
 Array Map_Storage --> [ 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; ];
@@ -5678,6 +5708,7 @@ Array name_array11 --> [ 'inside'; 'directions//p'; 'in'; ];
 Array name_array12 --> [ 'outside'; 'directions//p'; 'out'; ];
 Array name_array13 --> [ 'yourself'; 'people//p'; ];
 Array name_array14 --> [ 'room1'; 'rooms//p'; ];
+Array name_array15 --> [ 'grey'; 'mist'; 'backdrops//p'; ];
 Array LocalParking --> [ 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; ];
 Array PowersOfTwo_TB --> [ 2048; 1024; 512; 256; 128; 64; 32; 16; 8; 4; 2; 1; ];
 Array IncreasingPowersOfTwo_TB --> [ 1; 2; 4; 8; 16; 32; 64; 128; 256; 512; 1024; 2048; 4096; 8192; 16384; 32768; ];
@@ -5721,7 +5752,7 @@ Array scene_endings --> 3; ! blank with extent 3
 Array scene_latest_ending --> 3; ! blank with extent 3
 Array multiple_object --> 100; ! blank with extent 100
 Array parser_results --> 16; ! blank with extent 16
-Array requisition_stack --> 48; ! blank with extent 48
+Array requisition_stack --> 51; ! blank with extent 51
 Array LWI_Storage --> [ 1; -1; Computed_Constant_Value_4_U2; ];
 Array Details_of_Specific_Action --> 5; ! blank with extent 5
 Array activities_stack --> 20; ! blank with extent 20
@@ -6200,7 +6231,7 @@ K8_person -> I_pc_U1    with short_name bc_U184
     with before NULL
     with KD_Count 8
     with IK2_Count 1
-    with K2_thing_Next 0
+    with K2_thing_Next I_grey_mist_U1
     with IK8_Count 1
     with K8_person_Next 0
     with action_bitmap 0 0 0 0 0 0
@@ -6208,6 +6239,25 @@ K8_person -> I_pc_U1    with short_name bc_U184
     with plural bc_U187
     with article bc_U188
     with list_together bc_U189
+;
+K7_backdrop I_grey_mist_U1    with short_name bc_U190
+    with description ts_array_U411
+    has ~P_summoned
+    with vector 0
+    with found_in FoundEverywhere
+    has mark_as_thing
+    with KD_Count 7
+    with IK2_Count 2
+    with K2_thing_Next 0
+    with IK7_Count 0
+    with K7_backdrop_Next 0
+    with action_bitmap 0 0 0 0 0 0
+    with parse_name parse_name17
+    with name 'grey' 'mist' 'backdrops//p'
+    with initial bc_U191
+    with plural bc_U192
+    with article bc_U193
+    with list_together bc_U194
 ;
 #ifndef before; Constant before = 0; #endif;
 #ifndef action_bitmap; Constant action_bitmap = 0; #endif;
@@ -8443,6 +8493,9 @@ Global max_z_object;
         ##A_commenting:
             A_commentingDbg(n, s, for_say);
             ;
+        ##A_summoning:
+            A_summoningDbg(n, s, for_say);
+            ;
     }
 ];
 [ TestSinglePastState past_flag pt turn_end wanted old new trips consecutives;
@@ -8493,6 +8546,7 @@ Global max_z_object;
     }
 ];
 [ ShowMeInstanceDetails which na t_0;
+    (na = call_U2151(which, na, t_0));
     return na;
 ];
 [ DefaultValueOfKOV sk k;
@@ -9093,7 +9147,7 @@ Global max_z_object;
     return (rulebook_var_creators-->(rb));
 ];
 [ RulePrintingRule R;
-    if ((((R >= 0)) && ((R < 401)))) {
+    if ((((R >= 0)) && ((R < 404)))) {
         print (string) (RulebookNames-->(R));
     } else {
         if ((R == FINAL_CODE_STARTUP_R)) {
@@ -10632,15 +10686,27 @@ Global max_z_object;
             print "standard pausing the game rule";
             rtrue;
         }
-        if ((R == call_U2148)) {
+        if ((R == call_U2159)) {
             print "Report commenting";
             rtrue;
         }
-        if ((R == call_U2149)) {
+        if ((R == call_U2160)) {
             print "After reading a command when the player's command matches the regular expression @@126@@64@@64@{39}4([comment_regex] ?)@@64@{7b}5C}S@@126";
             rtrue;
         }
         if ((R == call_U2164)) {
+            print "Check summoning something";
+            rtrue;
+        }
+        if ((R == call_U2165)) {
+            print "Carry out summoning the grey mist";
+            rtrue;
+        }
+        if ((R == call_U2166)) {
+            print "After summoning the grey mist";
+            rtrue;
+        }
+        if ((R == call_U2178)) {
             print "When play begins";
             rtrue;
         }
@@ -28016,12 +28082,12 @@ Global max_z_object;
     rfalse;
 ];
 [ call_U386 forbid_breaks rv;
-    (rv = (call_U2164)());
+    (rv = (call_U2178)());
     if (rv) {
         if ((rv == 2)) {
             return reason_the_action_failed;
         }
-        return call_U2164;
+        return call_U2178;
     }
     ((latest_rule_result-->(0)) = 0);
     rfalse;
@@ -28554,6 +28620,23 @@ Global max_z_object;
     ((latest_rule_result-->(0)) = 0);
     rfalse;
 ];
+[ call_U407 forbid_breaks rv;
+    if ((action == ##A_summoning)) {
+        (rv = (call_U2166)());
+        if (rv) {
+            if ((rv == 2)) {
+                return reason_the_action_failed;
+            }
+            return call_U2166;
+        }
+        ((latest_rule_result-->(0)) = 0);
+    } else {
+        if (say__p) {
+            RulebookParBreak(forbid_breaks);
+        }
+    }
+    rfalse;
+];
 [ call_U409 forbid_breaks rv original_deadflag;
     (original_deadflag = deadflag);
     if ((action == ##Take)) {
@@ -28770,12 +28853,12 @@ Global max_z_object;
         RulebookParBreak(forbid_breaks);
     }
     (parameter_value = p);
-    (rv = (call_U2149)());
+    (rv = (call_U2160)());
     if (rv) {
         if ((rv == 2)) {
             return reason_the_action_failed;
         }
-        return call_U2149;
+        return call_U2160;
     }
     ((latest_rule_result-->(0)) = 0);
     if ((original_deadflag ~= deadflag)) {
@@ -62504,12 +62587,12 @@ Global max_z_object;
     rfalse;
 ];
 [ call_U2147 forbid_breaks rv;
-    (rv = (call_U2148)());
+    (rv = (call_U2159)());
     if (rv) {
         if ((rv == 2)) {
             return reason_the_action_failed;
         }
-        return call_U2148;
+        return call_U2159;
     }
     ((latest_rule_result-->(0)) = 0);
     rfalse;
@@ -62524,10 +62607,124 @@ Global max_z_object;
         (DA_Topic)(((100*consult_from) + consult_words));
     }
 ];
-[ call_U2148;
+[ call_U2148 forbid_breaks rv;
+    (rv = (call_U2164)());
+    if (rv) {
+        if ((rv == 2)) {
+            return reason_the_action_failed;
+        }
+        return call_U2164;
+    }
+    ((latest_rule_result-->(0)) = 0);
+    rfalse;
+];
+[ call_U2149 forbid_breaks rv;
+    (rv = (call_U2165)());
+    if (rv) {
+        if ((rv == 2)) {
+            return reason_the_action_failed;
+        }
+        return call_U2165;
+    }
+    ((latest_rule_result-->(0)) = 0);
+    rfalse;
+];
+[ A_summoningSub;
+    return GenericVerbSub(rulebook_id_U402, rulebook_id_U403, rulebook_id_U404);
+];
+[ A_summoningDbg n s for_say;
+    print "summoning";
+    if ((for_say ~= 2)) {
+        print " ";
+        (DA_Name)(n);
+    }
+];
+[ call_U2151 which na t_0;
+    #ifdef DEBUG;
+        if (which) {
+        } else {
+            if ((t_0 == I_grey_mist_U1)) {
+                if ((na > 0)) {
+                    (na = 0);
+                    print "; ";
+                }
+                if (((AllowInShowme(A_P_summoned)) && ((t_0 has P_summoned)))) {
+                    if (((na)++ > 0)) {
+                        print ", ";
+                    }
+                    print "summoned";
+                }
+                if (((AllowInShowme(A_P_summoned)) && ((~~((t_0 has P_summoned)))))) {
+                    if (((na)++ > 0)) {
+                        print ", ";
+                    }
+                    print "unsummoned";
+                }
+            }
+        }
+        return na;
+    #endif;
+];
+[ call_U2152;
+    #ifdef DEBUG;
+        if (suppress_text_substitution) {
+            print "~[if summoned]Grey mist swirls and surrounds you, covering you like a blanket.[otherwise]The cloud layer today is too high for a naturally obscuring mist; you'll have to summon it yourself.~";
+            rtrue;
+        }
+    #endif;
+    (say__p = 1);
+    if ((~~(call_U2153(self)))) {
+        jump L_Say0;
+    }
+    ParaContent();
+    print "Grey mist swirls and surrounds you, covering you like a blanket.";
+    jump L_SayX0;
+    .L_Say0;
+    ParaContent();
+    print "The cloud layer today is too high for a naturally obscuring mist; you'll have to summon it yourself.";
+    .L_SayX0;
+    rtrue;
+];
+[ call_U2153 t_0;
+    if (t_0) {
+        return (t_0 has P_summoned);
+    }
+    rfalse;
+];
+[ call_U2154 t_0;
+    if (t_0) {
+        return WriteGProperty(OBJECT_TY, t_0, A_P_summoned, 1);
+    }
+    rfalse;
+];
+[ call_U2155 t_0;
+    if (t_0) {
+        return WriteGProperty(OBJECT_TY, t_0, A_P_summoned, 0);
+    }
+    rfalse;
+];
+[ call_U2156 t_0;
+    if (t_0) {
+        return ((t_0 has P_summoned) == 0);
+    }
+    rfalse;
+];
+[ call_U2157 t_0;
+    if (t_0) {
+        return WriteGProperty(OBJECT_TY, t_0, A_P_summoned, 0);
+    }
+    rfalse;
+];
+[ call_U2158 t_0;
+    if (t_0) {
+        return WriteGProperty(OBJECT_TY, t_0, A_P_summoned, 1);
+    }
+    rfalse;
+];
+[ call_U2159;
     if ((actor == player)) {
         if (debug_rules) {
-            DB_Rule(call_U2148, 885, 0);
+            DB_Rule(call_U2159, 885, 0);
         }
         (say__p = 1);
         ParaContent();
@@ -62536,12 +62733,12 @@ Global max_z_object;
         rtrue;
     } else {
         if ((debug_rules > 1)) {
-            DB_Rule(call_U2148, 885, 3);
+            DB_Rule(call_U2159, 885, 3);
         }
     }
     rfalse;
 ];
-[ call_U2149 RV;
+[ call_U2160 RV;
     @push I7SFRAME;
     StackFrameCreate(10);
     BlkValueCreateOnStack(0, TEXT_TY);
@@ -62559,22 +62756,22 @@ Global max_z_object;
     return RV;
 ];
 [ kernel1_U6 tmp_0;
-    if (TEXT_TY_Replace_RE(REGEXP_BLOB, SNIPPET_TY_to_TEXT_TY(I7SFRAME, players_command), TEXT_TY_ExpandIfPerishable((I7SFRAME + (WORDSIZE*2)), ts_array_U411), 0, 0)) {
+    if (TEXT_TY_Replace_RE(REGEXP_BLOB, SNIPPET_TY_to_TEXT_TY(I7SFRAME, players_command), TEXT_TY_ExpandIfPerishable((I7SFRAME + (WORDSIZE*2)), ts_array_U412), 0, 0)) {
         if (debug_rules) {
-            DB_Rule(call_U2149, 887, 0);
+            DB_Rule(call_U2160, 887, 0);
         }
         (tmp_0 = (I7SFRAME + (WORDSIZE*4)));
-        BlkValueCopy(tmp_0, (((LocalParking-->(0)) = tmp_0),TEXT_TY_ExpandIfPerishable((I7SFRAME + (WORDSIZE*6)), ts_array_U412)));
-        TEXT_TY_Replace_RE(REGEXP_BLOB, tmp_0, (((LocalParking-->(0)) = tmp_0),TEXT_TY_ExpandIfPerishable((I7SFRAME + (WORDSIZE*8)), ts_array_U413)), bc_U190, 0);
+        BlkValueCopy(tmp_0, (((LocalParking-->(0)) = tmp_0),TEXT_TY_ExpandIfPerishable((I7SFRAME + (WORDSIZE*6)), ts_array_U413)));
+        TEXT_TY_Replace_RE(REGEXP_BLOB, tmp_0, (((LocalParking-->(0)) = tmp_0),TEXT_TY_ExpandIfPerishable((I7SFRAME + (WORDSIZE*8)), ts_array_U414)), bc_U195, 0);
         SetPlayersCommand(tmp_0);
     } else {
         if ((debug_rules > 1)) {
-            DB_Rule(call_U2149, 887, 4);
+            DB_Rule(call_U2160, 887, 4);
         }
     }
     rfalse;
 ];
-[ call_U2150;
+[ call_U2161;
     #ifdef DEBUG;
         if (suppress_text_substitution) {
             print "~@@94@{28}[comment_regex] ?)@{5C}S~";
@@ -62585,12 +62782,12 @@ Global max_z_object;
     ParaContent();
     print "@@94@{28}";
     ParaContent();
-    call_U2163();
+    call_U2177();
     ParaContent();
     print " ?)@{5C}S";
     rtrue;
 ];
-[ call_U2151 tmp_0;
+[ call_U2162 tmp_0;
     #ifdef DEBUG;
         if (suppress_text_substitution) {
             print "~[player's command]~";
@@ -62602,7 +62799,7 @@ Global max_z_object;
     PrintSnippet(players_command);
     rtrue;
 ];
-[ call_U2152 tmp_0;
+[ call_U2163 tmp_0;
     #ifdef DEBUG;
         if (suppress_text_substitution) {
             print "~@@94@{5b}comment_regex] ?~";
@@ -62613,36 +62810,118 @@ Global max_z_object;
     ParaContent();
     print "@@94";
     ParaContent();
-    call_U2163();
+    call_U2177();
     ParaContent();
     print " ?";
     rtrue;
 ];
-[ call_U2153;
+[ call_U2164;
+    if ((((actor == player)) && ((noun ofclass K2_thing)))) {
+        (self = noun);
+        if (debug_rules) {
+            DB_Rule(call_U2164, 888, 0);
+        }
+        if ((~~((noun == I_grey_mist_U1)))) {
+            (say__p = 1);
+            ParaContent();
+            print "You're a Bostrat: you can summon mist and clouds, but nothing else.";
+            print "^";
+            rtrue;
+        }
+    } else {
+        if ((debug_rules > 1)) {
+            DB_Rule(call_U2164, 888, 2);
+        }
+    }
+    rfalse;
+];
+[ call_U2165;
+    if ((((actor == player)) && ((noun == I_grey_mist_U1)))) {
+        (self = noun);
+        if (debug_rules) {
+            DB_Rule(call_U2165, 889, 0);
+        }
+        if (call_U2153(I_grey_mist_U1)) {
+            (say__p = 1);
+            ParaContent();
+            print "You draw even more moisture from the air, feeding it into the mist.  It's still just as obscuring as before, but you feel safer, as you always do in the midst of clouds.";
+            print "^";
+        } else {
+            (say__p = 1);
+            ParaContent();
+            if (((label_associated_storage_U1329-->(0)) == 0)) {
+                ((label_associated_storage_U1328-->(0)) = (I7_SOO_STOP)((label_associated_storage_U1328-->(0)),2));
+                ((label_associated_storage_U1329-->(0)) = 1);
+            }
+            if ((say__comp == 0)) {
+                ((label_associated_storage_U1329-->(0)) = 0);
+            }
+            switch ((((label_associated_storage_U1328-->(0))%(2 + 1)) - 1)) {
+                0:
+                    ParaContent();
+                    print "Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields; now you must use it to hide from prying eyes that would keep you from your quarry";
+                    ParaContent();
+                    @nop;
+                    ;
+                1:
+                    ParaContent();
+                    print "You summon an obscuring grey mist to surround you and hide you from prying eyes";
+                    ParaContent();
+                    ;
+            }
+            ParaContent();
+            print ".";
+            print "^";
+        }
+    } else {
+        if ((debug_rules > 1)) {
+            DB_Rule(call_U2165, 889, 2);
+        }
+    }
+    rfalse;
+];
+[ call_U2166;
+    if ((((action == ##A_summoning)) && ((((actor == player)) && ((noun == I_grey_mist_U1)))))) {
+        (self = noun);
+        if (debug_rules) {
+            DB_Rule(call_U2166, 890, 0);
+        }
+        call_U2154(I_grey_mist_U1);
+        rfalse;
+        RulebookSucceeds(0, 0);
+        rtrue;
+    } else {
+        if ((debug_rules > 1)) {
+            DB_Rule(call_U2166, 890, 2);
+        }
+    }
+    rfalse;
+];
+[ call_U2167;
     (say__p = 1);
     ParaContent();
     style underline;
     rfalse;
 ];
-[ call_U2154;
+[ call_U2168;
     (say__p = 1);
     ParaContent();
     style bold;
     rfalse;
 ];
-[ call_U2155;
+[ call_U2169;
     (say__p = 1);
     ParaContent();
     style roman;
     rfalse;
 ];
-[ call_U2156;
+[ call_U2170;
     (say__p = 1);
     ParaContent();
     print "^";
     rfalse;
 ];
-[ call_U2157;
+[ call_U2171;
     (say__p = 1);
     ParaContent();
     print "^";
@@ -62650,13 +62929,13 @@ Global max_z_object;
     print "^";
     rfalse;
 ];
-[ call_U2158;
+[ call_U2172;
     (say__p = 1);
     ParaContent();
     RunParagraphOn();
     rfalse;
 ];
-[ call_U2159 RV;
+[ call_U2173 RV;
     @push I7SFRAME;
     StackFrameCreate(4);
     BlkValueCreateOnStack(0, TEXT_TY);
@@ -62670,11 +62949,11 @@ Global max_z_object;
 [ kernel1_U7;
     (say__p = 1);
     ParaContent();
-    call_U2156();
-    CenterPrintComplex(BlkValueCopy(I7SFRAME, TEXT_TY_ExpandIfPerishable((I7SFRAME + (WORDSIZE*2)), ts_array_U414)));
+    call_U2170();
+    CenterPrintComplex(BlkValueCopy(I7SFRAME, TEXT_TY_ExpandIfPerishable((I7SFRAME + (WORDSIZE*2)), ts_array_U415)));
     rfalse;
 ];
-[ call_U2160;
+[ call_U2174;
     #ifdef DEBUG;
         if (suppress_text_substitution) {
             print "~*    *    *[pb]~";
@@ -62685,10 +62964,10 @@ Global max_z_object;
     ParaContent();
     print "*    *    *";
     ParaContent();
-    call_U2157();
+    call_U2171();
     rtrue;
 ];
-[ call_U2161 RV;
+[ call_U2175 RV;
     @push I7SFRAME;
     StackFrameCreate(4);
     BlkValueCreateOnStack(0, TEXT_TY);
@@ -62700,10 +62979,10 @@ Global max_z_object;
     return RV;
 ];
 [ kernel1_U8;
-    CenterPrintComplex(BlkValueCopy(I7SFRAME, TEXT_TY_ExpandIfPerishable((I7SFRAME + (WORDSIZE*2)), ts_array_U415)));
+    CenterPrintComplex(BlkValueCopy(I7SFRAME, TEXT_TY_ExpandIfPerishable((I7SFRAME + (WORDSIZE*2)), ts_array_U416)));
     rfalse;
 ];
-[ call_U2162;
+[ call_U2176;
     #ifdef DEBUG;
         if (suppress_text_substitution) {
             print "~*    *    *[pb]~";
@@ -62714,10 +62993,10 @@ Global max_z_object;
     ParaContent();
     print "*    *    *";
     ParaContent();
-    call_U2157();
+    call_U2171();
     rtrue;
 ];
-[ call_U2163;
+[ call_U2177;
     (say__p = 1);
     ParaContent();
     print "<@{5C}p*#+=";
@@ -62727,13 +63006,19 @@ Global max_z_object;
     print ">";
     rfalse;
 ];
-[ call_U2164;
+[ call_U2178;
     if (debug_rules) {
-        DB_Rule(call_U2164, 888, 0);
+        DB_Rule(call_U2178, 891, 0);
     }
     (say__p = 1);
     ParaContent();
-    print "INTRO TEXT.";
+    call_U2167();
+    ParaContent();
+    print "Your mother needs you.  The whole village needs you.  You can do this.  You must do this.^^";
+    ParaContent();
+    call_U2169();
+    ParaContent();
+    print "It's a mantra repeating in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you--and all were banished years ago, yourself included.  Last time, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.^^By tonight, you will know.  You've promised yourself that.";
     print "^";
     rfalse;
 ];
@@ -63781,6 +64066,102 @@ Global max_z_object;
             if ((NextWordStopped() ~= 'pc')) {
                 jump Fail_1;
             }
+            (try_from_wn = wn);
+            (f = 1);
+            continue;
+            .Fail_1;
+            (wn = try_from_wn);
+            break;
+        }
+        while (WordInProperty(NextWordStopped(), self, A_name)) {
+            (n)++;
+        }
+        if (((f) || ((n > 0)))) {
+            (n = ((n + try_from_wn) - original_wn));
+        }
+        if ((pass == 1)) {
+            (pass1_n = n);
+        }
+        if ((pass == 2)) {
+            (pass2_n = n);
+        }
+        (pass)++;
+    }
+    #ifdef DEBUG;
+        if ((parser_trace >= 3)) {
+            print "Pass 1: ";
+            print pass1_n;
+            print " Pass 2: ";
+            print pass2_n;
+            print " Pass 3: ";
+            print n;
+            print "^";
+        }
+    #endif;
+    if ((pass1_n > n)) {
+        (n = pass1_n);
+    }
+    if ((pass2_n > n)) {
+        (n = pass2_n);
+    }
+    (wn = (original_wn + n));
+    if ((n == 0)) {
+        return -1;
+    }
+    DetectPluralWord(original_wn, n);
+    return n;
+];
+[ parse_name17 original_wn group_wn try_from_wn n f w rv g ss spn pass pass1_n pass2_n;
+    #ifdef DEBUG;
+        if ((parser_trace >= 3)) {
+            print "Parse_name called^";
+        }
+    #endif;
+    if ((parser_action == ##TheSame)) {
+        rfalse;
+    }
+    (original_wn = wn);
+    (pass = 1);
+    while ((pass <= 3)) {
+        (wn = original_wn);
+        (try_from_wn = wn);
+        (f = 0);
+        (n = 0);
+        while (1) {
+            if ((((parser_action ~= ##TheSame)) && ((pass == 1)))) {
+                while (WordInProperty(NextWordStopped(), self, A_name)) {
+                    (f = 1);
+                }
+                (wn)--;
+                (try_from_wn = wn);
+            }
+            if ((((pass == 1)) || ((pass == 2)))) {
+            }
+            if ((((parser_action ~= ##TheSame)) && ((pass == 1)))) {
+                while (WordInProperty(NextWordStopped(), self, A_name)) {
+                    (f = 1);
+                }
+                (wn)--;
+                (try_from_wn = wn);
+            }
+            (group_wn = wn);
+            (wn = group_wn);
+            if ((NextWordStopped() ~= 'cloud')) {
+                jump class_1_1_2;
+            }
+            jump class_1_1_end;
+            .class_1_1_2;
+            (wn = group_wn);
+            if ((NextWordStopped() ~= 'clouds')) {
+                jump class_1_1_3;
+            }
+            jump class_1_1_end;
+            .class_1_1_3;
+            (wn = group_wn);
+            if ((NextWordStopped() ~= 'gray')) {
+                jump Fail_1;
+            }
+            .class_1_1_end;
             (try_from_wn = wn);
             (f = 1);
             continue;
@@ -86502,6 +86883,8 @@ Verb 'cyoa'
 	* 'debug' -> A_toggling_cyoa_debug_m;
 Verb '#//' 
 	* topic -> A_commenting;
+Verb 'summon' 
+	* noun -> A_summoning;
 Verb meta 'glklist' 
 	* -> GlkList;
 Verb meta 'abstract' 

@@ -10,7 +10,7 @@ release to "C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.
 
 ! Blorb instructions
 
-storyfile leafname "Iron ChIF Lucian.gblorb"
+storyfile leafname "course correction.gblorb"
 storyfile "C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.inform\Build\output.ulx" include
 ifiction "C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.inform\Metadata.iFiction" include
 cover "C:\Program Files\Inform\Internal\Miscellany\DefaultCover.jpg"
@@ -21,7 +21,7 @@ picture 1 "C:\Program Files\Inform\Internal\Miscellany\DefaultCover.jpg"
 placeholder [IFID] = "36DD09B2-2D5C-40AA-8344-FE2FC1DFF3EA"
 placeholder [RELEASE] = "0"
 placeholder [YEAR] = "2026"
-placeholder [TITLE] = "Iron ChIF Lucian"
+placeholder [TITLE] = "course correction"
 placeholder [AUTHOR] = "Lucian Smith"
 placeholder [BLURB] = "A work of interactive fiction."
 

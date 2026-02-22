@@ -1620,8 +1620,22 @@
     <key>231</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Rules and New Actions.i7x</string>
         <key>Line</key><integer>33</integer>
-        <key>Title</key><string>Section New Actions</string>
-        <key>Level</key><integer>5</integer>
+        <key>Title</key><string>Chapter New Actions</string>
+        <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>232</key><dict>
+        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Rules and New Actions.i7x</string>
+        <key>Line</key><integer>35</integer>
+        <key>Title</key><string>Section Commenting</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>233</key><dict>
+        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Rules and New Actions.i7x</string>
+        <key>Line</key><integer>54</integer>
+        <key>Title</key><string>Section Summoning mist</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
     </dict>
 </dict></plist>
