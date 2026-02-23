@@ -26,9 +26,11 @@ Check going somewhere from High Above:
 
 [Trivia:  'Bostrat' comes from 'Nimbostratus' clouds, aka rain clouds.]
 
-After going from High Above for the first time:
+After going from High Above during Starting off:
 	say "You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...";
 	continue the action;
+
+Starting off is a scene.  Starting off begins when play begins.  Starting off ends when the player is not in High Above.
 
 Instead of going nowhere from High Above when the noun is up:
     say "You're already high enough to avoid being seen from below; there's no need to go higher."
