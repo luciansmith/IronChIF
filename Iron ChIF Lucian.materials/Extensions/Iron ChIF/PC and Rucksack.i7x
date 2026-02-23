@@ -87,7 +87,7 @@ Section Bar
 
 The red capsa of BAR is a capsa in the rucksack.  The description is "The red capsa turned out to contain a scroll of SOMETHING[first time], as became evident (MAYBE?)[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to DO STUFF[end if]."
 
-A scroll of BAR is a scroll in the gold capsa.  The name is "BAR"
+A scroll of BAR is a scroll in the red capsa.  The name is "BAR"
 
 
 PC and Rucksack ends here.

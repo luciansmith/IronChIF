@@ -58,7 +58,7 @@ Crediting is an action out of world applying to nothing.  Understand "credits" a
 Carry out Crediting:
 	say "This game would not have been possible without the intense energy of @otistdog on the intfiction forums creating the idea of having an 'Iron ChIF' competition, nor without Ryan Veeder agreeing to be the aforementioned 'Iron ChIF Inform 7' to compete against.
 	
-	Particular thanks go to my betatesters, Sarah Wilson (day 1), Steven Granade (day 2), Allyson Gray (day 3), and Dan 'inky' Shiovitz (day 4).
+	Particular thanks go to my betatesters, Sarah Wilson (day 1), Stephen Granade (day 2), Allyson Gray (day 3), and Dan 'inky' Shiovitz (day 4).
 	
 	Thanks also to the official judges for this competition: Chandler Groover, Victor Gijsbers, J. J. McC, Brian Rushton, and N. Cormier, and technical advisor Zed Lopez.  You all have been great!
 	
