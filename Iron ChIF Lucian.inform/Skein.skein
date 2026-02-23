@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-126">
     <command xml:space="preserve">Iron ChIF Lucian</command>
-    <result xml:space="preserve">Your mother needs you.  The whole village needs you.  You can do this.  You must do this.&#x000A;&#x000A;The mantra repeats in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you.  And there's no more Falcon Clan in the Royal Aerie--you and the rest of your clan were all banished years ago.  Three days ago, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.&#x000A;&#x000A;By tonight, you will know.  You're not leaving without it.&#x000A;&#x000A;course correction&#x000A;An Interactive High Heist by Lucian Smith&#x000A;Release 0 / Serial number 260222 / Inform 7 v10.1.2 / D&#x000A;&#x000A;High Above the Royal Aerie&#x000A;You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Your mother needs you.  The whole village needs you.  You can do this.  You must do this.&#x000A;&#x000A;The mantra repeats in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you.  And there's no more Falcon Clan in the Royal Aerie--you and the rest of your clan were all banished years ago.  Three days ago, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.&#x000A;&#x000A;By tonight, you will know.  You're not leaving without it.&#x000A;&#x000A;course correction&#x000A;An Interactive High Heist by Lucian Smith&#x000A;Release 0 / Serial number 260223 / Inform 7 v10.1.2 / D&#x000A;&#x000A;High Above the Royal Aerie&#x000A;You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -12,6 +12,7 @@
       <child nodeId="node-167"/>
       <child nodeId="node-200"/>
       <child nodeId="node-192"/>
+      <child nodeId="node-210"/>
       <child nodeId="node-130"/>
       <child nodeId="node-133"/>
       <child nodeId="node-143"/>
@@ -334,7 +335,7 @@
   </item>
   <item nodeId="node-208">
     <command xml:space="preserve">d</command>
-    <result xml:space="preserve">You descend, bringing mist with you, and trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -413,6 +414,12 @@
   <item nodeId="node-199">
     <command xml:space="preserve">close rucksack</command>
     <result xml:space="preserve">Try as you might, a mystical force prevents you from closing the leather rucksack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-210">
+    <command xml:space="preserve">test summon</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] d&#x000A;If you get any closer to the aerie without summoning mist first, the guards would surely see you.  It's why, as a Bostrat, you were originally chosen to go on this mission.&#x000A;&#x000A;&gt;[2] n&#x000A;You'll need to SUMMON MIST first, to cloak your descent.&#x000A;&#x000A;&gt;[3] summon mist&#x000A;Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;&gt;[4] d&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[5] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

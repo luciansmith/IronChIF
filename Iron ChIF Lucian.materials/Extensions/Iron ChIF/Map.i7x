@@ -24,6 +24,8 @@ Check going somewhere from High Above:
 	if the mist is unsummoned:
 		say "[one of]If you get any closer to the aerie without summoning mist first, the guards would surely see you.  It's why, as a Bostrat, you were originally chosen to go on this mission[or]You'll need to SUMMON MIST first, to cloak your descent[stopping]." instead.
 
+[Trivia:  'Bostrat' comes from 'Nimbostratus' clouds, aka rain clouds.]
+
 After going from High Above for the first time:
 	say "You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...";
 	continue the action;

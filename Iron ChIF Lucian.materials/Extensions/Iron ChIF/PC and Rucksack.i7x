@@ -35,9 +35,9 @@ The description of a scroll is "While '[name]' can be clearly read at the top of
 
 Section rezrov
 
-A purple capsa of rezrov is a capsa in the rucksack.  The description is "The purple capsa turned out to contain a scroll of rezrov[first time], as became evident when every buckle and lock in your village flew open when you opened the capsa to investigate[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to open and hold open any closed object in the area[end if]."
+A purple capsa of opening is a capsa in the rucksack.  The description is "The purple capsa turned out to contain a scroll of opening[first time], as became evident when every buckle and lock in your village flew open when you opened the capsa to investigate[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to open and hold open any closed object in the area[end if]."
 
-A scroll of rezrov is a scroll in the purple capsa.  The name is "REZROV"
+A scroll of rezrov is a scroll in the purple capsa.  The name is "REZROV".  Understand "opening" as the scroll of rezrov.
 
 To carry out everything rezrovving:
 	say "As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.";
