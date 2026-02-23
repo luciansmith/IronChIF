@@ -17,7 +17,7 @@ I've also read Response Assistant by Aaron Reed, which is 558 words long.
 I've also read Hybrid Choices by AW Freyr, which is 10371 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2223 words long.
 I've also read Map by Iron ChIF, which is 157 words long.
-I've also read Cast by Iron ChIF, which is 377 words long.
+I've also read Cast by Iron ChIF, which is 574 words long.
 I've also read Rules And New Actions by Iron ChIF, which is 387 words long.
 
 
@@ -93,7 +93,7 @@ Phase IX ... Augment model world
 Phase X ... Phrases and rules
 -----------------------------------------------------
 
-.... ImperativeDefinitions__assess_all() took 3cs
+.... ImperativeDefinitions__assess_all() took 4cs
 
 
 -----------------------------------------------------
@@ -107,8 +107,8 @@ Phase XI ... Generating inter (1)
 Phase XII ... Generating inter (2)
 -----------------------------------------------------
 
-.... CompletionModule__compile() took 1cs
-.... RTProperties__compile() took 2cs
+.... CompletionModule__compile() took 3cs
+.... RTProperties__compile() took 1cs
 
 
 ==== Phase XII.1 ... Slashing command grammar ====
@@ -123,9 +123,9 @@ Phase XII ... Generating inter (2)
 Phase XIII ... Generating inter (3)
 -----------------------------------------------------
 
-.... Sequence__undertake_queued_tasks() took 142cs
-.... Sequence__undertake_queued_tasks() took 1cs
-.... RTPhrasebook__compile_entries() took 4cs
+.... Sequence__undertake_queued_tasks() took 143cs
+.... Sequence__undertake_queued_tasks() took 2cs
+.... RTPhrasebook__compile_entries() took 5cs
 
 
 -----------------------------------------------------
@@ -161,7 +161,7 @@ Phase XVI ... Bibliographic work
 Phase XVII ... Complete
 -----------------------------------------------------
 
-Compile CPU time: 183 centiseconds
+Compile CPU time: 186 centiseconds
 
 
 ==== Phase XVII.1 ... step 1/15: read <- *memory ====
@@ -206,12 +206,12 @@ Compile CPU time: 183 centiseconds
 
 ==== Phase XVII.11 ... step 11/15: eliminate-redundant-labels ====
 
-1896 redundant label(s) removed
+1910 redundant label(s) removed
 
 
 ==== Phase XVII.12 ... step 12/15: eliminate-redundant-operations ====
 
-401 redundant operation(s) removed
+403 redundant operation(s) removed
 
 
 ==== Phase XVII.13 ... step 13/15: optionally-generate text ->  ====
@@ -6174,7 +6174,7 @@ HTML tag stack:
     52. html (opened at line 236 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
 
 
-Back end elapsed time: 214cs
+Back end elapsed time: 211cs
 Total of 119 files written as streams.
 Vacant escapes: %: ..CDE.GH..K.M.O.QR.TU...YZab..e..h.jklm.o.qr......yz0123456789
 Vacant escapes: $: .....F...J..........UVW.....................s.u..x.........789

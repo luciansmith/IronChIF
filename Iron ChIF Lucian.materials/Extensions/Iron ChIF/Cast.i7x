@@ -10,18 +10,41 @@ As a member of the Falcon Clan, your most striking features are your large black
 
 The player is Constance.
 
+[Note: I looked up 'famous falconers' and one of them was King Frederick II.  So I looked up his wife's name, found our there were at least four of them (!), and 'Constance' stood out to me as a good PC name.]
+
 A brown rucksack is a player's holdall worn by the Constance.  
 
-A purple capsa of rezrov is a closed openable container in the rucksack.  The description is "The purple capsa turned out to contain a scroll of rezrov[first time], as became evident when every buckle and lock in your village flew open when you opened the capsa to investigate[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to open and hold open any closed object in the area[end if]."
+A capsa is a kind of openable container.  A capsa is usually closed.  The plural of capsa is capsae.
 
-A scroll of rezrov is in the purple capsa.  The description is "While 'REZROV' can be clearly read at the top of the scroll, the rest is in some arcane script you (and the people of your village) are unfamiliar with."
+Check taking something:
+	if the noun is inside a capsa:
+		say "Like all of the Ancient Scrolls, the scroll is inextricably tied to its capsa, and you can't extricate it." instead.
 
-Does the player mean doing something to the scroll of rezrov:  it is likely.
-
-Check taking the scroll of rezrov:
+Check removing something from a capsa:
     say "Like all of the Ancient Scrolls, the scroll is inextricably tied to its capsa, and you can't extricate it." instead;
 
-Check removing the scroll of rezrov from the purple capsa:
-    say "Like all of the Ancient Scrolls, the scroll is inextricably tied to its capsa, and you can't extricate it." instead;
+A scroll is a kind of a thing.  A scroll has a text called name.  The name of a scroll is usually "FOO".
+
+Does the player mean doing something to a scroll:  it is likely.
+
+Does the player mean opening or closing a capsa:  it is very likely.
+
+The description of a scroll is "While '[name]' can be clearly read at the top of the scroll, the rest is in some arcane script you [one of](and the people and sages of your village) were[or]are[stopping] unfamiliar with."
+
+
+A purple capsa of rezrov is a capsa in the rucksack.  The description is "The purple capsa turned out to contain a scroll of rezrov[first time], as became evident when every buckle and lock in your village flew open when you opened the capsa to investigate[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to open and hold open any closed object in the area[end if]."
+
+A scroll of rezrov is a scroll in the purple capsa.  The name is "REZROV"
+
+
+The gold capsa of FOO is a capsa in the rucksack.  The description is "The gold capsa turned out to contain a scroll of SOMETHING[first time], as became evident (MAYBE?)[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to DO STUFF[end if]."
+
+A scroll of FOO is a scroll in the gold capsa.  The name is "FOO"
+
+
+The red capsa of BAR is a capsa in the rucksack.  The description is "The red capsa turned out to contain a scroll of SOMETHING[first time], as became evident (MAYBE?)[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to DO STUFF[end if]."
+
+A scroll of BAR is a scroll in the gold capsa.  The name is "BAR"
+
 
 The Cast ends here.

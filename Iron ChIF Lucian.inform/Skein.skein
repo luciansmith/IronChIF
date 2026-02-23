@@ -103,7 +103,7 @@
   </item>
   <item nodeId="node-147">
     <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a brown rucksack (being worn, and open)&#x000A;    a purple capsa of rezrov (closed)&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You are carrying:&#x000A;  a brown rucksack (being worn, and open)&#x000A;    a purple capsa of rezrov (closed)&#x000A;    a gold capsa of FOO (closed)&#x000A;    a gold capsa of BAR (closed)&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -157,7 +157,7 @@
   </item>
   <item nodeId="node-153">
     <command xml:space="preserve">x scroll</command>
-    <result xml:space="preserve">While "REZROV" can be clearly read at the top of the scroll, the rest is in some arcane script you (and the people of your village) are unfamiliar with.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">While "REZROV" can be clearly read at the top of the scroll, the rest is in some arcane script you (and the people and sages of your village) were unfamiliar with.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -166,7 +166,7 @@
   </item>
   <item nodeId="node-154">
     <command xml:space="preserve">x rezrov</command>
-    <result xml:space="preserve">(the scroll of rezrov)&#x000A;While "REZROV" can be clearly read at the top of the scroll, the rest is in some arcane script you (and the people of your village) are unfamiliar with.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(the scroll of rezrov)&#x000A;While "REZROV" can be clearly read at the top of the scroll, the rest is in some arcane script you are unfamiliar with.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -202,7 +202,7 @@
   </item>
   <item nodeId="node-158">
     <command xml:space="preserve">get rezrov</command>
-    <result xml:space="preserve">(the scroll of rezrov)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(the scroll of rezrov)&#x000A;Like all of the Ancient Scrolls, the scroll is inextricably tied to its capsa, and you can't extricate it.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -220,7 +220,61 @@
   </item>
   <item nodeId="node-160">
     <command xml:space="preserve">get rezrov from purple</command>
-    <result xml:space="preserve">Like all of the Ancient Scrolls, the scroll is inextricably tied to its capsa&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Like all of the Ancient Scrolls, the scroll is inextricably tied to its capsa, and you can't extricate it.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-161"/>
+    </children>
+  </item>
+  <item nodeId="node-161">
+    <command xml:space="preserve">eat rezrov</command>
+    <result xml:space="preserve">(the scroll of rezrov)&#x000A;That's plainly inedible.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-162"/>
+    </children>
+  </item>
+  <item nodeId="node-162">
+    <command xml:space="preserve">drop rezrov</command>
+    <result xml:space="preserve">(the scroll of rezrov)&#x000A;You haven't got that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-163"/>
+    </children>
+  </item>
+  <item nodeId="node-163">
+    <command xml:space="preserve">put rezrov in rucksack</command>
+    <result xml:space="preserve">(the scroll of rezrov in the brown rucksack)&#x000A;(first taking the scroll of rezrov)&#x000A;Like all of the Ancient Scrolls, the scroll is inextricably tied to its capsa, and you can't extricate it.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-164"/>
+    </children>
+  </item>
+  <item nodeId="node-164">
+    <command xml:space="preserve">get rezrov from capsa</command>
+    <result xml:space="preserve">Which do you mean, the purple capsa of rezrov, the gold capsa of FOO, or the gold capsa of BAR?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-165"/>
+    </children>
+  </item>
+  <item nodeId="node-165">
+    <command xml:space="preserve">purple</command>
+    <result xml:space="preserve">Like all of the Ancient Scrolls, the scroll is inextricably tied to its capsa, and you can't extricate it.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-166"/>
+    </children>
+  </item>
+  <item nodeId="node-166">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a brown rucksack (being worn, and open)&#x000A;    a purple capsa of rezrov (open)&#x000A;      a scroll of rezrov&#x000A;    a gold capsa of FOO (closed)&#x000A;    a gold capsa of BAR (closed)&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
