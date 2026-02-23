@@ -3,12 +3,14 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-126">
     <command xml:space="preserve">Iron ChIF Lucian</command>
-    <result xml:space="preserve">Your mother needs you.  The whole village needs you.  You can do this.  You must do this.&#x000A;&#x000A;It's a mantra repeating in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you--and all were banished years ago, yourself included.  Last time, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.&#x000A;&#x000A;By tonight, you will know.  You've promised yourself that.&#x000A;&#x000A;course correction&#x000A;An Interactive High Heist by Lucian Smith&#x000A;Release 0 / Serial number 260222 / Inform 7 v10.1.2 / D&#x000A;&#x000A;High Above the Royal Aerie&#x000A;You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north.  Well defended by circling Raven clan guards.  The librum to the east.  &#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Your mother needs you.  The whole village needs you.  You can do this.  You must do this.&#x000A;&#x000A;The mantra repeats in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you--and all were banished years ago, yourself included.  Three days ago, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.&#x000A;&#x000A;By tonight, you will know.  You've promised yourself that.&#x000A;&#x000A;course correction&#x000A;An Interactive High Heist by Lucian Smith&#x000A;Release 0 / Serial number 260222 / Inform 7 v10.1.2 / D&#x000A;&#x000A;High Above the Royal Aerie&#x000A;You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-127"/>
       <child nodeId="node-129"/>
+      <child nodeId="node-167"/>
+      <child nodeId="node-192"/>
       <child nodeId="node-130"/>
       <child nodeId="node-133"/>
       <child nodeId="node-143"/>
@@ -32,6 +34,297 @@
   <item nodeId="node-129">
     <command xml:space="preserve">#check</command>
     <result xml:space="preserve">(changed to "# check")&#x000A;Noted.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-167">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">If you get any closer to the aerie without summoning mist first, the guards would surely see you.  It's why, as a Bostrat, you were originally chosen to go on this mission.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-168"/>
+    </children>
+  </item>
+  <item nodeId="node-168">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You'll need to SUMMON MIST first, to cloak your descent.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-169"/>
+    </children>
+  </item>
+  <item nodeId="node-169">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-170"/>
+    </children>
+  </item>
+  <item nodeId="node-170">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You descend, bringing mist with you, and trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-171"/>
+    </children>
+  </item>
+  <item nodeId="node-171">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">(first opening the important door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-172"/>
+    </children>
+  </item>
+  <item nodeId="node-172">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.&#x000A;&#x000A;You can see Another Important Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-173"/>
+    </children>
+  </item>
+  <item nodeId="node-173">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">(first opening Another Important Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-174"/>
+    </children>
+  </item>
+  <item nodeId="node-174">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-175"/>
+    </children>
+  </item>
+  <item nodeId="node-175">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You descend, bringing mist with you, and trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-176"/>
+    </children>
+  </item>
+  <item nodeId="node-176">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Royal Landing Cradle&#x000A;It's dangerous; you can't do anything here yet. LS DEBUG.  (you can go south, southeast, up)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-177"/>
+    </children>
+  </item>
+  <item nodeId="node-177">
+    <command xml:space="preserve">se</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.&#x000A;&#x000A;You can see Another Important Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-178"/>
+    </children>
+  </item>
+  <item nodeId="node-178">
+    <command xml:space="preserve">enter door</command>
+    <result xml:space="preserve">(first opening Another Important Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-179"/>
+    </children>
+  </item>
+  <item nodeId="node-179">
+    <command xml:space="preserve">open purple</command>
+    <result xml:space="preserve">As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;Another Important Door clicks as it unlocks!&#x000A;Another Important Door flies open!&#x000A;The straps and buckles on your rucksack fly open and it falls!&#x000A;&#x000A;Dropped.&#x000A;&#x000A;Also, you alert everyone to your presence, and they start heading straight for you.  Fortunately, they are, as of yet, unimplemented.  LS DEBUG.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-180"/>
+    </children>
+  </item>
+  <item nodeId="node-180">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-181"/>
+    </children>
+  </item>
+  <item nodeId="node-181">
+    <command xml:space="preserve">x door</command>
+    <result xml:space="preserve">You see nothing special about the important door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-182"/>
+    </children>
+  </item>
+  <item nodeId="node-182">
+    <command xml:space="preserve">enter door</command>
+    <result xml:space="preserve">Upper Great Hall&#x000A;Congrats!  This is as far as I got.  Thanks for testing!&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-183"/>
+    </children>
+  </item>
+  <item nodeId="node-183">
+    <command xml:space="preserve">close door</command>
+    <result xml:space="preserve">Try as you might, a mystical force prevents you from closing the important door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-184"/>
+    </children>
+  </item>
+  <item nodeId="node-184">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-185"/>
+    </children>
+  </item>
+  <item nodeId="node-185">
+    <command xml:space="preserve">out</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-186"/>
+    </children>
+  </item>
+  <item nodeId="node-186">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of rezrov (in which is a scroll of rezrov), a gold capsa of FOO (closed), and a red capsa of BAR (closed)) and Another Important Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-187"/>
+    </children>
+  </item>
+  <item nodeId="node-187">
+    <command xml:space="preserve">get rucksack</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-188"/>
+    </children>
+  </item>
+  <item nodeId="node-188">
+    <command xml:space="preserve">close it</command>
+    <result xml:space="preserve">Try as you might, a mystical force prevents you from closing the leather rucksack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-189"/>
+    </children>
+  </item>
+  <item nodeId="node-189">
+    <command xml:space="preserve">wear it</command>
+    <result xml:space="preserve">A mystical force prevents you from fastening the buckles on the rucksack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-190"/>
+    </children>
+  </item>
+  <item nodeId="node-190">
+    <command xml:space="preserve">actions</command>
+    <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-191"/>
+    </children>
+  </item>
+  <item nodeId="node-191">
+    <command xml:space="preserve">wear it</command>
+    <result xml:space="preserve">[wearing the leather rucksack]&#x000A;A mystical force prevents you from fastening the buckles on the rucksack.&#x000A;[wearing the leather rucksack - failed the Check wearing the rucksack during Everything Is Open]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-192">
+    <command xml:space="preserve">open purple</command>
+    <result xml:space="preserve">As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;The straps and buckles on your rucksack fly open and it falls!&#x000A;&#x000A;The leather rucksack twists away as it falls below you, towards the Great Hall&#x000A;Also, you alert everyone to your presence, and they start heading straight for you.  Fortunately, they are, as of yet, unimplemented.  LS DEBUG.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-193"/>
+    </children>
+  </item>
+  <item nodeId="node-193">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">If you get any closer to the aerie without summoning mist first, the guards would surely see you.  It's why, as a Bostrat, you were originally chosen to go on this mission.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-194"/>
+    </children>
+  </item>
+  <item nodeId="node-194">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-195"/>
+    </children>
+  </item>
+  <item nodeId="node-195">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You descend, bringing mist with you, and trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of rezrov (in which is a scroll of rezrov), a gold capsa of FOO (closed), and a red capsa of BAR (closed)) and an important door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-196"/>
+    </children>
+  </item>
+  <item nodeId="node-196">
+    <command xml:space="preserve">get rucksack</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-197"/>
+    </children>
+  </item>
+  <item nodeId="node-197">
+    <command xml:space="preserve">open door</command>
+    <result xml:space="preserve">That's already open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-198"/>
+    </children>
+  </item>
+  <item nodeId="node-198">
+    <command xml:space="preserve">close door</command>
+    <result xml:space="preserve">Try as you might, a mystical force prevents you from closing the important door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-199"/>
+    </children>
+  </item>
+  <item nodeId="node-199">
+    <command xml:space="preserve">close rucksack</command>
+    <result xml:space="preserve">Try as you might, a mystical force prevents you from closing the leather rucksack.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -103,7 +396,7 @@
   </item>
   <item nodeId="node-147">
     <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a brown rucksack (being worn, and open)&#x000A;    a purple capsa of rezrov (closed)&#x000A;    a gold capsa of FOO (closed)&#x000A;    a gold capsa of BAR (closed)&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You are carrying:&#x000A;  a brown rucksack (being worn, and open)&#x000A;    a purple capsa of rezrov (closed)&#x000A;    a gold capsa of FOO (closed)&#x000A;    a red capsa of BAR (closed)&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -256,7 +549,7 @@
   </item>
   <item nodeId="node-164">
     <command xml:space="preserve">get rezrov from capsa</command>
-    <result xml:space="preserve">Which do you mean, the purple capsa of rezrov, the gold capsa of FOO, or the gold capsa of BAR?&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Which do you mean, the purple capsa of rezrov, the gold capsa of FOO, or the red capsa of BAR?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -274,7 +567,7 @@
   </item>
   <item nodeId="node-166">
     <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a brown rucksack (being worn, and open)&#x000A;    a purple capsa of rezrov (open)&#x000A;      a scroll of rezrov&#x000A;    a gold capsa of FOO (closed)&#x000A;    a gold capsa of BAR (closed)&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You are carrying:&#x000A;  a brown rucksack (being worn, and open)&#x000A;    a purple capsa of rezrov (open)&#x000A;      a scroll of rezrov&#x000A;    a gold capsa of FOO (closed)&#x000A;    a red capsa of BAR (closed)&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
