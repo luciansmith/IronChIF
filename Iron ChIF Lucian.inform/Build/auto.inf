@@ -11398,7 +11398,7 @@ Global max_z_object;
             print "Check wearing the rucksack during Everything Is Open";
             rtrue;
         }
-        if ((R == call_U2214)) {
+        if ((R == call_U2215)) {
             print "When play begins";
             rtrue;
         }
@@ -28814,12 +28814,12 @@ Global max_z_object;
     rfalse;
 ];
 [ call_U392 forbid_breaks rv;
-    (rv = (call_U2214)());
+    (rv = (call_U2215)());
     if (rv) {
         if ((rv == 2)) {
             return reason_the_action_failed;
         }
-        return call_U2214;
+        return call_U2215;
     }
     ((latest_rule_result-->(0)) = 0);
     rfalse;
@@ -64548,7 +64548,7 @@ Global max_z_object;
             DB_Rule(call_U2207, 900, 0);
         }
         call_U2211();
-        call_U2213();
+        call_U2214();
         RulebookSucceeds(0, 0);
         rtrue;
     } else {
@@ -64623,7 +64623,7 @@ Global max_z_object;
             }
             (say__p = 1);
             ParaContent();
-            print "A mystical force prevents you from fastening the buckles on the rucksack.";
+            print "A mystical force prevents you from fastening the buckles on the rucksack, and you are unable to put it on.";
             print "^";
             rtrue;
         } else {
@@ -64655,8 +64655,19 @@ Global max_z_object;
                 print "^";
             }
         }
+    }
+    for (((tmp_0 = (call_U2213)(0)),(tmp_1 = (call_U2213)(tmp_0))):tmp_0:((tmp_0 = tmp_1),(tmp_1 = (call_U2213)(tmp_1)))) {
         if (call_U335(tmp_0)) {
-            if ((~~((tmp_0 ofclass K17_capsa)))) {
+            if ((((tmp_0 ofclass K17_capsa)) && (TestVisibility(player, tmp_0)))) {
+                (say__p = 1);
+                ParaContent();
+                print "The magic of ";
+                ParaContent();
+                DefArt(tmp_0);
+                ParaContent();
+                print " prevents it from being opened.";
+                print "^";
+            } else {
                 call_U333(tmp_0);
                 if (TestVisibility(player, tmp_0)) {
                     (say__p = 1);
@@ -64695,16 +64706,32 @@ Global max_z_object;
     }
     rfalse;
 ];
-[ call_U2213;
+[ call_U2213 x x_ix;
+    if ((x_ix > 0)) {
+        (x_ix)--;
+        jump NextOuterLoop_4;
+    }
+    if (x) {
+        jump NextOuterLoop_4;
+    }
+    for ((x = K2_thing_First):x:(x = (x.K2_thing_Next))) {
+        if (call_U338(x)) {
+            return x;
+        }
+        .NextOuterLoop_4;
+    }
+    rfalse;
+];
+[ call_U2214;
     (say__p = 1);
     ParaContent();
     print "Also, you alert everyone to your presence, and they start heading straight for you.  Fortunately, they are, as of yet, unimplemented.  LS DEBUG.";
     print "^";
     rfalse;
 ];
-[ call_U2214;
+[ call_U2215;
     if (debug_rules) {
-        DB_Rule(call_U2214, 904, 0);
+        DB_Rule(call_U2215, 904, 0);
     }
     (say__p = 1);
     ParaContent();

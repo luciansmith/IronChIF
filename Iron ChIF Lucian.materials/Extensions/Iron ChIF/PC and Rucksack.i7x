@@ -46,8 +46,11 @@ To carry out everything rezrovving:
 			now the item is unlocked;
 			if the player can see the item:
 				say "[The item] clicks as it unlocks!";
+	repeat with item running through openable things:
 		if the item is closed:
-			if the item is not a capsa:
+			if the item is a capsa and the player can see the item:
+				say "The magic of [the item] prevents it from being opened.";
+			otherwise:
 				now the item is open;
 				if the player can see the item:
 					say "[The item] flies open!";
@@ -72,7 +75,7 @@ Check locking something with during Everything Is Open:
 	say "Try as you might, a mystical force prevents you from locking [the noun]." instead.
 
 Check wearing the rucksack during Everything Is Open:
-	say "A mystical force prevents you from fastening the buckles on the rucksack." instead.
+	say "A mystical force prevents you from fastening the buckles on the rucksack, and you are unable to put it on." instead.
 
 Section foo
 
