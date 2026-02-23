@@ -67,7 +67,7 @@ Carry out Crediting:
 
 Section Summoning mist
 
-The grey mist is a backdrop.  The grey mist can be summoned or unsummoned.  The grey mist is unsummoned.  The description is "[if summoned]Grey mist swirls and surrounds you, covering you like a blanket.[otherwise]The cloud layer today is too high for a naturally obscuring mist; you'll have to summon it yourself."  Understand "cloud/clouds/gray" as the grey mist.  The grey mist is everywhere.
+The grey mist is a backdrop.  The grey mist can be summoned or unsummoned.  The grey mist is unsummoned.  The description is "[if summoned]Grey mist swirls and surrounds you, covering you like a blanket[otherwise]The cloud layer today is too high for a naturally obscuring mist; you'll have to summon it yourself[end if]."  Understand "cloud/clouds/gray" as the grey mist.  The grey mist is everywhere.
 
 Summoning is an action applying to one thing.  Understand "summon [something]" as summoning.
 
