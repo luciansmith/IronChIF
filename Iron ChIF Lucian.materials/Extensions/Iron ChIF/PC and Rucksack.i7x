@@ -12,6 +12,8 @@ The player is Constance.
 
 [Note: I looked up 'famous falconers' and one of them was King Frederick II.  So I looked up his wife's name, found our there were at least four of them (!), and 'Constance' stood out to me as a good PC name.]
 
+Constance can be wounded.  Constance is not wounded.
+
 A leather rucksack is a player's holdall worn by the Constance.  
 
 Section capsas and scrolls
