@@ -51,6 +51,20 @@ After reading a command when the player's command matches the regular expression
 	[say "(changed to '[T]')";]
 	change the text of the player's command to T;
 
+Section credits
+
+Crediting is an action out of world applying to nothing.  Understand "credits" as Crediting.
+
+Carry out Crediting:
+	say "This game would not have been possible without the intense energy of @otistdog on the intfiction forums creating the idea of having an 'Iron ChIF' competition, nor without Ryan Veeder agreeing to be the aforementioned 'Iron ChIF Inform 7' to compete against.
+	
+	Particular thanks go to my betatesters, Sarah Wilson (day 1), Steven Granade (day 2), Allyson Gray (day 3), and Dan 'inky' Shiovitz (day 4).
+	
+	Thanks also to the official judges for this competition: Chandler Groover, Victor Gijsbers, J. J. McC, Brian Rushton, and N. Cormier, and technical advisor Zed Lopez.  You all have been great!
+	
+	Apologies to N. Cormier for letting her cats out backstage.  I forgot to check the spotlights!"
+
+
 Section Summoning mist
 
 The grey mist is a backdrop.  The grey mist can be summoned or unsummoned.  The grey mist is unsummoned.  The description is "[if summoned]Grey mist swirls and surrounds you, covering you like a blanket.[otherwise]The cloud layer today is too high for a naturally obscuring mist; you'll have to summon it yourself."  Understand "cloud/clouds/gray" as the grey mist.  The grey mist is everywhere.

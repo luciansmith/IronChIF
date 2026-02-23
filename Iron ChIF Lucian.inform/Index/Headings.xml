@@ -1599,67 +1599,74 @@
     <key>228</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Rules and New Actions.i7x</string>
         <key>Line</key><integer>54</integer>
-        <key>Title</key><string>Section Summoning mist</string>
+        <key>Title</key><string>Section credits</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>229</key><dict>
+        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Rules and New Actions.i7x</string>
+        <key>Line</key><integer>68</integer>
+        <key>Title</key><string>Section Summoning mist</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>230</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Map.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>--</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>230</key><dict>
+    <key>231</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Map.i7x</string>
         <key>Line</key><integer>4</integer>
         <key>Title</key><string>Book Map</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>231</key><dict>
+    <key>232</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>--</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>232</key><dict>
+    <key>233</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
         <key>Line</key><integer>4</integer>
         <key>Title</key><string>Book Cast</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>233</key><dict>
+    <key>234</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
         <key>Line</key><integer>6</integer>
         <key>Title</key><string>Section Constance</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>234</key><dict>
+    <key>235</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
         <key>Line</key><integer>17</integer>
         <key>Title</key><string>Section capsas and scrolls</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>235</key><dict>
+    <key>236</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
         <key>Line</key><integer>36</integer>
         <key>Title</key><string>Section rezrov</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>236</key><dict>
+    <key>237</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
         <key>Line</key><integer>80</integer>
         <key>Title</key><string>Section foo</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>237</key><dict>
+    <key>238</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
         <key>Line</key><integer>86</integer>
         <key>Title</key><string>Section Bar</string>

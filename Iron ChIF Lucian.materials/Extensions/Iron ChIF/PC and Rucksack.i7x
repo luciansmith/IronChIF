@@ -62,11 +62,11 @@ To carry out everything rezrovving:
 To carry out aerie on high alert:
 	say "Also, you alert everyone to your presence, and they start heading straight for you.  Fortunately, they are, as of yet, unimplemented.  LS DEBUG."
 
-After opening the purple capsa:
+Everything Is Open is a recurring scene.  Everything Is Open begins when the purple capsa is open.  Everything Is Open ends when the purple capsa is closed.
+
+When Everything Is Open begins:
 	carry out everything rezrovving;
 	carry out aerie on high alert;
-
-Everything Is Open is a recurring scene.  Everything Is Open begins when the purple capsa is open.  Everything Is Open ends when the purple capsa is closed.
 
 Check closing something during Everything Is Open:
 	say "Try as you might, a mystical force prevents you from closing [the noun]." instead.
