@@ -23,4 +23,4 @@ By tonight, you will know.  You're not leaving without it."
 
 Chapter Testing - not for release
 
-test summon with "d/n/summon mist/d/u"
+test summon with "d/n/summon mist/d/u/d"

@@ -64,6 +64,22 @@ Carry out Crediting:
 	
 	Apologies to N. Cormier for letting her cats out backstage.  I forgot to check the spotlights!"
 
+Section about
+
+Abouting is an action out of world applying to nothing.  Understand "about" as abouting.
+
+Carry out abouting:
+	say "This game was written in five days for Episode One of Iron ChIF, where I (as the challenger) wrote this game while Ryan Veeder (the 'Iron ChIF Inform 7') wrote his own game.  Extensive discussion and commentary from that episode can be found on the intfiction.org web site, at
+	
+	https://intfiction.org/t/iron-chif-season-one-episode-1-lpsmith-vs-afterward-using-inform-7/78122
+
+	and
+	
+	https://intfiction.org/t/iron-chif-season-one-episode-1-audience-commentary/79065/
+
+	The source code can be found at
+
+	https://github.com/luciansmith/IronChIF/[lb]"
 
 Section Summoning mist
 
@@ -79,10 +95,7 @@ Carry out summoning the grey mist:
 	if the grey mist is summoned:
 		say "You draw even more moisture from the air, feeding it into the mist.  It's still just as obscuring as before, but you feel safer, as you always do in the midst of clouds.";
 	otherwise:
-		say "[one of]Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry[or]You summon an obscuring grey mist to surround you and hide you from prying eyes[stopping]."
-
-After summoning the grey mist:
-	now the grey mist is summoned;
-	continue the action.
+		say "[one of]Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry[or]You summon an obscuring grey mist to surround you and hide you from prying eyes[stopping].";
+		now the grey mist is summoned;
 
 Rules and New Actions ends here.
