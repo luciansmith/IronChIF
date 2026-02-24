@@ -23,3 +23,11 @@ Day one mop-up:  open tabs include:
 * Why doesn't it get foggy indoors when the window is open? (leave open)
 * the top part of a tree
 * rooms in a castle
+
+Day two mop-up:  open tabs include:
+* synonyms for tapping
+* Red-headed woodpecker sounds
+* How to say 'fire' in approximately 5000 different languages
+* notalwaysright.com
+* "inform 7 exit if statement"
+* synonyms for thick
