@@ -83,19 +83,53 @@ Carry out abouting:
 
 Section Summoning mist
 
-The grey mist is a backdrop.  The grey mist can be summoned or unsummoned.  The grey mist is unsummoned.  The description is "[if summoned]Grey mist swirls and surrounds you, covering you like a blanket[otherwise]The cloud layer today is too high for a naturally obscuring mist; you'll have to summon it yourself[end if]."  Understand "cloud/clouds/gray" as the grey mist.  The grey mist is everywhere.
+A room can be cloudy or clear.  A room is usually cloudy.
+
+The grey mist is a backdrop.  The description is "Grey mist swirls and surrounds you, covering you like a blanket."  Understand "cloud/clouds/gray" as the grey mist.
+
+When play begins:
+    move the grey mist backdrop to all cloudy rooms.
+
+The grey mist has a number called thickness.  The thickness of the grey mist is 1.
 
 Summoning is an action applying to one thing.  Understand "summon [something]" as summoning.
 
 Check summoning something:
-	if the noun is not the grey mist:
+	if the noun is not the grey mist and the noun is not the no_mist:
 		say "You're a Bostrat: you can summon mist and clouds, but nothing else." instead.
 
-Carry out summoning the grey mist:
-	if the grey mist is summoned:
-		say "You draw even more moisture from the air, feeding it into the mist.  It's still just as obscuring as before, but you feel safer, as you always do in the midst of clouds.";
+Carry out summoning:
+	if no_mist is in the location:
+		now the location is cloudy;
+		update backdrop positions;
+		move no_mist to the Void;
+		say "[one of]Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry[or]You summon an obscuring grey mist to surround you and hide you from prying eyes[stopping].
+		
+		You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, but it would then start to dissapate.";
 	otherwise:
-		say "[one of]Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry[or]You summon an obscuring grey mist to surround you and hide you from prying eyes[stopping].";
-		now the grey mist is summoned;
+		if the thickness of the grey mist is greater than 12:
+			now the thickness of the grey mist is 15;
+			say "That's as thick as you can make the mist--there's simply no more water to pull into the air.";
+		otherwise:
+			if the thickness of the grey mist is at least 10:
+				now the thickness of the grey mist is 15;
+			otherwise if the thickness of the grey mist is at least 7:
+				now the thickness of the grey mist is 12;
+			otherwise if the thickness of the grey mist is at least 4:
+				now the thickness of the grey mist is 9;
+			otherwise:
+				now the thickness of the grey mist is 6;
+			say "You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.";
+
+Mist depletion is a recurring scene.  Mist depletion begins when the thickness of the grey mist is greater than one.  Mist depletion ends when the thickness of the grey mist is one.
+
+Every turn during Mist depletion:
+	decrease the thickness of the grey mist by one;
+	if the thickness of the grey mist is one:
+		say "Your summoned mist thins back to equilibrium.  Still thick enough to mostly obscure you, but you'll have to be careful.";
+	otherwise if the thickness of the grey mist is 3 or the thickness of the grey mist is 6 or the thickness of the grey mist is 9 or the thickness of the grey mist is 12:
+		say "Your summoned mist thins slightly, on its way back to equilibrium.";
+	[say "Thickness: [the thickness of the grey mist].";]
+
 
 Rules and New Actions ends here.

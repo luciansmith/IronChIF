@@ -14,6 +14,8 @@ The player is Constance.
 
 Constance can be wounded.  Constance is not wounded.
 
+[The carrying capacity of Constance is 1.][Not sure about this--it would be strong motivation to turn off rezrov, though!]
+
 A leather rucksack is a player's holdall worn by the Constance.  
 
 Section capsas and scrolls
