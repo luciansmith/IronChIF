@@ -7,7 +7,7 @@ Using Inform kit 'EnglishLanguageKit' (priority 1).
 Using Inform kit 'WorldModelKit' (priority 2).
 Using Inform kit 'CommandParserKit' (priority 3).
 756 Preform nonterminals read from C:\Program Files\Inform\Internal\Languages\English\Syntax.preform
-I've now read your source text, which is 236 words long.
+I've now read your source text, which is 256 words long.
 Included: core, naming, instance counting, interactive fiction, spatial model, backdrops, bibliographic data, chronology, devices, mapping, persons, player, regions, scenes, scoring, timed rules, times of day, actions, going, command, showme, multimedia, figures, sounds, glulx external files
 Excluded: 
 I've also read Basic Inform by Graham Nelson, which is 7691 words long.
@@ -16,11 +16,11 @@ I've also read Standard Rules by Graham Nelson, which is 32164 words long.
 I've also read Response Assistant by Aaron Reed, which is 558 words long.
 I've also read Hybrid Choices by AW Freyr, which is 10371 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2223 words long.
-I've also read Rules And New Actions by Iron ChIF, which is 927 words long.
-I've also read Map by Iron ChIF, which is 1616 words long.
-I've also read PC And Rucksack by Iron ChIF, which is 863 words long.
+I've also read Rules And New Actions by Iron ChIF, which is 959 words long.
+I've also read Map by Iron ChIF, which is 2706 words long.
+I've also read PC And Rucksack by Iron ChIF, which is 935 words long.
 I've also read Lucian's Scenes by Iron ChIF, which is 214 words long.
-I've also read Being Chased by Iron ChIF, which is 1326 words long.
+I've also read Being Chased by Iron ChIF, which is 1360 words long.
 
 
 -----------------------------------------------------
@@ -50,7 +50,7 @@ Loading kinds definitions from C:\Program Files\Inform\Internal\Inter\CommandPar
 Phase III ... Pre-pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pre_pass() took 7cs
+.... MajorNodes__pre_pass() took 8cs
 
 
 -----------------------------------------------------
@@ -125,7 +125,7 @@ Phase XII ... Generating inter (2)
 Phase XIII ... Generating inter (3)
 -----------------------------------------------------
 
-.... Sequence__undertake_queued_tasks() took 155cs
+.... Sequence__undertake_queued_tasks() took 156cs
 .... Sequence__undertake_queued_tasks() took 2cs
 .... RTPhrasebook__compile_entries() took 4cs
 
@@ -163,7 +163,7 @@ Phase XVI ... Bibliographic work
 Phase XVII ... Complete
 -----------------------------------------------------
 
-Compile CPU time: 200 centiseconds
+Compile CPU time: 203 centiseconds
 
 
 ==== Phase XVII.1 ... step 1/15: read <- *memory ====
@@ -208,12 +208,12 @@ Compile CPU time: 200 centiseconds
 
 ==== Phase XVII.11 ... step 11/15: eliminate-redundant-labels ====
 
-2041 redundant label(s) removed
+2086 redundant label(s) removed
 
 
 ==== Phase XVII.12 ... step 12/15: eliminate-redundant-operations ====
 
-449 redundant operation(s) removed
+485 redundant operation(s) removed
 
 
 ==== Phase XVII.13 ... step 13/15: optionally-generate text ->  ====
@@ -6152,8 +6152,8 @@ HTML tag stack:
     52. html (opened at line 236 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
 
 
-Back end elapsed time: 225cs
-Total of 124 files written as streams.
+Back end elapsed time: 249cs
+Total of 126 files written as streams.
 Vacant escapes: %: ..CDE.GH..K.M.O.QR.TU...YZab..e..h.jklm.o.qr......yz0123456789
 Vacant escapes: $: .....F...J..........UVW.....................s.u..x.........789
 

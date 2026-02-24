@@ -51,9 +51,11 @@ Being Chased has a room called starting_line.  The starting_line of Being Chased
 
 When being chased begins:
 	Now the starting_line of Being Chased is the location;
+	Move the lone guard to the Void;
+	Move the tiny closed padlocks to the Void;
 	say "From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  'Intruder! Estimated direction is...' and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies, and they [i]don't[r] know where you are.
 	
-	Or they didn't, at least."
+	Or they didn't, at least.";
 
 Before examining something during Being Chased:
 	say "Lightning fast, you try to examine [the noun].";
@@ -77,7 +79,7 @@ Every turn during Being Chased:
 			If the starting_line of Being Chased is High Above:
 				say "You've dived straight into a squad of Raven Guards, on their way up to accost you.  Fortunately, your speed helped you avoid most of them, but one guard's talon catches you on your side as you twist by them.";
 				Now Constance is wounded;
-			Otherwise if the starting_line of Being Chased is In the Forest:
+			Otherwise if the starting_line of Being Chased is in_forest:
 				say "Your ascent brings you right into a squad of Raven Guards, on their way to accost you.  You see them only barely before they see you, and it's just enough to mostly avoid them.  Still, a slash from a Raven Guard beak catches you in the side as you twist past.";
 				Now Constance is wounded;
 			Otherwise:
@@ -122,6 +124,8 @@ To determine evasion:
 To escape and recover:
 	Now the woodpeckers are not activated;
 	Move the Raven Guard to the Void;
+	Move the Lone Guard to the Librum Landing Cradle;
+	Move the small pile of tiny padlocks to the Librum Landing Cradle;
 	Now the closeness of Being Chased is 0;
 	say "The Raven's frustrated caws echo in the mist, and you plot a now-unseen course returning to the familiar currents above the Aerie.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, but increase patrols.";
 	Move the player to High Above;

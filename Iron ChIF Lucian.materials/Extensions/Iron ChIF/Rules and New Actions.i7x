@@ -145,4 +145,14 @@ Diving is an action applying to nothing.  Understand "dive" as diving.
 Before diving:
 	Try going down;
 
+Ascending is an action applying to nothing.  Understand "ascend" as ascending.
+Before ascending:
+	Try going up;
+
+Descending is an action applying to nothing.  Understand "descend" as Descending.
+Before Descending:
+	Try going down;
+
+[Understand "fly" as going something.] [Well!  An I7 'abject failure' bug!  Woo!]
+
 Rules and New Actions ends here.

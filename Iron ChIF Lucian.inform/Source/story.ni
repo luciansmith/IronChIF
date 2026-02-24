@@ -26,4 +26,8 @@ Chapter Testing - not for release
 
 test summon with "d/n/summon mist/d/u/d/u".
 test scenery with "x aerie/x royal quarters/x librum/x great hall".
-test map with "d/u/n/u/e/u/d/e/nw/s/n/se/w".
+test map with "d/u/n/u/e/u/d/e/nw/s/n/se/w/d/u/e/d/e/d/n/d/u/u".
+test thicken_mist with "summon mist/g/g/g/g/g".
+test chase_ustart with "open purple/e/nw/u".
+test chase_dstart with "d/d/open purple/n/se/u".
+test chase_mstart with "d/open purple/e/w/u".

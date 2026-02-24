@@ -5,8 +5,9 @@ Book Cast
 
 Section Constance
 
-Constance is a woman in High Above.  "A powerful Falcon Clan female is here, her large black eyes watching you with fierce intensity."  The description of Constance is "{LS DEBUG: At some point, I really have to decide if these bird people have arms or not.  Like, are they feathered humans with six limbs (arms, wings, legs) and bird heads?  Or just more-upright bird-birds?  Let's go with bird-birds, at least for now...}
-As a member of the Falcon Clan, your most striking features are your large black eyes, offset with yellow, and slightly recessed under a grey-feathered scalp.  The grey blends from your head, mottling along your back and the backside of your wings, while your front, throat, and underwings are feathered white with brown striations.  A close encounter with a Raven during your previous mission left you missing a few contour feathers and some down, but not enough to hinder movement or flight."  
+Constance is a woman in High Above.  "A powerful Falcon Clan female is here, her large black eyes watching you with fierce intensity."  The description of Constance is "As a member of the Falcon Clan, your most striking features are your large black eyes, offset with yellow, and slightly recessed under a grey-feathered scalp.  The grey blends from your head, mottling along your back and the backside of your wings, while your front, throat, and underwings are feathered white with brown striations.  A close encounter with a Raven during your previous mission left you missing a few contour feathers and some down, but not enough to hinder movement or flight."
+
+[As might be predicted, the 'let's go with this for now' decision has been solidified in stone.]
 
 The player is Constance.
 
@@ -44,7 +45,13 @@ A purple capsa of opening is a capsa in the rucksack.  The description is "The p
 A scroll of rezrov is a scroll in the purple capsa.  The name is "REZROV".  Understand "opening" as the scroll of rezrov.
 
 To carry out everything rezrovving:
-	say "As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.";
+	say "As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.[lb]";
+	if the lone guard is in the location:
+		say "As the shockwave of magic reaches the guard, the padlock on her uniform closest to you pops open.  Then in succession, all the other padlocks she's wearing pop open as well, in perfect concentric circles in order of how distant they are from the scroll.  As her eyes lock with yours, you realize, somewhat belatedly, that you've given her the ability to triangulate on your position.  Without hesitation, she leaps straight at you, before you even have time to let go of the capsa.
+		
+		The door behind her opens silently as she tackles you to the ground.";
+		end the story saying "You have been captured.";
+		stop;
 	repeat with item running through lockable things:
 		if the item is locked:
 			now the item is unlocked;
@@ -62,12 +69,12 @@ To carry out everything rezrovving:
 		say "The straps and buckles on your rucksack fly open and it falls!";
 		now the rucksack is carried by the player;
 		try dropping the rucksack;
+	Now the woodpeckers are activated; [Starts the 'being chased' scene]
 
 Everything Is Open is a recurring scene.  Everything Is Open begins when the purple capsa is open.  Everything Is Open ends when the purple capsa is closed.
 
 When Everything Is Open begins:
 	carry out everything rezrovving;
-	now the woodpeckers are activated; [Starts the 'being chased' scene]
 
 Check closing something during Everything Is Open:
 	say "Try as you might, a mystical force prevents you from closing [the noun]." instead.
