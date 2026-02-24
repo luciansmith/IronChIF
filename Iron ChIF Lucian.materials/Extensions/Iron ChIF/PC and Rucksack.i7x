@@ -120,6 +120,14 @@ The gold capsa of Down is a capsa in the rucksack.  The description is "The gold
 
 A scroll of rudenj is a scroll in the gold capsa.  The name is "rudenj".
 
+Check dropping the gold capsa during Everything Falls:
+	if Being Chased is happening:
+		say "You could ditch the capsa and get away by using it as bait, but that would be just as bad as them catching you directly.  You need the power of this capsa to get the scroll of Health." instead;
+
+Check dropping the rucksack during Everything Falls:
+	if Being Chased is happening and the rucksack encloses the gold capsa:
+		say "You could ditch the gold capsa and get away by using it as bait, but that would be just as bad as them catching you directly.  You need the power of this capsa to get the scroll of Health." instead;
+
 ['rudenj' from rudenį: 'fall' in Lithuanian.]
 
 Everything Falls is a recurring scene.  Everything Falls begins when the gold capsa is open.  Everything Falls ends when the gold capsa is closed.
@@ -158,9 +166,12 @@ When Everything Falls ends:
 
 Section Bar
 
-The red capsa of BAR is a capsa in the rucksack.  The description is "The red capsa turned out to contain a scroll of SOMETHING[first time], as became evident (MAYBE?)[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to DO STUFF[end if]."
+The red capsa of hasten is a capsa in the rucksack.  The description is "The red capsa turned out to contain a scroll of hasten[first time], which you and the sages eventually determined when it became clear that everyone was acting as if they were high on guarana berries[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to make everything happen much faster[end if]."
 
-A scroll of BAR is a scroll in the red capsa.  The name is "BAR".
+A scroll of quiste is a scroll in the red capsa.  The name is "quiste".
 
+[quiste: quick + haste]
+
+Go go go is a recurring scene.  Go go go begins when the red capsa is open.  Go go go ends when the red capsa is closed.
 
 PC and Rucksack ends here.

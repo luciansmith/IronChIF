@@ -106,6 +106,10 @@ Every turn during Being Chased:
 [Note: 'Ikniq' actually means 'Fire' in Iñupiaq.  According to The Internet.]
 
 To determine evasion:
+	If Everything Falls is happening:
+		if Everything Falls is upended:
+			say "You dodge and weave and almost get away from your pursuers, but when 'down' always points straight at you, even when they can't see you, they always know where you are.";
+			stop;
 	If Super-Momentum is happening:
 		say "You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.";
 		escape and recover;
