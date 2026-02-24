@@ -34,6 +34,8 @@ Check going somewhere from High Above:
 After going from High Above:
 	if Starting Off is happening:
 		say "You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...";
+	otherwise if the player contains an open gold capsa:
+		say "You descend towards the Aerie, though it feels like you're flying upwards, against the pull of the scroll of down.";
 	otherwise:
 		now Constance is speeding;
 		say "You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.";

@@ -17,7 +17,8 @@ When Super-momentum ends:
 		now Constance is speeding.
 
 Woodpeckers are people in the Void.  The description is "I dunno if you'll ever actually see these guys; they just sound the alarms from offstage."
-Woodpeckers can be activated.  Woodpeckers are not activated.
+Woodpeckers can be activated. Woodpeckers are not activated.
+Woodpeckers have a number called reset state. The reset state of the Woodpeckers is 5.
 
 The Raven Guard are people in the Void.  The description is "Black as night, apart from the silvered knives they wear on their talons, and the golden razors that line their beaks."
 
@@ -53,9 +54,9 @@ When being chased begins:
 	Now the starting_line of Being Chased is the location;
 	Move the lone guard to the Void;
 	Move the tiny closed padlocks to the Void;
-	say "From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  'Intruder! Estimated direction is...' and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies, and they [i]don't[r] know where you are.
+	say "From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  [if Everything Falls is happening]'Intruder!  The enemy is DOWN. Repeat!  The enemy is DOWN.'  You realize that creating a gravity well pointing straight at you might not have been the wisest move[otherwise]'Intruder! Estimated direction is...' and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies, and they [i]don't[r] know where you are.
 	
-	Or they didn't, at least.";
+	Or they didn't, at least[end if].";
 
 Before examining something during Being Chased:
 	say "Lightning fast, you try to examine [the noun].";

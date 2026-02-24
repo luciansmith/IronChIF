@@ -8,6 +8,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-416"/>
+      <child nodeId="node-436"/>
       <child nodeId="node-395"/>
       <child nodeId="node-210"/>
     </children>
@@ -167,7 +168,7 @@
   </item>
   <item nodeId="node-433">
     <command xml:space="preserve">x door</command>
-    <result xml:space="preserve">The huge double doors are canted hatches that lead into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The huge double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -176,7 +177,7 @@
   </item>
   <item nodeId="node-434">
     <command xml:space="preserve">x doors</command>
-    <result xml:space="preserve">The huge double doors are canted hatches that lead into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The huge double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -185,7 +186,175 @@
   </item>
   <item nodeId="node-435">
     <command xml:space="preserve">x cradle</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The huge double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-436">
+    <command xml:space="preserve">open red</command>
+    <result xml:space="preserve">(the red capsa of BAR)&#x000A;Before you mess with powerful artifacts from the dawn of civilization, you should probably conceal yourself.  You're a Bostrat; the plan was to summon a mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-437"/>
+    </children>
+  </item>
+  <item nodeId="node-437">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, but it would then start to dissapate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-438"/>
+    </children>
+  </item>
+  <item nodeId="node-438">
+    <command xml:space="preserve">open gold</command>
+    <result xml:space="preserve">You open the gold capsa of Down, revealing a scroll of rudenj.&#x000A;&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder!  The enemy is DOWN. Repeat!  The enemy is DOWN."  You realize that creating a gravity well pointing straight at you might not have been the wisest move.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-439"/>
+    </children>
+  </item>
+  <item nodeId="node-439">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;closeness: 1.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-440"/>
+    </children>
+  </item>
+  <item nodeId="node-440">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;closeness: 2.&#x000A;A squad of Raven Guards appears, and their war cries exalt as they spot you.  You weave through the air, tumbling and twisting as you try to avoid them.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-441"/>
+    </children>
+  </item>
+  <item nodeId="node-441">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-442"/>
+    </children>
+  </item>
+  <item nodeId="node-442">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-443"/>
+    </children>
+  </item>
+  <item nodeId="node-443">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-444"/>
+    </children>
+  </item>
+  <item nodeId="node-444">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-445"/>
+    </children>
+  </item>
+  <item nodeId="node-445">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-446"/>
+    </children>
+  </item>
+  <item nodeId="node-446">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-447"/>
+    </children>
+  </item>
+  <item nodeId="node-447">
+    <command xml:space="preserve">open purple</command>
+    <result xml:space="preserve">You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;&#x000A;The magic of the gold capsa of Down prevents it from being opened.&#x000A;The magic of the red capsa of BAR prevents it from being opened.&#x000A;The straps and buckles on your rucksack fly open and it falls!&#x000A;&#x000A;The leather rucksack twists away as it falls below you, towards the Great Hall.&#x000A;&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder! Estimated direction is..." and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies, and they don't know where you are.&#x000A;&#x000A;Or they didn't, at least.&#x000A;&#x000A;closeness: 1.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-448"/>
+    </children>
+  </item>
+  <item nodeId="node-448">
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">Are you sure you want to restart?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-449"/>
+    </children>
+  </item>
+  <item nodeId="node-449">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Your mother needs you.  The whole village needs you.  You can do this.  You must do this.&#x000A;&#x000A;The mantra repeats in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you.  And there's no more Falcon Clan in the Royal Aerie--you and the rest of your clan were all banished years ago.  Three days ago, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.&#x000A;&#x000A;By tonight, you will know.  You're not leaving without it.&#x000A;&#x000A;course correction&#x000A;An Interactive High Heist by Lucian Smith&#x000A;Release 0 / Serial number 260224 / Inform 7 v10.1.2 / D&#x000A;&#x000A;High Above the Royal Aerie&#x000A;You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-450"/>
+    </children>
+  </item>
+  <item nodeId="node-450">
+    <command xml:space="preserve">open gold</command>
+    <result xml:space="preserve">Before you mess with powerful artifacts from the dawn of civilization, you should probably conceal yourself.  You're a Bostrat; the plan was to summon a mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-451"/>
+    </children>
+  </item>
+  <item nodeId="node-451">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, but it would then start to dissapate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-452"/>
+    </children>
+  </item>
+  <item nodeId="node-452">
+    <command xml:space="preserve">open gold</command>
+    <result xml:space="preserve">You open the gold capsa of Down, revealing a scroll of rudenj.&#x000A;&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder!  The enemy is DOWN. Repeat!  The enemy is DOWN."  You realize that creating a gravity well pointing straight at you might not have been the wisest move.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-453"/>
+    </children>
+  </item>
+  <item nodeId="node-453">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;closeness: 1.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-454"/>
+    </children>
+  </item>
+  <item nodeId="node-454">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;closeness: 2.&#x000A;A squad of Raven Guards appears, and their war cries exalt as they spot you.  You weave through the air, tumbling and twisting as you try to avoid them.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -196,6 +365,8 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-396"/>
+      <child nodeId="node-455"/>
+      <child nodeId="node-461"/>
     </children>
   </item>
   <item nodeId="node-396">
@@ -273,6 +444,333 @@
   <item nodeId="node-404">
     <command xml:space="preserve">unlock door</command>
     <result xml:space="preserve">(with the leather rucksack)&#x000A;The guard is entirely too watchful to let you do that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-455">
+    <command xml:space="preserve">open gold</command>
+    <result xml:space="preserve">You open the gold capsa of Down, revealing a scroll of rudenj.&#x000A;&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder!  The enemy is DOWN. Repeat!  The enemy is DOWN."  You realize that creating a gravity well pointing straight at you might not have been the wisest move.&#x000A;&#x000A;closeness: 1.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-456"/>
+    </children>
+  </item>
+  <item nodeId="node-456">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-457"/>
+    </children>
+  </item>
+  <item nodeId="node-457">
+    <command xml:space="preserve">open purple</command>
+    <result xml:space="preserve">You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;&#x000A;The magic of the gold capsa of Down prevents it from being opened.&#x000A;The magic of the red capsa of BAR prevents it from being opened.&#x000A;The straps and buckles on your rucksack fly open and it falls!&#x000A;&#x000A;The leather rucksack twists away as it falls below you, towards the Great Hall.&#x000A;&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder! Estimated direction is..." and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies, and they don't know where you are.&#x000A;&#x000A;Or they didn't, at least.&#x000A;&#x000A;closeness: 1.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-458"/>
+    </children>
+  </item>
+  <item nodeId="node-458">
+    <command xml:space="preserve">close purple</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-459"/>
+    </children>
+  </item>
+  <item nodeId="node-459">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors to the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of Down (closed), and a red capsa of BAR (closed)) here.&#x000A;&#x000A;closeness: 2.&#x000A;You've dived straight into a squad of Raven Guards, on their way up to accost you.  Fortunately, your speed helped you avoid most of them, but one guard's talon catches you on your side as you twist by them.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-460"/>
+    </children>
+  </item>
+  <item nodeId="node-460">
+    <command xml:space="preserve">close purple</command>
+    <result xml:space="preserve">You close the purple capsa of opening.&#x000A;&#x000A;You feel your skin prickle where you were wounded, and look down.  To your amazement, your wound has closed and the bleeding stopped.  As you watch, even the line from the cut disappears, and the feathers around it fluff out again.&#x000A;&#x000A;It's the scroll of Health.  It has to be.  It's actually here!  And active.  Hmm.&#x000A;&#x000A;closeness: 3.&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-461">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-462"/>
+    </children>
+  </item>
+  <item nodeId="node-462">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-463"/>
+    </children>
+  </item>
+  <item nodeId="node-463">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-464"/>
+    </children>
+  </item>
+  <item nodeId="node-464">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-465"/>
+    </children>
+  </item>
+  <item nodeId="node-465">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">That's as thick as you can make the mist--there's simply no more water to pull into the air.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-466"/>
+    </children>
+  </item>
+  <item nodeId="node-466">
+    <command xml:space="preserve">open purple</command>
+    <result xml:space="preserve">You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;&#x000A;The magic of the gold capsa of Down prevents it from being opened.&#x000A;The magic of the red capsa of BAR prevents it from being opened.&#x000A;The straps and buckles on your rucksack fly open and it falls!&#x000A;&#x000A;The leather rucksack twists away as it falls below you, towards the Great Hall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-467"/>
+    </children>
+  </item>
+  <item nodeId="node-467">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.&#x000A;&#x000A;A lone Raven guard stands in front of the door, dark eyes shifting as she watches the mist.&#x000A;&#x000A;Your summoned mist thins slightly, on its way back to equilibrium.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-468"/>
+    </children>
+  </item>
+  <item nodeId="node-468">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-469"/>
+    </children>
+  </item>
+  <item nodeId="node-469">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You gracefully flit between the trees back up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors to the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of Down (closed), and a red capsa of BAR (closed)) here.&#x000A;&#x000A;The momentum you had from your dive wears off.  Fun while it lasted!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-470"/>
+    </children>
+  </item>
+  <item nodeId="node-470">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;Your summoned mist thins slightly, on its way back to equilibrium.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-471"/>
+    </children>
+  </item>
+  <item nodeId="node-471">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors to the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of Down (closed), and a red capsa of BAR (closed)) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-472"/>
+    </children>
+  </item>
+  <item nodeId="node-472">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-473"/>
+    </children>
+  </item>
+  <item nodeId="node-473">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The net prevents you from reaching the forest floor.  Fortunately, you're already where you want to be.&#x000A;&#x000A;Your summoned mist thins slightly, on its way back to equilibrium.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-474"/>
+    </children>
+  </item>
+  <item nodeId="node-474">
+    <command xml:space="preserve">get rucksack</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-475"/>
+    </children>
+  </item>
+  <item nodeId="node-475">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You gracefully flit between the trees back up above the canopy.&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.&#x000A;&#x000A;A lone Raven guard stands in front of the door, dark eyes shifting as she watches the mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-476"/>
+    </children>
+  </item>
+  <item nodeId="node-476">
+    <command xml:space="preserve">close purple</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-477"/>
+    </children>
+  </item>
+  <item nodeId="node-477">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;The momentum you had from your dive wears off.  Fun while it lasted!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-478"/>
+    </children>
+  </item>
+  <item nodeId="node-478">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Your summoned mist thins slightly, on its way back to equilibrium.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-479"/>
+    </children>
+  </item>
+  <item nodeId="node-479">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-480"/>
+    </children>
+  </item>
+  <item nodeId="node-480">
+    <command xml:space="preserve">open purple</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-481"/>
+    </children>
+  </item>
+  <item nodeId="node-481">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;Your summoned mist thins back to equilibrium.  Still thick enough to mostly obscure you, but you'll have to be careful.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-482"/>
+    </children>
+  </item>
+  <item nodeId="node-482">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors to the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of Down (closed), and a red capsa of BAR (closed)) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-483"/>
+    </children>
+  </item>
+  <item nodeId="node-483">
+    <command xml:space="preserve">get rucksack</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;The momentum you had from your dive wears off.  Fun while it lasted!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-484"/>
+    </children>
+  </item>
+  <item nodeId="node-484">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.&#x000A;&#x000A;A lone Raven guard stands in front of the door, dark eyes shifting as she watches the mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-485"/>
+    </children>
+  </item>
+  <item nodeId="node-485">
+    <command xml:space="preserve">x door</command>
+    <result xml:space="preserve">A canted open hatch to the Librum, on the east side of the landing cradle.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-486"/>
+    </children>
+  </item>
+  <item nodeId="node-486">
+    <command xml:space="preserve">close purple</command>
+    <result xml:space="preserve">You close the purple capsa of opening.&#x000A;&#x000A;The guard closes the Librum door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-487"/>
+    </children>
+  </item>
+  <item nodeId="node-487">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;The guard locks the Librum door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-488"/>
+    </children>
+  </item>
+  <item nodeId="node-488">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-489"/>
+    </children>
+  </item>
+  <item nodeId="node-489">
+    <command xml:space="preserve">open purple</command>
+    <result xml:space="preserve">You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;&#x000A;As the shockwave of magic reaches the guard, the padlock on her uniform closest to you pops open.  Then in succession, all the other padlocks she's wearing pop open as well, in perfect concentric circles in order of how distant they are from the scroll.  As her eyes lock with yours, you realize, somewhat belatedly, that you've given her the ability to triangulate on your position.  Without hesitation, she leaps straight at you, before you even have time to let go of the capsa.&#x000A;&#x000A;The door behind her opens silently as she tackles you to the ground.&#x000A;&#x000A;&#x000A;&#x000A;    *** You have been captured. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-490"/>
+    </children>
+  </item>
+  <item nodeId="node-490">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-491"/>
+    </children>
+  </item>
+  <item nodeId="node-491">
+    <command xml:space="preserve">showme tiny closed</command>
+    <result xml:space="preserve">Tiny closed padlocks - thing&#x000A;location: part of the well-fitting uniform worn by the lone guard in Librum Landing Cradle&#x000A;unlit, inedible, portable; singular-named, proper-named&#x000A;description: "Yes, those are definitely tiny padlocks, each attached to small leather loops stitched to her uniform.  You peer more intently.  The stitching where the loops attach is definitely newer than the stitching on the rest of the uniform.  They must have been added recently."&#x000A;initial appearance: none&#x000A;printed name: "Tiny closed padlocks"&#x000A;printed plural name: none&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
