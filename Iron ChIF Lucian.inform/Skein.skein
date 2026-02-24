@@ -7,12 +7,711 @@
     <commentary xml:space="preserve">Your mother needs you.  The whole village needs you.  You can do this.  You must do this.&#x000A;&#x000A;The mantra repeats in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you.  And there's no more Falcon Clan in the Royal Aerie--you and the rest of your clan were all banished years ago.  Three days ago, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.&#x000A;&#x000A;By tonight, you will know.  You're not leaving without it.&#x000A;&#x000A;course correction&#x000A;An Interactive High Heist by Lucian Smith&#x000A;Release 0 / Serial number 260223 / Inform 7 v10.1.2 / D&#x000A;&#x000A;High Above the Royal Aerie&#x000A;You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-215"/>
+      <child nodeId="node-227"/>
       <child nodeId="node-210"/>
     </children>
   </item>
+  <item nodeId="node-215">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">If you get any closer to the aerie without summoning mist first, the guards would surely see you.  It's why, as a Bostrat, you were originally chosen to go on this mission.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-216"/>
+      <child nodeId="node-280"/>
+    </children>
+  </item>
+  <item nodeId="node-216">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, but it would then start to dissapate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-217"/>
+    </children>
+  </item>
+  <item nodeId="node-217">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  It thickensIt's still just as obscuring as before, but you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;woo PEMDAS.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-218"/>
+    </children>
+  </item>
+  <item nodeId="node-218">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  It thickensIt's still just as obscuring as before, but you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;woo PEMDAS.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-219"/>
+    </children>
+  </item>
+  <item nodeId="node-219">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  It thickensIt's still just as obscuring as before, but you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-220"/>
+    </children>
+  </item>
+  <item nodeId="node-220">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  It thickensIt's still just as obscuring as before, but you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-221"/>
+    </children>
+  </item>
+  <item nodeId="node-221">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-222"/>
+    </children>
+  </item>
+  <item nodeId="node-222">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-223"/>
+    </children>
+  </item>
+  <item nodeId="node-223">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-224"/>
+    </children>
+  </item>
+  <item nodeId="node-224">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-225"/>
+    </children>
+  </item>
+  <item nodeId="node-225">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-226"/>
+    </children>
+  </item>
+  <item nodeId="node-226">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for 11 mins now)&#x000A;Scene 'Mist depletion' playing (for 9 mins now)&#x000A;Scene 'Starting off' playing (for 11 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-280">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You're already high enough to avoid being seen from below; there's no need to go higher.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-281"/>
+    </children>
+  </item>
+  <item nodeId="node-281">
+    <command xml:space="preserve">dive</command>
+    <result xml:space="preserve">You'll need to SUMMON MIST first, to cloak your descent.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-282"/>
+    </children>
+  </item>
+  <item nodeId="node-282">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, but it would then start to dissapate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-283"/>
+    </children>
+  </item>
+  <item nodeId="node-283">
+    <command xml:space="preserve">dive</command>
+    <result xml:space="preserve">You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-284"/>
+    </children>
+  </item>
+  <item nodeId="node-284">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-285"/>
+    </children>
+  </item>
+  <item nodeId="node-285">
+    <command xml:space="preserve">dive</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-286"/>
+    </children>
+  </item>
+  <item nodeId="node-286">
+    <command xml:space="preserve">dive</command>
+    <result xml:space="preserve">You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-287"/>
+    </children>
+  </item>
+  <item nodeId="node-287">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-288"/>
+    </children>
+  </item>
+  <item nodeId="node-288">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-289"/>
+    </children>
+  </item>
+  <item nodeId="node-289">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;The momentum you had from your dive wears off.  Fun while it lasted!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-290"/>
+    </children>
+  </item>
+  <item nodeId="node-290">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-291"/>
+    </children>
+  </item>
+  <item nodeId="node-291">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-292"/>
+    </children>
+  </item>
+  <item nodeId="node-292">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-293"/>
+    </children>
+  </item>
+  <item nodeId="node-293">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;The momentum you had from your dive wears off.  Fun while it lasted!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-227">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, but it would then start to dissapate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-276"/>
+      <child nodeId="node-241"/>
+      <child nodeId="node-228"/>
+    </children>
+  </item>
+  <item nodeId="node-276">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-277"/>
+    </children>
+  </item>
+  <item nodeId="node-277">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-278"/>
+    </children>
+  </item>
+  <item nodeId="node-278">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;The momentum you had from your dive wears off.  Fun while it lasted!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-279"/>
+    </children>
+  </item>
+  <item nodeId="node-279">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;The momentum you had from your dive wears off.  Fun while it lasted!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-241">
+    <command xml:space="preserve">showobj mist</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-242"/>
+    </children>
+  </item>
+  <item nodeId="node-242">
+    <command xml:space="preserve">showme mist</command>
+    <result xml:space="preserve">(the grey mist)&#x000A;grey mist - backdrop&#x000A;location: in High Above the Royal Aerie&#x000A;unlit, inedible, fixed in place, scenery; singular-named, improper-named&#x000A;description: "Grey mist swirls and surrounds you, covering you like a blanket."&#x000A;initial appearance: none&#x000A;printed name: "grey mist"&#x000A;printed plural name: "backdrops"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;thickness: 1&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-243"/>
+    </children>
+  </item>
+  <item nodeId="node-243">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-244"/>
+    </children>
+  </item>
+  <item nodeId="node-244">
+    <command xml:space="preserve">showme mist</command>
+    <result xml:space="preserve">(the grey mist)&#x000A;grey mist - backdrop&#x000A;location: in High Above the Royal Aerie&#x000A;unlit, inedible, fixed in place, scenery; singular-named, improper-named&#x000A;description: "Grey mist swirls and surrounds you, covering you like a blanket."&#x000A;initial appearance: none&#x000A;printed name: "grey mist"&#x000A;printed plural name: "backdrops"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;thickness: 5&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-245"/>
+    </children>
+  </item>
+  <item nodeId="node-245">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-246"/>
+    </children>
+  </item>
+  <item nodeId="node-246">
+    <command xml:space="preserve">showme mist</command>
+    <result xml:space="preserve">(the grey mist)&#x000A;grey mist - backdrop&#x000A;location: in High Above the Royal Aerie&#x000A;unlit, inedible, fixed in place, scenery; singular-named, improper-named&#x000A;description: "Grey mist swirls and surrounds you, covering you like a blanket."&#x000A;initial appearance: none&#x000A;printed name: "grey mist"&#x000A;printed plural name: "backdrops"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;thickness: 8&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-247"/>
+    </children>
+  </item>
+  <item nodeId="node-247">
+    <command xml:space="preserve">showme mist</command>
+    <result xml:space="preserve">(the grey mist)&#x000A;grey mist - backdrop&#x000A;location: in High Above the Royal Aerie&#x000A;unlit, inedible, fixed in place, scenery; singular-named, improper-named&#x000A;description: "Grey mist swirls and surrounds you, covering you like a blanket."&#x000A;initial appearance: none&#x000A;printed name: "grey mist"&#x000A;printed plural name: "backdrops"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;thickness: 8&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-248"/>
+    </children>
+  </item>
+  <item nodeId="node-248">
+    <command xml:space="preserve">showme mist</command>
+    <result xml:space="preserve">(the grey mist)&#x000A;grey mist - backdrop&#x000A;location: in High Above the Royal Aerie&#x000A;unlit, inedible, fixed in place, scenery; singular-named, improper-named&#x000A;description: "Grey mist swirls and surrounds you, covering you like a blanket."&#x000A;initial appearance: none&#x000A;printed name: "grey mist"&#x000A;printed plural name: "backdrops"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;thickness: 8&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-249"/>
+    </children>
+  </item>
+  <item nodeId="node-249">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-250"/>
+    </children>
+  </item>
+  <item nodeId="node-250">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-251"/>
+    </children>
+  </item>
+  <item nodeId="node-251">
+    <command xml:space="preserve">showme mist</command>
+    <result xml:space="preserve">(the grey mist)&#x000A;grey mist - backdrop&#x000A;location: in High Above the Royal Aerie&#x000A;unlit, inedible, fixed in place, scenery; singular-named, improper-named&#x000A;description: "Grey mist swirls and surrounds you, covering you like a blanket."&#x000A;initial appearance: none&#x000A;printed name: "grey mist"&#x000A;printed plural name: "backdrops"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;thickness: 8&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-252"/>
+    </children>
+  </item>
+  <item nodeId="node-252">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-253"/>
+    </children>
+  </item>
+  <item nodeId="node-253">
+    <command xml:space="preserve">showme mist</command>
+    <result xml:space="preserve">(the grey mist)&#x000A;grey mist - backdrop&#x000A;location: in High Above the Royal Aerie&#x000A;unlit, inedible, fixed in place, scenery; singular-named, improper-named&#x000A;description: "Grey mist swirls and surrounds you, covering you like a blanket."&#x000A;initial appearance: none&#x000A;printed name: "grey mist"&#x000A;printed plural name: "backdrops"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;thickness: 8&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-228">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-254"/>
+      <child nodeId="node-229"/>
+    </children>
+  </item>
+  <item nodeId="node-254">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-255"/>
+    </children>
+  </item>
+  <item nodeId="node-255">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-256"/>
+    </children>
+  </item>
+  <item nodeId="node-256">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-257"/>
+    </children>
+  </item>
+  <item nodeId="node-257">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">That's as thick as you can make the mist--there's simply no more water to pull into the air.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-258"/>
+    </children>
+  </item>
+  <item nodeId="node-258">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">That's as thick as you can make the mist--there's simply no more water to pull into the air.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-259"/>
+    </children>
+  </item>
+  <item nodeId="node-259">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-260"/>
+    </children>
+  </item>
+  <item nodeId="node-260">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Your summoned mist thins slightly, on its way back to equilibrium.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-261"/>
+    </children>
+  </item>
+  <item nodeId="node-261">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-262"/>
+    </children>
+  </item>
+  <item nodeId="node-262">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-263"/>
+    </children>
+  </item>
+  <item nodeId="node-263">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Your summoned mist thins slightly, on its way back to equilibrium.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-264"/>
+    </children>
+  </item>
+  <item nodeId="node-264">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-265"/>
+    </children>
+  </item>
+  <item nodeId="node-265">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-266"/>
+    </children>
+  </item>
+  <item nodeId="node-266">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Your summoned mist thins slightly, on its way back to equilibrium.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-267"/>
+    </children>
+  </item>
+  <item nodeId="node-267">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-268"/>
+    </children>
+  </item>
+  <item nodeId="node-268">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-269"/>
+    </children>
+  </item>
+  <item nodeId="node-269">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Your summoned mist thins slightly, on its way back to equilibrium.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-270"/>
+    </children>
+  </item>
+  <item nodeId="node-270">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-271"/>
+    </children>
+  </item>
+  <item nodeId="node-271">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Your summoned mist thins back to equilibrium.  Still thick enough to mostly obscure you, but you'll have to be careful.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-272"/>
+    </children>
+  </item>
+  <item nodeId="node-272">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-273"/>
+    </children>
+  </item>
+  <item nodeId="node-273">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-274"/>
+    </children>
+  </item>
+  <item nodeId="node-274">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-275"/>
+    </children>
+  </item>
+  <item nodeId="node-275">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-229">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Your summoned mist thins back to equilibrium.  Still thick enough to mostly obscure you, but you'll have to be careful.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-230"/>
+    </children>
+  </item>
+  <item nodeId="node-230">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-231"/>
+    </children>
+  </item>
+  <item nodeId="node-231">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-232"/>
+    </children>
+  </item>
+  <item nodeId="node-232">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-233"/>
+    </children>
+  </item>
+  <item nodeId="node-233">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-234"/>
+    </children>
+  </item>
+  <item nodeId="node-234">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-235"/>
+    </children>
+  </item>
+  <item nodeId="node-235">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Your summoned mist thins back to equilibrium.  Still thick enough to mostly obscure you, but you'll have to be careful.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-236"/>
+    </children>
+  </item>
+  <item nodeId="node-236">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-237"/>
+    </children>
+  </item>
+  <item nodeId="node-237">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-238"/>
+    </children>
+  </item>
+  <item nodeId="node-238">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-239"/>
+    </children>
+  </item>
+  <item nodeId="node-239">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-240"/>
+    </children>
+  </item>
+  <item nodeId="node-240">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-210">
     <command xml:space="preserve">test summon</command>
-    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] d&#x000A;If you get any closer to the aerie without summoning mist first, the guards would surely see you.  It's why, as a Bostrat, you were originally chosen to go on this mission.&#x000A;&#x000A;&gt;[2] n&#x000A;You'll need to SUMMON MIST first, to cloak your descent.&#x000A;&#x000A;&gt;[3] summon mist&#x000A;Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;&gt;[4] d&#x000A;You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[5] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;[6] d&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[7] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] d&#x000A;If you get any closer to the aerie without summoning mist first, the guards would surely see you.  It's why, as a Bostrat, you were originally chosen to go on this mission.&#x000A;&#x000A;&gt;[2] n&#x000A;You'll need to SUMMON MIST first, to cloak your descent.&#x000A;&#x000A;&gt;[3] summon mist&#x000A;Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, but it would then start to dissapate.&#x000A;&#x000A;&gt;[4] d&#x000A;You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[5] u&#x000A;&#x000A;High Above&#x000A;&#x000A;&gt;[6] d&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[7] u&#x000A;&#x000A;High Above&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] d&#x000A;If you get any closer to the aerie without summoning mist first, the guards would surely see you.  It's why, as a Bostrat, you were originally chosen to go on this mission.&#x000A;&#x000A;&gt;[2] n&#x000A;You'll need to SUMMON MIST first, to cloak your descent.&#x000A;&#x000A;&gt;[3] summon mist&#x000A;Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;&gt;[4] d&#x000A;You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[5] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;[6] d&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[7] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
     <children>
@@ -30,7 +729,7 @@
   </item>
   <item nodeId="node-214">
     <command xml:space="preserve">test map</command>
-    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] d&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[2] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;[3] n&#x000A;&#x000A;Royal Landing Cradle&#x000A;It's dangerous; you can't do anything here yet. LS DEBUG.  (you can go south, southeast, up)&#x000A;&#x000A;&gt;[4] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;[5] e&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.&#x000A;&#x000A;You can see Another Important Door here.&#x000A;&#x000A;&gt;[6] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;[7] d&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[8] e&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.&#x000A;&#x000A;You can see Another Important Door here.&#x000A;&#x000A;&gt;[9] nw&#x000A;&#x000A;Royal Landing Cradle&#x000A;It's dangerous; you can't do anything here yet. LS DEBUG.  (you can go south, southeast, up)&#x000A;&#x000A;&gt;[10] s&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[11] n&#x000A;&#x000A;Royal Landing Cradle&#x000A;It's dangerous; you can't do anything here yet. LS DEBUG.  (you can go south, southeast, up)&#x000A;&#x000A;&gt;[12] se&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.&#x000A;&#x000A;You can see Another Important Door here.&#x000A;&#x000A;&gt;[13] w&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] d&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[2] u&#x000A;&#x000A;High Above&#x000A;&#x000A;&gt;[3] n&#x000A;&#x000A;Royal Landing Cradle&#x000A;It's dangerous; you can't do anything here yet. LS DEBUG.  (you can go south, southeast, up)&#x000A;&#x000A;&gt;[4] u&#x000A;&#x000A;High Above&#x000A;&#x000A;&gt;[5] e&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.&#x000A;&#x000A;You can see Another Important Door here.&#x000A;&#x000A;&gt;[6] u&#x000A;&#x000A;High Above&#x000A;&#x000A;&gt;[7] d&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[8] e&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.&#x000A;&#x000A;You can see Another Important Door here.&#x000A;&#x000A;&gt;[9] nw&#x000A;&#x000A;Royal Landing Cradle&#x000A;It's dangerous; you can't do anything here yet. LS DEBUG.  (you can go south, southeast, up)&#x000A;&#x000A;&gt;[10] s&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[11] n&#x000A;&#x000A;Royal Landing Cradle&#x000A;It's dangerous; you can't do anything here yet. LS DEBUG.  (you can go south, southeast, up)&#x000A;&#x000A;&gt;[12] se&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.&#x000A;&#x000A;You can see Another Important Door here.&#x000A;&#x000A;&gt;[13] w&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] d&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[2] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;[3] n&#x000A;&#x000A;Royal Landing Cradle&#x000A;It's dangerous; you can't do anything here yet. LS DEBUG.  (you can go south, southeast, up)&#x000A;&#x000A;&gt;[4] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;[5] e&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.&#x000A;&#x000A;You can see Another Important Door here.&#x000A;&#x000A;&gt;[6] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;[7] d&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[8] e&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.&#x000A;&#x000A;You can see Another Important Door here.&#x000A;&#x000A;&gt;[9] nw&#x000A;&#x000A;Royal Landing Cradle&#x000A;It's dangerous; you can't do anything here yet. LS DEBUG.  (you can go south, southeast, up)&#x000A;&#x000A;&gt;[10] s&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;[11] n&#x000A;&#x000A;Royal Landing Cradle&#x000A;It's dangerous; you can't do anything here yet. LS DEBUG.  (you can go south, southeast, up)&#x000A;&#x000A;&gt;[12] se&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.&#x000A;&#x000A;You can see Another Important Door here.&#x000A;&#x000A;&gt;[13] w&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies.&#x000A;&#x000A;You can see an important door here.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
   </item>

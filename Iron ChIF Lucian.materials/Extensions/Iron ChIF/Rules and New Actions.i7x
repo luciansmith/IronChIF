@@ -131,5 +131,8 @@ Every turn during Mist depletion:
 		say "Your summoned mist thins slightly, on its way back to equilibrium.";
 	[say "Thickness: [the thickness of the grey mist].";]
 
+Diving is an action applying to nothing.  Understand "dive" as diving.
+Before diving:
+	Try going down;
 
 Rules and New Actions ends here.

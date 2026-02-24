@@ -7,7 +7,7 @@ Using Inform kit 'EnglishLanguageKit' (priority 1).
 Using Inform kit 'WorldModelKit' (priority 2).
 Using Inform kit 'CommandParserKit' (priority 3).
 756 Preform nonterminals read from C:\Program Files\Inform\Internal\Languages\English\Syntax.preform
-I've now read your source text, which is 230 words long.
+I've now read your source text, which is 236 words long.
 Included: core, naming, instance counting, interactive fiction, spatial model, backdrops, bibliographic data, chronology, devices, mapping, persons, player, regions, scenes, scoring, timed rules, times of day, actions, going, command, showme, multimedia, figures, sounds, glulx external files
 Excluded: 
 I've also read Basic Inform by Graham Nelson, which is 7691 words long.
@@ -16,9 +16,11 @@ I've also read Standard Rules by Graham Nelson, which is 32164 words long.
 I've also read Response Assistant by Aaron Reed, which is 558 words long.
 I've also read Hybrid Choices by AW Freyr, which is 10371 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2223 words long.
-I've also read Rules And New Actions by Iron ChIF, which is 593 words long.
-I've also read Map by Iron ChIF, which is 1070 words long.
-I've also read PC And Rucksack by Iron ChIF, which is 887 words long.
+I've also read Rules And New Actions by Iron ChIF, which is 881 words long.
+I've also read Map by Iron ChIF, which is 1485 words long.
+I've also read PC And Rucksack by Iron ChIF, which is 895 words long.
+I've also read Lucian's Scenes by Iron ChIF, which is 193 words long.
+I've also read Being Chased by Iron ChIF, which is 109 words long.
 
 
 -----------------------------------------------------
@@ -55,14 +57,13 @@ Phase III ... Pre-pass through major nodes
 Phase IV ... First pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pass_1() took 5cs
+.... MajorNodes__pass_1() took 7cs
 
 
 -----------------------------------------------------
 Phase V ... Second pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pass_2() took 1cs
 
 
 -----------------------------------------------------
@@ -75,6 +76,7 @@ Phase VI ... Making the model world
 Phase VII ... Completing the model world
 -----------------------------------------------------
 
+.... World__stages_II_and_III() took 1cs
 
 
 -----------------------------------------------------
@@ -87,6 +89,7 @@ Phase VIII ... Tables and grammar
 Phase IX ... Augment model world
 -----------------------------------------------------
 
+.... World__stage_V() took 1cs
 
 
 -----------------------------------------------------
@@ -108,6 +111,8 @@ Phase XII ... Generating inter (2)
 -----------------------------------------------------
 
 .... CompletionModule__compile() took 4cs
+.... RTKindConstructors__compile_permissions() took 1cs
+.... ImperativeDefinitions__compile_first_block() took 1cs
 
 
 ==== Phase XII.1 ... Slashing command grammar ====
@@ -122,9 +127,9 @@ Phase XII ... Generating inter (2)
 Phase XIII ... Generating inter (3)
 -----------------------------------------------------
 
-.... Sequence__undertake_queued_tasks() took 143cs
-.... Sequence__undertake_queued_tasks() took 2cs
-.... RTPhrasebook__compile_entries() took 5cs
+.... Sequence__undertake_queued_tasks() took 148cs
+.... Sequence__undertake_queued_tasks() took 1cs
+.... RTPhrasebook__compile_entries() took 4cs
 
 
 -----------------------------------------------------
@@ -145,9 +150,9 @@ Phase XIV ... Generating inter (4)
 Phase XV ... Generating inter (5)
 -----------------------------------------------------
 
-.... Sequence__undertake_queued_tasks() took 1cs
+.... Sequence__undertake_queued_tasks() took 2cs
 Providing for a total heap of 8192, given requirement of 8192
-.... Sequence__lint_inter() took 2cs
+.... Sequence__lint_inter() took 1cs
 
 
 -----------------------------------------------------
@@ -160,7 +165,7 @@ Phase XVI ... Bibliographic work
 Phase XVII ... Complete
 -----------------------------------------------------
 
-Compile CPU time: 187 centiseconds
+Compile CPU time: 192 centiseconds
 
 
 ==== Phase XVII.1 ... step 1/15: read <- *memory ====
@@ -205,12 +210,12 @@ Compile CPU time: 187 centiseconds
 
 ==== Phase XVII.11 ... step 11/15: eliminate-redundant-labels ====
 
-1958 redundant label(s) removed
+1980 redundant label(s) removed
 
 
 ==== Phase XVII.12 ... step 12/15: eliminate-redundant-operations ====
 
-414 redundant operation(s) removed
+417 redundant operation(s) removed
 
 
 ==== Phase XVII.13 ... step 13/15: optionally-generate text ->  ====
@@ -222,30 +227,6 @@ Compile CPU time: 187 centiseconds
 
 
 ==== Phase XVII.15 ... step 15/15: index ====
-
-Trying to close div at line 182 of 'inter/index-module/Chapter 3/The Periodic Table.w', but:
-Tag error: closed HTML tag which wasn't open
-HTML tag stack:
-    1. p (opened at line 406 of 'inter/index-module/Chapter 3/Map Element.w')
-    2. div (opened at line 177 of 'inter/index-module/Chapter 3/The Periodic Table.w')
-    3. body (opened at line 370 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
-    4. html (opened at line 236 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
-
-
-Trying to close body at line 374 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w', but:
-Tag error: closed HTML tag which wasn't open
-HTML tag stack:
-    1. div (opened at line 177 of 'inter/index-module/Chapter 3/The Periodic Table.w')
-    2. body (opened at line 370 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
-    3. html (opened at line 236 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
-
-
-Trying to close html at line 375 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w', but:
-Tag error: closed HTML tag which wasn't open
-HTML tag stack:
-    1. body (opened at line 370 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
-    2. html (opened at line 236 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
-
 
 Trying to close p at line 324 of 'services/html-module/Chapter 2/Documentation Renderer.w', but:
 Tag error: closed HTML tag which wasn't open
@@ -6173,8 +6154,8 @@ HTML tag stack:
     52. html (opened at line 236 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
 
 
-Back end elapsed time: 210cs
-Total of 121 files written as streams.
+Back end elapsed time: 216cs
+Total of 124 files written as streams.
 Vacant escapes: %: ..CDE.GH..K.M.O.QR.TU...YZab..e..h.jklm.o.qr......yz0123456789
 Vacant escapes: $: .....F...J..........UVW.....................s.u..x.........789
 

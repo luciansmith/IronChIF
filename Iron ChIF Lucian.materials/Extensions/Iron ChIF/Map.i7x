@@ -29,18 +29,22 @@ Check going somewhere from High Above:
 
 [Trivia:  'Bostrat' comes from 'Nimbostratus' clouds, aka rain clouds.]
 
-After going from High Above during Starting off:
-	say "You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...";
+After going from High Above:
+	if Starting Off is happening:
+		say "You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...";
+	otherwise:
+		now Constance is speeding;
+		say "You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.";
 	continue the action;
 
-Starting off is a scene.  Starting off begins when play begins.  Starting off ends when the player is not in High Above.
+Starting Off is a scene.  Starting Off begins when play begins.  Starting Off ends when the player is not in High Above.
 
 Instead of going nowhere from High Above when the noun is up:
     say "You're already high enough to avoid being seen from below; there's no need to go higher."
 
 Great Hall Landing Cradle is below High Above.  "The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning 'in order of importance'.
 
-To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies."
+To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest."
 
 An important door is a door in Great Hall Landing Cradle.  It is closed and locked.  It is inside from Great Hall Landing Cradle and outside from Upper Great Hall .
 
@@ -49,7 +53,7 @@ Upper Great Hall is a room. "Congrats!  This is as far as I got.  Thanks for tes
 
 Librum Landing Cradle is east of Great Hall Landing Cradle.  "The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.
 
-To the west is the Great Hall, and to the northwest is the Royal Quarters."
+To the west is the Great Hall, and to the northwest is the Royal Quarters.  {also up/down}"
 
 Up from Librum Landing Cradle is High Above.
 East from High Above is Librum Landing Cradle.
@@ -60,10 +64,40 @@ Librum Itself is a room.  "Congrats!  This is as far as I got.  Thanks for testi
 
 
 
-Royal Landing Cradle is a room. It is north of Great Hall Landing Cradle, and northwest of Librum Landing Cradle.  "It's dangerous; you can't do anything here yet. LS DEBUG.  (you can go south, southeast, up)"
+Royal Landing Cradle is a room. It is north of Great Hall Landing Cradle, and northwest of Librum Landing Cradle.  "It's dangerous; you can't do anything here yet. LS DEBUG.  (you can go south, southeast, up, down)"
 
 Up from Royal Landing Cradle is High Above.
 North from High Above is Royal Landing Cradle.
 
 
+in_forest is a room.  It is below Great Hall Landing Cradle.  The printed name is "In the Forest".  "The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation."
+
+tree_varieties are scenery in in_forest.  The printed name is "trees".  The description is "Birch, pine, redwood, alder, ash, elm, poplar, and probably several other types as well."  Understand "Birch/pine/redwood/alder/ash/elm/poplar" as the tree_varieties.
+
+A fine net is here.  "Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below."  The description is "A fine, strong net, stretched between and among the trees.  It wasn't here three days ago, which means they spent a lot of effort... to keep you on the Aerie-side of it.  You grin to yourself."
+
+Up from In the Forest is Great Hall Landing Cradle.
+North from In the Forest is Royal Aerie.
+East from In the Forest is Librum.
+West from In the Forest is Great Hall. [LS DEBUG: change on more locations]
+South from In the Forest is Great Hall. [LS DEBUG: change on more locations]
+
+After going from In the Forest:
+    say "You gracefully flit between the trees back up above the canopy.";
+
+Instead of going nowhere from In the Forest when the noun is down:
+    say "The net prevents you from reaching the forest floor.  Fortunately, you're already where you want to be."
+
+After going to in_forest:
+	if Constance is speeding:
+		now Constance is super-fast;
+	otherwise:
+		now Constance is speeding;
+	if Being Chased is happening:
+		say "You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.";
+	otherwise:
+		say "You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.";
+	continue the action;
+
 Map ends here.
+

@@ -3,6 +3,9 @@ Use authorial modesty.
 
 Book 0 Ongoing Effects
 
+Include Being Chased by Iron ChIF.
+
+
 Not Recovering is a scene.
 
 Not recovering begins when Constance is wounded and the capsa of opening is open.
@@ -24,6 +27,5 @@ When Actually Recovering begins:
 	
 	It's the scroll of Health.  It [i]has[r] to be.  It's actually here!  And active.  Hmm."
 	[We'd need different text if the player gets wounded more than once, but right now, they can't even get wounded once, so let's just leave it for now.]
-
 
 Lucian's Scenes ends here.
