@@ -85,12 +85,22 @@ Section Summoning mist
 
 A room can be cloudy or clear.  A room is usually cloudy.
 
-The grey mist is a backdrop.  The description is "Grey mist swirls and surrounds you, covering you like a blanket."  Understand "cloud/clouds/gray" as the grey mist.
+The grey mist is a backdrop.  The description is "Grey mist swirls and surrounds you, covering you like a blanket."  Understand "cloud/clouds/gray/fog" as the grey mist.
 
 When play begins:
     move the grey mist backdrop to all cloudy rooms.
 
 The grey mist has a number called thickness.  The thickness of the grey mist is 1.
+
+To say mist density:
+	if the thickness of the mist is less than 4:
+		say "thin ";
+	otherwise if the thickness of the grey mist is less than 8:
+		say "";
+	otherwise if the thickness of the grey mist is less than 12:
+		say "thickening ";
+	otherwise:
+		say "heavy ";
 
 Summoning is an action applying to one thing.  Understand "summon [something]" as summoning.
 

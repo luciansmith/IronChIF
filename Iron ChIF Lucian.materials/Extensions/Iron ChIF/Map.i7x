@@ -40,13 +40,23 @@ After going from High Above:
 Starting Off is a scene.  Starting Off begins when play begins.  Starting Off ends when the player is not in High Above.
 
 Instead of going nowhere from High Above when the noun is up:
-    say "You're already high enough to avoid being seen from below; there's no need to go higher."
+	if Being Chased is happening:
+		say "You take to the skies even higher.";
+		If the closeness of Being Chased is at least 3:
+			Now the closeness of Being Chased is 2;
+			Now the starting_line of Being Chased is the Void;
+	Otherwise:
+		say "You're already high enough to avoid being seen from below; there's no need to go higher."
 
 Great Hall Landing Cradle is below High Above.  "The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning 'in order of importance'.
 
 To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest."
 
-An important door is a door in Great Hall Landing Cradle.  It is closed and locked.  It is inside from Great Hall Landing Cradle and outside from Upper Great Hall .
+An important door is a door in Great Hall Landing Cradle.  It is closed and locked.  It is inside from Great Hall Landing Cradle and outside from Upper Great Hall.
+
+Carry out entering important door during Being Chased:
+	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Squad has followed you, and you simply don't have any room to maneuver.";
+	end the story saying "You have been captured.";
 
 Upper Great Hall is a room. "Congrats!  This is as far as I got.  Thanks for testing!"
 
@@ -59,6 +69,10 @@ Up from Librum Landing Cradle is High Above.
 East from High Above is Librum Landing Cradle.
 
 Another Important Door is a door in Librum Landing Cradle.  It is closed and locked.  It is inside from Librum Landing Cradle and outside from Librum.
+
+Carry out entering important door during Being Chased:
+	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Squad has followed you, and you simply don't have any room to maneuver.";
+	end the story saying "You have been captured.";
 
 Librum Itself is a room.  "Congrats!  This is as far as I got.  Thanks for testing!"
 

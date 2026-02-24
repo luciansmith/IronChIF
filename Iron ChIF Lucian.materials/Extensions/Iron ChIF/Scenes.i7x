@@ -11,9 +11,13 @@ Not Recovering is a scene.
 Not recovering begins when Constance is wounded and the capsa of opening is open.
 Not recovering ends when the capsa of opening is closed.
 
+Not recovering has a number called timer.  The timer of not recovering is zero.
+
 Every turn during Not Recovering:
-	if time since Not Recovering began divided by three minutes is zero:
-		say "[one of]Your wound continues to lightly bleed[or]Your wound aches.  You look down at it, and it's still open and bleeding.[or]Your open wound really should have closed by now, but it continues to lightly bleed.[stopping]."
+	if the timer of not recovering is at least six:
+		say "[one of]Your wound continues to lightly bleed[or]Your wound aches.  You look down at it, and it's still open and bleeding.[or]Your open wound really should have closed by now, but it continues to lightly bleed.[stopping].";
+	otherwise:
+		increase the timer of not recovering by one;
 
 [Above code courtesy of ideas from https://intfiction.org/t/every-third-turn/1443]
 

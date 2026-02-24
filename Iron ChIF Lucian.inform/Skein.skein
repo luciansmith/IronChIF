@@ -8,6 +8,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-215"/>
+      <child nodeId="node-294"/>
       <child nodeId="node-227"/>
       <child nodeId="node-210"/>
     </children>
@@ -241,6 +242,48 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-294">
+    <command xml:space="preserve">showme being chased</command>
+    <result xml:space="preserve">There seems to be no such object anywhere in the model world.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-295"/>
+    </children>
+  </item>
+  <item nodeId="node-295">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for 0 mins now)&#x000A;Scene 'Starting Off' playing (for 0 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-296"/>
+    </children>
+  </item>
+  <item nodeId="node-296">
+    <command xml:space="preserve">showme the closeness of being chased</command>
+    <result xml:space="preserve">There seems to be no such object anywhere in the model world.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-297"/>
+    </children>
+  </item>
+  <item nodeId="node-297">
+    <command xml:space="preserve">open purple</command>
+    <result xml:space="preserve">You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;[Scene 'Everything Is Open' begins]&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;The magic of the gold capsa of FOO prevents it from being opened.&#x000A;The magic of the red capsa of BAR prevents it from being opened.&#x000A;The straps and buckles on your rucksack fly open and it falls!&#x000A;&#x000A;The leather rucksack twists away as it falls below you, towards the Great Hall.&#x000A;&#x000A;[Scene 'Being Chased' begins]&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding Dialect:  "Intruder! Estimated direction is..." and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies, and they don't know where you are.  Or they didn't, at least.&#x000A;&#x000A;closeness: 1.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-298"/>
+    </children>
+  </item>
+  <item nodeId="node-298">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;closeness: 2.&#x000A;Raven guards appear!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-227">
     <command xml:space="preserve">summon mist</command>
     <result xml:space="preserve">Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, but it would then start to dissapate.&#x000A;&#x000A;&gt;</result>
@@ -248,6 +291,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-276"/>
+      <child nodeId="node-299"/>
       <child nodeId="node-241"/>
       <child nodeId="node-228"/>
     </children>
@@ -282,6 +326,562 @@
   <item nodeId="node-279">
     <command xml:space="preserve">d</command>
     <result xml:space="preserve">You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;The momentum you had from your dive wears off.  Fun while it lasted!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-299">
+    <command xml:space="preserve">open purple</command>
+    <result xml:space="preserve">You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;The magic of the gold capsa of FOO prevents it from being opened.&#x000A;The magic of the red capsa of BAR prevents it from being opened.&#x000A;The straps and buckles on your rucksack fly open and it falls!&#x000A;&#x000A;The leather rucksack twists away as it falls below you, towards the Great Hall.&#x000A;&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder! Estimated direction is..." and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies, and they don't know where you are.&#x000A;&#x000A;Or they didn't, at least.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-300"/>
+      <child nodeId="node-330"/>
+      <child nodeId="node-358"/>
+    </children>
+  </item>
+  <item nodeId="node-300">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of FOO (closed), and a red capsa of BAR (closed)) and an important door here.&#x000A;&#x000A;You've dived straight into a squad of Raven Guards, on their way up to accost you.  Fortunately, your speed helped you avoid most of them, but one guard's talon catches you on your side as you twist by them.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-301"/>
+      <child nodeId="node-350"/>
+    </children>
+  </item>
+  <item nodeId="node-301">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.  {also up/down}&#x000A;&#x000A;You can see Another Important Door here.&#x000A;&#x000A;closeness: 3.&#x000A;The Raven Squad pursues you determinedly through the thin mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-326"/>
+      <child nodeId="node-302"/>
+    </children>
+  </item>
+  <item nodeId="node-326">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;closeness: 3.&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;Your wound continues to lightly bleed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-327"/>
+    </children>
+  </item>
+  <item nodeId="node-327">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;closeness: 4.&#x000A;Two guards snap at you, and while both touch nothing but feathers, a third slashes you with his silvered talons.  They're about to overwhelm you.&#x000A;&#x000A;Your wound aches.  You look down at it, and it's still open and bleeding.&#x000A;.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-328"/>
+    </children>
+  </item>
+  <item nodeId="node-328">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-329"/>
+    </children>
+  </item>
+  <item nodeId="node-329">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-302">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">Royal Landing Cradle&#x000A;It's dangerous; you can't do anything here yet. LS DEBUG.  (you can go south, southeast, up, down)&#x000A;&#x000A;closeness: 3.&#x000A;The Raven Squad pursues you determinedly through the thin mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-303"/>
+    </children>
+  </item>
+  <item nodeId="node-303">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of FOO (closed), and a red capsa of BAR (closed)) and an important door here.&#x000A;&#x000A;closeness: 3.&#x000A;The Raven Squad pursues you determinedly through the thin mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-304"/>
+    </children>
+  </item>
+  <item nodeId="node-304">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;closeness: 3.&#x000A;Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-305"/>
+    </children>
+  </item>
+  <item nodeId="node-305">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;closeness: 3.&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;The momentum you had from your dive wears off.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-306"/>
+    </children>
+  </item>
+  <item nodeId="node-306">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;closeness: 4.&#x000A;Two guards snap at you, and while both touch nothing but feathers, a third slashes you with his silvered talons.  They're about to overwhelm you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-307"/>
+    </children>
+  </item>
+  <item nodeId="node-307">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;closeness: 5.&#x000A;You're faster and more maneuverable than they are, but there are more of them.  One charges you directly, and when you veer off to avoid her, another crashes into you.  The rest swarm you instantly.&#x000A;&#x000A;&#x000A;&#x000A;    *** Your luck has run out. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-308"/>
+    </children>
+  </item>
+  <item nodeId="node-308">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">In the Forest&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-309"/>
+    </children>
+  </item>
+  <item nodeId="node-309">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of FOO (closed), and a red capsa of BAR (closed)) and an important door here.&#x000A;&#x000A;closeness: 5.&#x000A;The Raven Squad pursues you determinedly through the mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-310"/>
+    </children>
+  </item>
+  <item nodeId="node-310">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;Your summoned mist thins slightly, on its way back to equilibrium.&#x000A;&#x000A;closeness: 3.&#x000A;Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-311"/>
+    </children>
+  </item>
+  <item nodeId="node-311">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;closeness: 3.&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;The momentum you had from your dive wears off.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-312"/>
+    </children>
+  </item>
+  <item nodeId="node-312">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of FOO (closed), and a red capsa of BAR (closed)) and an important door here.&#x000A;&#x000A;closeness: 4.&#x000A;The Raven Squad pursues you determinedly through the mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-313"/>
+    </children>
+  </item>
+  <item nodeId="node-313">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;Your summoned mist thins slightly, on its way back to equilibrium.&#x000A;&#x000A;closeness: 3.&#x000A;The Raven Squad pursues you determinedly through the thin mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-314"/>
+    </children>
+  </item>
+  <item nodeId="node-314">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of FOO (closed), and a red capsa of BAR (closed)) and an important door here.&#x000A;&#x000A;closeness: 3.&#x000A;Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-315"/>
+    </children>
+  </item>
+  <item nodeId="node-315">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;Your summoned mist thins back to equilibrium.  Still thick enough to mostly obscure you, but you'll have to be careful.&#x000A;&#x000A;closeness: 3.&#x000A;You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;The Raven's frustrated caws echo in the mist, and you plot a now-unseen course returning to the familiar currents above the Aerie.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, but increase patrols.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-316"/>
+    </children>
+  </item>
+  <item nodeId="node-316">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for 16 mins now)&#x000A;Scene 'Mist depletion' ended&#x000A;Scene 'Starting Off' ended&#x000A;Scene 'Everything Is Open' playing (for 15 mins now)&#x000A;Scene 'Momentum' ended&#x000A;Scene 'Super-momentum' playing (for 1 mins now)&#x000A;Scene 'Being Chased' ended&#x000A;Scene 'Not Recovering' playing (for 13 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-317"/>
+    </children>
+  </item>
+  <item nodeId="node-317">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You're already high enough to avoid being seen from below; there's no need to go higher.&#x000A;&#x000A;[Scene 'Super-momentum' ends]&#x000A;[Scene 'Momentum' begins]&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-318"/>
+    </children>
+  </item>
+  <item nodeId="node-318">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You're already high enough to avoid being seen from below; there's no need to go higher.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-319"/>
+    </children>
+  </item>
+  <item nodeId="node-319">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;[Scene 'Mist depletion' begins]&#x000A;[Scene 'Momentum' ends]&#x000A;The momentum you had from your dive wears off.&#x000A;  Fun while it lasted!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-320"/>
+    </children>
+  </item>
+  <item nodeId="node-320">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-321"/>
+    </children>
+  </item>
+  <item nodeId="node-321">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of FOO (closed), and a red capsa of BAR (closed)) and an important door here.&#x000A;&#x000A;[Scene 'Momentum' begins]&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-322"/>
+    </children>
+  </item>
+  <item nodeId="node-322">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;[Scene 'Momentum' ends]&#x000A;The momentum you had from your dive wears off.&#x000A;  Fun while it lasted!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-323"/>
+    </children>
+  </item>
+  <item nodeId="node-323">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-324"/>
+    </children>
+  </item>
+  <item nodeId="node-324">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-325"/>
+    </children>
+  </item>
+  <item nodeId="node-325">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of FOO (closed), and a red capsa of BAR (closed)) and an important door here.&#x000A;&#x000A;[Scene 'Momentum' begins]&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-350">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-351"/>
+    </children>
+  </item>
+  <item nodeId="node-351">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;The Raven Squad pursues you determinedly through the mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-352"/>
+    </children>
+  </item>
+  <item nodeId="node-352">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-353"/>
+    </children>
+  </item>
+  <item nodeId="node-353">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.  {also up/down}&#x000A;&#x000A;You can see Another Important Door here.&#x000A;&#x000A;Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-354"/>
+    </children>
+  </item>
+  <item nodeId="node-354">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;The momentum you had from your dive wears off.  &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-355"/>
+    </children>
+  </item>
+  <item nodeId="node-355">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">Royal Landing Cradle&#x000A;It's dangerous; you can't do anything here yet. LS DEBUG.  (you can go south, southeast, up, down)&#x000A;&#x000A;The Raven Squad pursues you determinedly through the thickening mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-356"/>
+    </children>
+  </item>
+  <item nodeId="node-356">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-357"/>
+    </children>
+  </item>
+  <item nodeId="node-357">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of FOO (closed), and a red capsa of BAR (closed)) and an important door here.&#x000A;&#x000A;The mist is too thick for the Raven Squad to pursue you far.  You dodge around a tree, and disappear.&#x000A;The Raven's frustrated caws echo in the mist, and you plot a now-unseen course returning to the familiar currents above the Aerie.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, but increase patrols.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-330">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.  {also up/down}&#x000A;&#x000A;You can see Another Important Door here.&#x000A;&#x000A;closeness: 2.&#x000A;You've dived straight into a squad of Raven Guards, on their way up to accost you.  Fortunately, your speed helped you avoid most of them, but one guard's talon catches you on your side as you twist by them.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-331"/>
+    </children>
+  </item>
+  <item nodeId="node-331">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of FOO (closed), and a red capsa of BAR (closed)) and an important door here.&#x000A;&#x000A;closeness: 3.&#x000A;The Raven Squad pursues you determinedly through the thin mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-332"/>
+    </children>
+  </item>
+  <item nodeId="node-332">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;closeness: 3.&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;Your wound continues to lightly bleed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-333"/>
+    </children>
+  </item>
+  <item nodeId="node-333">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Royal Landing Cradle&#x000A;It's dangerous; you can't do anything here yet. LS DEBUG.  (you can go south, southeast, up, down)&#x000A;&#x000A;closeness: 4.&#x000A;The Raven Squad pursues you determinedly through the mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-334"/>
+    </children>
+  </item>
+  <item nodeId="node-334">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;closeness: 3.&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-335"/>
+    </children>
+  </item>
+  <item nodeId="node-335">
+    <command xml:space="preserve">se</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  {Probably be more descriptive here LS DEBUG}.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters.  {also up/down}&#x000A;&#x000A;You can see Another Important Door here.&#x000A;&#x000A;closeness: 4.&#x000A;The Raven Squad pursues you determinedly through the mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-336"/>
+    </children>
+  </item>
+  <item nodeId="node-336">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;closeness: 3.&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-337"/>
+    </children>
+  </item>
+  <item nodeId="node-337">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of FOO (closed), and a red capsa of BAR (closed)) and an important door here.&#x000A;&#x000A;closeness: 4.&#x000A;The Raven Squad pursues you determinedly through the thickening mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-338"/>
+    </children>
+  </item>
+  <item nodeId="node-338">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;closeness: 3.&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-339"/>
+    </children>
+  </item>
+  <item nodeId="node-339">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;closeness: 4.&#x000A;The Raven Squad pursues you determinedly through the heavy mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-340"/>
+    </children>
+  </item>
+  <item nodeId="node-340">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">That's as thick as you can make the mist--there's simply no more water to pull into the air.&#x000A;&#x000A;closeness: 3.&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-341"/>
+    </children>
+  </item>
+  <item nodeId="node-341">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of FOO (closed), and a red capsa of BAR (closed)) and an important door here.&#x000A;&#x000A;closeness: 4.&#x000A;You dive into the thickest spot of mist you can find, and put on a final burst of speed before changing direction and dropping like a stone.  It works:  your pursuers fly blindly into the mist, unable to follow.&#x000A;The Raven's frustrated caws echo in the mist, and you plot a now-unseen course returning to the familiar currents above the Aerie.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, but increase patrols.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-342"/>
+    </children>
+  </item>
+  <item nodeId="node-342">
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">Are you sure you want to restart?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-343"/>
+    </children>
+  </item>
+  <item nodeId="node-343">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Your mother needs you.  The whole village needs you.  You can do this.  You must do this.&#x000A;&#x000A;The mantra repeats in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you.  And there's no more Falcon Clan in the Royal Aerie--you and the rest of your clan were all banished years ago.  Three days ago, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.&#x000A;&#x000A;By tonight, you will know.  You're not leaving without it.&#x000A;&#x000A;course correction&#x000A;An Interactive High Heist by Lucian Smith&#x000A;Release 0 / Serial number 260223 / Inform 7 v10.1.2 / D&#x000A;&#x000A;High Above the Royal Aerie&#x000A;You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-344"/>
+    </children>
+  </item>
+  <item nodeId="node-344">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, but it would then start to dissapate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-345"/>
+    </children>
+  </item>
+  <item nodeId="node-345">
+    <command xml:space="preserve">open purple</command>
+    <result xml:space="preserve">You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;The magic of the gold capsa of FOO prevents it from being opened.&#x000A;The magic of the red capsa of BAR prevents it from being opened.&#x000A;The straps and buckles on your rucksack fly open and it falls!&#x000A;&#x000A;The leather rucksack twists away as it falls below you, towards the Great Hall.&#x000A;&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder! Estimated direction is..." and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies, and they don't know where you are.&#x000A;&#x000A;Or they didn't, at least.&#x000A;&#x000A;closeness: 1.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-346"/>
+    </children>
+  </item>
+  <item nodeId="node-346">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of FOO (closed), and a red capsa of BAR (closed)) and an important door here.&#x000A;&#x000A;closeness: 2.&#x000A;You've dived straight into a squad of Raven Guards, on their way up to accost you.  Fortunately, your speed helped you avoid most of them, but one guard's talon catches you on your side as you twist by them.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-347"/>
+    </children>
+  </item>
+  <item nodeId="node-347">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;closeness: 3.&#x000A;The Raven Squad pursues you determinedly through the thin mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-348"/>
+    </children>
+  </item>
+  <item nodeId="node-348">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;To the north is the Royal Quarters, the Librum to the east, {other places LS DEBUG}, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of FOO (closed), and a red capsa of BAR (closed)) and an important door here.&#x000A;&#x000A;closeness: 3.&#x000A;Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-349"/>
+    </children>
+  </item>
+  <item nodeId="node-349">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;closeness: 3.&#x000A;You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.&#x000A;The Raven's frustrated caws echo in the mist, and you plot a now-unseen course returning to the familiar currents above the Aerie.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, but increase patrols.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  {LS DEBUG: a few other rooms.  Presumably.  Kitchen, Barracks, Chapel(?), }  In the center of the Aerie (and directly below you) is the Great Hall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-358">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;A squad of Raven Guards appears, and their war cries exalt as they spot you.  You weave through the air, tumbling and twisting as you try to avoid them.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-359"/>
+    </children>
+  </item>
+  <item nodeId="node-359">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You take to the skies even higher.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-360"/>
+    </children>
+  </item>
+  <item nodeId="node-360">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You take to the skies even higher.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-361"/>
+    </children>
+  </item>
+  <item nodeId="node-361">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.&#x000A;&#x000A;Two guards snap at you, and while both touch nothing but feathers, a third slashes you with his silvered talons.  They're about to overwhelm you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
