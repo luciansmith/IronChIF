@@ -72,8 +72,13 @@ Every turn during Being Chased:
 			If the thickness of the grey mist is less than 7:
 				now the thickness of the grey mist is 1;
 				say "At least they can't burn it away past equilibrium.";
+			Otherwise if go go go is happening and the thickness of the grey mist is less than 11:
+				now the thickness of the grey mist is 1;
+				say "At least they can't burn it away past equilibrium.";
 			Otherwise:
 				decrease the thickness of the grey mist by 6;
+				if go go go is happening:
+					decrease the thickness of the grey mist by 4;
 				say "The mist is still thicker than it would be at equilibrium, but it's a lot less than it was.";
 	If the closeness of Being Chased is 2:
 		If the location is not the starting_line of Being Chased:
@@ -111,7 +116,7 @@ To determine evasion:
 			say "You dodge and weave and almost get away from your pursuers, but when 'down' always points straight at you, even when they can't see you, they always know where you are.";
 			stop;
 	If Super-Momentum is happening:
-		say "You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.";
+		say "You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.[lb]";
 		escape and recover;
 	Otherwise if Momentum is happening:
 		If the thickness of the grey mist is at least 10:
@@ -132,7 +137,7 @@ To escape and recover:
 	Move the Lone Guard to the Librum Landing Cradle;
 	Move the small pile of tiny padlocks to the Librum Landing Cradle;
 	Now the closeness of Being Chased is 0;
-	say "The Raven's frustrated caws echo in the mist, and you plot a now-unseen course returning to the familiar currents above the Aerie.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, but increase patrols.";
+	say "The Raven's frustrated caws echo in the mist, and you plot a now-unseen course returning to the familiar currents above the Aerie.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, and call up any reserves.";
 	Move the player to High Above;
 
 Being Chased ends here.

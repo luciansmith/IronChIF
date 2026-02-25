@@ -74,7 +74,7 @@ To carry out everything rezrovving:
 		say "The straps and buckles on your rucksack fly open and it falls!";
 		now the rucksack is carried by the player;
 		try dropping the rucksack;
-	If the reset state of the woodpeckers is 6:
+	If the reset state of the woodpeckers is 5:
 		Now the woodpeckers are activated; [Starts the 'being chased' scene]
 		Now the reset state of the woodpeckers is 0;
 
@@ -89,7 +89,7 @@ Check locking something with during Everything Is Open:
 Check wearing the rucksack during Everything Is Open:
 	say "A mystical force prevents you from fastening the buckles on the rucksack, and you are unable to put it on." instead.
 
-Reset Sensors is a scene.  Reset Sensors begins when Everything is Open ends.  Reset Sensors ends when the reset state of the woodpeckers is 6.
+Reset Sensors is a recurring scene.  Reset Sensors begins when Everything is Open ends.  Reset Sensors ends when the reset state of the woodpeckers is 5.
 
 Every turn during Reset Sensors:
 	if Everything Is Open is happening:
@@ -97,9 +97,11 @@ Every turn during Reset Sensors:
 	otherwise:
 		increase the reset state of the woodpeckers by 1;
 		if the reset state of the woodpeckers is 1:
-			say "From everywhere in the Aerie, you hear the woodpeckers drumming: 'Reset Locks!  Repeat!  Reset Locks!";
+			say "From everywhere in the Aerie, you hear the woodpeckers drumming in the Pounding dialect: 'Reset Locks!  Repeat!  Reset Locks!";
+		if go go go is happening and the reset state of the woodpeckers is less than 5:
+			increase the reset state of the woodpeckers by 1;
 		
-Doors Re-close is a scene.  Doors Re-close begins when Everything Is Open ends.  Doors Re-close ends when (Librum Door) is locked.
+Doors Re-close is a recurring scene.  Doors Re-close begins when Everything Is Open ends.  Doors Re-close ends when (Librum Door) is locked.
 
 Every turn during Doors Re-close:
 	if Being Chased is happening:
@@ -118,7 +120,7 @@ Section down
 
 The gold capsa of Down is a capsa in the rucksack.  The description is "The gold capsa turned out to contain a scroll of Down[first time], as became evident in the disorienting moment when the sages first opened the capsa, and everyone and everything suddenly fell towards it[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to pull everything towards itself, instead of towards the ground[end if]."
 
-A scroll of rudenj is a scroll in the gold capsa.  The name is "rudenj".
+A scroll of rudenj is a scroll in the gold capsa.  The name is "rudenj". Understand "down" as the scroll of rudenj.
 
 Check dropping the gold capsa during Everything Falls:
 	if Being Chased is happening:
@@ -164,14 +166,20 @@ When Everything Falls ends:
 	If the location is in_forest:
 ]
 
-Section Bar
+Section Hasten
 
-The red capsa of hasten is a capsa in the rucksack.  The description is "The red capsa turned out to contain a scroll of hasten[first time], which you and the sages eventually determined when it became clear that everyone was acting as if they were high on guarana berries[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to make everything happen much faster[end if]."
+The red capsa of hasten is a capsa in the rucksack.  The description is "The red capsa turned out to contain a scroll of hasten[first time], which you and the sages eventually determined when it became clear that everyone was acting as if they were high on guarana berries[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to make everything happen much faster[end if]."  Understand "haste" as the red capsa.
 
-A scroll of quiste is a scroll in the red capsa.  The name is "quiste".
+A scroll of quiste is a scroll in the red capsa.  The name is "quiste".  Understand "haste/hasten" as the scroll of quiste.
 
 [quiste: quick + haste]
 
 Go go go is a recurring scene.  Go go go begins when the red capsa is open.  Go go go ends when the red capsa is closed.
+
+When go go go begins:
+	say "From everywhere in the Aerie, you hear the drumming of Woodpeckers in the Pounding dialect:  'Target is quick, repeat target is quick.  Remember you are too.'  Fortunately, it doesn't seem like they were able to triangulate on you.  Now you just have to be good at being faster than normal, against others who are also faster than normal, and who have had months to practice being fast.  No problem.";
+
+When go go go ends:
+	say "From everywhere in the Aerie, you hear the drumming of Woodpeckers in the Pounding dialect: 'Target is slow again, repeat, target is slow.'  Just in case they couldn't tell they were slow themselves.  Actually, you do recall some Raven Guards from your childhood that would have needed to be told.  Ah, poor James.";
 
 PC and Rucksack ends here.

@@ -36,6 +36,9 @@ After going from High Above:
 		say "You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...";
 	otherwise if the player contains an open gold capsa:
 		say "You descend towards the Aerie, though it feels like you're flying upwards, against the pull of the scroll of down.";
+	otherwise if go go go is happening:
+		now Constance is super-fast;
+		say "You dive blindingly fast towards the Aerie through the fog, and the mist swallows you with nary an eddy.";
 	otherwise:
 		now Constance is speeding;
 		say "You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.";
@@ -175,10 +178,19 @@ Instead of going nowhere from in_forest when the noun is down:
 After going to in_forest:
 	if Constance is speeding:
 		now Constance is super-fast;
+	otherwise if Constance is super-fast:
+		say "Your wings tighten close to your body as you rocket through the mist, your keen eyesight only barely enough to keep you from crashing into branches and trees[first time].
+		
+		It is, without a doubt, the most thrilling dive of your entire life.
+		
+		At the last second, you flare your wings, and feel like they're about to rip off of your shoulders.  You skim over the netting, your curved talons juddering across the lines, making your whole body tremble until you pull up again to dodge more tree trunks.  You allow yourself a triumphant cry, safe in the knowledge that nobody could catch you at these speeds.  Nobody[only].";
+		continue the action;
+		stop;
 	otherwise:
 		now Constance is speeding;
-	if Being Chased is happening:
-		say "You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.";
+	if go go go is happening:
+		now Constance is super-fast;
+		say "You dive into and through the forest, twisting expertly as you dodge trees and branches.  The fog closes behind you with a quiet 'shhhhmp', leaving no record of your passing.";
 	otherwise:
 		say "You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.";
 	continue the action;

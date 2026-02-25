@@ -6,7 +6,7 @@ Book 0 Ongoing Effects
 Include Being Chased by Iron ChIF.
 
 
-Not Recovering is a scene.
+Not Recovering is a recurring scene.
 
 Not recovering begins when Constance is wounded and the capsa of opening is open.
 Not recovering ends when the capsa of opening is closed.
@@ -15,13 +15,17 @@ Not recovering has a number called timer.  The timer of not recovering is zero.
 
 Every turn during Not Recovering:
 	if the timer of not recovering is at least six:
-		say "[one of]Your wound continues to lightly bleed[or]Your wound aches.  You look down at it, and it's still open and bleeding.[or]Your open wound really should have closed by now, but it continues to lightly bleed.[stopping].";
+		if go go go is happening:
+			say "[one of]Your wound continues to bleed.  It's not a huge wound, but the blood is flowing rather quickly[or]Your wound aches.  You look down at it, and it's still open and a fast small trickle of blood drips down your side.[or]Your open wound really should have closed by now, but it continues to bleed.[stopping].";
+		Otherwise:
+			say "[one of]Your wound continues to lightly bleed[or]Your wound aches.  You look down at it, and it's still open and bleeding.[or]Your open wound really should have closed by now, but it continues to lightly bleed.[stopping].";
+		now the timer of not recovering is 0;
 	otherwise:
 		increase the timer of not recovering by one;
 
 [Above code courtesy of ideas from https://intfiction.org/t/every-third-turn/1443]
 
-Actually Recovering is a scene.
+Actually Recovering is a recurring scene.
 Actually Recovering begins when Constance is wounded and the capsa of opening is closed.
 Actually Recovering ends when Constance is not wounded.
 
