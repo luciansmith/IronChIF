@@ -17,7 +17,7 @@
     </dict>
     <key>2</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.inform\Source\story.ni</string>
-        <key>Line</key><integer>25</integer>
+        <key>Line</key><integer>26</integer>
         <key>Title</key><string>Chapter Testing -</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
@@ -1702,6 +1702,13 @@
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>243</key><dict>
+        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Horatio.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>--</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>244</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Being Chased.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>--</string>

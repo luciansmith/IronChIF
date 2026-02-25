@@ -140,7 +140,12 @@ To escape and recover:
 	Move the Lone Guard to the Librum Landing Cradle;
 	Move the small pile of tiny padlocks to the Librum Landing Cradle;
 	Now the closeness of Being Chased is 0;
+	Now Constance is cruising;
 	say "[lb]The Raven's frustrated caws echo in the mist, and you plot a now-unseen course returning to the familiar currents above the Aerie.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, and call up any reserves.";
 	Move the player to High Above;
+
+When Being Chased ends:
+	if Horatio's cell door is open:
+		now Horatio is remembered;
 
 Being Chased ends here.

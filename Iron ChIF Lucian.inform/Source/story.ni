@@ -14,6 +14,7 @@ Include Rules and New Actions by Iron ChIF.
 Include Map by Iron ChIF.
 Include PC and Rucksack by Iron ChIF.
 Include Lucian's Scenes by Iron ChIF.
+Include Horatio by Iron ChIF.
 
 When play begins:
 	say "[i]Your mother needs you.  The whole village needs you.  You can do this.  You must do this.

@@ -7,7 +7,7 @@ Using Inform kit 'EnglishLanguageKit' (priority 1).
 Using Inform kit 'WorldModelKit' (priority 2).
 Using Inform kit 'CommandParserKit' (priority 3).
 756 Preform nonterminals read from C:\Program Files\Inform\Internal\Languages\English\Syntax.preform
-I've now read your source text, which is 256 words long.
+I've now read your source text, which is 261 words long.
 Included: core, naming, instance counting, interactive fiction, spatial model, backdrops, bibliographic data, chronology, devices, mapping, persons, player, regions, scenes, scoring, timed rules, times of day, actions, going, command, showme, multimedia, figures, sounds, glulx external files
 Excluded: 
 I've also read Basic Inform by Graham Nelson, which is 7691 words long.
@@ -20,14 +20,14 @@ I've also read Rules And New Actions by Iron ChIF, which is 996 words long.
 I've also read Map by Iron ChIF, which is 2899 words long.
 I've also read PC And Rucksack by Iron ChIF, which is 1749 words long.
 I've also read Lucian's Scenes by Iron ChIF, which is 285 words long.
-I've also read Being Chased by Iron ChIF, which is 1574 words long.
+I've also read Horatio by Iron ChIF, which is 79 words long.
+I've also read Being Chased by Iron ChIF, which is 1592 words long.
 
 
 -----------------------------------------------------
 Phase I ... Dividing source into compilation units
 -----------------------------------------------------
 
-.... Hierarchy__establish() took 1cs
 
 
 -----------------------------------------------------
@@ -51,21 +51,21 @@ Loading kinds definitions from C:\Program Files\Inform\Internal\Inter\CommandPar
 Phase III ... Pre-pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pre_pass() took 8cs
+.... MajorNodes__pre_pass() took 7cs
 
 
 -----------------------------------------------------
 Phase IV ... First pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pass_1() took 7cs
+.... MajorNodes__pass_1() took 6cs
 
 
 -----------------------------------------------------
 Phase V ... Second pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pass_2() took 1cs
+.... MajorNodes__pass_2() took 2cs
 
 
 -----------------------------------------------------
@@ -84,7 +84,6 @@ Phase VII ... Completing the model world
 Phase VIII ... Tables and grammar
 -----------------------------------------------------
 
-.... BinaryPredicateFamilies__second_stock() took 1cs
 
 
 -----------------------------------------------------
@@ -105,7 +104,7 @@ Phase X ... Phrases and rules
 Phase XI ... Generating inter (1)
 -----------------------------------------------------
 
-.... RTKindConstructors__compile() took 5cs
+.... RTKindConstructors__compile() took 3cs
 
 
 -----------------------------------------------------
@@ -113,7 +112,6 @@ Phase XII ... Generating inter (2)
 -----------------------------------------------------
 
 .... CompletionModule__compile() took 4cs
-.... InferenceSubjects__emit_all() took 2cs
 
 
 ==== Phase XII.1 ... Slashing command grammar ====
@@ -128,9 +126,9 @@ Phase XII ... Generating inter (2)
 Phase XIII ... Generating inter (3)
 -----------------------------------------------------
 
-.... Sequence__undertake_queued_tasks() took 155cs
-.... Sequence__undertake_queued_tasks() took 1cs
-.... RTPhrasebook__compile_entries() took 6cs
+.... Sequence__undertake_queued_tasks() took 165cs
+.... Sequence__undertake_queued_tasks() took 2cs
+.... RTPhrasebook__compile_entries() took 5cs
 
 
 -----------------------------------------------------
@@ -166,7 +164,7 @@ Phase XVI ... Bibliographic work
 Phase XVII ... Complete
 -----------------------------------------------------
 
-Compile CPU time: 205 centiseconds
+Compile CPU time: 213 centiseconds
 
 
 ==== Phase XVII.1 ... step 1/15: read <- *memory ====
@@ -6155,8 +6153,8 @@ HTML tag stack:
     52. html (opened at line 236 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
 
 
-Back end elapsed time: 237cs
-Total of 126 files written as streams.
+Back end elapsed time: 255cs
+Total of 127 files written as streams.
 Vacant escapes: %: ..CDE.GH..K.M.O.QR.TU...YZab..e..h.jklm.o.qr......yz0123456789
 Vacant escapes: $: .....F...J..........UVW.....................s.u..x.........789
 
