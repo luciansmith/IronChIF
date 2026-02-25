@@ -10,11 +10,11 @@ When Momentum ends:
 		now Constance is cruising;
 		say "The momentum you had from your dive wears off.  [if Being Chased is not happening]Fun while it lasted!";
 
-Super-momentum is a recurring scene.  Super-momentum begins when Constance is super-fast.  Super-momentum ends when the time since Super-momentum began is two minutes.
+Super-momentum is a recurring scene.  Super-momentum begins when Constance is super-fast.  Super-momentum ends when the time since Super-momentum began is three minutes.
 
 When Super-momentum ends:
 	if Constance is super-fast:
-		now Constance is speeding.
+		now Constance is cruising.
 
 Woodpeckers are people in the Void.  The description is "I dunno if you'll ever actually see these guys; they just sound the alarms from offstage."
 Woodpeckers can be activated. Woodpeckers are not activated.
@@ -65,7 +65,7 @@ Before examining something during Being Chased:
 Every turn during Being Chased:
 	If the current action is not examining:
 		Increase the closeness of Being Chased by 1;
-	say "closeness: [the closeness of being chased].";
+	[say "closeness: [the closeness of being chased].";]
 	If the closeness of Being Chased is 1:
 		If the thickness of the grey mist is at least 3:
 			say "The mist you summoned begins to burn away.  Crap.  The queen must have Ikniq working for her now.[nb]";
@@ -116,11 +116,14 @@ To determine evasion:
 			say "You dodge and weave and almost get away from your pursuers, but when 'down' always points straight at you, even when they can't see you, they always know where you are.";
 			stop;
 	If Super-Momentum is happening:
-		say "You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.[lb]";
+		say "You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.";
 		escape and recover;
 	Otherwise if Momentum is happening:
 		If the thickness of the grey mist is at least 10:
 			say "You dive into the thickest spot of mist you can find, and put on a final burst of speed before changing direction and dropping like a stone.  It works:  your pursuers fly blindly into the mist where you used to be, cawing angrily when they realize they can't see you any more.";
+			escape and recover;
+		Otherwise if Everything Falls is happening and Everything Falls is grounded and the player does not enclose the gold capsa:
+			say "As you dive, you use your knowledge of 'true down' to give yourself an edge, pulling around a tree at an angle that should be impossible; diving and twisting through gaps in the  branches that couldn't be done.  Your closest pursuer crashes into a branch, and the others peel off to avoid him.";
 			escape and recover;
 		Otherwise:
 			say "Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.";
@@ -137,7 +140,7 @@ To escape and recover:
 	Move the Lone Guard to the Librum Landing Cradle;
 	Move the small pile of tiny padlocks to the Librum Landing Cradle;
 	Now the closeness of Being Chased is 0;
-	say "The Raven's frustrated caws echo in the mist, and you plot a now-unseen course returning to the familiar currents above the Aerie.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, and call up any reserves.";
+	say "[lb]The Raven's frustrated caws echo in the mist, and you plot a now-unseen course returning to the familiar currents above the Aerie.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, and call up any reserves.";
 	Move the player to High Above;
 
 Being Chased ends here.

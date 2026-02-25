@@ -141,7 +141,7 @@ Everything falls has a cantedness.  The cantedness of Everything falls is upende
 When Everything Falls begins:
 	if the gold capsa is enclosed by in_forest:
 		now Everything falls is grounded;
-		say "OK, then.";
+		say "Immediately, 'down' now means 'towards the gold capsa' instead of 'towards the earth'.  Even being ready for it, it takes you a few flaps to reorient yourself, and you blink away the slight dizziness.  Then you pause.  No sounds from the Aerie.  Apparently, the new 'down' is close enough to the old 'down' that whatever sensors they have up there didn't detect a change.  Good.";
 	otherwise:
 		now Everything Falls is upended;
 		now the woodpeckers are activated;

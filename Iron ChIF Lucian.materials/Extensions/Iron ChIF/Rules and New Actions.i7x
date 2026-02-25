@@ -137,6 +137,9 @@ Every turn during Mist depletion:
 	decrease the thickness of the grey mist by one;
 	if the thickness of the grey mist is one:
 		say "Your summoned mist thins back to equilibrium.  Still thick enough to mostly obscure you, but you'll have to be careful.";
+	otherwise if go go go is happening:
+		decrease the thickness of the grey mist by one;
+		say "The mist thins more rapidly than normal[if the thickness of the grey mist is one], back to equilibrium again[end if].";
 	otherwise if the thickness of the grey mist is 3 or the thickness of the grey mist is 6 or the thickness of the grey mist is 9 or the thickness of the grey mist is 12:
 		say "Your summoned mist thins slightly, on its way back to equilibrium.";
 	[say "Thickness: [the thickness of the grey mist].";]

@@ -64070,11 +64070,27 @@ Global max_z_object;
             print "Your summoned mist thins back to equilibrium.  Still thick enough to mostly obscure you, but you'll have to be careful.";
             print "^";
         } else {
-            if ((((GProperty(OBJECT_TY, I_grey_mist_U1, A_P_thickness) == 3)) || ((((GProperty(OBJECT_TY, I_grey_mist_U1, A_P_thickness) == 6)) || ((((GProperty(OBJECT_TY, I_grey_mist_U1, A_P_thickness) == 9)) || ((GProperty(OBJECT_TY, I_grey_mist_U1, A_P_thickness) == 12)))))))) {
+            if (((scene_status-->((I_go_go_go_U1 - 1))) == 1)) {
+                WriteGProperty(OBJECT_TY, I_grey_mist_U1, A_P_thickness, (GProperty(OBJECT_TY, I_grey_mist_U1, A_P_thickness) - 1));
                 (say__p = 1);
                 ParaContent();
-                print "Your summoned mist thins slightly, on its way back to equilibrium.";
+                print "The mist thins more rapidly than normal";
+                if ((~~((GProperty(OBJECT_TY, I_grey_mist_U1, A_P_thickness) == 1)))) {
+                    jump L_Say1;
+                }
+                ParaContent();
+                print ", back to equilibrium again";
+                .L_Say1;
+                ParaContent();
+                print ".";
                 print "^";
+            } else {
+                if ((((GProperty(OBJECT_TY, I_grey_mist_U1, A_P_thickness) == 3)) || ((((GProperty(OBJECT_TY, I_grey_mist_U1, A_P_thickness) == 6)) || ((((GProperty(OBJECT_TY, I_grey_mist_U1, A_P_thickness) == 9)) || ((GProperty(OBJECT_TY, I_grey_mist_U1, A_P_thickness) == 12)))))))) {
+                    (say__p = 1);
+                    ParaContent();
+                    print "Your summoned mist thins slightly, on its way back to equilibrium.";
+                    print "^";
+                }
             }
         }
     } else {
@@ -66212,7 +66228,7 @@ Global max_z_object;
         WriteGProperty(SCENE_TY, I_everything_falls_U1, A_P_cantedness, 1);
         (say__p = 1);
         ParaContent();
-        print "OK, then.";
+        print "Immediately, ~down~ now means ~towards the gold capsa~ instead of ~towards the earth~.  Even being ready for it, it takes you a few flaps to reorient yourself, and you blink away the slight dizziness.  Then you pause.  No sounds from the Aerie.  Apparently, the new ~down~ is close enough to the old ~down~ that whatever sensors they have up there didn't detect a change.  Good.";
         print "^";
     } else {
         WriteGProperty(SCENE_TY, I_everything_falls_U1, A_P_cantedness, 2);
@@ -66440,7 +66456,7 @@ Global max_z_object;
 ];
 [ call_U2287 ch;
     if (((scene_status-->(9)) == 1)) {
-        if ((SceneUtility(I_super_momentum_U1, 1) == 2)) {
+        if ((SceneUtility(I_super_momentum_U1, 1) == 3)) {
             (ch = 1);
             if (debug_scenes) {
                 print "[Scene 'Super-momentum' ends]^";
@@ -66739,7 +66755,7 @@ Global max_z_object;
         DB_Rule(call_U2313, 938, 0);
     }
     if (call_U2297(I_constance_U1)) {
-        call_U2296(I_constance_U1);
+        call_U2294(I_constance_U1);
     }
     rfalse;
 ];
@@ -66954,16 +66970,6 @@ Global max_z_object;
         if ((~~((STORED_ACTION_TY_Adopt(STORED_ACTION_TY_Current(I7SFRAME)),(((SAT_Tmp-->(0)) = (((action == ##Examine)) && ((actor == player)))),STORED_ACTION_TY_Unadopt()))))) {
             WriteGProperty(SCENE_TY, I_being_chased_U1, A_P_closeness, (GProperty(SCENE_TY, I_being_chased_U1, A_P_closeness) + 1));
         }
-        (say__p = 1);
-        ParaContent();
-        print "closeness: ";
-        ParaContent();
-        @push self;
-        print (say__n = GProperty(SCENE_TY, (self = I_being_chased_U1), A_P_closeness));
-        @pull self;
-        ParaContent();
-        print ".";
-        print "^";
         if ((GProperty(SCENE_TY, I_being_chased_U1, A_P_closeness) == 1)) {
             if ((GProperty(OBJECT_TY, I_grey_mist_U1, A_P_thickness) >= 3)) {
                 (say__p = 1);
@@ -67094,8 +67100,6 @@ Global max_z_object;
         ParaContent();
         print "You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.";
         print "^";
-        ParaContent();
-        call_U2156();
         call_U2324();
     } else {
         if (((scene_status-->((I_momentum_U1 - 1))) == 1)) {
@@ -67106,10 +67110,18 @@ Global max_z_object;
                 print "^";
                 call_U2324();
             } else {
-                (say__p = 1);
-                ParaContent();
-                print "Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.";
-                print "^";
+                if (((((scene_status-->((I_everything_falls_U1 - 1))) == 1)) && ((((_final_propertyvalue(SCENE_TY, I_everything_falls_U1, A_P_cantedness) == 1)) && ((~~(IndirectlyContains(player, I_gold_capsa_of_down_U1)))))))) {
+                    (say__p = 1);
+                    ParaContent();
+                    print "As you dive, you use your knowledge of ~true down~ to give yourself an edge, pulling around a tree at an angle that should be impossible; diving and twisting through gaps in the  branches that couldn't be done.  Your closest pursuer crashes into a branch, and the others peel off to avoid him.";
+                    print "^";
+                    call_U2324();
+                } else {
+                    (say__p = 1);
+                    ParaContent();
+                    print "Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.";
+                    print "^";
+                }
             }
         } else {
             if ((GProperty(OBJECT_TY, I_grey_mist_U1, A_P_thickness) >= 13)) {
@@ -67139,6 +67151,8 @@ Global max_z_object;
     MoveObject(I_small_pile_of_tiny_padlock_U1, I_librum_landing_cradle_U1, 0, 0);
     WriteGProperty(SCENE_TY, I_being_chased_U1, A_P_closeness, 0);
     (say__p = 1);
+    ParaContent();
+    call_U2156();
     ParaContent();
     print "The Raven's frustrated caws echo in the mist, and you plot a now-unseen course returning to the familiar currents above the Aerie.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, and call up any reserves.";
     print "^";
