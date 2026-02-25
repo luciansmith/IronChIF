@@ -31,3 +31,19 @@ Day two mop-up:  open tabs include:
 * notalwaysright.com
 * "inform 7 exit if statement"
 * synonyms for thick
+
+Day three mop-up:  open tabs include:
+* Inform 7 bug tracker: new 'abject failure' report
+* "Inform 7 synonyms for go"
+* "How do birds attack from a distance"
+* Synonyms for opulent
+* How to say fall in Lithuanian
+* Useful phrases in Bemba
+* "Inform 7 detach a part"
+* "berry with a lot of caffeine"
+* Synonyms for jail
+* Image search: turkey buzzard
+* "Inform 7 describing closed or open"
+* "What does a pet turkey vulture need"
+* "process of swallowing"
+* Inform 7: Rulebooks & “Stop the Action”
