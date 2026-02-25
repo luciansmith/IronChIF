@@ -5,7 +5,13 @@ Book Cast
 
 Section Constance
 
-Constance is a woman in High Above.  "A powerful Falcon Clan female is here, her large black eyes watching you with fierce intensity."  The description of Constance is "As a member of the Falcon Clan, your most striking features are your large black eyes, offset with yellow, and slightly recessed under a grey-feathered scalp.  The grey blends from your head, mottling along your back and the backside of your wings, while your front, throat, and underwings are feathered white with brown striations.  A close encounter with a Raven during your previous mission left you missing a few contour feathers and some down, but not enough to hinder movement or flight."
+Constance is a woman in High Above.  "Constance, a powerful Falcon Clan female, is here, her large black eyes watching you with fierce intensity."  The description of Constance is "As a member of the Falcon Clan, [your] most striking features are [your] large black eyes, offset with yellow, and slightly recessed under a grey-feathered scalp.  The grey blends from [your] head, mottling along [your] back and the backside of [your] wings, while [your] front, throat, and underwings are feathered white with brown striations[if the player is Constance].  A close encounter with a Raven during [your] previous mission left a few missing contour feathers and some down, but not enough to hinder movement or flight[end if]."  Understand "constance/powerful/falcon/clan/large/black/eyes/yellow/scalp/mottling/wings/throat/underwings/brown/striations/talons" as Constance.
+
+To say your:
+	if the player is Constance:
+		say "your";
+	otherwise:
+		say "her";
 
 [As might be predicted, the 'let's go with this for now' decision has been solidified in stone.]
 
@@ -52,7 +58,7 @@ When Everything Is Open begins:
 To carry out everything rezrovving:
 	say "As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.[lb]";
 	if the lone guard is in the location and the tiny closed padlocks are enclosed by the lone guard:
-		say "As the shockwave of magic reaches the guard, the padlock on her uniform closest to you pops open.  Then in succession, all the other padlocks she's wearing pop open as well, in perfect concentric circles in order of how distant they are from the scroll.  As her eyes lock with yours, you realize, somewhat belatedly, that you've given her the ability to triangulate on your position.  Without hesitation, she leaps straight at you, before you even have time to let go of the capsa.
+		say "As the shockwave of magic reaches the guard, the padlock on her uniform closest to you pops open.  Then in succession, all the other padlocks she's wearing pop open as well, in perfect concentric circles in order of how distant they are from the scroll.  As her eyes lock with yours, you realize, somewhat belatedly, that you've given her the ability to triangulate on your position.  Without hesitation, she breathes fire and leaps straight at you, before you even have time to let go of the capsa.
 		
 		The door behind her opens silently as she tackles you to the ground.";
 		end the story saying "You have been captured.";
@@ -64,8 +70,9 @@ To carry out everything rezrovving:
 				say "[The item] clicks as it unlocks!";
 	repeat with item running through openable things:
 		if the item is closed:
-			if the item is a capsa and the player can see the item:
-				say "The magic of [the item] prevents it from being opened.";
+			if the item is a capsa:
+				if the player can see the item:
+					say "The magic of [the item] prevents it from being opened.";
 			otherwise:
 				now the item is open;
 				if the player can see the item:
@@ -120,7 +127,7 @@ Section down
 
 The gold capsa of Down is a capsa in the rucksack.  The description is "The gold capsa turned out to contain a scroll of Down[first time], as became evident in the disorienting moment when the sages first opened the capsa, and everyone and everything suddenly fell towards it[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to pull everything towards itself, instead of towards the ground[end if]."
 
-A scroll of rudenj is a scroll in the gold capsa.  The name is "rudenj". Understand "down" as the scroll of rudenj.
+A scroll of rudenj is a scroll in the gold capsa.  The name is "RUDENJ". Understand "down" as the scroll of rudenj.
 
 Check dropping the gold capsa during Everything Falls:
 	if Being Chased is happening:
@@ -170,7 +177,7 @@ Section Hasten
 
 The red capsa of hasten is a capsa in the rucksack.  The description is "The red capsa turned out to contain a scroll of hasten[first time], which you and the sages eventually determined when it became clear that everyone was acting as if they were high on guarana berries[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to make everything happen much faster[end if]."  Understand "haste" as the red capsa.
 
-A scroll of quiste is a scroll in the red capsa.  The name is "quiste".  Understand "haste/hasten" as the scroll of quiste.
+A scroll of quiste is a scroll in the red capsa.  The name is "QUISTE".  Understand "haste/hasten" as the scroll of quiste.
 
 [quiste: quick + haste]
 

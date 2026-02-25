@@ -683,7 +683,7 @@
   </item>
   <item nodeId="node-535">
     <command xml:space="preserve">d</command>
-    <result xml:space="preserve">You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.&#x000A;&#x000A;The Raven's frustrated caws echo in the mist, and you plot a now-unseen course returning to the familiar currents above the Aerie.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, and call up any reserves.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.&#x000A;&#x000A;The Raven's frustrated caws echo in the mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, and call up any reserves.&#x000A;&#x000A;You plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -701,7 +701,7 @@
   </item>
   <item nodeId="node-537">
     <command xml:space="preserve">open purple</command>
-    <result xml:space="preserve">You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;[Scene 'Everything Is Open' begins]&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;&#x000A;The magic of the gold capsa of Down prevents it from being opened.&#x000A;The magic of the red capsa of hasten prevents it from being opened.&#x000A;The straps and buckles on your rucksack fly open and it falls!&#x000A;&#x000A;The leather rucksack twists away as it falls below you, towards the Great Hall.&#x000A;&#x000A;[Scene 'Being Chased' begins]&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder! Estimated direction is..." and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies, and they don't know where you are.&#x000A;&#x000A;Or they didn't, at least.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;[Scene 'Everything Is Open' begins]&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;&#x000A;The magic of the gold capsa of Down prevents it from being opened.&#x000A;The magic of the red capsa of hasten prevents it from being opened.&#x000A;[Scene 'Being Chased' begins]&#x000A;&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder! Estimated direction is..." and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies, and they don't know where you are.&#x000A;&#x000A;Or they didn't, at least.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -719,7 +719,7 @@
   </item>
   <item nodeId="node-539">
     <command xml:space="preserve">d</command>
-    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors to the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of Down (closed), and a red capsa of hasten (closed)) here.&#x000A;&#x000A;[Scene 'Momentum' begins]&#x000A;Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors to the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;[Scene 'Momentum' begins]&#x000A;Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -728,7 +728,194 @@
   </item>
   <item nodeId="node-540">
     <command xml:space="preserve">d</command>
-    <result xml:space="preserve">You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;[Scene 'Super-momentum' begins]&#x000A;You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.&#x000A;&#x000A;The Raven's frustrated caws echo in the mist, and you plot a now-unseen course returning to the familiar currents above the Aerie.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, and call up any reserves.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;[Scene 'Momentum' ends]&#x000A;[Scene 'Being Chased' ends]&#x000A;[Scene 'Horatio's story' begins]&#x000A;&gt;</result>
+    <result xml:space="preserve">You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;[Scene 'Super-momentum' begins]&#x000A;You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.&#x000A;&#x000A;The Raven's frustrated caws echo in the mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, and call up any reserves.&#x000A;&#x000A;You plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.&#x000A;&#x000A;[Scene 'Momentum' ends]&#x000A;[Scene 'Being Chased' ends]&#x000A;[Scene 'Horatio's story' begins]&#x000A;&#x000A;&#x000A;                                                             *    *    *</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-546"/>
+      <child nodeId="node-541"/>
+    </children>
+  </item>
+  <item nodeId="node-546">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">You wait, expectantly.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-547"/>
+    </children>
+  </item>
+  <item nodeId="node-547">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">Silently, your cell door unlocks, then swings open.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-548"/>
+    </children>
+  </item>
+  <item nodeId="node-548">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">Well above your cell, you sense rezrov, rudenj, and bostrat settle in their movements until they make lazy circles, high above the Aerie. Igram and taclor remain in place, quiet.&#x000A;&#x000A;It is time.&#x000A;&#x000A;Forgotten Brig&#x000A;A small but cosy cell, grown with austerity but basic comfort in mind.  Your now-open cell door leads west.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-549"/>
+    </children>
+  </item>
+  <item nodeId="node-549">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a blue capsa of mist (closed)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-550"/>
+    </children>
+  </item>
+  <item nodeId="node-550">
+    <command xml:space="preserve">open blue</command>
+    <result xml:space="preserve">You open the blue capsa of mist, revealing a scroll of bostrat.&#x000A;&#x000A;[Scene 'Super-momentum' ends]&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-551"/>
+    </children>
+  </item>
+  <item nodeId="node-551">
+    <command xml:space="preserve">x bostrat</command>
+    <result xml:space="preserve">(the scroll of bostrat)&#x000A;While "BOSTRAT" can be clearly read at the top of the scroll, the rest of the script has faded away.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-552"/>
+    </children>
+  </item>
+  <item nodeId="node-552">
+    <command xml:space="preserve">x capsa</command>
+    <result xml:space="preserve">The blue capsa contains a scroll of mist, but its power has long since faded, as the Gods intended.&#x000A;&#x000A;In the blue capsa of mist is a scroll of bostrat.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-553"/>
+    </children>
+  </item>
+  <item nodeId="node-553">
+    <command xml:space="preserve">x cell</command>
+    <result xml:space="preserve">(cell contents)&#x000A;A straight roost by a desk for writing, and a scooped roost for sleeping.  Enough space to spread your wings.  A rope wall for excercise.  Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-554"/>
+    </children>
+  </item>
+  <item nodeId="node-554">
+    <command xml:space="preserve">x straight roost</command>
+    <result xml:space="preserve">A straight roost by a desk for writing, and a scooped roost for sleeping.  Enough space to spread your wings.  A rope wall for excercise.  Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-555"/>
+    </children>
+  </item>
+  <item nodeId="node-555">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Disused Hallway&#x000A;The only time you ever saw anyone in this hallway was when Georg came to give you your meals, or clean the cell.  The living walls, still elegantly patterned, even here, self-replenish, and the floor carries away shed bark through the grate.  It leads west into the living area, and your old cell door leads east.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-556"/>
+    </children>
+  </item>
+  <item nodeId="node-556">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Your place is not with the denizens of this Aerie, but with the prodigal daughter, now returned, and the capsa she seeks.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-557"/>
+    </children>
+  </item>
+  <item nodeId="node-557">
+    <command xml:space="preserve">x grate</command>
+    <result xml:space="preserve">The grate conveys unneeded materials to the outside, and the forest floor.  "Rezrov" has done its job there, too: it lies open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-558"/>
+    </children>
+  </item>
+  <item nodeId="node-558">
+    <command xml:space="preserve">enter grate</command>
+    <result xml:space="preserve">You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper to the veins of this place: "I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence."&#x000A;&#x000A;After a few moments, you feel an undulation in the slick rippled floor beneath you, and you are compressed even further, as its peristalsis slides you slowly, and then more rapidly, away from your only home for the last ten years.  Then with a sudden &gt;plop&lt;, you're ejected into space.&#x000A;&#x000A;You try to spread your wings, but your reaction time is not what it was, and you hit wirey netting before fully stopping yourself.&#x000A;&#x000A;No matter.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-559"/>
+    </children>
+  </item>
+  <item nodeId="node-559">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You gracefully flit between the trees back up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors to the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-560"/>
+    </children>
+  </item>
+  <item nodeId="node-560">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;Constance, a powerful Falcon Clan female, is here, her large black eyes watching you with fierce intensity.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-561"/>
+    </children>
+  </item>
+  <item nodeId="node-561">
+    <command xml:space="preserve">x constance</command>
+    <result xml:space="preserve">As a member of the Falcon Clan, her most striking features are her large black eyes, offset with yellow, and slightly recessed under a grey-feathered scalp.  The grey blends from her head, mottling along her back and the backside of her wings, while her front, throat, and underwings are feathered white with brown striations.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-541">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Here we go.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-542"/>
+    </children>
+  </item>
+  <item nodeId="node-542">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-543"/>
+    </children>
+  </item>
+  <item nodeId="node-543">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Forgotten Brig&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-544"/>
+    </children>
+  </item>
+  <item nodeId="node-544">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-545"/>
+    </children>
+  </item>
+  <item nodeId="node-545">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;[Scene 'Super-momentum' begins]&#x000A;You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.&#x000A;&#x000A;The Raven's frustrated caws echo in the mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, and call up any reserves.&#x000A;&#x000A;You plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.&#x000A;&#x000A;[Scene 'Momentum' ends]&#x000A;[Scene 'Being Chased' ends]&#x000A;[Scene 'Horatio's story' begins]&#x000A;&#x000A;&#x000A;                                                             *    *    *</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

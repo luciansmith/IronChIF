@@ -141,11 +141,30 @@ To escape and recover:
 	Move the small pile of tiny padlocks to the Librum Landing Cradle;
 	Now the closeness of Being Chased is 0;
 	Now Constance is cruising;
-	say "[lb]The Raven's frustrated caws echo in the mist, and you plot a now-unseen course returning to the familiar currents above the Aerie.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, and call up any reserves.";
-	Move the player to High Above;
+	say "[lb]The Raven's frustrated caws echo in the mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, and call up any reserves.
+	
+	You ";
+	if the rucksack is not enclosed by the player:
+		say "retrieve your rucksack ";
+		move the rucksack to the player;
+		if the purple capsa is not enclosed by the player:
+			move the purple capsa to the rucksack;
+		if the red capsa is not enclosed by the player:
+			move the red capsa to the rucksack;
+			if the gold capsa is not enclosed by the player:
+				say "and fallen capsas (though you leave your capsa of Down alone), and ";
+			otherwise:
+				say "and fallen capsas, and ";
+	say "plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.";
+	move the rucksack to the player;
+	move the purple capsa to the rucksack;
+	move the red capsa to the rucksack;
+	Move the player to High Above, without printing a room description;
 
 When Being Chased ends:
-	if Horatio's cell door is open:
+	if cell door is open:
 		now Horatio is remembered;
+	otherwise:
+		try looking;
 
 Being Chased ends here.

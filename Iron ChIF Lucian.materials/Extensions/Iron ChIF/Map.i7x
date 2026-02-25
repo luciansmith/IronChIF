@@ -159,7 +159,10 @@ in_forest is a room.  It is below Great Hall Landing Cradle.  The printed name i
 
 tree_varieties are scenery in in_forest.  The printed name is "trees".  The description is "Birch, pine, redwood, alder, ash, elm, poplar, and probably several other types as well."  Understand "Birch/pine/redwood/alder/ash/elm/poplar" as the tree_varieties.
 
-A fine net is here.  "Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below."  The description is "A fine, strong net, stretched between and among the trees.  It wasn't here three days ago, which means they spent a lot of effort... to keep you on the Aerie-side of it.  You grin to yourself."
+A fine net is here.  It is fixed in place.  "Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below."  The description is "A fine, strong net, stretched between and among the trees.  It wasn't here three days ago, which means they spent a lot of effort... to keep you on the Aerie-side of it.  You grin to yourself."
+
+Check taking the net:
+	say "Besides being way too large to carry, the net is attached firmly to the trees and branches, not allowing anything larger than a feathers-length through it[if Everything Is Open has started].  Though not, you notice, with knots that could be undone by the scroll of Opening.  Everything is just... folded.  Very deliberately[end if]." instead.
 
 Up from in_forest is Great Hall Landing Cradle.
 North from in_forest is Royal Gardens.
