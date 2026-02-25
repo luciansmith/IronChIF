@@ -38,6 +38,9 @@ Before taking the grate:
 Before attacking the grate:
 	try opening the grate;
 
+Instead of going nowhere from Disused Hallway:
+	say "The hallway runs east to west, and there's a grate on the floor you could enter.";
+
 Check entering the grate:
 	say "You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper to the veins of this place: 'I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence.'
 	
@@ -47,6 +50,7 @@ Check entering the grate:
 	
 	No matter.";
 	Move Horatio to in_forest;
+	Now cell door is open; [Just in case]
 	rule fails;
 
 When Horatio's story begins:
@@ -62,5 +66,16 @@ When Horatio's story begins:
 	It is time.";
 	Now the player is Horatio;
 	Try looking;
+
+Section The Chat
+
+H1 is a page.
+The cdesc is "Start a new conversation with Horatio."
+The description is "[if J1 is not visited]You take a deep (metaphorical) breath.  You've put it off as long as you could, but if you're going to be able to do anything here, this is the only way.
+
+
+You let go of time, and enter [the Jace]'s mind instead.
+
+
 
 Horatio ends here.

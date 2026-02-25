@@ -5,13 +5,13 @@ Book Map
 
 The Void is a room.  [I like having an 'off stage' room for stuff.]
 
-High Above the Royal Aerie is a clear room.  "[if cloudy]Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout,[otherwise]You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout,[end if] and how it relates to today's air currents, winds, and thermals.  Royal quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry."
+High Above the Royal Aerie is a clear room.  "[if cloudy]Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout,[otherwise]You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout,[end if] and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry."
 
-distant_aerie is scenery in high above.  The printed name is "Royal Aerie".  The description is "[if the grey mist is in the location]As you recall, the[otherwise]The[end if] Royal Aerie was grown and shaped by generations of Throckrites, and now towers over the surrounding forest canopy.  Lush shades of browns and reds, often woven together in intricate patterns or pictures, cover every landing cradle and wall."  Understand "royal/aerie/lush/brown/browns/red/reds/woven/patterns/pictures" as distant_aerie.
+distant_aerie is scenery in high above.  The printed name is "Royal Aerie".  The description is "[if the grey mist is in the location]As you recall, the[otherwise]The[end if] Royal Aerie was grown and shaped by generations of Throckrites, and now towers over the surrounding forest canopy.  Lush shades of browns and reds, often woven together in intricate patterns or pictures, cover every landing cradle, wall, and roof."  Understand "royal/aerie/lush/brown/browns/red/reds/woven/patterns/pictures" as distant_aerie.
 
 distant_quarters is scenery in high above.  The printed name is "Royal Quarters".  The description is "[if the grey mist is in the location]As you recall, the[otherwise]The[end if] Royal Quarters is where the Queen and her family, servants, and certain privileged royalty live.  Every huge common room; every small or large individual apartment is awash in greenery that looks incredibly inviting and imperially homey, and is in reality subtly precisely hostile to the uninvited.  Every roof pitch is too steep; no branch nor ridge is graspable by talons of any size.  The single landing cradle in the middle of the gardens is surrounded by stern and beautiful tree crowns, beset with nooks and crevices for unseen guards and archers: attempting to land there would mean instant death for any but those who belong."  Understand "royal/quarters/queen/family/servants/royalty/common/room/apartment/small/large/roof/pitch/branch/ridge/landing/cradle" as distant_quarters.
 
-distant_guards is scenery in high above.  The printed name is "circling guards".  The description is "The last time you were here, the aerie was not nearly on such high alert.  Now there's guards everywhere, but especially focused on circling the royal quarters.".  Understand "raven/circling/guards" as distant_guards.  Understand "raven clan" as distant_guards.
+distant_guards is scenery in high above.  The printed name is "circling guards".  The description is "The last time you were here, the aerie was not nearly on such high alert.  Now there's guards everywhere, but especially focused on circling the Royal Quarters.".  Understand "raven/circling/guards" as distant_guards.  Understand "raven clan" as distant_guards.
 
 distant_librum is scenery in high above.  The printed name is "Librum".  The description is "[if the grey mist is in the location]As you recall, the[otherwise]The[end if] Librum was your target the last time out, and where you obtained the capsas you brought back with you. Its landing cradle is simply decorated, grown with interlocking redwood and pine in a way that suggests shelves of books.  The reading nooks grown into the sides of the main building proved a reasonable entrance for a creative supplicant; no doubt that method will have been shut down by now."  Understand "librum/landing/cradle/reading/nooks" as distant_librum.
 
@@ -24,6 +24,17 @@ no_mist is scenery in high above.  The printed name is "mist".  The description 
 After dropping something in High Above:
 	say "[The noun] twists away as it falls below you, towards the Great Hall.";
 	Now the noun is in the Great Hall Landing Cradle.
+
+Check dropping something during Everything Falls:
+	if the gold capsa is enclosed by the location:
+		if the noun is the gold capsa or the noun encloses the gold capsa:
+			move the noun to the location;
+			say "You let go of [the noun].  It remains floating in the air, exactly where you left it.  You push it to a slightly less conspicuous location." instead;
+		otherwise:
+			move the noun to the location;
+			say "You let go of [the noun].  It falls towards the gold capsa and rests there." instead;
+		stop the action;
+
 
 Check going somewhere from High Above:
 	if no_mist is in the location:
@@ -162,7 +173,7 @@ tree_varieties are scenery in in_forest.  The printed name is "trees".  The desc
 A fine net is here.  It is fixed in place.  "Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below."  The description is "A fine, strong net, stretched between and among the trees.  It wasn't here three days ago, which means they spent a lot of effort... to keep you on the Aerie-side of it.  You grin to yourself."
 
 Check taking the net:
-	say "Besides being way too large to carry, the net is attached firmly to the trees and branches, not allowing anything larger than a feathers-length through it[if Everything Is Open has started].  Though not, you notice, with knots that could be undone by the scroll of Opening.  Everything is just... folded.  Very deliberately[end if]." instead.
+	say "Besides being way too large to carry, the net is attached firmly to the trees and branches, not allowing anything larger than a feathers-length through it[if cell door is open].  Though not, you notice, with knots that could be undone by the scroll of Opening.  Everything is just... folded.  Very deliberately[end if]." instead.
 
 Up from in_forest is Great Hall Landing Cradle.
 North from in_forest is Royal Gardens.

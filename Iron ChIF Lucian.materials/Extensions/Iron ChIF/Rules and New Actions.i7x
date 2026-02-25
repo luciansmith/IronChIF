@@ -136,7 +136,7 @@ Mist depletion is a recurring scene.  Mist depletion begins when the thickness o
 Every turn during Mist depletion:
 	decrease the thickness of the grey mist by one;
 	if the thickness of the grey mist is one:
-		say "Your summoned mist thins back to equilibrium.  Still thick enough to mostly obscure you, but you'll have to be careful.";
+		say "Your summoned mist thins back to equilibrium.  Still thick enough to mostly obscure you.";
 	otherwise if go go go is happening:
 		decrease the thickness of the grey mist by one;
 		say "The mist thins more rapidly than normal[if the thickness of the grey mist is one], back to equilibrium again[end if].";
@@ -156,6 +156,9 @@ Descending is an action applying to nothing.  Understand "descend" as Descending
 Before Descending:
 	Try going down;
 
+Xyzzying is an action applying to nothing.  Understand "xyzzy" as xyzzying.
+Report xyzzying:
+	say "Legends say that the capsa of movement contained such a scroll, but it was lost years ago.  An itinerant troubador once told a tale at the royal court of a Magpie Clan woman who saw the open capsa materialize on her table one morning, and grabbed it just in time to be transported with it to its next location.  She had many fanciful adventures until, years later, it finally took her home again.  She opened the capsa and let it go, hoping that another would have adventures like hers."
 [Understand "fly" as going something.] [Well!  An I7 'abject failure' bug!  Woo!]
 
 Rules and New Actions ends here.

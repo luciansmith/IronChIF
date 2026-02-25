@@ -32,3 +32,4 @@ test thicken_mist with "summon mist/g/g/g/g/g".
 test chase_ustart with "open purple/e/nw/u".
 test chase_dstart with "d/d/open purple/n/se/u".
 test chase_mstart with "d/open purple/e/w/u".
+test horatio_speedrun with "summon mist/d/u/open purple/d/d"

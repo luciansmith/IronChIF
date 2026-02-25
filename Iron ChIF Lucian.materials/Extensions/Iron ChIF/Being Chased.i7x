@@ -8,7 +8,7 @@ Momentum is a recurring scene.  Momentum begins when Constance is speeding.  Mom
 When Momentum ends:
 	if Constance is speeding:
 		now Constance is cruising;
-		say "The momentum you had from your dive wears off.  [if Being Chased is not happening]Fun while it lasted!";
+		say "The momentum you had from your dive wears off[if Being Chased is not happening].  Fun while it lasted![otherwise].[end if]";
 
 Super-momentum is a recurring scene.  Super-momentum begins when Constance is super-fast.  Super-momentum ends when the time since Super-momentum began is three minutes.
 
@@ -20,7 +20,7 @@ Woodpeckers are people in the Void.  The description is "I dunno if you'll ever 
 Woodpeckers can be activated. Woodpeckers are not activated.
 Woodpeckers have a number called reset state. The reset state of the Woodpeckers is 5.
 
-The Raven Guard are people in the Void.  The description is "Black as night, apart from the silvered knives they wear on their talons, and the golden razors that line their beaks."
+The Raven Guard are people in the Void.  "Several members of the Raven Guard fly at you, as you dodge and circle to avoid them."  The description is "Black as night, apart from the silvered knives they wear on their talons, and the golden razors that line their beaks[if the librum landing cradle is visited].  It looks like the lone guard from the Librum has joined them: the [end if]."  Understand "guards/black/silvered/knives/talons/golden/razors/beaks" as the raven guard.
 
 answering the raven guard that something is talking your way out.
 telling the raven guard about something is talking your way out.
@@ -54,17 +54,21 @@ When being chased begins:
 	Now the starting_line of Being Chased is the location;
 	Move the lone guard to the Void;
 	Move the tiny closed padlocks to the Void;
-	say "From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  [if Everything Falls is happening]'Intruder!  The enemy is DOWN. Repeat!  The enemy is DOWN.'  You realize that creating a gravity well pointing straight at you might not have been the wisest move[otherwise]'Intruder! Estimated direction is...' and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies, and they [i]don't[r] know where you are.
+	say "From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  [if Everything Falls is happening]'Intruder!  The enemy is DOWN. Repeat!  The enemy is DOWN.'  You realize that creating a gravity well pointing straight at you might not have been the wisest move[otherwise]'Intruder! Estimated direction is...' and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies.
 	
-	Or they didn't, at least[end if].";
+	And if they didn't know where you were, they do now[end if].";
+
+Constance can be quick-doing.  Constance is not quick-doing.
 
 Before examining something during Being Chased:
-	say "Lightning fast, you try to examine [the noun].";
+	say "Lightning fast, you try to examine [the noun]:  [nb]";
 	continue the action;
 
 Every turn during Being Chased:
 	If the current action is not examining:
 		Increase the closeness of Being Chased by 1;
+	Otherwise:
+		stop;
 	[say "closeness: [the closeness of being chased].";]
 	If the closeness of Being Chased is 1:
 		If the thickness of the grey mist is at least 3:
@@ -81,6 +85,7 @@ Every turn during Being Chased:
 					decrease the thickness of the grey mist by 4;
 				say "The mist is still thicker than it would be at equilibrium, but it's a lot less than it was.";
 	If the closeness of Being Chased is 2:
+		move the raven guard to the location;
 		If the location is not the starting_line of Being Chased:
 			If the starting_line of Being Chased is High Above:
 				say "You've dived straight into a squad of Raven Guards, on their way up to accost you.  Fortunately, your speed helped you avoid most of them, but one guard's talon catches you on your side as you twist by them.";
@@ -94,6 +99,7 @@ Every turn during Being Chased:
 			say "A squad of Raven Guards appears, and their war cries exalt as they spot you.  You weave through the air, tumbling and twisting as you try to avoid them.";
 		Now the starting_line of Being Chased is the location;
 	Otherwise if the closeness of Being Chased is at least 3:
+		move the raven guard to the location;
 		If the starting_line of Being Chased is not the location:
 			Now the starting_line of Being Chased is the location;
 			Now the closeness of Being Chased is 2;

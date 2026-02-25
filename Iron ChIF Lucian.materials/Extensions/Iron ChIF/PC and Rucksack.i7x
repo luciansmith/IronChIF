@@ -23,7 +23,7 @@ Constance can be wounded.  Constance is not wounded.
 
 [The carrying capacity of Constance is 1.][Not sure about this--it would be strong motivation to turn off rezrov, though!]
 
-A leather rucksack is a player's holdall worn by the Constance.  
+A leather rucksack is a player's holdall worn by the Constance.  Understand "sack" as leather rucksack.
 
 Section capsas and scrolls
 
@@ -46,7 +46,7 @@ The description of a scroll is "While '[name]' can be clearly read at the top of
 
 Section rezrov
 
-A purple capsa of opening is a capsa in the rucksack.  The description is "The purple capsa turned out to contain a scroll of opening[first time], as became evident when every buckle and lock in your village flew open when you opened the capsa to investigate[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to open and hold open any closed object in the area[end if]."
+A purple capsa of opening is a capsa in the rucksack.  The description is "The purple capsa turned out to contain a scroll of opening[first time], as became evident when every buckle and lock in your village flew open when you opened the capsa to investigate[only].  It is [if the purple capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to open and hold open any closed object in the area[end if]."
 
 A scroll of rezrov is a scroll in the purple capsa.  The name is "REZROV".  Understand "opening" as the scroll of rezrov.
 
@@ -80,7 +80,10 @@ To carry out everything rezrovving:
 	if the rucksack is worn:
 		say "The straps and buckles on your rucksack fly open and it falls!";
 		now the rucksack is carried by the player;
-		try dropping the rucksack;
+		if Everything Falls is happening and the gold capsa is enclosed by the location:
+			say "Fortunately, it hovers in midair due to the scroll of down, so you're able to immediately grab it again.";
+		otherwise:
+			try dropping the rucksack;
 	If the reset state of the woodpeckers is 5:
 		Now the woodpeckers are activated; [Starts the 'being chased' scene]
 		Now the reset state of the woodpeckers is 0;
@@ -125,7 +128,7 @@ Every turn during Doors Re-close:
 
 Section down
 
-The gold capsa of Down is a capsa in the rucksack.  The description is "The gold capsa turned out to contain a scroll of Down[first time], as became evident in the disorienting moment when the sages first opened the capsa, and everyone and everything suddenly fell towards it[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to pull everything towards itself, instead of towards the ground[end if]."
+The gold capsa of down is a capsa in the rucksack.  The description is "The gold capsa turned out to contain a scroll of Down[first time], as became evident in the disorienting moment when the sages first opened the capsa, and everyone and everything suddenly fell towards it[only].  It is [if the gold capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to pull everything towards itself, instead of towards the ground[end if]."
 
 A scroll of rudenj is a scroll in the gold capsa.  The name is "RUDENJ". Understand "down" as the scroll of rudenj.
 
@@ -150,6 +153,9 @@ When Everything Falls begins:
 		now Everything falls is grounded;
 		say "Immediately, 'down' now means 'towards the gold capsa' instead of 'towards the earth'.  Even being ready for it, it takes you a few flaps to reorient yourself, and you blink away the slight dizziness.  Then you pause.  No sounds from the Aerie.  Apparently, the new 'down' is close enough to the old 'down' that whatever sensors they have up there didn't detect a change.  Good.";
 	otherwise:
+		say "Immediately, 'down' now means 'towards the gold capsa' instead of 'towards the earth'.  After a brief moment of disorientation, you right yourself, wings pulling you 'up' with just enough force that you remain in one place.
+		
+		[i]Note: for convenience, 'down' and 'up' comands will continue to work as they did, referencing Earth-relative geography instead of gold capsa-relative geography[r].";
 		now Everything Falls is upended;
 		now the woodpeckers are activated;
 
@@ -175,7 +181,7 @@ When Everything Falls ends:
 
 Section Hasten
 
-The red capsa of hasten is a capsa in the rucksack.  The description is "The red capsa turned out to contain a scroll of hasten[first time], which you and the sages eventually determined when it became clear that everyone was acting as if they were high on guarana berries[only].  It is [if closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to make everything happen much faster[end if]."  Understand "haste" as the red capsa.
+The red capsa of hasten is a capsa in the rucksack.  The description is "The red capsa turned out to contain a scroll of hasten[first time], which you and the sages eventually determined when it became clear that everyone was acting as if they were high on guarana berries[only].  It is [if the red capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to make everything happen much faster[end if]."  Understand "haste" as the red capsa.
 
 A scroll of quiste is a scroll in the red capsa.  The name is "QUISTE".  Understand "haste/hasten" as the scroll of quiste.
 
@@ -184,7 +190,9 @@ A scroll of quiste is a scroll in the red capsa.  The name is "QUISTE".  Underst
 Go go go is a recurring scene.  Go go go begins when the red capsa is open.  Go go go ends when the red capsa is closed.
 
 When go go go begins:
-	say "From everywhere in the Aerie, you hear the drumming of Woodpeckers in the Pounding dialect:  'Target is quick, repeat target is quick.  Remember you are too.'  Fortunately, it doesn't seem like they were able to triangulate on you.  Now you just have to be good at being faster than normal, against others who are also faster than normal, and who have had months to practice being fast.  No problem.";
+	say "You speed up, and so does the wind.  You wriggle, feeling the delightfully fast responses from every muscle in your body.
+	
+	From everywhere in the Aerie, you hear the drumming of Woodpeckers in the Pounding dialect:  'Target is quick, repeat target is quick.  Remember you are too.'  Fortunately, it doesn't seem like they were able to triangulate on you.  Now you just have to be good at being faster than normal, against others who are also faster than normal, and who have had months to practice being fast.  No problem.";
 
 When go go go ends:
 	say "From everywhere in the Aerie, you hear the drumming of Woodpeckers in the Pounding dialect: 'Target is slow again, repeat, target is slow.'  Just in case they couldn't tell they were slow themselves.  Actually, you do recall some Raven Guards from your childhood that would have needed to be told.  Ah, poor James.";
