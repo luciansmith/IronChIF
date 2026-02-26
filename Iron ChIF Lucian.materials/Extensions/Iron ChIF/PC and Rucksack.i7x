@@ -48,11 +48,11 @@ The description of a scroll is "While '[name]' can be clearly read at the top of
 
 Section rezrov
 
-A purple capsa of opening is a capsa in the rucksack.  The description is "The purple capsa turned out to contain a scroll of opening[first time], as became evident when every buckle and lock in your village flew open when you opened the capsa to investigate[only].  It is [if the purple capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to open and hold open any closed object in the area[end if]."  Understand "rezrov" as the purple capsa.
+A purple capsa of opening is a capsa in the rucksack.  The description is "The purple capsa turned out to contain a scroll of opening[first time], as became evident when every buckle and lock in your village flew open when you opened the capsa to investigate[only].  It is [if the purple capsa of opening is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to open and hold open any closed object in the area[end if]."  Understand "rezrov" as the purple capsa of opening.
 
-A scroll of rezrov is a scroll in the purple capsa.  The name is "REZROV".  Understand "opening" as the scroll of rezrov.
+A scroll of rezrov is a scroll in the purple capsa of opening.  The name is "REZROV".  Understand "opening" as the scroll of rezrov.
 
-Everything Is Open is a recurring scene.  Everything Is Open begins when the purple capsa is open.  Everything Is Open ends when the purple capsa is closed.
+Everything Is Open is a recurring scene.  Everything Is Open begins when the purple capsa of opening is open.  Everything Is Open ends when the purple capsa of opening is closed.
 
 When Everything Is Open begins:
 	carry out everything rezrovving;
@@ -203,15 +203,31 @@ Section Zork Grand Inquisitor Live Forever
 
 A black capsa is a capsa in the Librum Itself.  "In the back of the lower level, in a storage cupboard, you find the black capsa, just as Horatio described to you.  You wonder how he managed to find out where it was, but suppose the man has his conversational tricks."  The black capsa can be explained.  The black capsa is not explained.  The description is "The black capsa contains a scroll of igram, [if the black capsa is explained]which apparently turns purple things invisible.  The only capsae you've heard of having an ability even vaguely like that, you assumed were jokes.  Now you're not so sure.[otherwise]but Horatio won't tell you what that means.[end if]  It is [if the black capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to make purple things invisible (sigh)[end if]."  Understand "igram" as the black capsa.
 
-A scroll of igram is a scroll in the red capsa.  The name is "IGRAM".  Understand "make purple things invisible" as the scroll of igram.  Understand "invisible/invisibility" as the scroll of igram.
+A scroll of igram is a scroll in the black capsa.  The name is "IGRAM".  Understand "make purple things invisible" as the scroll of igram.  Understand "invisible/invisibility" as the scroll of igram.
 
 No More Purple is a scene.  No More Purple begins when the black capsa is open.  No More Purple ends when the black capsa is closed.
 
 When No More Purple begins:
-	if the purple capsa is visible:
+	if the purple capsa of opening is visible:
 		say "For a moment, the purple capsa seems to flicker.  But you look again, and nothing seems to have changed.";
-	if the various artifacts are visible:
+	if the various artifacts are visible and the cloak posts are not in the location:
 		Move the cloak posts to the location;
+		Now the hunting cloak is invisible;
 		say "Suddenly, two hunting cloaks in a display of ancient pre-historical artifacts disappear!";
+	otherwise if the hunting cloak is on the cloak posts and the cloak posts are in the location:
+		say "The hunting cloaks disappear again.";
+	otherwise if the hunting cloak is visible:
+		say "The hunting cloak disappears again.";
+
+When No More Purple ends:
+	Now the hunting cloak is purple;
+	if the various artifacts are visible and the cloak posts are not in the location:
+		Move the cloak posts to the location;
+		say "Suddenly, two hunting cloaks in a display of ancient pre-historical artifacts appear!";
+	otherwise if the hunting cloak is on the cloak posts and the cloak posts are in the location:
+		say "The hunting cloaks appear again.";
+	otherwise if the hunting cloak is visible:
+		say "The hunting cloak appears again.";
+
 
 PC and Rucksack ends here.

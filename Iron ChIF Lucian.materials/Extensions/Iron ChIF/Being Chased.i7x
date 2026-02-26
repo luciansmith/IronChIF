@@ -153,8 +153,8 @@ To escape and recover:
 	if the rucksack is not enclosed by the player:
 		say "retrieve your rucksack ";
 		move the rucksack to the player;
-		if the purple capsa is not enclosed by the player:
-			move the purple capsa to the rucksack;
+		if the purple capsa of opening is not enclosed by the player:
+			move the purple capsa of opening to the rucksack;
 		if the red capsa is not enclosed by the player:
 			move the red capsa to the rucksack;
 			if the gold capsa is not enclosed by the player:
@@ -163,7 +163,7 @@ To escape and recover:
 				say "and fallen capsae, and ";
 	say "plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.";
 	move the rucksack to the player;
-	move the purple capsa to the rucksack;
+	move the purple capsa of opening to the rucksack;
 	move the red capsa to the rucksack;
 	Move the player to High Above, without printing a room description;
 

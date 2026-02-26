@@ -159,6 +159,10 @@ Before Descending:
 Xyzzying is an action applying to nothing.  Understand "xyzzy" as xyzzying.
 Report xyzzying:
 	say "Legends say that the capsa of movement contained such a scroll, but it was lost years ago.  An itinerant troubador once told a tale at the royal court of a Magpie Clan woman who saw the open capsa materialize on her table one morning, and grabbed it just in time to be transported with it to its next location.  She had many fanciful adventures until, years later, it finally took her home again.  She opened the capsa and let it go, hoping that another would have adventures like hers."
+
 [Understand "fly" as going something.] [Well!  An I7 'abject failure' bug!  Woo!]
+
+Check jumping:
+	say "Pfaugh!  Jumping is for fledglings!" instead;
 
 Rules and New Actions ends here.

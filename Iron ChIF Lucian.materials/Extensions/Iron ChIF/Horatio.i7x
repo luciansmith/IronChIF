@@ -17,15 +17,15 @@ To say Horatio room desc:
 	If the location is the Librum Landing Cradle:
 		say "Horatio is talking [if go go go is happening]quickly[otherwise]slowly[end if] to the [lone guard] about [one of]the ethics of a monarchy[or]his grandchildren[or]regrettable fashion choices from the youth of today[or]whether the dot on the back of looks infected[or]how to get to zenostan (is that a real place?) from here[or]whether her mother was the Isabella he once knew[or]some meandering story about flying to the park[cycling], driving the guard quietly insane";
 	otherwise:
-		say "Horatio is here, watching you with quiet aplomb and patience."
+		say "Horatio is here, watching you with quiet aplomb and patience"
 
 Horatio can be remembered.  Horatio is not remembered.
 
-The blue capsa of mist is a capsa carried by Horatio.  The description is "The blue capsa contains a scroll of mist, but its power has long since faded[if the player is Horatio], as the Gods intended[end if]."  Understand "bostrat" as the blue capsa.
+The blue capsa of mist is a capsa carried by Horatio.  The description is "[If the player is Horatio]The blue capsa of mist contains a scroll of bostrat, but its power has long since faded, as the Gods intended[otherwise]You suppose that now that the scroll's power has been spread to Bostrat everywhere, that capsa itself is little more than a trinket; a curiosity.  But you can't help but think of it almost reverentially.  In a very real sense, it [i]made[r] you.  A part of you[end if]."  Understand "bostrat" as the blue capsa.
 
 A scroll of bostrat is a scroll in the blue capsa.  The name is "BOSTRAT".  Understand "mist/water" as the scroll of bostrat.
 
-The description of the scroll of bostrat is "While '[name]' can be clearly read at the top of the scroll, the rest of the script has faded away."
+The description of the scroll of bostrat is "While '[name]' can be clearly read at the top of the scroll, the rest of the script has faded away[if the player is Constance].  That power now lives, in part, within your own being[end if]."
 
 Disused Hallway is a room.  It is east of Nope.  "The only time you ever saw anyone in this hallway was when Georg came to give you your meals, or clean the cell.  The living walls, still elegantly patterned, even here, self-replenish, and the floor carries away shed bark through the [grate].  It leads west into the living area, and your old [cell door] leads east.";
 
@@ -230,12 +230,14 @@ The description is "'So, what's your guess?' you ask.  'Is that your heresy?'"
 
 A page-toggle rule for C1b:
 	now the player is Constance;
-	now the blue capsa is in the rucksack;
 
 C3 is a page.
 The description is "In response, Horatio offers you the blue capsa he's holding.  It's closed, and you cock your head questioningly at him.  'It safe.  Nothing will happen when you open it.'
 
 Weird trap if it was a trap.  Fine.  You open the blue capsa, bracing yourself... and nothing happens.  You look at the scroll, which seems to have no symbols on it at all apart from the title:  'BOSTRAT'."
+
+A page-toggle rule for C3:
+	move the blue capsa to the rucksack;
 
 C3b is a page.  It is for C3.
 The cdesc is "Is that real?"
@@ -321,11 +323,13 @@ A page-toggle rule for C6:
 Section fooling around - not for release
 
 become_constance is an end-page.  It is for H1, H2, H2a, H2b, H3, H3a, H3b, H4, H4a, H4b, C1a, C1b, C2, C2a, C3, C3a, C3b, C4a, C4b, C5a, C5b.  
-The cdesc is "OK, I'm a tester and I need to go back and check Constance fiddling with scrolls and stuff."
+The cdesc is "OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff."
 The description is "Done!  Thank you for testing!  If you want to come back to this conversation at the start, just >TOUCH HORATIO.";
 
 A page-toggle rule for become_constance:
 	now the player is Constance;
+	now the blue capsa is in the rucksack;
+	now Horatio is distracting;
 
 start_over is a page.  It is for H1, H2, H2a, H2b, H3, H3a, H3b, H4, H4a, H4b, C1a, C1b, C2, C2a, C3, C3a, C3b, C4a, C4b, C5a, C5b.
 The cdesc is "I'm also a tester, and I just want to go back to the beginning of this conversation."
@@ -347,4 +351,31 @@ When Horatio distracts the guard begins:
 	Move Horatio to the Librum Landing Cradle;
 	say "With a solemn nod to you, Horatio explains where the black capsa of igram should be, then banks to the east, and descends to the Librum.";
 
+Horatio tries to make zgi less ridiculous is a scene.  Horatio tries to make zgi less ridiculous begins when Horatio distracts the guard ends.  Horatio tries to make zgi less ridiculous ends when the player encloses the hunting cloak.
+
+Horatio can be stage one or stage two or stage three.  Horatio is stage one.
+
+Every turn during Horatio tries to make zgi less ridiculous:
+	If Horatio is stage one and the location is not Librum Landing Cradle:
+		if the location is Royal Gardens:
+			if a random chance of one in three succeeds:
+				say "Where is Horatio?  Didn't he say to get the capsa of igram, and then you'd both go in the Royal Quarters?";
+		otherwise:
+			say "Horatio glides out of the mist and circles near you.  He nods at the black capsa.  'Excellent work.  Now, we need something from the Great Hall.'[lb]";
+			Move Horatio to the Lower Great Hall;
+			Now Horatio is stage two;
+			if the location is the Great Hall Landing Cradle:
+				say "Horatio glides through the open double doors of the Great Hall.";
+			otherwise:
+				say "Horatio glides away, heading towards the Great Hall.";
+	Otherwise if Horatio is stage two and the location is Lower Great Hall:
+		now Horatio is stage three;
+		say "You circle down and land near Horatio.  'So.  [i]Now[r] will you tell me what igram does and why it's so important?' you ask.
+		
+		'It is better to show you,' he replies.  'Try it.'
+		
+		You sigh.  Fine."
+
+
+[LS DEBUG:  so i won't forget: singing at the end.]
 Horatio ends here.
