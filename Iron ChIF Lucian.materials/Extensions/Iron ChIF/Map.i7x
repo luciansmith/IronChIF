@@ -145,30 +145,10 @@ Check touching the cloak:
 To snatch the cloak:
 	if the cloak is on the two cloak posts:
 		move the cloak to the player;
-		move Horatio to the void;
 		if the cloak is invisible:
 			say "You reach for the post, and feel the cloak you saw.  With a sense of wonderment, you pick it up.  Next to you, Horatio picks up the other, equally-invisible cloak.";
 		otherwise:
 			say "You reach out and pick up the cloak.  It seems none the worse for wear from having been invisible.  Next to you, Horatio picks up the other.";
-		say "You turn to Horatio, questions bubbling in your head.  'So, nothing else here turned invisible.  Does the scroll work on cloaks?  Things for hunting?  Ancient materials?  Hides?'
-		
-		Horatio looks a little uncomfortable.  'No.  It works on... purple.'
-		
-		'Purple?!?' you exclaim/ask.
-		
-		'Purple,' he confirms.
-		
-		'It [i]turns purple things invisible[r]?  Purple things!  The gift from the gods, on a scroll written in their secret language!  To turn [i]purple things invisible[r]!'  You cackle in glee.
-		
-		Horatio looks uncomfortably affronted.  'The hippotomai were common in those days.  It made sense...'
-		
-		You continue to laugh, cutting him off, but unable to contain your utter delight.  'Herds of invisible hippotomai!  Grass on the marshy banks disappearing into nowhere!  Weird divots in the lakes!  I bet--wait!  The trickster god!  Ape, the trickster!  Stohleblanc!'  You laughter gets more hysterical and you nearly can't breathe.
-		
-		With as much dignity as he can muster, Horatio waits solemnly for you to finish laughing.  You fail to do so.  Finally he gets impatient.  'We can enter the Royal Quarters cloaked.  I will follow you.'
-		
-		'Wait,' you sputter, trying to push down the hysteria.  'How will you follow me?  I'll be invisible!'
-		
-		'I can sense the capsae.  I will know where you are,' he replies, and with as much dignity as he can muster, he flies up and out of the Great Hall.";
 
 
 

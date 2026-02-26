@@ -17,10 +17,10 @@ I've also read Response Assistant by Aaron Reed, which is 558 words long.
 I've also read Hybrid Choices by AW Freyr, which is 10375 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2223 words long.
 I've also read Rules And New Actions by Iron ChIF, which is 1102 words long.
-I've also read Map by Iron ChIF, which is 4659 words long.
+I've also read Map by Iron ChIF, which is 4433 words long.
 I've also read PC And Rucksack by Iron ChIF, which is 2348 words long.
 I've also read Lucian's Scenes by Iron ChIF, which is 291 words long.
-I've also read Horatio by Iron ChIF, which is 3961 words long.
+I've also read Horatio by Iron ChIF, which is 4199 words long.
 I've also read Being Chased by Iron ChIF, which is 1803 words long.
 
 
@@ -28,7 +28,6 @@ I've also read Being Chased by Iron ChIF, which is 1803 words long.
 Phase I ... Dividing source into compilation units
 -----------------------------------------------------
 
-.... Emit__create_emission_tree() took 1cs
 
 
 -----------------------------------------------------
@@ -66,7 +65,7 @@ Phase IV ... First pass through major nodes
 Phase V ... Second pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pass_2() took 3cs
+.... MajorNodes__pass_2() took 2cs
 
 
 -----------------------------------------------------
@@ -85,21 +84,20 @@ Phase VII ... Completing the model world
 Phase VIII ... Tables and grammar
 -----------------------------------------------------
 
-.... BinaryPredicateFamilies__second_stock() took 1cs
 
 
 -----------------------------------------------------
 Phase IX ... Augment model world
 -----------------------------------------------------
 
-.... World__stage_V() took 1cs
+.... World__stage_V() took 2cs
 
 
 -----------------------------------------------------
 Phase X ... Phrases and rules
 -----------------------------------------------------
 
-.... ImperativeDefinitions__assess_all() took 4cs
+.... ImperativeDefinitions__assess_all() took 3cs
 
 
 -----------------------------------------------------
@@ -113,8 +111,8 @@ Phase XI ... Generating inter (1)
 Phase XII ... Generating inter (2)
 -----------------------------------------------------
 
-.... RTKindConstructors__compile_permissions() took 1cs
-.... ImperativeDefinitions__compile_first_block() took 1cs
+.... CompletionModule__compile() took 1cs
+.... InferenceSubjects__emit_all() took 2cs
 
 
 ==== Phase XII.1 ... Slashing command grammar ====
@@ -129,7 +127,7 @@ Phase XII ... Generating inter (2)
 Phase XIII ... Generating inter (3)
 -----------------------------------------------------
 
-.... Sequence__undertake_queued_tasks() took 168cs
+.... Sequence__undertake_queued_tasks() took 163cs
 .... Sequence__undertake_queued_tasks() took 1cs
 .... RTPhrasebook__compile_entries() took 4cs
 
@@ -154,7 +152,7 @@ Phase XV ... Generating inter (5)
 
 .... Sequence__undertake_queued_tasks() took 1cs
 Providing for a total heap of 8192, given requirement of 8192
-.... Sequence__lint_inter() took 2cs
+.... Sequence__lint_inter() took 1cs
 
 
 -----------------------------------------------------
@@ -167,7 +165,7 @@ Phase XVI ... Bibliographic work
 Phase XVII ... Complete
 -----------------------------------------------------
 
-Compile CPU time: 221 centiseconds
+Compile CPU time: 214 centiseconds
 
 
 ==== Phase XVII.1 ... step 1/15: read <- *memory ====
@@ -6156,7 +6154,7 @@ HTML tag stack:
     52. html (opened at line 236 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
 
 
-Back end elapsed time: 230cs
+Back end elapsed time: 211cs
 Total of 128 files written as streams.
 Vacant escapes: %: ..CDE.GH..K.M.O.QR.TU...YZab..e..h.jklm.o.qr......yz0123456789
 Vacant escapes: $: .....F...J..........UVW.....................s.u..x.........789

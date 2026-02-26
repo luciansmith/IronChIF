@@ -3059,7 +3059,6 @@ Constant call_U2396 = EMPTY_RULEBOOK;
 Constant rulebook_id_U452 = 451;
 Constant call_U2397 = EMPTY_RULEBOOK;
 Constant rulebook_id_U453 = 452;
-Constant call_U2398 = EMPTY_RULEBOOK;
 Constant rulebook_id_U454 = 453;
 Constant kind_ref_U72 = 561;
 Constant WEAK_ID_73 = 28;
@@ -3082,6 +3081,7 @@ Constant anchor_U480 = 1105;
 Constant anchor_U481 = 1105;
 Constant anchor_U482 = 1105;
 Constant anchor_U483 = 1105;
+Constant anchor_U484 = 1105;
 Constant property_id_U131 = 69;
 Constant property_id_U132 = 70;
 Constant property_id_U133 = 71;
@@ -3093,7 +3093,7 @@ Constant relation_id_U146 = 112;
 Constant relation_id_U147 = 113;
 Constant relation_id_U148 = 114;
 Constant relation_id_U149 = 115;
-Constant anchor_U484 = 1105;
+Constant anchor_U485 = 1105;
 Constant relation_id_U150 = 116;
 Constant relation_id_U151 = 117;
 Constant relation_id_U152 = 118;
@@ -5284,7 +5284,7 @@ Array activity_var_creators --> [ 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0
 Array TimedEventsTable table [ 0; 0; ];
 Array TimedEventTimesTable table [ 0; 0; ];
 Array PastActionsI6Routines --> [ 0; 0; ];
-Array TableOfVerbs --> [ call_U139; call_U140; call_U141; call_U142; call_U143; call_U144; call_U145; call_U146; call_U147; call_U148; call_U149; call_U150; call_U151; call_U152; call_U153; call_U154; call_U155; call_U156; call_U157; call_U1863; call_U1864; call_U1865; call_U1866; call_U1867; call_U1868; call_U1869; call_U1870; call_U1871; call_U1872; call_U1873; call_U1874; call_U1875; call_U1876; call_U1877; call_U1878; call_U1879; call_U1880; call_U1881; call_U1882; call_U1883; call_U1884; call_U1885; call_U1886; call_U1887; call_U1888; call_U1889; call_U1890; call_U1891; call_U1892; call_U1893; call_U1894; call_U1895; call_U1896; call_U1897; call_U1898; call_U1899; call_U1900; call_U1901; call_U1902; call_U1903; call_U1904; call_U1905; call_U1906; call_U1907; call_U1908; call_U1909; call_U1910; call_U1911; call_U1912; call_U1913; call_U1914; call_U1915; call_U1916; call_U1917; call_U1918; call_U1919; call_U1920; call_U1921; call_U1922; call_U1923; call_U1924; call_U1925; call_U1926; call_U1927; call_U1928; call_U1929; call_U1930; call_U1931; call_U1932; call_U1933; call_U1934; call_U210; call_U211; call_U212; call_U213; call_U214; call_U215; call_U2097; call_U2098; call_U2099; call_U2454; call_U2455; call_U2456; call_U2457; call_U2458; call_U2459; 0; ];
+Array TableOfVerbs --> [ call_U139; call_U140; call_U141; call_U142; call_U143; call_U144; call_U145; call_U146; call_U147; call_U148; call_U149; call_U150; call_U151; call_U152; call_U153; call_U154; call_U155; call_U156; call_U157; call_U1863; call_U1864; call_U1865; call_U1866; call_U1867; call_U1868; call_U1869; call_U1870; call_U1871; call_U1872; call_U1873; call_U1874; call_U1875; call_U1876; call_U1877; call_U1878; call_U1879; call_U1880; call_U1881; call_U1882; call_U1883; call_U1884; call_U1885; call_U1886; call_U1887; call_U1888; call_U1889; call_U1890; call_U1891; call_U1892; call_U1893; call_U1894; call_U1895; call_U1896; call_U1897; call_U1898; call_U1899; call_U1900; call_U1901; call_U1902; call_U1903; call_U1904; call_U1905; call_U1906; call_U1907; call_U1908; call_U1909; call_U1910; call_U1911; call_U1912; call_U1913; call_U1914; call_U1915; call_U1916; call_U1917; call_U1918; call_U1919; call_U1920; call_U1921; call_U1922; call_U1923; call_U1924; call_U1925; call_U1926; call_U1927; call_U1928; call_U1929; call_U1930; call_U1931; call_U1932; call_U1933; call_U1934; call_U210; call_U211; call_U212; call_U213; call_U214; call_U215; call_U2097; call_U2098; call_U2099; call_U2455; call_U2456; call_U2457; call_U2458; call_U2459; call_U2460; 0; ];
 Array KindHierarchy --> [ K0_kind; 0; K1_room; 0; K2_thing; 0; K3_direction; 0; K4_door; 2; K5_container; 2; K6_supporter; 2; K7_backdrop; 2; K8_person; 2; K9_region; 0; K10_man; 8; K11_woman; 8; K12_animal; 8; K13_device; 2; K14_vehicle; 5; K15_player_s_holdall; 5; K16_page; 0; K17_capsa; 5; K18_scroll; 2; ];
 Array ResourceIDsOfFigures --> [ 0; 1; 0; ];
 Array ResourceIDsOfSounds --> [ 0; 0; ];
@@ -6978,24 +6978,24 @@ Array bc_U650 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U651 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array DK4_phrase_real_number____re --> [ PHRASE_TY; 2; REAL_NUMBER_TY; ];
 Array DK5_phrase_real_number____nu --> [ PHRASE_TY; 2; NUMBER_TY; ];
-Array label_associated_storage_U1608 --> [ 0; 0; ];
-Array label_associated_storage_U1609 --> [ 0; 0; ];
-Array Rel_Record9 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "equality relation"; abilities_U9; 0; DK7_relation_of_values; call_U2460; "is"; ];
-Array Rel_Record10 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "meaning relation"; abilities_U10; 0; DK8_relation_of_objects; call_U2461; "means"; ];
-Array Rel_Record11 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "possession relation"; abilities_U11; 0; DK8_relation_of_objects; call_U2462; "has"; ];
-Array Rel_Record12 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "universal relation"; abilities_U12; 0; DK8_relation_of_objects; call_U2463; "relates"; ];
-Array Rel_Record13 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "provision relation"; abilities_U13; 0; DK8_relation_of_objects; call_U2464; "provides"; ];
-Array Rel_Record14 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "containment relation"; abilities_U14; 0; DK8_relation_of_objects; call_U2465; "contains"; ];
-Array Rel_Record15 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "support relation"; abilities_U15; 0; DK9_relation_of_supporters_t; call_U2466; "supports"; ];
-Array Rel_Record16 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "incorporation relation"; abilities_U16; 0; DK10_relation_of_things; call_U2467; "incorporates"; ];
-Array Rel_Record17 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "enclosure relation"; abilities_U17; 0; DK8_relation_of_objects; call_U2468; "encloses"; ];
-Array Rel_Record18 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "carrying relation"; abilities_U18; 0; DK11_relation_of_people_to_th; call_U2469; "carries"; ];
-Array Rel_Record19 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "holding relation"; abilities_U19; 0; DK11_relation_of_people_to_th; call_U2470; "holds"; ];
-Array Rel_Record20 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "wearing relation"; abilities_U20; 0; DK11_relation_of_people_to_th; call_U2471; "wears"; ];
-Array Rel_Record21 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "visibility relation"; abilities_U21; 0; DK10_relation_of_things; call_U2472; "can-see"; ];
-Array Rel_Record22 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "touchability relation"; abilities_U22; 0; DK10_relation_of_things; call_U2473; "can-touch"; ];
-Array Rel_Record23 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "concealment relation"; abilities_U23; 0; DK10_relation_of_things; call_U2474; "conceals"; ];
-Array Rel_Record24 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "never-holding relation"; abilities_U24; 0; DK7_relation_of_values; call_U2475; "is"; ];
+Array label_associated_storage_U1610 --> [ 0; 0; ];
+Array label_associated_storage_U1611 --> [ 0; 0; ];
+Array Rel_Record9 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "equality relation"; abilities_U9; 0; DK7_relation_of_values; call_U2461; "is"; ];
+Array Rel_Record10 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "meaning relation"; abilities_U10; 0; DK8_relation_of_objects; call_U2462; "means"; ];
+Array Rel_Record11 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "possession relation"; abilities_U11; 0; DK8_relation_of_objects; call_U2463; "has"; ];
+Array Rel_Record12 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "universal relation"; abilities_U12; 0; DK8_relation_of_objects; call_U2464; "relates"; ];
+Array Rel_Record13 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "provision relation"; abilities_U13; 0; DK8_relation_of_objects; call_U2465; "provides"; ];
+Array Rel_Record14 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "containment relation"; abilities_U14; 0; DK8_relation_of_objects; call_U2466; "contains"; ];
+Array Rel_Record15 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "support relation"; abilities_U15; 0; DK9_relation_of_supporters_t; call_U2467; "supports"; ];
+Array Rel_Record16 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "incorporation relation"; abilities_U16; 0; DK10_relation_of_things; call_U2468; "incorporates"; ];
+Array Rel_Record17 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "enclosure relation"; abilities_U17; 0; DK8_relation_of_objects; call_U2469; "encloses"; ];
+Array Rel_Record18 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "carrying relation"; abilities_U18; 0; DK11_relation_of_people_to_th; call_U2470; "carries"; ];
+Array Rel_Record19 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "holding relation"; abilities_U19; 0; DK11_relation_of_people_to_th; call_U2471; "holds"; ];
+Array Rel_Record20 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "wearing relation"; abilities_U20; 0; DK11_relation_of_people_to_th; call_U2472; "wears"; ];
+Array Rel_Record21 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "visibility relation"; abilities_U21; 0; DK10_relation_of_things; call_U2473; "can-see"; ];
+Array Rel_Record22 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "touchability relation"; abilities_U22; 0; DK10_relation_of_things; call_U2474; "can-touch"; ];
+Array Rel_Record23 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "concealment relation"; abilities_U23; 0; DK10_relation_of_things; call_U2475; "conceals"; ];
+Array Rel_Record24 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "never-holding relation"; abilities_U24; 0; DK7_relation_of_values; call_U2476; "is"; ];
 Array script_U1 -> [ 100; 47; 110; 47; 115; 117; 109; 109; 111; 110; 32; 109; 105; 115; 116; 47; 100; 47; 117; 47; 100; 47; 117; 124; 124; 124; 124; ];
 Array requirements_U1 --> [ 0; 0; ];
 Array script_U2 -> [ 120; 32; 97; 101; 114; 105; 101; 47; 120; 32; 114; 111; 121; 97; 108; 32; 113; 117; 97; 114; 116; 101; 114; 115; 47; 120; 32; 108; 105; 98; 114; 117; 109; 47; 120; 32; 103; 114; 101; 97; 116; 32; 104; 97; 108; 108; 124; 124; 124; 124; ];
@@ -12413,7 +12413,11 @@ Global max_z_object;
             print "Every turn during Horatio tries to make zgi less ridiculous";
             rtrue;
         }
-        if ((R == call_U2453)) {
+        if ((R == call_U2452)) {
+            print "When Horatio tries to make zgi less ridiculous ends";
+            rtrue;
+        }
+        if ((R == call_U2454)) {
             print "When play begins";
             rtrue;
         }
@@ -29974,12 +29978,12 @@ Global max_z_object;
     if (say__p) {
         RulebookParBreak(forbid_breaks);
     }
-    (rv = (call_U2453)());
+    (rv = (call_U2454)());
     if (rv) {
         if ((rv == 2)) {
             return reason_the_action_failed;
         }
-        return call_U2453;
+        return call_U2454;
     }
     ((latest_rule_result-->(0)) = 0);
     rfalse;
@@ -38039,7 +38043,7 @@ Global max_z_object;
     ParaContent();
     print " ";
     ParaContent();
-    (call_U2454)(CV_POS,I_third_person_plural_U1,story_tense);
+    (call_U2455)(CV_POS,I_third_person_plural_U1,story_tense);
     ParaContent();
     print " none at all available!";
     rtrue;
@@ -67748,7 +67752,6 @@ Global max_z_object;
 [ call_U2229;
     if ((I_two_cloak_posts_U1 == SupporterOf(I_hunting_cloak_U1))) {
         MoveObject(I_hunting_cloak_U1, player, 0, 0);
-        MoveObject(I_horatio_U1, I_void_U1, 0, 0);
         if ((~~(call_U219(I_hunting_cloak_U1)))) {
             (say__p = 1);
             ParaContent();
@@ -67760,26 +67763,6 @@ Global max_z_object;
             print "You reach out and pick up the cloak.  It seems none the worse for wear from having been invisible.  Next to you, Horatio picks up the other.";
             print "^";
         }
-        (say__p = 1);
-        ParaContent();
-        print "You turn to Horatio, questions bubbling in your head.  ~So, nothing else here turned invisible.  Does the scroll work on cloaks?  Things for hunting?  Ancient materials?  Hides?~^^Horatio looks a little uncomfortable.  ~No.  It works on... purple.~^^~Purple?!?~ you exclaim/ask.^^~Purple,~ he confirms.^^~It ";
-        ParaContent();
-        call_U2163();
-        ParaContent();
-        print "turns purple things invisible";
-        ParaContent();
-        call_U2165();
-        ParaContent();
-        print "?  Purple things!  The gift from the gods, on a scroll written in their secret language!  To turn ";
-        ParaContent();
-        call_U2163();
-        ParaContent();
-        print "purple things invisible";
-        ParaContent();
-        call_U2165();
-        ParaContent();
-        print "!~  You cackle in glee.^^Horatio looks uncomfortably affronted.  ~The hippotomai were common in those days.  It made sense...~^^You continue to laugh, cutting him off, but unable to contain your utter delight.  ~Herds of invisible hippotomai!  Grass on the marshy banks disappearing into nowhere!  Weird divots in the lakes!  I bet--wait!  The trickster god!  Ape, the trickster!  Stohleblanc!~  You laughter gets more hysterical and you nearly can't breathe.^^With as much dignity as he can muster, Horatio waits solemnly for you to finish laughing.  You fail to do so.  Finally he gets impatient.  ~We can enter the Royal Quarters cloaked.  I will follow you.~^^~Wait,~ you sputter, trying to push down the hysteria.  ~How will you follow me?  I'll be invisible!~^^~I can sense the capsae.  I will know where you are,~ he replies, and with as much dignity as he can muster, he flies up and out of the Great Hall.";
-        print "^";
     }
     rfalse;
 ];
@@ -70588,7 +70571,7 @@ Global max_z_object;
     #endif;
     (say__p = 1);
     ParaContent();
-    call_U2452();
+    call_U2453();
     ParaContent();
     print ".";
     rtrue;
@@ -71042,6 +71025,17 @@ Global max_z_object;
             return reason_the_action_failed;
         }
         return call_U2450;
+    }
+    ((latest_rule_result-->(0)) = 0);
+    rfalse;
+];
+[ call_U2398 forbid_breaks rv;
+    (rv = (call_U2452)());
+    if (rv) {
+        if ((rv == 2)) {
+            return reason_the_action_failed;
+        }
+        return call_U2452;
     }
     ((latest_rule_result-->(0)) = 0);
     rfalse;
@@ -71613,6 +71607,33 @@ Global max_z_object;
     rfalse;
 ];
 [ call_U2452;
+    if (debug_rules) {
+        DB_Rule(call_U2452, 992, 0);
+    }
+    MoveObject(I_horatio_U1, I_void_U1, 0, 0);
+    (say__p = 1);
+    ParaContent();
+    print "You turn to Horatio, questions bubbling in your head.  ~So, nothing else here turned invisible.  Does the scroll work on cloaks?  Things for hunting?  Ancient materials?  Hides?~^^Horatio looks a little uncomfortable.  ~No.  It works on... purple.~^^~Purple?!?~ you exclaim/ask.^^~Purple,~ he confirms.^^~It ";
+    ParaContent();
+    call_U2163();
+    ParaContent();
+    print "turns purple things invisible";
+    ParaContent();
+    call_U2165();
+    ParaContent();
+    print "?  Purple things!  The gift from the gods, on a scroll written in their secret language!  To turn ";
+    ParaContent();
+    call_U2163();
+    ParaContent();
+    print "purple things invisible";
+    ParaContent();
+    call_U2165();
+    ParaContent();
+    print "!~  You cackle in glee.^^Horatio looks uncomfortably affronted.  ~The hippotomai were common in those days.  It made sense...~^^You continue to laugh, cutting him off, but unable to contain your utter delight.  ~Herds of invisible hippotomai!  Grass on the marshy banks disappearing into nowhere!  Weird divots in the lakes!  I bet--wait!  The trickster god!  Ape, the trickster!  Stohleblanc!~  You laughter gets more hysterical and you nearly can't breathe.^^With as much dignity as he can muster, Horatio waits solemnly for you to finish laughing.  You fail to do so.  Finally he gets impatient and turns to go.  ~We can enter the Royal Quarters cloaked.  I will follow you.~^^~Wait,~ you sputter, trying to push down the hysteria.  ~How will you follow me?  I'll be invisible!~^^~I can sense the capsae.  I will know where you are,~ he replies, and with a deep breath, he gathers himself and flies up and out of the Great Hall.";
+    print "^";
+    rfalse;
+];
+[ call_U2453;
     if ((real_location == I_librum_landing_cradle_U1)) {
         (say__p = 1);
         ParaContent();
@@ -71634,14 +71655,14 @@ Global max_z_object;
         ParaContent();
         print " about ";
         ParaContent();
-        if (((label_associated_storage_U1609-->(0)) == 0)) {
-            ((label_associated_storage_U1608-->(0)) = (I7_SOO_CYC)((label_associated_storage_U1608-->(0)),7));
-            ((label_associated_storage_U1609-->(0)) = 1);
+        if (((label_associated_storage_U1611-->(0)) == 0)) {
+            ((label_associated_storage_U1610-->(0)) = (I7_SOO_CYC)((label_associated_storage_U1610-->(0)),7));
+            ((label_associated_storage_U1611-->(0)) = 1);
         }
         if ((say__comp == 0)) {
-            ((label_associated_storage_U1609-->(0)) = 0);
+            ((label_associated_storage_U1611-->(0)) = 0);
         }
-        switch ((((label_associated_storage_U1608-->(0))%(7 + 1)) - 1)) {
+        switch ((((label_associated_storage_U1610-->(0))%(7 + 1)) - 1)) {
             0:
                 ParaContent();
                 print "the ethics of a monarchy";
@@ -71693,9 +71714,9 @@ Global max_z_object;
     }
     rfalse;
 ];
-[ call_U2453;
+[ call_U2454;
     if (debug_rules) {
-        DB_Rule(call_U2453, 992, 0);
+        DB_Rule(call_U2454, 993, 0);
     }
     (say__p = 1);
     ParaContent();
@@ -71850,7 +71871,7 @@ Global max_z_object;
             ;
     }
 ];
-[ call_U2454 fn vp t modal_to;
+[ call_U2455 fn vp t modal_to;
     (t = ConjugateVerb1(fn, vp, t, modal_to));
     if ((fn == CV_MODAL)) {
         return t;
@@ -71979,7 +72000,7 @@ Global max_z_object;
             ;
     }
 ];
-[ call_U2455 fn vp t modal_to;
+[ call_U2456 fn vp t modal_to;
     (t = ConjugateVerb59(fn, vp, t, modal_to));
     if ((fn == CV_MODAL)) {
         return t;
@@ -72061,15 +72082,6 @@ Global max_z_object;
             ;
     }
 ];
-[ call_U2456 fn vp t modal_to;
-    (t = ConjugateVerb60(fn, vp, t, modal_to));
-    if ((fn == CV_MODAL)) {
-        return t;
-    }
-    if ((fn == CV_MEANING)) {
-        return MEANINGLESS_RR;
-    }
-];
 [ call_U2457 fn vp t modal_to;
     (t = ConjugateVerb60(fn, vp, t, modal_to));
     if ((fn == CV_MODAL)) {
@@ -72097,7 +72109,16 @@ Global max_z_object;
         return MEANINGLESS_RR;
     }
 ];
-[ call_U2460 rr task X Y Z1 Z2 Z3 Z4;
+[ call_U2460 fn vp t modal_to;
+    (t = ConjugateVerb60(fn, vp, t, modal_to));
+    if ((fn == CV_MODAL)) {
+        return t;
+    }
+    if ((fn == CV_MEANING)) {
+        return MEANINGLESS_RR;
+    }
+];
+[ call_U2461 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
             if ((X == Y)) {
@@ -72111,7 +72132,7 @@ Global max_z_object;
     }
     rfalse;
 ];
-[ call_U2461 rr task X Y Z1 Z2 Z3 Z4;
+[ call_U2462 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
             if ((BlkValueCompare((X)(CV_MEANING), Y) == 0)) {
@@ -72125,7 +72146,7 @@ Global max_z_object;
     }
     rfalse;
 ];
-[ call_U2462 rr task X Y Z1 Z2 Z3 Z4;
+[ call_U2463 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
             if ((X == OwnerOf(Y))) {
@@ -72179,7 +72200,7 @@ Global max_z_object;
     }
     rfalse;
 ];
-[ call_U2463 rr task X Y Z1 Z2 Z3 Z4;
+[ call_U2464 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
             if ((RlnGetF(X, RR_HANDLER))(X,RELS_TEST,Y,0)) {
@@ -72193,7 +72214,7 @@ Global max_z_object;
     }
     rfalse;
 ];
-[ call_U2464 rr task X Y Z1 Z2 Z3 Z4;
+[ call_U2465 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
             if (0) {
@@ -72207,7 +72228,7 @@ Global max_z_object;
     }
     rfalse;
 ];
-[ call_U2465 rr task X Y Z1 Z2 Z3 Z4;
+[ call_U2466 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
             if ((X == ContainerOf(Y))) {
@@ -72218,106 +72239,6 @@ Global max_z_object;
         RELS_LOOKUP_ANY:
             if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
                 objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                    if ((call_U2465)(rr,RELS_TEST,Z1,X)) {
-                        if ((Y == RLANY_CAN_GET_X)) {
-                            rtrue;
-                        }
-                        if ((Y == RLANY_CAN_GET_Y)) {
-                            rtrue;
-                        }
-                        return Z1;
-                    }
-                }
-                if ((Y == RLANY_CAN_GET_X)) {
-                    rfalse;
-                }
-                if ((Y == RLANY_CAN_GET_Y)) {
-                    rfalse;
-                }
-                return DefaultValueOfKOV(OBJECT_TY);
-            } else {
-                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                    if ((call_U2465)(rr,RELS_TEST,X,Z1)) {
-                        if ((Y == RLANY_CAN_GET_X)) {
-                            rtrue;
-                        }
-                        if ((Y == RLANY_CAN_GET_Y)) {
-                            rtrue;
-                        }
-                        return Z1;
-                    }
-                }
-                if ((Y == RLANY_CAN_GET_X)) {
-                    rfalse;
-                }
-                if ((Y == RLANY_CAN_GET_Y)) {
-                    rfalse;
-                }
-                return DefaultValueOfKOV(OBJECT_TY);
-            }
-            ;
-        RELS_LOOKUP_ALL_X:
-            LIST_OF_TY_SetLength(Y, 0);
-            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                if ((call_U2465)(rr,RELS_TEST,Z1,X)) {
-                    LIST_OF_TY_InsertItem(Y, Z1);
-                }
-            }
-            return Y;
-            ;
-        RELS_LOOKUP_ALL_Y:
-            LIST_OF_TY_SetLength(Y, 0);
-            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                if ((call_U2465)(rr,RELS_TEST,X,Z1)) {
-                    LIST_OF_TY_InsertItem(Y, Z1);
-                }
-            }
-            return Y;
-            ;
-        RELS_LIST:
-            LIST_OF_TY_SetLength(X, 0);
-            if ((Y == RLIST_ALL_X)) {
-                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                    objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
-                        if ((call_U2465)(rr,RELS_TEST,Z1,Z3)) {
-                            LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
-                        }
-                    }
-                }
-            } else {
-                if ((Y == RLIST_ALL_Y)) {
-                    objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                        objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
-                            if ((call_U2465)(rr,RELS_TEST,Z1,Z3)) {
-                                LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
-                            }
-                        }
-                    }
-                }
-            }
-            return X;
-            ;
-        RELS_ASSERT_TRUE:
-            MoveObject(Y, X);
-            rtrue;
-            ;
-        RELS_ASSERT_FALSE:
-            rfalse;
-            ;
-    }
-    rfalse;
-];
-[ call_U2466 rr task X Y Z1 Z2 Z3 Z4;
-    switch (task) {
-        RELS_TEST:
-            if ((X == SupporterOf(Y))) {
-                rtrue;
-            }
-            rfalse;
-            ;
-        RELS_LOOKUP_ANY:
-            if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
-                for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
                     if ((call_U2466)(rr,RELS_TEST,Z1,X)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -72336,7 +72257,7 @@ Global max_z_object;
                 }
                 return DefaultValueOfKOV(OBJECT_TY);
             } else {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
                     if ((call_U2466)(rr,RELS_TEST,X,Z1)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -72358,7 +72279,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_X:
             LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
+            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
                 if ((call_U2466)(rr,RELS_TEST,Z1,X)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -72367,7 +72288,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_Y:
             LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
                 if ((call_U2466)(rr,RELS_TEST,X,Z1)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -72377,8 +72298,8 @@ Global max_z_object;
         RELS_LIST:
             LIST_OF_TY_SetLength(X, 0);
             if ((Y == RLIST_ALL_X)) {
-                for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
-                    for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
+                    objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
                         if ((call_U2466)(rr,RELS_TEST,Z1,Z3)) {
                             LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
                         }
@@ -72386,8 +72307,8 @@ Global max_z_object;
                 }
             } else {
                 if ((Y == RLIST_ALL_Y)) {
-                    for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
-                        for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                    objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
+                        objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
                             if ((call_U2466)(rr,RELS_TEST,Z1,Z3)) {
                                 LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
                             }
@@ -72410,14 +72331,14 @@ Global max_z_object;
 [ call_U2467 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
-            if ((X == PartOf(Y))) {
+            if ((X == SupporterOf(Y))) {
                 rtrue;
             }
             rfalse;
             ;
         RELS_LOOKUP_ANY:
             if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
                     if ((call_U2467)(rr,RELS_TEST,Z1,X)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -72458,7 +72379,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_X:
             LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+            for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
                 if ((call_U2467)(rr,RELS_TEST,Z1,X)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -72477,7 +72398,7 @@ Global max_z_object;
         RELS_LIST:
             LIST_OF_TY_SetLength(X, 0);
             if ((Y == RLIST_ALL_X)) {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
                     for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
                         if ((call_U2467)(rr,RELS_TEST,Z1,Z3)) {
                             LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
@@ -72486,7 +72407,7 @@ Global max_z_object;
                 }
             } else {
                 if ((Y == RLIST_ALL_Y)) {
-                    for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
                         for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
                             if ((call_U2467)(rr,RELS_TEST,Z1,Z3)) {
                                 LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
@@ -72498,7 +72419,7 @@ Global max_z_object;
             return X;
             ;
         RELS_ASSERT_TRUE:
-            MakePart(Y, X);
+            MoveObject(Y, X);
             rtrue;
             ;
         RELS_ASSERT_FALSE:
@@ -72510,14 +72431,14 @@ Global max_z_object;
 [ call_U2468 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
-            if (IndirectlyContains(X, Y)) {
+            if ((X == PartOf(Y))) {
                 rtrue;
             }
             rfalse;
             ;
         RELS_LOOKUP_ANY:
             if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
-                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
                     if ((call_U2468)(rr,RELS_TEST,Z1,X)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -72536,7 +72457,7 @@ Global max_z_object;
                 }
                 return DefaultValueOfKOV(OBJECT_TY);
             } else {
-                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
                     if ((call_U2468)(rr,RELS_TEST,X,Z1)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -72558,7 +72479,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_X:
             LIST_OF_TY_SetLength(Y, 0);
-            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
+            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
                 if ((call_U2468)(rr,RELS_TEST,Z1,X)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -72567,7 +72488,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_Y:
             LIST_OF_TY_SetLength(Y, 0);
-            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
+            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
                 if ((call_U2468)(rr,RELS_TEST,X,Z1)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -72577,8 +72498,8 @@ Global max_z_object;
         RELS_LIST:
             LIST_OF_TY_SetLength(X, 0);
             if ((Y == RLIST_ALL_X)) {
-                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                    objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
                         if ((call_U2468)(rr,RELS_TEST,Z1,Z3)) {
                             LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
                         }
@@ -72586,8 +72507,8 @@ Global max_z_object;
                 }
             } else {
                 if ((Y == RLIST_ALL_Y)) {
-                    objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                        objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
+                    for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                        for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
                             if ((call_U2468)(rr,RELS_TEST,Z1,Z3)) {
                                 LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
                             }
@@ -72597,20 +72518,27 @@ Global max_z_object;
             }
             return X;
             ;
+        RELS_ASSERT_TRUE:
+            MakePart(Y, X);
+            rtrue;
+            ;
+        RELS_ASSERT_FALSE:
+            rfalse;
+            ;
     }
     rfalse;
 ];
 [ call_U2469 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
-            if ((X == CarrierOf(Y))) {
+            if (IndirectlyContains(X, Y)) {
                 rtrue;
             }
             rfalse;
             ;
         RELS_LOOKUP_ANY:
             if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
-                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
+                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
                     if ((call_U2469)(rr,RELS_TEST,Z1,X)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -72629,7 +72557,7 @@ Global max_z_object;
                 }
                 return DefaultValueOfKOV(OBJECT_TY);
             } else {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
                     if ((call_U2469)(rr,RELS_TEST,X,Z1)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -72651,7 +72579,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_X:
             LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
+            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
                 if ((call_U2469)(rr,RELS_TEST,Z1,X)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -72660,7 +72588,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_Y:
             LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
                 if ((call_U2469)(rr,RELS_TEST,X,Z1)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -72670,8 +72598,8 @@ Global max_z_object;
         RELS_LIST:
             LIST_OF_TY_SetLength(X, 0);
             if ((Y == RLIST_ALL_X)) {
-                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
-                    for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
+                    objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
                         if ((call_U2469)(rr,RELS_TEST,Z1,Z3)) {
                             LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
                         }
@@ -72679,8 +72607,8 @@ Global max_z_object;
                 }
             } else {
                 if ((Y == RLIST_ALL_Y)) {
-                    for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
-                        for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                    objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
+                        objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
                             if ((call_U2469)(rr,RELS_TEST,Z1,Z3)) {
                                 LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
                             }
@@ -72690,20 +72618,13 @@ Global max_z_object;
             }
             return X;
             ;
-        RELS_ASSERT_TRUE:
-            MoveObject(Y, X);
-            rtrue;
-            ;
-        RELS_ASSERT_FALSE:
-            rfalse;
-            ;
     }
     rfalse;
 ];
 [ call_U2470 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
-            if ((X == HolderOf(Y))) {
+            if ((X == CarrierOf(Y))) {
                 rtrue;
             }
             rfalse;
@@ -72803,7 +72724,7 @@ Global max_z_object;
 [ call_U2471 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
-            if ((X == WearerOf(Y))) {
+            if ((X == HolderOf(Y))) {
                 rtrue;
             }
             rfalse;
@@ -72891,7 +72812,7 @@ Global max_z_object;
             return X;
             ;
         RELS_ASSERT_TRUE:
-            WearObject(Y, X);
+            MoveObject(Y, X);
             rtrue;
             ;
         RELS_ASSERT_FALSE:
@@ -72903,14 +72824,14 @@ Global max_z_object;
 [ call_U2472 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
-            if (TestVisibility(X, Y)) {
+            if ((X == WearerOf(Y))) {
                 rtrue;
             }
             rfalse;
             ;
         RELS_LOOKUP_ANY:
             if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
                     if ((call_U2472)(rr,RELS_TEST,Z1,X)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -72951,7 +72872,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_X:
             LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+            for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
                 if ((call_U2472)(rr,RELS_TEST,Z1,X)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -72970,7 +72891,7 @@ Global max_z_object;
         RELS_LIST:
             LIST_OF_TY_SetLength(X, 0);
             if ((Y == RLIST_ALL_X)) {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
                     for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
                         if ((call_U2472)(rr,RELS_TEST,Z1,Z3)) {
                             LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
@@ -72979,7 +72900,7 @@ Global max_z_object;
                 }
             } else {
                 if ((Y == RLIST_ALL_Y)) {
-                    for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
                         for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
                             if ((call_U2472)(rr,RELS_TEST,Z1,Z3)) {
                                 LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
@@ -72990,13 +72911,20 @@ Global max_z_object;
             }
             return X;
             ;
+        RELS_ASSERT_TRUE:
+            WearObject(Y, X);
+            rtrue;
+            ;
+        RELS_ASSERT_FALSE:
+            rfalse;
+            ;
     }
     rfalse;
 ];
 [ call_U2473 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
-            if (TestTouchability(X, Y)) {
+            if (TestVisibility(X, Y)) {
                 rtrue;
             }
             rfalse;
@@ -73089,7 +73017,7 @@ Global max_z_object;
 [ call_U2474 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
-            if (TestConcealment(X, Y)) {
+            if (TestTouchability(X, Y)) {
                 rtrue;
             }
             rfalse;
@@ -73180,6 +73108,99 @@ Global max_z_object;
     rfalse;
 ];
 [ call_U2475 rr task X Y Z1 Z2 Z3 Z4;
+    switch (task) {
+        RELS_TEST:
+            if (TestConcealment(X, Y)) {
+                rtrue;
+            }
+            rfalse;
+            ;
+        RELS_LOOKUP_ANY:
+            if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    if ((call_U2475)(rr,RELS_TEST,Z1,X)) {
+                        if ((Y == RLANY_CAN_GET_X)) {
+                            rtrue;
+                        }
+                        if ((Y == RLANY_CAN_GET_Y)) {
+                            rtrue;
+                        }
+                        return Z1;
+                    }
+                }
+                if ((Y == RLANY_CAN_GET_X)) {
+                    rfalse;
+                }
+                if ((Y == RLANY_CAN_GET_Y)) {
+                    rfalse;
+                }
+                return DefaultValueOfKOV(OBJECT_TY);
+            } else {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    if ((call_U2475)(rr,RELS_TEST,X,Z1)) {
+                        if ((Y == RLANY_CAN_GET_X)) {
+                            rtrue;
+                        }
+                        if ((Y == RLANY_CAN_GET_Y)) {
+                            rtrue;
+                        }
+                        return Z1;
+                    }
+                }
+                if ((Y == RLANY_CAN_GET_X)) {
+                    rfalse;
+                }
+                if ((Y == RLANY_CAN_GET_Y)) {
+                    rfalse;
+                }
+                return DefaultValueOfKOV(OBJECT_TY);
+            }
+            ;
+        RELS_LOOKUP_ALL_X:
+            LIST_OF_TY_SetLength(Y, 0);
+            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                if ((call_U2475)(rr,RELS_TEST,Z1,X)) {
+                    LIST_OF_TY_InsertItem(Y, Z1);
+                }
+            }
+            return Y;
+            ;
+        RELS_LOOKUP_ALL_Y:
+            LIST_OF_TY_SetLength(Y, 0);
+            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                if ((call_U2475)(rr,RELS_TEST,X,Z1)) {
+                    LIST_OF_TY_InsertItem(Y, Z1);
+                }
+            }
+            return Y;
+            ;
+        RELS_LIST:
+            LIST_OF_TY_SetLength(X, 0);
+            if ((Y == RLIST_ALL_X)) {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                        if ((call_U2475)(rr,RELS_TEST,Z1,Z3)) {
+                            LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
+                        }
+                    }
+                }
+            } else {
+                if ((Y == RLIST_ALL_Y)) {
+                    for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                        for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                            if ((call_U2475)(rr,RELS_TEST,Z1,Z3)) {
+                                LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
+                            }
+                        }
+                    }
+                }
+            }
+            return X;
+            ;
+    }
+    rfalse;
+];
+[ call_U2476 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
             if (0) {

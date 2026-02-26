@@ -1654,21 +1654,21 @@
     </dict>
     <key>236</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Map.i7x</string>
-        <key>Line</key><integer>179</integer>
+        <key>Line</key><integer>159</integer>
         <key>Title</key><string>Section Librum</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>237</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Map.i7x</string>
-        <key>Line</key><integer>290</integer>
+        <key>Line</key><integer>270</integer>
         <key>Title</key><string>Section Royal Gardens</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>238</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Map.i7x</string>
-        <key>Line</key><integer>308</integer>
+        <key>Line</key><integer>288</integer>
         <key>Title</key><string>Section Forest Below</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
