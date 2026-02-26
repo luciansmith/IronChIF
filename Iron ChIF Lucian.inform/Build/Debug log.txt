@@ -14,13 +14,13 @@ I've also read Basic Inform by Graham Nelson, which is 7691 words long.
 I've also read English Language by Graham Nelson, which is 2328 words long.
 I've also read Standard Rules by Graham Nelson, which is 32164 words long.
 I've also read Response Assistant by Aaron Reed, which is 558 words long.
-I've also read Hybrid Choices by AW Freyr, which is 10376 words long.
+I've also read Hybrid Choices by AW Freyr, which is 10375 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2223 words long.
 I've also read Rules And New Actions by Iron ChIF, which is 1093 words long.
-I've also read Map by Iron ChIF, which is 3053 words long.
-I've also read PC And Rucksack by Iron ChIF, which is 1906 words long.
-I've also read Lucian's Scenes by Iron ChIF, which is 285 words long.
-I've also read Horatio by Iron ChIF, which is 3454 words long.
+I've also read Map by Iron ChIF, which is 3060 words long.
+I've also read PC And Rucksack by Iron ChIF, which is 1919 words long.
+I've also read Lucian's Scenes by Iron ChIF, which is 291 words long.
+I've also read Horatio by Iron ChIF, which is 3466 words long.
 I've also read Being Chased by Iron ChIF, which is 1797 words long.
 
 
@@ -28,6 +28,7 @@ I've also read Being Chased by Iron ChIF, which is 1797 words long.
 Phase I ... Dividing source into compilation units
 -----------------------------------------------------
 
+.... Task__write_XML_headings_file() took 1cs
 
 
 -----------------------------------------------------
@@ -45,21 +46,21 @@ Loading kinds definitions from C:\Program Files\Inform\Internal\Inter\WorldModel
 Loading kinds definitions from C:\Program Files\Inform\Internal\Inter\WorldModelKit\kinds\Figures.neptune
 Loading kinds definitions from C:\Program Files\Inform\Internal\Inter\WorldModelKit\kinds\Sounds.neptune
 Loading kinds definitions from C:\Program Files\Inform\Internal\Inter\CommandParserKit\kinds\Parsing.neptune
+.... Task__make_built_in_kind_constructors() took 24cs
 
 
 -----------------------------------------------------
 Phase III ... Pre-pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pre_pass() took 8cs
-.... Task__verify() took 1cs
+.... MajorNodes__pre_pass() took 9cs
 
 
 -----------------------------------------------------
 Phase IV ... First pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pass_1() took 6cs
+.... MajorNodes__pass_1() took 7cs
 
 
 -----------------------------------------------------
@@ -85,20 +86,21 @@ Phase VII ... Completing the model world
 Phase VIII ... Tables and grammar
 -----------------------------------------------------
 
+.... Understand__traverse() took 1cs
 
 
 -----------------------------------------------------
 Phase IX ... Augment model world
 -----------------------------------------------------
 
-.... World__stage_V() took 2cs
+.... World__stage_V() took 1cs
 
 
 -----------------------------------------------------
 Phase X ... Phrases and rules
 -----------------------------------------------------
 
-.... ImperativeDefinitions__assess_all() took 3cs
+.... ImperativeDefinitions__assess_all() took 2cs
 
 
 -----------------------------------------------------
@@ -106,6 +108,7 @@ Phase XI ... Generating inter (1)
 -----------------------------------------------------
 
 .... RTKindConstructors__compile() took 6cs
+.... RTBibliographicData__compile_constants() took 1cs
 
 
 -----------------------------------------------------
@@ -113,8 +116,8 @@ Phase XII ... Generating inter (2)
 -----------------------------------------------------
 
 .... CompletionModule__compile() took 1cs
+.... RTProperties__compile() took 1cs
 .... InferenceSubjects__emit_all() took 1cs
-.... RTVerbs__compile_conjugations() took 1cs
 
 
 ==== Phase XII.1 ... Slashing command grammar ====
@@ -123,15 +126,16 @@ Phase XII ... Generating inter (2)
 
 ==== Phase XII.2 ... Determining command grammar ====
 
+.... CommandGrammars__prepare() took 1cs
 
 
 -----------------------------------------------------
 Phase XIII ... Generating inter (3)
 -----------------------------------------------------
 
-.... Sequence__undertake_queued_tasks() took 163cs
+.... Sequence__undertake_queued_tasks() took 165cs
 .... Sequence__undertake_queued_tasks() took 1cs
-.... RTPhrasebook__compile_entries() took 4cs
+.... RTPhrasebook__compile_entries() took 7cs
 
 
 -----------------------------------------------------
@@ -154,7 +158,7 @@ Phase XV ... Generating inter (5)
 
 .... Sequence__undertake_queued_tasks() took 1cs
 Providing for a total heap of 8192, given requirement of 8192
-.... Sequence__lint_inter() took 3cs
+.... Sequence__lint_inter() took 1cs
 
 
 -----------------------------------------------------
@@ -167,7 +171,7 @@ Phase XVI ... Bibliographic work
 Phase XVII ... Complete
 -----------------------------------------------------
 
-Compile CPU time: 212 centiseconds
+Compile CPU time: 246 centiseconds
 
 
 ==== Phase XVII.1 ... step 1/15: read <- *memory ====
@@ -212,12 +216,12 @@ Compile CPU time: 212 centiseconds
 
 ==== Phase XVII.11 ... step 11/15: eliminate-redundant-labels ====
 
-2220 redundant label(s) removed
+2223 redundant label(s) removed
 
 
 ==== Phase XVII.12 ... step 12/15: eliminate-redundant-operations ====
 
-513 redundant operation(s) removed
+515 redundant operation(s) removed
 
 
 ==== Phase XVII.13 ... step 13/15: optionally-generate text ->  ====
@@ -6156,7 +6160,7 @@ HTML tag stack:
     52. html (opened at line 236 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
 
 
-Back end elapsed time: 232cs
+Back end elapsed time: 1397cs
 Total of 128 files written as streams.
 Vacant escapes: %: ..CDE.GH..K.M.O.QR.TU...YZab..e..h.jklm.o.qr......yz0123456789
 Vacant escapes: $: .....F...J..........UVW.....................s.u..x.........789

@@ -39,7 +39,10 @@ Before attacking the grate:
 	try opening the grate;
 
 Instead of going nowhere from Disused Hallway:
-	say "The hallway runs east to west, and there's a grate on the floor you could enter.";
+	if the noun is down:
+		try entering the grate instead;
+	otherwise:
+		say "The hallway runs east to west, and there's a grate on the floor you could enter.";
 
 Check entering the grate:
 	say "You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper to the veins of this place: 'I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence.'
@@ -61,7 +64,7 @@ When Horatio's story begins:
 	wait for any key;
 	say "[lb]Silently, your cell door unlocks, then swings open.";
 	wait for any key;
-	say "[lb]Well above your cell, you sense rezrov, rudenj, and bostrat settle in their movements until they make lazy circles, high above the Aerie. Igram and taclor remain in place, quiet.
+	say "[lb]Well above your cell, you sense rezrov, rudenj, and quiste settle in their movements until they make lazy circles, high above the Aerie. Igram and taclor remain in place, quiet.
 	
 	It is time.";
 	Now the player is Horatio;
@@ -264,7 +267,7 @@ The description is "'So that's your heresy,' you conclude.  'You want to read a 
 'Not just any capsa.  The scroll of health.  Taclor.  Ten years ago, I would have been happy to read any.  Now, it must be that one.  But I will not make that choice on my own.  Every Reader like myself has the innate ability to Read a single scroll, and I will yield to the will of its holder, as my predecessors swore to do in the aftermath of the Great War.  But I will not waste my ability on anything else.'"
 
 C5a is a page.  It is for C4b and C5b.
-The cdesc is "I need that scroll."
+The cdesc is "He can't have the scroll."
 The description is "'You can't read that scroll,' you say.  'I need it to save my mother.  To save the village.'
 
 'The whole world,' Horatio turns his head to face to you, 'could say the same.'

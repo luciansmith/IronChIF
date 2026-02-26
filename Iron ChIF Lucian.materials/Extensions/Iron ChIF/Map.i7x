@@ -148,7 +148,8 @@ Instead of waking the lone guard:
 
 Librum Itself is a room.  "Congrats!  This is as far as I got.  Thanks for testing!"
 
-
+Check entering librum door:
+	say "nope" instead.
 
 Royal Gardens is a room. It is north of Great Hall Landing Cradle, and northwest of Librum Landing Cradle.  "The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in it only appropriate spot.  The landing cradle above the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards. 
 

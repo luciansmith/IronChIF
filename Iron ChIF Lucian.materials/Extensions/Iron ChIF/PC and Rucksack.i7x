@@ -46,7 +46,7 @@ The description of a scroll is "While '[name]' can be clearly read at the top of
 
 Section rezrov
 
-A purple capsa of opening is a capsa in the rucksack.  The description is "The purple capsa turned out to contain a scroll of opening[first time], as became evident when every buckle and lock in your village flew open when you opened the capsa to investigate[only].  It is [if the purple capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to open and hold open any closed object in the area[end if]."
+A purple capsa of opening is a capsa in the rucksack.  The description is "The purple capsa turned out to contain a scroll of opening[first time], as became evident when every buckle and lock in your village flew open when you opened the capsa to investigate[only].  It is [if the purple capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to open and hold open any closed object in the area[end if]."  Understand "rezrov" as the purple capsa.
 
 A scroll of rezrov is a scroll in the purple capsa.  The name is "REZROV".  Understand "opening" as the scroll of rezrov.
 
@@ -88,7 +88,7 @@ To carry out everything rezrovving:
 		Now the woodpeckers are activated; [Starts the 'being chased' scene]
 		Now the reset state of the woodpeckers is 0;
 
-Check closing something during Everything Is Open:
+Check closing something openable during Everything Is Open:
 	if the noun is not a capsa:
 		say "Try as you might, a mystical force prevents you from closing [the noun]." instead.
 
@@ -128,7 +128,7 @@ Every turn during Doors Re-close:
 
 Section down
 
-The gold capsa of down is a capsa in the rucksack.  The description is "The gold capsa turned out to contain a scroll of Down[first time], as became evident in the disorienting moment when the sages first opened the capsa, and everyone and everything suddenly fell towards it[only].  It is [if the gold capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to pull everything towards itself, instead of towards the ground[end if]."
+The gold capsa of down is a capsa in the rucksack.  The description is "The gold capsa turned out to contain a scroll of Down[first time], as became evident in the disorienting moment when the sages first opened the capsa, and everyone and everything suddenly fell towards it[only].  It is [if the gold capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to pull everything towards itself, instead of towards the ground[end if]."  Understand "rudenj" as the gold capsa.
 
 A scroll of rudenj is a scroll in the gold capsa.  The name is "RUDENJ". Understand "down" as the scroll of rudenj.
 
@@ -181,7 +181,7 @@ When Everything Falls ends:
 
 Section Hasten
 
-The red capsa of hasten is a capsa in the rucksack.  The description is "The red capsa turned out to contain a scroll of hasten[first time], which you and the sages eventually determined when it became clear that everyone was acting as if they were high on guarana berries[only].  It is [if the red capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to make everything happen much faster[end if]."  Understand "haste" as the red capsa.
+The red capsa of hasten is a capsa in the rucksack.  The description is "The red capsa turned out to contain a scroll of hasten[first time], which you and the sages eventually determined when it became clear that everyone was acting as if they were high on guarana berries[only].  It is [if the red capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to make everything happen much faster[end if]."  Understand "haste/quiste" as the red capsa.
 
 A scroll of quiste is a scroll in the red capsa.  The name is "QUISTE".  Understand "haste/hasten" as the scroll of quiste.
 

@@ -7,9 +7,43 @@
     <commentary xml:space="preserve">Your mother needs you.  The whole village needs you.  You can do this.  You must do this.&#x000A;&#x000A;The mantra repeats in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you.  And there's no more Falcon Clan in the Royal Aerie--you and the rest of your clan were all banished years ago.  Three days ago, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.&#x000A;&#x000A;By tonight, you will know.  You're not leaving without it.&#x000A;&#x000A;course correction&#x000A;An Interactive High Heist by Lucian Smith&#x000A;Release 0 / Serial number 260225 / Inform 7 v10.1.2 / D&#x000A;&#x000A;High Above the Royal Aerie&#x000A;You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-682"/>
       <child nodeId="node-562"/>
       <child nodeId="node-210"/>
     </children>
+  </item>
+  <item nodeId="node-682">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, but it would then start to dissapate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-683"/>
+    </children>
+  </item>
+  <item nodeId="node-683">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors to the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-684"/>
+    </children>
+  </item>
+  <item nodeId="node-684">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.&#x000A;&#x000A;A lone Raven guard stands in front of the door, dark eyes shifting as she watches the mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-685"/>
+    </children>
+  </item>
+  <item nodeId="node-685">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">(first opening Librum Door)&#x000A;The guard is entirely too watchful to let you do that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-562">
     <command xml:space="preserve">test horatio_speedrun</command>
@@ -389,7 +423,7 @@
   </item>
   <item nodeId="node-681">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Figure out what's next.]&#x000A;&#x000A;"So, what do we do next?" you ask.&#x000A;&#x000A;"I can sense the capsae.  Taclor, health, is in the Royal Quarters.  Igram is in the Librum."&#x000A;&#x000A;"I ransacked the Librum last time; there was only these three," you protest.&#x000A;&#x000A;"It was considered worthless, and was discarded.  With it, I can lead you to taclor," Horatio tells you.&#x000A;&#x000A;"What does it--you know, never mind, you obviously don't want to tell me.  How do I get it?" you ask.&#x000A;&#x000A;"It is in the Librum," he says, simply.  "Therefore, either you must go into the Librum, or the capsa must come out.  I will talk to the guard to distract her, if that helps," Horatio offers.&#x000A;&#x000A;Gods, yes, you can inflict this man on someone you hate.  "Perfect," you say, grimly. You shake yourself, and turn to your new task.&#x000A;&#x000A;{NOTE TO TESTERS:  You cannot actually turn to your new task yet.  Play around with different ways to escape being chased, if you like; otherwise, you're done!  LS DEBUG}&#x000A;&#x000A;1) OK, I'm a tester and I need to go back and check Constance fiddling with scrolls and stuff.&#x000A;2) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;Horatio is here, watching you with quiet aplomb and patience.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[Figure out what's next.]&#x000A;&#x000A;"So, what do we do next?" you ask.&#x000A;&#x000A;"I can sense the capsae.  Taclor, health, is in the Royal Quarters.  Igram is in the Librum."&#x000A;&#x000A;"I ransacked the Librum last time; there was only these three," you protest.&#x000A;&#x000A;"It was considered worthless, and was discarded.  With it, I can lead you to taclor," Horatio tells you.&#x000A;&#x000A;"What does it--you know, never mind, you obviously don't want to tell me.  How do I get it?" you ask.&#x000A;&#x000A;"It is in the Librum," he says, simply.  "Therefore, either you must go into the Librum, or the capsa must come out.  I will talk to the guard to distract her, if that helps," Horatio offers.&#x000A;&#x000A;Gods, yes, you can inflict this man on someone you hate.  "Perfect," you say, grimly. You shake yourself, and turn to your new task.&#x000A;&#x000A;{NOTE TO TESTERS:  You cannot actually turn to your new task yet.  Play around with different ways to escape being chased, if you like; otherwise, you're done!  LS DEBUG}&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;Horatio is here, watching you with quiet aplomb and patience.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
