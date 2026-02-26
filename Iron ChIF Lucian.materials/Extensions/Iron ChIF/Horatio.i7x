@@ -11,7 +11,13 @@ cell_contents is scenery in Forgotten Brig.  The printed name is "cell contents"
 
 Does the player mean examining cell_contents: it is likely;
 
-Horatio is a man in Forgotten Brig.  "Horatio is here, watching you with quiet aplomb and patience."  The description is "[if the player is Horatio]You're a member of the Buzzard Clan, and fit the stereotype fairly well: bald red head and red talons, hunched shoulders, mottled black and brown feathers.  You've balded down past your neck now, betraying your advanced age.[otherwise]Horatio is an ancient Buzzard Clan sage of sorts, you suppose, given that he was jailed for heresy back in the day[end if]."
+Horatio is a man in Forgotten Brig.  "[Horatio room desc]."  The description is "[if the player is Horatio]You're a member of the Buzzard Clan, and fit the stereotype fairly well: bald red head and red talons, hunched shoulders, mottled black and brown feathers.  You've balded down past your neck now, betraying your advanced age.[otherwise]Horatio is an ancient Buzzard Clan sage of sorts, you suppose, given that he was jailed for heresy back in the day[end if]."
+
+To say Horatio room desc:
+	If the location is the Librum Landing Cradle:
+		say "Horatio is talking [if go go go is happening]quickly[otherwise]slowly[end if] to the [lone guard] about [one of]the ethics of a monarchy[or]his grandchildren[or]regrettable fashion choices from the youth of today[or]whether the dot on the back of looks infected[or]how to get to zenostan (is that a real place?) from here[or]whether her mother was the Isabella he once knew[or]some meandering story about flying to the park[cycling], driving the guard quietly insane";
+	otherwise:
+		say "Horatio is here, watching you with quiet aplomb and patience."
 
 Horatio can be remembered.  Horatio is not remembered.
 
@@ -272,7 +278,7 @@ The description is "'You can't read that scroll,' you say.  'I need it to save m
 
 'The whole world,' Horatio turns his head to face to you, 'could say the same.'
 
-'But [i]I'm here[r]!' you shout.  'I have [i]three capsas[r].  I didn't start any wars!  I didn't force people to live with their livestock and kickstart the Red Plague!  The Queen's hoarding the capsa for gods-know-what reason, probably so the selfish bastard could ensure she doesn't come down with it herself...'
+'But [i]I'm here[r]!' you shout.  'I have [i]three capsae[r].  I didn't start any wars!  I didn't force people to live with their livestock and kickstart the Red Plague!  The Queen's hoarding the capsa for gods-know-what reason, probably so the selfish bastard could ensure she doesn't come down with it herself...'
 
 Horatio flinches.  That's right, he knew you when you and the now-Queen were... closer.  Inseparable.
 
@@ -306,11 +312,11 @@ Gods, yes, you can inflict this man on someone you hate.  'Perfect,' you say, gr
 
 {NOTE TO TESTERS:  You cannot actually turn to your new task yet.  Play around with different ways to escape being chased, if you like; otherwise, you're done!  LS DEBUG}"
 
+Horatio can be distracting.  Horatio is not distracting.
+
 A page-toggle rule for C6:
 	now the player is Constance; [Just in case]
-
-
-
+	now Horatio is distracting;
 
 Section fooling around - not for release
 
@@ -333,5 +339,12 @@ A page-toggle rule for start_over:
 Instead of touching Horatio:
 	switch to cyoa at H1.
 
+Section Horatio in act 3
+
+Horatio distracts the guard is a scene.  Horatio distracts the guard begins when Horatio is distracting.  Horatio distracts the guard ends when the black capsa is not enclosed by the Librum Itself.
+
+When Horatio distracts the guard begins:
+	Move Horatio to the Librum Landing Cradle;
+	say "With a solemn nod to you, Horatio explains where the black capsa of igram should be, then banks to the east, and descends to the Librum.";
 
 Horatio ends here.

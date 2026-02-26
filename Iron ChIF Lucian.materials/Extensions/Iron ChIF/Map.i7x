@@ -5,6 +5,8 @@ Book Map
 
 The Void is a room.  [I like having an 'off stage' room for stuff.]
 
+Section High Above
+
 High Above the Royal Aerie is a clear room.  "[if cloudy]Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout,[otherwise]You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout,[end if] and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry."
 
 distant_aerie is scenery in high above.  The printed name is "Royal Aerie".  The description is "[if the grey mist is in the location]As you recall, the[otherwise]The[end if] Royal Aerie was grown and shaped by generations of Throckwrights, and now towers over the surrounding forest canopy.  Lush shades of browns and reds, often woven together in intricate patterns or pictures, cover every landing cradle, wall, and roof."  Understand "royal/aerie/lush/brown/browns/red/reds/woven/patterns/pictures" as distant_aerie.
@@ -13,7 +15,7 @@ distant_quarters is scenery in high above.  The printed name is "Royal Quarters"
 
 distant_guards is scenery in high above.  The printed name is "circling guards".  The description is "The last time you were here, the aerie was not nearly on such high alert.  Now there's guards everywhere, but especially focused on circling the Royal Quarters.".  Understand "raven/circling/guards" as distant_guards.  Understand "raven clan" as distant_guards.
 
-distant_librum is scenery in high above.  The printed name is "Librum".  The description is "[if the grey mist is in the location]As you recall, the[otherwise]The[end if] Librum was your target the last time out, and where you obtained the capsas you brought back with you. Its landing cradle is simply decorated, grown with interlocking redwood and pine in a way that suggests shelves of books.  The reading nooks grown into the sides of the main building proved a reasonable entrance for a creative supplicant; no doubt that method will have been shut down by now."  Understand "librum/landing/cradle/reading/nooks" as distant_librum.
+distant_librum is scenery in high above.  The printed name is "Librum".  The description is "[if the grey mist is in the location]As you recall, the[otherwise]The[end if] Librum was your target the last time out, and where you obtained the capsae you brought back with you. Its landing cradle is simply decorated, grown with interlocking redwood and pine in a way that suggests shelves of books.  The reading nooks grown into the sides of the main building proved a reasonable entrance for a creative supplicant; no doubt that method will have been shut down by now."  Understand "librum/landing/cradle/reading/nooks" as distant_librum.
 
 distant_great_hall is scenery in high above.  The printed name is "Great Hall".  The description is "[if the grey mist is in the location]As you recall, the[otherwise]The[end if] Great Hall is by far the largest building in the Aerie complex, and indeed the largest building you've ever seen in your life.  If the stories are true, its planning took three years, and its growth was overseen by three [i]generations[r] of Throckwrights.  Every Royal Throckrite since has sought to put their own personal stamp on the Great Hall, leaving it more than a little haphazardly grown by now, but its current form is still impressive, even as it grows less coherent with every new modification."  Understand "great/hall/largest/building/growth/haphazard/haphazardly/coherent/incoherent" as distant_great_hall.
 
@@ -69,18 +71,38 @@ Instead of going nowhere from High Above when the noun is up:
 Check opening a capsa when no_mist is in the location:
     say "Before you mess with powerful artifacts from the dawn of civilization, you should probably conceal yourself.  You're a Bostrat; the plan was to summon a mist." instead;
 
+
+Section Great Hall
+
 Great Hall Landing Cradle is below High Above.  "The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning 'in order of importance'.  The [great hall doors] are on the west side of the landing cradle, and unguarded.
 
 To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest."
 
-The Great Hall doors are a door in Great Hall Landing Cradle.  The printed name is "huge double doors to the Great Hall".  They are closed and locked.  They are inside from Great Hall Landing Cradle and outside from Upper Great Hall.  The description is "The huge double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster."  Understand "huge/door/double/canted/hatch/hatches/fine/scrollwork/broad/swoops/curls/branch/finer/giant/landing/cradle" as the great hall doors.
+The Great Hall doors are a door in Great Hall Landing Cradle.  The printed name is "huge double doors of the Great Hall".  They are closed and locked.  They are inside from Great Hall Landing Cradle and outside from Upper Great Hall.  The description is "The huge double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster."  Understand "huge/door/double/canted/hatch/hatches/fine/scrollwork/broad/swoops/curls/branch/finer/giant/landing/cradle" as the great hall doors.
 
 Carry out entering Great Hall doors during Being Chased:
 	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Squad has followed you, and you simply don't have any room to maneuver.";
 	end the story saying "You have been captured.";
 
-Upper Great Hall is a room. "Congrats!  This is as far as I got.  Thanks for testing!"
+Upper Great Hall is a room. "There is a small platform just inside the [Great Hall doors], and that's it.  The platform is lined with a single elegant grown-mahogany branch that wraps around the whole platform.  It varies in size and thickness, so that all types of feet fit somewhere along it, so people can comfortably launch themselves into the air to glide down to the floor level, or grab it for stability as they return."
 
+The platform is scenery in Upper Great Hall.  "The grown mahogany branch around the platform is a masterpiece of Throckwright engineering.  Not a single delegate or guest ever had problems looking regal as they launched themselves from an appropriate spot."  Understand "grown/mahogany/branch/masterpiece/spot/feet/grown-mahogany/elegant" as the platform.
+
+
+Down from Upper Great Hall is Lower Great Hall.
+
+Report going down from Upper Great Hall:
+	say "You step on to your favorite spot on the mahogany branch, and launch yourself downward in a graceful glide.";
+
+Lower Great Hall is a room.  "When not prepared for a particular occasion, like now, the floor of the Great Hall is cleared of everything extraneous.  The exposed floor is absolutely exquisite, with swooping lines interspersed with starbursts, all in multicolored woods of all hues.  What doesn't change about the Great Hall floor is the display nooks along the sides: at least 20 nooks containing all manner of artifacts from around the world"
+
+Various artifacts are scenery in Lower Great Hall.  The description is "Old things, new things, distant things, close things."
+
+Two cloak posts are fixed in place in Void.  "Two posts, designed for displaying ancient hunting cloaks."
+
+[LS DEBUG:  stopping here for the night.  Need to implement a conversation with Horatio about the goofiness of this spell next.]
+
+Section Librum
 
 Librum Landing Cradle is east of Great Hall Landing Cradle.  "The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The [Librum Door] leads inward to the Librum itself.
 
@@ -106,9 +128,33 @@ Check unlocking Librum Door with:
 	if the lone guard is in the location:
 		say "The guard is entirely too watchful to let you do that." instead.
 
+Before going inside from Librum Landing Cradle:
+	try entering Librum Door instead;
+
+Check entering Librum Door:
+	if the lone guard is in the location:
+		if Horatio is in the location:
+			if Momentum is happening:
+				say "Using the extra speed from your dive, you quietly plunge through the Librum door behind the distracted guard, pulling up sharply on the other side before crashing into anything.";
+			otherwise if Super-Momentum is happening:
+				say "With everything sped up, including (presumably) the guard's reactions, you try to be as precise as you can, entering exactly behind her, straight for the far corner of the door.  You needn't have bothered.  Horatio is talking a mile a minute, and his annoyingness level must have quintupled, as every feather on the guard's back is sticking out at various odd angles.  You swoop in and land inside with ease.";
+			otherwise if the thickness of the grey mist is at least 10:
+				say "The thicker mist conceals your gliding approach from the distracted guard, as you carefully glide in, tuck your wings in at the last second, and land quietly inside.";
+			otherwise if Go go go is happening:
+				say "Horatio's distraction patter has doubled in speed, which in and of itself is something to behold, but the guard's irritation factor seems to have quintupled in annoyance in response, which is, quite frankly, hilarious: every feather on the guard's back is sticking out at various odd angles.  You watch until the guard starts making a quiet keeing sound with her eyes closed, and you glide in from above and behind her, unseen.";
+			otherwise:
+				say "Horatio is distracting the guard by discussing [one of]the ethics of a monarchy[or]his grandchildren[or]regrettable fashion choices from the youth of today[or]whether the dot on the back of looks infected[or]how to get to moncrepistan (is that a real place?) from here[or]whether her mother was the Isabella he once knew[or]some meandering story about flying to the park[cycling], but you can't just [i]glide in[r]." instead;
+		otherwise:
+			say "The guard is entirely too watchful to let you do that." instead.
+
 Carry out entering Librum door during Being Chased:
 	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Squad has followed you, and you simply don't have any room to maneuver.";
 	end the story saying "You have been captured.";
+
+Check closing the purple capsa when the location is the Librum Itself:
+	say "The guard would close the door again, and you'd be trapped!
+	
+	[i]Are you one of my testers?  It feels like you're one of my testers.  If you're not, you should be one of my testers.  Give me a call.  -LS[r][lb]" instead.
 
 A lone guard is a woman in Librum Landing Cradle.  "A lone Raven guard stands in front of the door, dark eyes shifting as she watches the mist."  The description is "The raven guard wears the well-fitting uniform of the Queen's Guard, complete with a small red insignia on her shoulder.  The silvered knives on her talons are retracted while she stands, and golden razors line her beak[if the pile of tiny padlocks is in the Void].  Oddly, her uniform seems to be covered with... tiny closed padlocks?  That's not the insignia of any order you know[end if]."  Understand "raven/dark/eyes" as lone guard.
 
@@ -146,10 +192,22 @@ Instead of waking the lone guard:
 	say "She's... not asleep?  I suppose you could awaken her to the idea of your presence, though that seems decidedly unhelpful.";
 
 
-Librum Itself is a room.  "Congrats!  This is as far as I got.  Thanks for testing!"
+Librum Itself is a room.  The printed name is "Librum".  "The librum contains two levels of scrolls and books, with easy access to all of the curving shelves, and plenty of reading roosts with natural and artificial lighting.  You know from your childhood where the best roosts are, and what sections contain the most exciting stories.  In the center of the lower room is a lavish display case, now hastily boarded over, which three days ago held the purple, gold, and red capsae.  The [Librum door] is back up at the top level."
 
-Check entering librum door:
-	say "nope" instead.
+librum contents are scenery in Librum itself.  "The worst part about this room is the shadows of all the memories spent here in the company of the now-Queen."  Understand "two/levels/scrolls/books/access/curving/shelves/reading/roosts/natural/artificial/lighting/childhood/sections/exciting/stories/worst/shadows/memories/queen/now-queen" as the librum contents.
+
+The lavish display case is scenery in Librum Itself.  "The boarded-over display case, like many of the shelves, was grown here as a permanent fixture.  It hasn't always displayed capsae, but there was always something to show off.  Well.  Until now."  Understand "boarded/over/boarded-over/display/case/grown/permanent/fixture" as the lavish display case.
+
+Instead of going nowhere from the Librum Itself:
+	If the noun is up:
+		try entering the Librum Door instead;
+	otherwise:
+		say "You can exit the Librum by going up, out the door." instead;
+
+Instead of opening the display case:
+	say "[one of]On a whim, you pull back a board to see if anything's in the display case.  There is.  Jewels and money.  At an estimate, maybe a quarter of the Queen's personal treasury.  You shake your head, disgusted.  Well, that's why this building was being guarded[or]You don't need [i]money[r].  What you're after is much more valuable to your community[stopping].";
+
+Section Royal Gardens
 
 Royal Gardens is a room. It is north of Great Hall Landing Cradle, and northwest of Librum Landing Cradle.  "The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in it only appropriate spot.  The landing cradle above the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards. 
 
@@ -166,6 +224,8 @@ The royal landing cradle is scenery in Royal Gardens.  The description is "The c
 
 The poplar trunks are scenery in Royal Gardens.  The description is "The poplars around the landing cradle contain five guards that you can see (since you know where to look), and almost certainly another five that you cannot (since you know where you can't look)."  Understand "arcs/shaded/inviting/roosts/guards/eight/five/ten" as the poplar trunks.
 
+
+Section Forest Below
 
 in_forest is a room.  It is below Great Hall Landing Cradle.  The printed name is "In the Forest".  "The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation."
 

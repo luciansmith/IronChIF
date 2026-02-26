@@ -25,7 +25,7 @@ Constance can be wounded.  Constance is not wounded.
 
 A leather rucksack is a player's holdall worn by the Constance.  Understand "sack" as leather rucksack.
 
-Section capsas and scrolls
+Section capsae and scrolls
 
 A capsa is a kind of openable container.  A capsa is usually closed.  The plural of capsa is capsae.
 
@@ -42,7 +42,9 @@ Does the player mean doing something to a scroll:  it is likely.
 
 Does the player mean opening or closing a capsa:  it is very likely.
 
-The description of a scroll is "While '[name]' can be clearly read at the top of the scroll, the rest is in some arcane script you [one of](and the people and sages of your village) were[or]are[stopping] unfamiliar with."
+The description of a scroll is "While '[name]' can be clearly read at the top of the scroll, the rest (or at least, the top few lines that you can see) is in some arcane script you [one of](and the people and sages of your village) were[or]are[stopping] unfamiliar with."
+
+[LS DEBUG:  maybe change above to 'while you can see while it's rolled up', though then we'll need to implement 'roll/unroll scroll', so maybe later.]
 
 Section rezrov
 
@@ -196,5 +198,20 @@ When go go go begins:
 
 When go go go ends:
 	say "From everywhere in the Aerie, you hear the drumming of Woodpeckers in the Pounding dialect: 'Target is slow again, repeat, target is slow.'  Just in case they couldn't tell they were slow themselves.  Actually, you do recall some Raven Guards from your childhood that would have needed to be told.  Ah, poor James.";
+
+Section Zork Grand Inquisitor Live Forever
+
+A black capsa is a capsa in the Librum Itself.  "In the back of the lower level, in a storage cupboard, you find the black capsa, just as Horatio described to you.  You wonder how he managed to find out where it was, but suppose the man has his conversational tricks."  The black capsa can be explained.  The black capsa is not explained.  The description is "The black capsa contains a scroll of igram, [if the black capsa is explained]which apparently turns purple things invisible.  The only capsae you've heard of having an ability even vaguely like that, you assumed were jokes.  Now you're not so sure.[otherwise]but Horatio won't tell you what that means.[end if]  It is [if the black capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to make purple things invisible (sigh)[end if]."  Understand "igram" as the black capsa.
+
+A scroll of igram is a scroll in the red capsa.  The name is "IGRAM".  Understand "make purple things invisible" as the scroll of igram.  Understand "invisible/invisibility" as the scroll of igram.
+
+No More Purple is a scene.  No More Purple begins when the black capsa is open.  No More Purple ends when the black capsa is closed.
+
+When No More Purple begins:
+	if the purple capsa is visible:
+		say "For a moment, the purple capsa seems to flicker.  But you look again, and nothing seems to have changed.";
+	if the various artifacts are visible:
+		Move the cloak posts to the location;
+		say "Suddenly, two hunting cloaks in a display of ancient pre-historical artifacts disappear!";
 
 PC and Rucksack ends here.

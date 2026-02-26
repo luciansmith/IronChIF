@@ -1268,457 +1268,457 @@
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>181</key><dict>
-        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Extensions\Aaron Reed\Response Assistant.i7x</string>
-        <key>Line</key><integer>7</integer>
-        <key>Title</key><string>Chapter - Actions</string>
-        <key>Level</key><integer>4</integer>
-        <key>Indentation</key><integer>2</integer>
-    </dict>
-    <key>182</key><dict>
-        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Extensions\Aaron Reed\Response Assistant.i7x</string>
-        <key>Line</key><integer>9</integer>
-        <key>Title</key><string>Section - Response Tracking</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>3</integer>
-    </dict>
-    <key>183</key><dict>
-        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Extensions\Aaron Reed\Response Assistant.i7x</string>
-        <key>Line</key><integer>13</integer>
-        <key>Title</key><string>Section - Disabling Response Tracking</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>3</integer>
-    </dict>
-    <key>184</key><dict>
-        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Extensions\Aaron Reed\Response Assistant.i7x</string>
-        <key>Line</key><integer>17</integer>
-        <key>Title</key><string>Section - Requesting Response Info</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>3</integer>
-    </dict>
-    <key>185</key><dict>
-        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Extensions\Aaron Reed\Response Assistant.i7x</string>
-        <key>Line</key><integer>31</integer>
-        <key>Title</key><string>Chapter - Variables</string>
-        <key>Level</key><integer>4</integer>
-        <key>Indentation</key><integer>2</integer>
-    </dict>
-    <key>186</key><dict>
-        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Extensions\Aaron Reed\Response Assistant.i7x</string>
-        <key>Line</key><integer>41</integer>
-        <key>Title</key><string>Chapter - Reporting</string>
-        <key>Level</key><integer>4</integer>
-        <key>Indentation</key><integer>2</integer>
-    </dict>
-    <key>187</key><dict>
-        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Extensions\Aaron Reed\Response Assistant.i7x</string>
-        <key>Line</key><integer>56</integer>
-        <key>Title</key><string>Chapter - Inform 6 Hooks</string>
-        <key>Level</key><integer>4</integer>
-        <key>Indentation</key><integer>2</integer>
-    </dict>
-    <key>188</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>--</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>189</key><dict>
+    <key>182</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>5</integer>
         <key>Title</key><string>Part - CYOA Mode</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>190</key><dict>
+    <key>183</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>88</integer>
         <key>Title</key><string>Part - Pages and Choices</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>191</key><dict>
+    <key>184</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>104</integer>
         <key>Title</key><string>Part - Showing Choices</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>192</key><dict>
+    <key>185</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>199</integer>
         <key>Title</key><string>section - Suppressing Choices Depending on Conditions</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>193</key><dict>
+    <key>186</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>203</integer>
         <key>Title</key><string>section - Toggling Conditions After Selecting a Choice</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>194</key><dict>
+    <key>187</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>208</integer>
         <key>Title</key><string>section - Displaying Complex Output</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>195</key><dict>
+    <key>188</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>212</integer>
         <key>Title</key><string>Chapter - Understanding Choices</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>196</key><dict>
+    <key>189</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>240</integer>
         <key>Title</key><string>Chapter - Selecting Activity</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>197</key><dict>
+    <key>190</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>264</integer>
         <key>Title</key><string>section a - selecting a page</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>198</key><dict>
+    <key>191</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>271</integer>
         <key>Title</key><string>section b - selecting not a page</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>199</key><dict>
+    <key>192</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>283</integer>
         <key>Title</key><string>Chapter - Refresh Pages</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>200</key><dict>
+    <key>193</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>296</integer>
         <key>Title</key><string>Chapter - Page Options</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>201</key><dict>
+    <key>194</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>298</integer>
         <key>Title</key><string>section a - One-Off Pages</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>202</key><dict>
+    <key>195</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>305</integer>
         <key>Title</key><string>section b - Dead Ends</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>203</key><dict>
+    <key>196</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>309</integer>
         <key>Title</key><string>section c - Item-Dependent</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>204</key><dict>
+    <key>197</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>327</integer>
         <key>Title</key><string>section d - Page-Dependent</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>205</key><dict>
+    <key>198</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>382</integer>
         <key>Title</key><string>section e - Activating/Deactivating</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>206</key><dict>
+    <key>199</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>424</integer>
         <key>Title</key><string>Chapter - Item Invoking</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>207</key><dict>
+    <key>200</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>439</integer>
         <key>Title</key><string>Chapter - CYOA Teleport</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>208</key><dict>
+    <key>201</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>444</integer>
         <key>Title</key><string>Part - Cyoa Debug Mode</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>209</key><dict>
+    <key>202</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>453</integer>
         <key>Title</key><string>section a - Toggling Debug Mode</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>210</key><dict>
+    <key>203</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>467</integer>
         <key>Title</key><string>Part - Parser</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>211</key><dict>
+    <key>204</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>483</integer>
         <key>Title</key><string>Chapter - Accept Testing Commands</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>212</key><dict>
+    <key>205</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>492</integer>
         <key>Title</key><string>Chapter - Accept System Commands</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>213</key><dict>
+    <key>206</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>497</integer>
         <key>Title</key><string>Chapter - Accept Examining Commands</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>214</key><dict>
+    <key>207</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>504</integer>
         <key>Title</key><string>Chapter - Accept Item Commands</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>215</key><dict>
+    <key>208</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>509</integer>
         <key>Title</key><string>Part - Time</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>216</key><dict>
+    <key>209</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>517</integer>
         <key>Title</key><string>Part - Choice Window</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>217</key><dict>
+    <key>210</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\AW Freyr\Hybrid Choices.i7x</string>
         <key>Line</key><integer>538</integer>
         <key>Title</key><string>Part - Windowless CYOA</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>218</key><dict>
+    <key>211</key><dict>
         <key>Filename</key><string>C:\Program Files\Inform\Internal\Extensions\Emily Short\Basic Screen Effects.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>--</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>219</key><dict>
+    <key>212</key><dict>
         <key>Filename</key><string>C:\Program Files\Inform\Internal\Extensions\Emily Short\Basic Screen Effects.i7x</string>
         <key>Line</key><integer>9</integer>
         <key>Title</key><string>Section - Clearing the screen</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>220</key><dict>
+    <key>213</key><dict>
         <key>Filename</key><string>C:\Program Files\Inform\Internal\Extensions\Emily Short\Basic Screen Effects.i7x</string>
         <key>Line</key><integer>22</integer>
         <key>Title</key><string>Section - Waiting for key-presses, quitting suddenly</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>221</key><dict>
+    <key>214</key><dict>
         <key>Filename</key><string>C:\Program Files\Inform\Internal\Extensions\Emily Short\Basic Screen Effects.i7x</string>
         <key>Line</key><integer>87</integer>
         <key>Title</key><string>Section - Showing the current quotation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>222</key><dict>
+    <key>215</key><dict>
         <key>Filename</key><string>C:\Program Files\Inform\Internal\Extensions\Emily Short\Basic Screen Effects.i7x</string>
         <key>Line</key><integer>94</integer>
         <key>Title</key><string>Section - Centering text on-screen</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>223</key><dict>
+    <key>216</key><dict>
         <key>Filename</key><string>C:\Program Files\Inform\Internal\Extensions\Emily Short\Basic Screen Effects.i7x</string>
         <key>Line</key><integer>148</integer>
         <key>Title</key><string>Section - Customizing the status line</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>224</key><dict>
+    <key>217</key><dict>
         <key>Filename</key><string>C:\Program Files\Inform\Internal\Extensions\Emily Short\Basic Screen Effects.i7x</string>
         <key>Line</key><integer>215</integer>
         <key>Title</key><string>Section - Color effects</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>225</key><dict>
+    <key>218</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Rules and New Actions.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>--</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>226</key><dict>
+    <key>219</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Rules and New Actions.i7x</string>
         <key>Line</key><integer>4</integer>
         <key>Title</key><string>Book 0 Rules</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>227</key><dict>
+    <key>220</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Rules and New Actions.i7x</string>
         <key>Line</key><integer>33</integer>
         <key>Title</key><string>Chapter New Actions</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>228</key><dict>
+    <key>221</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Rules and New Actions.i7x</string>
         <key>Line</key><integer>35</integer>
         <key>Title</key><string>Section Commenting</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>229</key><dict>
+    <key>222</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Rules and New Actions.i7x</string>
         <key>Line</key><integer>54</integer>
         <key>Title</key><string>Section credits</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>230</key><dict>
+    <key>223</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Rules and New Actions.i7x</string>
         <key>Line</key><integer>67</integer>
         <key>Title</key><string>Section about</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>231</key><dict>
+    <key>224</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Rules and New Actions.i7x</string>
         <key>Line</key><integer>84</integer>
         <key>Title</key><string>Section Summoning mist</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>232</key><dict>
+    <key>225</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Map.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>--</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>233</key><dict>
+    <key>226</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Map.i7x</string>
         <key>Line</key><integer>4</integer>
         <key>Title</key><string>Book Map</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>234</key><dict>
+    <key>227</key><dict>
+        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Map.i7x</string>
+        <key>Line</key><integer>8</integer>
+        <key>Title</key><string>Section High Above</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>228</key><dict>
+        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Map.i7x</string>
+        <key>Line</key><integer>75</integer>
+        <key>Title</key><string>Section Great Hall</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>229</key><dict>
+        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Map.i7x</string>
+        <key>Line</key><integer>105</integer>
+        <key>Title</key><string>Section Librum</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>230</key><dict>
+        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Map.i7x</string>
+        <key>Line</key><integer>210</integer>
+        <key>Title</key><string>Section Royal Gardens</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>231</key><dict>
+        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Map.i7x</string>
+        <key>Line</key><integer>228</integer>
+        <key>Title</key><string>Section Forest Below</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>232</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>--</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>235</key><dict>
+    <key>233</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
         <key>Line</key><integer>4</integer>
         <key>Title</key><string>Book Cast</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>236</key><dict>
+    <key>234</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
         <key>Line</key><integer>6</integer>
         <key>Title</key><string>Section Constance</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>237</key><dict>
+    <key>235</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
         <key>Line</key><integer>28</integer>
-        <key>Title</key><string>Section capsas and scrolls</string>
+        <key>Title</key><string>Section capsae and scrolls</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>236</key><dict>
+        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
+        <key>Line</key><integer>49</integer>
+        <key>Title</key><string>Section rezrov</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>237</key><dict>
+        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
+        <key>Line</key><integer>131</integer>
+        <key>Title</key><string>Section down</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>238</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
-        <key>Line</key><integer>47</integer>
-        <key>Title</key><string>Section rezrov</string>
+        <key>Line</key><integer>184</integer>
+        <key>Title</key><string>Section Hasten</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>239</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
-        <key>Line</key><integer>129</integer>
-        <key>Title</key><string>Section down</string>
+        <key>Line</key><integer>202</integer>
+        <key>Title</key><string>Section Zork Grand Inquisitor Live Forever</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>240</key><dict>
-        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\PC and Rucksack.i7x</string>
-        <key>Line</key><integer>182</integer>
-        <key>Title</key><string>Section Hasten</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>2</integer>
-    </dict>
-    <key>241</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Scenes.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>--</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>242</key><dict>
+    <key>241</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Scenes.i7x</string>
         <key>Line</key><integer>4</integer>
         <key>Title</key><string>Book 0 Ongoing Effects</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>243</key><dict>
+    <key>242</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Horatio.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>--</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
+    <key>243</key><dict>
+        <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Horatio.i7x</string>
+        <key>Line</key><integer>85</integer>
+        <key>Title</key><string>Section The Chat</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
     <key>244</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Horatio.i7x</string>
-        <key>Line</key><integer>79</integer>
-        <key>Title</key><string>Section The Chat</string>
+        <key>Line</key><integer>321</integer>
+        <key>Title</key><string>Section fooling around -</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>245</key><dict>
         <key>Filename</key><string>C:\Users\Lucian\Documents\Inform\Projects\IronChIF\Iron ChIF Lucian.materials\Extensions\Iron ChIF\Horatio.i7x</string>
-        <key>Line</key><integer>315</integer>
-        <key>Title</key><string>Section fooling around -</string>
+        <key>Line</key><integer>342</integer>
+        <key>Title</key><string>Section Horatio in act 3</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>

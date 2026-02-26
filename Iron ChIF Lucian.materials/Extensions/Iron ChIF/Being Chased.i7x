@@ -158,9 +158,9 @@ To escape and recover:
 		if the red capsa is not enclosed by the player:
 			move the red capsa to the rucksack;
 			if the gold capsa is not enclosed by the player:
-				say "and fallen capsas (though you leave your capsa of Down alone), and ";
+				say "and fallen capsae (though you leave your capsa of Down alone), and ";
 			otherwise:
-				say "and fallen capsas, and ";
+				say "and fallen capsae, and ";
 	say "plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.";
 	move the rucksack to the player;
 	move the purple capsa to the rucksack;
