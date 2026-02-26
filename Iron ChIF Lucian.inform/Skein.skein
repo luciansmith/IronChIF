@@ -871,6 +871,159 @@
     <result xml:space="preserve">(the purple hunting cloak)&#x000A;In prehistoric times, people made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camoflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot.  On foot!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">(the purple hunting cloak)&#x000A;In prehistoric times, people made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camoflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot.  On foot!&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-900"/>
+    </children>
+  </item>
+  <item nodeId="node-900">
+    <command xml:space="preserve">wear cloak</command>
+    <result xml:space="preserve">(the purple hunting cloak)&#x000A;You put on the purple hunting cloak.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-901"/>
+    </children>
+  </item>
+  <item nodeId="node-901">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You can't fly with this damn cloak on!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-902"/>
+    </children>
+  </item>
+  <item nodeId="node-902">
+    <command xml:space="preserve">take off cloak</command>
+    <result xml:space="preserve">(the purple hunting cloak)&#x000A;You take off the purple hunting cloak.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-903"/>
+    </children>
+  </item>
+  <item nodeId="node-903">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Upper Great Hall&#x000A;There is a small platform just inside the huge double doors of the Great Hall, and that's it.  The platform is lined with a single elegant grown-mahogany branch that wraps around the whole platform.  It varies in size and thickness, so that all types of feet fit somewhere along it, so people can comfortably launch themselves into the air to glide down to the floor level, or grab it for stability as they return.&#x000A;&#x000A;Your open wound really should have closed by now, but it continues to bleed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-904"/>
+    </children>
+  </item>
+  <item nodeId="node-904">
+    <command xml:space="preserve">open opening</command>
+    <result xml:space="preserve">(the purple capsa of opening)&#x000A;That's already open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-905"/>
+    </children>
+  </item>
+  <item nodeId="node-905">
+    <command xml:space="preserve">close it</command>
+    <result xml:space="preserve">You close the purple capsa of opening.&#x000A;&#x000A;You feel your skin prickle where you were wounded, and look down.  To your amazement, your wound has closed and the bleeding stopped.  As you watch, even the line from the cut disappears, and the feathers around it fluff out again.&#x000A;&#x000A;It's the scroll of Health.  It has to be.  It's actually here!  And active.  Hmm.&#x000A;&#x000A;From everywhere in the Aerie, you hear the woodpeckers drumming in the Pounding dialect: "Reset Locks!  Repeat!  Reset Locks!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-906"/>
+    </children>
+  </item>
+  <item nodeId="node-906">
+    <command xml:space="preserve">open it</command>
+    <result xml:space="preserve">You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;&#x000A;The magic of the gold capsa of down prevents it from being opened.&#x000A;The magic of the black capsa prevents it from being opened.&#x000A;The magic of the blue capsa of mist prevents it from being opened.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-907"/>
+    </children>
+  </item>
+  <item nodeId="node-907">
+    <command xml:space="preserve">out</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-908"/>
+    </children>
+  </item>
+  <item nodeId="node-908">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Royal Gardens&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in it only appropriate spot.  The landing cradle above the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.&#x000A;&#x000A;You can see Garden Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-909"/>
+    </children>
+  </item>
+  <item nodeId="node-909">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">No way.  It wouldn't matter how fast you were, how thick the mist was, anything.  You just can't get in there without being spotted.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-910"/>
+    </children>
+  </item>
+  <item nodeId="node-910">
+    <command xml:space="preserve">wear cloak</command>
+    <result xml:space="preserve">You put on the purple hunting cloak.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-911"/>
+    </children>
+  </item>
+  <item nodeId="node-911">
+    <command xml:space="preserve">x cloak</command>
+    <result xml:space="preserve">In prehistoric times, people made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camoflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot.  On foot!&#x000A;&#x000A;Your open wound really should have closed by now, but it continues to bleed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-912"/>
+    </children>
+  </item>
+  <item nodeId="node-912">
+    <command xml:space="preserve">open black</command>
+    <result xml:space="preserve">(the black capsa)&#x000A;You open the black capsa, revealing a scroll of igram.&#x000A;&#x000A;For a moment, the purple capsa seems to flicker.  But you look again, and nothing seems to have changed.&#x000A;The hunting cloak disappears again.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-913"/>
+    </children>
+  </item>
+  <item nodeId="node-913">
+    <command xml:space="preserve">x cloak</command>
+    <result xml:space="preserve">You can feel the supple folds of the cloak, but cannot see it at all.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-914"/>
+    </children>
+  </item>
+  <item nodeId="node-914">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a purple hunting cloak (being worn)&#x000A;  a black capsa (open)&#x000A;    a scroll of igram&#x000A;  a leather rucksack (open)&#x000A;    a blue capsa of mist (closed)&#x000A;    a red capsa of hasten (open)&#x000A;      a scroll of quiste&#x000A;    a purple capsa of opening (open)&#x000A;      a scroll of rezrov&#x000A;    a gold capsa of down (closed)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-915"/>
+    </children>
+  </item>
+  <item nodeId="node-915">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">OK.  Walking.  Right.  You raise yourself up on the tips of your talons, feeling ridiculous, but not wanting to flatten the grass with your (shudder) footsteps and give yourself away.  You wait for one of the guards to pass, then carefully take cautious steps towards the door.  Nobody reacts.  Hardly daring to breathe, you proceed further, antsy and ready to take to the skies any second.  Which wouldn't work, because you have this damn cloak on.  Whatever.  Two more steps.  You reach the door.  You hop (shudder) across the lintel.&#x000A;&#x000A;You're in.&#x000A;&#x000A;A few more steps, and a voice behind you says "We should take the second hallway." You nearly yelp, but stop yourself.  You knew Horatio would be here.  You were expecting him.  Right.&#x000A;&#x000A;You take a deep breath.  "Lead on," you whisper.&#x000A;&#x000A;"I can't; I'm invisible.  I will tell you where to go, and follow you," he replies.  Right.&#x000A;&#x000A;&#x000A;                                                             *    *    *</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-916"/>
+    </children>
+  </item>
+  <item nodeId="node-916">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">Palace&#x000A;You can see Garden Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-882">
     <command xml:space="preserve">x posts</command>

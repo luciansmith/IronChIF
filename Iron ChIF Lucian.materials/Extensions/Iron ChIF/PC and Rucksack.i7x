@@ -205,14 +205,14 @@ A black capsa is a capsa in the Librum Itself.  "In the back of the lower level,
 
 A scroll of igram is a scroll in the black capsa.  The name is "IGRAM".  Understand "make purple things invisible" as the scroll of igram.  Understand "invisible/invisibility" as the scroll of igram.
 
-No More Purple is a scene.  No More Purple begins when the black capsa is open.  No More Purple ends when the black capsa is closed.
+No More Purple is a recurring scene.  No More Purple begins when the black capsa is open.  No More Purple ends when the black capsa is closed.
 
 When No More Purple begins:
+	Now the hunting cloak is invisible;
 	if the purple capsa of opening is visible:
 		say "For a moment, the purple capsa seems to flicker.  But you look again, and nothing seems to have changed.";
 	if the various artifacts are visible and the cloak posts are not in the location:
 		Move the cloak posts to the location;
-		Now the hunting cloak is invisible;
 		say "Suddenly, two hunting cloaks in a display of ancient pre-historical artifacts disappear!";
 	otherwise if the hunting cloak is on the cloak posts and the cloak posts are in the location:
 		say "The hunting cloaks disappear again.";

@@ -38,4 +38,12 @@ When Actually Recovering begins:
 	It's the scroll of Health.  It [i]has[r] to be.  It's actually here!  And active.  Hmm."
 	[We'd need different text if the player gets wounded more than once, but right now, they can't even get wounded once, so let's just leave it for now.]
 
+Sneaking is a recurring scene.  Sneaking begins when the player is wearing the hunting cloak.  Sneaking ends when the player is not wearing the hunting cloak.
+
+Check going up during Sneaking:
+	say "You can't fly with this damn cloak on!" instead.
+
+Check going down during Sneaking:
+	say "You can't fly with this damn cloak on!" instead.
+
 Lucian's Scenes ends here.

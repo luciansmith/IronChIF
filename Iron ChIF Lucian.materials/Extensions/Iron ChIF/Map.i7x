@@ -156,6 +156,12 @@ The hunting cloak is a wearable on the cloak posts.  The hunting cloak can be pu
 
 Does the player mean doing anything with the hunting cloak:  it is very likely.
 
+Check wearing the cloak:
+	if the location is in_forest:
+		say "You wouldn't be able to fly back up!" instead;
+	if the location is High Above:
+		say "Might I remind you that you can't fly with that cloak on?  And that you are currently [i]very high[r] in the air?" instead;
+
 Section Librum
 
 Librum Landing Cradle is east of Great Hall Landing Cradle.  "The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The [Librum Door] leads inward to the Librum itself.
@@ -269,7 +275,7 @@ Instead of opening the display case:
 
 Section Royal Gardens
 
-Royal Gardens is a room. It is north of Great Hall Landing Cradle, and northwest of Librum Landing Cradle.  "The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in it only appropriate spot.  The landing cradle above the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards. 
+Royal Gardens is a room. It is north of Great Hall Landing Cradle, and northwest of Librum Landing Cradle.  "The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in it only appropriate spot.  The landing cradle next to the [garden door] to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards. 
 
 From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast."
 
@@ -284,6 +290,36 @@ The royal landing cradle is scenery in Royal Gardens.  The description is "The c
 
 The poplar trunks are scenery in Royal Gardens.  The description is "The poplars around the landing cradle contain five guards that you can see (since you know where to look), and almost certainly another five that you cannot (since you know where you can't look)."  Understand "arcs/shaded/inviting/roosts/guards/eight/five/ten" as the poplar trunks.
 
+garden door is a door in Royal Gardens.  It is closed and locked.  It is inside from Royal Gardens and outside from Palace.  The description is "A canted [if open]open[otherwise]closed[end if] hatch to the Royal Quarters, nestled in the center of the garden.  Absolutely surrounded by guards."
+
+Check opening Garden Door:
+	say "There are way too many guards for that to have any chance of working." instead.
+
+Check unlocking Garden Door with:
+	say "There are way too many guards for that to have any chance of working." instead.
+
+Before going inside from Royal Gardens:
+	try entering Garden Door instead;
+
+Check entering Garden Door:
+	If Sneaking is not happening:
+		say "No way.  It wouldn't matter how fast you were, how thick the mist was, anything.  You just can't get in there without being spotted." instead;
+	otherwise if the hunting cloak is purple:
+		say "Not only would you be caught, but you'd be humiliated for your entire life for having to walk because you were wearing an ancient purple cloak." instead;
+	otherwise:
+		say "OK.  Walking.  Right.  You raise yourself up on the tips of your talons, feeling ridiculous, but not wanting to flatten the grass with your (shudder) footsteps and give yourself away.  You wait for one of the guards to pass, then carefully take cautious steps towards the door.  Nobody reacts.  Hardly daring to breathe, you proceed further, antsy and ready to take to the skies any second.  Which wouldn't work, because you have this damn cloak on.  Whatever.  Two more steps.  You reach the door.  You hop (shudder) across the lintel.
+		
+		You're in.
+		
+		A few more steps, and a voice behind you says 'We should take the second hallway.' You nearly yelp, but stop yourself.  You knew Horatio would be here.  You were expecting him.  Right.
+		
+		You take a deep breath.  'Lead on,' you whisper.
+		
+		'I can't; I'm invisible.  I will tell you where to go, and follow you,' he replies.  Right.[bstars]";
+		wait for any key;
+		clear the screen;
+
+Palace is a room.  "If you're seeing this, I either haven't finished writing the finale, or you found a bug.  Hopefully, you're a tester, and that's your job.  Thank you!  Come back for a later version with the finale!";
 
 Section Forest Below
 
