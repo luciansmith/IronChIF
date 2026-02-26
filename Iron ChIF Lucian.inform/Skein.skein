@@ -841,7 +841,7 @@
   </item>
   <item nodeId="node-896">
     <command xml:space="preserve">get cloaks</command>
-    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;Your wound aches.  You look down at it, and it's still open and a fast small trickle of blood drips down your side.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">That's fixed in place.&#x000A;&#x000A;Your wound aches.  You look down at it, and it's still open and a fast small trickle of blood drips down your side.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
     <children>
@@ -904,7 +904,7 @@
   </item>
   <item nodeId="node-903">
     <command xml:space="preserve">u</command>
-    <result xml:space="preserve">Upper Great Hall&#x000A;There is a small platform just inside the huge double doors of the Great Hall, and that's it.  The platform is lined with a single elegant grown-mahogany branch that wraps around the whole platform.  It varies in size and thickness, so that all types of feet fit somewhere along it, so people can comfortably launch themselves into the air to glide down to the floor level, or grab it for stability as they return.&#x000A;&#x000A;Your open wound really should have closed by now, but it continues to bleed.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Upper Great Hall&#x000A;There is a small platform just inside the huge double doors of the Great Hall, and that's it.  The platform is lined with a single elegant grown-mahogany branch that wraps around the whole platform.  It varies in size and thickness, so that all types of feet fit somewhere along it, so people can comfortably launch themselves into the air to glide down to the floor level, or grab it for stability as they return.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -949,7 +949,7 @@
   </item>
   <item nodeId="node-908">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Royal Gardens&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in it only appropriate spot.  The landing cradle above the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.&#x000A;&#x000A;You can see Garden Door here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Royal Gardens&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in it only appropriate spot.  The landing cradle next to the garden door to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -976,7 +976,7 @@
   </item>
   <item nodeId="node-911">
     <command xml:space="preserve">x cloak</command>
-    <result xml:space="preserve">In prehistoric times, people made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camoflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot.  On foot!&#x000A;&#x000A;Your open wound really should have closed by now, but it continues to bleed.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">In prehistoric times, people made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camoflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot.  On foot!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1021,7 +1021,43 @@
   </item>
   <item nodeId="node-916">
     <command xml:space="preserve"> </command>
-    <result xml:space="preserve">Palace&#x000A;You can see Garden Door here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You make your way, with Horatio's direction, through the Royal Quarters.  A time or two Horatio leads you to a place you'd have to fly to get past, but you know this place well, and even though you never walked anywhere, you still know the walking ways.  There's fewer guards to avoid than you expected, meaning that the Queen either has them all outside guarding the entrance, or she just doesn't have them to spare.&#x000A;&#x000A;As you get closer to your objective, a growing sense of unease forms in the pit of your stomach.  One by one, you pass all the places you pegged as most likely for it to be: the throne room, the vault, even storerooms.&#x000A;&#x000A;Then:  "This is it," says Horatio.&#x000A;&#x000A;Oh no.&#x000A;&#x000A;Nursery Door&#x000A;You're standing in a hallway, just south of the nursery door, to the west.  The door is open.  All the doors have been open.  You can't see inside yet.  Your heart pounds in your chest.&#x000A;&#x000A;Horatio is here, watching you with quiet aplomb and patience.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-917"/>
+    </children>
+  </item>
+  <item nodeId="node-917">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">The nursery is to the west.  The scroll of health is to the west.  Health.  Taclor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-918"/>
+    </children>
+  </item>
+  <item nodeId="node-918">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">"Horatio," you whisper.  You feel a tap on your shoulder in response.  "I can't go in there wearing this cloak.  I just can't."&#x000A;&#x000A;A pause.&#x000A;&#x000A;"Then take it off," he replies.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-919"/>
+    </children>
+  </item>
+  <item nodeId="node-919">
+    <command xml:space="preserve">take off cloak</command>
+    <result xml:space="preserve">Next to you, Horatio takes his own cloak off as well.&#x000A;&#x000A;You take off the purple hunting cloak.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-920"/>
+    </children>
+  </item>
+  <item nodeId="node-920">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Nursery&#x000A;It's the nursery&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

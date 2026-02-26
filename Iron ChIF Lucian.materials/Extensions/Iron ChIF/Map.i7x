@@ -318,8 +318,36 @@ Check entering Garden Door:
 		'I can't; I'm invisible.  I will tell you where to go, and follow you,' he replies.  Right.[bstars]";
 		wait for any key;
 		clear the screen;
+		say "You make your way, with Horatio's direction, through the Royal Quarters.  A time or two Horatio leads you to a place you'd have to fly to get past, but you know this place well, and even though you never walked anywhere, you still know the walking ways.  There's fewer guards to avoid than you expected, meaning that the Queen either has them all outside guarding the entrance, or she just doesn't have them to spare.
+		
+		As you get closer to your objective, a growing sense of unease forms in the pit of your stomach.  One by one, you pass all the places you pegged as most likely for it to be: the throne room, the vault, even storerooms.
+		
+		Then:  'This is it,' says Horatio.
+		
+		Oh no.";
+		Move Horatio to Nursery_door; 
+		Move the player to Nursery_door;
+		stop the action;
 
 Palace is a room.  "If you're seeing this, I either haven't finished writing the finale, or you found a bug.  Hopefully, you're a tester, and that's your job.  Thank you!  Come back for a later version with the finale!";
+
+Nursery_door is a room.  The printed name is "Nursery Door".  "You're standing in a hallway, just south of the nursery door, to the west.  The door is open.  All the doors have been open.  You can't see inside yet.  Your heart pounds in your chest."
+
+Instead of going nowhere from Nursery_door:
+	say "The nursery is to the west.  The scroll of health is to the west.  [i]Health[r].  Taclor.";
+
+Check going west from Nursery_door:
+	if the hunting cloak is worn:
+		say "'Horatio,' you whisper.  You feel a tap on your shoulder in response.  'I can't go in there wearing this cloak.  I just can't.'
+		
+		A pause.
+		
+		'Then take it off,' he replies." instead;
+
+Carry out taking off cloak in Nursery_Door:
+	say "Next to you, Horatio takes his own cloak off as well.";
+
+Nursery_itself is a room.  It is west of Nursery_door.  the printed name is "Nursery".  "It's the nursery"
 
 Section Forest Below
 

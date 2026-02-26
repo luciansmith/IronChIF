@@ -228,6 +228,8 @@ When No More Purple ends:
 		say "The hunting cloaks appear again.";
 	otherwise if the hunting cloak is visible:
 		say "The hunting cloak appears again.";
+	If the location is Nursery_Door:
+		say "Horatio reappears, wearing the other cloak.";
 
 
 PC and Rucksack ends here.
