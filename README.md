@@ -47,3 +47,15 @@ Day three mop-up:  open tabs include:
 * "What does a pet turkey vulture need"
 * "process of swallowing"
 * Inform 7: Rulebooks & “Stop the Action”
+
+Day four mop-up: open tabs include:
+* "Inform 7 check if scene ever started" <- I never actually figured this out!
+* Github docs: tasklists
+* Inform 7 chapter 3.1: Things
+* "what is parts of feather"
+* "How to birds make facial expressions"
+* Reddit thread: birds absolutely have facial expressions
+* wikipedia category: bird diseases
+* "expressions like pulling teeth"
+* Synonyms for diving
+* "name for bird feet"
