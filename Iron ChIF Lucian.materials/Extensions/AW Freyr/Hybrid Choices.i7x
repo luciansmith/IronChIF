@@ -802,7 +802,7 @@ Sometimes, even when a page turns to another, we might not want to offer it as a
 	"You safely travel throug the door."
 	The cdesc is "Saunter through the door." It is needed by P2. It is for P1.
 	
-When a page X "cancels" a page Y, it removes page Y from ever being considered as a choice if page X is visited. When a page X "needs" a page Y, page X will never be considered until page Y is visited. This works for multiple pages, but in a slightly different ways. All of a page's needed pages need to be visited before it becomes a viable choice. However, only one of a page's canceled pages need to be visited to cancel that page.
+When a page X "cancels" a page Y, it removes page Y from ever being considered as a choice if page X is previously displayed. When a page X "needs" a page Y, page X will never be considered until page Y is previously displayed. This works for multiple pages, but in a slightly different ways. All of a page's needed pages need to be previously displayed before it becomes a viable choice. However, only one of a page's canceled pages need to be previously displayed to cancel that page.
 
 The second method is by "activating/deactivating" pages. A page is either "active" or "inactive". When it is "inactive", it will not be displayed as a choice. You can do this with a phrase.
 

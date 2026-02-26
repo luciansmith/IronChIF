@@ -147,7 +147,7 @@ To escape and recover:
 	Move the small pile of tiny padlocks to the Librum Landing Cradle;
 	Now the closeness of Being Chased is 0;
 	Now Constance is cruising;
-	say "[lb]The Raven's frustrated caws echo in the mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items, and call up any reserves.
+	say "[lb]The Raven's frustrated caws echo in the mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the {LS DEBUG: DISEASE} has affected the Raven Squad as sorely as your own community.
 	
 	You ";
 	if the rucksack is not enclosed by the player:
