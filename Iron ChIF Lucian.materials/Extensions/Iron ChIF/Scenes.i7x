@@ -144,7 +144,7 @@ F5 is a page.  It is for F1.
 The cdesc is "Leave with the capsa, and take Ash with you."
 The description is "'I can't do it,' you say.  'I can't condemn Ash for the sake of my people.  I can't condemn my people for the sake of Ash.  I can't condemn both for the sake of a fairy-tale promise.'
 
-'Kid,' you turn to Ash.  'Put this on.  We're going on a trip, and it's cold out there.'  Ash delights in putting on a genuine invisibility cloak, then hops on your back with anticipation when you tell him.  Horatio dons his own cloak as well, disappearing from view.
+'Kid,' you turn to Ash.  'Put this on.  We're going on a trip, and it's cold out there.'  Ash delights in putting on a genuine invisibility cloak, then hops on your back with anticipation when you tell them.  Horatio dons his own cloak as well, disappearing from view.
 
 All three of you step onto the window ledge, and launch yourselves into the mist.  You hear the strangled cry of a familiar Red Wing behind you, but don't turn back."
 
@@ -213,7 +213,7 @@ The song is everywhere.  The song is everything.  It is morningsong.  It is even
 
 And threading it together, it is life.  Health.  The roost.  The nest.  A bubble of comfort pushing back against the dark.
 
-And then it's done.  The writing fades from the scroll, and Horatio gently rewinds it back to the title.  'TACHLOR'.
+And then it's done.  The writing fades from the scroll, and Horatio gently rewinds it back to the title.  'TACLOR'.
 
 Aubrey relaxes, wakes.  Looks into your eyes.  'I'm so sorry,' she whispers.  She glances at her child.  'Ash...' she explains.
 
@@ -227,7 +227,7 @@ Aubrey begins to sing.  It's not The Song.  Nothing will ever be The Song.  But 
 
 As she sings, Ash's pallor fades, and their feathers straighten.  A hunch you didn't realize they had straightens out.  'Oh!' they exclaim.  'OH!'  Their eyes shine.
 
-You help Aubrey to her feet.  She looks around at the four of you, and rises to her full height, full of queenly majesty.  'Come,' she says.  'We have work to do.'"
+You help Aubrey to her feet and she rises to her full height, full of queenly majesty.  The four of you look at each other.  'Come,' she says.  'We have work to do.'"
 
 A page-toggle rule for F9:
 	end the story finally saying "You have changed the world."
