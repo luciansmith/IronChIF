@@ -173,8 +173,8 @@ Every turn during everything falls:
 		now the woodpeckers are activated;
 
 When Everything Falls ends:
-	if Being Chased is happening:
-		say "You twist and right yourself as 'down' returns to its normal state[if the closeness of Being Chased is at least 2].  The Raven Guards struggle to right themselves again, but recover and continue their pursuit[otherwise].  The Raven Guards still know where you are, though[end if].";
+	if the woodpeckers are activated:
+		say "You twist and right yourself as 'down' returns to its normal state[if the closeness of Being Chased is at least 2].  The Raven Guards struggle to right themselves again, but recover and continue their pursuit[end if].";
 	otherwise:
 		say "You steady yourself as 'down' returns to its normal state.";
 

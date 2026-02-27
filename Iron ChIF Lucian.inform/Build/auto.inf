@@ -67746,7 +67746,7 @@ Global max_z_object;
     if (debug_rules) {
         DB_Rule(call_U2300, 958, 0);
     }
-    if (((scene_status-->((I_being_chased_U1 - 1))) == 1)) {
+    if (call_U2326(I_woodpeckers_U1)) {
         (say__p = 1);
         ParaContent();
         print "You twist and right yourself as ~down~ returns to its normal state";
@@ -67755,11 +67755,7 @@ Global max_z_object;
         }
         ParaContent();
         print ".  The Raven Guards struggle to right themselves again, but recover and continue their pursuit";
-        jump L_SayX0;
         .L_Say0;
-        ParaContent();
-        print ".  The Raven Guards still know where you are, though";
-        .L_SayX0;
         ParaContent();
         print ".";
         print "^";
