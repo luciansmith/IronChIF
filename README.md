@@ -59,3 +59,14 @@ Day four mop-up: open tabs include:
 * "expressions like pulling teeth"
 * Synonyms for diving
 * "name for bird feet"
+
+Day five mop-up:  open tabs include:
+* Girl bird names
+* temperature-dependent sex determination systems
+* what are bird pinions
+* "evensong"
+* image search: peregrine falcon face <- https://github.com/luciansmith/IronChIF/blob/main/Iron%20ChIF%20Lucian.materials/Cover.png
+* https://intfiction.org/t/cover-art/
+* https://intfiction.org/t/custom-banner-and-version-extension/54636
+* synonyms for 'endless'
+* https://www.youtube.com/watch?v=IxkJHX7ukKE  
