@@ -2,7 +2,7 @@
 
 The story headline is "An Interactive High Heist"
 
-Release along with cover art and the source text.
+Release along with cover art and the source text and a file of "Rough outside map." called "Aerie map.png".
 
 The release number is 1.
 

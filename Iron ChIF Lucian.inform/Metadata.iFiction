@@ -14,6 +14,12 @@
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
+        <resources>
+            <auxiliary>
+                <leafname>Aerie map.png</leafname>
+                <description>Rough outside map.</description>
+            </auxiliary>
+        </resources>
         <cover>
             <format>png</format>
             <height>720</height>
