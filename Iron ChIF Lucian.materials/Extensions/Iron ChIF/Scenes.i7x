@@ -53,16 +53,12 @@ When Ash_chat begins:
 	
 	You stroke the feathers on their head gently.  The feathers crackle worryingly.  'Hi, Ash,' you say.  It's good to see you, too.'
 	
-	Their face sufficiently smothered, Ash pops out again excitedly.  'It's been so long!  Did you know there's a whole new wing of the southwest aerie?  Momma took me there just the other day, and...'
-	
-	[Ash] continues to prattle, happily telling you all about their life.
-	
-	[i]Note to testers:  getting this out the door first; you can look at things, but can't interact much.  Taking the capsa triggers the final scene, so look/do stuff first.  And it won't work yet, so just keep a list/transcript of the stuff you tried.  LS DEBUG[r]."
+	Their face sufficiently smothered, Ash pops out again excitedly.  'It's been so long!  Did you know there's a whole new wing of the southwest aerie?  Momma took me there just the other day, and...'"
 
 Every turn during Ash_chat:
-	say "Ash prattles happily, telling you [one of]about a model treehouse they made out of sticks[or]a long convoluted story about drama between their stuffed animals[or]about a flock of wild birds that lived beneath her window for a whole season[or]that they secretly dislike dust baths[or]how they need to build another treehouse because Mr. Featherstick doesn't like the first one[or]about a song they're trying to learn[or]that Loudbeak Threewings can't go anywhere without her special stack of [cycling]."
+	say "Ash prattles happily, telling you [one of]about how they're putting in a huge room just for sick people[or]about meeting a Throckwright, and getting to see his pouch of seeds[or]about a model treehouse they made out of sticks[or]a long convoluted story about drama between their stuffed animals[or]about a flock of wild birds that lived beneath her window for a whole season[or]that they secretly dislike dust baths[or]how they need to build another treehouse because Mr. Featherstick doesn't like the first one[or]about a song they're trying to learn[or]that Loudbeak Threewings can't go anywhere without her special stack of [cycling]."
 
-Ash is a person in Nursery_itself.  "Ash prattles happily to you; even including Horatio in the conversation at times as if he was an old friend."  The description is "Ash's flight feathers are starting to come in, though they won't be able to actually fly for at least another year.  Worryingly, the feathers are drooping and seem brittle; early signs of the Red Plague.  It's not a stage of the plague you've ever seen before; maybe the capsa halted the disease's progression, but didn't cure it?  How long have they been like this?"
+Ash is a person in Nursery_itself.  "Ash doesn't look particularly healthy, but they're in high spirits."  The description is "Ash's flight feathers are starting to come in, though they won't be able to actually fly for at least another year.  Worryingly, the feathers are drooping and seem brittle; early signs of the Red Plague.  It's not a stage of the plague you've ever seen before; maybe the capsa halted the disease's progression, but didn't cure it?  How long have they been like this?"
 
 
 answering the Ash that something is chit-chat.

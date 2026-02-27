@@ -98,11 +98,13 @@ Upper Great Hall is a room. "There is a small platform just inside the [Great Ha
 
 The platform is scenery in Upper Great Hall.  "The grown mahogany branch around the platform is a masterpiece of Throckwright engineering.  Not a single delegate or guest ever had problems looking regal as they launched themselves from an appropriate spot."  Understand "grown/mahogany/branch/masterpiece/spot/feet/grown-mahogany/elegant" as the platform.
 
-Instead of going nowhere from upper great hall when the noun is up:
-	Try entering the Great Hall doors;
-
-Instead of going nowhere from upper great hall when the noun is east:
-	Try entering the Great Hall doors;
+Instead of going nowhere from upper great hall:
+	if the noun is up:
+		Try entering the Great Hall doors;
+	otherwise if the noun is east:
+		Try entering the Great Hall doors;
+	otherwise:
+		say "From here you can go down, or back out to the west.";
 
 
 Down from Upper Great Hall is Lower Great Hall.
@@ -356,6 +358,7 @@ Check entering Garden Door:
 		Then:  'This is it,' says Horatio.
 		
 		Oh no.";
+		wait for any key;
 		Move Horatio to Nursery_door; 
 		Move the player to Nursery_door;
 		stop the action;

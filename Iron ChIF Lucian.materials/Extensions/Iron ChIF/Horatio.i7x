@@ -200,7 +200,7 @@ And no capsae holder I have yet met will risk such a thing,' you say."
 
 C1a is a page.  It is for H4.
 The cdesc is "[if the player is Horatio][i]{Switching to Constance}: [r][end if]Scoff at 'capsae holder'."
-The description is "You scoff.  'No Queen or King, you mean.
+The description is "You scoff.  'No Queen or King, you mean.'
 
 'You personally currently hold three capsae, more than some kingdoms,' replies Horatio, 
 
