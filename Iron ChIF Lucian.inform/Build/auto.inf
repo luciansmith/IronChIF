@@ -68815,13 +68815,21 @@ Global max_z_object;
     ParaContent();
     call_U2142();
     ParaContent();
-    print "The Raven's frustrated caws echo in the mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.^^You ";
+    print "The Raven's frustrated caws echo in the mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.";
+    print "^";
+    ParaContent();
+    call_U2142();
     if ((~~(IndirectlyContains(player, I_leather_rucksack_U1)))) {
         (say__p = 1);
         ParaContent();
-        print "retrieve your rucksack and any fallen capsae, and plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.";
+        print "You retrieve your rucksack and any fallen capsae, and plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.";
         print "^";
         MoveObject(I_leather_rucksack_U1, player, 0, 0);
+    } else {
+        (say__p = 1);
+        ParaContent();
+        print "You plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.";
+        print "^";
     }
     if ((~~(IndirectlyContains(player, I_purple_capsa_of_opening_U1)))) {
         MoveObject(I_purple_capsa_of_opening_U1, I_leather_rucksack_U1, 0, 0);
