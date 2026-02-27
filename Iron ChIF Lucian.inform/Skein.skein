@@ -1057,7 +1057,16 @@
   </item>
   <item nodeId="node-920">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Nursery&#x000A;It's the nursery&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Nursery&#x000A;The Nursery is not exactly how you remember it.  It was set up to grow new walls and furniture over time, to keep any occupant engaged and growing.  But the rhythm of it is baked into your bones.  The place for the roosts, along the north wall.  The desk, grown to the size of the user.  The endless parade of ropes and balls and other toys along the south, some grown and some brought in.  The giant window to the west, overlooking the beautiful, beautiful forest.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-921"/>
+    </children>
+  </item>
+  <item nodeId="node-921">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a purple hunting cloak&#x000A;  a black capsa (open)&#x000A;    a scroll of igram&#x000A;  a leather rucksack (open)&#x000A;    a blue capsa of mist (closed)&#x000A;    a red capsa of hasten (open)&#x000A;      a scroll of quiste&#x000A;    a purple capsa of opening (open)&#x000A;      a scroll of rezrov&#x000A;    a gold capsa of down (closed)&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

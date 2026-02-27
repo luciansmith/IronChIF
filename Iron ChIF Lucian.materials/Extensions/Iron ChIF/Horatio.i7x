@@ -378,6 +378,7 @@ Every turn during Horatio tries to make zgi less ridiculous:
 
 When Horatio tries to make zgi less ridiculous ends:
 	move Horatio to the void;
+	Now the black capsa is explained;
 	say "You turn to Horatio, questions bubbling in your head.  'So, nothing else here turned invisible.  Does the scroll work on cloaks?  Things for hunting?  Ancient materials?  Hides?'
 	
 	Horatio looks a little uncomfortable.  'No.  It works on... purple.'

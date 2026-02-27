@@ -48,4 +48,9 @@ Check going up during Sneaking:
 Check going down during Sneaking:
 	say "You can't fly with this damn cloak on!" instead.
 
+Finale is a scene.  Finale begins when the player is in the Nursery_itself for the first time.
+
+When Finale begins:
+	say "Perched on the open window looking out over the forest is a young Red Wing Clan.  As you enter, they turn and their face and feathers light up with delight.  'Aunty Constance!' they chirrup, and  dash across the room to bury their face in your downfeathers."
+
 Lucian's Scenes ends here.

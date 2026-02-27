@@ -231,5 +231,9 @@ When No More Purple ends:
 	If the location is Nursery_Door:
 		say "Horatio reappears, wearing the other cloak.";
 
+A green capsa is an open capsa on the desk.  The description is "The green capsa of health contains a scroll of taclor.  It is [if the green capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to heal to affect the area[end if]."  Understand "taclor/heal" as the green capsa.
+
+A scroll of taclor is a scroll in the green capsa.  The name is "TACLOR".  Understand "make purple things invisible" as the scroll of taclor.  Understand "heal/health" as the scroll of taclor.
+
 
 PC and Rucksack ends here.

@@ -347,7 +347,20 @@ Check going west from Nursery_door:
 Carry out taking off cloak in Nursery_Door:
 	say "Next to you, Horatio takes his own cloak off as well.";
 
-Nursery_itself is a room.  It is west of Nursery_door.  the printed name is "Nursery".  "It's the nursery"
+Nursery_itself is a room.  It is west of Nursery_door.  the printed name is "Nursery".  "The Nursery is not exactly how you remember it.  It was set up to grow new walls and furniture over time, to keep any occupant engaged and growing.  But the rhythm of it is baked into your bones.  The place for the roosts, along the north wall.  The [desk], grown to the size of the user.  The endless parade of ropes and balls and other toys along the south, some grown and some brought in.  The giant [window] to the west, overlooking the beautiful, beautiful forest."
+
+The roosts are scenery in Nursery_itself.  The description is "[You and aubrey] would swing from roost to roost, competing to see who could make the most jumps without opening your wings at all."  Understand "roost/north/wall" as roosts.
+
+The_toys are scenery in Nursery_itself.  The description is "[You and aubrey] cycled through so many, many toys.  You would break one by accident, and she would imperiously demand new ones of the guards."  Understand "ropes/balls/rope/ball/south" as the_toys.
+
+The window is an enterable supporter in Nursery_itself.  The description is "Absolutely the best view anywhere.  [You and aubrey] could watch a storm roll in across the sky for hours.  You learned how to enhance the storm to make it more dramatic based on Aubrey's excited trills." Understand "view/best/beautiful/forest" as the window.
+
+The desk is a supporter in Nursery_itself.  The description is "It's smaller now than you ever remember it being.  You never knew her at that age." Understand "small/smaller/grown/user" as the desk.
+
+[To see the capsa, see Pc and Rucksck.i7x!  Sigh.]
+
+To say You and aubrey:
+	say "[first time]You and the now-Quee--  No.  [only]You and Aubrey"
 
 Section Forest Below
 
