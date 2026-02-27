@@ -56,9 +56,7 @@ Section credits
 Crediting is an action out of world applying to nothing.  Understand "credits" as Crediting.
 
 Carry out Crediting:
-	say "First: a word about design philosophy.  The game has sub-optimal endings, but by design they are all avoidable with a single >UNDO.  There may be bugs that circumvent that design!  So keep multi-undo and/or save files at the ready.	
-	
-	This game would not have been possible without the intense energy of @otistdog on the intfiction forums creating the idea of having an 'Iron ChIF' competition, nor without Ryan Veeder agreeing to be the aforementioned 'Iron ChIF Inform 7' to compete against.
+	say "This game would not have been possible without the intense energy of @otistdog on the intfiction forums creating the idea of having an 'Iron ChIF' competition, nor without Ryan Veeder agreeing to be the aforementioned 'Iron ChIF Inform 7' to compete against.
 	
 	Particular thanks go to my betatesters, Sarah Wilson (day 1), Stephen Granade (day 2), Allyson Gray (day 3), and Dan 'inky' Shiovitz (day 4).
 	
@@ -73,7 +71,9 @@ Section about
 Abouting is an action out of world applying to nothing.  Understand "about" as abouting.
 
 Carry out abouting:
-	say "This game was written in five days for Episode One of Iron ChIF, where I (as the challenger) wrote this game while Ryan Veeder (the 'Iron ChIF Inform 7') wrote his own game.  Extensive discussion and commentary from that episode can be found on the intfiction.org web site, at
+	say "First: a word about design philosophy.  The game has sub-optimal endings, but by design they are all avoidable with a single >UNDO.  There may be bugs that circumvent that design!  So keep multi-undo and/or save files at the ready.	
+	
+	This game was written in five days for Episode One of Iron ChIF, where I (as the challenger) wrote this game while Ryan Veeder (the 'Iron ChIF Inform 7') wrote his own game.  Extensive discussion and commentary from that episode can be found on the intfiction.org web site, at
 	
 	https://intfiction.org/t/iron-chif-season-one-episode-1-lpsmith-vs-afterward-using-inform-7/78122
 

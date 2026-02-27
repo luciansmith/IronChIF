@@ -88,6 +88,11 @@ Instead of giving something to the Ash:
 Instead of waking the Ash:
 	say "Hoo boy, if Ash fell asleep you definitely would not wake them up again.";
 
+Instead of eating Ash:
+	say "What is it about children that makes them seem so delicious?  You playfully peck at Ash's head, and they squeal in delight.";
+
+Instead of taking Ash:
+	say "You could take Ash with you.  When you go.  Maybe."
 
 Finale is a scene.  Finale begins when the player encloses the green capsa.
 
