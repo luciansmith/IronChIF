@@ -47,6 +47,8 @@ Before attacking the grate:
 Instead of going nowhere from Disused Hallway:
 	if the noun is down:
 		try entering the grate instead;
+	if the noun is inside:
+		try entering the grate instead;
 	otherwise:
 		say "The hallway runs east to west, and there's a grate on the floor you could enter.";
 
@@ -310,9 +312,7 @@ The description is "'So, what do we do next?' you ask.
 
 'It is in the Librum,' he says, simply.  'Therefore, either you must go into the Librum, or the capsa must come out.  I will talk to the guard to distract her, if that helps,' Horatio offers.
 
-Gods, yes, you can inflict this man on someone you hate.  'Perfect,' you say, grimly. You shake yourself, and turn to your new task.
-
-{NOTE TO TESTERS:  You cannot actually turn to your new task yet.  Play around with different ways to escape being chased, if you like; otherwise, you're done!  LS DEBUG}"
+Gods, yes, you can inflict this man on someone you hate.  'Perfect,' you say, grimly. You shake yourself, and turn to your new task."
 
 Horatio can be distracting.  Horatio is not distracting.
 
@@ -399,6 +399,4 @@ When Horatio tries to make zgi less ridiculous ends:
 	
 	'I can sense the capsae.  I will know where you are,' he replies, and with a deep breath, he gathers himself and flies up and out of the Great Hall.";
 
-
-[LS DEBUG:  so i won't forget: singing at the end.]
 Horatio ends here.

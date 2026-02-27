@@ -54,7 +54,7 @@ After going from High Above:
 		say "You dive blindingly fast towards the Aerie through the fog, and the mist swallows you with nary an eddy.";
 	otherwise:
 		now Constance is speeding;
-		say "You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.";
+		say "You tuck in your wings and dive down [if the noun is not down][noun][end if ] towards the Aerie, thrilling to the misty wind streaming through your feathers.";
 	continue the action;
 
 Starting Off is a scene.  Starting Off begins when play begins.  Starting Off ends when the player is not in High Above.
@@ -83,13 +83,26 @@ To the north is the Royal Quarters and Gardens, the Librum to the east, and as a
 
 The Great Hall doors are a door in Great Hall Landing Cradle.  The printed name is "huge double doors of the Great Hall".  They are closed and locked.  They are inside from Great Hall Landing Cradle and outside from Upper Great Hall.  The description is "The huge double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster."  Understand "huge/door/double/canted/hatch/hatches/fine/scrollwork/broad/swoops/curls/branch/finer/giant/landing/cradle" as the Great Hall doors.
 
-Carry out entering Great Hall doors during Being Chased:
-	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Squad has followed you, and you simply don't have any room to maneuver.";
+Check entering Great Hall doors during Being Chased:
+	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Guard has followed you, and you simply don't have any room to maneuver.";
 	end the story saying "You have been captured.";
+
+Before going inside from Great Hall Landing Cradle:
+	try entering Great Hall doors instead;
+
+Instead of going nowhere from Great Hall Landing Cradle:
+	if the noun is west, try entering the Great Hall doors;
+	otherwise say "From here, you can go north to the Royal Quarters and Garden, east to the Librum, enter the Great Hall itself, or, as always, ascend to the skies or descend to the forest."
 
 Upper Great Hall is a room. "There is a small platform just inside the [Great Hall doors], and that's it.  The platform is lined with a single elegant grown-mahogany branch that wraps around the whole platform.  It varies in size and thickness, so that all types of feet fit somewhere along it, so people can comfortably launch themselves into the air to glide down to the floor level, or grab it for stability as they return."
 
 The platform is scenery in Upper Great Hall.  "The grown mahogany branch around the platform is a masterpiece of Throckwright engineering.  Not a single delegate or guest ever had problems looking regal as they launched themselves from an appropriate spot."  Understand "grown/mahogany/branch/masterpiece/spot/feet/grown-mahogany/elegant" as the platform.
+
+Instead of going nowhere from upper great hall when the noun is up:
+	Try entering the Great Hall doors;
+
+Instead of going nowhere from upper great hall when the noun is east:
+	Try entering the Great Hall doors;
 
 
 Down from Upper Great Hall is Lower Great Hall.
@@ -99,11 +112,11 @@ Report going down from Upper Great Hall:
 
 Lower Great Hall is a room.  "When not prepared for a particular occasion, like now, the floor of the Great Hall is cleared of everything extraneous.  The exposed floor is absolutely exquisite, with swooping lines interspersed with starbursts, all in multicolored woods of all hues.  What doesn't change about the Great Hall floor is the display nooks along the sides: at least twenty nooks containing all manner of artifacts from around the world."
 
-Various artifacts are scenery in Lower Great Hall.  The description is "Old things, new things, distant things, close things." Understand "old/things/new/distant/close" as various artifacts.
+Various artifacts are scenery in Lower Great Hall.  The description is "Old things, new things, distant things, close things." Understand "old/things/new/distant/close/nooks/twenty" as various artifacts.
 
 [LS DEBUG:  MAYBE allow 'various artifacts' to respond to 'cloaks' in case someone replaying the game tries to look for the cloaks before they show up.]
 
-The two cloak posts are fixed in place in Void.   Understand "ancient/hunting/cloaks/post" as two cloak posts.  [The description is "[what's on the posts]"]
+The two cloak posts are fixed in place in Void.   Understand "ancient/hunting/post" as two cloak posts.  [The description is "[what's on the posts]"]
 
 Rule for printing a locale paragraph about the posts:
 	say "In one of the nooks are two posts, designed for displaying ancient hunting cloaks";
@@ -152,7 +165,20 @@ To snatch the cloak:
 
 
 
-The hunting cloak is a wearable on the cloak posts.  The hunting cloak can be purple or invisible.  The hunting cloak is purple.  The description is "[if the hunting cloak is purple]In prehistoric times, people made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camoflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot.  On foot![otherwise]You can feel the supple folds of the cloak, but cannot see it at all."  Understand "hippo/hippotomai/dark/purple/variegation/camoflage" as the hunting cloak.  The printed name of the hunting cloak is "[if the hunting cloak is invisible]invisible[otherwise]purple[end if] hunting cloak".
+The hunting cloak is a wearable on the cloak posts.  The hunting cloak can be purple or invisible.  The hunting cloak is purple.  The description is "[hunting cloak description]."  Understand "hippo/hippotomai/dark/purple/variegation/camoflage/cloaks" as the hunting cloak.  The printed name of the hunting cloak is "[if the hunting cloak is purple]purple[otherwise]invisible[end if] hunting cloak".
+
+To say hunting cloak description:
+	if the hunting cloak is on the cloak posts:
+		if the hunting cloak is purple:
+			say "A plaque by the cloaks claims that in prehistoric times, people made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camoflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot";
+		otherwise:
+			say "The cloak posts appear to be empty";
+	otherwise:
+		if the hunting cloak is purple:
+			say "In prehistoric times, people made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camoflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot.  On foot!";
+		otherwise:
+			say "You can feel the supple folds of the cloak, but cannot see it at all";
+
 
 Does the player mean doing anything with the hunting cloak:  it is very likely.
 
@@ -191,6 +217,11 @@ Check unlocking Librum Door with:
 Before going inside from Librum Landing Cradle:
 	try entering Librum Door instead;
 
+Check entering Librum Door during Being Chased:
+	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Guard has followed you, and you simply don't have any room to maneuver.";
+	end the story saying "You have been captured.";
+
+
 Check entering Librum Door:
 	if the lone guard is in the location:
 		if Horatio is in the location:
@@ -206,12 +237,12 @@ Check entering Librum Door:
 				say "Horatio is distracting the guard by discussing [one of]the ethics of a monarchy[or]his grandchildren[or]regrettable fashion choices from the youth of today[or]whether the dot on the back of looks infected[or]how to get to moncrepistan (is that a real place?) from here[or]whether her mother was the Isabella he once knew[or]some meandering story about flying to the park[cycling], but you can't just [i]glide in[r]." instead;
 		otherwise:
 			say "The guard is entirely too watchful to let you do that." instead;
-	otherwise:
+	otherwise if the location is Librum Itself:
 		[*Leaving* the Librum.  We'll assume the guard and Horatio are still outside.  And, sigh, not make this a puzzle.]
 		say "Listening to Horatio talk with the guard, you enter the shadows just inside the Librum door, where you can watch the guard but not be seen.  When the moment is right, you launch yourself through, and back up into the safety of the mist.";
 
 Carry out entering Librum door during Being Chased:
-	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Squad has followed you, and you simply don't have any room to maneuver.";
+	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Guard has followed you, and you simply don't have any room to maneuver.";
 	end the story saying "You have been captured.";
 
 Check closing the purple capsa of opening when the location is the Librum Itself:
@@ -390,24 +421,24 @@ After going from in_forest:
 	continue the action;
 
 After going to in_forest:
-	if Constance is speeding:
-		now Constance is super-fast;
-	otherwise if Constance is super-fast:
+	If Constance is super-fast:
 		say "Your wings tighten close to your body as you rocket through the mist, your keen eyesight only barely sufficient to keep you from crashing into branches and trees[first time].
 		
 		It is, without a doubt, the most thrilling dive of your entire life.
 		
 		At the last second, you flare your wings, and feel like they're about to rip off of your shoulders.  You skim over the netting, your curved talons juddering across the lines, making your whole body tremble until you pull up again to dodge more tree trunks.  You allow yourself a triumphant cry, safe in the knowledge that nobody could catch you at these speeds.  Nobody[only].";
 		continue the action;
-		stop;
 	otherwise:
-		now Constance is speeding;
-	if go go go is happening:
-		now Constance is super-fast;
-		say "You dive into and through the forest, twisting expertly as you dodge trees and branches.  The fog closes behind you with a quiet 'shhhhmp', leaving no record of your passing.";
-	otherwise:
-		say "You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.";
-	continue the action;
+		if Constance is speeding:
+			now Constance is super-fast;
+		otherwise:
+			now Constance is speeding;
+			if go go go is happening:
+				now Constance is super-fast;
+				say "You dive into and through the forest, twisting expertly as you dodge trees and branches.  The fog closes behind you with a quiet 'shhhhmp', leaving no record of your passing.";
+			otherwise:
+				say "You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.";
+		continue the action;
 
 Map ends here.
 

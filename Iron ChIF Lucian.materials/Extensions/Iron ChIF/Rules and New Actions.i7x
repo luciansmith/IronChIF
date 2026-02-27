@@ -56,11 +56,15 @@ Section credits
 Crediting is an action out of world applying to nothing.  Understand "credits" as Crediting.
 
 Carry out Crediting:
-	say "This game would not have been possible without the intense energy of @otistdog on the intfiction forums creating the idea of having an 'Iron ChIF' competition, nor without Ryan Veeder agreeing to be the aforementioned 'Iron ChIF Inform 7' to compete against.
+	say "First: a word about design philosophy.  The game has sub-optimal endings, but by design they are all avoidable with a single >UNDO.  There may be bugs that circumvent that design!  So keep multi-undo and/or save files at the ready.	
+	
+	This game would not have been possible without the intense energy of @otistdog on the intfiction forums creating the idea of having an 'Iron ChIF' competition, nor without Ryan Veeder agreeing to be the aforementioned 'Iron ChIF Inform 7' to compete against.
 	
 	Particular thanks go to my betatesters, Sarah Wilson (day 1), Stephen Granade (day 2), Allyson Gray (day 3), and Dan 'inky' Shiovitz (day 4).
 	
 	Thanks also to the official judges for this competition: Chandler Groover, Victor Gijsbers, J. J. McC, Brian Rushton, and N. Cormier, and technical advisor Zed Lopez.  You all have been great!
+
+	The cover art image is courtesy Greg Hume (Greg5030)/CC BY-SA 3.0
 	
 	Apologies to N. Cormier for letting her cats out backstage.  I forgot to check the spotlights!"
 

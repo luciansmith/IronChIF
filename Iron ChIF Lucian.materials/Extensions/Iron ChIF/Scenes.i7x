@@ -14,18 +14,15 @@ Not recovering ends when the capsa of opening is closed.
 Not recovering has a number called timer.  The timer of not recovering is zero.
 
 Every turn during Not Recovering:
-	if the player is Horatio:
-		stop;
-	if Horatio is stage three:
-		stop;
-	if the timer of not recovering is at least six:
-		if go go go is happening:
-			say "[one of]Your wound continues to bleed.  It's not a huge wound, but the blood is flowing rather quickly[or]Your wound aches.  You look down at it, and it's still open and a fast small trickle of blood drips down your side[or]Your open wound really should have closed by now, but it continues to bleed[stopping].";
-		Otherwise:
-			say "[one of]Your wound continues to lightly bleed[or]Your wound aches.  You look down at it, and it's still open and bleeding[or]Your open wound really should have closed by now, but it continues to lightly bleed[stopping].";
-		now the timer of not recovering is 0;
-	otherwise:
-		increase the timer of not recovering by one;
+	if the player is not Horatio and Horatio is not stage three:
+		if the timer of not recovering is at least six:
+			if go go go is happening:
+				say "[one of]Your wound continues to bleed.  It's not a huge wound, but the blood is flowing rather quickly[or]Your wound aches.  You look down at it, and it's still open and a fast small trickle of blood drips down your side[or]Your open wound really should have closed by now, but it continues to bleed[stopping].";
+			Otherwise:
+				say "[one of]Your wound continues to lightly bleed[or]Your wound aches.  You look down at it, and it's still open and bleeding[or]Your open wound really should have closed by now, but it continues to lightly bleed[stopping].";
+			now the timer of not recovering is 0;
+		otherwise:
+			increase the timer of not recovering by one;
 
 [Above code courtesy of ideas from https://intfiction.org/t/every-third-turn/1443]
 
@@ -35,6 +32,7 @@ Actually Recovering ends when Constance is not wounded.
 
 When Actually Recovering begins:
 	[Perhaps eventually check to see if the capsa of Health is open, but the premise of the game is that it's open the entire time; we'd have to let the player close it and then get wounded for this to not happen.]
+	now Constance is not wounded;
 	say "You feel your skin prickle where you were wounded, and look down.  To your amazement, your wound has closed and the bleeding stopped.  As you watch, even the line from the cut disappears, and the feathers around it fluff out again.
 	
 	It's the scroll of Health.  It [i]has[r] to be.  It's actually here!  And active.  Hmm."
@@ -62,9 +60,34 @@ When Ash_chat begins:
 	[i]Note to testers:  getting this out the door first; you can look at things, but can't interact much.  Taking the capsa triggers the final scene, so look/do stuff first.  And it won't work yet, so just keep a list/transcript of the stuff you tried.  LS DEBUG[r]."
 
 Every turn during Ash_chat:
-	say "Ash prattles happily, telling you about [one of]thing1[or]thing2[or]etc[cycling]."
+	say "Ash prattles happily, telling you [one of]about a model treehouse they made out of sticks[or]a long convoluted story about drama between their stuffed animals[or]about a flock of wild birds that lived beneath her window for a whole season[or]that they secretly dislike dust baths[or]how they need to build another treehouse because Mr. Featherstick doesn't like the first one[or]about a song they're trying to learn[or]that Loudbeak Threewings can't go anywhere without her special stack of [cycling]."
 
 Ash is a person in Nursery_itself.  "Ash prattles happily to you; even including Horatio in the conversation at times as if he was an old friend."  The description is "Ash's flight feathers are starting to come in, though they won't be able to actually fly for at least another year.  Worryingly, the feathers are drooping and seem brittle; early signs of the Red Plague.  It's not a stage of the plague you've ever seen before; maybe the capsa halted the disease's progression, but didn't cure it?  How long have they been like this?"
+
+
+answering the Ash that something is chit-chat.
+telling the Ash about something is chit-chat.
+asking the Ash about something is chit-chat.
+asking the Ash for something is chit-chat.
+
+instead of chit-chat:
+	say "There's no way you're getting a word in edgewise in this chatterfall.";
+
+Instead of attacking the Ash:
+	say "You playfully bat Ash on the head.  They stick their tongue out at you.";
+
+Instead of kissing the Ash:
+	say "You give Ash a peck on the shoulder.  They preen.";
+
+Instead of showing something to the Ash:
+	say "You consider doing that, but are enjoying the chatter too much to break it up.";
+
+Instead of giving something to the Ash:
+	say "You'd never see it again, and you probably need it.  Maybe later.  If there's time.  If.";
+
+Instead of waking the Ash:
+	say "Hoo boy, if Ash fell asleep you definitely would not wake them up again.";
+
 
 Finale is a scene.  Finale begins when the player encloses the green capsa.
 
@@ -100,7 +123,7 @@ The description is "The feathers on Horatio's neck ruffle.  'She has already den
 
 F3 is a page.  It is for F1.
 The cdesc is "Leave without the capsa."
-The description is "'I can't do it,' you say.  'I can't condemn Ash for the sake of my people.  I can't condemn Ash and my people for the sake of a fairy-tale promise.'  You stroke Ash's head one more time.  'I love you, kid,' you tell them.  'Say hi to your mom for me.'  
+The description is "'I can't do it,' you say.  'I can't condemn Ash for the sake of my people.  I can't condemn anyone for the sake of a fairy-tale promise.'  You stroke Ash's head one more time.  'I love you, kid,' you tell them.  'Say hi to your mom for me.'  
 
 You place the capsa of taclor back on the desk, step onto the window ledge, and launch yourself into the mist."
 
@@ -109,7 +132,7 @@ A page-toggle rule for F3:
 
 F4 is a page.  It is for F1.
 The cdesc is "Leave with the capsa, and leave Ash behind."
-The description is "'I can't do it,' you say.  'I can't take Ash away from their mother.  I can't condemn Ash and my people for the sake of a fairy-tale promise.'  You stroke Ash's head one more time.  'I love you, kid,' you tell them.  'Say hi to your mom for me.'  
+The description is "'I can't do it,' you say.  'I can't take Ash away from their mother.  I can't condemn anyone for the sake of a fairy-tale promise.'  You stroke Ash's head one more time.  'I love you, kid,' you tell them.  'Say hi to your mom for me.'  
 
 You and Horatio step onto the window ledge, and launch yourselves into the mist.  You hear the strangled cry of a familiar Red Wing behind you, but don't turn back."
 
@@ -118,7 +141,7 @@ A page-toggle rule for F4:
 
 F5 is a page.  It is for F1.
 The cdesc is "Leave with the capsa, and take Ash with you."
-The description is "'I can't do it,' you say.  'I can't take condemn Ash for the sake of my people.  I can't condemn my people for the sake of Ash.  I can't condemn both for the sake of a fairy-tale promise.'
+The description is "'I can't do it,' you say.  'I can't condemn Ash for the sake of my people.  I can't condemn my people for the sake of Ash.  I can't condemn both for the sake of a fairy-tale promise.'
 
 'Kid,' you turn to Ash.  'Put this on.  We're going on a trip, and it's cold out there.'  Ash delights in putting on a genuine invisibility cloak, then hops on your back with anticipation when you tell him.  Horatio dons his own cloak as well, disappearing from view.
 
@@ -154,22 +177,22 @@ F7 is a page.  The description is "Horatio continues to sing.  Ash's face is a m
 
 F7a is a page.  It is for F7.  It flips to F8.
 The cdesc is "Rush to her side."
-The description is "You rush to the side of your love, cradling her head with your wing.  'Aubrey, darling, be all right.  Listen to me.  [i]Be all right[r].  I need you.  I need the true you.".
+The description is "You rush to the side of your love, cradling her head with your wing.  'Aubrey, darling, be all right.  Listen to me.  [i]Be all right[r].  I need you.  I need the true you.'".
 
 F7b is a page.  It is for F7.  It flips to F8.
 The cdesc is "Shield Ash from the sight."
-The description is "'Ash!' you cry.  You wrench him physically so he stands facing Horatio and away from his stricken mother.  'Listen to the song.  Remember it!' you cry."
+The description is "'Ash!' you cry.  You wrench them physically so they stand facing Horatio and away from their stricken mother.  'Listen to the song.  Remember it!' you cry."
 
 F7c is a page.  It is for F7.  It flips to F8.
 The cdesc is "Tell Horatio to stop.".
-The description is "'Horatio!  It's too much!  You have to stop!' you cry.  You might better yell at a waterfall.  The song tumbles from his mouth "
+The description is "'Horatio!  It's too much!  You have to stop!' you cry.  You might better yell at a waterfall.  The song tumbles from his mouth, filling the room, the Aerie, the world with sound."
 
 F8 is a page.  The description is "The song reaches a crescendo.  The Aerie itself threatens to shake apart."
 
 
 F8a is a page.  It is for F8.  It flips to F9.  It is cancelled by F7b and F7c.
 The cdesc is "Hold Aubrey tight."
-The description is "You close your eyes and wrap Aubrey with both wings, not to shield her from the song, which is everwhere, even your bones, but just to let her know she's not alone.  She can't be alone when she dies."
+The description is "You close your eyes and wrap Aubrey with both wings, not to shield her from the song, which is everywhere, even your bones, but just to let her know she's not alone.  She can't be alone when she dies."
 
 F8b is a page.  It is for F8.  It flips to F9.  It is cancelled by F7a.
 The cdesc is "Turn to Aubrey."
@@ -191,9 +214,9 @@ And threading it together, it is life.  Health.  The roost.  The nest.  A bubble
 
 And then it's done.  The writing fades from the scroll, and Horatio gently rewinds it back to the title.  'TACHLOR'.
 
-Aubrey relaxes, wakes.  Looks into your eyes.  'I'm so sorry,' she whispers.  'My child.'
+Aubrey relaxes, wakes.  Looks into your eyes.  'I'm so sorry,' she whispers.  She glances at her child.  'Ash...' she explains.
 
-'I'm sorry, too,' you answer.  'My mother.'  You both look at the other with glistening eyes.
+'I'm sorry, too,' you answer.  'My mother,' you explain.  You both look at the other with glistening eyes.
 
 Then Aubrey gets a strange expression on her face.  'I... I [i]remember[r],' she says.  'The... Ash.  Come here.'
 
@@ -201,9 +224,9 @@ Obediently, Ash comes and perches by her side.
 
 Aubrey begins to sing.  It's not The Song.  Nothing will ever be The Song.  But it's an echo.
 
-As she sings, Ash's pallor fades, and his feathers straighten.  A hunch you didn't realize he had straightens out.  'Oh!' he exclaims.  'OH!'  His eyes shine.
+As she sings, Ash's pallor fades, and their feathers straighten.  A hunch you didn't realize they had straightens out.  'Oh!' they exclaim.  'OH!'  Their eyes shine.
 
-You help Aubrey to her feet.  She looks at the three of you, and rises to her full height, full of queenly majesty.  'Come,' she says.  'We have work to do.'"
+You help Aubrey to her feet.  She looks around at the four of you, and rises to her full height, full of queenly majesty.  'Come,' she says.  'We have work to do.'"
 
 A page-toggle rule for F9:
 	end the story finally saying "You have changed the world."

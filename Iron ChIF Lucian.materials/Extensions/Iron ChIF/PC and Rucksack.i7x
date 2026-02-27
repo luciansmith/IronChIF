@@ -64,31 +64,31 @@ To carry out everything rezrovving:
 		
 		The door behind her opens silently as she tackles you to the ground.";
 		end the story saying "You have been captured.";
-		stop;
-	repeat with item running through lockable things:
-		if the item is locked:
-			now the item is unlocked;
-			if the player can see the item:
-				say "[The item] clicks as it unlocks!";
-	repeat with item running through openable things:
-		if the item is closed:
-			if the item is a capsa:
+	Otherwise:
+		repeat with item running through lockable things:
+			if the item is locked:
+				now the item is unlocked;
 				if the player can see the item:
-					say "The magic of [the item] prevents it from being opened.";
+					say "[The item] clicks as it unlocks!";
+		repeat with item running through openable things:
+			if the item is closed:
+				if the item is a capsa:
+					if the player can see the item:
+						say "The magic of [the item] prevents it from being opened.";
+				otherwise:
+					now the item is open;
+					if the player can see the item:
+						say "[The item] flies open!";
+		if the rucksack is worn:
+			say "The straps and buckles on your rucksack fly open and it falls!";
+			now the rucksack is carried by the player;
+			if Everything Falls is happening and the gold capsa is enclosed by the location:
+				say "Fortunately, it hovers in midair due to the scroll of down, so you're able to immediately grab it again.";
 			otherwise:
-				now the item is open;
-				if the player can see the item:
-					say "[The item] flies open!";
-	if the rucksack is worn:
-		say "The straps and buckles on your rucksack fly open and it falls!";
-		now the rucksack is carried by the player;
-		if Everything Falls is happening and the gold capsa is enclosed by the location:
-			say "Fortunately, it hovers in midair due to the scroll of down, so you're able to immediately grab it again.";
-		otherwise:
-			try dropping the rucksack;
-	If the reset state of the woodpeckers is 5:
-		Now the woodpeckers are activated; [Starts the 'being chased' scene]
-		Now the reset state of the woodpeckers is 0;
+				try dropping the rucksack;
+		If the reset state of the woodpeckers is 5:
+			Now the woodpeckers are activated; [Starts the 'being chased' scene]
+			Now the reset state of the woodpeckers is 0;
 
 Check closing something openable during Everything Is Open:
 	if the noun is not a capsa:
@@ -113,20 +113,24 @@ Every turn during Reset Sensors:
 		if go go go is happening and the reset state of the woodpeckers is less than 5:
 			increase the reset state of the woodpeckers by 1;
 		
-Doors Re-close is a recurring scene.  Doors Re-close begins when Everything Is Open ends.  Doors Re-close ends when (Librum Door) is locked.
+Doors Re-close is a recurring scene.  Doors Re-close begins when Everything Is Open ends.  Doors Re-close ends when cannot-close.
 
 Every turn during Doors Re-close:
-	if Being Chased is happening:
-		stop;
-	if the Librum door is open:
-		now the Librum door is closed;
-		if the player can see the Librum door:
-			say "The guard closes the Librum door.";
-	otherwise if the Librum door is unlocked:
-		now the Librum door is locked;
-		if the player can see the Librum door:
-			say "The guard locks the Librum door.";
-	[LS DEBUG:  revisit this if I implement other guarded doors at some point.]
+	if Being Chased is not happening:
+		if the Librum door is open:
+			now the Librum door is closed;
+			if the player can see the Librum door:
+				say "The guard closes the Librum door.";
+		otherwise if the Librum door is unlocked:
+			now the Librum door is locked;
+			if the player can see the Librum door:
+				say "The guard locks the Librum door.";
+		[LS DEBUG:  revisit this if I implement other guarded doors at some point.]
+
+To decide whether cannot-close:
+    if Everything is Open is happening, decide yes;
+    if the Librum Door is locked, decide yes;
+    decide no.
 
 Section down
 
@@ -174,6 +178,11 @@ When Everything Falls ends:
 	otherwise:
 		say "You steady yourself as 'down' returns to its normal state.";
 
+Check taking when the player is Horatio:
+	say "You don't need anything.  You just need to find the prodigal.";
+
+
+
 [When Everything Falls begins:
 	carry out everything rudenjing;
 ]
@@ -201,7 +210,7 @@ When go go go ends:
 
 Section Zork Grand Inquisitor Live Forever
 
-A black capsa is a capsa in the Librum Itself.  "In the back of the lower level, in a storage cupboard, you find the black capsa, just as Horatio described to you.  You wonder how he managed to find out where it was, but suppose the man has his conversational tricks."  The black capsa can be explained.  The black capsa is not explained.  The description is "The black capsa contains a scroll of igram, [if the black capsa is explained]which apparently turns purple things invisible.  The only capsae you've heard of having an ability even vaguely like that, you assumed were jokes.  Now you're not so sure.[otherwise]but Horatio won't tell you what that means.[end if]  It is [if the black capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to make purple things invisible (sigh)[end if]."  Understand "igram" as the black capsa.
+A black capsa is a capsa in the Librum Itself.  "In the back of the lower level, in a storage cupboard, you find the black capsa, just as Horatio described to you.  You wonder how he managed to find out where it was, but suppose the man has his conversational tricks."  The black capsa can be explained.  The black capsa is not explained.  The description is "The black capsa contains a scroll of igram, [if the black capsa is explained]which apparently turns purple things invisible.  The only capsae you've heard of having an ability even vaguely like that, you assumed were jokes.  Now you're not so sure.[otherwise]but Horatio won't tell you what that means.[end if]  It is [if the black capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, freeing the scroll's power[end if]."  Understand "igram" as the black capsa.
 
 A scroll of igram is a scroll in the black capsa.  The name is "IGRAM".  Understand "make purple things invisible" as the scroll of igram.  Understand "invisible/invisibility" as the scroll of igram.
 
