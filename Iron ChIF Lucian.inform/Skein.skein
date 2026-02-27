@@ -1057,7 +1057,7 @@
   </item>
   <item nodeId="node-920">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Nursery&#x000A;The Nursery is not exactly how you remember it.  It was set up to grow new walls and furniture over time, to keep any occupant engaged and growing.  But the rhythm of it is baked into your bones.  The place for the roosts, along the north wall.  The desk, grown to the size of the user.  The endless parade of ropes and balls and other toys along the south, some grown and some brought in.  The giant window to the west, overlooking the beautiful, beautiful forest.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Nursery&#x000A;The Nursery is not exactly how you remember it.  It was set up to grow new walls and furniture over time, to keep any occupant engaged and growing.  But the rhythm of it is baked into your bones.  The place for the roosts, along the north wall.  The desk, grown to the size of the user.  The endless parade of ropes and balls and other toys along the south, some grown and some brought in.  The giant window to the west, overlooking the beautiful, beautiful forest.&#x000A;&#x000A;On the desk is a green capsa (in which is a scroll of taclor).&#x000A;&#x000A;Ash prattles happily to you; even including Horatio in the conversation at times as if he was an old friend.&#x000A;&#x000A;Perched on the open window looking out over the forest is a fledgling Red Wing Clan.  As you enter, they turn and their face and feathers light up with delight.  "Aunty Constance!" they chirrup, and dash across the room to bury their face in your downfeathers.&#x000A;&#x000A;You stroke the feathers on their head gently.  The feathers crackle worryingly.  "Hi, Ash," you say.  It's good to see you, too."&#x000A;&#x000A;Their face sufficiently smothered, Ash pops out again excitedly.  "It's been so long!  Did you know there's a whole new wing of the southwest aerie?  Momma took me there just the other day, and..."&#x000A;&#x000A;Ash continues to prattle, happily telling you all about their life.&#x000A;&#x000A;Note to testers:  getting this out the door first; you can look at things, but can't interact much.  Taking the capsa triggers the final scene, so look/do stuff first.  And it won't work yet, so just keep a list/transcript of the stuff you tried.  LS DEBUG.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1067,6 +1067,105 @@
   <item nodeId="node-921">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:&#x000A;  a purple hunting cloak&#x000A;  a black capsa (open)&#x000A;    a scroll of igram&#x000A;  a leather rucksack (open)&#x000A;    a blue capsa of mist (closed)&#x000A;    a red capsa of hasten (open)&#x000A;      a scroll of quiste&#x000A;    a purple capsa of opening (open)&#x000A;      a scroll of rezrov&#x000A;    a gold capsa of down (closed)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-922"/>
+    </children>
+  </item>
+  <item nodeId="node-922">
+    <command xml:space="preserve">get capsa</command>
+    <result xml:space="preserve">Which do you mean, the green capsa, the black capsa, the blue capsa of mist, the red capsa of hasten, the purple capsa of opening, or the gold capsa of down?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-923"/>
+    </children>
+  </item>
+  <item nodeId="node-923">
+    <command xml:space="preserve">green</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;You hold the capsa of health in your hands, turning it over and looking at it from all sides.  It's what you came here for.  To take it back home and save your mother.  Your people.  Is it still that simple?&#x000A;&#x000A;"You are now the holder of the scroll of taclor" says Horatio, as Ash continues to tell you about what it was like to see a real jaguar that one time.  "Will you have me read it?"&#x000A;&#x000A;1) "Ash was holding it before.  Why can't they make the decision?"&#x000A;2) "What will happen when you read it?"&#x000A;3) "Why not let the queen... let Aubrey decide?"&#x000A;4) Leave without the capsa.&#x000A;5) Leave with the capsa, and leave Ash behind.&#x000A;6) Leave with the capsa, and take Ash with you.&#x000A;7) Let Horatio read the scroll of taclor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-924"/>
+    </children>
+  </item>
+  <item nodeId="node-924">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">["Ash was holding it before.  Why can't they make the decision?"]&#x000A;&#x000A;Horatio looks at Ash, then looks at you.  Ash continues to tell you about having to get their desk grown twice in two months because they were growing so fast.&#x000A;&#x000A;Yeah, OK, fair.&#x000A;&#x000A;Horatio looks at you expectantly.&#x000A;&#x000A;1) "What will happen when you read it?"&#x000A;2) "Why not let the queen... let Aubrey decide?"&#x000A;3) Leave without the capsa.&#x000A;4) Leave with the capsa, and leave Ash behind.&#x000A;5) Leave with the capsa, and take Ash with you.&#x000A;6) Let Horatio read the scroll of taclor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-925"/>
+    </children>
+  </item>
+  <item nodeId="node-925">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">["What will happen when you read it?"]&#x000A;&#x000A;"I know not," Horatio replies.  "I know that it will grant a power related to the scroll's effect to some percentage of all people.  Everywhere.  Regardless of class or heritage or clan.  My guess is that it will improve their health--perhaps make them immune, perhaps give them regeneration, perhaps grant them an immortality, of sorts."&#x000A;&#x000A;"Will it affect people right now?" you ask, "Or just people in the future?  People hatched tomorrow?  Eggs laid tomorrow?"&#x000A;&#x000A;"The stories do not say," he replies.  "What difference is five years; twenty years to the march of history?"&#x000A;&#x000A;"It makes a difference to me," you say.&#x000A;&#x000A;"Indeed," he replies.&#x000A;&#x000A;Horatio looks at you expectantly.&#x000A;&#x000A;1) "Why not let the queen... let Aubrey decide?"&#x000A;2) Leave without the capsa.&#x000A;3) Leave with the capsa, and leave Ash behind.&#x000A;4) Leave with the capsa, and take Ash with you.&#x000A;5) Let Horatio read the scroll of taclor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-926"/>
+    </children>
+  </item>
+  <item nodeId="node-926">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">["Why not let the queen... let Aubrey decide?"]&#x000A;&#x000A;The feathers on Horatio's neck ruffle.  "She has already denied me.  Every day, I ask, and every day, she sends her rejection.  If you leave, I will keep asking her.  She may change her mind.  She may not.  You may know her better than I."&#x000A;&#x000A;Horatio looks at you expectantly.&#x000A;&#x000A;1) Leave without the capsa.&#x000A;2) Leave with the capsa, and leave Ash behind.&#x000A;3) Leave with the capsa, and take Ash with you.&#x000A;4) Let Horatio read the scroll of taclor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-927"/>
+    </children>
+  </item>
+  <item nodeId="node-927">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">[Leave without the capsa.]&#x000A;&#x000A;"I can't do it," you say.  "I can't condemn Ash for the sake of my people.  I can't condemn Ash and my people for the sake of a fairy-tale promise."  You stroke Ash's head one more time.  "I love you, kid," you tell them.  "Say hi to your mom for me."&#x000A;&#x000A;You place the capsa of taclor back on the desk, step onto the window ledge, and launch yourself into the mist.&#x000A;&#x000A;&#x000A;&#x000A;    *** You have learned much. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-928"/>
+    </children>
+  </item>
+  <item nodeId="node-928">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Nursery&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-929"/>
+    </children>
+  </item>
+  <item nodeId="node-929">
+    <command xml:space="preserve">4</command>
+    <result xml:space="preserve">[Let Horatio read the scroll of taclor.]&#x000A;&#x000A;"I can't do it," you say.  "There's no good solution here.  Even the scroll itself only halts the disease; it doesn't cure it.  Nobody wins."&#x000A;&#x000A;You turn to Horatio.  "And maybe nobody I care about wins if you read this, but lots of people I don't know win.  And maybe we win anyway.  Or maybe you're just crazy.  It's a risk.  Life is risk.  In the balance, maybe that's enough."&#x000A;&#x000A;You take a deep breath, and hand him the scroll.  "Read it," you tell him.&#x000A;&#x000A;Horatio nods, pulls out a small key, inserts it into the side of the capsa, and begins to slowly turn it, exposing the rest of the writing as the scroll is rolled from one rod to the next.  He reads.&#x000A;&#x000A;Or, rather, he sings.  You've never heard a buzzard sing like this before, but then again, you've never heard anyone sing like this before.  It's a deep, primal song of awakening; of understanding; of comfort.  Ash's beak drops open in amazement and wonder.&#x000A;&#x000A;Then Aubrey, your friend, your love, your queen, your enemy, bursts through the door.  "Ash!" she cries, then, seeing them safe, turns to Horatio.  "No!" she gasps, and launches herself at him.&#x000A;&#x000A;1) Get between Aubrey and Horatio.&#x000A;2) "Aubrey, no!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-930"/>
+    </children>
+  </item>
+  <item nodeId="node-930">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">[Get between Aubrey and Horatio.]&#x000A;&#x000A;You fling yourself across the room to stop her, but before she even reaches you, her head jerks back, she stops, then falls twitching to the floor.&#x000A;&#x000A;Horatio continues to sing.  Ash's face is a mixture of horror and delight.&#x000A;&#x000A;1) Rush to her side.&#x000A;2) Shield Ash from the sight.&#x000A;3) Tell Horatio to stop.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-931"/>
+    </children>
+  </item>
+  <item nodeId="node-931">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">[Rush to her side.]&#x000A;&#x000A;You rush to the side of your love, cradling her head with your wing.  "Aubrey, darling, be all right.  Listen to me.  Be all right.  I need you.  I need the true you.&#x000A;&#x000A;The song reaches a crescendo.  The Aerie itself threatens to shake apart.&#x000A;&#x000A;1) Hold Aubrey tight.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-932"/>
+    </children>
+  </item>
+  <item nodeId="node-932">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">[Hold Aubrey tight.]&#x000A;&#x000A;You close your eyes and wrap Aubrey with both wings, not to shield her from the song, which is everwhere, even your bones, but just to let her know she's not alone.  She can't be alone when she dies.&#x000A;&#x000A;You didn't expect the apocalypse to be this pretty.&#x000A;&#x000A;&#x000A;&#x000A;    *** You have changed the world. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
