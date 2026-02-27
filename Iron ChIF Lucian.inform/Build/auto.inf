@@ -64226,7 +64226,7 @@ Global max_z_object;
         }
         (say__p = 1);
         ParaContent();
-        print "This game would not have been possible without the intense energy of @@64@{6f}tistdog on the intfiction forums creating the idea of having an ~Iron ChIF~ competition, nor without Ryan Veeder agreeing to be the aforementioned ~Iron ChIF Inform 7~ to compete against.^^Particular thanks go to my betatesters, Sarah Wilson (day 1), Stephen Granade (day 2), Allyson Gray (day 3), and Dan ~inky~ Shiovitz (day 4).^^Thanks also to the official judges for this competition: Chandler Groover, Victor Gijsbers, J. J. McC, Brian Rushton, and N. Cormier, and technical advisor Zed Lopez.  You all have been great!^^The cover art image is courtesy Greg Hume (Greg5030)/CC BY-SA 3.0^^Apologies to N. Cormier for letting her cats out backstage.  I forgot to check the spotlights!";
+        print "This game would not have been possible without the intense energy of @@64@{6f}tistdog on the intfiction forums creating the idea of having an ~Iron ChIF~ competition, nor without Ryan Veeder agreeing to be the aforementioned ~Iron ChIF Inform 7~ to compete against.^^Particular thanks go to my betatesters, Sarah Willson (day 1), Stephen Granade (day 2), Allyson Gray (day 3), and Dan ~inky~ Shiovitz (day 4).^^Thanks also to the official judges for this competition: Chandler Groover, Victor Gijsbers, J. J. McC, Brian Rushton, and N. Cormier, and technical advisor Zed Lopez.  You all have been great!^^The cover art image is courtesy Greg Hume (Greg5030)/CC BY-SA 3.0^^Apologies to N. Cormier for letting her cats out backstage.  I forgot to check the spotlights!";
         print "^";
     } else {
         if ((debug_rules > 1)) {

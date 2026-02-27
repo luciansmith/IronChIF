@@ -91,7 +91,7 @@
   </item>
   <item nodeId="node-1083">
     <command xml:space="preserve">showme me</command>
-    <result xml:space="preserve">yourself - woman&#x000A;    leather rucksack (worn) - player's holdall&#x000A;        purple capsa of opening - capsa&#x000A;            scroll of rezrov - scroll&#x000A;        gold capsa of down - capsa&#x000A;            scroll of rudenj - scroll&#x000A;        red capsa of hasten - capsa&#x000A;            scroll of quiste - scroll&#x000A;location: in High Above the Royal Aerie&#x000A;unlit, inedible, portable; transparent, female; singular-named, proper-named; description: "As a member of the Falcon Clan, your most striking features are your large black eyes, offset with yellow, and slightly recessed under a grey-feathered scalp.  The grey blends from your head, mottling along your back and the backside of your wings, while your front, throat, and underwings are feathered white with brown striations.  A close encounter with a Raven during your previous mission left a few missing contour feathers and some down, but not enough to hinder movement or flight."&#x000A;initial appearance: "Constance, a powerful Falcon Clan female, is here, her large black eyes watching you with fierce intensity."&#x000A;carrying capacity: 100&#x000A;printed name: "Constance"&#x000A;printed plural name: "women"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;Constance condition: cruising&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -244,7 +244,7 @@
   </item>
   <item nodeId="node-1100">
     <command xml:space="preserve"> </command>
-    <result xml:space="preserve">"Good job, Constance," you say as you approach to fly adjacent to her broad circling.&#x000A;&#x000A;She peers at you, and you know she can make out every barb on each of your feathers.  Patiently, you wait.&#x000A;&#x000A;"You're Horatio," she finally says.  "Didn't the queen... imprison you for heresy?"&#x000A;&#x000A;"Indeed," you reply.&#x000A;&#x000A;"And I just unlocked your cell," she says.&#x000A;&#x000A;"Indeed," you reply.&#x000A;&#x000A;"They wouldn't tell me what the heresy was.  I guess that's the point of trying to suppress dangerous ideas."&#x000A;&#x000A;This time, you just wait, and slightly incline your head.  Saying "Indeed" again might make her self-conscious about her babbling.&#x000A;&#x000A;There's a pause.&#x000A;&#x000A;"What was it?" she asks.&#x000A;&#x000A;1) Tell her about capsae.&#x000A;2) Tell her what you can do.&#x000A;3) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;4) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">"Good job, Constance," you say as you approach to fly adjacent to her broad circling.&#x000A;&#x000A;She peers at you, and you know she can make out every barb on each of your feathers.  Patiently, you wait.&#x000A;&#x000A;"You're Horatio," she finally says.  "Didn't the queen... imprison you for heresy?"&#x000A;&#x000A;"Indeed," you reply.&#x000A;&#x000A;"And I just unlocked your cell," she says.&#x000A;&#x000A;"Indeed," you reply.&#x000A;&#x000A;"They wouldn't tell me what the heresy was.  I guess that's the point of trying to suppress dangerous ideas."&#x000A;&#x000A;This time, you just wait, and slightly incline your head.  Saying "Indeed" again might make her self-conscious about her babbling.&#x000A;&#x000A;There's a pause.&#x000A;&#x000A;"What was it?" she asks.&#x000A;&#x000A;1) Tell her about capsae.&#x000A;2) Tell her what you can do.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -253,7 +253,7 @@
   </item>
   <item nodeId="node-1101">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Tell her about capsae.]&#x000A;&#x000A;"I believe that the gods gave us the capsae to benefit everyone," you say.&#x000A;&#x000A;Constance frowns.  "That's not... a dangerous idea.  I mean, people may not truly believe in the gods much today, but they're generally seen as having been... nice?  I guess?"&#x000A;&#x000A;1) Explain.&#x000A;2) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;3) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[Tell her about capsae.]&#x000A;&#x000A;"I believe that the gods gave us the capsae to benefit everyone," you say.&#x000A;&#x000A;Constance frowns.  "That's not... a dangerous idea.  I mean, people may not truly believe in the gods much today, but they're generally seen as having been... nice?  I guess?"&#x000A;&#x000A;1) Explain.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -262,7 +262,7 @@
   </item>
   <item nodeId="node-1102">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Explain.]&#x000A;&#x000A;"When I say everyone, I mean everyone.  In the whole world.  As far as the Clans extend."&#x000A;&#x000A;Constance chuckles.  "A little hard for the capsae to do that.  Longest range I know of is, like, two miles."&#x000A;&#x000A;"Indeed," you reply.&#x000A;&#x000A;Constance locks her wings so she can turn and look at you intently for several seconds as she glides.  She probably thinks she's being tested.  Which would be good, because she is.  You wait.&#x000A;&#x000A;"So.  You believe that the capsae are being misused.  That the kingdoms hoarding them should instead... share them?  Move them around?  Shuffle them, so each kingdom gets a bit of their power every so often?"&#x000A;&#x000A;"Misused, yes," you reply.  "And, yes, it would be in the spirit of that initial gift to share them more.  But what I proposed to your queen, and to other queens and kings of other realms, goes beyond this."&#x000A;&#x000A;Constance thinks for a bit.  Then she rolls her eyes.  "OK, yeah, I have no idea what you're talking about."&#x000A;&#x000A;1) Ask her about scrolls.&#x000A;2) Tell her about scrolls.&#x000A;3) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;4) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[Explain.]&#x000A;&#x000A;"When I say everyone, I mean everyone.  In the whole world.  As far as the Clans extend."&#x000A;&#x000A;Constance chuckles.  "A little hard for the capsae to do that.  Longest range I know of is, like, two miles."&#x000A;&#x000A;"Indeed," you reply.&#x000A;&#x000A;Constance locks her wings so she can turn and look at you intently for several seconds as she glides.  She probably thinks she's being tested.  Which would be good, because she is.  You wait.&#x000A;&#x000A;"So.  You believe that the capsae are being misused.  That the kingdoms hoarding them should instead... share them?  Move them around?  Shuffle them, so each kingdom gets a bit of their power every so often?"&#x000A;&#x000A;"Misused, yes," you reply.  "And, yes, it would be in the spirit of that initial gift to share them more.  But what I proposed to your queen, and to other queens and kings of other realms, goes beyond this."&#x000A;&#x000A;Constance thinks for a bit.  Then she rolls her eyes.  "OK, yeah, I have no idea what you're talking about."&#x000A;&#x000A;1) Ask her about scrolls.&#x000A;2) Tell her about scrolls.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -271,7 +271,7 @@
   </item>
   <item nodeId="node-1103">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Ask her about scrolls.]&#x000A;&#x000A;"What do you do with scrolls?" you ask.&#x000A;&#x000A;Constance scoffs.  "Read them!" she exclaims, then laughs, as another thought occurs to her. "Which is the one thing you can't do with the scrolls in the capsae, because nobody knows..."  She trails off, and gives you another look.  "Wait, really?  You?"&#x000A;&#x000A;1) Tell her what you can do.&#x000A;2) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;3) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[Ask her about scrolls.]&#x000A;&#x000A;"What do you do with scrolls?" you ask.&#x000A;&#x000A;Constance scoffs.  "Read them!" she exclaims, then laughs, as another thought occurs to her. "Which is the one thing you can't do with the scrolls in the capsae, because nobody knows..."  She trails off, and gives you another look.  "Wait, really?  You?"&#x000A;&#x000A;1) Tell her what you can do.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -280,7 +280,7 @@
   </item>
   <item nodeId="node-1104">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Tell her what you can do.]&#x000A;&#x000A;"You've seen the scrolls themselves?  The writing on them?"&#x000A;&#x000A;"'Indeed,'" Constance replies, raising an eyebrow.  You grin.&#x000A;&#x000A;"What you may not know is that those symbols are not found in any other form of known writing.  There are fragments of writing from before the capsae.  They differ.  Some say it is the language of the gods themselves."&#x000A;&#x000A;"Woo, fancy," says Constance.  "In other words, they're gibberish."&#x000A;&#x000A;"No," you reply.  "I can read them."&#x000A;&#x000A;"Oh?  What do they say?" Constance asks.&#x000A;&#x000A;1) Tell her the truth.&#x000A;2) Wax poetical a bit.&#x000A;3) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;4) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[Tell her what you can do.]&#x000A;&#x000A;"You've seen the scrolls themselves?  The writing on them?"&#x000A;&#x000A;"'Indeed,'" Constance replies, raising an eyebrow.  You grin.&#x000A;&#x000A;"What you may not know is that those symbols are not found in any other form of known writing.  There are fragments of writing from before the capsae.  They differ.  Some say it is the language of the gods themselves."&#x000A;&#x000A;"Woo, fancy," says Constance.  "In other words, they're gibberish."&#x000A;&#x000A;"No," you reply.  "I can read them."&#x000A;&#x000A;"Oh?  What do they say?" Constance asks.&#x000A;&#x000A;1) Tell her the truth.&#x000A;2) Wax poetical a bit.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -289,7 +289,7 @@
   </item>
   <item nodeId="node-1105">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Tell her the truth.]&#x000A;&#x000A;"I don't know," you tell her.&#x000A;&#x000A;Constance sputters.  "But you--" she begins, then cuts herself off, looking at you askance again.  She's a clever woman.  You wait, tipping your wings synchronously with hers as you turn into another circuit.&#x000A;&#x000A;"So.  You learned the language from somewhere."  She thinks.  You wait.  "No, you said the symbols matched no other writing.  You were born knowing the language.  It's your heritage, as I was born knowing how to summon mist."&#x000A;&#x000A;You let her think, the lack of any contradiction from you enough of an encouragement.&#x000A;&#x000A;"Which means you've either just never seen an actual scroll--which seems unlikely; the queen didn't get mad at you until several days had passed--or," she slows down, but continues, "or you were born with the ability to read, but not understand."&#x000A;&#x000A;"Inde--"  Constance shoots you warning look.  "Yes.  That's it exactly.  Congratulations."  You bob your head and splay your wingfeathers in a grin of approval.&#x000A;&#x000A;"So, you want to read a capsa's scroll.  And you won't know what you're reading." says Constance.&#x000A;&#x000A;1) Tell her about capsae.&#x000A;2) Share your speculation.&#x000A;3) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;4) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[Tell her the truth.]&#x000A;&#x000A;"I don't know," you tell her.&#x000A;&#x000A;Constance sputters.  "But you--" she begins, then cuts herself off, looking at you askance again.  She's a clever woman.  You wait, tipping your wings synchronously with hers as you turn into another circuit.&#x000A;&#x000A;"So.  You learned the language from somewhere."  She thinks.  You wait.  "No, you said the symbols matched no other writing.  You were born knowing the language.  It's your heritage, as I was born knowing how to summon mist."&#x000A;&#x000A;You let her think, the lack of any contradiction from you enough of an encouragement.&#x000A;&#x000A;"Which means you've either just never seen an actual scroll--which seems unlikely; the queen didn't get mad at you until several days had passed--or," she slows down, but continues, "or you were born with the ability to read, but not understand."&#x000A;&#x000A;"Inde--"  Constance shoots you warning look.  "Yes.  That's it exactly.  Congratulations."  You bob your head and splay your wingfeathers in a grin of approval.&#x000A;&#x000A;"So, you want to read a capsa's scroll.  And you won't know what you're reading." says Constance.&#x000A;&#x000A;1) Tell her about capsae.&#x000A;2) Share your speculation.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -298,7 +298,7 @@
   </item>
   <item nodeId="node-1106">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Tell her about capsae.]&#x000A;&#x000A;"I believe that the gods gave us the capsae to benefit everyone," you say.&#x000A;&#x000A;Constance frowns.  "That's not... a dangerous idea.  I mean, people may not truly believe in the gods much today, but they're generally seen as having been... nice?  I guess?"&#x000A;&#x000A;1) Explain.&#x000A;2) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;3) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[Tell her about capsae.]&#x000A;&#x000A;"I believe that the gods gave us the capsae to benefit everyone," you say.&#x000A;&#x000A;Constance frowns.  "That's not... a dangerous idea.  I mean, people may not truly believe in the gods much today, but they're generally seen as having been... nice?  I guess?"&#x000A;&#x000A;1) Explain.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -307,7 +307,7 @@
   </item>
   <item nodeId="node-1107">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Explain.]&#x000A;&#x000A;"When I say everyone, I mean everyone.  In the whole world.  As far as the Clans extend."&#x000A;&#x000A;Constance chuckles.  "A little hard for the capsae to do that.  Longest range I know of is, like, two miles."&#x000A;&#x000A;"Indeed," you reply.&#x000A;&#x000A;Constance locks her wings so she can turn and look at you intently for several seconds as she glides.  She probably thinks she's being tested.  Which would be good, because she is.  You wait.&#x000A;&#x000A;"So.  You believe that the capsae are being misused.  That the kingdoms hoarding them should instead... share them?  Move them around?  Shuffle them, so each kingdom gets a bit of their power every so often?"&#x000A;&#x000A;"Misused, yes," you reply.  "And, yes, it would be in the spirit of that initial gift to share them more.  But what I proposed to your queen, and to other queens and kings of other realms, goes beyond this."&#x000A;&#x000A;Constance thinks for a bit.  Then her eyes widen.  "You want to read the scrolls!" she exclaims.&#x000A;&#x000A;1) Share your speculation.&#x000A;2) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;3) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[Explain.]&#x000A;&#x000A;"When I say everyone, I mean everyone.  In the whole world.  As far as the Clans extend."&#x000A;&#x000A;Constance chuckles.  "A little hard for the capsae to do that.  Longest range I know of is, like, two miles."&#x000A;&#x000A;"Indeed," you reply.&#x000A;&#x000A;Constance locks her wings so she can turn and look at you intently for several seconds as she glides.  She probably thinks she's being tested.  Which would be good, because she is.  You wait.&#x000A;&#x000A;"So.  You believe that the capsae are being misused.  That the kingdoms hoarding them should instead... share them?  Move them around?  Shuffle them, so each kingdom gets a bit of their power every so often?"&#x000A;&#x000A;"Misused, yes," you reply.  "And, yes, it would be in the spirit of that initial gift to share them more.  But what I proposed to your queen, and to other queens and kings of other realms, goes beyond this."&#x000A;&#x000A;Constance thinks for a bit.  Then her eyes widen.  "You want to read the scrolls!" she exclaims.&#x000A;&#x000A;1) Share your speculation.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -316,7 +316,7 @@
   </item>
   <item nodeId="node-1108">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Share your speculation.]&#x000A;&#x000A;"I will not know what it is I'm saying, but I have a guess about what will happen.&#x000A;&#x000A;And no capsae holder I have yet met will risk such a thing," you say.&#x000A;&#x000A;1) {Switching to Constance}: Scoff at "capsae holder".&#x000A;2) {Switching to Constance}: Ask about his guess.&#x000A;3) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;4) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[Share your speculation.]&#x000A;&#x000A;"I will not know what it is I'm saying, but I have a guess about what will happen.&#x000A;&#x000A;And no capsae holder I have yet met will risk such a thing," you say.&#x000A;&#x000A;1) {Switching to Constance}: Scoff at "capsae holder".&#x000A;2) {Switching to Constance}: Ask about his guess.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -325,7 +325,7 @@
   </item>
   <item nodeId="node-1109">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[{Switching to Constance}: Scoff at "capsae holder".]&#x000A;&#x000A;You scoff.  "No Queen or King, you mean."&#x000A;&#x000A;"You personally currently hold three capsae, more than some kingdoms," replies Horatio,&#x000A;&#x000A;You laugh.  "'Cause I stole 'em!  And they weren't even the one I wanted; I just didn't know what color I was after!"&#x000A;&#x000A;"Nevertheless," you tell her, "you are their holder. If you told me you wanted me to read one, I then could.&#x000A;&#x000A;1) He needs instructions?&#x000A;2) Ask about his guess.&#x000A;3) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;4) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[{Switching to Constance}: Scoff at "capsae holder".]&#x000A;&#x000A;You scoff.  "No Queen or King, you mean."&#x000A;&#x000A;"You personally currently hold three capsae, more than some kingdoms," replies Horatio,&#x000A;&#x000A;You laugh.  "'Cause I stole 'em!  And they weren't even the one I wanted; I just didn't know what color I was after!"&#x000A;&#x000A;"Nevertheless," you tell her, "you are their holder. If you told me you wanted me to read one, I then could.&#x000A;&#x000A;1) He needs instructions?&#x000A;2) Ask about his guess.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -334,7 +334,7 @@
   </item>
   <item nodeId="node-1110">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[He needs instructions?]&#x000A;&#x000A;"Wait.  So, I could order you to read a capsa?  And the magic would compel you to do it?" you ask, incredulously.&#x000A;&#x000A;"No.  I will not read one without the holder's permission, but I may refuse any order," Horatio replies.&#x000A;&#x000A;"'Will not.'  So you're not compelled to do anything.  It's just a personal choice," you say.&#x000A;&#x000A;Horatio winces slightly.  "I suppose, technically, you are correct.  It is a tradition among the Readers who know the history."&#x000A;&#x000A;1) Getting information out of this guy is like pulling mist out of the desert.  Say nothing.&#x000A;2) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;3) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[He needs instructions?]&#x000A;&#x000A;"Wait.  So, I could order you to read a capsa?  And the magic would compel you to do it?" you ask, incredulously.&#x000A;&#x000A;"No.  I will not read one without the holder's permission, but I may refuse any order," Horatio replies.&#x000A;&#x000A;"'Will not.'  So you're not compelled to do anything.  It's just a personal choice," you say.&#x000A;&#x000A;Horatio winces slightly.  "I suppose, technically, you are correct.  It is a tradition among the Readers who know the history."&#x000A;&#x000A;1) Getting information out of this guy is like pulling mist out of the desert.  Say nothing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -343,7 +343,7 @@
   </item>
   <item nodeId="node-1111">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Getting information out of this guy is like pulling mist out of the desert.  Say nothing.]&#x000A;&#x000A;You say nothing, and wait expectantly.&#x000A;&#x000A;In response, Horatio offers you the blue capsa he's holding.  It's closed, and you cock your head questioningly at him.  "It safe.  Nothing will happen when you open it."&#x000A;&#x000A;Weird trap if it was a trap.  Fine.  You open the blue capsa, bracing yourself... and nothing happens.  You look at the scroll, which seems to have no symbols on it at all apart from the title:  "BOSTRAT".&#x000A;&#x000A;1) Is that real?&#x000A;2) Wow.&#x000A;3) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;4) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[Getting information out of this guy is like pulling mist out of the desert.  Say nothing.]&#x000A;&#x000A;You say nothing, and wait expectantly.&#x000A;&#x000A;In response, Horatio offers you the blue capsa he's holding.  It's closed, and you cock your head questioningly at him.  "It safe.  Nothing will happen when you open it."&#x000A;&#x000A;Weird trap if it was a trap.  Fine.  You open the blue capsa, bracing yourself... and nothing happens.  You look at the scroll, which seems to have no symbols on it at all apart from the title:  "BOSTRAT".&#x000A;&#x000A;1) Is that real?&#x000A;2) Wow.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -352,7 +352,7 @@
   </item>
   <item nodeId="node-1112">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Is that real?]&#x000A;&#x000A;Horatio shrugs.  "I cannot prove it is so.  Many have chosen not to believe.  But I can sense capsae, and I can sense this."&#x000A;&#x000A;1) Wow.&#x000A;2) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;3) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[Is that real?]&#x000A;&#x000A;Horatio shrugs.  "I cannot prove it is so.  Many have chosen not to believe.  But I can sense capsae, and I can sense this."&#x000A;&#x000A;1) Wow.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -361,7 +361,7 @@
   </item>
   <item nodeId="node-1113">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Wow.]&#x000A;&#x000A;"Wow," you say, amazed by the implication.&#x000A;&#x000A;"Indeed," Horatio replies.  "At one time, if my research and the ancient tales I have collected are correct, this capsa, when activated, would bring rain to the land around it."&#x000A;&#x000A;"And now... any Bostrat anywhere in the world can bring rain," you conclude.  "If they work together," you amend.&#x000A;&#x000A;Horatio nods, seriously.  "In the past, this scroll could alter its surroundings.  When it was finally read, it changed the world.&#x000A;&#x000A;You gaze in wonder at the capsa.  Your heritage.  You can't say for sure it's genuine any more than Horatio can, but you feel the stirrings of some sort of pull towards it.&#x000A;&#x000A;1) Ask about the other abilities.&#x000A;2) Pull everything together.&#x000A;3) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;4) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[Wow.]&#x000A;&#x000A;"Wow," you say, amazed by the implication.&#x000A;&#x000A;"Indeed," Horatio replies.  "At one time, if my research and the ancient tales I have collected are correct, this capsa, when activated, would bring rain to the land around it."&#x000A;&#x000A;"And now... any Bostrat anywhere in the world can bring rain," you conclude.  "If they work together," you amend.&#x000A;&#x000A;Horatio nods, seriously.  "In the past, this scroll could alter its surroundings.  When it was finally read, it changed the world.&#x000A;&#x000A;You gaze in wonder at the capsa.  Your heritage.  You can't say for sure it's genuine any more than Horatio can, but you feel the stirrings of some sort of pull towards it.&#x000A;&#x000A;1) Ask about the other abilities.&#x000A;2) Pull everything together.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -370,7 +370,7 @@
   </item>
   <item nodeId="node-1114">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Ask about the other abilities.]&#x000A;&#x000A;"And the Throckwrights?  The Ikniq?" you ask.&#x000A;&#x000A;Horatio nods.  "From the stories I have collected, I believe "throck" was the first of the scrolls to be read out and gifted to the people, and a renaissance of agriculture and architecture resulted.  When civilization pushed into the barren boundaries of the known world, bostrat was next, and spread our people across the desert."&#x000A;&#x000A;He stops.  There's an obvious Part Three, but you'll be damned if he makes you ask for it.  You wait.  You make another complete circuit together, and you realize there's a tear in his eye.  You're suddenly glad you gave him space to be emotionally ready to finish the story, though you're worried you already know where this is going.&#x000A;&#x000A;Finally, with a deep breath, he speaks.  "Yes.  The first two gifts benefitted the herbivore clans more than the carnivore clans, or so they claimed.  Ikniq was next chosen, and hunting did indeed become easier."  He pauses.&#x000A;&#x000A;"But so did hunting each other," you conclude, quietly.  Horatio nods.  The Great Wars.  Entire clans wiped out.  Whole swaths of countryside burned to the rock, where still nothing grows, a thousand years later.&#x000A;&#x000A;1) Pull everything together.&#x000A;2) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;3) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[Ask about the other abilities.]&#x000A;&#x000A;"And the Throckwrights?  The Ikniq?" you ask.&#x000A;&#x000A;Horatio nods.  "From the stories I have collected, I believe "throck" was the first of the scrolls to be read out and gifted to the people, and a renaissance of agriculture and architecture resulted.  When civilization pushed into the barren boundaries of the known world, bostrat was next, and spread our people across the desert."&#x000A;&#x000A;He stops.  There's an obvious Part Three, but you'll be damned if he makes you ask for it.  You wait.  You make another complete circuit together, and you realize there's a tear in his eye.  You're suddenly glad you gave him space to be emotionally ready to finish the story, though you're worried you already know where this is going.&#x000A;&#x000A;Finally, with a deep breath, he speaks.  "Yes.  The first two gifts benefitted the herbivore clans more than the carnivore clans, or so they claimed.  Ikniq was next chosen, and hunting did indeed become easier."  He pauses.&#x000A;&#x000A;"But so did hunting each other," you conclude, quietly.  Horatio nods.  The Great Wars.  Entire clans wiped out.  Whole swaths of countryside burned to the rock, where still nothing grows, a thousand years later.&#x000A;&#x000A;1) Pull everything together.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -379,7 +379,7 @@
   </item>
   <item nodeId="node-1115">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Pull everything together.]&#x000A;&#x000A;"So that's your heresy," you conclude.  "You want to read a capsa's scroll.  And change the world again."&#x000A;&#x000A;"Not just any capsa.  The scroll of health.  Taclor.  Ten years ago, I would have been happy to read any.  Now, it must be that one.  But I will not make that choice on my own.  Every Reader like myself has the innate ability to Read a single scroll, and I will yield to the will of its holder, as my predecessors swore to do in the aftermath of the Great War.  But I will not waste my ability on anything else."&#x000A;&#x000A;1) He can't have the scroll.&#x000A;2) You need more details.&#x000A;3) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;4) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[Pull everything together.]&#x000A;&#x000A;"So that's your heresy," you conclude.  "You want to read a capsa's scroll.  And change the world again."&#x000A;&#x000A;"Not just any capsa.  The scroll of health.  Taclor.  Ten years ago, I would have been happy to read any.  Now, it must be that one.  But I will not make that choice on my own.  Every Reader like myself has the innate ability to Read a single scroll, and I will yield to the will of its holder, as my predecessors swore to do in the aftermath of the Great War.  But I will not waste my ability on anything else."&#x000A;&#x000A;1) He can't have the scroll.&#x000A;2) You need more details.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -388,7 +388,7 @@
   </item>
   <item nodeId="node-1116">
     <command xml:space="preserve">2</command>
-    <result xml:space="preserve">[You need more details.]&#x000A;&#x000A;"So, what will happen?  What would it do if it was read?" you ask.&#x000A;&#x000A;"I cannot say.  The gods created the scrolls with their local effects, I believe, to give people a taste of what was to come.  Throck, as a capsa, encouraged vegetation to grow.  Throckwrights push vegetation to grow in very specific ways.  Bostra, as a capsa, caused rain by itself, but the bostra must work together to do the same.  Ikniq... I can find no record of what it did as a capsa.  That information must have been purged."  He pauses.  You let him collect his thoughts.&#x000A;&#x000A;"My best guess is that it will give people the ability to heal themselves; perhaps even to regenerate.  Maybe it will make them immune to disease.  Maybe to death.  The gods only know."&#x000A;&#x000A;1) He can't have the scroll.&#x000A;2) Figure out what's next.&#x000A;3) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;4) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[You need more details.]&#x000A;&#x000A;"So, what will happen?  What would it do if it was read?" you ask.&#x000A;&#x000A;"I cannot say.  The gods created the scrolls with their local effects, I believe, to give people a taste of what was to come.  Throck, as a capsa, encouraged vegetation to grow.  Throckwrights push vegetation to grow in very specific ways.  Bostra, as a capsa, caused rain by itself, but the bostra must work together to do the same.  Ikniq... I can find no record of what it did as a capsa.  That information must have been purged."  He pauses.  You let him collect his thoughts.&#x000A;&#x000A;"My best guess is that it will give people the ability to heal themselves; perhaps even to regenerate.  Maybe it will make them immune to disease.  Maybe to death.  The gods only know."&#x000A;&#x000A;1) He can't have the scroll.&#x000A;2) Figure out what's next.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -397,7 +397,7 @@
   </item>
   <item nodeId="node-1117">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[He can't have the scroll.]&#x000A;&#x000A;"You can't read that scroll," you say.  "I need it to save my mother.  To save the village."&#x000A;&#x000A;"The whole world," Horatio turns his head to face to you, "could say the same."&#x000A;&#x000A;"But I'm here!" you shout.  "I have three capsae.  I didn't start any wars!  I didn't force people to live with their livestock and kickstart the Red Plague!  The Queen's hoarding the capsa for gods-know-what reason, probably so the selfish bastard could ensure she doesn't come down with it herself..."&#x000A;&#x000A;Horatio flinches.  That's right, he knew you when you and the now-Queen were... closer.  Inseparable.&#x000A;&#x000A;"I'll take it around the world!" you declare.  "I'll take it to every village in this kingdom; wherever the need is greatest.  I'll take it to other kingdoms!"&#x000A;&#x000A;Horatio nods.  "When you are the holder, you may do as you wish," he says, simply.  "But first, you must become the holder.  And for that, you will need igram.  It's in the librum.&#x000A;&#x000A;1) Figure out what's next.&#x000A;2) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;3) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">[He can't have the scroll.]&#x000A;&#x000A;"You can't read that scroll," you say.  "I need it to save my mother.  To save the village."&#x000A;&#x000A;"The whole world," Horatio turns his head to face to you, "could say the same."&#x000A;&#x000A;"But I'm here!" you shout.  "I have three capsae.  I didn't start any wars!  I didn't force people to live with their livestock and kickstart the Red Plague!  The Queen's hoarding the capsa for gods-know-what reason, probably so the selfish bastard could ensure she doesn't come down with it herself..."&#x000A;&#x000A;Horatio flinches.  That's right, he knew you when you and the now-Queen were... closer.  Inseparable.&#x000A;&#x000A;"I'll take it around the world!" you declare.  "I'll take it to every village in this kingdom; wherever the need is greatest.  I'll take it to other kingdoms!"&#x000A;&#x000A;Horatio nods.  "When you are the holder, you may do as you wish," he says, simply.  "But first, you must become the holder.  And for that, you will need igram.  It's in the librum.&#x000A;&#x000A;1) Figure out what's next.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -650,6 +650,87 @@
   <item nodeId="node-1145">
     <command xml:space="preserve">take ash</command>
     <result xml:space="preserve">You could take Ash with you.  When you go.  Maybe.&#x000A;&#x000A;Ash prattles happily, telling you a long convoluted story about drama between their stuffed animals.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1156"/>
+    </children>
+  </item>
+  <item nodeId="node-1156">
+    <command xml:space="preserve">take capsa</command>
+    <result xml:space="preserve">Which do you mean, the green capsa, the black capsa, the blue capsa of mist, the red capsa of hasten, the purple capsa of opening, or the gold capsa of down?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1157"/>
+    </children>
+  </item>
+  <item nodeId="node-1157">
+    <command xml:space="preserve">green</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;You hold the capsa of health in your hands, turning it over and looking at it from all sides.  It's what you came here for.  To take it back home and save your mother.  Your people.  Is it still that simple?&#x000A;&#x000A;"You are now the holder of the scroll of taclor" says Horatio, as Ash continues to tell you about what it was like to see a real jaguar that one time.  "Will you have me read it?"&#x000A;&#x000A;1) "Ash was holding it before.  Why can't they make the decision?"&#x000A;2) "What will happen when you read it?"&#x000A;3) "Why not let the queen... let Aubrey decide?"&#x000A;4) Leave without the capsa.&#x000A;5) Leave with the capsa, and leave Ash behind.&#x000A;6) Leave with the capsa, and take Ash with you.&#x000A;7) Let Horatio read the scroll of taclor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1158"/>
+    </children>
+  </item>
+  <item nodeId="node-1158">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">["Ash was holding it before.  Why can't they make the decision?"]&#x000A;&#x000A;Horatio looks at Ash, then looks at you.  Ash continues to tell you about having to get their desk grown twice in two months because they were growing so fast.&#x000A;&#x000A;Yeah, OK, fair.&#x000A;&#x000A;Horatio looks at you expectantly.&#x000A;&#x000A;1) "What will happen when you read it?"&#x000A;2) "Why not let the queen... let Aubrey decide?"&#x000A;3) Leave without the capsa.&#x000A;4) Leave with the capsa, and leave Ash behind.&#x000A;5) Leave with the capsa, and take Ash with you.&#x000A;6) Let Horatio read the scroll of taclor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1159"/>
+    </children>
+  </item>
+  <item nodeId="node-1159">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">["What will happen when you read it?"]&#x000A;&#x000A;"I know not," Horatio replies.  "I know that it will grant a power related to the scroll's effect to some percentage of all people.  Everywhere.  Regardless of class or heritage or clan.  My guess is that it will improve their health--perhaps make them immune, perhaps give them regeneration, perhaps grant them an immortality, of sorts."&#x000A;&#x000A;"Will it affect people right now?" you ask, "Or just people in the future?  People hatched tomorrow?  Eggs laid tomorrow?"&#x000A;&#x000A;"The stories do not say," he replies.  "What difference is five years; twenty years to the march of history?"&#x000A;&#x000A;"It makes a difference to me," you say.&#x000A;&#x000A;"Indeed," he replies.&#x000A;&#x000A;Horatio looks at you expectantly.&#x000A;&#x000A;1) "Why not let the queen... let Aubrey decide?"&#x000A;2) Leave without the capsa.&#x000A;3) Leave with the capsa, and leave Ash behind.&#x000A;4) Leave with the capsa, and take Ash with you.&#x000A;5) Let Horatio read the scroll of taclor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1160"/>
+    </children>
+  </item>
+  <item nodeId="node-1160">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">["Why not let the queen... let Aubrey decide?"]&#x000A;&#x000A;The feathers on Horatio's neck ruffle.  "She has already denied me.  Every day, I ask, and every day, she sends her rejection.  If you leave, I will keep asking her.  She may change her mind.  She may not.  You may know her better than I."&#x000A;&#x000A;Horatio looks at you expectantly.&#x000A;&#x000A;1) Leave without the capsa.&#x000A;2) Leave with the capsa, and leave Ash behind.&#x000A;3) Leave with the capsa, and take Ash with you.&#x000A;4) Let Horatio read the scroll of taclor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1161"/>
+    </children>
+  </item>
+  <item nodeId="node-1161">
+    <command xml:space="preserve">4</command>
+    <result xml:space="preserve">[Let Horatio read the scroll of taclor.]&#x000A;&#x000A;"I can't do it," you say.  "There's no good solution here.  Even the scroll itself only halts the disease; it doesn't cure it.  Nobody wins."&#x000A;&#x000A;You turn to Horatio.  "And maybe nobody I care about wins if you read this, but lots of people I don't know win.  And maybe we win anyway.  Or maybe you're just crazy.  It's a risk.  Life is risk.  In the balance, maybe that's enough."&#x000A;&#x000A;You take a deep breath, and hand him the scroll.  "Read it," you tell him.&#x000A;&#x000A;Horatio nods, pulls out a small key, inserts it into the side of the capsa, and begins to slowly turn it, exposing the rest of the writing as the scroll is rolled from one rod to the next.  He reads.&#x000A;&#x000A;Or, rather, he sings.  You've never heard a buzzard sing like this before, but then again, you've never heard anyone sing like this before.  It's a deep, primal song of awakening; of understanding; of comfort.  Ash's beak drops open in amazement and wonder.&#x000A;&#x000A;Then Aubrey, your friend, your love, your queen, your enemy, bursts through the door.  "Ash!" she cries, then, seeing them safe, turns to Horatio.  "No!" she gasps, and launches herself at him.&#x000A;&#x000A;1) Get between Aubrey and Horatio.&#x000A;2) "Aubrey, no!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1162"/>
+    </children>
+  </item>
+  <item nodeId="node-1162">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">[Get between Aubrey and Horatio.]&#x000A;&#x000A;You fling yourself across the room to stop her, but before she even reaches you, her head jerks back, she stops, then falls twitching to the floor.&#x000A;&#x000A;Horatio continues to sing.  Ash's face is a mixture of horror and delight.&#x000A;&#x000A;1) Rush to her side.&#x000A;2) Shield Ash from the sight.&#x000A;3) Tell Horatio to stop.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1163"/>
+    </children>
+  </item>
+  <item nodeId="node-1163">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">[Rush to her side.]&#x000A;&#x000A;You rush to the side of your love, cradling her head with your wing.  "Aubrey, darling, be all right.  Listen to me.  Be all right.  I need you.  I need the true you."&#x000A;&#x000A;The song reaches a crescendo.  The Aerie itself threatens to shake apart.&#x000A;&#x000A;1) Hold Aubrey tight.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1164"/>
+    </children>
+  </item>
+  <item nodeId="node-1164">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">[Hold Aubrey tight.]&#x000A;&#x000A;You close your eyes and wrap Aubrey with both wings, not to shield her from the song, which is everywhere, even your bones, but just to let her know she's not alone.  She can't be alone when she dies.&#x000A;&#x000A;You didn't expect the apocalypse to be this pretty.&#x000A;&#x000A;The song is everywhere.  The song is everything.  It is morningsong.  It is evensong.  It is the tide, and the moons, and the stars.&#x000A;&#x000A;And threading it together, it is life.  Health.  The roost.  The nest.  A bubble of comfort pushing back against the dark.&#x000A;&#x000A;And then it's done.  The writing fades from the scroll, and Horatio gently rewinds it back to the title.  "TACLOR".&#x000A;&#x000A;Aubrey relaxes, wakes.  Looks into your eyes.  "I'm so sorry," she whispers.  She glances at her child.  "Ash..." she explains.&#x000A;&#x000A;"I'm sorry, too," you answer.  "My mother," you explain.  You both look at the other with glistening eyes.&#x000A;&#x000A;Then Aubrey gets a strange expression on her face.  "I... I remember," she says.  "The... Ash.  Come here."&#x000A;&#x000A;Obediently, Ash comes and perches by her side.&#x000A;&#x000A;Aubrey begins to sing.  It's not The Song.  Nothing will ever be The Song.  But it's an echo.&#x000A;&#x000A;As she sings, Ash's pallor fades, and their feathers straighten.  A hunch you didn't realize they had straightens out.  "Oh!" they exclaim.  "OH!"  Their eyes shine.&#x000A;&#x000A;You help Aubrey to her feet and she rises to her full height, full of queenly majesty.  The four of you look at each other.  "Come," she says.  "We have work to do."&#x000A;&#x000A;&#x000A;&#x000A;    *** You have changed the world. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -2640,7 +2721,7 @@
   </item>
   <item nodeId="node-900">
     <command xml:space="preserve">wear cloak</command>
-    <result xml:space="preserve">(the purple hunting cloak)&#x000A;You put on the purple hunting cloak.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2649,7 +2730,7 @@
   </item>
   <item nodeId="node-901">
     <command xml:space="preserve">u</command>
-    <result xml:space="preserve">You can't fly with this damn cloak on!&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You're already high enough to avoid being seen from below; there's no need to go higher.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2658,7 +2739,7 @@
   </item>
   <item nodeId="node-902">
     <command xml:space="preserve">take off cloak</command>
-    <result xml:space="preserve">(the purple hunting cloak)&#x000A;You take off the purple hunting cloak.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2667,7 +2748,7 @@
   </item>
   <item nodeId="node-903">
     <command xml:space="preserve">u</command>
-    <result xml:space="preserve">Upper Great Hall&#x000A;There is a small platform just inside the huge double doors of the Great Hall, and that's it.  The platform is lined with a single elegant grown-mahogany branch that wraps around the whole platform.  It varies in size and thickness, so that all types of feet fit somewhere along it, so people can comfortably launch themselves into the air to glide down to the floor level, or grab it for stability as they return.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You're already high enough to avoid being seen from below; there's no need to go higher.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2676,7 +2757,7 @@
   </item>
   <item nodeId="node-904">
     <command xml:space="preserve">open opening</command>
-    <result xml:space="preserve">(the purple capsa of opening)&#x000A;That's already open.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Before you mess with powerful artifacts from the dawn of civilization, you should probably conceal yourself.  You're a Bostrat; the plan was to summon a mist.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2685,7 +2766,7 @@
   </item>
   <item nodeId="node-905">
     <command xml:space="preserve">close it</command>
-    <result xml:space="preserve">You close the purple capsa of opening.&#x000A;&#x000A;You feel your skin prickle where you were wounded, and look down.  To your amazement, your wound has closed and the bleeding stopped.  As you watch, even the line from the cut disappears, and the feathers around it fluff out again.&#x000A;&#x000A;It's the scroll of Health.  It has to be.  It's actually here!  And active.  Hmm.&#x000A;&#x000A;From everywhere in the Aerie, you hear the woodpeckers drumming in the Pounding dialect: "Reset Locks!  Repeat!  Reset Locks!&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">That's already closed.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2694,7 +2775,7 @@
   </item>
   <item nodeId="node-906">
     <command xml:space="preserve">open it</command>
-    <result xml:space="preserve">You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;&#x000A;The magic of the gold capsa of down prevents it from being opened.&#x000A;The magic of the black capsa prevents it from being opened.&#x000A;The magic of the blue capsa of mist prevents it from being opened.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Before you mess with powerful artifacts from the dawn of civilization, you should probably conceal yourself.  You're a Bostrat; the plan was to summon a mist.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2703,7 +2784,7 @@
   </item>
   <item nodeId="node-907">
     <command xml:space="preserve">out</command>
-    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2712,7 +2793,7 @@
   </item>
   <item nodeId="node-908">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Royal Gardens&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in it only appropriate spot.  The landing cradle next to the garden door to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You'll need to SUMMON MIST first, to cloak your descent.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2721,7 +2802,7 @@
   </item>
   <item nodeId="node-909">
     <command xml:space="preserve">in</command>
-    <result xml:space="preserve">No way.  It wouldn't matter how fast you were, how thick the mist was, anything.  You just can't get in there without being spotted.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">From here, you can descend straight down to the Great Hall, descend northward to the Royal Quarters and Gardens, or descend eastward to the Librum.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2730,7 +2811,7 @@
   </item>
   <item nodeId="node-910">
     <command xml:space="preserve">wear cloak</command>
-    <result xml:space="preserve">You put on the purple hunting cloak.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2739,7 +2820,7 @@
   </item>
   <item nodeId="node-911">
     <command xml:space="preserve">x cloak</command>
-    <result xml:space="preserve">In prehistoric times, people made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camoflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot.  On foot!&#x000A;.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2748,7 +2829,7 @@
   </item>
   <item nodeId="node-912">
     <command xml:space="preserve">open black</command>
-    <result xml:space="preserve">(the black capsa)&#x000A;You open the black capsa, revealing a scroll of igram.&#x000A;&#x000A;For a moment, the purple capsa seems to flicker.  But you look again, and nothing seems to have changed.&#x000A;The hunting cloak disappears again.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You aren't something you can open.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2757,7 +2838,7 @@
   </item>
   <item nodeId="node-913">
     <command xml:space="preserve">x cloak</command>
-    <result xml:space="preserve">You can feel the supple folds of the cloak, but cannot see it at all.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2766,7 +2847,7 @@
   </item>
   <item nodeId="node-914">
     <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  an invisible hunting cloak (being worn)&#x000A;  a black capsa (open)&#x000A;    a scroll of igram&#x000A;  a leather rucksack (open)&#x000A;    a blue capsa of mist (closed)&#x000A;    a red capsa of hasten (open)&#x000A;      a scroll of quiste&#x000A;    a purple capsa of opening (open)&#x000A;      a scroll of rezrov&#x000A;    a gold capsa of down (closed)&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You are carrying:&#x000A;  a leather rucksack (being worn, and open)&#x000A;    a purple capsa of opening (closed)&#x000A;    a gold capsa of down (closed)&#x000A;    a red capsa of hasten (closed)&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2775,7 +2856,7 @@
   </item>
   <item nodeId="node-915">
     <command xml:space="preserve">in</command>
-    <result xml:space="preserve">OK.  Walking.  Right.  You raise yourself up on the tips of your talons, feeling ridiculous, but not wanting to flatten the grass with your (shudder) footsteps and give yourself away.  You wait for one of the guards to pass, then carefully take cautious steps towards the door.  Nobody reacts.  Hardly daring to breathe, you proceed further, antsy and ready to take to the skies any second.  Which wouldn't work, because you have this damn cloak on.  Whatever.  Two more steps.  You reach the door.  You hop (shudder) across the lintel.&#x000A;&#x000A;You're in.&#x000A;&#x000A;A few more steps, and a voice behind you says "We should take the second hallway." You nearly yelp, but stop yourself.  You knew Horatio would be here.  You were expecting him.  Right.&#x000A;&#x000A;You take a deep breath.  "Lead on," you whisper.&#x000A;&#x000A;"I can't; I'm invisible.  I will tell you where to go, and follow you," he replies.  Right.&#x000A;&#x000A;&#x000A;                                                             *    *    *</result>
+    <result xml:space="preserve">From here, you can descend straight down to the Great Hall, descend northward to the Royal Quarters and Gardens, or descend eastward to the Librum.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2784,7 +2865,7 @@
   </item>
   <item nodeId="node-916">
     <command xml:space="preserve"> </command>
-    <result xml:space="preserve">You make your way, with Horatio's direction, through the Royal Quarters.  A time or two Horatio leads you to a place you'd have to fly to get past, but you know this place well, and even though you never walked anywhere, you still know the walking ways.  There's fewer guards to avoid than you expected, meaning that the Queen either has them all outside guarding the entrance, or she just doesn't have them to spare.&#x000A;&#x000A;As you get closer to your objective, a growing sense of unease forms in the pit of your stomach.  One by one, you pass all the places you pegged as most likely for it to be: the throne room, the vault, even storerooms.&#x000A;&#x000A;Then:  "This is it," says Horatio.&#x000A;&#x000A;Oh no.&#x000A;&#x000A;Nursery Door&#x000A;You're standing in a hallway, just south of the nursery door, to the west.  The door is open.  All the doors have been open.  You can't see inside yet.  Your heart pounds in your chest.&#x000A;&#x000A;Horatio is here, watching you with quiet aplomb and patience.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2793,7 +2874,7 @@
   </item>
   <item nodeId="node-917">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">The nursery is to the west.  The scroll of health is to the west.  Health.  Taclor.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You'll need to SUMMON MIST first, to cloak your descent.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2802,7 +2883,7 @@
   </item>
   <item nodeId="node-918">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">"Horatio," you whisper.  You feel a tap on your shoulder in response.  "I can't go in there wearing this cloak.  I just can't."&#x000A;&#x000A;A pause.&#x000A;&#x000A;"Then take it off," he replies.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">From here, you can descend straight down to the Great Hall, descend northward to the Royal Quarters and Gardens, or descend eastward to the Librum.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2811,7 +2892,7 @@
   </item>
   <item nodeId="node-919">
     <command xml:space="preserve">take off cloak</command>
-    <result xml:space="preserve">Next to you, Horatio takes his own cloak off as well.&#x000A;&#x000A;You take off the invisible hunting cloak.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2820,7 +2901,7 @@
   </item>
   <item nodeId="node-920">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Nursery&#x000A;The Nursery is not exactly how you remember it.  It was set up to grow new walls and furniture over time, to keep any occupant engaged and growing.  But the rhythm of it is baked into your bones.  The place for the roosts, along the north wall.  The desk, grown to the size of the user.  The endless parade of ropes and balls and other toys along the south, some grown and some brought in.  The giant window to the west, overlooking the beautiful, beautiful forest.&#x000A;&#x000A;On the desk is a green capsa (in which is a scroll of taclor).&#x000A;&#x000A;Ash prattles happily to you; even including Horatio in the conversation at times as if he was an old friend.&#x000A;&#x000A;Perched on the open window looking out over the forest is a fledgling Red Wing Clan.  As you enter, they turn and their face and feathers light up with delight.  "Aunty Constance!" they chirrup, and dash across the room to bury their face in your downfeathers.&#x000A;&#x000A;You stroke the feathers on their head gently.  The feathers crackle worryingly.  "Hi, Ash," you say.  It's good to see you, too."&#x000A;&#x000A;Their face sufficiently smothered, Ash pops out again excitedly.  "It's been so long!  Did you know there's a whole new wing of the southwest aerie?  Momma took me there just the other day, and..."&#x000A;&#x000A;Ash continues to prattle, happily telling you all about their life.&#x000A;&#x000A;Note to testers:  getting this out the door first; you can look at things, but can't interact much.  Taking the capsa triggers the final scene, so look/do stuff first.  And it won't work yet, so just keep a list/transcript of the stuff you tried.  LS DEBUG.&#x000A;&#x000A;Ash prattles happily, telling you about a model treehouse they made out of sticks.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">From here, you can descend straight down to the Great Hall, descend northward to the Royal Quarters and Gardens, or descend eastward to the Librum.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2829,7 +2910,7 @@
   </item>
   <item nodeId="node-921">
     <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  an invisible hunting cloak&#x000A;  a black capsa (open)&#x000A;    a scroll of igram&#x000A;  a leather rucksack (open)&#x000A;    a blue capsa of mist (closed)&#x000A;    a red capsa of hasten (open)&#x000A;      a scroll of quiste&#x000A;    a purple capsa of opening (open)&#x000A;      a scroll of rezrov&#x000A;    a gold capsa of down (closed)&#x000A;&#x000A;Ash prattles happily, telling you a long convoluted story about drama between their stuffed animals.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You are carrying:&#x000A;  a leather rucksack (being worn, and open)&#x000A;    a purple capsa of opening (closed)&#x000A;    a gold capsa of down (closed)&#x000A;    a red capsa of hasten (closed)&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2838,7 +2919,7 @@
   </item>
   <item nodeId="node-922">
     <command xml:space="preserve">get capsa</command>
-    <result xml:space="preserve">Which do you mean, the green capsa, the black capsa, the blue capsa of mist, the red capsa of hasten, the purple capsa of opening, or the gold capsa of down?&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Which do you mean, the purple capsa of opening, the gold capsa of down, or the red capsa of hasten?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2847,7 +2928,7 @@
   </item>
   <item nodeId="node-923">
     <command xml:space="preserve">green</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;You hold the capsa of health in your hands, turning it over and looking at it from all sides.  It's what you came here for.  To take it back home and save your mother.  Your people.  Is it still that simple?&#x000A;&#x000A;"You are now the holder of the scroll of taclor" says Horatio, as Ash continues to tell you about what it was like to see a real jaguar that one time.  "Will you have me read it?"&#x000A;&#x000A;1) "Ash was holding it before.  Why can't they make the decision?"&#x000A;2) "What will happen when you read it?"&#x000A;3) "Why not let the queen... let Aubrey decide?"&#x000A;4) Leave without the capsa.&#x000A;5) Leave with the capsa, and leave Ash behind.&#x000A;6) Leave with the capsa, and take Ash with you.&#x000A;7) Let Horatio read the scroll of taclor.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2856,7 +2937,7 @@
   </item>
   <item nodeId="node-924">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">["Ash was holding it before.  Why can't they make the decision?"]&#x000A;&#x000A;Horatio looks at Ash, then looks at you.  Ash continues to tell you about having to get their desk grown twice in two months because they were growing so fast.&#x000A;&#x000A;Yeah, OK, fair.&#x000A;&#x000A;Horatio looks at you expectantly.&#x000A;&#x000A;1) "What will happen when you read it?"&#x000A;2) "Why not let the queen... let Aubrey decide?"&#x000A;3) Leave without the capsa.&#x000A;4) Leave with the capsa, and leave Ash behind.&#x000A;5) Leave with the capsa, and take Ash with you.&#x000A;6) Let Horatio read the scroll of taclor.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2865,7 +2946,7 @@
   </item>
   <item nodeId="node-925">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">["What will happen when you read it?"]&#x000A;&#x000A;"I know not," Horatio replies.  "I know that it will grant a power related to the scroll's effect to some percentage of all people.  Everywhere.  Regardless of class or heritage or clan.  My guess is that it will improve their health--perhaps make them immune, perhaps give them regeneration, perhaps grant them an immortality, of sorts."&#x000A;&#x000A;"Will it affect people right now?" you ask, "Or just people in the future?  People hatched tomorrow?  Eggs laid tomorrow?"&#x000A;&#x000A;"The stories do not say," he replies.  "What difference is five years; twenty years to the march of history?"&#x000A;&#x000A;"It makes a difference to me," you say.&#x000A;&#x000A;"Indeed," he replies.&#x000A;&#x000A;Horatio looks at you expectantly.&#x000A;&#x000A;1) "Why not let the queen... let Aubrey decide?"&#x000A;2) Leave without the capsa.&#x000A;3) Leave with the capsa, and leave Ash behind.&#x000A;4) Leave with the capsa, and take Ash with you.&#x000A;5) Let Horatio read the scroll of taclor.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2874,7 +2955,7 @@
   </item>
   <item nodeId="node-926">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">["Why not let the queen... let Aubrey decide?"]&#x000A;&#x000A;The feathers on Horatio's neck ruffle.  "She has already denied me.  Every day, I ask, and every day, she sends her rejection.  If you leave, I will keep asking her.  She may change her mind.  She may not.  You may know her better than I."&#x000A;&#x000A;Horatio looks at you expectantly.&#x000A;&#x000A;1) Leave without the capsa.&#x000A;2) Leave with the capsa, and leave Ash behind.&#x000A;3) Leave with the capsa, and take Ash with you.&#x000A;4) Let Horatio read the scroll of taclor.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2883,7 +2964,7 @@
   </item>
   <item nodeId="node-927">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Leave without the capsa.]&#x000A;&#x000A;"I can't do it," you say.  "I can't condemn Ash for the sake of my people.  I can't condemn anyone for the sake of a fairy-tale promise."  You stroke Ash's head one more time.  "I love you, kid," you tell them.  "Say hi to your mom for me."&#x000A;&#x000A;You place the capsa of taclor back on the desk, step onto the window ledge, and launch yourself into the mist.&#x000A;&#x000A;&#x000A;&#x000A;    *** You have learned much. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?&#x000A;&gt;</result>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2892,7 +2973,7 @@
   </item>
   <item nodeId="node-928">
     <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">Nursery&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2901,7 +2982,7 @@
   </item>
   <item nodeId="node-929">
     <command xml:space="preserve">4</command>
-    <result xml:space="preserve">[Let Horatio read the scroll of taclor.]&#x000A;&#x000A;"I can't do it," you say.  "There's no good solution here.  Even the scroll itself only halts the disease; it doesn't cure it.  Nobody wins."&#x000A;&#x000A;You turn to Horatio.  "And maybe nobody I care about wins if you read this, but lots of people I don't know win.  And maybe we win anyway.  Or maybe you're just crazy.  It's a risk.  Life is risk.  In the balance, maybe that's enough."&#x000A;&#x000A;You take a deep breath, and hand him the scroll.  "Read it," you tell him.&#x000A;&#x000A;Horatio nods, pulls out a small key, inserts it into the side of the capsa, and begins to slowly turn it, exposing the rest of the writing as the scroll is rolled from one rod to the next.  He reads.&#x000A;&#x000A;Or, rather, he sings.  You've never heard a buzzard sing like this before, but then again, you've never heard anyone sing like this before.  It's a deep, primal song of awakening; of understanding; of comfort.  Ash's beak drops open in amazement and wonder.&#x000A;&#x000A;Then Aubrey, your friend, your love, your queen, your enemy, bursts through the door.  "Ash!" she cries, then, seeing them safe, turns to Horatio.  "No!" she gasps, and launches herself at him.&#x000A;&#x000A;1) Get between Aubrey and Horatio.&#x000A;2) "Aubrey, no!"&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2910,7 +2991,7 @@
   </item>
   <item nodeId="node-930">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Get between Aubrey and Horatio.]&#x000A;&#x000A;You fling yourself across the room to stop her, but before she even reaches you, her head jerks back, she stops, then falls twitching to the floor.&#x000A;&#x000A;Horatio continues to sing.  Ash's face is a mixture of horror and delight.&#x000A;&#x000A;1) Rush to her side.&#x000A;2) Shield Ash from the sight.&#x000A;3) Tell Horatio to stop.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2919,7 +3000,7 @@
   </item>
   <item nodeId="node-931">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Rush to her side.]&#x000A;&#x000A;You rush to the side of your love, cradling her head with your wing.  "Aubrey, darling, be all right.  Listen to me.  Be all right.  I need you.  I need the true you."&#x000A;&#x000A;The song reaches a crescendo.  The Aerie itself threatens to shake apart.&#x000A;&#x000A;1) Hold Aubrey tight.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2928,7 +3009,7 @@
   </item>
   <item nodeId="node-932">
     <command xml:space="preserve">1</command>
-    <result xml:space="preserve">[Hold Aubrey tight.]&#x000A;&#x000A;You close your eyes and wrap Aubrey with both wings, not to shield her from the song, which is everywhere, even your bones, but just to let her know she's not alone.  She can't be alone when she dies.&#x000A;&#x000A;You didn't expect the apocalypse to be this pretty.&#x000A;&#x000A;The song is everywhere.  The song is everything.  It is morningsong.  It is evensong.  It is the tide, and the moons, and the stars.&#x000A;&#x000A;And threading it together, it is life.  Health.  The roost.  The nest.  A bubble of comfort pushing back against the dark.&#x000A;&#x000A;And then it's done.  The writing fades from the scroll, and Horatio gently rewinds it back to the title.  "TACHLOR".&#x000A;&#x000A;Aubrey relaxes, wakes.  Looks into your eyes.  "I'm so sorry," she whispers.  She glances at her child.  "Ash..." she explains.&#x000A;&#x000A;"I'm sorry, too," you answer.  "My mother," you explain.  You both look at the other with glistening eyes.&#x000A;&#x000A;Then Aubrey gets a strange expression on her face.  "I... I remember," she says.  "The... Ash.  Come here."&#x000A;&#x000A;Obediently, Ash comes and perches by her side.&#x000A;&#x000A;Aubrey begins to sing.  It's not The Song.  Nothing will ever be The Song.  But it's an echo.&#x000A;&#x000A;As she sings, Ash's pallor fades, and their feathers straighten.  A hunch you didn't realize they had straightens out.  "Oh!" they exclaim.  "OH!"  Their eyes shine.&#x000A;&#x000A;You help Aubrey to her feet.  She looks around at the four of you, and rises to her full height, full of queenly majesty.  "Come," she says.  "We have work to do."&#x000A;&#x000A;&#x000A;&#x000A;    *** You have changed the world. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?&#x000A;&gt;</result>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
