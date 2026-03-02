@@ -119,7 +119,7 @@ Carry out summoning:
 		move no_mist to the Void;
 		say "[one of]Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry[or]You summon an obscuring grey mist to surround you and hide you from prying eyes[stopping].
 		
-		You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, but it would then start to dissapate.";
+		You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, but it would then start to dissipate.";
 	otherwise:
 		if the thickness of the grey mist is greater than 12:
 			now the thickness of the grey mist is 15;
