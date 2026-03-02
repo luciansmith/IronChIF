@@ -325,16 +325,16 @@ The poplar trunks are scenery in Royal Gardens.  The description is "The poplars
 
 garden door is a door in Royal Gardens.  It is closed and locked.  It is inside from Royal Gardens and outside from Palace.  The description is "A canted [if open]open[otherwise]closed[end if] hatch to the Royal Quarters, nestled in the center of the garden.  Absolutely surrounded by guards."
 
-Check opening Garden Door:
+Last Check opening Garden Door:
 	say "There are way too many guards for that to have any chance of working." instead.
 
-Check unlocking Garden Door with:
+Last Check unlocking Garden Door with:
 	say "There are way too many guards for that to have any chance of working." instead.
 
 Before going inside from Royal Gardens:
 	try entering Garden Door instead;
 
-Check entering Garden Door:
+Last Check entering Garden Door:
 	If Sneaking is not happening:
 		say "No way.  It wouldn't matter how fast you were, how thick the mist was, anything.  You just can't get in there without being spotted." instead;
 	otherwise if the hunting cloak is purple:
