@@ -81,7 +81,7 @@ Great Hall Landing Cradle is below High Above.  "The Landing Cradle of the Great
 
 To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest."
 
-The Great Hall doors are a door in Great Hall Landing Cradle.  The printed name is "huge double doors of the Great Hall".  They are closed and locked.  They are inside from Great Hall Landing Cradle and outside from Upper Great Hall.  The description is "The huge double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster."  Understand "huge/door/double/canted/hatch/hatches/fine/scrollwork/broad/swoops/curls/branch/finer/giant/landing/cradle" as the Great Hall doors.
+The Great Hall doors are doors in Great Hall Landing Cradle.  The printed name is "huge double doors of the Great Hall".  They are closed and locked.  They are inside from Great Hall Landing Cradle and outside from Upper Great Hall.  The description is "The huge double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster."  Understand "huge/door/double/canted/hatch/hatches/fine/scrollwork/broad/swoops/curls/branch/finer/giant/landing/cradle" as the Great Hall doors.
 
 Check entering Great Hall doors during Being Chased:
 	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Guard has followed you, and you simply don't have any room to maneuver.";
@@ -208,11 +208,11 @@ Instead of going nowhere from Librum Landing Cradle:
 
 Librum Door is a door in Librum Landing Cradle.  It is closed and locked.  It is inside from Librum Landing Cradle and outside from Librum Itself.  The description is "A canted [if open]open[otherwise]closed[end if] hatch to the Librum, on the east side of the landing cradle."
 
-Check opening Librum Door:
+Last Check opening Librum Door:
 	if the lone guard is in the location:
 		say "The guard is entirely too watchful to let you do that." instead.
 
-Check unlocking Librum Door with:
+Last Check unlocking Librum Door with:
 	if the lone guard is in the location:
 		say "The guard is entirely too watchful to let you do that." instead.
 
@@ -334,34 +334,35 @@ Last Check unlocking Garden Door with:
 Before going inside from Royal Gardens:
 	try entering Garden Door instead;
 
-Last Check entering Garden Door:
+Last Check going Garden Door:
 	If Sneaking is not happening:
-		say "No way.  It wouldn't matter how fast you were, how thick the mist was, anything.  You just can't get in there without being spotted." instead;
+		say "No way.  It wouldn't matter how fast you were or how thick the mist was.  You just can't get in there as you are without someone seeing you." instead;
 	otherwise if the hunting cloak is purple:
 		say "Not only would you be caught, but you'd be humiliated for your entire life for having to walk because you were wearing an ancient purple cloak." instead;
-	otherwise:
-		say "OK.  Walking.  Right.  You raise yourself up on the tips of your talons, feeling ridiculous, but not wanting to flatten the grass with your (shudder) footsteps and give yourself away.  You wait for one of the guards to pass, then carefully take cautious steps towards the door.  Nobody reacts.  Hardly daring to breathe, you proceed further, antsy and ready to take to the skies any second.  Which wouldn't work, because you have this damn cloak on.  Whatever.  Two more steps.  You reach the door.  You hop (shudder) across the lintel.
-		
-		You're in.
-		
-		A few more steps, and a voice behind you says 'We should take the second hallway.' You nearly yelp, but stop yourself.  You knew Horatio would be here.  You were expecting him.  Right.
-		
-		You take a deep breath.  'Lead on,' you whisper.
-		
-		'I can't; I'm invisible.  I will tell you where to go, and follow you,' he replies.  Right.[bstars]";
-		wait for any key;
-		clear the screen;
-		say "You make your way, with Horatio's direction, through the Royal Quarters.  A time or two Horatio leads you to a place you'd have to fly to get past, but you know this place well, and even though you never walked anywhere, you still know the walking ways.  There's fewer guards to avoid than you expected, meaning that the Queen either has them all outside guarding the entrance, or she just doesn't have them to spare.
-		
-		As you get closer to your objective, a growing sense of unease forms in the pit of your stomach.  One by one, you pass all the places you pegged as most likely for it to be: the throne room, the vault, even storerooms.
-		
-		Then:  'This is it,' says Horatio.
-		
-		Oh no.";
-		wait for any key;
-		Move Horatio to Nursery_door; 
-		Move the player to Nursery_door;
-		stop the action;
+
+First Carry out going Garden Door:
+	say "OK.  Walking.  Right.  You raise yourself up on the tips of your talons, feeling ridiculous, but not wanting to flatten the grass with your (shudder) footsteps and give yourself away.  You wait for one of the guards to pass, then carefully take cautious steps towards the door.  Nobody reacts.  Hardly daring to breathe, you proceed further, antsy and ready to take to the skies any second.  Which wouldn't work, because you have this damn cloak on.  Whatever.  Two more steps.  You reach the door.  You hop (shudder) across the lintel.
+	
+	You're in.
+	
+	A few more steps, and a voice behind you says 'We should take the second hallway.' You nearly yelp, but stop yourself.  You knew Horatio would be here.  You were expecting him.  Right.
+	
+	You take a deep breath.  'Lead on,' you whisper.
+	
+	'I can't; I'm invisible.  I will tell you where to go, and follow you,' he replies.  Right.[bstars]";
+	wait for any key;
+	clear the screen;
+	say "You make your way, with Horatio's direction, through the Royal Quarters.  A time or two Horatio leads you to a place you'd have to fly to get past, but you know this place well, and even though you never walked anywhere, you still know the walking ways.  There's fewer guards to avoid than you expected, meaning that the Queen either has them all outside guarding the entrance, or she just doesn't have them to spare.
+	
+	As you get closer to your objective, a growing sense of unease forms in the pit of your stomach.  One by one, you pass all the places you pegged as most likely for it to be: the throne room, the vault, even storerooms.
+	
+	Then:  'This is it,' says Horatio.
+	
+	Oh no.";
+	wait for any key;
+	Move Horatio to Nursery_door; 
+	Move the player to Nursery_door;
+	stop the action;
 
 Palace is a room.  "If you're seeing this, I either haven't finished writing the finale, or you found a bug.  Hopefully, you're a tester, and that's your job.  Thank you!  Come back for a later version with the finale!";
 
@@ -381,7 +382,7 @@ Check going west from Nursery_door:
 Carry out taking off cloak in Nursery_Door:
 	say "Next to you, Horatio takes his own cloak off as well.";
 
-Nursery_itself is a room.  It is west of Nursery_door.  the printed name is "Nursery".  "The Nursery is not exactly how you remember it.  It was set up to grow new walls and furniture over time, to keep any occupant engaged and growing.  But the rhythm of it is baked into your bones.  The place for the roosts, along the north wall.  The [desk], grown to the size of the user.  The endless parade of ropes and balls and other toys along the south, some grown and some brought in.  The giant [window] to the west, overlooking the beautiful, beautiful forest."
+Nursery_itself is a room.  It is west of Nursery_door.  It is northwest of Nursery_door.  The printed name is "Nursery".  "The Nursery is not exactly how you remember it.  It was set up to grow new walls and furniture over time, to keep any occupant engaged and growing.  But the rhythm of it is baked into your bones.  The place for the roosts, along the north wall.  The [desk], grown to the size of the user.  The endless parade of ropes and balls and other toys along the south, some grown and some brought in.  The giant [window] to the west, overlooking the beautiful, beautiful forest."
 
 The roosts are scenery in Nursery_itself.  The description is "[You and aubrey] would swing from roost to roost, competing to see who could make the most jumps without opening your wings at all."  Understand "roost/north/wall" as roosts.
 

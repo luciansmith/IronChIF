@@ -52,7 +52,7 @@ Instead of going nowhere from Disused Hallway:
 	otherwise:
 		say "The hallway runs east to west, and there's a grate on the floor you could enter.";
 
-Check entering the grate:
+First carry out entering the grate:
 	say "You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper to the veins of this place: 'I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence.'
 	
 	After a few moments, you feel an undulation in the slick rippled floor beneath you, and you are compressed even further, as its peristalsis slides you slowly, and then more rapidly, away from your only home for the last ten years.  Then with a sudden >plop<, you're ejected into space.
@@ -243,7 +243,7 @@ A page-toggle rule for C3:
 
 C3b is a page.  It is for C3.
 The cdesc is "Is that real?"
-The description is "Horatio shrugs.  'I cannot prove it is so.  Many have chosen not to believe.  But I can sense capsae, and I can sense this.'";
+The description is "Horatio shrugs.  'I cannot prove it is so.  Many have chosen not to believe.  But I can sense capsae, so I sought this one out, and found it in the ruins of Creshim.'";
 
 C3a is a page.  It is for C3 and C3b.
 The cdesc is "Wow."
