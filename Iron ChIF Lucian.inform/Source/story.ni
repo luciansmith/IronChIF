@@ -11,6 +11,7 @@ After printing the banner text, say "For more information, try ABOUT and CREDITS
 Include Response Assistant by Aaron Reed.
 Include Version 7.1.1 of Hybrid Choices by AW Freyr.
 Include Basic Screen Effects by Emily Short.
+Include Version 6.0.220529 of Undo Output Control by Nathanael Nerode.
 
 Use the American dialect, serial comma, and VERBOSE room descriptions.
 
