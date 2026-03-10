@@ -90,6 +90,20 @@ Instead of eating Ash:
 Instead of taking Ash:
 	say "You could take Ash with you.  When you go.  Maybe."
 
+Constance can be determined.  Constance is not determined.
+
+Last check taking green capsa:
+	if Constance is not determined:
+		now Constance is determined;
+		say "You take a deep breath.  Once you take the green capsa, you'll be the 'holder' of taclor, and Horatio will ask you for your decision.  Should you get it now?";
+		if player consents:
+			say "You're right.  It's time.";
+		otherwise:
+			say "You turn to look at Ash and the Nursery once more.  Before things change." instead;
+	otherwise:
+		say "It's time.";
+
+
 Finale is a scene.  Finale begins when the player encloses the green capsa.
 
 When Finale begins:
