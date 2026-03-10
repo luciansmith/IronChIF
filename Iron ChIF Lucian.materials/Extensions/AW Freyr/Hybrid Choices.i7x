@@ -487,8 +487,8 @@ After reading a command when in CYOA mode (this is the accept testing commands d
 	if the player's command includes "showme", now the command accepted is true;
 	if the player's command includes "rules", now the command accepted is true;
 	if the player's command includes "test", now the command accepted is true;
-	if the player's command includes "relations", now the command accepted is true.
-	if the player's command includes "actions", now the command accepted is true.
+	if the player's command includes "relations", now the command accepted is true;
+	if the player's command includes "actions", now the command accepted is true;
 
 Chapter - Accept System Commands
 
