@@ -119,7 +119,7 @@ Carry out summoning:
 		move no_mist to the Void;
 		say "[one of]Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry[or]You summon an obscuring grey mist to surround you and hide you from prying eyes[stopping].
 		
-		You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, but it would then start to dissipate.";
+		You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, though it would then start to dissipate.";
 	otherwise:
 		if the thickness of the grey mist is greater than 12:
 			now the thickness of the grey mist is 15;
@@ -165,8 +165,13 @@ Report xyzzying:
 	say "Legends say that the capsa of movement contained such a scroll, but it was lost years ago.  An itinerant troubador once told a tale at the royal court of a Magpie Clan woman who saw the open capsa materialize on her table one morning, and grabbed it just in time to be transported with it to its next location.  She had many fanciful adventures until, years later, it finally took her home again.  She opened the capsa and let it go, hoping that another would have adventures like hers."
 
 [Understand "fly" as going something.] [Well!  An I7 'abject failure' bug!  Woo!]
+Understand the command "fly" as "go".
 
 Check jumping:
 	say "Pfaugh!  Jumping is for fledglings!" instead;
+
+After undoing an action:
+	if cyoa mode is true:
+		say description of the location.
 
 Rules and New Actions ends here.
