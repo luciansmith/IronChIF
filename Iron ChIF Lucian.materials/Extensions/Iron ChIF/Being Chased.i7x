@@ -117,7 +117,10 @@ To determine evasion:
 	If Everything Falls is happening and Everything Falls is upended:
 		say "You dodge and weave and almost get away from your pursuers, but when 'down' always points straight at you, even when they can't see you, they always know where you are.";
 	Otherwise if Super-Momentum is happening:
-		say "You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.";
+		if go go go is happening:
+			say "Your extra speed from the capsa of haste lets you pull ahead, since your pursuers are only proportionally faster than they were.  You manage to use the extra distance to dodge behind a Poplar and plummet, out of view of any stray Raven.";
+		otherwise:
+			say "You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.";
 		escape and recover;
 	Otherwise if Momentum is happening:
 		If the thickness of the grey mist is at least 10:
