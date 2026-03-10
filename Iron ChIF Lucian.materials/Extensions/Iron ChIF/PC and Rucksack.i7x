@@ -203,7 +203,7 @@ Go go go is a recurring scene.  Go go go begins when the red capsa is open.  Go 
 When go go go begins:
 	say "You speed up, and so does the wind.  You wriggle, feeling the delightfully fast responses from every muscle in your body.
 	
-	From everywhere in the Aerie, you hear the drumming of Woodpeckers in the Pounding dialect:  'Target is quick, repeat target is quick.  Remember you are too.'  Fortunately, it doesn't seem like they were able to triangulate on you.  Now you just have to be good at being faster than normal, against others who are also faster than normal, and who have had months to practice being fast.  No problem.";
+	From everywhere in the Aerie, you hear the drumming of Woodpeckers in the Pounding dialect:  'Target is quick, repeat, target is quick.  Remember you are too.'  Fortunately, it doesn't seem like they were able to triangulate on you.  And the speed increase is proportional: if you would have put some distance between you and your pursuers, now you'll put more.";
 
 When go go go ends:
 	say "From everywhere in the Aerie, you hear the drumming of Woodpeckers in the Pounding dialect: 'Target is slow again, repeat, target is slow.'  Just in case they couldn't tell they were slow themselves.  Actually, you do recall some Raven Guards from your childhood that would have needed to be told.  Ah, poor James.";
