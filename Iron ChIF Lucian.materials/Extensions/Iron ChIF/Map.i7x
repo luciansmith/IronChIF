@@ -54,7 +54,7 @@ After going from High Above:
 		say "You dive blindingly fast towards the Aerie through the fog, and the mist swallows you with nary an eddy.";
 	otherwise:
 		now Constance is speeding;
-		say "You tuck in your wings and dive down [if the noun is not down][noun][end if ] towards the Aerie, thrilling to the misty wind streaming through your feathers.";
+		say "You tuck in your wings and dive down [if the noun is not down][noun] [end if]towards the Aerie, thrilling to the misty wind streaming through your feathers.";
 	continue the action;
 
 Starting Off is a scene.  Starting Off begins when play begins.  Starting Off ends when the player is not in High Above.
