@@ -172,6 +172,13 @@ Check jumping:
 
 After undoing an action:
 	if cyoa mode is true:
-		say description of the location.
+		say the description of the current page;
+		say paragraph break;
+		follow the page-output rules for the current page;
+		now the current page is previously displayed;
+		refresh choices;
+	otherwise:
+		say the description of the location;
+		say paragraph break;
 
 Rules and New Actions ends here.
