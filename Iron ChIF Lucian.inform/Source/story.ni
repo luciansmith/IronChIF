@@ -30,11 +30,28 @@ By tonight, you will know.  You're not leaving without it."
 
 Chapter Testing - not for release
 
+[Intro:]
 test summon with "d/n/summon mist/d/u/d/u".
 test scenery with "x aerie/x royal quarters/x librum/x great hall".
 test map with "d/u/n/u/e/u/d/e/nw/s/n/se/w/d/u/e/d/e/d/n/d/u/u".
-test thicken_mist with "summon mist/g/g/g/g/g".
-test chase_ustart with "open purple/e/nw/u".
-test chase_dstart with "d/d/open purple/n/se/u".
-test chase_mstart with "d/open purple/e/w/u".
+test cant_go with "u/w/d/s/in/e/se/in/nw/nw/in/d/d/w/u/u".
+
+[One chase to Horatio:]
+test quick_chase with "take off rucksack/open haste/open purple/close purple/d".
+
+[Horatio's journey:]
+test quick_horatio with "x cell/x desk/x cell door/w/w/close grate/open grate/enter grate/u/u".
+
+test chase_ustart with "open purple/close purple/e/nw/u".
+test chase_dstart with "d/d/open purple/close purple/n/se/u".
+test chase_mstart with "d/open purple/close purple/e/w/u".
+
+test mist_escape with "summon mist/d/summon mist/e/summon mist/nw/summon mist/u".
+test dive_escape with "d/d/u/u/".
+test haste_escape with "open haste/d/u/close haste".
+test fastmist_escape with "summon mist/summon mist/d/summon mist/u/summon mist/d".
+
+test haste_dive with "open haste/d/d/close haste/u/u".
+test lock_unlock with "lock librum/open librum/e/lock door/unlock door/unlock guard/nw/lock door/unlock door/s/lock door/unlock door/d/unlock net/u/u/".
+
 test horatio_speedrun with "summon mist/d/u/open purple/d/d"

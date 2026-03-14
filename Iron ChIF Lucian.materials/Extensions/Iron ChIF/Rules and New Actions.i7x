@@ -172,13 +172,36 @@ Check jumping:
 
 After undoing an action:
 	if cyoa mode is true:
-		say the description of the current page;
-		say paragraph break;
-		follow the page-output rules for the current page;
-		now the current page is previously displayed;
-		refresh choices;
+		try looking;
 	otherwise:
 		say the description of the location;
 		say paragraph break;
+
+Understand "lock [something]" as locking keylessly. Locking keylessly is an action applying to one thing.
+
+Check locking keylessly:
+	if the noun is locked:
+		say "[The noun] is already locked.  Presumably by someone who had the actual key." instead;
+	if the noun is not lockable:
+		say "[The noun] cannot be locked." instead;
+
+Carry out locking keylessly:
+	say "You do not have the keys for anything around here."
+
+Understand "unlock [something]" as unlocking keylessly. Unlocking keylessly is an action applying to one thing.
+
+Check unlocking keylessly:
+	if the noun is not openable:
+		say "That's not something that opens, let alone locks." instead;
+	if the noun is not lockable:
+		say "That's not something you could lock or unlock." instead;
+	if the noun is unlocked:
+		say "[The noun] is already unlocked." instead;
+	if the noun is open:
+		say "[The noun] is already open." instead;
+
+Carry out unlocking keylessly:
+	say "You do not have the keys for anything around here."
+
 
 Rules and New Actions ends here.

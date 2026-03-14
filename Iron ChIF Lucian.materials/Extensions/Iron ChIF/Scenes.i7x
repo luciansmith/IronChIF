@@ -103,6 +103,9 @@ Last check taking green capsa:
 	otherwise:
 		say "It's time.";
 
+Report taking green capsa:
+	stop the action;
+
 
 Finale is a scene.  Finale begins when the player encloses the green capsa.
 
@@ -133,7 +136,7 @@ The description is "'I know not,' Horatio replies.  'I know that it will grant a
 
 F2c is a dead-end.  It is for F1.  It is one-off.
 The cdesc is "'Why not let the queen... let Aubrey decide?'"
-The description is "The feathers on Horatio's neck ruffle.  'She has already denied me.  Every day, I ask, and every day, she sends her rejection.  If you leave, I will keep asking her.  She may change her mind.  She may not.  You may know her better than I.'"
+The description is "The feathers on Horatio's neck ruffle.  'She has already denied me.  Every day, I send a new request, and every day, she sends her rejection.  If you leave, I will keep asking her.  She may change her mind.  She may not.  You may know her better than I.'"
 
 
 F3 is a page.  It is for F1.

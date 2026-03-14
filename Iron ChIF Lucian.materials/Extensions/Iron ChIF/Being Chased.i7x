@@ -145,24 +145,25 @@ To escape and recover:
 	Move the small pile of tiny padlocks to the Librum Landing Cradle;
 	Now the closeness of Being Chased is 0;
 	Now Constance is cruising;
-	say "[lb]The Raven's frustrated caws echo in the mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.[lb]";
-	if the rucksack is not enclosed by the player:
-		say "You retrieve your rucksack and any fallen capsae, and plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.";
+	say "[lb]The Raven's frustrated caws echo in the mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.";
+	if Horatio is not remembered:
+		if the rucksack is not enclosed by the player:
+			say "[lb]You retrieve your rucksack and any fallen capsae, and plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.";
+			move the rucksack to the player;
+		otherwise:
+			say "[lb]You plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.";
+		if the purple capsa of opening is not enclosed by the player:
+			move the purple capsa of opening to the rucksack;
+		if the red capsa is not enclosed by the player:
+			move the red capsa to the rucksack;
+		if the gold capsa is open:
+			now the gold capsa is closed;
+		if the gold capsa is not enclosed by the player:
+			move the gold capsa to the rucksack;
 		move the rucksack to the player;
-	otherwise:
-		say "You plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.";
-	if the purple capsa of opening is not enclosed by the player:
 		move the purple capsa of opening to the rucksack;
-	if the red capsa is not enclosed by the player:
 		move the red capsa to the rucksack;
-	if the gold capsa is open:
-		now the gold capsa is closed;
-	if the gold capsa is not enclosed by the player:
-		move the gold capsa to the rucksack;
-	move the rucksack to the player;
-	move the purple capsa of opening to the rucksack;
-	move the red capsa to the rucksack;
-	Move the player to High Above, without printing a room description;
+		Move the player to High Above, without printing a room description;
 
 When Being Chased ends:
 	if cell door is open:

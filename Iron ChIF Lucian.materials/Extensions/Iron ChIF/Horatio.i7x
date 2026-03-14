@@ -5,9 +5,9 @@ Horatio's story is a scene.  Horatio's story begins when Horatio is remembered. 
 
 Forgotten Brig is a room.  "A small but cosy cell, grown with austerity but basic comfort in mind.  Your now-open [cell door] leads west."
 
-The cell door is a door.  It is west of Forgotten Brig and east of Disused Hallway.  It is closed and locked.
+The cell door is a door.  It is west of Forgotten Brig and east of Disused Hallway.  It is closed and locked.  The description is "Ironwood-grown and maintained; your cell door is [if closed]closed[otherwise]open[end if]."
 
-cell_contents is scenery in Forgotten Brig.  The printed name is "cell contents".  The description is "A straight roost by a desk for writing, and a scooped roost for sleeping.  Enough space to spread your wings.  A rope wall for excercise.  Not bad."  Understand "cell/contents/austerity/comfort/straight/scooped/roost/space/spread/rope/wall" as cell_contents;
+cell_contents is scenery in Forgotten Brig.  The printed name is "cell contents".  The description is "A straight roost by a desk for writing, and a scooped roost for sleeping.  Enough space to spread your wings.  A rope wall for excercise.  Not bad."  Understand "cell/contents/austerity/comfort/straight/scooped/roost/space/spread/rope/wall/desk" as cell_contents;
 
 Does the player mean examining cell_contents: it is likely;
 
@@ -29,14 +29,14 @@ The description of the scroll of bostrat is "While '[name]' can be clearly read 
 
 Disused Hallway is a room.  It is east of Nope.  "The only time you ever saw anyone in this hallway was when Georg came to give you your meals, or clean the cell.  The living walls, still elegantly patterned, even here, self-replenish, and the floor carries away shed bark through the [grate].  It leads west into the living area, and your old [cell door] leads east.";
 
-A grate is a closed openable enterable container in Disused Hallway.  The description is "The grate conveys unneeded materials to the outside, and the forest floor.  'Rezrov' has done its job there, too: it lies open.";
+A grate is a closed openable enterable container in Disused Hallway.  The description is "The grate conveys unneeded materials to the outside, and the forest floor.  [if open]'Rezrov' has done its job there, too: it lies open[otherwise]The grate is folded down, closed[end if].";
 
 Check going west from Disused Hallway:
 	say "Your place is not with the denizens of this Aerie, but with the prodigal daughter, now returned, and the capsa she seeks." instead.
 
-Carry out opening grate:
+After opening grate:
 	say "You grasp the grate with your talons and carefully fold it upward, allowing access.";
-	continue the action;
+	stop the action;
 
 Before taking the grate:
 	try opening the grate;
@@ -52,7 +52,7 @@ Instead of going nowhere from Disused Hallway:
 	otherwise:
 		say "The hallway runs east to west, and there's a grate on the floor you could enter.";
 
-First carry out entering the grate:
+After entering the grate:
 	say "You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper to the veins of this place: 'I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence.'
 	
 	After a few moments, you feel an undulation in the slick rippled floor beneath you, and you are compressed even further, as its peristalsis slides you slowly, and then more rapidly, away from your only home for the last ten years.  Then with a sudden >plop<, you're ejected into space.
@@ -62,7 +62,8 @@ First carry out entering the grate:
 	No matter.";
 	Move Horatio to in_forest;
 	Now cell door is open; [Just in case]
-	rule fails;
+	stop the action;
+
 
 When Horatio's story begins:
 	say "[bstars]";
@@ -234,7 +235,7 @@ A page-toggle rule for C1b:
 	now the player is Constance;
 
 C3 is a page.
-The description is "In response, Horatio offers you the blue capsa he's holding.  It's closed, and you cock your head questioningly at him.  'It safe.  Nothing will happen when you open it.'
+The description is "In response, Horatio offers you the blue capsa he's holding.  It's closed, and you cock your head questioningly at him.  'It is safe.  Nothing will happen when you open it.'
 
 Weird trap if it was a trap.  Fine.  You open the blue capsa, bracing yourself... and nothing happens.  You look at the scroll, which seems to have no symbols on it at all apart from the title:  'BOSTRAT'."
 

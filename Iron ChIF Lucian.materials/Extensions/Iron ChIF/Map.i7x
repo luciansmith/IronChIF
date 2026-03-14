@@ -15,7 +15,7 @@ distant_quarters is scenery in high above.  The printed name is "Royal Quarters"
 
 distant_guards is scenery in high above.  The printed name is "circling guards".  The description is "The last time you were here, the aerie was not nearly on such high alert.  Now there's guards everywhere, but especially focused on circling the Royal Quarters.".  Understand "raven/circling/guards" as distant_guards.  Understand "raven clan" as distant_guards.
 
-distant_librum is scenery in high above.  The printed name is "Librum".  The description is "[if the grey mist is in the location]As you recall, the[otherwise]The[end if] Librum was your target the last time out, and where you obtained the capsae you brought back with you. Its landing cradle is simply decorated, grown with interlocking redwood and pine in a way that suggests shelves of books.  The reading nooks grown into the sides of the main building proved a reasonable entrance for a creative supplicant; no doubt that method will have been shut down by now."  Understand "librum/landing/cradle/reading/nooks" as distant_librum.
+distant_librum is scenery in high above.  The printed name is "the Librum".  The description is "[if the grey mist is in the location]As you recall, the[otherwise]The[end if] Librum was your target the last time out, and where you obtained the capsae you brought back with you. Its landing cradle is simply decorated, grown with interlocking redwood and pine in a way that suggests shelves of books.  The reading nooks grown into the sides of the main building proved a reasonable entrance for a creative supplicant; no doubt that method will have been shut down by now."  Understand "librum/landing/cradle/reading/nooks" as distant_librum.
 
 distant_great_hall is scenery in high above.  The printed name is "Great Hall".  The description is "[if the grey mist is in the location]As you recall, the[otherwise]The[end if] Great Hall is by far the largest building in the Aerie complex, and indeed the largest building you've ever seen in your life.  If the stories are true, its planning took three years, and its growth was overseen by three [i]generations[r] of Throckwrights.  Every Royal Throckrite since has sought to put their own personal stamp on the Great Hall, leaving it more than a little haphazardly grown by now, but its current form is still impressive, even as it grows less coherent with every new modification."  Understand "great/hall/largest/building/growth/haphazard/haphazardly/coherent/incoherent" as distant_great_hall.
 
@@ -83,7 +83,7 @@ To the north is the Royal Quarters and Gardens, the Librum to the east, and as a
 
 The Great Hall doors are doors in Great Hall Landing Cradle.  The printed name is "huge double doors of the Great Hall".  They are closed and locked.  They are inside from Great Hall Landing Cradle and outside from Upper Great Hall.  The description is "The huge double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster."  Understand "huge/door/double/canted/hatch/hatches/fine/scrollwork/broad/swoops/curls/branch/finer/giant/landing/cradle" as the Great Hall doors.
 
-Check entering Great Hall doors during Being Chased:
+Last Check going Great Hall doors during Being Chased:
 	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Guard has followed you, and you simply don't have any room to maneuver.";
 	end the story saying "You have been captured.";
 
@@ -206,7 +206,7 @@ Instead of going nowhere from Librum Landing Cradle:
 	Otherwise:
 		say "From here, the Great Hall is to the west and the Royal Quarters and Gardens are to the northwest.  You can also fly up again, or descend to the forest below."
 
-Librum Door is a door in Librum Landing Cradle.  It is closed and locked.  It is inside from Librum Landing Cradle and outside from Librum Itself.  The description is "A canted [if open]open[otherwise]closed[end if] hatch to the Librum, on the east side of the landing cradle."
+The Librum Door is a door in Librum Landing Cradle.  It is closed and locked.  It is inside from Librum Landing Cradle and outside from Librum Itself.  The description is "A canted [if open]open[otherwise]closed[end if] hatch to the Librum, on the east side of the landing cradle."
 
 Last Check opening Librum Door:
 	if the lone guard is in the location:
@@ -219,7 +219,7 @@ Last Check unlocking Librum Door with:
 Before going inside from Librum Landing Cradle:
 	try entering Librum Door instead;
 
-Check entering Librum Door during Being Chased:
+Last Check going Librum Door during Being Chased:
 	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Guard has followed you, and you simply don't have any room to maneuver.";
 	end the story saying "You have been captured.";
 
@@ -242,10 +242,6 @@ Check entering Librum Door:
 	otherwise if the location is Librum Itself:
 		[*Leaving* the Librum.  We'll assume the guard and Horatio are still outside.  And, sigh, not make this a puzzle.]
 		say "Listening to Horatio talk with the guard, you enter the shadows just inside the Librum door, where you can watch the guard but not be seen.  When the moment is right, you launch yourself through, and back up into the safety of the mist.";
-
-Carry out entering Librum door during Being Chased:
-	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Guard has followed you, and you simply don't have any room to maneuver.";
-	end the story saying "You have been captured.";
 
 Check closing the purple capsa of opening when the location is the Librum Itself:
 	say "The guard would close the door again, and you'd be trapped!
@@ -308,7 +304,7 @@ Instead of opening the display case:
 
 Section Royal Gardens
 
-Royal Gardens is a room. It is north of Great Hall Landing Cradle, and northwest of Librum Landing Cradle.  "The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in it only appropriate spot.  The landing cradle next to the [garden door] to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards. 
+Royal Gardens is a room. It is north of Great Hall Landing Cradle, and northwest of Librum Landing Cradle.  "The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the [garden door] to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards. 
 
 From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast."
 
@@ -317,13 +313,16 @@ Down from Royal Gardens is in_forest.
 North from High Above is Royal Gardens.
 
 Instead of going nowhere from Royal Gardens:
-	say "From here, you can fly south to the Great Hall, or southeast to the Librum. The net prevents you from reaching the forest floor from here, but you can go straight up to the Great Hall, east (and up) to the Librum, or north (and up) to the Royal Quarters and Gardens."
+	if the noun is north:
+		try entering garden door;
+	otherwise:
+		say "From here, you can fly south to the Great Hall, or southeast to the Librum. You can also fly up to the skies, or down to the forest."
 
 The royal landing cradle is scenery in Royal Gardens.  The description is "The cradle's aesthetics have suffered somewhat from having to be re-grown every time the royal insignia changes, but it's still tastefully lavish."  Understand "aesthetics/insignia/opulent" as the royal landing cradle.
 
 The poplar trunks are scenery in Royal Gardens.  The description is "The poplars around the landing cradle contain five guards that you can see (since you know where to look), and almost certainly another five that you cannot (since you know where you can't look)."  Understand "arcs/shaded/inviting/roosts/guards/eight/five/ten" as the poplar trunks.
 
-garden door is a door in Royal Gardens.  It is closed and locked.  It is inside from Royal Gardens and outside from Palace.  The description is "A canted [if open]open[otherwise]closed[end if] hatch to the Royal Quarters, nestled in the center of the garden.  Absolutely surrounded by guards."
+The garden door is a door in Royal Gardens.  It is closed and locked.  It is inside from Royal Gardens and outside from Palace.  The description is "A canted [if open]open[otherwise]closed[end if] hatch to the Royal Quarters, nestled in the center of the garden.  Absolutely surrounded by guards."
 
 Last Check opening Garden Door:
 	say "There are way too many guards for that to have any chance of working." instead.
@@ -335,12 +334,15 @@ Before going inside from Royal Gardens:
 	try entering Garden Door instead;
 
 Last Check going Garden Door:
-	If Sneaking is not happening:
+	If Being Chased is happening:
+		say "You fly through the door, and immediately regret your decision.  Not only does the Raven Guard who were chasing you follow, but so do the guards that stayed behind to guard, well, this door.";
+		end the story saying "You have been captured.";
+	otherwise if Sneaking is not happening:
 		say "No way.  It wouldn't matter how fast you were or how thick the mist was.  You just can't get in there as you are without someone seeing you." instead;
 	otherwise if the hunting cloak is purple:
 		say "Not only would you be caught, but you'd be humiliated for your entire life for having to walk because you were wearing an ancient purple cloak." instead;
 
-First Carry out going Garden Door:
+After going Garden Door:
 	say "OK.  Walking.  Right.  You raise yourself up on the tips of your talons, feeling ridiculous, but not wanting to flatten the grass with your (shudder) footsteps and give yourself away.  You wait for one of the guards to pass, then carefully take cautious steps towards the door.  Nobody reacts.  Hardly daring to breathe, you proceed further, antsy and ready to take to the skies any second.  Which wouldn't work, because you have this damn cloak on.  Whatever.  Two more steps.  You reach the door.  You hop (shudder) across the lintel.
 	
 	You're in.
@@ -379,8 +381,9 @@ Check going west from Nursery_door:
 		
 		'Then take it off,' he replies." instead;
 
-Carry out taking off cloak in Nursery_Door:
+After taking off cloak in Nursery_Door:
 	say "Next to you, Horatio takes his own cloak off as well.";
+	stop the action;
 
 Nursery_itself is a room.  It is west of Nursery_door.  It is northwest of Nursery_door.  The printed name is "Nursery".  "The Nursery is not exactly how you remember it.  It was set up to grow new walls and furniture over time, to keep any occupant engaged and growing.  But the rhythm of it is baked into your bones.  The place for the roosts, along the north wall.  The [desk], grown to the size of the user.  The endless parade of ropes and balls and other toys along the south, some grown and some brought in.  The giant [window] to the west, overlooking the beautiful, beautiful forest."
 
