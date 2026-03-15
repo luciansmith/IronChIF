@@ -131,13 +131,13 @@ Constance locks her wings so she can turn and look at you intently for several s
 
 Constance thinks for a bit.  [if H3 is not previously displayed]Then she rolls her eyes.  'OK, yeah, I have no idea what you're talking about.'[otherwise]Then her eyes widen.  'You want to read the scrolls!' she exclaims.[end if]"
 
-H2b is a page.  It is for H2a.  It is cancelled by H3.
+H2b is a page.  It is for H2a.  It is a one-off.
 The cdesc is "Ask her about scrolls."
 The description is "'What do you do with scrolls?' you ask.
 
 Constance scoffs.  'Read them!' she exclaims, then laughs, as another thought occurs to her. 'Which is the one thing you [i]can't[r] do with the scrolls in the capsae, because nobody knows...'  She trails off, and gives you another look.  'Wait, really?  You?'";
 
-H2c is a page. It is for H2a.  It is cancelled by H3.
+H2c is a page. It is for H2a.  It is a one-off.
 The cdesc is "Tell her about scrolls."
 The description is "'The scrolls were meant to be read, not hoarded', you say.
 
