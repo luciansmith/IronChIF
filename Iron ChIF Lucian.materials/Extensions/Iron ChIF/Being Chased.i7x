@@ -144,6 +144,7 @@ To escape and recover:
 	Move the Lone Guard to the Librum Landing Cradle;
 	Move the small pile of tiny padlocks to the Librum Landing Cradle;
 	Now the closeness of Being Chased is 0;
+	Now the thickness of the grey mist is 1;
 	Now Constance is cruising;
 	say "[lb]The Raven's frustrated caws echo in the mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.";
 	if Horatio is not remembered:

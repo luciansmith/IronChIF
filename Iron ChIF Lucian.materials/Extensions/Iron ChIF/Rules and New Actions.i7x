@@ -97,7 +97,7 @@ When play begins:
 The grey mist has a number called thickness.  The thickness of the grey mist is 1.
 
 To say mist density:
-	if the thickness of the mist is less than 4:
+	if the thickness of the grey mist is less than 4:
 		say "thin ";
 	otherwise if the thickness of the grey mist is less than 8:
 		say "";
