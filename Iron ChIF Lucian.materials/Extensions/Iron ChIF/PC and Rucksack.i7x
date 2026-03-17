@@ -125,6 +125,14 @@ Every turn during Doors Re-close:
 			now the Librum door is locked;
 			if the player can see the Librum door:
 				say "The guard locks the Librum door.";
+		if the garden door is open:
+			now the garden door is closed;
+			if the player can see the garden door:
+				say "A guard flies down and closes the garden door.";
+		otherwise if the garden door is unlocked:
+			now the garden door is locked;
+			if the player can see the garden door:
+				say "The guard locks the garden door and returns to their perch.";
 		[LS DEBUG:  revisit this if I implement other guarded doors at some point.]
 
 To decide whether cannot-close:

@@ -320,7 +320,7 @@ Instead of going nowhere from Royal Gardens:
 
 The royal landing cradle is scenery in Royal Gardens.  The description is "The cradle's aesthetics have suffered somewhat from having to be re-grown every time the royal insignia changes, but it's still tastefully lavish."  Understand "aesthetics/insignia/opulent" as the royal landing cradle.
 
-The poplar trunks are scenery in Royal Gardens.  The description is "The poplars around the landing cradle contain five guards that you can see (since you know where to look), and almost certainly another five that you cannot (since you know where you can't look)."  Understand "arcs/shaded/inviting/roosts/guards/eight/five/ten" as the poplar trunks.
+The poplar trunks are scenery in Royal Gardens.  The description is "The poplars around the landing cradle contain five guards that you can see (since you know where to look), and almost certainly another five that you cannot (since you know where you can't look)."  Understand "arcs/shaded/inviting/roosts/guards/guard/eight/five/ten" as the poplar trunks.
 
 The garden door is a door in Royal Gardens.  It is closed and locked.  It is inside from Royal Gardens and outside from Palace.  The description is "A canted [if open]open[otherwise]closed[end if] hatch to the Royal Quarters, nestled in the center of the garden.  Absolutely surrounded by guards."
 
