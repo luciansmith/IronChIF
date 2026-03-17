@@ -109,8 +109,12 @@ To say mist density:
 Summoning is an action applying to one thing.  Understand "summon [something]" as summoning.
 
 Check summoning something:
+	if the player is Horatio:
+		say "You quietly sing a few notes of the song of bostrat, and a small trail of thin mist appears in front of you, twists gently, then dissipates." instead;
 	if the noun is not the grey mist and the noun is not the no_mist:
-		say "You're a Bostrat: you can summon mist and clouds, but nothing else." instead.
+		say "You're a Bostrat: you can summon mist and clouds, but nothing else." instead;
+
+Does the player mean summoning the grey mist: it is very likely.
 
 Carry out summoning:
 	if no_mist is in the location:

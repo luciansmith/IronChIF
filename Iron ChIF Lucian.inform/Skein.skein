@@ -1445,5 +1445,14 @@
     <result xml:space="preserve">grey mist - backdrop&#x000A;location: in Forgotten Brig&#x000A;unlit, inedible, fixed in place, scenery; singular-named, improper-named&#x000A;description: "Grey mist swirls and surrounds you, covering you like a blanket."&#x000A;initial appearance: none&#x000A;printed name: "grey mist"&#x000A;printed plural name: "backdrops"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;thickness: 1&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-759"/>
+    </children>
+  </item>
+  <item nodeId="node-759">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">(the blue capsa of mist)&#x000A;You're a Bostrat: you can summon mist and clouds, but nothing else.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
 </Skein>
