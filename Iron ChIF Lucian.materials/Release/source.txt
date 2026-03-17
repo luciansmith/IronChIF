@@ -42,16 +42,20 @@ test quick_chase with "take off rucksack/open haste/open purple/close purple/d".
 [Horatio's journey:]
 test quick_horatio with "x cell/x desk/x cell door/w/w/close grate/open grate/enter grate/u/u".
 
+[Chase tests]
 test chase_ustart with "open purple/close purple/e/nw/u".
 test chase_dstart with "d/d/open purple/close purple/n/se/u".
 test chase_mstart with "d/open purple/close purple/e/w/u".
 
+[Escape tests]
 test mist_escape with "summon mist/d/summon mist/e/summon mist/nw/summon mist/u".
 test dive_escape with "d/d/u/u/".
 test haste_escape with "open haste/d/u/close haste".
 test fastmist_escape with "summon mist/summon mist/d/summon mist/u/summon mist/d".
 
+[Environmental tests]
 test haste_dive with "open haste/d/d/close haste/u/u".
 test lock_unlock with "lock librum/open librum/e/lock door/unlock door/unlock guard/nw/lock door/unlock door/s/lock door/unlock door/d/unlock net/u/u/".
 
+[quickest way to get to Horatio]
 test horatio_speedrun with "summon mist/d/u/open purple/d/d"

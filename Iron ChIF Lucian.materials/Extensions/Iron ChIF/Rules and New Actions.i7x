@@ -117,7 +117,7 @@ Carry out summoning:
 		now the location is cloudy;
 		update backdrop positions;
 		move no_mist to the Void;
-		say "[one of]Calling on your heritage as a Bostrat, you summon moisture from the air, and it slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry[or]You summon an obscuring grey mist to surround you and hide you from prying eyes[stopping].
+		say "[one of]Calling on your heritage as a Bostrat, you sing the ancient song of mist and rain and thunder, summoning moisture from the air.  It slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry[or]You sing, summoning an obscuring grey mist to surround you and hide you from prying eyes[stopping].
 		
 		You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, though it would then start to dissipate.";
 	otherwise:
@@ -133,7 +133,7 @@ Carry out summoning:
 				now the thickness of the grey mist is 9;
 			otherwise:
 				now the thickness of the grey mist is 6;
-			say "You draw even more moisture into the air, and feed it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.";
+			say "Your song draws even more moisture into the air, feeding it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.";
 
 Mist depletion is a recurring scene.  Mist depletion begins when the thickness of the grey mist is greater than one.  Mist depletion ends when the thickness of the grey mist is one.
 
@@ -162,13 +162,14 @@ Before Descending:
 
 Xyzzying is an action applying to nothing.  Understand "xyzzy" as xyzzying.
 Report xyzzying:
-	say "Legends say that the capsa of movement contained such a scroll, but it was lost years ago.  An itinerant troubador once told a tale at the royal court of a Magpie Clan woman who saw the open capsa materialize on her table one morning, and grabbed it just in time to be transported with it to its next location.  She had many fanciful adventures until, years later, it finally took her home again.  She opened the capsa and let it go, hoping that another would have adventures like hers."
+	say "[if the player is Constance]Legends say that the capsa of movement contained such a scroll, but it was lost years ago.  An itinerant troubador once told a tale at the royal court of a Magpie Clan woman who saw the open capsa materialize on her table one morning, and grabbed it just in time to be transported with it to its next location.  She had many fanciful adventures until, years later, it finally took her home again.  She opened the capsa and let it go, hoping that another would have adventures like hers[otherwise]The capsa of movement is incredibly annoying.  Like all capsae, you can feel where it is just at the edge of your senses, but every time it jumps from one location to another, it's like a flicker of movement at the edge of your sight[end if]."
 
 [Understand "fly" as going something.] [Well!  An I7 'abject failure' bug!  Woo!]
-Understand the command "fly" as "go".
+Understand "fly" as going.
+Understand "fly [direction]" as going.
 
 Check jumping:
-	say "Pfaugh!  Jumping is for fledglings!" instead;
+	say "[if the player is Constance]Pfaugh![otherwise]Your old bones aren't what the used to be.[end if]  Jumping is for fledglings!" instead;
 
 After undoing an action:
 	if cyoa mode is true:

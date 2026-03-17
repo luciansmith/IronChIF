@@ -53,7 +53,7 @@ Instead of going nowhere from Disused Hallway:
 		say "The hallway runs east to west, and there's a grate on the floor you could enter.";
 
 After entering the grate:
-	say "You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper to the veins of this place: 'I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence.'
+	say "You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper a song to the veins of this place: 'I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence.'
 	
 	After a few moments, you feel an undulation in the slick rippled floor beneath you, and you are compressed even further, as its peristalsis slides you slowly, and then more rapidly, away from your only home for the last ten years.  Then with a sudden >plop<, you're ejected into space.
 	

@@ -185,7 +185,7 @@ Then Aubrey, your friend, your love, your queen, your enemy, bursts through the 
 
 F6a is a page.  It is for F6.  It flips to F7.
 The cdesc is "Get between Aubrey and Horatio."
-The description is "You fling yourself across the room to stop her, but before she even reaches you, a wave of sound catches her and throws her back.  Her eyes roll back, and she falls twitching to the floor."
+The description is "You fling yourself across the room to stop her, but before she even reaches you, a wave of sound catches her and stops her in her tracks, her eyes roll back, and she falls twitching to the floor."
 
 F6b is a page.  It is for F6.  It flips to F7.
 The cdesc is "'Aubrey, no!'"
@@ -206,7 +206,7 @@ The cdesc is "Tell Horatio to stop.".
 The description is "'Horatio!  It's too much!  You have to stop!' you cry.  You might better yell at a waterfall.  The song tumbles from his mouth, filling the room, the Aerie, the world with sound."
 
 F7d is a page.  It is for F7.  It flips to F7.  It is a one-off.
-The cdesc is "Why is the song affecting Aubrey, but not you and Ash?"
+The cdesc is "The song's affecting Aubrey, but not you and Ash.  Why?"
 The description is "Your eyes dart wildly across the scene, trying to figure things out; trying to understand.  A ripple; a run in the music.  A corresponding shudder in Aubrey's wings.  You spread your own wings.  Nothing."
 
 F8 is a page.  The description is "The song reaches a crescendo.  The Aerie itself threatens to shake apart."
