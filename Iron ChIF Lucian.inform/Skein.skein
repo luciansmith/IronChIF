@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-1">
     <command xml:space="preserve">Iron ChIF Lucian</command>
-    <result xml:space="preserve">Your mother needs you.  The whole village needs you.  You can do this.  You must do this.&#x000A;&#x000A;The mantra repeats in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you.  And there's no more Falcon Clan in the Royal Aerie--you and the rest of your clan were all banished two years ago.  Three days ago, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.&#x000A;&#x000A;By tonight, you will know.  You're not leaving without it.&#x000A;&#x000A;course correction&#x000A;An Interactive High Heist by Lucian Smith&#x000A;Release 1 / Serial number 260319 / Inform 7 v10.1.2 / D&#x000A;For more information, try ABOUT and CREDITS.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Your mother needs you.  The whole village needs you.  You can do this.  You must do this.&#x000A;&#x000A;The mantra repeats in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you.  And there's no more Falcon Clan in the Royal Aerie--you and the rest of your clan were all banished two years ago.  Three days ago, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.&#x000A;&#x000A;By tonight, you will know.  You're not leaving without it.&#x000A;&#x000A;course correction&#x000A;An Interactive High Heist by Lucian Smith&#x000A;Release 1 / Serial number 260320 / Inform 7 v10.1.2 / D&#x000A;For more information, try ABOUT and CREDITS.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">Your mother needs you.  The whole village needs you.  You can do this.  You must do this.&#x000A;&#x000A;The mantra repeats in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you.  And there's no more Falcon Clan in the Royal Aerie--you and the rest of your clan were all banished two years ago.  Three days ago, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.&#x000A;&#x000A;By tonight, you will know.  You're not leaving without it.&#x000A;&#x000A;course correction&#x000A;An Interactive High Heist by Lucian Smith&#x000A;Release 1 / Serial number 260313 / Inform 7 v10.1.2 / D&#x000A;For more information, try ABOUT and CREDITS.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
     <children>
@@ -356,6 +356,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-810"/>
+      <child nodeId="node-881"/>
     </children>
   </item>
   <item nodeId="node-810">
@@ -937,6 +938,298 @@
   <item nodeId="node-880">
     <command xml:space="preserve">in</command>
     <result xml:space="preserve">[Rule "Response Assistant reset responses list rule" applies.]&#x000A;[Rule "declare everything initially unmentioned rule" applies.]&#x000A;[Rule "generate action rule" applies.]&#x000A;[Rule "standard set going variables rule" applies.]&#x000A;[going inside]&#x000A;[Rule "announce items from multiple object lists rule" applies.]&#x000A;[Rule "set pronouns from items from multiple object lists rule" applies.]&#x000A;[Rule "before stage rule" applies.]&#x000A;[Rule "Before going inside from Great Hall Landing Cradle" applies.]&#x000A;[(1) entering the huge double doors of the Great Hall]&#x000A;[Rule "announce items from multiple object lists rule" applies.]&#x000A;[Rule "set pronouns from items from multiple object lists rule" applies.]&#x000A;[Rule "before stage rule" applies.]&#x000A;[Rule "basic visibility rule" applies.]&#x000A;[Rule "basic accessibility rule" applies.]&#x000A;[Rule "access through barriers rule" applies.]&#x000A;[Rule "carrying requirements rule" applies.]&#x000A;[Rule "instead stage rule" applies.]&#x000A;[Rule "requested actions require persuasion rule" applies.]&#x000A;[Rule "carry out requested actions rule" applies.]&#x000A;[Rule "descend to specific action-processing rule" applies.]&#x000A;[Rule "work out details of specific action rule" applies.]&#x000A;[Rule "investigate player's awareness before action rule" applies.]&#x000A;[Rule "player aware of his own actions rule" applies.]&#x000A;[Rule "check stage rule" applies.]&#x000A;[Rule "convert enter door into go rule" applies.]&#x000A;[Rule "standard set going variables rule" applies.]&#x000A;[(2) going the huge double doors of the Great Hall]&#x000A;[Rule "announce items from multiple object lists rule" applies.]&#x000A;[Rule "set pronouns from items from multiple object lists rule" applies.]&#x000A;[Rule "before stage rule" applies.]&#x000A;[Rule "basic visibility rule" applies.]&#x000A;[Rule "basic accessibility rule" applies.]&#x000A;[Rule "carrying requirements rule" applies.]&#x000A;[Rule "instead stage rule" applies.]&#x000A;[Rule "requested actions require persuasion rule" applies.]&#x000A;[Rule "carry out requested actions rule" applies.]&#x000A;[Rule "descend to specific action-processing rule" applies.]&#x000A;[Rule "work out details of specific action rule" applies.]&#x000A;[Rule "investigate player's awareness before action rule" applies.]&#x000A;[Rule "player aware of his own actions rule" applies.]&#x000A;[Rule "check stage rule" applies.]&#x000A;[Rule "can't travel in what's not a vehicle rule" applies.]&#x000A;[Rule "can't go through undescribed doors rule" applies.]&#x000A;[Rule "can't go through closed doors rule" applies.]&#x000A;(first opening the huge double doors of the Great Hall)&#x000A;[(3) opening the huge double doors of the Great Hall - silently]&#x000A;[Rule "announce items from multiple object lists rule" applies.]&#x000A;[Rule "set pronouns from items from multiple object lists rule" applies.]&#x000A;[Rule "before stage rule" applies.]&#x000A;[Rule "basic visibility rule" applies.]&#x000A;[Rule "basic accessibility rule" applies.]&#x000A;[Rule "access through barriers rule" applies.]&#x000A;[Rule "carrying requirements rule" applies.]&#x000A;[Rule "instead stage rule" applies.]&#x000A;[Rule "requested actions require persuasion rule" applies.]&#x000A;[Rule "carry out requested actions rule" applies.]&#x000A;[Rule "descend to specific action-processing rule" applies.]&#x000A;[Rule "work out details of specific action rule" applies.]&#x000A;[Rule "investigate player's awareness before action rule" applies.]&#x000A;[Rule "player aware of his own actions rule" applies.]&#x000A;[Rule "check stage rule" applies.]&#x000A;[Rule "can't open unless openable rule" applies.]&#x000A;[Rule "can't open what's locked rule" applies.]&#x000A;[Rule "can't open what's already open rule" applies.]&#x000A;[Rule "carry out stage rule" applies.]&#x000A;[Rule "standard opening rule" applies.]&#x000A;[Rule "after stage rule" applies.]&#x000A;[Rule "investigate player's awareness after action rule" applies.]&#x000A;[Rule "report stage rule" applies.]&#x000A;[Rule "last specific action-processing rule" applies.]&#x000A;[(3) opening the huge double doors of the Great Hall - silently - succeeded]&#x000A;&#x000A;[Rule "determine map connection rule" applies.]&#x000A;[Rule "can't go that way rule" applies.]&#x000A;[Rule "carry out stage rule" applies.]&#x000A;[Rule "move player and vehicle rule" applies.]&#x000A;[Rule "move floating objects rule" applies.]&#x000A;[Rule "check light in new location rule" applies.]&#x000A;[Rule "after stage rule" applies.]&#x000A;[Rule "investigate player's awareness after action rule" applies.]&#x000A;[Rule "report stage rule" applies.]&#x000A;[Rule "describe room gone into rule" applies.]&#x000A;[Rule "determine visibility ceiling rule" applies.]&#x000A;[Rule "work out details of specific action rule" applies.]&#x000A;[Rule "investigate player's awareness before action rule" applies.]&#x000A;[Rule "player aware of his own actions rule" applies.]&#x000A;[Rule "check stage rule" applies.]&#x000A;[Rule "carry out stage rule" applies.]&#x000A;[Rule "declare everything unmentioned rule" applies.]&#x000A;[Rule "room description heading rule" applies.]&#x000A;Upper Great Hall&#x000A;[Rule "room description body text rule" applies.]&#x000A;There is a small platform just inside the huge double doors of the Great Hall, and that's it.  The platform is lined with a single elegant grown-mahogany branch that wraps around the whole platform.  It varies in size and thickness, so that all types of feet fit somewhere along it, so people can comfortably launch themselves into the air to glide down to the floor level, or grab it for stability as they return.&#x000A;&#x000A;[Rule "room description paragraphs about objects rule" applies.]&#x000A;[Rule "initialise locale description rule" applies.]&#x000A;[Rule "find notable locale objects rule" applies.]&#x000A;[Rule "standard notable locale objects rule" applies.]&#x000A;[Rule "interesting locale paragraphs rule" applies.]&#x000A;[Rule "don't mention player's supporter in room descriptions rule" applies.]&#x000A;[Rule "don't mention scenery in room descriptions rule" applies.]&#x000A;[Rule "don't mention undescribed items in room descriptions rule" applies.]&#x000A;[Rule "set pronouns from items in room descriptions rule" applies.]&#x000A;[Rule "offer items to writing a paragraph about rule" applies.]&#x000A;[Rule "use initial appearance in room descriptions rule" applies.]&#x000A;[Rule "describe what's on scenery supporters in room descriptions rule" applies.]&#x000A;[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]&#x000A;[Rule "don't mention player's supporter in room descriptions rule" applies.]&#x000A;[Rule "don't mention scenery in room descriptions rule" applies.]&#x000A;[Rule "don't mention undescribed items in room descriptions rule" applies.]&#x000A;[Rule "set pronouns from items in room descriptions rule" applies.]&#x000A;[Rule "offer items to writing a paragraph about rule" applies.]&#x000A;[Rule "use initial appearance in room descriptions rule" applies.]&#x000A;[Rule "describe what's on scenery supporters in room descriptions rule" applies.]&#x000A;[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]&#x000A;[Rule "don't mention player's supporter in room descriptions rule" applies.]&#x000A;[Rule "don't mention scenery in room descriptions rule" applies.]&#x000A;[Rule "don't mention undescribed items in room descriptions rule" applies.]&#x000A;[Rule "set pronouns from items in room descriptions rule" applies.]&#x000A;[Rule "offer items to writing a paragraph about rule" applies.]&#x000A;[Rule "use initial appearance in room descriptions rule" applies.]&#x000A;[Rule "describe what's on scenery supporters in room descriptions rule" applies.]&#x000A;[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]&#x000A;[Rule "don't mention player's supporter in room descriptions rule" applies.]&#x000A;[Rule "don't mention scenery in room descriptions rule" applies.]&#x000A;[Rule "don't mention undescribed items in room descriptions rule" applies.]&#x000A;[Rule "set pronouns from items in room descriptions rule" applies.]&#x000A;[Rule "offer items to writing a paragraph about rule" applies.]&#x000A;[Rule "use initial appearance in room descriptions rule" applies.]&#x000A;[Rule "describe what's on scenery supporters in room descriptions rule" applies.]&#x000A;[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]&#x000A;[Rule "you-can-also-see rule" applies.]&#x000A;[Rule "check new arrival rule" applies.]&#x000A;[Rule "after stage rule" applies.]&#x000A;[Rule "After looking during hanging out" applies.]&#x000A;[Rule "last specific action-processing rule" applies.]&#x000A;[(2) going the huge double doors of the Great Hall - succeeded]&#x000A;&#x000A;[(1) entering the huge double doors of the Great Hall - succeeded]&#x000A;&#x000A;[going inside - succeeded]&#x000A;&#x000A;[Rule "A first turn sequence rule" applies.]&#x000A;[Rule "scene change machinery rule" applies.]&#x000A;[Rule "every turn stage rule" applies.]&#x000A;[Rule "Every turn during Reset Sensors" applies.]&#x000A;[Rule "timed events rule" applies.]&#x000A;[Rule "advance time rule" applies.]&#x000A;[Rule "update chronological records rule" applies.]&#x000A;[Rule "A last turn sequence rule" applies.]&#x000A;[Rule "scene change machinery rule" applies.]&#x000A;[Rule "adjust light rule" applies.]&#x000A;[Rule "note object acquisitions rule" applies.]&#x000A;[Rule "notify score changes rule" applies.]&#x000A;[Rule "parse command rule" applies.]&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-881">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Your song draws even more moisture into the air, feeding it into the thickening fog.  You feel safer as the now-soft mist wraps around you like a blanket.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-882"/>
+    </children>
+  </item>
+  <item nodeId="node-882">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Your song draws even more moisture into the air, feeding it into the thickening fog.  You feel safer as the now-rolling mist wraps around you like a blanket.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-883"/>
+      <child nodeId="node-896"/>
+    </children>
+  </item>
+  <item nodeId="node-883">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Your song draws even more moisture into the air, feeding it into the thickening fog.  You feel safer as the now-heavy mist wraps around you like a blanket.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-884"/>
+    </children>
+  </item>
+  <item nodeId="node-884">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">A heavy mist is as thick as you can make it--there's simply no more water to pull into the air.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-885"/>
+    </children>
+  </item>
+  <item nodeId="node-885">
+    <command xml:space="preserve">open purple</command>
+    <result xml:space="preserve">You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;&#x000A;The magic of the gold capsa of down prevents it from being opened.&#x000A;The magic of the red capsa of hasten prevents it from being opened.&#x000A;The straps and buckles on your rucksack fly open and it falls!&#x000A;&#x000A;The leather rucksack twists away as it falls below you, towards the Great Hall.&#x000A;&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder! Estimated direction is..." and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies.&#x000A;&#x000A;And if they didn't know where you were, they do now.&#x000A;&#x000A;The mist you summoned begins to burn away.  Crap.  The queen must have Ikniq working for her now.&#x000A;The mist is still thicker than it would be at equilibrium, but it's a lot less than it was.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-886"/>
+    </children>
+  </item>
+  <item nodeId="node-886">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Your song draws even more moisture into the air, feeding it into the thickening fog.  You feel safer as the now-rolling mist wraps around you like a blanket.&#x000A;&#x000A;A squad of Raven Guards appears, and their war cries exalt as they spot you.  You weave through the air, tumbling and twisting as you try to avoid them.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-887"/>
+    </children>
+  </item>
+  <item nodeId="node-887">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of down (closed), and a red capsa of hasten (closed)) here.&#x000A;&#x000A;The Raven Guard pursues you determinedly through the rolling mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-888"/>
+    </children>
+  </item>
+  <item nodeId="node-888">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Royal Gardens&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the garden door to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.&#x000A;&#x000A;Your summoned fog lightens to a soft mist.&#x000A;&#x000A;The Raven Guard pursues you determinedly through the soft mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-889"/>
+    </children>
+  </item>
+  <item nodeId="node-889">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Your song draws even more moisture into the air, feeding it into the thickening fog.  You feel safer as the now-heavy mist wraps around you like a blanket.&#x000A;&#x000A;Your summoned fog lightens to a rolling mist.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-890"/>
+    </children>
+  </item>
+  <item nodeId="node-890">
+    <command xml:space="preserve">se</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.&#x000A;&#x000A;The Raven Guard pursues you determinedly through the rolling mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-891"/>
+    </children>
+  </item>
+  <item nodeId="node-891">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Your song draws even more moisture into the air, feeding it into the thickening fog.  You feel safer as the now-heavy mist wraps around you like a blanket.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-892"/>
+    </children>
+  </item>
+  <item nodeId="node-892">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (in which is a scroll of rezrov), a gold capsa of down (closed), and a red capsa of hasten (closed)) here.&#x000A;&#x000A;The heavy mist is too thick for the Raven Guard to pursue you far.  You dodge around a tree, and disappear.&#x000A;&#x000A;The Raven's frustrated caws echo in the mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.&#x000A;&#x000A;You retrieve your rucksack and any fallen capsae, and plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.&#x000A;&#x000A;&#x000A;&#x000A;                                                             *    *    *</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-893"/>
+    </children>
+  </item>
+  <item nodeId="node-893">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">You wait, expectantly.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-894"/>
+    </children>
+  </item>
+  <item nodeId="node-894">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Silently, your cell door unlocks, then swings open.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-895"/>
+    </children>
+  </item>
+  <item nodeId="node-895">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Well above your cell, you sense rezrov, rudenj, and quiste settle in their movements until they make lazy circles, high above the Aerie. Igram and taclor remain in place, quiet.&#x000A;&#x000A;It is time.&#x000A;&#x000A;Forgotten Brig&#x000A;A small but cosy cell, grown with austerity but basic comfort in mind.  Your now-open cell door leads west.&#x000A;&#x000A;Even though you're inside, the heavy fog outside makes the air in this room thicker, somehow.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-896">
+    <command xml:space="preserve">test summon</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] d&#x000A;You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You circle through the rolling mist, observing but hidden from view.&#x000A;&#x000A;&gt;[2] n&#x000A;&#x000A;Royal Gardens&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the garden door to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.&#x000A;&#x000A;You circle through the rolling mist, observing but hidden from view.&#x000A;&#x000A;Your summoned fog lightens to a soft mist.&#x000A;&#x000A;&gt;[3] summon mist&#x000A;Your song draws even more moisture into the air, feeding it into the thickening fog.  You feel safer as the now-heavy mist wraps around you like a blanket.&#x000A;&#x000A;Your summoned fog lightens to a rolling mist.&#x000A;&#x000A;&gt;[4] d&#x000A;You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;&gt;[5] u&#x000A;You gracefully flit between the trees back up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;The momentum you had from your dive wears off.  Fun while it lasted!&#x000A;&#x000A;&gt;[6] d&#x000A;You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;&gt;[7] u&#x000A;You gracefully flit between the trees back up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;Your summoned fog lightens to a soft mist.&#x000A;&#x000A;The momentum you had from your dive wears off.  Fun while it lasted!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-897"/>
+    </children>
+  </item>
+  <item nodeId="node-897">
+    <command xml:space="preserve">test chase_ustart</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] open purple&#x000A;You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;&#x000A;The huge double doors of the Great Hall clicks as it unlocks!&#x000A;The magic of the gold capsa of down prevents it from being opened.&#x000A;The magic of the red capsa of hasten prevents it from being opened.&#x000A;The huge double doors of the Great Hall flies open!&#x000A;The straps and buckles on your rucksack fly open and it falls!&#x000A;&#x000A;Dropped.&#x000A;&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder! Estimated direction is..." and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies.&#x000A;&#x000A;And if they didn't know where you were, they do now.&#x000A;&#x000A;The mist you summoned begins to burn away.  Crap.  The queen must have Ikniq working for her now.&#x000A;At least they can't burn it away past equilibrium.&#x000A;&#x000A;&gt;[2] close purple&#x000A;You close the purple capsa of opening.&#x000A;&#x000A;From everywhere in the Aerie, you hear the woodpeckers drumming in the Pounding dialect: "Reset Locks!  Repeat!  Reset Locks!&#x000A;&#x000A;A squad of Raven Guards appears, and their war cries exalt as they spot you.  You weave through the air, tumbling and twisting as you try to avoid them.&#x000A;&#x000A;&gt;[3] e&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.&#x000A;&#x000A;The Raven Guard pursues you determinedly through the thin mist.&#x000A;&#x000A;&gt;[4] nw&#x000A;&#x000A;Royal Gardens&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the garden door to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.&#x000A;&#x000A;The Raven Guard pursues you determinedly through the thin mist.&#x000A;&#x000A;&gt;[5] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;The Raven Guard pursues you determinedly through the thin mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-898"/>
+    </children>
+  </item>
+  <item nodeId="node-898">
+    <command xml:space="preserve">test mist_escape</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] summon mist&#x000A;Your song draws even more moisture into the air, feeding it into the thickening fog.  You feel safer as the now-soft mist wraps around you like a blanket.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;[2] d&#x000A;You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a leather rucksack (in which are a purple capsa of opening (closed), a gold capsa of down (closed), and a red capsa of hasten (closed)) here.&#x000A;&#x000A;Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.&#x000A;&#x000A;&gt;[3] summon mist&#x000A;Your song draws even more moisture into the air, feeding it into the thickening fog.  You feel safer as the now-rolling mist wraps around you like a blanket.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;The momentum you had from your dive wears off.&#x000A;&#x000A;&gt;[4] e&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.&#x000A;&#x000A;Your summoned fog lightens to a soft mist.&#x000A;&#x000A;The Raven Guard pursues you determinedly through the soft mist.&#x000A;&#x000A;&gt;[5] summon mist&#x000A;Your song draws even more moisture into the air, feeding it into the thickening fog.  You feel safer as the now-heavy mist wraps around you like a blanket.&#x000A;&#x000A;Your summoned fog lightens to a rolling mist.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;[6] nw&#x000A;&#x000A;Royal Gardens&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the garden door to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.&#x000A;&#x000A;The Raven Guard pursues you determinedly through the rolling mist.&#x000A;&#x000A;&gt;[7] summon mist&#x000A;Your song draws even more moisture into the air, feeding it into the thickening fog.  You feel safer as the now-heavy mist wraps around you like a blanket.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;[8] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;The heavy mist is too thick for the Raven Guard to pursue you far.  You dodge around a tree, and disappear.&#x000A;&#x000A;The Raven's frustrated caws echo in the mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.&#x000A;&#x000A;You retrieve your rucksack and any fallen capsae, and plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.&#x000A;&#x000A;&#x000A;&#x000A;                                                             *    *    *</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-899"/>
+    </children>
+  </item>
+  <item nodeId="node-899">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">You wait, expectantly.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-900"/>
+    </children>
+  </item>
+  <item nodeId="node-900">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">Silently, your cell door unlocks, then swings open.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-901"/>
+    </children>
+  </item>
+  <item nodeId="node-901">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">Well above your cell, you sense rezrov, rudenj, and quiste settle in their movements until they make lazy circles, high above the Aerie. Igram and taclor remain in place, quiet.&#x000A;&#x000A;It is time.&#x000A;&#x000A;Forgotten Brig&#x000A;A small but cosy cell, grown with austerity but basic comfort in mind.  Your now-open cell door leads west.&#x000A;&#x000A;Even though you're inside, the heavy fog outside makes the air in this room thicker, somehow.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-902"/>
+    </children>
+  </item>
+  <item nodeId="node-902">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Disused Hallway&#x000A;The only time you ever saw anyone in this hallway was when Georg came to give you your meals, or clean the cell.  The living walls, still elegantly patterned, even here, self-replenish, and the floor carries away shed bark through the grate.  It leads west into the living area, and your old cell door leads east.&#x000A;&#x000A;Even though you're inside, the heavy fog outside makes the air in this room thicker, somehow.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-903"/>
+    </children>
+  </item>
+  <item nodeId="node-903">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper a song to the veins of this place: "I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence."&#x000A;&#x000A;After a few moments, you feel an undulation in the slick rippled floor beneath you, and you are compressed even further, as its peristalsis slides you slowly, and then more rapidly, away from your only home for the last ten years.  Then with a sudden &gt;plop&lt;, you're ejected into space.&#x000A;&#x000A;You try to spread your wings, but your reaction time is not what it was, and you hit wirey netting before fully stopping yourself.&#x000A;&#x000A;No matter.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;A heavy mist surrounds you, summoned by your quarry.&#x000A;&#x000A;The summoned fog lightens to a rolling mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-904"/>
+    </children>
+  </item>
+  <item nodeId="node-904">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You gracefully flit between the trees back up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;A rolling mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-905"/>
+    </children>
+  </item>
+  <item nodeId="node-905">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-906"/>
+    </children>
+  </item>
+  <item nodeId="node-906">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-907"/>
+    </children>
+  </item>
+  <item nodeId="node-907">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;The summoned fog lightens to a soft mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-908"/>
+    </children>
+  </item>
+  <item nodeId="node-908">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-909"/>
+    </children>
+  </item>
+  <item nodeId="node-909">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-910"/>
+    </children>
+  </item>
+  <item nodeId="node-910">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-911"/>
+    </children>
+  </item>
+  <item nodeId="node-911">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;The summoned fog lightens to a thin mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-912"/>
+    </children>
+  </item>
+  <item nodeId="node-912">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-913"/>
+    </children>
+  </item>
+  <item nodeId="node-913">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;The summoned mist thins back to equilibrium.  A thin mist, but still thick enough to mostly obscure you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

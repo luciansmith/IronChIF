@@ -71,16 +71,16 @@ Every turn during Being Chased:
 		If the closeness of Being Chased is 1:
 			If the thickness of the grey mist is at least 3:
 				say "The mist you summoned begins to burn away.  Crap.  The queen must have Ikniq working for her now.[nb]";
-				If the thickness of the grey mist is less than 7:
+				If the thickness of the grey mist is less than 9:
 					now the thickness of the grey mist is 1;
 					say "At least they can't burn it away past equilibrium.";
-				Otherwise if go go go is happening and the thickness of the grey mist is less than 11:
+				Otherwise if go go go is happening and the thickness of the grey mist is less than 13:
 					now the thickness of the grey mist is 1;
 					say "At least they can't burn it away past equilibrium.";
 				Otherwise:
-					decrease the thickness of the grey mist by 6;
+					decrease the thickness of the grey mist by 8;
 					if go go go is happening:
-						decrease the thickness of the grey mist by 4;
+						decrease the thickness of the grey mist by 12;
 					say "The mist is still thicker than it would be at equilibrium, but it's a lot less than it was.";
 		If the closeness of Being Chased is 2:
 			move the raven guard to the location;
@@ -132,7 +132,7 @@ To determine evasion:
 		Otherwise:
 			say "Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.";
 	Otherwise:
-		If the thickness of the grey mist is at least 13:
+		If the thickness of the grey mist is at least 12:
 			say "The [mist density] mist is too thick for the Raven Guard to pursue you far.  You dodge around a tree, and disappear.";
 			escape and recover;
 		Otherwise:
