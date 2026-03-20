@@ -209,7 +209,7 @@ Check locking keylessly:
 		say "[The noun] cannot be locked." instead;
 
 Carry out locking keylessly:
-	say "You do not have the keys for anything around here."
+	say "You've never had the keys for anything around here."
 
 Understand "unlock [something]" as unlocking keylessly. Unlocking keylessly is an action applying to one thing.
 
@@ -224,7 +224,7 @@ Check unlocking keylessly:
 		say "[The noun] is already open." instead;
 
 Carry out unlocking keylessly:
-	say "You do not have the keys for anything around here."
+	say "You've never had the keys for anything around here."
 
 
 Rules and New Actions ends here.
