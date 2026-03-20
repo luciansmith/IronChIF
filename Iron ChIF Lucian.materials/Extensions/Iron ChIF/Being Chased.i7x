@@ -127,16 +127,16 @@ To determine evasion:
 			say "You dive into the thickest spot of mist you can find, and put on a final burst of speed before changing direction and dropping like a stone.  It works:  your pursuers fly blindly into the mist where you used to be, cawing angrily when they realize they can't see you any more.";
 			escape and recover;
 		Otherwise if Everything Falls is happening and Everything Falls is grounded and the player does not enclose the gold capsa:
-			say "As you dive, you use your knowledge of 'true down' to give yourself an edge, pulling around a tree at an angle that should be impossible; diving and twisting through gaps in the  branches that couldn't be done.  Your closest pursuer crashes into a branch, and the others peel off to avoid him.";
+			say "As you dive, you use your knowledge of 'true down' to give yourself an edge, pulling around a tree at an angle that should be impossible; diving and twisting through gaps in the branches that shouldn't be possible.  Your closest pursuer crashes into a branch, and the others peel off to avoid him.";
 			escape and recover;
 		Otherwise:
 			say "Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.";
 	Otherwise:
 		If the thickness of the grey mist is at least 13:
-			say "The mist is too thick for the Raven Guard to pursue you far.  You dodge around a tree, and disappear.";
+			say "The [mist density] mist is too thick for the Raven Guard to pursue you far.  You dodge around a tree, and disappear.";
 			escape and recover;
 		Otherwise:
-			say "The Raven Guard pursues you determinedly through the [mist density]mist.";
+			say "The Raven Guard pursues you determinedly through the [mist density] mist.";
 
 To escape and recover:
 	Now the woodpeckers are not activated;
@@ -144,7 +144,7 @@ To escape and recover:
 	Move the Lone Guard to the Librum Landing Cradle;
 	Move the small pile of tiny padlocks to the Librum Landing Cradle;
 	Now the closeness of Being Chased is 0;
-	Now the thickness of the grey mist is 1;
+	[Now the thickness of the grey mist is 1;]
 	Now Constance is cruising;
 	say "[lb]The Raven's frustrated caws echo in the mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.";
 	if Horatio is not remembered:
@@ -171,5 +171,7 @@ When Being Chased ends:
 		now Horatio is remembered;
 	otherwise:
 		try looking;
+
+Hanging out is a recurring scene.  Hanging out begins when constance is cruising and the closeness of Being Chased is 0.  Hanging out ends when constance is not cruising or the closeness of Being Chased is not 0.
 
 Being Chased ends here.

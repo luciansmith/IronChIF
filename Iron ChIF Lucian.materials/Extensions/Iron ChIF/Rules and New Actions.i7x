@@ -56,11 +56,11 @@ Section credits
 Crediting is an action out of world applying to nothing.  Understand "credits" as Crediting.
 
 Carry out Crediting:
-	say "This game would not have been possible without the intense energy of @otistdog on the intfiction forums creating the idea of having an 'Iron ChIF' competition, nor without Ryan Veeder agreeing to be the aforementioned 'Iron ChIF Inform 7' to compete against.
+	say "This game would not have been possible without the intense energy of @otistdog on the intfiction forums creating the idea of having an 'Iron ChIF' competition, nor without Ryan Veeder agreeing to be the 'Iron ChIF Inform 7' to compete against.
 	
-	Particular thanks go to my betatesters, Sarah Willson (day 1), Stephen Granade (day 2), Allyson Gray (day 3), and Dan 'inky' Shiovitz (day 4).
+	Particular thanks go to my betatesters, Sarah Willson (day 1), Stephen Granade (day 2), Allyson Gray (day 3), and Dan 'inky' Shiovitz (day 4).  Allyson also contributed her testing skills and other suggestions to this release!  Thanks also to my son and brainstorming partner, Ellric Smith.
 	
-	Thanks also to the official judges for this competition: Chandler Groover, Victor Gijsbers, J. J. McC, Brian Rushton, and N. Cormier, and technical advisor Zed Lopez.  You all have been great!
+	Thanks also to the official judges for this competition: Chandler Groover, Victor Gijsbers, J. J. McC, Brian Rushton, and N. Cormier, and technical advisor Zed Lopez.  You all have been great, and your commentary has helped to improve this post-competition release.
 
 	The cover art image is courtesy Greg Hume (Greg5030)/CC BY-SA 3.0
 	
@@ -71,9 +71,11 @@ Section about
 Abouting is an action out of world applying to nothing.  Understand "about" as abouting.
 
 Carry out abouting:
-	say "First: a word about design philosophy.  The game has sub-optimal endings, but by design they are all avoidable with a single >UNDO.  There may be bugs that circumvent that design!  So keep multi-undo and/or save files at the ready.	
+	say "Thank you for playing 'course correction'!  A quick word about design philosophy.  The game has many obviously-bad endings, but by design they are all avoidable with a single >UNDO.  So, if anything happens that naturally takes more than one turn, it's probably something you'll have to deal with at some point.  There may be bugs that circumvent that design!  So keep multi-undo and/or save files at the ready.  There is also some choice-based branching in the game, containing some alternate endings that similarly can be explored with single >UNDO.
 	
-	This game was written in five days for Episode One of Iron ChIF, where I (as the challenger) wrote this game while Ryan Veeder (the 'Iron ChIF Inform 7') wrote his own game.  Extensive discussion and commentary from that episode can be found on the intfiction.org web site, at
+	The original version of this game was written in five days for Episode One of Iron ChIF, where I (as the challenger) wrote this game while Ryan Veeder (the 'Iron ChIF Inform 7') wrote his own game ('The Van der Nagel Papyrus') based on the same prompt:  'a scroll that alters the world around it'.  This is the post-comp release, which fixes some bugs, clears up several points of confusion, and generally fills out the game to be more complete.
+	
+	Extensive discussion and commentary from that episode can be found on the intfiction.org web site, at
 	
 	https://intfiction.org/t/iron-chif-season-one-episode-1-lpsmith-vs-afterward-using-inform-7/78122
 
@@ -88,8 +90,9 @@ Carry out abouting:
 Section Summoning mist
 
 A room can be cloudy or clear.  A room is usually cloudy.
+A room can be indoors or outdoors.  A room is usually outdoors.  Forgotten Brig is indoors.  Disused Hallway is indoors.  Librum Itself is indoors.  Upper Great Hall is indoors.  Lower Great Hall is indoors.  Palace is indoors.  Nursery_door is indoors.  Nursery_itself is indoors.
 
-The grey mist is a backdrop.  The description is "Grey mist swirls and surrounds you, covering you like a blanket."  Understand "cloud/clouds/gray/fog" as the grey mist.
+The grey mist is a backdrop.  [It is not scenery.  "[describe the grey mist]."]  The description is "[if the location is outdoors]A [mist density] grey mist swirls and surrounds you, covering you like a blanket[otherwise]Even a Bostrat can't make it truly foggy inside[end if]."  Understand "cloud/clouds/gray/fog" as the grey mist.
 
 When play begins:
     move the grey mist backdrop to all cloudy rooms.
@@ -98,21 +101,24 @@ The grey mist has a number called thickness.  The thickness of the grey mist is 
 
 To say mist density:
 	if the thickness of the grey mist is less than 4:
-		say "thin ";
+		say "thin";
 	otherwise if the thickness of the grey mist is less than 8:
-		say "";
+		say "soft";
 	otherwise if the thickness of the grey mist is less than 12:
-		say "thickening ";
+		say "rolling";
 	otherwise:
-		say "heavy ";
+		say "heavy";
 
 Summoning is an action applying to one thing.  Understand "summon [something]" as summoning.
 
 Check summoning something:
+	if the noun is not the grey mist and the noun is not the no_mist:
+		if the player is Constance:
+			say "You're a Bostrat: you can summon mist and clouds, but nothing else." instead;
+		otherwise:
+			say "You have a very limited ability to summon a wisp of mist, but that's it." instead;
 	if the player is Horatio:
 		say "You quietly sing a few notes of the song of bostrat, and a small trail of thin mist appears in front of you, twists gently, then dissipates." instead;
-	if the noun is not the grey mist and the noun is not the no_mist:
-		say "You're a Bostrat: you can summon mist and clouds, but nothing else." instead;
 
 Does the player mean summoning the grey mist: it is very likely.
 
@@ -125,32 +131,44 @@ Carry out summoning:
 		
 		You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, though it would then start to dissipate.";
 	otherwise:
-		if the thickness of the grey mist is greater than 12:
-			now the thickness of the grey mist is 15;
-			say "That's as thick as you can make the mist--there's simply no more water to pull into the air.";
+		if the location is indoors:
+			say "You sing, drawing the moisture from the room into a wisp of fog, but it twists into nothingness again as the echoes of your song fade.";
 		otherwise:
-			if the thickness of the grey mist is at least 10:
+			if the thickness of the grey mist is greater than 12:
 				now the thickness of the grey mist is 15;
-			otherwise if the thickness of the grey mist is at least 7:
-				now the thickness of the grey mist is 12;
-			otherwise if the thickness of the grey mist is at least 4:
-				now the thickness of the grey mist is 9;
+				say "A [mist density] mist is as thick as you can make it--there's simply no more water to pull into the air.";
 			otherwise:
-				now the thickness of the grey mist is 6;
-			say "Your song draws even more moisture into the air, feeding it into the mist.  As it thickens, you feel safer, as you always do in the midst of clouds.";
+				increase the thickness of the grey mist by 5;
+				say "Your song draws even more moisture into the air, feeding it into the thickening fog.  You feel safer as the now-[mist density] mist wraps around you like a blanket.";
 
 Mist depletion is a recurring scene.  Mist depletion begins when the thickness of the grey mist is greater than one.  Mist depletion ends when the thickness of the grey mist is one.
 
 Every turn during Mist depletion:
 	decrease the thickness of the grey mist by one;
-	if the thickness of the grey mist is one:
-		say "Your summoned mist thins back to equilibrium.  Still thick enough to mostly obscure you.";
-	otherwise if go go go is happening:
-		decrease the thickness of the grey mist by one;
-		say "The mist thins more rapidly than normal[if the thickness of the grey mist is one], back to equilibrium again[end if].";
-	otherwise if the thickness of the grey mist is 3 or the thickness of the grey mist is 6 or the thickness of the grey mist is 9 or the thickness of the grey mist is 12:
-		say "Your summoned mist thins slightly, on its way back to equilibrium.";
-	[say "Thickness: [the thickness of the grey mist].";]
+	if the location is outdoors:
+		if the thickness of the grey mist is one:
+			say "[If the player is Constance]Your[otherwise]The[end if] summoned mist thins back to equilibrium.  A [mist density] mist, but still thick enough to mostly obscure you.";
+		otherwise if go go go is happening:
+			decrease the thickness of the grey mist by one;
+			say "The mist thins more rapidly than normal[if the thickness of the grey mist is one], back to equilibrium again[end if].";
+		otherwise if the thickness of the grey mist is 3 or the thickness of the grey mist is 7 or the thickness of the grey mist is 11:
+			say "[If the player is Constance]Your[otherwise]The[end if] summoned fog lightens to a [mist density] mist.";
+	[say "Thickness: [the thickness of the grey mist] ([mist density]).";]
+
+
+After looking during hanging out:
+	if the grey mist is in the location:
+		If the location is indoors:
+			if the thickness of the mist is at least 8:
+				say "Even though you're inside, the [mist density] fog outside makes the air in this room thicker, somehow.";
+		otherwise:
+			if the player is Constance:
+				if Constance is cruising:
+					say "You circle through the [mist density] mist, observing but hidden from view.";
+			otherwise:
+				say "A [mist density] mist surrounds you, summoned by your quarry.";
+
+
 
 Diving is an action applying to nothing.  Understand "dive" as diving.
 Before diving:

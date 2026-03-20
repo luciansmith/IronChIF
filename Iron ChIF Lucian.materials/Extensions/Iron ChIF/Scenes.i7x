@@ -185,11 +185,11 @@ Then Aubrey, your friend, your love, your queen, your enemy, bursts through the 
 
 F6a is a page.  It is for F6.  It flips to F7.
 The cdesc is "Get between Aubrey and Horatio."
-The description is "You fling yourself across the room to stop her, but before she even reaches you, a wave of sound catches her and stops her in her tracks, her eyes roll back, and she falls twitching to the floor."
+The description is "You fling yourself across the room to stop her, but before she even reaches you, a wave of sound catches her and stops her in her tracks.  Her eyes roll back, and she falls twitching to the floor."
 
 F6b is a page.  It is for F6.  It flips to F7.
 The cdesc is "'Aubrey, no!'"
-The description is "You start to shriek at Aubrey to stop, that this is the only way, that you love her but she can't hoard this power for only herself, or even for Ash, but before you even get a word out, a wave of sound catches her and throws her back.  Her eyes roll back, and she falls twitching to the floor."
+The description is "You start to shriek at Aubrey to stop, that this is the only way, that you love her but she can't hoard this power for only herself, or even for Ash, but before you even get a word out, a wave of sound catches her and stops her in her tracks.  Her eyes roll back, and she falls twitching to the floor."
 
 F7 is a page.  The description is "Horatio continues to sing.  Ash's face is a mixture of horror and delight."
 
