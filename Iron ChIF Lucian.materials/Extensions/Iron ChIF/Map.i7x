@@ -83,6 +83,12 @@ To the north is the Royal Quarters and Gardens, the Librum to the east, and as a
 
 The Great Hall doors are doors in Great Hall Landing Cradle.  They are plural-named.  The printed name is "huge double doors of the Great Hall".  They are closed and locked.  They are inside from Great Hall Landing Cradle and outside from Upper Great Hall.  The description is "The huge double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster."  Understand "huge/door/double/canted/hatch/hatches/fine/scrollwork/broad/swoops/curls/branch/finer/giant/landing/cradle" as the Great Hall doors.
 
+First Check opening an open door:
+	say "You opened this door with the scroll of opening already." instead;
+
+First Check unlocking an unlocked door with:
+	say "As far as you know, the door is already unlocked." instead;
+
 Last Check going Great Hall doors during Being Chased:
 	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Guard has followed you, and you simply don't have any room to maneuver.";
 	end the story saying "You have been captured.";
@@ -92,7 +98,7 @@ Before going inside from Great Hall Landing Cradle:
 
 Instead of going nowhere from Great Hall Landing Cradle:
 	if the noun is west, try entering the Great Hall doors;
-	otherwise say "From here, you can go north to the Royal Quarters and Garden, east to the Librum, enter the Great Hall itself, or, as always, ascend to the skies or descend to the forest."
+	otherwise say "From here, you can go north to the Royal Quarters and Garden, east to the Librum, enter the Great Hall itself to the west, or, as always, ascend to the skies or descend to the forest."
 
 Upper Great Hall is a room. "There is a small platform just inside the [Great Hall doors], and that's it.  The platform is lined with a single elegant grown-mahogany branch that wraps around the whole platform.  It varies in size and thickness, so that all types of feet fit somewhere along it, so people can comfortably launch themselves into the air to glide down to the floor level, or grab it for stability as they return."
 
@@ -194,7 +200,7 @@ Section Librum
 
 Librum Landing Cradle is east of Great Hall Landing Cradle.  "The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The [Librum Door] leads inward to the Librum itself.
 
-To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below."
+To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east."
 
 Up from Librum Landing Cradle is High Above.
 Down from Librum Landing Cradle is in_forest.
@@ -208,11 +214,11 @@ Instead of going nowhere from Librum Landing Cradle:
 
 The Librum Door is a door in Librum Landing Cradle.  It is closed and locked.  It is inside from Librum Landing Cradle and outside from Librum Itself.  The description is "A canted [if open]open[otherwise]closed[end if] hatch to the Librum, on the east side of the landing cradle."
 
-Last Check opening Librum Door:
+Last Check opening a closed Librum Door:
 	if the lone guard is in the location:
 		say "The guard is entirely too watchful to let you do that." instead.
 
-Last Check unlocking Librum Door with:
+Last Check unlocking a locked Librum Door with:
 	if the lone guard is in the location:
 		say "The guard is entirely too watchful to let you do that." instead.
 
@@ -306,7 +312,7 @@ Section Royal Gardens
 
 Royal Gardens is a room. It is north of Great Hall Landing Cradle, and northwest of Librum Landing Cradle.  "The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the [garden door] to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards. 
 
-From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast."
+From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.  The door to the very-guarded Royal Quarters is to the north."
 
 Up from Royal Gardens is High Above.
 Down from Royal Gardens is in_forest.
@@ -324,11 +330,11 @@ The poplar trunks are scenery in Royal Gardens.  The description is "The poplars
 
 The garden door is a door in Royal Gardens.  It is closed and locked.  It is inside from Royal Gardens and outside from Palace.  The description is "A canted [if open]open[otherwise]closed[end if] hatch to the Royal Quarters, nestled in the center of the garden.  Absolutely surrounded by guards."
 
-Last Check opening Garden Door:
-	say "There are way too many guards for that to have any chance of working." instead.
+First Check opening a closed Garden Door:
+	say "There are way too many guards for that to have any chance of working." instead;
 
-Last Check unlocking Garden Door with:
-	say "There are way too many guards for that to have any chance of working." instead.
+First Check unlocking a locked Garden Door with:
+	say "There are way too many guards for that to have any chance of working." instead;
 
 Before going inside from Royal Gardens:
 	try entering Garden Door instead;
@@ -340,16 +346,16 @@ Last Check going Garden Door:
 	otherwise if Sneaking is not happening:
 		say "No way.  It wouldn't matter how fast you were or how thick the mist was.  You just can't get in there as you are without someone seeing you." instead;
 	otherwise if the hunting cloak is purple:
-		say "Not only would you be caught, but you'd be humiliated for your entire life for having to walk because you were wearing an ancient purple cloak." instead;
+		say "Not only would you be caught, but you'd be humiliated for your entire life for being caught walking, wearing an ancient purple cloak." instead;
 
 After going Garden Door:
 	say "OK.  Walking.  Right.  You raise yourself up on the tips of your talons, feeling ridiculous, but not wanting to flatten the grass with your (shudder) footsteps and give yourself away.  You wait for one of the guards to pass, then carefully take cautious steps towards the door.  Nobody reacts.  Hardly daring to breathe, you proceed further, antsy and ready to take to the skies any second.  Which wouldn't work, because you have this damn cloak on.  Whatever.  Two more steps.  You reach the door.  You hop (shudder) across the lintel.
 	
 	You're in.
 	
-	A few more steps, and a voice behind you says 'We should take the second hallway.' You nearly yelp, but stop yourself.  You knew Horatio would be here.  You were expecting him.  Right.
+	A few more steps, and a voice behind you whispers 'We should take the second hallway.' You nearly yelp, but stop yourself.  You knew Horatio would be here.  You were expecting him.  Right.
 	
-	You take a deep breath.  'Lead on,' you whisper.
+	You take a deep breath.  'Lead on,' you whisper back.
 	
 	'I can't; I'm invisible.  I will tell you where to go, and follow you,' he replies.  Right.[bstars]";
 	wait for any key;

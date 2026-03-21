@@ -69,20 +69,18 @@ Every turn during Being Chased:
 		Increase the closeness of Being Chased by 1;
 		[say "closeness: [the closeness of being chased].";]
 		If the closeness of Being Chased is 1:
-			If the thickness of the grey mist is at least 3:
-				say "The mist you summoned begins to burn away.  Crap.  The queen must have Ikniq working for her now.[nb]";
-				If the thickness of the grey mist is less than 9:
-					now the thickness of the grey mist is 1;
-					say "At least they can't burn it away past equilibrium.";
-				Otherwise if go go go is happening and the thickness of the grey mist is less than 13:
-					now the thickness of the grey mist is 1;
-					say "At least they can't burn it away past equilibrium.";
-				Otherwise:
-					decrease the thickness of the grey mist by 8;
-					if go go go is happening:
-						decrease the thickness of the grey mist by 12;
-					say "The mist is still thicker than it would be at equilibrium, but it's a lot less than it was.";
-		If the closeness of Being Chased is 2:
+			say "A pervasive heat along with an exultant song of the sun wash over you, and in a flash, [nb]";
+			If the thickness of the grey mist is at least 14:
+				now the thickness of the grey mist is 8;
+				say "the heavy mist you summoned half-boils away[nb]";
+			Otherwise if the thickness of the grey mist is at least 10:
+				now the thickness of the grey mist is 4;
+				say "the rolling mist you summoned boils away to almost nothing[nb]";
+			Otherwise if the thickness of the grey mist is greater than 1:
+				say "the [mist density] mist you summoned boils away back to equilibrium[nb]";
+				now the thickness of the grey mist is 1;
+			say ".  Crap.  The queen must have Ikniq working for her now.";
+		Otherwise if the closeness of Being Chased is 2:
 			move the raven guard to the location;
 			If the location is not the starting_line of Being Chased:
 				If the starting_line of Being Chased is High Above:

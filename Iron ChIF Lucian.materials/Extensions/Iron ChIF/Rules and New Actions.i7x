@@ -100,14 +100,15 @@ When play begins:
 The grey mist has a number called thickness.  The thickness of the grey mist is 1.
 
 To say mist density:
-	if the thickness of the grey mist is less than 4:
+	if the thickness of the grey mist is less than 6:
 		say "thin";
-	otherwise if the thickness of the grey mist is less than 8:
+	otherwise if the thickness of the grey mist is less than 11:
 		say "soft";
-	otherwise if the thickness of the grey mist is less than 12:
+	otherwise if the thickness of the grey mist is less than 16:
 		say "rolling";
 	otherwise:
 		say "heavy";
+	[1-5: thin, 6-10: soft, 11-15: rolling, 16-20: heavy]
 
 Summoning is an action applying to one thing.  Understand "summon [something]" as summoning.
 
@@ -134,26 +135,54 @@ Carry out summoning:
 		if the location is indoors:
 			say "You sing, drawing the moisture from the room into a wisp of fog, but it twists into nothingness again as the echoes of your song fade.";
 		otherwise:
-			if the thickness of the grey mist is greater than 12:
-				now the thickness of the grey mist is 15;
+			[1-5: thin, 6-10: soft, 11-15: rolling, 16-20: heavy]
+			if the thickness of the grey mist is at least 15:
+				now the thickness of the grey mist is 20;
 				say "A [mist density] mist is as thick as you can make it--there's simply no more water to pull into the air.";
+				stop the action;
+			otherwise if the thickness of the grey mist is at least 11:
+				now the thickness of the grey mist is 20;
+			otherwise if the thickness of the grey mist is at least 6:
+				now the thickness of the grey mist is 15;
 			otherwise:
-				increase the thickness of the grey mist by 5;
-				say "Your song draws even more moisture into the air, feeding it into the thickening fog.  You feel safer as the now-[mist density] mist wraps around you like a blanket.";
+				now the thickness of the grey mist is 10;
+			say "Your song draws even more moisture into the air, feeding it into the thickening fog.  You feel safer as the now-[mist density] mist wraps around you like a blanket.";
 
 Mist depletion is a recurring scene.  Mist depletion begins when the thickness of the grey mist is greater than one.  Mist depletion ends when the thickness of the grey mist is one.
 
 Every turn during Mist depletion:
-	decrease the thickness of the grey mist by one;
-	if the location is outdoors:
-		if the thickness of the grey mist is one:
+	if Being Chased is happening:
+		if go go go is happening:
+			decrease the thickness of the mist by 5;
+			say "The fog quickly evaporates in the heat and sun-song of the Ikniq warriors";
+			if the thickness of the mist is less than 2:
+				now the thickness of the mist is 1;
+				say ", all the way back to equilibrium.";
+			otherwise:
+				say ", thinning back to a [mist density] mist.";
+		otherwise:
+			decrease the thickness of the mist by 2;
+			say "The fog evaporates steadily in the heat and sun-song of the Ikniq warriors";
+			[1-5: thin, 6-10: soft, 11-15: rolling, 16-20: heavy]
+			if the thickness of the mist is less than 2:
+				now the thickness of the mist is 1;
+				say ", all the way back to equilibrium.";
+			otherwise if the thickness of the mist is 4 or the thickness of the mist is 5 or the thickness of the mist is 9 or the thickness of the mist is 10 or the thickness of the mist is 14 or the thickness of the mist is 15:
+				say ", thinning back to a [mist density] mist.";
+			otherwise:
+				say ".";
+	otherwise if the location is outdoors:
+		decrease the thickness of the grey mist by 1;
+		if the thickness of the grey mist is 1:
 			say "[If the player is Constance]Your[otherwise]The[end if] summoned mist thins back to equilibrium.  A [mist density] mist, but still thick enough to mostly obscure you.";
 		otherwise if go go go is happening:
-			decrease the thickness of the grey mist by one;
-			say "The mist thins more rapidly than normal[if the thickness of the grey mist is one], back to equilibrium again[end if].";
+			decrease the thickness of the grey mist by 1;
+			say "The mist thins more rapidly than normal[if the thickness of the grey mist is 1], back to equilibrium again[end if].";
 		otherwise if the thickness of the grey mist is 3 or the thickness of the grey mist is 7 or the thickness of the grey mist is 11:
 			say "[If the player is Constance]Your[otherwise]The[end if] summoned fog lightens to a [mist density] mist.";
-	[say "Thickness: [the thickness of the grey mist] ([mist density]).";]
+	otherwise:
+		decrease the thickness of the grey mist by 1;
+	[say "Thickness: [the thickness of the grey mist] ([mist density]).";]	
 
 
 After looking during hanging out:
@@ -184,7 +213,7 @@ Before Descending:
 
 Xyzzying is an action applying to nothing.  Understand "xyzzy" as xyzzying.
 Report xyzzying:
-	say "[if the player is Constance]Legends say that the capsa of movement contained such a scroll, but it was lost years ago.  An itinerant troubador once told a tale at the royal court of a Magpie Clan woman who saw the open capsa materialize on her table one morning, and grabbed it just in time to be transported with it to its next location.  She had many fanciful adventures until, years later, it finally took her home again.  She opened the capsa and let it go, hoping that another would have adventures like hers[otherwise]The capsa of movement is incredibly annoying.  Like all capsae, you can feel where it is just at the edge of your senses, but every time it jumps from one location to another, it's like a flicker of movement at the edge of your sight[end if]."
+	say "[if the player is Constance]Legends say that the capsa of movement contained such a scroll, but it was lost years ago.  An itinerant troubador once told a tale at the royal court of a Magpie Clan woman who saw the open capsa materialize on her table one morning, and grabbed it just in time to be transported with it to its next location.  She had many fanciful adventures until, years later, it finally took her home again.  She opened the capsa and let it go, hoping that another would have adventures like hers[otherwise]The capsa of movement is incredibly annoying.  Like all capsae, you can feel where it is just at the edge of your senses, so every time it jumps from one location to another, it's like a flicker of movement at the edge of your sight[end if]."
 
 [Understand "fly" as going something.] [Well!  An I7 'abject failure' bug!  Woo!]
 Understand "fly" as going.
@@ -218,10 +247,10 @@ Check unlocking keylessly:
 		say "That's not something that opens, let alone locks." instead;
 	if the noun is not lockable:
 		say "That's not something you could lock or unlock." instead;
-	if the noun is unlocked:
-		say "[The noun] is already unlocked." instead;
 	if the noun is open:
-		say "[The noun] is already open." instead;
+		say "[The noun] is already open, so whether it's locked or not is kind of moot at this point.  You also don't have any keys." instead;
+	if the noun is unlocked:
+		say "As far as you know, [the noun] is already unlocked." instead;
 
 Carry out unlocking keylessly:
 	say "You've never had the keys for anything around here."
