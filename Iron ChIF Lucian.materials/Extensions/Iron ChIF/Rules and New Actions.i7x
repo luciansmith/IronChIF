@@ -197,23 +197,19 @@ After looking during hanging out:
 			otherwise:
 				say "A [mist density] mist surrounds you, summoned by your quarry.";
 
-
+Section movement
 
 Diving is an action applying to nothing.  Understand "dive" as diving.
 Before diving:
-	Try going down;
+	Try going down instead;
 
 Ascending is an action applying to nothing.  Understand "ascend" as ascending.
 Before ascending:
-	Try going up;
+	Try going up instead;
 
 Descending is an action applying to nothing.  Understand "descend" as Descending.
 Before Descending:
-	Try going down;
-
-Xyzzying is an action applying to nothing.  Understand "xyzzy" as xyzzying.
-Report xyzzying:
-	say "[if the player is Constance]Legends say that the capsa of movement contained such a scroll, but it was lost years ago.  An itinerant troubador once told a tale at the royal court of a Magpie Clan woman who saw the open capsa materialize on her table one morning, and grabbed it just in time to be transported with it to its next location.  She had many fanciful adventures until, years later, it finally took her home again.  She opened the capsa and let it go, hoping that another would have adventures like hers[otherwise]The capsa of movement is incredibly annoying.  Like all capsae, you can feel where it is just at the edge of your senses, so every time it jumps from one location to another, it's like a flicker of movement at the edge of your sight[end if]."
+	Try going down instead;
 
 [Understand "fly" as going something.] [Well!  An I7 'abject failure' bug!  Woo!]
 Understand "fly" as going.
@@ -222,12 +218,22 @@ Understand "fly [direction]" as going.
 Check jumping:
 	say "[if the player is Constance]Pfaugh![otherwise]Your old bones aren't what the used to be.[end if]  Jumping is for fledglings!" instead;
 
+Section nostalgia
+
+Xyzzying is an action applying to nothing.  Understand "xyzzy" as xyzzying.
+Report xyzzying:
+	say "[if the player is Constance]Legends say that the capsa of movement contained such a scroll, but it was lost years ago.  An itinerant troubador once told a tale at the royal court of a Magpie Clan woman who saw the open capsa materialize on her table one morning, and grabbed it just in time to be transported with it to its next location.  She had many fanciful adventures until, years later, it finally took her home again.  She opened the capsa and let it go, hoping that another would have adventures like hers[otherwise]The capsa of movement is incredibly annoying.  Like all capsae, you can feel where it is just at the edge of your senses, so every time it jumps from one location to another, it's like a flicker of movement at the edge of your sight[end if]."
+
+Section look on undo
+
 After undoing an action:
 	if cyoa mode is true:
 		try looking;
 	otherwise:
 		say the description of the location;
 		say paragraph break;
+
+Section doors
 
 Understand "lock [something]" as locking keylessly. Locking keylessly is an action applying to one thing.
 
@@ -254,6 +260,12 @@ Check unlocking keylessly:
 
 Carry out unlocking keylessly:
 	say "You've never had the keys for anything around here."
+
+First Check opening an open door:
+	say "You opened this door with the scroll of opening already." instead;
+
+First Check unlocking an unlocked door with:
+	say "As far as you know, the door is already unlocked." instead;
 
 
 Rules and New Actions ends here.

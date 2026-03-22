@@ -11,13 +11,24 @@ cell_contents is scenery in Forgotten Brig.  The printed name is "cell contents"
 
 Does the player mean examining cell_contents: it is likely;
 
-Horatio is a man in Forgotten Brig.  "[Horatio room desc]."  The description is "[if the player is Horatio]You're a member of the Buzzard Clan, and fit the stereotype fairly well: bald red head and red talons, hunched shoulders, mottled black and brown feathers.  You've balded down past your neck now, betraying your advanced age.[otherwise]Horatio is an ancient Buzzard Clan sage of sorts, you suppose, given that he was jailed for heresy back in the day[end if]."
+Horatio is a man in Forgotten Brig.  "[Horatio room desc]."  The description is "[if the player is Horatio]You're a member of the Buzzard Clan, and fit the stereotype fairly well: bald red head and red talons, hunched shoulders, mottled black and brown feathers.  You've balded down past your neck now, betraying your advanced age.[otherwise]Horatio is an ancient Buzzard Clan sage of sorts, you suppose, given that he was jailed for heresy back in the day[gold directions][end if]."
 
 To say Horatio room desc:
 	If the location is the Librum Landing Cradle:
-		say "Horatio is talking [if go go go is happening]quickly[otherwise]slowly[end if] to the [lone guard] about [one of]the ethics of a monarchy[or]his grandchildren[or]regrettable fashion choices from the youth of today[or]whether the dot on the back of looks infected[or]how to get to zenostan (is that a real place?) from here[or]whether her mother was the Isabella he once knew[or]some meandering story about flying to the park[cycling], driving the guard quietly insane";
+		if Being Chased is happening:
+			say "Horatio is perched clutching a redwood branch on the edge of the cradle, watching you";
+			if Everything Falls is upended:
+				say ", and swaying different directions as you pass by overhead and the gold scroll pulls him around";
+				if the librum door is open:
+					say ".  He seems to be trying to get your attention.  You are, however, slightly busy at the moment";
+		otherwise:
+			say "Horatio is talking [if go go go is happening]quickly[otherwise]slowly[end if] to the [lone guard] about [one of]the ethics of a monarchy[or]his grandchildren[or]regrettable fashion choices from the youth of today[or]whether the dot on the back of looks infected[or]how to get to zenostan (is that a real place?) from here[or]whether her mother was the Isabella he once knew[or]some meandering story about flying to the park[cycling], driving the guard quietly insane";
 	otherwise:
 		say "Horatio is here, watching you with quiet aplomb and patience"
+
+To say gold directions:
+	If Being Chased is happening and Everything Falls is upended and the librum door is open:
+		say ".  He's pointing northwest.  Except it's not implemented, so don't try it yet LS DEBUG";
 
 Horatio can be remembered.  Horatio is not remembered.
 

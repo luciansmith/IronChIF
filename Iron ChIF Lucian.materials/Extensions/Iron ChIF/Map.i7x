@@ -47,7 +47,7 @@ Check going somewhere from High Above:
 After going from High Above:
 	if Starting Off is happening:
 		say "You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...";
-	otherwise if the player contains an open gold capsa:
+	otherwise if the player encloses an open gold capsa:
 		say "You descend towards the Aerie, though it feels like you're flying upwards, against the pull of the scroll of down.";
 	otherwise if go go go is happening:
 		now Constance is super-fast;
@@ -81,17 +81,33 @@ Great Hall Landing Cradle is below High Above.  "The Landing Cradle of the Great
 
 To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest."
 
-The Great Hall doors are doors in Great Hall Landing Cradle.  They are plural-named.  The printed name is "huge double doors of the Great Hall".  They are closed and locked.  They are inside from Great Hall Landing Cradle and outside from Upper Great Hall.  The description is "The huge double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster."  Understand "huge/door/double/canted/hatch/hatches/fine/scrollwork/broad/swoops/curls/branch/finer/giant/landing/cradle" as the Great Hall doors.
+The Great Hall doors are doors in Great Hall Landing Cradle.  They are plural-named.  The printed name is "huge double doors of the Great Hall".  They are closed and locked.  They are inside from Great Hall Landing Cradle and outside from Upper Great Hall.  The description is "The huge [if open]open[otherwise]closed[end if] double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster."  Understand "huge/door/double/canted/hatch/hatches/fine/scrollwork/broad/swoops/curls/branch/finer/giant/landing/cradle" as the Great Hall doors.
 
-First Check opening an open door:
-	say "You opened this door with the scroll of opening already." instead;
-
-First Check unlocking an unlocked door with:
-	say "As far as you know, the door is already unlocked." instead;
+Last check opening barred great hall doors:
+	say "You pull at the doors, but not only were they locked, but barred as well.  [if Everything Opens has happened]You suppose rezrov must unlock and open, but not unbar?  [end if]The doors give slightly and the bar rattles, but the doors refuse to open." instead;
 
 Last Check going Great Hall doors during Being Chased:
 	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Guard has followed you, and you simply don't have any room to maneuver.";
 	end the story saying "You have been captured.";
+
+The Great Hall doors can be barred.  The great hall doors are barred.
+
+A wooden bar is in Upper Great Hall.  "The wooden bar "
+
+Every turn during Everything Falls:
+	if location is Great Hall Landing Cradle and the red capsa is enclosed by the player:
+		if the Great Hall doors are barred:
+			now the great hall doors are not barred;
+			move the wooden bar to the Upper Great Hall;
+			say "As you swoop over the Great Hall, you hear a crash from the other side of the doors";
+			if Everything Opens is happening:
+				say ", and they fly open";
+				now the great hall doors are open;
+			say "!";
+		Otherwise if the the great hall doors are open and the wooden bar is in Upper Great hall:
+			say "Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  Happily, it's not actually implemented.";
+
+
 
 Before going inside from Great Hall Landing Cradle:
 	try entering Great Hall doors instead;

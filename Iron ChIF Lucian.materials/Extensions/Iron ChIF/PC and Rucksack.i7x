@@ -52,9 +52,9 @@ A purple capsa of opening is a capsa in the rucksack.  The description is "The p
 
 A scroll of rezrov is a scroll in the purple capsa of opening.  The name is "REZROV".  Understand "opening" as the scroll of rezrov.
 
-Everything Is Open is a recurring scene.  Everything Is Open begins when the purple capsa of opening is open.  Everything Is Open ends when the purple capsa of opening is closed.
+Everything Opens is a recurring scene.  Everything Opens begins when the purple capsa of opening is open.  Everything Opens ends when the purple capsa of opening is closed.
 
-When Everything Is Open begins:
+When Everything Opens begins:
 	carry out everything rezrovving;
 
 To carry out everything rezrovving:
@@ -75,6 +75,9 @@ To carry out everything rezrovving:
 				if the item is a capsa:
 					if the player can see the item:
 						say "The magic of [the item] prevents it from being opened.";
+				otherwise if the item is the great hall doors:
+					if the player can see the item:
+						say "The doors strain to open, but are blocked by something.";
 				otherwise:
 					now the item is open;
 					if the player can see the item:
@@ -90,21 +93,21 @@ To carry out everything rezrovving:
 			Now the woodpeckers are activated; [Starts the 'being chased' scene]
 			Now the reset state of the woodpeckers is 0;
 
-Check closing something openable during Everything Is Open:
+Check closing something openable during Everything Opens:
 	if the noun is not a capsa:
 		say "Try as you might, a mystical force prevents you from closing [the noun]." instead.
 
 
-Check locking something with during Everything Is Open:
+Check locking something with during Everything Opens:
 	say "Try as you might, a mystical force prevents you from locking [the noun]." instead.
 
-Check wearing the rucksack during Everything Is Open:
+Check wearing the rucksack during Everything Opens:
 	say "A mystical force prevents you from fastening the buckles on the rucksack, and you are unable to put it on." instead.
 
-Reset Sensors is a recurring scene.  Reset Sensors begins when Everything is Open ends.  Reset Sensors ends when the reset state of the woodpeckers is 5.
+Reset Sensors is a recurring scene.  Reset Sensors begins when Everything Opens ends.  Reset Sensors ends when the reset state of the woodpeckers is 5.
 
 Every turn during Reset Sensors:
-	if Everything Is Open is happening:
+	if Everything Opens is happening:
 		now the reset state of the woodpeckers is 0;
 	otherwise:
 		increase the reset state of the woodpeckers by 1;
@@ -113,7 +116,7 @@ Every turn during Reset Sensors:
 		if go go go is happening and the reset state of the woodpeckers is less than 5:
 			increase the reset state of the woodpeckers by 1;
 		
-Doors Re-close is a recurring scene.  Doors Re-close begins when Everything Is Open ends.  Doors Re-close ends when cannot-close.
+Doors Re-close is a recurring scene.  Doors Re-close begins when Everything Opens ends.  Doors Re-close ends when cannot-close.
 
 Every turn during Doors Re-close:
 	if Being Chased is not happening:
@@ -136,7 +139,7 @@ Every turn during Doors Re-close:
 		[LS DEBUG:  revisit this if I implement other guarded doors at some point.]
 
 To decide whether cannot-close:
-    if Everything is Open is happening, decide yes;
+    if Everything Opens is happening, decide yes;
     if the Librum Door is locked, decide yes;
     decide no.
 
@@ -158,7 +161,7 @@ Check dropping the rucksack during Everything Falls:
 
 Everything Falls is a recurring scene.  Everything Falls begins when the gold capsa is open.  Everything Falls ends when the gold capsa is closed.
 
-Cantedness is a kind of value.  The cantednesses are grounded and upended.
+Cantedness is a kind of value.  The cantednesses are grounded and upended and offline.
 
 Everything falls has a cantedness.  The cantedness of Everything falls is upended.
 
@@ -181,6 +184,7 @@ Every turn during everything falls:
 		now the woodpeckers are activated;
 
 When Everything Falls ends:
+	Now Everything Falls is offline;
 	if the woodpeckers are activated:
 		say "You twist and right yourself as 'down' returns to its normal state[if the closeness of Being Chased is at least 2].  The Raven Guards struggle to right themselves again, but recover and continue their pursuit[end if].";
 	otherwise:
