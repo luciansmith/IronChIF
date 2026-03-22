@@ -51,11 +51,11 @@ test chase_mstart with "d/open purple/close purple/e/w/u".
 test mist_escape with "summon mist/d/summon mist/e/summon mist/nw/summon mist/u".
 test dive_escape with "d/d/u/u/".
 test haste_escape with "open haste/d/u/close haste".
-test fastmist_escape with "summon mist/summon mist/d/summon mist/u/summon mist/d".
+test fastmist_escape with "summon mist/summon mist/d/summon mist/u".
 
 [Environmental tests]
 test haste_dive with "open haste/d/d/close haste/u/u".
-test lock_unlock with "lock librum/open librum/e/lock door/unlock door/unlock guard/nw/lock door/unlock door/s/lock door/unlock door/d/unlock net/u/u/".
+test lock_unlock with "e/lock librum/open librum/e/lock door/unlock door/unlock guard/nw/lock door/unlock door/s/lock door/unlock door/d/unlock net/u/u/".
 
 [quickest way to get to Horatio]
 test horatio_speedrun with "summon mist/d/u/open purple/d/d"

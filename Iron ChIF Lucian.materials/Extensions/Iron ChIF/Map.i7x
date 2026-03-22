@@ -214,11 +214,11 @@ Instead of going nowhere from Librum Landing Cradle:
 
 The Librum Door is a door in Librum Landing Cradle.  It is closed and locked.  It is inside from Librum Landing Cradle and outside from Librum Itself.  The description is "A canted [if open]open[otherwise]closed[end if] hatch to the Librum, on the east side of the landing cradle."
 
-Last Check opening a closed Librum Door:
+First Check opening a closed Librum Door:
 	if the lone guard is in the location:
 		say "The guard is entirely too watchful to let you do that." instead.
 
-Last Check unlocking a locked Librum Door with:
+First Check unlocking a locked Librum Door with:
 	if the lone guard is in the location:
 		say "The guard is entirely too watchful to let you do that." instead.
 

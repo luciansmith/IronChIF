@@ -159,7 +159,7 @@ Every turn during Mist depletion:
 				now the thickness of the mist is 1;
 				say ", all the way back to equilibrium.";
 			otherwise:
-				say ", thinning back to a [mist density] mist.";
+				say ", dwindling back to a [mist density] mist.";
 		otherwise:
 			decrease the thickness of the mist by 2;
 			say "The fog evaporates steadily in the heat and sun-song of the Ikniq warriors";
@@ -168,7 +168,7 @@ Every turn during Mist depletion:
 				now the thickness of the mist is 1;
 				say ", all the way back to equilibrium.";
 			otherwise if the thickness of the mist is 4 or the thickness of the mist is 5 or the thickness of the mist is 9 or the thickness of the mist is 10 or the thickness of the mist is 14 or the thickness of the mist is 15:
-				say ", thinning back to a [mist density] mist.";
+				say ", dwindling back to a [mist density] mist.";
 			otherwise:
 				say ".";
 	otherwise if the location is outdoors:
@@ -186,7 +186,7 @@ Every turn during Mist depletion:
 
 
 After looking during hanging out:
-	if the grey mist is in the location:
+	if cyoa mode is false and the grey mist is in the location:
 		If the location is indoors:
 			if the thickness of the mist is at least 8:
 				say "Even though you're inside, the [mist density] fog outside makes the air in this room thicker, somehow.";

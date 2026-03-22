@@ -69,17 +69,20 @@ Every turn during Being Chased:
 		Increase the closeness of Being Chased by 1;
 		[say "closeness: [the closeness of being chased].";]
 		If the closeness of Being Chased is 1:
-			say "A pervasive heat along with an exultant song of the sun wash over you, and in a flash, [nb]";
-			If the thickness of the grey mist is at least 14:
-				now the thickness of the grey mist is 8;
-				say "the heavy mist you summoned half-boils away[nb]";
-			Otherwise if the thickness of the grey mist is at least 10:
-				now the thickness of the grey mist is 4;
-				say "the rolling mist you summoned boils away to almost nothing[nb]";
-			Otherwise if the thickness of the grey mist is greater than 1:
-				say "the [mist density] mist you summoned boils away back to equilibrium[nb]";
-				now the thickness of the grey mist is 1;
-			say ".  Crap.  The queen must have Ikniq working for her now.";
+			If the thickness of the grey mist is 1:
+				say "You suddenly feel warmer, and hear an exultant song of the sun in the distance.  The [one of]queen must have Ikniq working for her[or]queen's Ikniq warriors are at it again[stopping], trained to try to burn away your fog.";
+			otherwise:
+				say "A pervasive heat along with an exultant song of the sun wash over you, and in a flash, [nb]";
+				If the thickness of the grey mist is at least 14:
+					now the thickness of the grey mist is 8;
+					say "the heavy mist you summoned half-boils away[nb]";
+				Otherwise if the thickness of the grey mist is at least 10:
+					now the thickness of the grey mist is 4;
+					say "the rolling mist you summoned boils away to almost nothing[nb]";
+				Otherwise if the thickness of the grey mist is greater than 1:
+					say "the [mist density] mist you summoned boils away back to equilibrium[nb]";
+					now the thickness of the grey mist is 1;
+				say "[one of].  Crap.  The queen must have Ikniq working for her now[or].  The queen's Ikniq warriors are after you again[stopping].";
 		Otherwise if the closeness of Being Chased is 2:
 			move the raven guard to the location;
 			If the location is not the starting_line of Being Chased:
@@ -144,7 +147,7 @@ To escape and recover:
 	Now the closeness of Being Chased is 0;
 	[Now the thickness of the grey mist is 1;]
 	Now Constance is cruising;
-	say "[lb]The Raven's frustrated caws echo in the mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.";
+	say "[lb]The Raven's frustrated caws echo in the [mist density] mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.";
 	if Horatio is not remembered:
 		if the rucksack is not enclosed by the player:
 			say "[lb]You retrieve your rucksack and any fallen capsae, and plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.";
