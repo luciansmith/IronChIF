@@ -92,21 +92,7 @@ Last Check going Great Hall doors during Being Chased:
 
 The Great Hall doors can be barred.  The great hall doors are barred.
 
-A wooden bar is in Upper Great Hall.  "The wooden bar "
-
-Every turn during Everything Falls:
-	if location is Great Hall Landing Cradle and the red capsa is enclosed by the player:
-		if the Great Hall doors are barred:
-			now the great hall doors are not barred;
-			move the wooden bar to the Upper Great Hall;
-			say "As you swoop over the Great Hall, you hear a crash from the other side of the doors";
-			if Everything Opens is happening:
-				say ", and they fly open";
-				now the great hall doors are open;
-			say "!";
-		Otherwise if the the great hall doors are open and the wooden bar is in Upper Great hall:
-			say "Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  Happily, it's not actually implemented.";
-
+A wooden bar is in Upper Great Hall.  It is loose.  "The wooden bar ".
 
 
 Before going inside from Great Hall Landing Cradle:
@@ -276,7 +262,7 @@ The well-fitting uniform is worn by the lone guard.  The description is "Her uni
 
 Tiny closed padlocks are part of the well-fitting uniform.  The description is "Yes, those are definitely tiny padlocks, each attached to small leather loops stitched to her uniform.  You peer more intently.  The stitching where the loops attach is definitely newer than the stitching on the rest of the uniform.  They must have been added recently."
 
-A small pile of tiny padlocks are in the Void.  "In the cradle next to the guard is a small pile of tiny padlocks, each open.";
+A small pile of tiny padlocks are in the Void.  The padlocks are loose.  "In the cradle next to the guard is a small pile of tiny padlocks, each open.";
 
 Silvered knives are worn by the lone guard.  The description is "Silvered knives, retracted now, but extendable at will."  Understand "silver/retracted/retractable/extendable" as silvered knives.
 

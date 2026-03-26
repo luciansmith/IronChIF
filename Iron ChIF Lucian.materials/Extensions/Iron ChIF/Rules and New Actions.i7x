@@ -197,6 +197,11 @@ After looking during hanging out:
 			otherwise:
 				say "A [mist density] mist surrounds you, summoned by your quarry.";
 
+Section stuff that can fall
+
+A thing can be loose.  A thing is usually not loose.
+A thing can be following.  A thing is usually not following.
+
 Section movement
 
 Diving is an action applying to nothing.  Understand "dive" as diving.

@@ -3,13 +3,853 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-538">
     <command xml:space="preserve">Iron ChIF Lucian</command>
-    <result xml:space="preserve">Your mother needs you.  The whole village needs you.  You can do this.  You must do this.&#x000A;&#x000A;The mantra repeats in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you.  And there's no more Falcon Clan in the Royal Aerie--you and the rest of your clan were all banished two years ago.  Three days ago, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.&#x000A;&#x000A;By tonight, you will know.  You're not leaving without it.&#x000A;&#x000A;course correction&#x000A;An Interactive High Heist by Lucian Smith&#x000A;Release 1 / Serial number 260321 / Inform 7 v10.1.2 / D&#x000A;For more information, try ABOUT and CREDITS.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">up, northwest, and west&#x000A;Your mother needs you.  The whole village needs you.  You can do this.  You must do this.&#x000A;&#x000A;The mantra repeats in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you.  And there's no more Falcon Clan in the Royal Aerie--you and the rest of your clan were all banished two years ago.  Three days ago, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.&#x000A;&#x000A;By tonight, you will know.  You're not leaving without it.&#x000A;&#x000A;course correction&#x000A;An Interactive High Heist by Lucian Smith&#x000A;Release 1 / Serial number 260325 / Inform 7 v10.1.2 / D&#x000A;For more information, try ABOUT and CREDITS.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">Your mother needs you.  The whole village needs you.  You can do this.  You must do this.&#x000A;&#x000A;The mantra repeats in your head, pushing you on as you wheel in circles over the forest canopy, riding thermals to heights where none but other Falcon Clan members could see you.  And there's no more Falcon Clan in the Royal Aerie--you and the rest of your clan were all banished two years ago.  Three days ago, approaching from underneath worked, as none were expecting it.  But while technically successful, you failed to snatch your intended quarry: the Scroll of Health.  The sages had been unable to tell you what color capsa would hold it: you now know that it's not purple, gold, nor red.&#x000A;&#x000A;By tonight, you will know.  You're not leaving without it.&#x000A;&#x000A;course correction&#x000A;An Interactive High Heist by Lucian Smith&#x000A;Release 1 / Serial number 260321 / Inform 7 v10.1.2 / D&#x000A;For more information, try ABOUT and CREDITS.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-1096"/>
+      <child nodeId="node-1174"/>
       <child nodeId="node-722"/>
       <child nodeId="node-796"/>
     </children>
+  </item>
+  <item nodeId="node-1096">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">If you get any closer to the aerie without summoning mist first, the guards would surely see you.  It's why, as a Bostrat, you were originally chosen to go on this mission.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1152"/>
+      <child nodeId="node-1097"/>
+    </children>
+  </item>
+  <item nodeId="node-1152">
+    <command xml:space="preserve">open red</command>
+    <result xml:space="preserve">(the red capsa of hasten)&#x000A;Before you mess with powerful artifacts from the dawn of civilization, you should probably conceal yourself.  You're a Bostrat; the plan was to summon a mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1153"/>
+    </children>
+  </item>
+  <item nodeId="node-1153">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Calling on your heritage as a Bostrat, you sing the ancient song of mist and rain and thunder, summoning moisture from the air.  It slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, though it would then start to dissipate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1154"/>
+    </children>
+  </item>
+  <item nodeId="node-1154">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You circle through the thin mist, observing but hidden from view.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1155"/>
+    </children>
+  </item>
+  <item nodeId="node-1155">
+    <command xml:space="preserve">open gold</command>
+    <result xml:space="preserve">You open the gold capsa of down, revealing a scroll of rudenj.&#x000A;&#x000A;Immediately, "down" now means "towards the gold capsa" instead of "towards the earth".  After a brief moment of disorientation, you right yourself, wings pulling you "up" with just enough force that you remain level.&#x000A;&#x000A;Note: for convenience, "down" and "up" comands will continue to work as they did, referencing ground-relative geography instead of gold capsa-relative geography.&#x000A;&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder!  The enemy is DOWN. Repeat!  The enemy is DOWN."  You realize that creating a gravity well pointing straight at you might not have been the wisest move.&#x000A;&#x000A;As you swoop over the Great Hall, you hear a crash from the other side of the doors!&#x000A;&#x000A;You suddenly feel warmer, and hear an exultant song of the sun in the distance.  The queen must have Ikniq working for her, trained to try to burn away your fog.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1156"/>
+    </children>
+  </item>
+  <item nodeId="node-1156">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east.&#x000A;&#x000A;You've barely left Great Hall Landing Cradle when a squad of Raven Guards wheels in from behind, hot on your tail!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1157"/>
+    </children>
+  </item>
+  <item nodeId="node-1157">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">As you fly off, you hear a distinct "thunk" from inside the Librum.  Something significant fell over or shifted in there.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1158"/>
+    </children>
+  </item>
+  <item nodeId="node-1158">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1159"/>
+    </children>
+  </item>
+  <item nodeId="node-1159">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">As you dodge a closing Raven Guard and fly northwest, you hear another whump from inside the Librum.&#x000A;&#x000A;Royal Gardens&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the garden door to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.  The door to the very-guarded Royal Quarters is to the north.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1160"/>
+    </children>
+  </item>
+  <item nodeId="node-1160">
+    <command xml:space="preserve">se</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1161"/>
+    </children>
+  </item>
+  <item nodeId="node-1161">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You loop under a tree branch and head up, but before you get very far, you hear something whap against the librum door behind you.  Something almost escaped from in there.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1162"/>
+    </children>
+  </item>
+  <item nodeId="node-1162">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You descend towards the Aerie, though it feels like you're flying upwards, against the pull of the scroll of down.&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1163"/>
+    </children>
+  </item>
+  <item nodeId="node-1163">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">Royal Gardens&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the garden door to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.  The door to the very-guarded Royal Quarters is to the north.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1164"/>
+    </children>
+  </item>
+  <item nodeId="node-1164">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;[Previous turn undone.]&#x000A;&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1165"/>
+    </children>
+  </item>
+  <item nodeId="node-1165">
+    <command xml:space="preserve">open purple</command>
+    <result xml:space="preserve">You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;&#x000A;The Librum Door clicks as it unlocks!&#x000A;The magic of the red capsa of hasten prevents it from being opened.&#x000A;The double doors of the great hall fly open!&#x000A;The Librum Door flies open!&#x000A;The straps and buckles on your rucksack fly open and it falls!&#x000A;Fortunately, it hovers in midair due to the scroll of down, so you're able to immediately grab it again.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1166"/>
+    </children>
+  </item>
+  <item nodeId="node-1166">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">Royal Gardens&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the garden door to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.  The door to the very-guarded Royal Quarters is to the north.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1167"/>
+    </children>
+  </item>
+  <item nodeId="node-1167">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  You turn and weave, managing to keep it from hitting you.  The Raven Guard fall back as the spinning bar careens through the air!&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1168"/>
+    </children>
+  </item>
+  <item nodeId="node-1168">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east.&#x000A;&#x000A;The wooden bar follows you from Great Hall Landing Cradle, spiraling towards the gold capsa of down.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1169"/>
+    </children>
+  </item>
+  <item nodeId="node-1169">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;The wooden bar follows you from Librum Landing Cradle, spiraling towards the gold capsa of down.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1170"/>
+    </children>
+  </item>
+  <item nodeId="node-1170">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You take to the skies even higher.&#x000A;&#x000A;As you dodge to avoid a Raven Guard, the wooden bar catches your side as it spins by, leaving a gash!&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1171"/>
+    </children>
+  </item>
+  <item nodeId="node-1171">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You take to the skies even higher.&#x000A;&#x000A;The wooden bar pinwheels past you as you change direction yet again, then spins back, keeping the Raven Guard at bay.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1172"/>
+    </children>
+  </item>
+  <item nodeId="node-1172">
+    <command xml:space="preserve">x black</command>
+    <result xml:space="preserve">(the Raven Guard)&#x000A;Lightning fast, you try to examine the Raven Guard:  Black as night, apart from the silvered knives they wear on their talons, and the golden razors that line their beaks.  It looks like the lone guard from the Librum has joined them: the .&#x000A;&#x000A;The wooden bar pinwheels past you as you change direction yet again, then spins back, keeping the Raven Guard at bay.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1173"/>
+    </children>
+  </item>
+  <item nodeId="node-1173">
+    <command xml:space="preserve">x black capsa</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1097">
+    <command xml:space="preserve">summon mis</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1098"/>
+    </children>
+  </item>
+  <item nodeId="node-1098">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Calling on your heritage as a Bostrat, you sing the ancient song of mist and rain and thunder, summoning moisture from the air.  It slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, though it would then start to dissipate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1099"/>
+    </children>
+  </item>
+  <item nodeId="node-1099">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You circle through the thin mist, observing but hidden from view.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1100"/>
+    </children>
+  </item>
+  <item nodeId="node-1100">
+    <command xml:space="preserve">drop purple</command>
+    <result xml:space="preserve">You haven't got that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1101"/>
+    </children>
+  </item>
+  <item nodeId="node-1101">
+    <command xml:space="preserve">get it</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1102"/>
+    </children>
+  </item>
+  <item nodeId="node-1102">
+    <command xml:space="preserve">drop it</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1103"/>
+    </children>
+  </item>
+  <item nodeId="node-1103">
+    <command xml:space="preserve">get all from rucksack</command>
+    <result xml:space="preserve">gold capsa of down: Taken.&#x000A;red capsa of hasten: Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1104"/>
+    </children>
+  </item>
+  <item nodeId="node-1104">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east.&#x000A;&#x000A;A lone Raven guard stands in front of the door, dark eyes shifting as she watches the mist.&#x000A;&#x000A;You circle through the thin mist, observing but hidden from view.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1105"/>
+    </children>
+  </item>
+  <item nodeId="node-1105">
+    <command xml:space="preserve">drop red</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1106"/>
+    </children>
+  </item>
+  <item nodeId="node-1106">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">Royal Gardens&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the garden door to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.  The door to the very-guarded Royal Quarters is to the north.&#x000A;&#x000A;You circle through the thin mist, observing but hidden from view.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1107"/>
+    </children>
+  </item>
+  <item nodeId="node-1107">
+    <command xml:space="preserve">open gold</command>
+    <result xml:space="preserve">You open the gold capsa of down, revealing a scroll of rudenj.&#x000A;&#x000A;Immediately, "down" now means "towards the gold capsa" instead of "towards the earth".  After a brief moment of disorientation, you right yourself, wings pulling you "up" with just enough force that you remain in one place.&#x000A;&#x000A;Note: for convenience, "down" and "up" comands will continue to work as they did, referencing Earth-relative geography instead of gold capsa-relative geography.&#x000A;&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder!  The enemy is DOWN. Repeat!  The enemy is DOWN."  You realize that creating a gravity well pointing straight at you might not have been the wisest move.&#x000A;&#x000A;You suddenly feel warmer, and hear an exultant song of the sun in the distance.  The queen must have Ikniq working for her, trained to try to burn away your fog.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1108"/>
+    </children>
+  </item>
+  <item nodeId="node-1108">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You can see a purple capsa of opening (closed) here.&#x000A;&#x000A;The purple capsa of opening falls towards you, only missing because you keep dodging to avoid the Raven Guard.&#x000A;As you swoop over the Great Hall, you hear a crash from the other side of the doors!&#x000A;&#x000A;You've barely left Royal Gardens when a squad of Raven Guards wheels in from behind, hot on your tail!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1109"/>
+    </children>
+  </item>
+  <item nodeId="node-1109">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east.&#x000A;&#x000A;You can see a red capsa of hasten (closed) here.&#x000A;&#x000A;The red capsa of hasten falls towards you, only missing because you keep dodging to avoid the Raven Guard.&#x000A;The purple capsa of opening follows you from Great Hall Landing Cradle, spiraling towards the gold capsa of down.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1110"/>
+    </children>
+  </item>
+  <item nodeId="node-1110">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">You circle evasively, trying to avoid the Raven Guard.&#x000A;&#x000A;The purple capsa of opening bounces off the gold capsa, pinwheeling away before arcing back towards you again.&#x000A;The red capsa of hasten spins past you as you dodge away from the Raven Guard, and turns in a lazy arc to follow you again.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1111"/>
+    </children>
+  </item>
+  <item nodeId="node-1111">
+    <command xml:space="preserve">put gold in rucksack</command>
+    <result xml:space="preserve">You put the gold capsa of down into the leather rucksack.&#x000A;&#x000A;The purple capsa of opening finally spirals towards the gold capsa and falls into the rucksack!&#x000A;The red capsa of hasten spins past you as you dodge away from the Raven Guard, and turns in a lazy arc to follow you again.&#x000A;&#x000A;Two guards snap at you, and while both touch nothing but feathers, a third slashes you with his silvered talons.  They're about to overwhelm you.&#x000A;&#x000A;You feel your skin prickle where you were wounded, and look down.  To your amazement, your wound has closed and the bleeding stopped.  As you watch, even the line from the cut disappears, and the feathers around it fluff out again.&#x000A;&#x000A;It's the scroll of Health.  It has to be.  It's actually here!  And active.  Hmm.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1112"/>
+    </children>
+  </item>
+  <item nodeId="node-1112">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">Royal Gardens&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the garden door to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.  The door to the very-guarded Royal Quarters is to the north.&#x000A;&#x000A;The red capsa of hasten follows you from Librum Landing Cradle, spiraling towards the gold capsa of down.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1113"/>
+    </children>
+  </item>
+  <item nodeId="node-1113">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">You circle evasively, trying to avoid the Raven Guard.&#x000A;&#x000A;The red capsa of hasten finally spirals towards the gold capsa and falls into the rucksack!&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1114"/>
+    </children>
+  </item>
+  <item nodeId="node-1114">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1115"/>
+    </children>
+  </item>
+  <item nodeId="node-1115">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a leather rucksack (being worn, and open)&#x000A;    a red capsa of hasten (closed)&#x000A;    a purple capsa of opening (closed)&#x000A;    a gold capsa of down (open)&#x000A;      a scroll of rudenj&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1116"/>
+    </children>
+  </item>
+  <item nodeId="node-1116">
+    <command xml:space="preserve">open purple</command>
+    <result xml:space="preserve">You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;&#x000A;The huge double doors of the Great Hall clicks as it unlocks!&#x000A;The magic of the red capsa of hasten prevents it from being opened.&#x000A;The double doors of the great hall fly open!&#x000A;The straps and buckles on your rucksack fly open and it falls!&#x000A;Fortunately, it hovers in midair due to the scroll of down, so you're able to immediately grab it again.&#x000A;&#x000A;Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  You turn and weave, managing to keep it from hitting you.  The Raven Guard fall back as the spinning bar carreens through the air!&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1117"/>
+    </children>
+  </item>
+  <item nodeId="node-1117">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Royal Gardens&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the garden door to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.  The door to the very-guarded Royal Quarters is to the north.&#x000A;&#x000A;The wooden bar follows you from Great Hall Landing Cradle, spiraling towards the gold capsa of down.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1118"/>
+    </children>
+  </item>
+  <item nodeId="node-1118">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">You circle evasively, trying to avoid the Raven Guard.&#x000A;&#x000A;The wooden bar pinwheels past you as you change direction yet again, then spins back, keeping the Raven Guard at bay.&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1119"/>
+    </children>
+  </item>
+  <item nodeId="node-1119">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">You circle evasively, trying to avoid the Raven Guard.&#x000A;&#x000A;The wooden bar pinwheels past you as you change direction yet again, then spins back, keeping the Raven Guard at bay.&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1120"/>
+    </children>
+  </item>
+  <item nodeId="node-1120">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">You circle evasively, trying to avoid the Raven Guard.&#x000A;&#x000A;The wooden bar pinwheels past you as you change direction yet again, then spins back, keeping the Raven Guard at bay.&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1121"/>
+    </children>
+  </item>
+  <item nodeId="node-1121">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">You circle evasively, trying to avoid the Raven Guard.&#x000A;&#x000A;The wooden bar pinwheels past you as you change direction yet again, then spins back, keeping the Raven Guard at bay.&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1122"/>
+    </children>
+  </item>
+  <item nodeId="node-1122">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">You circle evasively, trying to avoid the Raven Guard.&#x000A;&#x000A;As you dodge to avoid a Raven Guard, the wooden bar catches your side as it spins by, leaving a gash!&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1123"/>
+    </children>
+  </item>
+  <item nodeId="node-1123">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Royal Gardens&#x000A;[Previous turn undone.]&#x000A;&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the garden door to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.  The door to the very-guarded Royal Quarters is to the north.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1124"/>
+    </children>
+  </item>
+  <item nodeId="node-1124">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">You circle evasively, trying to avoid the Raven Guard.&#x000A;&#x000A;The wooden bar pinwheels past you as you change direction yet again, then spins back, keeping the Raven Guard at bay.&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1125"/>
+    </children>
+  </item>
+  <item nodeId="node-1125">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">You circle evasively, trying to avoid the Raven Guard.&#x000A;&#x000A;The wooden bar pinwheels past you as you change direction yet again, then spins back, keeping the Raven Guard at bay.&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1126"/>
+    </children>
+  </item>
+  <item nodeId="node-1126">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">You circle evasively, trying to avoid the Raven Guard.&#x000A;&#x000A;The wooden bar pinwheels past you as you change direction yet again, then spins back, keeping the Raven Guard at bay.&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1127"/>
+    </children>
+  </item>
+  <item nodeId="node-1127">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">You circle evasively, trying to avoid the Raven Guard.&#x000A;&#x000A;The wooden bar pinwheels past you as you change direction yet again, then spins back, keeping the Raven Guard at bay.&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1128"/>
+    </children>
+  </item>
+  <item nodeId="node-1128">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">You circle evasively, trying to avoid the Raven Guard.&#x000A;&#x000A;As you dodge to avoid a Raven Guard, the wooden bar catches your side as it spins by, leaving a gash!&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1129"/>
+    </children>
+  </item>
+  <item nodeId="node-1129">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">You circle evasively, trying to avoid the Raven Guard.&#x000A;&#x000A;Your luck runs out as you dodge the wrong way, and the wooden bar smacks into your side.  You get the wind knocked out of you, the bar stops blocking the guard from following, and in an instant, they've swarmed you, bearing down on you from all directions.&#x000A;&#x000A;&#x000A;&#x000A;    *** You have been captured ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1130"/>
+    </children>
+  </item>
+  <item nodeId="node-1130">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Royal Gardens&#x000A;[Previous turn undone.]&#x000A;&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the garden door to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.  The door to the very-guarded Royal Quarters is to the north.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1131"/>
+    </children>
+  </item>
+  <item nodeId="node-1131">
+    <command xml:space="preserve">close gold</command>
+    <result xml:space="preserve">You close the gold capsa of down.&#x000A;&#x000A;You twist and right yourself as "down" returns to its normal state.  The Raven Guards struggle to right themselves again, but recover and continue their pursuit.&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1132"/>
+    </children>
+  </item>
+  <item nodeId="node-1132">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;The Raven Guard pursues you determinedly through the thin mist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1133"/>
+    </children>
+  </item>
+  <item nodeId="node-1133">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1134"/>
+    </children>
+  </item>
+  <item nodeId="node-1134">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.&#x000A;&#x000A;The Raven's frustrated caws echo in the thin mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.&#x000A;&#x000A;You plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.&#x000A;&#x000A;&#x000A;&#x000A;                                                             *    *    *</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1135"/>
+    </children>
+  </item>
+  <item nodeId="node-1135">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">You wait, expectantly.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1136"/>
+    </children>
+  </item>
+  <item nodeId="node-1136">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">Silently, your cell door unlocks, then swings open.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1137"/>
+    </children>
+  </item>
+  <item nodeId="node-1137">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">Well above your cell, you sense rezrov, rudenj, and quiste settle in their movements until they make lazy circles, high above the Aerie. Igram and taclor remain in place, quiet.&#x000A;&#x000A;It is time.&#x000A;&#x000A;Forgotten Brig&#x000A;A small but cosy cell, grown with austerity but basic comfort in mind.  Your now-open cell door leads west.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1138"/>
+    </children>
+  </item>
+  <item nodeId="node-1138">
+    <command xml:space="preserve">test quick_horatio</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] x cell&#x000A;(cell contents)&#x000A;A straight roost by a desk for writing, and a scooped roost for sleeping.  Enough space to spread your wings.  A rope wall for excercise.  Not bad.&#x000A;&#x000A;&gt;[2] x desk&#x000A;A straight roost by a desk for writing, and a scooped roost for sleeping.  Enough space to spread your wings.  A rope wall for excercise.  Not bad.&#x000A;&#x000A;&gt;[3] x cell door&#x000A;Ironwood-grown and maintained; your cell door is open.&#x000A;&#x000A;&gt;[4] w&#x000A;&#x000A;Disused Hallway&#x000A;The only time you ever saw anyone in this hallway was when Georg came to give you your meals, or clean the cell.  The living walls, still elegantly patterned, even here, self-replenish, and the floor carries away shed bark through the grate.  It leads west into the living area, and your old cell door leads east.&#x000A;&#x000A;&gt;[5] w&#x000A;Your place is not with the denizens of this Aerie, but with the prodigal daughter, now returned, and the capsa she seeks.&#x000A;&#x000A;&gt;[6] close grate&#x000A;Try as you might, a mystical force prevents you from closing the grate.&#x000A;&#x000A;&gt;[7] open grate&#x000A;That's already open.&#x000A;&#x000A;&gt;[8] enter grate&#x000A;You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper a song to the veins of this place: "I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence."&#x000A;&#x000A;After a few moments, you feel an undulation in the slick rippled floor beneath you, and you are compressed even further, as its peristalsis slides you slowly, and then more rapidly, away from your only home for the last ten years.  Then with a sudden &gt;plop&lt;, you're ejected into space.&#x000A;&#x000A;You try to spread your wings, but your reaction time is not what it was, and you hit wirey netting before fully stopping yourself.&#x000A;&#x000A;No matter.&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;A thin mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;[9] u&#x000A;You gracefully flit between the trees back up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;A thin mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;[10] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;Constance, a powerful Falcon Clan female, is here, her large black eyes watching you with fierce intensity.&#x000A;&#x000A;A thin mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&#x000A;&#x000A;                                                             *    *    *</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1139"/>
+    </children>
+  </item>
+  <item nodeId="node-1139">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">"Good job, Constance," you say as you approach to fly adjacent to her broad circling.&#x000A;&#x000A;She peers at you, and you know she can make out every barb on each of your feathers.  Patiently, you wait.&#x000A;&#x000A;"You're Horatio," she finally says.  "Didn't the queen... imprison you for heresy?"&#x000A;&#x000A;"Indeed," you reply.&#x000A;&#x000A;"And I just unlocked your cell," she says.&#x000A;&#x000A;"Indeed," you reply.&#x000A;&#x000A;"They wouldn't tell me what the heresy was.  I guess that's the point of trying to suppress dangerous ideas."&#x000A;&#x000A;This time, you just wait, and slightly incline your head.  Saying "Indeed" again might make her self-conscious about her babbling.&#x000A;&#x000A;There's a pause.&#x000A;&#x000A;"What was it?" she asks.&#x000A;&#x000A;1) Tell her about capsae.&#x000A;2) Tell her what you can do.&#x000A;3) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;4) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1140"/>
+    </children>
+  </item>
+  <item nodeId="node-1140">
+    <command xml:space="preserve">3</command>
+    <result xml:space="preserve">[OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.]&#x000A;&#x000A;Done!  Thank you for testing!  If you want to come back to this conversation at the start, just &gt;TOUCH HORATIO.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;Horatio is here, watching you with quiet aplomb and patience.&#x000A;&#x000A;You circle through the thin mist, observing but hidden from view.&#x000A;&#x000A;With a solemn nod to you, Horatio explains where the black capsa of igram should be, then banks to the east, and descends to the Librum.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1141"/>
+    </children>
+  </item>
+  <item nodeId="node-1141">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1142"/>
+    </children>
+  </item>
+  <item nodeId="node-1142">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">Upper Great Hall&#x000A;There is a small platform just inside the huge double doors of the Great Hall, and that's it.  The platform is lined with a single elegant grown-mahogany branch that wraps around the whole platform.  It varies in size and thickness, so that all types of feet fit somewhere along it, so people can comfortably launch themselves into the air to glide down to the floor level, or grab it for stability as they return.&#x000A;&#x000A;Your wound continues to lightly bleed.&#x000A;&#x000A;The momentum you had from your dive wears off.  Fun while it lasted!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1143"/>
+    </children>
+  </item>
+  <item nodeId="node-1143">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You step on to your favorite spot on the mahogany branch, and launch yourself downward in a graceful glide.&#x000A;&#x000A;Lower Great Hall&#x000A;When not prepared for a particular occasion, like now, the floor of the Great Hall is cleared of everything extraneous.  The exposed floor is absolutely exquisite, with swooping lines interspersed with starbursts, all in multicolored woods of all hues.  What doesn't change about the Great Hall floor is the display nooks along the sides: at least twenty nooks containing all manner of artifacts from around the world.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1144"/>
+    </children>
+  </item>
+  <item nodeId="node-1144">
+    <command xml:space="preserve">open gold</command>
+    <result xml:space="preserve">You open the gold capsa of down, revealing a scroll of rudenj.&#x000A;&#x000A;Immediately, dozens of artifacts and collectibles rain down on you, flying out of the display nooks all around you.  When the Raven Guard shows up, it's almost more of a rescue than a capture, as they have to dig you out of a huge pile of detritus before finally being able to reach and close the gold capsa.&#x000A;&#x000A;It's still definitely also a capture, though.&#x000A;&#x000A;&#x000A;&#x000A;    *** You have, indeed, been captured. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1174">
+    <command xml:space="preserve">random</command>
+    <result xml:space="preserve">[Random number generator now predictable.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1175"/>
+    </children>
+  </item>
+  <item nodeId="node-1175">
+    <command xml:space="preserve">summon mist</command>
+    <result xml:space="preserve">Calling on your heritage as a Bostrat, you sing the ancient song of mist and rain and thunder, summoning moisture from the air.  It slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry.&#x000A;&#x000A;You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, though it would then start to dissipate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1176"/>
+    </children>
+  </item>
+  <item nodeId="node-1176">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You circle through the thin mist, observing but hidden from view.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1177"/>
+    </children>
+  </item>
+  <item nodeId="node-1177">
+    <command xml:space="preserve">open gold</command>
+    <result xml:space="preserve">You open the gold capsa of down, revealing a scroll of rudenj.&#x000A;&#x000A;Immediately, "down" now means "towards the gold capsa" instead of "towards the earth".  After a brief moment of disorientation, you right yourself, wings pulling you "up" with just enough force that you remain level.&#x000A;&#x000A;Note: for convenience, "down" and "up" comands will continue to work as they did, referencing ground-relative geography instead of gold capsa-relative geography.&#x000A;&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder!  The enemy is DOWN. Repeat!  The enemy is DOWN."  You realize that creating a gravity well pointing straight at you might not have been the wisest move.&#x000A;&#x000A;As you swoop over the Great Hall, you hear a crash from the other side of the doors!&#x000A;&#x000A;You suddenly feel warmer, and hear an exultant song of the sun in the distance.  The queen must have Ikniq working for her, trained to try to burn away your fog.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1178"/>
+    </children>
+  </item>
+  <item nodeId="node-1178">
+    <command xml:space="preserve">open purple</command>
+    <result xml:space="preserve">You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;&#x000A;The huge double doors of the Great Hall clicks as it unlocks!&#x000A;The magic of the red capsa of hasten prevents it from being opened.&#x000A;The double doors of the great hall fly open!&#x000A;The straps and buckles on your rucksack fly open and it falls!&#x000A;Fortunately, it hovers in midair due to the scroll of down, so you're able to immediately grab it again.&#x000A;&#x000A;Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  You turn and weave, managing to keep it from hitting you.  The Raven Guard fall back as the spinning bar careens through the air!&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1179"/>
+    </children>
+  </item>
+  <item nodeId="node-1179">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east.&#x000A;&#x000A;The wooden bar follows you from Great Hall Landing Cradle, spiraling towards the gold capsa of down.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1180"/>
+    </children>
+  </item>
+  <item nodeId="node-1180">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You fly through the door, and immediately regret your decision.  In an instant, the Raven Guard has followed you, and you simply don't have any room to maneuver.&#x000A;&#x000A;&#x000A;&#x000A;    *** You have been captured. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1181"/>
+    </children>
+  </item>
+  <item nodeId="node-1181">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;[Previous turn undone.]&#x000A;&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1182"/>
+    </children>
+  </item>
+  <item nodeId="node-1182">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;The wooden bar follows you from Librum Landing Cradle, spiraling towards the gold capsa of down.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1183"/>
+    </children>
+  </item>
+  <item nodeId="node-1183">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east.&#x000A;&#x000A;The wooden bar follows you from Great Hall Landing Cradle, spiraling towards the gold capsa of down.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1184"/>
+    </children>
+  </item>
+  <item nodeId="node-1184">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">As you fly off, you hear a distinct "thunk" from inside the Librum.  Something significant fell over or shifted in there.&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;The wooden bar follows you from Librum Landing Cradle, spiraling towards the gold capsa of down.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1185"/>
+    </children>
+  </item>
+  <item nodeId="node-1185">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You descend towards the Aerie, though it feels like you're flying upwards, against the pull of the scroll of down.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;The wooden bar follows you from High Above the Royal Aerie, spiraling towards the gold capsa of down.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1186"/>
+    </children>
+  </item>
+  <item nodeId="node-1186">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east.&#x000A;&#x000A;The wooden bar follows you from Great Hall Landing Cradle, spiraling towards the gold capsa of down.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1187"/>
+    </children>
+  </item>
+  <item nodeId="node-1187">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">As you dodge a closing Raven Guard and fly northwest, you hear another whump from inside the Librum.&#x000A;&#x000A;Royal Gardens&#x000A;The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the garden door to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.&#x000A;&#x000A;From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.  The door to the very-guarded Royal Quarters is to the north.&#x000A;&#x000A;The wooden bar follows you from Librum Landing Cradle, spiraling towards the gold capsa of down.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1188"/>
+    </children>
+  </item>
+  <item nodeId="node-1188">
+    <command xml:space="preserve">se</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east.&#x000A;&#x000A;The wooden bar follows you from Royal Gardens, spiraling towards the gold capsa of down.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1189"/>
+    </children>
+  </item>
+  <item nodeId="node-1189">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;The wooden bar follows you from Librum Landing Cradle, spiraling towards the gold capsa of down.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1190"/>
+    </children>
+  </item>
+  <item nodeId="node-1190">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You take to the skies even higher.&#x000A;&#x000A;The wooden bar pinwheels past you as you change direction yet again, then spins back, keeping the Raven Guard at bay.&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1191"/>
+    </children>
+  </item>
+  <item nodeId="node-1191">
+    <command xml:space="preserve">x black capsa</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1192"/>
+    </children>
+  </item>
+  <item nodeId="node-1192">
+    <command xml:space="preserve">open black capsa</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1193"/>
+    </children>
+  </item>
+  <item nodeId="node-1193">
+    <command xml:space="preserve">x black capsa</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1194"/>
+    </children>
+  </item>
+  <item nodeId="node-1194">
+    <command xml:space="preserve">close gold</command>
+    <result xml:space="preserve">You close the gold capsa of down.&#x000A;&#x000A;You twist and right yourself as "down" returns to its normal state.  The Raven Guards struggle to right themselves again, but recover and continue their pursuit.&#x000A;the blue capsa of mist.&#x000A;the black capsa.&#x000A;the wooden bar.&#x000A;The wooden bar plummets down towards the Aerie.&#x000A;the green capsa.&#x000A;the leather rucksack.&#x000A;the purple capsa of opening.&#x000A;the gold capsa of down.&#x000A;the red capsa of hasten.&#x000A;Tiny closed padlocks.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1195"/>
+    </children>
+  </item>
+  <item nodeId="node-1195">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;The wooden bar &#x000A;&#x000A;Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1196"/>
+    </children>
+  </item>
+  <item nodeId="node-1196">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.&#x000A;&#x000A;The Raven's frustrated caws echo in the thin mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.&#x000A;&#x000A;You plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.&#x000A;&#x000A;&#x000A;&#x000A;                                                             *    *    *</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-722">
     <command xml:space="preserve">test horatio_speedrun</command>
@@ -1313,7 +2153,7 @@
   </item>
   <item nodeId="node-1085">
     <command xml:space="preserve">u</command>
-    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">grey mistyourselfRoyal AerieRoyal Quarterscircling guardsthe LibrumGreat Hallother aeriesRaven Guard might fly at you.&#x000A;huge double doors of the Great Hall might fly at you.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1322,7 +2162,7 @@
   </item>
   <item nodeId="node-1086">
     <command xml:space="preserve">e</command>
-    <result xml:space="preserve">You descend towards the Aerie, though it feels like you're flying upwards, against the pull of the scroll of down.&#x000A;&#x000A;Librum Landing Cradle&#x000A;The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The Librum Door leads inward to the Librum itself.&#x000A;&#x000A;To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east.&#x000A;&#x000A;Horatio is perched clutching a redwood branch on the edge of the cradle, watching you, and swaying different directions as you pass by overhead and the gold scroll pulls him around.  He seems to be trying to get your attention.  You are, however, slightly busy at the moment.&#x000A;&#x000A;In the cradle next to the guard is a small pile of tiny padlocks, each open.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You descend towards the Aerie, though it feels like you're flying upwards, against the pull of the scroll of down.&#x000A;&#x000A;grey mistyourselfHoratiosmall pile of tiny padlocksLibrum DoorRaven Guard might fly at you.&#x000A;Royal Aerie might fly at you.&#x000A;Royal Quarters might fly at you.&#x000A;circling guards might fly at you.&#x000A;the Librum might fly at you.&#x000A;Great Hall might fly at you.&#x000A;other aeries might fly at you.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1383,7 +2223,7 @@
   </item>
   <item nodeId="node-1093">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">grey mistyourselfhuge double doors of the Great HallRaven Guard might fly at you.&#x000A;Horatio might fly at you.&#x000A;small pile of tiny padlocks might fly at you.&#x000A;Librum Door might fly at you.&#x000A;&#x000A;Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  Happily, it's not actually implemented.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1392,7 +2232,7 @@
   </item>
   <item nodeId="node-1094">
     <command xml:space="preserve">x doors</command>
-    <result xml:space="preserve">Lightning fast, you try to examine the huge double doors of the Great Hall:  The huge double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Lightning fast, you try to examine the huge double doors of the Great Hall:  The huge open double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster.&#x000A;&#x000A;Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  Happily, it's not actually implemented.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1401,7 +2241,7 @@
   </item>
   <item nodeId="node-1095">
     <command xml:space="preserve">open doors</command>
-    <result xml:space="preserve">You open the huge double doors of the Great Hall.&#x000A;&#x000A;Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  Happily, it's not actually implemented.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You opened this door with the scroll of opening already.&#x000A;&#x000A;Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  Happily, it's not actually implemented.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

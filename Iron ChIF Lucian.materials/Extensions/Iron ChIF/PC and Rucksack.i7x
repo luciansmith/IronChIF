@@ -23,11 +23,11 @@ Constance can be wounded.  Constance is not wounded.
 
 [The carrying capacity of Constance is 1.][Not sure about this--it would be strong motivation to turn off rezrov, though!]
 
-A leather rucksack is a player's holdall worn by the Constance.  Understand "sack" as leather rucksack.
+A leather rucksack is a player's holdall worn by the Constance.  Understand "sack" as leather rucksack.  The leather rucksack is loose.
 
 Section capsae and scrolls
 
-A capsa is a kind of openable container.  A capsa is usually closed.  The plural of capsa is capsae.
+A capsa is a kind of openable container.  A capsa is usually closed.  A capsa is usually loose.  The plural of capsa is capsae.
 
 Check taking something:
 	if the noun is inside a capsa:
@@ -76,8 +76,12 @@ To carry out everything rezrovving:
 					if the player can see the item:
 						say "The magic of [the item] prevents it from being opened.";
 				otherwise if the item is the great hall doors:
-					if the player can see the item:
-						say "The doors strain to open, but are blocked by something.";
+					if the great hall doors are barred:
+						if the player can see the item:
+							say "The doors strain to open, but are blocked by something.";
+					otherwise:
+						now the great hall doors are open;
+						say "The double doors of the great hall fly open!";
 				otherwise:
 					now the item is open;
 					if the player can see the item:
@@ -165,30 +169,97 @@ Cantedness is a kind of value.  The cantednesses are grounded and upended and of
 
 Everything falls has a cantedness.  The cantedness of Everything falls is upended.
 
+Is_now_up is a room that varies.  Is_now_up is the Void.
+
 When Everything Falls begins:
+	Now is_now_up is the location;
 	if the gold capsa is enclosed by in_forest:
 		now Everything falls is grounded;
 		say "Immediately, 'down' now means 'towards the gold capsa' instead of 'towards the earth'.  Even being ready for it, it takes you a few flaps to reorient yourself, and you blink away the slight dizziness.  Then you pause.  No sounds from the Aerie.  Apparently, the new 'down' is close enough to the old 'down' that whatever sensors they have up there didn't detect a change.  Good.";
-	otherwise:
-		say "Immediately, 'down' now means 'towards the gold capsa' instead of 'towards the earth'.  After a brief moment of disorientation, you right yourself, wings pulling you 'up' with just enough force that you remain in one place.
+	otherwise if the location is Lower Great Hall:
+		say "Immediately, dozens of artifacts and collectibles rain down, flying out of the display nooks all around you.  When the Raven Guard shows up, it's almost more of a rescue than a capture, as they have to dig you out of a huge pile of detritus before finally being able to reach and close the gold capsa.
 		
-		[i]Note: for convenience, 'down' and 'up' comands will continue to work as they did, referencing Earth-relative geography instead of gold capsa-relative geography[r].";
+		It's still definitely also a capture, though.";
+		end the story saying "You have, indeed, been captured.";
+	otherwise:
+		say "Immediately, 'down' now means 'towards the gold capsa' instead of 'towards the earth'.  After a brief moment of disorientation, you right yourself, wings pulling you 'up' with just enough force that you remain level.
+		
+		[i]Note: for convenience, 'down' and 'up' comands will continue to work as they did, referencing ground-relative geography instead of gold capsa-relative geography[r].";
 		now Everything Falls is upended;
 		now the woodpeckers are activated;
 
-Every turn during everything falls:
+Every turn during Everything Falls:
 	if the gold capsa is enclosed by in_forest:
 		now Everything falls is grounded;
 	otherwise:
 		now Everything Falls is upended;
 		now the woodpeckers are activated;
+	if the gold capsa is enclosed by the player:
+		repeat with X running through things in the location:
+			if X is following:
+				if X is the wooden bar:
+					if a random chance of 1 in 4 succeeds:
+						if Constance is wounded:
+							say "Your luck runs out as you dodge the wrong way, and the wooden bar smacks into your side.  You get the wind knocked out of you, the bar stops blocking the guard from following, and in an instant, they've swarmed you, bearing down on you from all directions.";
+							end the story saying "You have been captured";
+						otherwise:
+							now Constance is wounded;
+							say "As you dodge to avoid a Raven Guard, the wooden bar catches your side as it spins by, leaving a gash!";
+					otherwise:
+						say "The wooden bar pinwheels past you as you change direction yet again, then spins back, keeping the Raven Guard at bay.";
+				otherwise if a random chance of 1 in 2 succeeds:
+					if the gold capsa is enclosed by the rucksack:
+						if the rucksack is open:
+							move X to the rucksack;
+							say "[The X] finally spirals towards the gold capsa and falls into the rucksack!";
+						otherwise:
+							say "[The X] crashes into the rucksack, bounces off, and arcs back towards you.";
+					otherwise:
+						say "[The X] bounces off the gold capsa, pinwheeling away before arcing back towards you again.";
+				otherwise:
+					say "[The X] spins past you as you dodge away from the Raven Guard, and turns in a lazy arc to follow you again.";
+			otherwise if X is loose:
+				now X is following;
+				say "[The X] falls towards you, only missing because you keep dodging to avoid the Raven Guard.";
+		if is_now_up is not the location:
+			repeat with X running through things in is_now_up:
+				if X is following:
+					move X to the location;
+					say "[The X] follows you from [the is_now_up], spiraling towards the gold capsa of down.";
+	if location is Great Hall Landing Cradle and the gold capsa is enclosed by the player:
+		if the Great Hall doors are barred:
+			now the great hall doors are not barred;
+			move the wooden bar to the Upper Great Hall;
+			say "As you swoop over the Great Hall, you hear a crash from the other side of the doors";
+			if Everything Opens is happening:
+				say ", and they fly open";
+				now the great hall doors are open;
+			say "!";
+		Otherwise if the the great hall doors are open and the wooden bar is in Upper Great hall:
+			move the wooden bar to the location;
+			now the wooden bar is following;
+			now the closeness of Being Chased is 2;
+			say "Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  You turn and weave, managing to keep it from hitting you.  The Raven Guard fall back as the spinning bar careens through the air!";
+	Now is_now_up is the location;
+
+
 
 When Everything Falls ends:
 	Now Everything Falls is offline;
+	Now is_now_up is the Void;
 	if the woodpeckers are activated:
 		say "You twist and right yourself as 'down' returns to its normal state[if the closeness of Being Chased is at least 2].  The Raven Guards struggle to right themselves again, but recover and continue their pursuit[end if].";
 	otherwise:
 		say "You steady yourself as 'down' returns to its normal state.";
+	repeat with X running through loose things:
+		say "[the X].";
+		now the X is not following;
+		if the X is not enclosed by the player and the X is enclosed by the location:
+			if the location is High Above:
+				say "[The X] plummets down towards the Aerie.";
+				move the X to the Great Hall Landing Cradle;
+			otherwise:
+				say "[The X] falls to the ground, ignored by the Raven Guard.";
 
 Check taking when the player is Horatio:
 	say "You don't need anything.  You just need to find the prodigal.";
@@ -222,7 +293,23 @@ When go go go ends:
 
 Section Zork Grand Inquisitor Live Forever
 
-A black capsa is a capsa in the Librum Itself.  "In the back of the lower level, in a storage cupboard, you find the black capsa, just as Horatio described to you.  You wonder how he managed to find out where it was, but suppose the man has his conversational tricks."  The black capsa can be explained.  The black capsa is not explained.  The description is "The black capsa contains a scroll of igram, [if the black capsa is explained]which apparently turns purple things invisible.  The only capsae you've heard of having an ability even vaguely like that, you assumed were jokes.  Now you're not so sure.[otherwise]but Horatio won't tell you what that means.[end if]  It is [if the black capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, freeing the scroll's power[end if]."  Understand "igram" as the black capsa.
+A black capsa is a capsa in the Librum Itself.  "In the back of the lower level, in a storage cupboard, you find the black capsa, just as Horatio described to you.  You wonder how he managed to find out where it was, but suppose the man has his conversational tricks."  The black capsa can be explained.  The black capsa is not explained.  The description is "[igram_description].".  Understand "igram" as the black capsa.
+
+The black capsa can be named.  The black capsa is not named.
+
+After opening the black capsa:
+	now the black capsa is named;
+	continue the action;
+
+To say igram_description:
+	if Horatio is not remembered:
+		if the black capsa is named:
+			say "The black capsa contains a scroll of 'igram'.  You don't think that means 'health', but there's a lot you don't know about the capsae in general.  Did you just miss it, last time?  ";
+		otherwise:
+			say "It's another capsa, from the Librum!  Did you just miss it, last time?  ";
+	otherwise:
+		say "The black capsa contains a scroll of igram, [if the black capsa is explained]which apparently turns purple things invisible.  The only capsae you've heard of having an ability even vaguely like that, you assumed were jokes.  Now you're not so sure.[otherwise]but Horatio won't tell you what that means.[end if]  ";
+	say "It is [if the black capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, freeing the scroll's power[end if]"
 
 A scroll of igram is a scroll in the black capsa.  The name is "IGRAM".  Understand "make purple things invisible" as the scroll of igram.  Understand "invisible/invisibility" as the scroll of igram.
 

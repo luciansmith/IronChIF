@@ -85,6 +85,9 @@ Every turn during Being Chased:
 				say "[one of].  Crap.  The queen must have Ikniq working for her now[or].  The queen's Ikniq warriors are after you again[stopping].";
 		Otherwise if the closeness of Being Chased is 2:
 			move the raven guard to the location;
+			if the location is Upper Great Hall:
+				say "The Raven Guard pour through the double doors, and you have nowhere to maneuver.";
+				end the story saying "You have been captured";
 			If the location is not the starting_line of Being Chased:
 				If the starting_line of Being Chased is High Above:
 					say "You've dived straight into a squad of Raven Guards, on their way up to accost you.  Fortunately, your speed helped you avoid most of them, but one guard's talon catches you on your side as you twist by them.";
@@ -103,6 +106,9 @@ Every turn during Being Chased:
 				Now the starting_line of Being Chased is the location;
 				Now the closeness of Being Chased is 2;
 				determine evasion;
+			Otherwise if the wooden bar is following:
+				say "The guards try to reach you, but keep getting blocked by the large spinning wooden bar.";
+				now the closeness of Being Chased is 2;
 			Otherwise if the closeness of Being Chased is 3:
 				say "The guards charge, but you manage to evade their uncoordinated attack.";
 			Otherwise if the closeness of Being Chased is 4:
@@ -166,6 +172,9 @@ To escape and recover:
 		move the purple capsa of opening to the rucksack;
 		move the red capsa to the rucksack;
 		Move the player to High Above, without printing a room description;
+
+After waiting during Being Chased:
+	say "You circle evasively, trying to avoid the Raven Guard." instead;
 
 When Being Chased ends:
 	if cell door is open:

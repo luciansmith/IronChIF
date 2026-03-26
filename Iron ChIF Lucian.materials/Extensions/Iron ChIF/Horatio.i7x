@@ -96,6 +96,36 @@ When Horatio's story ends:
 	clear the screen;
 	switch to cyoa at H1.
 
+Section Pull the Black
+
+librum_directions is a list of directions that varies.  librum_directions is {northwest, west, up}.
+black_escape is a number that varies.  black_escape is 1.
+
+When play begins:
+	sort librum_directions in random order;
+	say "[librum_directions]";
+
+
+Before going from Librum Landing Cradle during Everything Falls:
+	if black_escape is 1:
+		if the noun is entry black_escape of librum_directions:
+			say "As you fly off, you hear a distinct 'thunk' from inside the Librum.  Something significant fell over or shifted in there.";
+			now black_escape is 2;
+	otherwise if black_escape is 2:
+		if the noun is entry black_escape of librum_directions:
+			say "As you dodge a closing Raven Guard and fly [noun], you hear another whump from inside the Librum.";
+			now black_escape is 3;
+	otherwise if black_escape is 3:
+		if the noun is entry black_escape of librum_directions:
+			say "You loop under a tree branch and head [noun], but before you get very far, ";
+			if the librum door is open:
+				say "a black capsa flies out through the librum doors, following you!";
+				move the black capsa to the location;
+				now the black capsa is following;
+			otherwise:
+				say "you hear something whap against the librum door behind you.  Something almost escaped from in there.";
+			now black_escape is 4;
+
 Section The Chat
 
 H1 is a page.
