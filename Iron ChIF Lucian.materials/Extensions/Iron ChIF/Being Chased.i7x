@@ -53,7 +53,7 @@ Being Chased has a room called starting_line.  The starting_line of Being Chased
 When being chased begins:
 	Now the starting_line of Being Chased is the location;
 	Move the lone guard to the Void;
-	Move the tiny closed padlocks to the Void;
+	Now the sense_of_duty of the lone guard is 0;
 	say "From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  [if Everything Falls is happening and Everything Falls is not grounded]'Intruder!  The enemy is DOWN. Repeat!  The enemy is DOWN.'  You realize that creating a gravity well pointing straight at you might not have been the wisest move[otherwise]'Intruder! Estimated direction is...' and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies.
 	
 	And if they didn't know where you were, they do now[end if].";
@@ -61,8 +61,11 @@ When being chased begins:
 Constance can be quick-doing.  Constance is not quick-doing.
 
 Before examining something during Being Chased:
-	say "Lightning fast, you try to examine [the noun]:  [nb]";
+	say "Lightning fast, you glance over:  [nb]";
 	continue the action;
+
+First check opening a closed door during Being Chased:
+	say "The Raven Guard is not going to stop chasing you to give you enough time to open [the noun].  Though perhaps if you explained that you only wanted to go into an enclosed space so they could better surround and capture you, they'd consider it?" instead;
 
 Every turn during Being Chased:
 	If the current action is not examining:
@@ -88,6 +91,7 @@ Every turn during Being Chased:
 			if the location is Upper Great Hall:
 				say "The Raven Guard pour through the double doors, and you have nowhere to maneuver.";
 				end the story saying "You have been captured";
+				stop the action;
 			If the location is not the starting_line of Being Chased:
 				If the starting_line of Being Chased is High Above:
 					say "You've dived straight into a squad of Raven Guards, on their way up to accost you.  Fortunately, your speed helped you avoid most of them, but one guard's talon catches you on your side as you twist by them.";
@@ -117,6 +121,7 @@ Every turn during Being Chased:
 			Otherwise:
 				say "You're faster and more maneuverable than they are, but there are more of them.  One charges you directly, and when you veer off to avoid her, another crashes into you.  The rest swarm you instantly.";
 				end the story saying "Your luck has run out.";
+				stop the action;
 
 [Note: 'Ikniq' actually means 'Fire' in Iñupiaq.  According to The Internet.]
 
@@ -149,7 +154,6 @@ To escape and recover:
 	Now the woodpeckers are not activated;
 	Move the Raven Guard to the Void;
 	Move the Lone Guard to the Librum Landing Cradle;
-	Move the small pile of tiny padlocks to the Librum Landing Cradle;
 	Now the closeness of Being Chased is 0;
 	[Now the thickness of the grey mist is 1;]
 	Now Constance is cruising;

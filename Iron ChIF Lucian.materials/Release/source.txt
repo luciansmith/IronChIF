@@ -31,6 +31,7 @@ By tonight, you will know.  You're not leaving without it."
 Chapter Testing - not for release
 
 [Intro:]
+test unrandomize with "random/restart".
 test summon with "d/n/summon mist/d/u/d/u".
 test scenery with "x aerie/x royal quarters/x librum/x great hall".
 test map with "d/u/n/u/e/u/d/e/nw/s/n/se/w/d/u/e/d/e/d/n/d/u/u".
@@ -38,6 +39,9 @@ test cant_go with "u/w/d/s/in/e/se/in/nw/nw/in/d/d/w/u/u".
 
 [One chase to Horatio:]
 test quick_chase with "take off rucksack/open haste/open purple/close purple/d".
+
+[Get black capsa before Horatio]
+test quick_black with "summon mist/open gold/e/w/e/u/".
 
 [Horatio's journey:]
 test quick_horatio with "x cell/x desk/x cell door/w/w/close grate/open grate/enter grate/u/u".
@@ -59,3 +63,6 @@ test lock_unlock with "e/lock librum/open librum/e/lock door/unlock door/unlock 
 
 [quickest way to get to Horatio]
 test horatio_speedrun with "summon mist/d/u/open purple/d/d"
+
+[Open the great hall doors]
+test hall_open with "open gold/d/u/close gold/d/d/u/u"

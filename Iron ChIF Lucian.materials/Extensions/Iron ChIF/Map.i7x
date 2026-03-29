@@ -84,16 +84,32 @@ To the north is the Royal Quarters and Gardens, the Librum to the east, and as a
 The Great Hall doors are doors in Great Hall Landing Cradle.  They are plural-named.  The printed name is "huge double doors of the Great Hall".  They are closed and locked.  They are inside from Great Hall Landing Cradle and outside from Upper Great Hall.  The description is "The huge [if open]open[otherwise]closed[end if] double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster."  Understand "huge/door/double/canted/hatch/hatches/fine/scrollwork/broad/swoops/curls/branch/finer/giant/landing/cradle" as the Great Hall doors.
 
 Last check opening barred great hall doors:
-	say "You pull at the doors, but not only were they locked, but barred as well.  [if Everything Opens has happened]You suppose rezrov must unlock and open, but not unbar?  [end if]The doors give slightly and the bar rattles, but the doors refuse to open." instead;
+	say "You pull at the doors, but not only were they locked, but barred as well.  You remember the bar used to sit to one side of the doors inside the hall, gathering dust.  [if Everything Opens has happened]You suppose rezrov must unlock and open, but not unbar?  [end if]The doors give slightly and the bar rattles, but the doors refuse to open." instead;
 
 Last Check going Great Hall doors during Being Chased:
 	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Guard has followed you, and you simply don't have any room to maneuver.";
 	end the story saying "You have been captured.";
 
+First check opening a closed door during Being Chased:
+	say "The Raven Guard is not going to stop chasing you to give you enough time to open [the noun].  Though perhaps if you explained that you only wanted to go into an enclosed space so they could better surround and capture you, they'd consider it?" instead;
+
 The Great Hall doors can be barred.  The great hall doors are barred.
 
-A wooden bar is in Upper Great Hall.  It is loose.  "The wooden bar ".
+A wooden bar is in Upper Great Hall.  It is loose.  "The wooden bar that once held the Great Hall doors shut lies here, discarded.".
 
+Check taking the wooden bar when Everything Falls is not happening:
+	say "The wooden bar is much too heavy to lift by yourself" instead;
+
+Check inserting the wooden bar into the rucksack:
+	say "The wooden bar is much to large to fit in the rucksack." instead;
+
+After pushing the wooden bar when the location is Upper Great Hall:
+	move the wooden bar to Lower Great Hall;
+	say "You push the wooden bar over the edge of the platform, and it crashes to the great floor below." instead;
+
+After taking the wooden bar:
+	now the wooden bar is not following;
+	continue the action;
 
 Before going inside from Great Hall Landing Cradle:
 	try entering Great Hall doors instead;
@@ -256,17 +272,21 @@ Check closing the purple capsa of opening when the location is the Librum Itself
 	
 	[i]Are you one of my testers?  It feels like you're one of my testers.  If you're not, you should be one of my testers.  Give me a call.  -LS[r][lb]" instead.
 
-A lone guard is a woman in Librum Landing Cradle.  "A lone Raven guard stands in front of the door, dark eyes shifting as she watches the mist."  The description is "The raven guard wears the well-fitting uniform of the Queen's Guard, complete with a small red insignia on her shoulder.  The silvered knives on her talons are retracted while she stands, and golden razors line her beak[if the pile of tiny padlocks is in the Void].  Oddly, her uniform seems to be covered with... tiny closed padlocks?  That's not the insignia of any order you know[end if]."  Understand "raven/dark/eyes" as lone guard.
+A lone guard is a woman in Librum Landing Cradle.  "A lone Raven guard stands in front of the door, dark eyes shifting as she watches the mist."  The description is "The raven guard wears the well-fitting uniform of the Queen's Guard, complete with a small red insignia on her shoulder.  The silvered knives on her talons are retracted while she stands, and golden razors line her beak[if the collection of tiny padlocks is in the Void].  Oddly, her uniform seems to be covered with... tiny closed padlocks?  That's not the insignia of any order you know[end if]."  Understand "raven/dark/eyes" as lone guard.
 
 The well-fitting uniform is worn by the lone guard.  The description is "Her uniform consists of loose straps, designed to fit precisely under flagfeathers and provide support while not hampering movement nor flight.  The insignia on her shoulder reads 'Ikniq' under an icon of a tongue of fire: the logo of the fire warriors."  Understand "loose/straps/under/support/insignia/shoulder/ikniq/icon/fire/warrior/warriors" as well-fitting uniform.
 
-Tiny closed padlocks are part of the well-fitting uniform.  The description is "Yes, those are definitely tiny padlocks, each attached to small leather loops stitched to her uniform.  You peer more intently.  The stitching where the loops attach is definitely newer than the stitching on the rest of the uniform.  They must have been added recently."
+Tiny closed padlocks are part of the well-fitting uniform.  The description is "Yes, those are definitely tiny padlocks, each attached to small leather loops stitched to her uniform.  You peer more intently.  The stitching where the loops attach is definitely newer than the stitching on the rest of the uniform.  They must have been added recently."  Understand "stitching/loops/attach" as the tiny closed padlocks.
 
-A small pile of tiny padlocks are in the Void.  The padlocks are loose.  "In the cradle next to the guard is a small pile of tiny padlocks, each open.";
+A small collection of tiny padlocks are in the Void.  "In the cradle [if Being Chased is happening]where the guard was[otherwise]next to the guard[end if] is a small collection of tiny padlocks, each open."  The small collection of tiny padlocks are loose.  The description is "Several tiny padlocks, each one opened.  Cheap light metal that could easily be bent open, so you suppose their only purpose is to serve as notice that 'rezrov' was activated.";
 
 Silvered knives are worn by the lone guard.  The description is "Silvered knives, retracted now, but extendable at will."  Understand "silver/retracted/retractable/extendable" as silvered knives.
 
 Golden razors are worn by the lone guard.  The description is "The golden razors increase the Queen's Guard fighting abilities, allowing them to slash with their beaks as well as sharpening their bite."
+
+After dropping the small collection of tiny padlocks:
+	if the location is the Librum Landing Cradle and the lone guard is in the location:
+		say "As you pass by overhead, you drop the tiny padlocks so they'll land near the guard, then disappear into the mist.  You hear an angry song of fire behind you, as she tries to burn your mist away, but it holds.  You chuckle to yourself." instead;
 
 answering the lone guard that something is talking your way past.
 telling the lone guard about something is talking your way past.
@@ -451,6 +471,9 @@ After going to in_forest:
 			if go go go is happening:
 				now Constance is super-fast;
 				say "You dive into and through the forest, twisting expertly as you dodge trees and branches.  The fog closes behind you with a quiet 'shhhhmp', leaving no record of your passing.";
+			otherwise if the player encloses an open gold capsa:
+				say "You descend towards the forest floor, though it feels like you're flying upwards, against the pull of the scroll of down.";
+				now Constance is cruising;
 			otherwise:
 				say "You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.";
 		continue the action;

@@ -29,6 +29,9 @@ Section capsae and scrolls
 
 A capsa is a kind of openable container.  A capsa is usually closed.  A capsa is usually loose.  The plural of capsa is capsae.
 
+Does the player mean taking a capsa:
+	it is likely;
+
 Check taking something:
 	if the noun is inside a capsa:
 		say "Like all of the Ancient Scrolls, the scroll is inextricably tied to its capsa, and you can't extricate it." instead.
@@ -59,43 +62,55 @@ When Everything Opens begins:
 
 To carry out everything rezrovving:
 	say "As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.[lb]";
-	if the lone guard is in the location and the tiny closed padlocks are enclosed by the lone guard:
-		say "As the shockwave of magic reaches the guard, the padlock on her uniform closest to you pops open.  Then in succession, all the other padlocks she's wearing pop open as well, in perfect concentric circles in order of how distant they are from the scroll.  As her eyes lock with yours, you realize, somewhat belatedly, that you've given her the ability to triangulate on your position.  Without hesitation, she breathes fire and leaps straight at you, before you even have time to let go of the capsa.
-		
-		The door behind her opens silently as she tackles you to the ground.";
-		end the story saying "You have been captured.";
-	Otherwise:
-		repeat with item running through lockable things:
-			if the item is locked:
-				now the item is unlocked;
+	if the lone guard is in the location:
+		if the tiny closed padlocks are enclosed by the lone guard:
+			say "As the shockwave of magic reaches the guard, the padlock on her uniform closest to you pops open.  Then in succession, all the other padlocks she's wearing pop open as well, in perfect concentric circles in order of how distant they are from the scroll.  As her eyes lock with yours, you realize, somewhat belatedly, that you've given her the ability to triangulate on your position.  Without hesitation, she sings a song of fire and leaps straight at you, before you even have time to let go of the capsa.
+			
+			The door behind her opens silently as your feathers crisp and she tackles you to the ground.";
+			end the story saying "You have been captured.";
+			stop the action;
+		otherwise if the collection of tiny padlocks are in the location:
+			if the sense_of_duty of the lone guard is greater than 3:
+				say "The shockwave of magic reaches the guard, and the few padlocks she's been able to re-attach to her uniform spring open and fall off again.  She looks down at them in shock for a second, then gives an angry cry and takes to the sky, calling her fellow squad mates.[lb]";
+				now the closeness of Being Chased is 1;
+	repeat with item running through lockable things:
+		if the item is locked:
+			now the item is unlocked;
+			if the player can see the item:
+				say "[The item] clicks as it unlocks!";
+	repeat with item running through openable things:
+		if the item is closed:
+			if the item is a capsa:
 				if the player can see the item:
-					say "[The item] clicks as it unlocks!";
-		repeat with item running through openable things:
-			if the item is closed:
-				if the item is a capsa:
+					say "The magic of [the item] prevents it from being opened.";
+			otherwise if the item is the great hall doors:
+				if the great hall doors are barred:
 					if the player can see the item:
-						say "The magic of [the item] prevents it from being opened.";
-				otherwise if the item is the great hall doors:
-					if the great hall doors are barred:
-						if the player can see the item:
-							say "The doors strain to open, but are blocked by something.";
-					otherwise:
-						now the great hall doors are open;
-						say "The double doors of the great hall fly open!";
+						say "The doors strain to open, but are blocked by something.";
 				otherwise:
-					now the item is open;
-					if the player can see the item:
-						say "[The item] flies open!";
-		if the rucksack is worn:
-			say "The straps and buckles on your rucksack fly open and it falls!";
-			now the rucksack is carried by the player;
-			if Everything Falls is happening and the gold capsa is enclosed by the location:
-				say "Fortunately, it hovers in midair due to the scroll of down, so you're able to immediately grab it again.";
+					now the great hall doors are open;
+					say "The double doors of the great hall fly open!";
 			otherwise:
-				try dropping the rucksack;
-		If the reset state of the woodpeckers is 5:
-			Now the woodpeckers are activated; [Starts the 'being chased' scene]
-			Now the reset state of the woodpeckers is 0;
+				now the item is open;
+				if the player can see the item:
+					say "[The item] flies open!";
+	if the rucksack is worn:
+		say "The straps and buckles on your rucksack fly open and it falls!";
+		now the rucksack is carried by the player;
+		if Everything Falls is happening and the gold capsa is enclosed by the location:
+			say "Fortunately, it hovers in midair due to the scroll of down, so you're able to immediately grab it again.";
+		otherwise:
+			try dropping the rucksack;
+	if the location is Librum Landing Cradle:
+		now the closeness of Being Chased is 1;
+		if the small collection of tiny padlocks is not in the location or the sense_of_duty of the lone guard is less than 4:
+			say "[lb]The guard takes off into the sky, calling her squad mates to join her.";
+	if the lone guard encloses the tiny closed padlocks and the Librum Landing Cradle encloses the lone guard:
+		move the tiny closed padlocks to the Void;
+		move the small collection of tiny padlocks to the Librum Landing Cradle;
+	If the reset state of the woodpeckers is 5:
+		Now the woodpeckers are activated; [Starts the 'being chased' scene]
+		Now the reset state of the woodpeckers is 0;
 
 Check closing something openable during Everything Opens:
 	if the noun is not a capsa:
@@ -120,7 +135,9 @@ Every turn during Reset Sensors:
 		if go go go is happening and the reset state of the woodpeckers is less than 5:
 			increase the reset state of the woodpeckers by 1;
 		
-Doors Re-close is a recurring scene.  Doors Re-close begins when Everything Opens ends.  Doors Re-close ends when cannot-close.
+Doors Re-close is a recurring scene.  Doors Re-close begins when Everything Opens ends.  Doors Re-close ends when cannot-close.  
+
+The lone guard has a number called sense_of_duty.  The sense_of_duty of the lone guard is 0;
 
 Every turn during Doors Re-close:
 	if Being Chased is not happening:
@@ -132,6 +149,26 @@ Every turn during Doors Re-close:
 			now the Librum door is locked;
 			if the player can see the Librum door:
 				say "The guard locks the Librum door.";
+		otherwise if the small collection of tiny padlocks is in the Librum Landing Cradle:
+			if the sense_of_duty of the lone guard is 0 and the player can see the lone guard:
+				say "The lone guard looks at the collection of tiny padlocks, then at her uniform, and sighs.";
+			otherwise if the sense_of_duty of the lone guard is 1 and the player can see the lone guard:
+				say "The lone guard kicks at tiny padlock, and watches it balefully.";
+			otherwise if the sense_of_duty of the lone guard is 2 and the player can see the lone guard:
+				say "The lone guard looks at the collection of tiny padlocks, then peers into the mist.";
+			otherwise if the sense_of_duty of the lone guard is 3 and the player can see the lone guard:
+				say "The lone guard sighs, and slowly begins re-attaching the tiny padlocks to loops on her uniform.";
+			otherwise if the sense_of_duty of the lone guard is 4 and the player can see the lone guard:
+				say "The lone guard gets stuck trying to attach a recalcitrant padlock to her left shoulder strap, but finally gets it attached again.";
+			otherwise if the sense_of_duty of the lone guard is 5 and the player can see the lone guard:
+				say "The lone guard picks up the last of the tiny padlocks and attaches it to her belt with a definitive 'click'  Sighing, she resumes her post.";
+				move the collection of tiny padlocks to the Void;
+				move the tiny closed padlocks to the well-fitting uniform;
+			increase the sense_of_duty of the lone guard by 1;
+		otherwise if the small collection of tiny padlocks is not in the Void:
+			if the player can see the lone guard:
+				if a random chance of one in four succeeds:
+					say "The guard runs a talon over the empty loops on her uniform, and angrily glares into the mist.";
 		if the garden door is open:
 			now the garden door is closed;
 			if the player can see the garden door:
@@ -144,8 +181,20 @@ Every turn during Doors Re-close:
 
 To decide whether cannot-close:
     if Everything Opens is happening, decide yes;
-    if the Librum Door is locked, decide yes;
     decide no.
+
+Check taking during Being Chased:
+	if the noun is not following and go go go is not happening:
+		say "You don't have time to grab things!" instead;
+
+Check taking the small collection of tiny padlocks:
+	if the small collection is in the location and the lone guard is in the location:
+		if sneaking is happening and the hunting cloak is invisible:
+			say "Even when you're invisible, if you take something right from under the guard's beak, she's going to notice.  And when you're (shudder) walking, you wouldn't be able to get away." instead;
+		otherwise:
+			say "You are pretty sneaky, but not sneaky enough to snag a pile of padlocks from undernath the lone guard's beak." instead;
+		
+
 
 Section down
 
@@ -202,6 +251,7 @@ Every turn during Everything Falls:
 						if Constance is wounded:
 							say "Your luck runs out as you dodge the wrong way, and the wooden bar smacks into your side.  You get the wind knocked out of you, the bar stops blocking the guard from following, and in an instant, they've swarmed you, bearing down on you from all directions.";
 							end the story saying "You have been captured";
+							stop the action;
 						otherwise:
 							now Constance is wounded;
 							say "As you dodge to avoid a Raven Guard, the wooden bar catches your side as it spins by, leaving a gash!";
@@ -240,6 +290,10 @@ Every turn during Everything Falls:
 			now the wooden bar is following;
 			now the closeness of Being Chased is 2;
 			say "Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  You turn and weave, managing to keep it from hitting you.  The Raven Guard fall back as the spinning bar careens through the air!";
+	if location is Librum Landing Cradle and the gold capsa is enclosed by the player and the black capsa is enclosed by the Librum itself and the librum door is open and black_escape is 4:
+		say "A black capsa flies through the doors of the Librum, up towards you!";
+		move the black capsa to the location;
+		now the black capsa is following;
 	Now is_now_up is the location;
 
 
@@ -252,7 +306,7 @@ When Everything Falls ends:
 	otherwise:
 		say "You steady yourself as 'down' returns to its normal state.";
 	repeat with X running through loose things:
-		say "[the X].";
+		[say "[the X].";]
 		now the X is not following;
 		if the X is not enclosed by the player and the X is enclosed by the location:
 			if the location is High Above:
@@ -260,6 +314,9 @@ When Everything Falls ends:
 				move the X to the Great Hall Landing Cradle;
 			otherwise:
 				say "[The X] falls to the ground, ignored by the Raven Guard.";
+		if the X is the wooden bar and X is enclosed by the player:
+			say "The wooden bar is ripped from your talons and falls!";
+			try dropping the wooden bar;
 
 Check taking when the player is Horatio:
 	say "You don't need anything.  You just need to find the prodigal.";
@@ -293,7 +350,9 @@ When go go go ends:
 
 Section Zork Grand Inquisitor Live Forever
 
-A black capsa is a capsa in the Librum Itself.  "In the back of the lower level, in a storage cupboard, you find the black capsa, just as Horatio described to you.  You wonder how he managed to find out where it was, but suppose the man has his conversational tricks."  The black capsa can be explained.  The black capsa is not explained.  The description is "[igram_description].".  Understand "igram" as the black capsa.
+A black capsa is a capsa in the Librum Itself.  "[if black_escape is 0]In the back of the lower level, in a storage cupboard, you find the black capsa, just as Horatio described to you.  You wonder how he managed to find out where it was, but suppose the man has his conversational tricks[otherwise if black_escape is 1]In the back of the lower level, the storage cupboard Horatio told you about has fallen over, but the black capsa is in it, just as he said it would be[otherwise if black_escape is 2]You find the storage cupboard Horatio told you about, but it's fallen over, and the drawers have been pulled out.  You do see the black capsa in a corner of an open drawer[otherwise if black_escape is 3]The storage cupboard Horatio told you about has fallen over and looks like it was sacked--there's random detritus all over the Librum.  Fortunately, you also see the black capsa in a corner of the upper level[otherwise]The black capsa is sitting right at the base of the Librum door.  If the door had been open when you flew by with the gold capsa activated, you're sure it would have just flown out the door[end if]."  The black capsa can be explained.  The black capsa is not explained.  The description is "[igram_description].".  Understand "igram" as the black capsa.
+
+A storage cupboard is scenery in the Librum Itself.  The description is "A disused storage cupboard sits in a corner of the lower level.  It's the one Horatio told you the black capsa would be[if black_escape is greater than 0].  Of course, that was before you flew by with 'down' on, and basically looted the place remotely[end if]."  Understand "drawer/drawers/fallen/over/pulled/open/sacked/detritus" as the storage cupboard.
 
 The black capsa can be named.  The black capsa is not named.
 
