@@ -214,6 +214,11 @@ Check opening the gold capsa in the Librum Itself:
 	say "In case of emergencies, most things in the Librum were locked down so as to not fall over if the gold capsa of 'down' was accidentally opened[if black_escape is greater than 0] (though the old storage cabinet's attachments seem to not have held)[end if].  So nothing flies off the shelves to hit you when you open the gold capsa of 'down' in here on purpose.  Which is good!  Less good is that since 'down' now points straight at you, the guard outside was alerted to your presence.  She shows up at the door with a wicked grin.";
 	end the story saying "You have been captured." instead;
 
+Check opening the gold capsa in the Upper Great Hall:
+	if the wooden bar is in Upper Great Hall:
+		say "The large wooden bar that once held the double doors closed flies right at you!  You try to dodge, but there's just not enough room, and it hits you hard enough to knock the wind out of you.  The Raven Guard arrives before you can recover.";
+		end the story saying "You have been captured." instead;
+
 ['rudenj' from rudenį: 'fall' in Lithuanian.]
 
 Everything Falls is a recurring scene.  Everything Falls begins when the gold capsa is open.  Everything Falls ends when the gold capsa is closed.
@@ -323,7 +328,7 @@ When Everything Falls ends:
 			try dropping the wooden bar;
 
 Check taking when the player is Horatio:
-	say "You don't need anything.  You just need to find the prodigal.";
+	say "You don't need anything.  You just need to find the prodigal." instead;
 
 
 

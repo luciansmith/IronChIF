@@ -630,15 +630,6 @@
     <commentary xml:space="preserve">[He can't have the scroll.]&#x000A;&#x000A;"You can't read that scroll," you say.  "I need it to save my mother.  To save the village."&#x000A;&#x000A;"The whole world," Horatio turns his head to face to you, "could say the same."&#x000A;&#x000A;"But I'm here!" you shout.  "I have three capsae.  I didn't start any wars!  I didn't force people to live with their livestock and kickstart the Red Plague!  The Queen's hoarding the capsa for gods-know-what reason, probably so the selfish bastard could ensure she doesn't come down with it herself..."&#x000A;&#x000A;Horatio flinches.  That's right, he knew you when you and the now-Queen were... closer.  Inseparable.&#x000A;&#x000A;"I'll take it around the world!" you declare.  "I'll take it to every village in this kingdom; wherever the need is greatest.  I'll take it to other kingdoms!"&#x000A;&#x000A;Horatio nods.  "When you are the holder, you may do as you wish," he says, simply.  "But first, you must become the holder.  And for that, you will need igram.  Which you have.  So we'll need something from the Great Hall.&#x000A;&#x000A;1) Figure out what's next.&#x000A;2) OK, I'm a tester and I need to skip ahead and be Constance, fiddling with scrolls and stuff.&#x000A;3) I'm also a tester, and I just want to go back to the beginning of this conversation.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-1240"/>
-    </children>
-  </item>
-  <item nodeId="node-1240">
-    <command xml:space="preserve">11</command>
-    <result xml:space="preserve">There is no choice corresponding to that number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve">There is no choice corresponding to that number.&#x000A;&#x000A;&gt;</commentary>
-    <changed>NO</changed>
-    <children>
       <child nodeId="node-1241"/>
     </children>
   </item>
@@ -718,24 +709,6 @@
     <command xml:space="preserve">undo</command>
     <result xml:space="preserve">Lower Great Hall&#x000A;[Previous turn undone.]&#x000A;&#x000A;When not prepared for a particular occasion, like now, the floor of the Great Hall is cleared of everything extraneous.  The exposed floor is absolutely exquisite, with swooping lines interspersed with starbursts, all in multicolored woods of all hues.  What doesn't change about the Great Hall floor is the display nooks along the sides: at least twenty nooks containing all manner of artifacts from around the world.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">Lower Great Hall&#x000A;[Previous turn undone.]&#x000A;&#x000A;When not prepared for a particular occasion, like now, the floor of the Great Hall is cleared of everything extraneous.  The exposed floor is absolutely exquisite, with swooping lines interspersed with starbursts, all in multicolored woods of all hues.  What doesn't change about the Great Hall floor is the display nooks along the sides: at least twenty nooks containing all manner of artifacts from around the world.&#x000A;&#x000A;&gt;</commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-1250"/>
-    </children>
-  </item>
-  <item nodeId="node-1250">
-    <command xml:space="preserve">summon mis</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-1251"/>
-    </children>
-  </item>
-  <item nodeId="node-1251">
-    <command xml:space="preserve">summon mis</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-1252"/>
@@ -1767,8 +1740,42 @@
     <commentary xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] open gold&#x000A;You open the gold capsa of down, revealing a scroll of rudenj.&#x000A;&#x000A;Immediately, "down" now means "towards the gold capsa" instead of "towards the earth".  After a brief moment of disorientation, you right yourself, wings pulling you "up" with just enough force that you remain level.&#x000A;&#x000A;Note: for convenience, "down" and "up" comands will continue to work as they did, referencing ground-relative geography instead of gold capsa-relative geography.&#x000A;&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder!  The enemy is DOWN. Repeat!  The enemy is DOWN."  You realize that creating a gravity well pointing straight at you might not have been the wisest move.&#x000A;&#x000A;You suddenly feel warmer, and hear an exultant song of the sun in the distance.  The queen's Ikniq warriors are at it again, trained to try to burn away your fog.&#x000A;&#x000A;&gt;[2] d&#x000A;You descend towards the Aerie, though it feels like you're flying upwards, against the pull of the scroll of down.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;As you swoop over the Great Hall, you hear a crash from the other side of the doors, and they fly open!&#x000A;&#x000A;You've dived straight into a squad of Raven Guards, on their way up to accost you.  Fortunately, your speed helped you avoid most of them, but one guard's talon catches you on your side as you twist by them.&#x000A;&#x000A;&gt;[3] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;[4] close gold&#x000A;You close the gold capsa of down.&#x000A;&#x000A;You twist and right yourself as "down" returns to its normal state.  The Raven Guards struggle to right themselves again, but recover and continue their pursuit.&#x000A;&#x000A;The guards charge, but you manage to evade their uncoordinated attack.&#x000A;&#x000A;&gt;[5] d&#x000A;You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.&#x000A;&#x000A;Your wound continues to lightly bleed.&#x000A;&#x000A;&gt;[6] d&#x000A;&#x000A;In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.&#x000A;&#x000A;The Raven's frustrated caws echo in the thin mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.&#x000A;&#x000A;&gt;[7] u&#x000A;You gracefully flit between the trees back up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;You circle through the thin mist, observing but hidden from view.&#x000A;&#x000A;&gt;[8] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout, and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;You circle through the thin mist, observing but hidden from view.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-1278"/>
       <child nodeId="node-1005"/>
     </children>
+  </item>
+  <item nodeId="node-1278">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".  The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1279"/>
+    </children>
+  </item>
+  <item nodeId="node-1279">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">Upper Great Hall&#x000A;There is a small platform just inside the huge double doors of the Great Hall, and that's it.  The platform is lined with a single elegant grown-mahogany branch that wraps around the whole platform.  It varies in size and thickness, so that all types of feet fit somewhere along it, so people can comfortably launch themselves into the air to glide down to the floor level, or grab it for stability as they return.&#x000A;&#x000A;The wooden bar that once held the Great Hall doors shut lies here, discarded.&#x000A;&#x000A;The momentum you had from your dive wears off.  Fun while it lasted!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1280"/>
+    </children>
+  </item>
+  <item nodeId="node-1280">
+    <command xml:space="preserve">open gold</command>
+    <result xml:space="preserve">The large wooden bar that once held the double doors closed flies right at you!  You try to dodge, but there's just not enough room, and it hits you hard enough to knock the wind out of you.  The Raven Guard arrives before you can recover.&#x000A;&#x000A;&#x000A;&#x000A;    *** You have been captured. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1281"/>
+    </children>
+  </item>
+  <item nodeId="node-1281">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Upper Great Hall&#x000A;[Previous turn undone.]&#x000A;&#x000A;There is a small platform just inside the huge double doors of the Great Hall, and that's it.  The platform is lined with a single elegant grown-mahogany branch that wraps around the whole platform.  It varies in size and thickness, so that all types of feet fit somewhere along it, so people can comfortably launch themselves into the air to glide down to the floor level, or grab it for stability as they return.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-1005">
     <command xml:space="preserve">e</command>

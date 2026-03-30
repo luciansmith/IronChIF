@@ -89,7 +89,7 @@ When Horatio's story begins:
 	say "[lb]Silently, your cell door unlocks, then swings open.";
 	wait for any key;
 	say "[lb]Well above your cell, you sense rezrov, rudenj, and quiste settle in their movements until they make lazy circles, high above the Aerie";
-	if the black capsa is enclosed by the player:
+	if the black capsa is enclosed by Constance:
 		say ".  Oh, and Igram is with them.  Resourceful girl.  Taclor remains in place, quiet";
 	otherwise:
 		say ". Igram and taclor remain in place, quiet";
