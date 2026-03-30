@@ -90,7 +90,7 @@ Every turn during Being Chased:
 			move the raven guard to the location;
 			if the location is Upper Great Hall:
 				say "The Raven Guard pour through the double doors, and you have nowhere to maneuver.";
-				end the story saying "You have been captured";
+				end the story saying "You have been captured.";
 				stop the action;
 			If the location is not the starting_line of Being Chased:
 				If the starting_line of Being Chased is High Above:

@@ -88,9 +88,12 @@ When Horatio's story begins:
 	wait for any key;
 	say "[lb]Silently, your cell door unlocks, then swings open.";
 	wait for any key;
-	say "[lb]Well above your cell, you sense rezrov, rudenj, and quiste settle in their movements until they make lazy circles, high above the Aerie. Igram and taclor remain in place, quiet.
-	
-	It is time.";
+	say "[lb]Well above your cell, you sense rezrov, rudenj, and quiste settle in their movements until they make lazy circles, high above the Aerie";
+	if the black capsa is enclosed by the player:
+		say ".  Oh, and Igram is with them.  Resourceful girl.  Taclor remains in place, quiet";
+	otherwise:
+		say ". Igram and taclor remain in place, quiet";
+	say ".[lb]It is time.";
 	Now the player is Horatio;
 	Try looking;
 
@@ -99,6 +102,7 @@ When Horatio's story ends:
 	wait for any key;
 	clear the screen;
 	switch to cyoa at H1.
+
 
 Section Pull the Black
 
@@ -334,7 +338,7 @@ Horatio flinches.  That's right, he knew you when you and the now-Queen were... 
 
 'I'll take it around the world!' you declare.  'I'll take it to every village in this kingdom; wherever the need is greatest.  I'll take it to other kingdoms!'
 
-Horatio nods.  'When you are the holder, you may do as you wish,' he says, simply.  'But first, you must become the holder.  And for that, you will need igram.  It's in the librum."
+Horatio nods.  'When you are the holder, you may do as you wish,' he says, simply.  'But first, you must become the holder.  And for that, you will need igram.  [if the black capsa is enclosed by the player]Which you have.  So we'll need something from the Great Hall[otherwise]It's in the librum[end if]."
 
 C5b is a page.  It is for C4b.
 The cdesc is "You need more details."
@@ -348,7 +352,9 @@ C6 is an end-page.  It is for C5b and C5a.
 The cdesc is "Figure out what's next."
 The description is "'So, what do we do next?' you ask.
 
-'I can sense the capsae.  Taclor, health, is in the Royal Quarters.  Igram is in the Librum.'
+'I can sense the capsae.  Taclor, health, is in the Royal Quarters.  [if the black capsa is enclosed by Constance]And with Igram, which you got from the Librum, I can lead you to it,' Horatio tells you.  'We'll ned something from the Great Hall.  I'll meet you there.'
+
+'What does it--you know, never mind, you obviously don't want to tell me,' you say.  'Fine.  Let's go.'  You turn [otherwise]Igram is in the Librum.'
 
 'I ransacked the Librum last time; there was only these three,' you protest.
 
@@ -358,7 +364,7 @@ The description is "'So, what do we do next?' you ask.
 
 'It is in the Librum,' he says, simply.  'Therefore, either you must go into the Librum, or the capsa must come out.  I will talk to the guard to distract her, if that helps,' Horatio offers.
 
-Gods, yes, you can inflict this man on someone you hate.  'Perfect,' you say, grimly. You shake yourself, and turn to your new task."
+Gods, yes, you can inflict this man on someone you hate.  'Perfect,' you say, grimly. You shake yourself, and turn [end if]to your new task."
 
 Horatio can be distracting.  Horatio is not distracting.
 
@@ -391,18 +397,23 @@ Instead of touching Horatio:
 
 Section Horatio in act 3
 
-Horatio distracts the guard is a scene.  Horatio distracts the guard begins when Horatio is distracting.  Horatio distracts the guard ends when the black capsa is not enclosed by the Librum Itself.
+Horatio distracts the guard is a scene.  Horatio distracts the guard begins when Horatio is distracting and the black capsa is enclosed by the Librum Itself.  Horatio distracts the guard ends when the black capsa is not enclosed by the Librum Itself.
 
 When Horatio distracts the guard begins:
 	Move Horatio to the Librum Landing Cradle;
 	say "With a solemn nod to you, Horatio explains where the black capsa of igram should be, then banks to the east, and descends to the Librum.";
 
-Horatio tries to make zgi less ridiculous is a scene.  Horatio tries to make zgi less ridiculous begins when Horatio distracts the guard ends.  Horatio tries to make zgi less ridiculous ends when the player encloses the hunting cloak.
+Horatio tries to make zgi less ridiculous is a scene.  Horatio tries to make zgi less ridiculous begins when Horatio is distracting and the black capsa is not enclosed by the Librum Itself.  Horatio tries to make zgi less ridiculous ends when the player encloses the hunting cloak.
+
+When Horatio tries to make zgi less ridiculous begins:
+	if Horatio is in High Above and Constance is in High Above:
+		say "With a solemn nod to you, Horatio tells you to meet him in the Great Hall with the black capsa, then turns and glides away.";
+		move Horatio to Lower Great Hall;
 
 Horatio can be stage one or stage two or stage three.  Horatio is stage one.
 
 Every turn during Horatio tries to make zgi less ridiculous:
-	If Horatio is stage one and the location is not Librum Landing Cradle:
+	If Horatio is stage one and the location is not Librum Landing Cradle and Horatio is not in the Lower Great Hall:
 		if the location is Royal Gardens:
 			if a random chance of one in three succeeds:
 				say "Where is Horatio?  Didn't he say to get the capsa of igram, and then you'd both go in the Royal Quarters?";

@@ -210,6 +210,10 @@ Check dropping the rucksack during Everything Falls:
 	if Being Chased is happening and the rucksack encloses the gold capsa:
 		say "You could ditch the gold capsa and get away by using it as bait, but that would be just as bad as them catching you directly.  You need the power of this capsa to get the scroll of Health." instead;
 
+Check opening the gold capsa in the Librum Itself:
+	say "In case of emergencies, most things in the Librum were locked down so as to not fall over if the gold capsa of 'down' was accidentally opened[if black_escape is greater than 0] (though the old storage cabinet's attachments seem to not have held)[end if].  So nothing flies off the shelves to hit you when you open the gold capsa of 'down' in here on purpose.  Which is good!  Less good is that since 'down' now points straight at you, the guard outside was alerted to your presence.  She shows up at the door with a wicked grin.";
+	end the story saying "You have been captured." instead;
+
 ['rudenj' from rudenį: 'fall' in Lithuanian.]
 
 Everything Falls is a recurring scene.  Everything Falls begins when the gold capsa is open.  Everything Falls ends when the gold capsa is closed.
@@ -250,7 +254,7 @@ Every turn during Everything Falls:
 					if a random chance of 1 in 4 succeeds:
 						if Constance is wounded:
 							say "Your luck runs out as you dodge the wrong way, and the wooden bar smacks into your side.  You get the wind knocked out of you, the bar stops blocking the guard from following, and in an instant, they've swarmed you, bearing down on you from all directions.";
-							end the story saying "You have been captured";
+							end the story saying "You have been captured.";
 							stop the action;
 						otherwise:
 							now Constance is wounded;
