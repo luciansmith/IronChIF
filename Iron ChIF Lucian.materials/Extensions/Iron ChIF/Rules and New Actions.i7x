@@ -87,6 +87,63 @@ Carry out abouting:
 
 	https://github.com/luciansmith/IronChIF/[lb]"
 
+Section Achievements
+
+AchieveListing is an action out of world applying to nothing. Understand "achievements" as AchieveListing.
+
+AchieveOning is an action out of world applying to nothing. Understand "achievements on" as AchieveOning.
+
+AchieveOffing is an action out of world applying to nothing. Understand "achievements off" as AchieveOffing.
+
+AchieveFulling is an action out of world applying to nothing. Understand "achievements full" as AchieveFulling.
+
+An Achievement is a kind of thing.
+
+The Trophy Room is a room.  The Trophy Room has an object called most_recent.  The most_recent of the Trophy Room is nothing.  The Trophy Room can be on, off, or full.  The Trophy Room is on.
+
+Gaining An Achievement is a recurring scene.  Gaining An Achievement begins when the most_recent of the Trophy Room is not nothing.  Gaining An Achievement ends when the most_recent of the Trophy Room is nothing.
+
+When Gaining An Achievement begins:
+	let gained be the most_recent of the Trophy Room;
+	if the gained is not in the Trophy Room:
+		move the gained to the Trophy Room;
+		if the Trophy Room is not off:
+			say "[i]Achievement unlocked: [gained].[first time] (To turn off achievement notification, enter >ACHIEVEMENTS OFF.  To see a list of your achievements, enter >ACHIEVEMENTS.)[only][r]";
+	now the most_recent of the Trophy Room is nothing;
+
+Carry out AchieveListing:
+	if the number of objects in the Trophy Room is zero:
+		say "You have yet to gain any achievements.";
+	otherwise:
+		say "You have gained the following achievements:[lb]";
+		repeat with gained running through the achievements in the Trophy Room:
+			say "* [gained]: [description of gained][lb]";
+	if the Trophy Room is not full:
+		say "[lb][i]Use ACHIEVEMENTS ON/OFF/FULL to turn on or off achievement notifications, or to list both gained and ungained achievements[r]."
+
+Carry out AchieveOning:
+	now the Trophy Room is on;
+	say "'course correction' will now tell you when you've gained an achievement.";
+
+Carry out AchieveOffing:
+	now the Trophy Room is off;
+	say "'course correction' will now give you achievements silently.";
+
+Carry out AchieveFulling:
+	now the Trophy Room is full;
+	try AchieveListing;
+	now the Trophy Room is on;
+	let X be a random achievement in the Void;
+	if X is nothing:
+		say "There are no other achievements in the game!  Congratulations!";
+	otherwise:
+		say "You have yet to achieve the following achievements:[lb]";
+		repeat with awaiting running through all achievements in the Void:
+			say "* [awaiting][lb]";
+
+Check requesting the score:
+	try AchieveListing instead;
+
 Section Summoning mist
 
 A room can be cloudy or clear.  A room is usually cloudy.

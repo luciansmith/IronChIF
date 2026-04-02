@@ -184,7 +184,7 @@ To decide whether cannot-close:
     decide no.
 
 Check taking during Being Chased:
-	if the noun is not following and go go go is not happening:
+	if the noun is not following and go go go is not happening and the noun is not enclosed by the player:
 		say "You don't have time to grab things!" instead;
 
 Check taking the small collection of tiny padlocks:
@@ -202,13 +202,22 @@ The gold capsa of down is a capsa in the rucksack.  The description is "The gold
 
 A scroll of rudenj is a scroll in the gold capsa.  The name is "RUDENJ". Understand "down" as the scroll of rudenj.
 
-Check dropping the gold capsa during Everything Falls:
+lost_gold is an achievement in the Void.  The printed name is "Didn't Need That, Anyway".  The description is "Escape the Raven Guard by sacrificing the capsa of down.";
+
+After dropping the gold capsa during Everything Falls:
 	if Being Chased is happening:
-		say "You could ditch the capsa and get away by using it as bait, but that would be just as bad as them catching you directly.  You need the power of this capsa to get the scroll of Health." instead;
+		say "You put on a burst of speed to temporarily disappear from view in the mist, then toss the gold capsa one direction and fly off the opposite direction (easy enough to tell:  it's 'straight up') while it drifts into the mist.  It works:  you feel 'down' shift direction as the Raven Guard plow into it, and in the confusion, you disappear further into the fog.
+		
+		They take it with them all over the aerie as they search for you, maybe hoping you'll fall into them, but you've practiced enough back in the village to know how to adjust your flight to stay aloft.  [if the great hall doors are barred]You hear some commotion as they search for you near the Great Hall.  You can't make out the words, but it has the cadence of an argument about who's to blame for something.  [end if]Finally, gravity rights itself again--they've given up!  They have the gold capsa, but they've given up chasing you.";
+		now the great hall doors are not barred;
+		now the gold capsa is closed;
+		move the gold capsa to the Void;
+		now the most_recent of the Trophy Room is lost_gold;
+		escape and recover instead;
 
 Check dropping the rucksack during Everything Falls:
 	if Being Chased is happening and the rucksack encloses the gold capsa:
-		say "You could ditch the gold capsa and get away by using it as bait, but that would be just as bad as them catching you directly.  You need the power of this capsa to get the scroll of Health." instead;
+		say "You could ditch the gold capsa and get away by using it as bait, but you'd rather not lose the rucksack in the process." instead;
 
 Check opening the gold capsa in the Librum Itself:
 	say "In case of emergencies, most things in the Librum were locked down so as to not fall over if the gold capsa of 'down' was accidentally opened[if black_escape is greater than 0] (though the old storage cabinet's attachments seem to not have held)[end if].  So nothing flies off the shelves to hit you when you open the gold capsa of 'down' in here on purpose.  Which is good!  Less good is that since 'down' now points straight at you, the guard outside was alerted to your presence.  She shows up at the door with a wicked grin.";

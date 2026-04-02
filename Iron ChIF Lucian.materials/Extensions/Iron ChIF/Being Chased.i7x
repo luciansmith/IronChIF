@@ -125,27 +125,42 @@ Every turn during Being Chased:
 
 [Note: 'Ikniq' actually means 'Fire' in Iñupiaq.  According to The Internet.]
 
+go_go_go is an achievement in the Void.  The printed name is "Go, Go, Go!"  The description is "Escape the Raven Guard by diving while 'haste' is active."
+
+falcon_dive is an achievement in the Void.  The printed name is "Hunting Stoop".  The description is "Escape the Raven Guard with a very long dive.";
+
+true_down is an achievement in the Void.  The printed name is "True Down".  The description is "Escape the Raven Guard by altering where 'down' is.";
+
+falcon_mist is an achievement in the Void.  The printed name is "Mist Me!".  The description is "Escape the Raven Guard into your summoned fog.";
+
+
+
 To determine evasion:
 	If Everything Falls is happening and Everything Falls is upended:
 		say "You dodge and weave and almost get away from your pursuers, but when 'down' always points straight at you, even when they can't see you, they always know where you are.";
 	Otherwise if Super-Momentum is happening:
 		if go go go is happening:
 			say "Your extra speed from the capsa of haste lets you pull ahead, since your pursuers are only proportionally faster than they were.  You manage to use the extra distance to dodge behind a Poplar and plummet, out of view of any stray Raven.";
+			now the most_recent of the Trophy Room is go_go_go;
 		otherwise:
 			say "You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.";
+			now the most_recent of the Trophy Room is falcon_dive;
 		escape and recover;
 	Otherwise if Momentum is happening:
 		If the thickness of the grey mist is at least 10:
 			say "You dive into the thickest spot of mist you can find, and put on a final burst of speed before changing direction and dropping like a stone.  It works:  your pursuers fly blindly into the mist where you used to be, cawing angrily when they realize they can't see you any more.";
+			now the most_recent of the Trophy Room is falcon_mist;
 			escape and recover;
 		Otherwise if Everything Falls is happening and Everything Falls is grounded and the player does not enclose the gold capsa:
 			say "As you dive, you use your knowledge of 'true down' to give yourself an edge, pulling around a tree at an angle that should be impossible; diving and twisting through gaps in the branches that shouldn't be possible.  Your closest pursuer crashes into a branch, and the others peel off to avoid him.";
+			now the most_recent of the Trophy Room is true_down;
 			escape and recover;
 		Otherwise:
 			say "Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.";
 	Otherwise:
 		If the thickness of the grey mist is at least 12:
 			say "The [mist density] mist is too thick for the Raven Guard to pursue you far.  You dodge around a tree, and disappear.";
+			now the most_recent of the Trophy Room is falcon_mist;
 			escape and recover;
 		Otherwise:
 			say "The Raven Guard pursues you determinedly through the [mist density] mist.";

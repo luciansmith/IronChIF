@@ -344,7 +344,7 @@ C5b is a page.  It is for C4b.
 The cdesc is "You need more details."
 The description is "'So, what will happen?  What would it do if it was read?' you ask.
 
-'I cannot say.  The gods created the scrolls with their local effects, I believe, to give people a taste of what was to come.  Throck, as a capsa, encouraged vegetation to grow.  Throckwrights push vegetation to grow in very specific ways.  Bostra, as a capsa, caused rain by itself, but the bostra must work together to do the same.  Ikniq... I can find no record of what it did as a capsa.  That information must have been purged.'  He pauses.  You let him collect his thoughts.
+'I cannot say.  The gods created the scrolls with their local effects, I believe, to give people a taste of what was to come.  Throck, as a capsa, encouraged vegetation to grow.  Throckwrights push vegetation to grow in very specific ways.  Bostrat, as a capsa, caused rain by itself, but the bostrat must work together to do the same.  Ikniq... I can find no record of what it did as a capsa.  That information must have been purged.'  He pauses.  You let him collect his thoughts.
 
 'My best guess is that it will give people the ability to heal themselves; perhaps even to regenerate.  Maybe it will make them immune to disease.  Maybe to death.  The gods only know.'"
 

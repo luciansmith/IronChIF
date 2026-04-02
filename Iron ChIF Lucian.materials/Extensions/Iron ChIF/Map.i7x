@@ -23,11 +23,11 @@ distant_others are scenery in high above.  The printed name is "other aeries".  
 
 no_mist is scenery in high above.  The printed name is "mist".  The description is "The cloud layer today is too high for a naturally obscuring mist; you'll have to summon it yourself.".  Understand "cloud/layer/mist/high/Heathcliff" as no_mist.
 
-After dropping something in High Above:
+After dropping something in High Above when everything falls is not happening:
 	say "[The noun] twists away as it falls below you, towards the Great Hall.";
 	Now the noun is in the Great Hall Landing Cradle.
 
-Check dropping something during Everything Falls:
+After dropping something during Everything Falls:
 	if the gold capsa is enclosed by the location:
 		if the noun is the gold capsa or the noun encloses the gold capsa:
 			move the noun to the location;
@@ -191,7 +191,7 @@ To snatch the cloak:
 
 
 
-The hunting cloak is a wearable on the cloak posts.  The hunting cloak can be purple or invisible.  The hunting cloak is purple.  The description is "[hunting cloak description]."  Understand "hippo/hippotomai/dark/purple/variegation/camoflage/cloaks" as the hunting cloak.  The printed name of the hunting cloak is "[if the hunting cloak is purple]purple[otherwise]invisible[end if] hunting cloak".
+The hunting cloak is a wearable object on the cloak posts.  The hunting cloak can be purple or invisible.  The hunting cloak is purple.  The description is "[hunting cloak description]."  Understand "hippo/hippotomai/dark/purple/variegation/camoflage/cloaks" as the hunting cloak.  The printed name of the hunting cloak is "[if the hunting cloak is purple]purple[otherwise]invisible[end if] hunting cloak".
 
 To say hunting cloak description:
 	if the hunting cloak is on the cloak posts:
