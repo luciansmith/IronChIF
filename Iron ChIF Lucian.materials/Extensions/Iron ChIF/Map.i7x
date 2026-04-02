@@ -81,10 +81,10 @@ Great Hall Landing Cradle is below High Above.  "The Landing Cradle of the Great
 
 To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest."
 
-The Great Hall doors are doors in Great Hall Landing Cradle.  They are plural-named.  The printed name is "huge double doors of the Great Hall".  They are closed and locked.  They are inside from Great Hall Landing Cradle and outside from Upper Great Hall.  The description is "The huge [if open]open[otherwise]closed[end if] double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckrian who grew this must have been an archmaster."  Understand "huge/door/double/canted/hatch/hatches/fine/scrollwork/broad/swoops/curls/branch/finer/giant/landing/cradle" as the Great Hall doors.
+The Great Hall doors are doors in Great Hall Landing Cradle.  They are plural-named.  The printed name is "huge double doors of the Great Hall".  They are closed and locked.  They are inside from Great Hall Landing Cradle and outside from Upper Great Hall.  The description is "The huge [if open]open[otherwise]closed[end if] double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckwright who grew this must have been an archmaster."  Understand "huge/door/double/canted/hatch/hatches/fine/scrollwork/broad/swoops/curls/branch/finer/giant/landing/cradle" as the Great Hall doors.
 
-Last check opening barred great hall doors:
-	say "You pull at the doors, but not only were they locked, but barred as well.  You remember the bar used to sit to one side of the doors inside the hall, gathering dust.  [if Everything Opens has happened]You suppose rezrov must unlock and open, but not unbar?  [end if]The doors give slightly and the bar rattles, but the doors refuse to open." instead;
+First check opening barred great hall doors:
+	say "You pull at the doors, but not only [if the great hall doors are locked]are[otherwise]were[end if] they locked, but barred as well.  You remember the bar used to sit to one side of the doors inside the hall, gathering dust.  [if Everything Opens has happened]You suppose rezrov must unlock and open, but not unbar?  [end if]The doors give slightly and the bar rattles, but the doors refuse to open." instead;
 
 Last Check going Great Hall doors during Being Chased:
 	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Guard has followed you, and you simply don't have any room to maneuver.";
@@ -117,6 +117,15 @@ Before going inside from Great Hall Landing Cradle:
 Instead of going nowhere from Great Hall Landing Cradle:
 	if the noun is west, try entering the Great Hall doors;
 	otherwise say "From here, you can go north to the Royal Quarters and Garden, east to the Librum, enter the Great Hall itself to the west, or, as always, ascend to the skies or descend to the forest."
+
+hall_open is an achievement.  The printed name is "Bar None".  The description is "Get the barred and locked doors of the Great Hall open[if helped] (with a little help from your former associates)[end if].".  hall_open can be helped.  hall_open is not helped.
+
+The Halls Are Alive is a scene.  The Halls are Alive begins when the great hall doors are open.  The Halls Are Alive ends when the player is in Upper Great Hall.
+
+Every turn during The Halls Are Alive:
+	if the most_recent of the Trophy Room is nothing:
+		now the most_recent of the Trophy Room is hall_open;
+
 
 Upper Great Hall is a room. "There is a small platform just inside the [Great Hall doors], and that's it.  The platform is lined with a single elegant grown-mahogany branch that wraps around the whole platform.  It varies in size and thickness, so that all types of feet fit somewhere along it, so people can comfortably launch themselves into the air to glide down to the floor level, or grab it for stability as they return."
 
@@ -392,6 +401,7 @@ After going Garden Door:
 	wait for any key;
 	Move Horatio to Nursery_door; 
 	Move the player to Nursery_door;
+	now the most_recent of the Trophy Room is snuck_in;
 	stop the action;
 
 Palace is a room.  "If you're seeing this, I either haven't finished writing the finale, or you found a bug.  Hopefully, you're a tester, and that's your job.  Thank you!  Come back for a later version with the finale!";
@@ -412,6 +422,11 @@ Check going west from Nursery_door:
 After taking off cloak in Nursery_Door:
 	say "You take a deep breath and take off the cloak.  Next to you, Horatio takes his own cloak off as well.";
 	stop the action;
+
+Snuck_in is an achievement.  The printed name is "The Old Cruising Grounds".  The description is "Make it back inside the Royal Quarters.";
+
+
+
 
 Nursery_itself is a room.  It is west of Nursery_door.  It is northwest of Nursery_door.  The printed name is "Nursery".  "The Nursery is not exactly how you remember it.  It was set up to grow new walls and furniture over time, to keep any occupant engaged and growing.  But the rhythm of it is baked into your bones.  The place for the roosts, along the north wall.  The [desk], grown to the size of the user.  The endless parade of ropes and balls and other toys along the south, some grown and some brought in.  The giant [window] to the west, overlooking the beautiful, beautiful forest."
 

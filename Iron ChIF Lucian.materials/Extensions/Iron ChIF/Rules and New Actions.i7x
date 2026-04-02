@@ -99,7 +99,7 @@ AchieveFulling is an action out of world applying to nothing. Understand "achiev
 
 An Achievement is a kind of thing.
 
-The Trophy Room is a room.  The Trophy Room has an object called most_recent.  The most_recent of the Trophy Room is nothing.  The Trophy Room can be on, off, or full.  The Trophy Room is on.
+The Trophy Room is a room.  The Trophy Room has an object called most_recent.  The most_recent of the Trophy Room is nothing.  The Trophy Room can be on, off, or full.  The Trophy Room is off.
 
 Gaining An Achievement is a recurring scene.  Gaining An Achievement begins when the most_recent of the Trophy Room is not nothing.  Gaining An Achievement ends when the most_recent of the Trophy Room is nothing.
 
@@ -137,12 +137,24 @@ Carry out AchieveFulling:
 	if X is nothing:
 		say "There are no other achievements in the game!  Congratulations!";
 	otherwise:
-		say "You have yet to achieve the following achievements:[lb]";
+		say "You have yet to achieve the following:[lb]";
 		repeat with awaiting running through all achievements in the Void:
 			say "* [awaiting][lb]";
 
 Check requesting the score:
 	try AchieveListing instead;
+
+Table of Final Question Options (continued)
+final question wording	only if victorious	topic	final response rule	final response activity
+"get a list of the ACHIEVEMENTS you obtained"	true	"achievements"	endAchieveList rule	--
+--	true	"achievements"	endAchieveList rule	--
+--	true	"achievements full"	endAchieveListFull rule	--
+
+This is the endAchieveList rule:
+	try achieveListing;
+
+This is the endAchieveListFull rule:
+	try achieveFulling;
 
 Section Summoning mist
 

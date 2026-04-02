@@ -206,10 +206,15 @@ lost_gold is an achievement in the Void.  The printed name is "Didn't Need That,
 
 After dropping the gold capsa during Everything Falls:
 	if Being Chased is happening:
+		if the great hall doors are barred:
+			now hall_open is helped;
 		say "You put on a burst of speed to temporarily disappear from view in the mist, then toss the gold capsa one direction and fly off the opposite direction (easy enough to tell:  it's 'straight up') while it drifts into the mist.  It works:  you feel 'down' shift direction as the Raven Guard plow into it, and in the confusion, you disappear further into the fog.
 		
 		They take it with them all over the aerie as they search for you, maybe hoping you'll fall into them, but you've practiced enough back in the village to know how to adjust your flight to stay aloft.  [if the great hall doors are barred]You hear some commotion as they search for you near the Great Hall.  You can't make out the words, but it has the cadence of an argument about who's to blame for something.  [end if]Finally, gravity rights itself again--they've given up!  They have the gold capsa, but they've given up chasing you.";
 		now the great hall doors are not barred;
+		if the purple capsa is open:
+			now the great hall doors are open;
+			move hall_open to the Trophy Room;
 		now the gold capsa is closed;
 		move the gold capsa to the Void;
 		now the most_recent of the Trophy Room is lost_gold;
@@ -415,6 +420,14 @@ When No More Purple ends:
 		say "The hunting cloak appears again.";
 	If the location is Nursery_Door:
 		say "Horatio reappears, wearing the other cloak.";
+
+back_in_black is an achievement.  The printed name is "One Bird's Trash".  The description is "Obtain the black capsa of igram.".
+
+Got The Black is a scene.  Got the Black begins when the player encloses the black capsa.  Got the Black ends when the player encloses the cloak.
+
+When Got The Black begins:
+	now the most_recent of the Trophy room is back_in_black;
+
 
 A green capsa is an open capsa on the desk.  The description is "The green capsa of health contains a scroll of taclor.  It is [if the green capsa is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to heal to affect the area[end if]."  Understand "taclor/heal" as the green capsa.
 

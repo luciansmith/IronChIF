@@ -244,13 +244,18 @@ Then Aubrey gets a strange expression on her face.  'I... I [i]remember[r],' she
 
 Obediently, Ash comes and perches by her side.
 
-Aubrey begins to sing.  It's not The Song.  Nothing will ever be The Song.  But it's an echo, and it is, now, how taclor will be known.
+Aubrey begins to sing.  It's not The Song.  Nothing will ever be The Song.  But it's an echo.  The song of a Taclorian.
 
 As she sings, Ash's pallor fades, and their feathers straighten.  A hunch you didn't realize they had straightens out.  'Oh!' they exclaim.  'OH!'  Their eyes shine.
 
 You help Aubrey to her feet and she rises to her full height, full of queenly majesty.  The four of you look at each other.  'Come,' she says.  'We have work to do.'"
 
 A page-toggle rule for F9:
-	end the story finally saying "You have changed the world."
+	move world_change to the Trophy Room;
+	end the story finally saying "You have changed the world.";
+
+world_change is an achievement.  The printed name is "Change The World".  The description is "Have Horatio read the scroll of health.".
+
+
 
 Lucian's Scenes ends here.
