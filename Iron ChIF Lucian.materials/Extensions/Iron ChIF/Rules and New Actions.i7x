@@ -72,6 +72,8 @@ Abouting is an action out of world applying to nothing.  Understand "about" as a
 
 Carry out abouting:
 	say "Thank you for playing 'course correction'!  A quick word about design philosophy.  The game has many obviously-bad endings, but by design they are all avoidable with a single >UNDO.  So, if anything happens that naturally takes more than one turn, it's probably something you'll have to deal with at some point.  There may be bugs that circumvent that design!  So keep multi-undo and/or save files at the ready.  There is also some choice-based branching in the game, containing some alternate endings that similarly can be explored with single >UNDO.
+
+	In honor of the many ways to solve a couple of the main puzzles of the game, 'course correction' has achievements!  You can list the ones you've gotten with >ACHIEVEMENTS, or list all possible achievements with >ACHIEVEMENTS FULL.  By default, you won't be notified when you get an achievement, but if you want to know, you can turn on (or off) notifications with >ACHIEVEMENTS ON/OFF.  Achievements persist across play sessions, but if you wish to start over from scratch, >ACHIEVEMENTS RESET will remove them all again.
 	
 	The original version of this game was written in five days for Episode One of Iron ChIF, where I (as the challenger) wrote this game while Ryan Veeder (the 'Iron ChIF Inform 7') wrote his own game ('The Van der Nagel Papyrus') based on the same prompt:  'a scroll that alters the world around it'.  This is the post-comp release, which fixes some bugs, clears up several points of confusion, and generally fills out the game to be more complete.
 	
@@ -97,6 +99,8 @@ AchieveOffing is an action out of world applying to nothing. Understand "achieve
 
 AchieveFulling is an action out of world applying to nothing. Understand "achievements full" as AchieveFulling.
 
+AchieveResetting is an action out of world applying to nothing. Understand "achievements reset" as AchieveResetting.
+
 An Achievement is a kind of thing.
 
 The Trophy Room is a room.  The Trophy Room has an object called most_recent.  The most_recent of the Trophy Room is nothing.  The Trophy Room can be on, off, or full.  The Trophy Room is off.
@@ -110,6 +114,8 @@ When Gaining An Achievement begins:
 		if the Trophy Room is not off:
 			say "[i]Achievement unlocked: [gained].[first time] (To turn off achievement notification, enter >ACHIEVEMENTS OFF.  To see a list of your achievements, enter >ACHIEVEMENTS.)[only][r]";
 	now the most_recent of the Trophy Room is nothing;
+	write out achievements;
+
 
 Carry out AchieveListing:
 	if the number of objects in the Trophy Room is zero:
@@ -119,7 +125,7 @@ Carry out AchieveListing:
 		repeat with gained running through the achievements in the Trophy Room:
 			say "* [gained]: [description of gained][lb]";
 	if the Trophy Room is not full:
-		say "[lb][i]Use ACHIEVEMENTS ON/OFF/FULL to turn on or off achievement notifications, or to list both gained and ungained achievements[r]."
+		say "[lb][i]Use ACHIEVEMENTS ON/OFF to turn on or off achievement notifications, or ACHIEVEMENTS FULL to list both gained and ungained achievements[r]."
 
 Carry out AchieveOning:
 	now the Trophy Room is on;
@@ -141,6 +147,11 @@ Carry out AchieveFulling:
 		repeat with awaiting running through all achievements in the Void:
 			say "* [awaiting][lb]";
 
+Carry out AchieveResetting:
+	now everything in the Trophy Room is in the Void;
+	write out achievements;
+	say "Achievements have been reset."
+
 Check requesting the score:
 	try AchieveListing instead;
 
@@ -155,6 +166,45 @@ This is the endAchieveList rule:
 
 This is the endAchieveListFull rule:
 	try achieveFulling;
+
+Section Achievement File
+
+The File of Achieving (owned by another project) is called "courseAchievements".
+
+Table of Achieving
+gained (text)
+with 20 blank rows
+
+To fill the Table of Achieving from the Trophy Room:
+	repeat with X running through achievements in the Trophy Room:
+		choose a blank row in the Table of Achieving;
+		Now the gained entry is the printed name of X;
+
+To load the Table of Achieving into the trophy room:
+	repeat with N running from 1 to the number of rows in the Table of Achieving:
+		if there is a gained in row N of the Table of Achieving:
+			let printed_name be the gained in row N of the Table of Achieving;
+			repeat with Ache running through the achievements not in the Trophy Room:
+				if the printed name of Ache is printed_name:
+					move Ache to the Trophy Room;
+
+To load achievements:
+	blank out the whole of the Table of Achieving;
+	if the File of Achieving exists:
+		read the File of Achieving into the Table of Achieving;
+		load the Table of Achieving into the trophy room;
+
+To write out achievements:
+	blank out the whole of the Table of Achieving;
+	fill the Table of Achieving from the Trophy Room;
+	write the File of Achieving from the Table of Achieving;
+
+When play begins:
+	load achievements;
+
+After undoing an action:
+	load achievements;
+
 
 Section Summoning mist
 

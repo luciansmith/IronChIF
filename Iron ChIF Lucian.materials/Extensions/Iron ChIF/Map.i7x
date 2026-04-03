@@ -118,7 +118,20 @@ Instead of going nowhere from Great Hall Landing Cradle:
 	if the noun is west, try entering the Great Hall doors;
 	otherwise say "From here, you can go north to the Royal Quarters and Garden, east to the Librum, enter the Great Hall itself to the west, or, as always, ascend to the skies or descend to the forest."
 
-hall_open is an achievement.  The printed name is "Bar None".  The description is "Get the barred and locked doors of the Great Hall open[if helped] (with a little help from your former associates)[end if].".  hall_open can be helped.  hall_open is not helped.
+hall_open is an achievement in the Void.  The printed name is "Bar None".  The description is "Get the barred and locked doors of the Great Hall open[if helped] (with a little help from your former associates)[end if].".  hall_open can be helped.  hall_open is not helped.
+
+bar_follow is an achievement in the Void.  The printed name is "Fly Quickly, and Tow A Big Stick".  The description is "Fend off the Raven Guard with a huge wooden bar.".
+
+Holy Flying Bars is a recurring scene.  Holy Flying Bars begins when the wooden bar is following and bar_follow is not in the Trophy Room.  Holy Flying Bars ends when the wooden bar is not following.
+
+When Holy Flying Bars begins:
+	if the most_recent of the Trophy Room is nothing:
+		now the most_recent of the Trophy room is bar_follow;
+
+Every turn during Holy Flying Bars:
+	if the most_recent of the Trophy Room is nothing:
+		now the most_recent of the Trophy room is bar_follow;
+
 
 The Halls Are Alive is a scene.  The Halls are Alive begins when the great hall doors are open.  The Halls Are Alive ends when the player is in Upper Great Hall.
 
@@ -423,7 +436,7 @@ After taking off cloak in Nursery_Door:
 	say "You take a deep breath and take off the cloak.  Next to you, Horatio takes his own cloak off as well.";
 	stop the action;
 
-Snuck_in is an achievement.  The printed name is "The Old Cruising Grounds".  The description is "Make it back inside the Royal Quarters.";
+Snuck_in is an achievement in the Void.  The printed name is "The Old Cruising Grounds".  The description is "Make it back inside the Royal Quarters.";
 
 
 

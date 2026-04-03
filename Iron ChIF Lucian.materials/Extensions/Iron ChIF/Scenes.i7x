@@ -146,6 +146,8 @@ The description is "'I can't do it,' you say.  'I can't condemn Ash for the sake
 You place the capsa of taclor back on the desk, step onto the window ledge, and launch yourself into the mist."
 
 A page-toggle rule for F3:
+	move world_change to the Trophy Room;
+	write out achievements;
 	end the story finally saying "You have learned much."
 
 F4 is a page.  It is for F1.
@@ -155,6 +157,8 @@ The description is "'I can't do it,' you say.  'I can't take Ash away from their
 You and Horatio step onto the window ledge, and launch yourselves into the mist.  You hear the strangled cry of a familiar Red Wing behind you, but don't turn back."
 
 A page-toggle rule for F4:
+	move world_change to the Trophy Room;
+	write out achievements;
 	end the story finally saying "You have accomplished what you set out to accomplish."
 
 F5 is a page.  It is for F1.
@@ -166,6 +170,8 @@ The description is "'I can't do it,' you say.  'I can't condemn Ash for the sake
 All three of you step onto the window ledge, and launch yourselves into the mist.  You hear the strangled cry of a familiar Red Wing behind you, but don't turn back."
 
 A page-toggle rule for F5:
+	move world_change to the Trophy Room;
+	write out achievements;
 	end the story finally saying "You have done what you were sure would help the greatest number."
 
 
@@ -244,7 +250,7 @@ Then Aubrey gets a strange expression on her face.  'I... I [i]remember[r],' she
 
 Obediently, Ash comes and perches by her side.
 
-Aubrey begins to sing.  It's not The Song.  Nothing will ever be The Song.  But it's an echo.  The song of a Taclorian.
+Aubrey begins to sing.  It's not The Song.  Nothing will ever be The Song.  But it's an echo.  The song of the Taclorim.
 
 As she sings, Ash's pallor fades, and their feathers straighten.  A hunch you didn't realize they had straightens out.  'Oh!' they exclaim.  'OH!'  Their eyes shine.
 
@@ -252,9 +258,10 @@ You help Aubrey to her feet and she rises to her full height, full of queenly ma
 
 A page-toggle rule for F9:
 	move world_change to the Trophy Room;
+	write out achievements;
 	end the story finally saying "You have changed the world.";
 
-world_change is an achievement.  The printed name is "Change The World".  The description is "Have Horatio read the scroll of health.".
+world_change is an achievement in the Void.  The printed name is "Taclor".  The description is "Finish the game, deciding what to do with the scroll of health.".
 
 
 

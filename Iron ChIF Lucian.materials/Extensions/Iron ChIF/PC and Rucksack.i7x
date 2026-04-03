@@ -215,6 +215,7 @@ After dropping the gold capsa during Everything Falls:
 		if the purple capsa is open:
 			now the great hall doors are open;
 			move hall_open to the Trophy Room;
+			write out achievements;
 		now the gold capsa is closed;
 		move the gold capsa to the Void;
 		now the most_recent of the Trophy Room is lost_gold;
@@ -317,6 +318,7 @@ Every turn during Everything Falls:
 		say "A black capsa flies through the doors of the Librum, up towards you!";
 		move the black capsa to the location;
 		now the black capsa is following;
+		now the most_recent of the Trophy Room is no_reading;
 	Now is_now_up is the location;
 
 
@@ -421,7 +423,7 @@ When No More Purple ends:
 	If the location is Nursery_Door:
 		say "Horatio reappears, wearing the other cloak.";
 
-back_in_black is an achievement.  The printed name is "One Bird's Trash".  The description is "Obtain the black capsa of igram.".
+back_in_black is an achievement in the Void.  The printed name is "One Bird's Trash".  The description is "Obtain the black capsa of igram.".
 
 Got The Black is a scene.  Got the Black begins when the player encloses the black capsa.  Got the Black ends when the player encloses the cloak.
 

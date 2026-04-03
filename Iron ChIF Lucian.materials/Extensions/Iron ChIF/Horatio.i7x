@@ -130,9 +130,12 @@ Before going from Librum Landing Cradle during Everything Falls:
 				say "a black capsa flies out through the librum doors, following you!";
 				move the black capsa to the location;
 				now the black capsa is following;
+				now the most_recent of the Trophy Room is no_reading;
 			otherwise:
 				say "you hear something whap against the librum door behind you.  Something almost escaped from in there.";
 			now black_escape is 4;
+
+no_reading is an achievement in the Void. The printed name is "If Constance Will Not Come To The Capsa...".  The description is "Get the black capsa out of the Librum without actually entering the Librum[if not helped] (and without Horatio's help)[end if].".  no_reading can be helped. no_reading is helped.
 
 Section The Chat
 
@@ -327,7 +330,7 @@ The description is "'So that's your heresy,' you conclude.  'You want to read a 
 'Not just any capsa.  The scroll of health.  Taclor.  Ten years ago, I would have been happy to read any.  Now, it must be that one.  But I will not make that choice on my own.  Every Reader like myself has the innate ability to Read a single scroll, and I will yield to the will of its holder, as my predecessors swore to do in the aftermath of the Great War.  But I will not waste my ability on anything else.'"
 
 C5a is a page.  It is for C4b and C5b.
-The cdesc is "He can't have the scroll."
+The cdesc is "You need the scroll for your mother!"
 The description is "'You can't read that scroll,' you say.  'I need it to save my mother.  To save the village.'
 
 'The whole world,' Horatio turns his head to face to you, 'could say the same.'
