@@ -7,7 +7,17 @@ The Void is a room.  [I like having an 'off stage' room for stuff.]
 
 Section High Above
 
-High Above the Royal Aerie is a clear room.  "[if cloudy]Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout,[otherwise]You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout,[end if] and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry."
+High Above the Royal Aerie is a clear room.  "[high_above_desc]"
+
+To say high_above_desc:
+	if the player is Constance:
+		if cloudy:
+			say "Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout,";
+		otherwise:
+			say "You drift in lazy circles well above the Royal Aerie below, safely above your quarry.  Your acute eyesight lets you see the entire layout,";
+		say "and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north, well defended by circling Raven clan guards.  The librum to the east.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.";
+	otherwise:
+		say "There's nothing to see here, this high above the Aerie; just a thick mist in every direction.  You would have never been able to find Constance if she hadn't been carrying a capsa or two.  You trust that if you circle down from here, you'll be able to find your way once you reach some landmarks.";
 
 distant_aerie is scenery in high above.  The printed name is "Royal Aerie".  The description is "[if the grey mist is in the location]As you recall, the[otherwise]The[end if] Royal Aerie was grown and shaped by generations of Throckwrights, and now towers over the surrounding forest canopy.  Lush shades of browns and reds, often woven together in intricate patterns or pictures, cover every landing cradle, wall, and roof."  Understand "royal/aerie/lush/brown/browns/red/reds/woven/patterns/pictures" as distant_aerie.
 
@@ -77,14 +87,25 @@ Check opening a capsa when no_mist is in the location:
 
 Section Great Hall
 
-Great Hall Landing Cradle is below High Above.  "The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning 'in order of importance'.  The [Great Hall doors] are on the west side of the landing cradle, and unguarded.
+Great Hall Landing Cradle is below High Above.  "[if the player is Constance]The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning 'in order of importance'.  The [Great Hall doors] are on the west side of the landing cradle, and unguarded.
 
-To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest."
+To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.[otherwise]The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of the Waterfowl delegation.  You were impressed by the [Great Hall doors], large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.
 
-The Great Hall doors are doors in Great Hall Landing Cradle.  They are plural-named.  The printed name is "huge double doors of the Great Hall".  They are closed and locked.  They are inside from Great Hall Landing Cradle and outside from Upper Great Hall.  The description is "The huge [if open]open[otherwise]closed[end if] double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckwright who grew this must have been an archmaster."  Understand "huge/door/double/canted/hatch/hatches/fine/scrollwork/broad/swoops/curls/branch/finer/giant/landing/cradle" as the Great Hall doors.
+To the north is the Royal Quarters and Gardens, the Librum is to the east, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.";
+
+The Great Hall doors are doors in Great Hall Landing Cradle.  They are plural-named.  The printed name is "huge double doors of the Great Hall".  They are closed and locked.  They are inside from Great Hall Landing Cradle and outside from Upper Great Hall.  The description is "The huge [if open]open[otherwise]closed[end if] double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork[if the player is Constance] whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckwright who grew this must have been an archmaster[end if]."  Understand "huge/door/double/canted/hatch/hatches/fine/scrollwork/broad/swoops/curls/finer/giant/landing/cradle" as the Great Hall doors.
 
 First check opening barred great hall doors:
-	say "You pull at the doors, but not only [if the great hall doors are locked]are[otherwise]were[end if] they locked, but barred as well.  You remember the bar used to sit to one side of the doors inside the hall, gathering dust.  [if Everything Opens has happened]You suppose rezrov must unlock and open, but not unbar?  [end if]The doors give slightly and the bar rattles, but the doors refuse to open." instead;
+	say "[closed-great-doors]" instead;
+
+To say closed-great-doors:
+	say "You pull at the doors, but not only [if the great hall doors are locked]are[otherwise]were[end if] they locked, but barred as well.  You [if the player is Horatio]vaguely [end if]remember the bar used to sit to one side of the doors inside the hall, gathering dust";
+	if the player is Constance and Everything Opens has happened:
+		say ".  You suppose rezrov must unlock and open, but not unbar?  The doors give slightly and the bar rattles, but the doors refuse to open.";
+	otherwise if the player is Horatio:
+		say ".  Rezrov doesn't unbar doors; you'll have to have Constance come back here with rudenj.";
+	otherwise:
+		say ".  The doors give slightly and the bar rattles, but the doors refuse to open.";
 
 Last Check going Great Hall doors during Being Chased:
 	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Guard has followed you, and you simply don't have any room to maneuver.";
@@ -140,9 +161,9 @@ Every turn during The Halls Are Alive:
 		now the most_recent of the Trophy Room is hall_open;
 
 
-Upper Great Hall is a room. "There is a small platform just inside the [Great Hall doors], and that's it.  The platform is lined with a single elegant grown-mahogany branch that wraps around the whole platform.  It varies in size and thickness, so that all types of feet fit somewhere along it, so people can comfortably launch themselves into the air to glide down to the floor level, or grab it for stability as they return."
+Upper Great Hall is a room. "[if the player is Constance]There is a small platform just inside the [Great Hall doors], and that's it.  The platform is lined with a single elegant grown-mahogany branch that wraps around the whole platform.  It varies in size and thickness, so that all types of feet fit somewhere along it, so people can comfortably launch themselves into the air to glide down to the floor level, or grab it for stability as they return[otherwise]The small platform just inside the [Great Hall doors] overlooks the hall below, with plenty of space for people of all sizes and shapes to comfortably launch themselves from a smoothly-grown mahogany branch, wrapping around the whole platform[end if]."
 
-The platform is scenery in Upper Great Hall.  "The grown mahogany branch around the platform is a masterpiece of Throckwright engineering.  Not a single delegate or guest ever had problems looking regal as they launched themselves from an appropriate spot."  Understand "grown/mahogany/branch/masterpiece/spot/feet/grown-mahogany/elegant" as the platform.
+The platform is scenery in Upper Great Hall.  "[if the player is Constance]The grown mahogany branch around the platform is a masterpiece of Throckwright engineering.  Not a single delegate or guest ever had problems looking regal as they launched themselves from an appropriate spot[otherwise]You touch the great mahogany branch and can just barely hear the echo of the song that grew it, still pulsing in its veins[end if]."  Understand "grown/mahogany/branch/masterpiece/spot/feet/grown-mahogany/elegant" as the platform.
 
 Instead of going nowhere from upper great hall:
 	if the noun is up:
@@ -156,21 +177,31 @@ Instead of going nowhere from upper great hall:
 Down from Upper Great Hall is Lower Great Hall.
 
 Report going down from Upper Great Hall:
-	say "You step on to your favorite spot on the mahogany branch, and launch yourself downward in a graceful glide.";
+	say "[if the player is Constance]You step on to your favorite spot on the mahogany branch, and launch yourself downward in a graceful glide[otherwise]You spread your wings to their full extent before launching yourself downward.  You muscles protest, but even just being able to glide again is heavenly[end if].";
 
-Lower Great Hall is a room.  "When not prepared for a particular occasion, like now, the floor of the Great Hall is cleared of everything extraneous.  The exposed floor is absolutely exquisite, with swooping lines interspersed with starbursts, all in multicolored woods of all hues.  What doesn't change about the Great Hall floor is the display nooks along the sides: at least twenty nooks containing all manner of artifacts from around the world."
+Lower Great Hall is a room.  "[if the player is Constance]When not prepared for a particular occasion, like now, the floor of the Great Hall is cleared of everything extraneous.  The exposed floor is absolutely exquisite, with swooping lines interspersed with starbursts, all in multicolored woods of all hues.  What doesn't change about the Great Hall floor is the display nooks along the sides: at least twenty nooks containing all manner of artifacts from around the world[otherwise]The floor of the Great Hall is cleared of the myriad perches and decorations that are brought out for visiting delegations.  It breathes potential, bursting with what it could be, if only.  You wonder if there would even be enough staff to prepare it for a new delegation, with so many sick.  Not that delegations are common, nowadays.
 
-Various artifacts are scenery in Lower Great Hall.  The description is "Old things, new things, distant things, close things." Understand "old/things/new/distant/close/nooks/twenty" as various artifacts.
+In the display nooks around the edges of the hall are all manner of artifacts from across many ages[end if]."
+
+Various artifacts are scenery in Lower Great Hall.  The description is "[If the player is Constance]Old things, new things, distant things, close things[otherwise]You could spend weeks in here if you were allowed, just cataloguing and recording your impressions of all the artifacts that fill the nooks surrounding the floor.  But right now, all you wanted to do was check to make sure the cloaks are still here[end if]." Understand "old/things/new/distant/close/nooks/twenty" as various artifacts.
 
 [LS DEBUG:  MAYBE allow 'various artifacts' to respond to 'cloaks' in case someone replaying the game tries to look for the cloaks before they show up.]
 
 The two cloak posts are fixed in place in Void.   Understand "ancient/hunting/post" as two cloak posts.  [The description is "[what's on the posts]"]
 
+Horatio in the House is a recurring scene.  Horatio in the house begins when the player is Horatio and the location is Upper Great Hall.  Horatio in the house ends when the location is Great Hall Landing Cradle.
+
+When Horatio in the House begins:
+	move the cloak posts to the Lower Great Hall;
+
+When Horatio in the House ends:
+	move the cloak posts to the Void;
+
 Rule for printing a locale paragraph about the posts:
 	say "In one of the nooks are two posts, designed for displaying ancient hunting cloaks";
 	if the cloak is in the posts:
 		if the cloak is purple:
-			say ", with two purple hippotomai cloaks hung from them.";
+			say ", with two purple hippotomai cloaks hung from them[if the player is Horatio], right where they should be[end if].";
 		otherwise:
 			say ".";
 	otherwise:
@@ -204,7 +235,9 @@ Check touching the cloak:
 		rule fails;
 
 To snatch the cloak:
-	if the cloak is on the two cloak posts:
+	if the player is Horatio:
+		say "You verify that the cloaks are actually here, but leave them alone.  [if No More Purple is happening]When you couldn't see them, you worried that they might actually have been moved, but no--Constance's ingenuity meant that she's already activated igram.  [end if]With any luck, the drama of being able to see what igram does in person will hopefully cancel out the inherent ridiculousness of igram.";
+	otherwise if the cloak is on the two cloak posts:
 		move the cloak to the player;
 		if the cloak is invisible:
 			say "You reach for the post, and feel the cloak you saw.  With a sense of wonderment, you pick it up.  Next to you, Horatio picks up the other, equally-invisible cloak.";
@@ -216,17 +249,19 @@ To snatch the cloak:
 The hunting cloak is a wearable object on the cloak posts.  The hunting cloak can be purple or invisible.  The hunting cloak is purple.  The description is "[hunting cloak description]."  Understand "hippo/hippotomai/dark/purple/variegation/camoflage/cloaks" as the hunting cloak.  The printed name of the hunting cloak is "[if the hunting cloak is purple]purple[otherwise]invisible[end if] hunting cloak".
 
 To say hunting cloak description:
-	if the hunting cloak is on the cloak posts:
-		if the hunting cloak is purple:
-			say "A plaque by the cloaks claims that in prehistoric times, people made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camoflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot";
+	if the player is Constance:
+		if the hunting cloak is on the cloak posts:
+			if the hunting cloak is purple:
+				say "A plaque by the cloaks claims that in prehistoric times, people made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camoflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot";
+			otherwise:
+				say "The cloak posts appear to be empty";
 		otherwise:
-			say "The cloak posts appear to be empty";
+			if the hunting cloak is purple:
+				say "In prehistoric times, people apparently made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camoflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot.  On foot![nb]";
+			otherwise:
+				say "You can feel the supple folds of the cloak, but cannot see it at all";
 	otherwise:
-		if the hunting cloak is purple:
-			say "In prehistoric times, people made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camoflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot.  On foot!";
-		otherwise:
-			say "You can feel the supple folds of the cloak, but cannot see it at all";
-
+		say "These hunting cloaks date back to aboriginal times, perhaps even earlier than the capsae and scrolls.  The tough dark purple hippotomai skins they're made of meant they were cumbersome to wear, but would last forever.  You believe several different clans had to cooperate to make them, as no one clan posessed the skills, dexterity, and toughness necessary to hunt the hippotomai and put them together";
 
 Does the player mean doing anything with the hunting cloak:  it is very likely.
 
@@ -238,9 +273,11 @@ Check wearing the cloak:
 
 Section Librum
 
-Librum Landing Cradle is east of Great Hall Landing Cradle.  "The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The [Librum Door] leads inward to the Librum itself.
+Librum Landing Cradle is east of Great Hall Landing Cradle.  "[if the player is Constance]The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The [Librum Door] leads inward to the Librum itself.
 
-To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east."
+To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east[otherwise]For the last ten years, this place has been the focus of your subconscious.  Always knowing where capsae are can be wearing when you're this close for so long.  Every time one would be taken out for training, every time one would be moved for cleaning, every time their display case was bumped, it was a little 'ding' for your subconscious mind to notice, and probably pass up to your conscious mind, because, let's face it, there wasn't a lot else to notice from that cell.  The Librum was always the focus.  Until Constance.
+
+From here, the Great Hall is west and the Royal Quarters are northwest.  Or you could fly off again, either up or down[end if]."
 
 Up from Librum Landing Cradle is High Above.
 Down from Librum Landing Cradle is in_forest.
@@ -256,11 +293,17 @@ The Librum Door is a door in Librum Landing Cradle.  It is closed and locked.  I
 
 First Check opening a closed Librum Door:
 	if the lone guard is in the location:
-		say "The guard is entirely too watchful to let you do that." instead.
+		if the player is Constance:
+			say "The guard is entirely too watchful to let you do that." instead;
+		otherwise:
+			say "Right.  An old buzzard, facing off against a fresh-beaked Raven Guard, and an Ikniq, at that.  You'll leave opening the door to rezrov."
 
 First Check unlocking a locked Librum Door with:
 	if the lone guard is in the location:
-		say "The guard is entirely too watchful to let you do that." instead.
+		if the player is Constance:
+			say "The guard is entirely too watchful to let you do that." instead;
+		otherwise:
+			say "Right.  An old buzzard, facing off against a fresh-beaked Raven Guard, and an Ikniq, at that.  You'll leave opening the door to rezrov."
 
 Before going inside from Librum Landing Cradle:
 	try entering Librum Door instead;
@@ -271,40 +314,50 @@ Last Check going Librum Door during Being Chased:
 
 
 Check entering Librum Door:
-	if the lone guard is in the location:
-		if Horatio is in the location:
-			if Momentum is happening:
-				say "Using the extra speed from your dive, you quietly plunge through the Librum door behind the distracted guard, pulling up sharply on the other side before crashing into anything.";
-			otherwise if Super-Momentum is happening:
-				say "With everything sped up, including (presumably) the guard's reactions, you try to be as precise as you can, entering exactly behind her, straight for the far corner of the door.  You needn't have bothered.  Horatio is talking a mile a minute, and his annoyingness level must have quintupled, as every feather on the guard's back is sticking out at various odd angles.  You swoop in and land inside with ease.";
-			otherwise if the thickness of the grey mist is at least 10:
-				say "The thicker mist conceals your gliding approach from the distracted guard, as you carefully glide in, tuck your wings in at the last second, and land quietly inside.";
-			otherwise if Go go go is happening:
-				say "Horatio's distraction patter has doubled in speed, which in and of itself is something to behold, but the guard's irritation factor seems to have quintupled in annoyance in response, which is, quite frankly, hilarious: every feather on the guard's back is sticking out at various odd angles.  You watch until the guard starts making a quiet keeing sound with her eyes closed, and you glide in from above and behind her, unseen.";
+	if the player is Constance:
+		if the lone guard is in the location:
+			if Horatio is in the location:
+				if Momentum is happening:
+					say "Using the extra speed from your dive, you quietly plunge through the Librum door behind the distracted guard, pulling up sharply on the other side before crashing into anything.";
+				otherwise if Super-Momentum is happening:
+					say "With everything sped up, including (presumably) the guard's reactions, you try to be as precise as you can, entering exactly behind her, straight for the far corner of the door.  You needn't have bothered.  Horatio is talking a mile a minute, and his annoyingness level must have quintupled, as every feather on the guard's back is sticking out at various odd angles.  You swoop in and land inside with ease.";
+				otherwise if the thickness of the grey mist is at least 10:
+					say "The thicker mist conceals your gliding approach from the distracted guard, as you carefully glide in, tuck your wings in at the last second, and land quietly inside.";
+				otherwise if Go go go is happening:
+					say "Horatio's distraction patter has doubled in speed, which in and of itself is something to behold, but the guard's irritation factor seems to have quintupled in annoyance in response, which is, quite frankly, hilarious: every feather on the guard's back is sticking out at various odd angles.  You watch until the guard starts making a quiet keening sound with her eyes closed, and you glide in from above and behind her, unseen.";
+				otherwise:
+					say "Horatio is distracting the guard by discussing [one of]the ethics of a monarchy[or]his grandchildren[or]regrettable fashion choices from the youth of today[or]whether the dot on the back of looks infected[or]how to get to moncrepistan (is that a real place?) from here[or]whether her mother was the Isabella he once knew[or]some meandering story about flying to the park[cycling], but you can't just [i]glide in[r]." instead;
 			otherwise:
-				say "Horatio is distracting the guard by discussing [one of]the ethics of a monarchy[or]his grandchildren[or]regrettable fashion choices from the youth of today[or]whether the dot on the back of looks infected[or]how to get to moncrepistan (is that a real place?) from here[or]whether her mother was the Isabella he once knew[or]some meandering story about flying to the park[cycling], but you can't just [i]glide in[r]." instead;
-		otherwise:
-			say "The guard is entirely too watchful to let you do that." instead;
-	otherwise if the location is Librum Itself:
-		[*Leaving* the Librum.  We'll assume the guard and Horatio are still outside.  And, sigh, not make this a puzzle.]
-		say "Listening to Horatio talk with the guard, you enter the shadows just inside the Librum door, where you can watch the guard but not be seen.  When the moment is right, you launch yourself through, and back up into the safety of the mist.";
+				say "The guard is entirely too watchful to let you do that." instead;
+		otherwise if the location is Librum Itself:
+			[*Leaving* the Librum.  We'll assume the guard and Horatio are still outside.  And, sigh, not make this a puzzle.]
+			say "Listening to Horatio talk with the guard, you enter the shadows just inside the Librum door, where you can watch the guard but not be seen.  When the moment is right, you launch yourself through, and back up into the safety of the mist.";
+	otherwise:
+		[We're Horatio]
+		say "You spent so much time in the Librum those first few months, before the previous Queen imprisoned you.  You'd love to return, to see what's changed; to revisit some of your favorite books.  Maybe soon, again?  For now, there's a guard.  She won't let you in.  You're going to have to get Constance to do it.";
 
 Check closing the purple capsa of opening when the location is the Librum Itself:
 	say "The guard would close the door again, and you'd be trapped!
 	
 	[i]Are you one of my testers?  It feels like you're one of my testers.  If you're not, you should be one of my testers.  Give me a call.  -LS[r][lb]" instead.
 
-A lone guard is a woman in Librum Landing Cradle.  "A lone Raven guard stands in front of the door, dark eyes shifting as she watches the mist."  The description is "The raven guard wears the well-fitting uniform of the Queen's Guard, complete with a small red insignia on her shoulder.  The silvered knives on her talons are retracted while she stands, and golden razors line her beak[if the collection of tiny padlocks is in the Void].  Oddly, her uniform seems to be covered with... tiny closed padlocks?  That's not the insignia of any order you know[end if]."  Understand "raven/dark/eyes" as lone guard.
+A lone guard is a woman in Librum Landing Cradle.  "A lone Raven guard stands in front of the door, dark eyes shifting as she watches the mist."  The description is "[lone_guard_desc]."  Understand "raven/dark/eyes" as lone guard.
 
-The well-fitting uniform is worn by the lone guard.  The description is "Her uniform consists of loose straps, designed to fit precisely under flagfeathers and provide support while not hampering movement nor flight.  The insignia on her shoulder reads 'Ikniq' under an icon of a tongue of fire: the logo of the fire warriors."  Understand "loose/straps/under/support/insignia/shoulder/ikniq/icon/fire/warrior/warriors" as well-fitting uniform.
+To say lone_guard_desc:
+	if the player is Constance:
+		say "The raven guard wears the well-fitting uniform of the Queen's Guard, complete with a small red insignia on her shoulder.  The silvered knives on her talons are retracted while she stands, and golden razors line her beak[if the collection of tiny padlocks is in the Void].  Oddly, her uniform seems to be covered with... tiny closed padlocks?  That's not the insignia of any order you know[end if].";
+	otherwise:
+		say "You wouldn't be surprised if this lovely young dangerous woman was a fledgling when you arrived, lo these ages past.  Now she's doing a bang-up job of keeping you and Constance out of the Librum.  Fortunately, she looks polite, like she wouldn't arrest a kindly old buzzard for talking her ear off while a certain Falcon clan slips in to the Librum behind her[if the black capsa is not enclosed by the Librum itself].  You're kind of glad you won't have to exploit her like that, as Constance seems to have extricated the black capsa on her own already[end if].";
 
-Tiny closed padlocks are part of the well-fitting uniform.  The description is "Yes, those are definitely tiny padlocks, each attached to small leather loops stitched to her uniform.  You peer more intently.  The stitching where the loops attach is definitely newer than the stitching on the rest of the uniform.  They must have been added recently."  Understand "stitching/loops/attach" as the tiny closed padlocks.
+The well-fitting uniform is worn by the lone guard.  The description is "[if the player is Constance]Her uniform consists of loose straps, designed to fit precisely under flagfeathers and provide support while not hampering movement nor flight.  The insignia on her shoulder reads 'Ikniq' under an icon of a tongue of fire: the logo of the fire warriors[otherwise]You wonder if this young guard knows the Ikniq fire insignia on her shoulder was first used by Heron Clan warriors, two centuries ago[end if]."  Understand "loose/straps/under/support/insignia/shoulder/ikniq/icon/fire/warrior/warriors" as well-fitting uniform.
 
-A small collection of tiny padlocks are in the Void.  "In the cradle [if Being Chased is happening]where the guard was[otherwise]next to the guard[end if] is a small collection of tiny padlocks, each open."  The small collection of tiny padlocks are loose.  The description is "Several tiny padlocks, each one opened.  Cheap light metal that could easily be bent open, so you suppose their only purpose is to serve as notice that 'rezrov' was activated.";
+Tiny closed padlocks are part of the well-fitting uniform.  The description is "[if the player is Constance]Yes, those are definitely tiny padlocks, each attached to small leather loops stitched to her uniform.  You peer more intently.  The stitching where the loops attach is definitely newer than the stitching on the rest of the uniform.  They must have been added recently[otherwise]Those tiny padlocks must be a rezrov-detection system.  The queen must have had her top people working on it, knowing Constance would return[end if]."  Understand "stitching/loops/attach" as the tiny closed padlocks.
 
-Silvered knives are worn by the lone guard.  The description is "Silvered knives, retracted now, but extendable at will."  Understand "silver/retracted/retractable/extendable" as silvered knives.
+A small collection of tiny padlocks are in the Void.  "In the cradle [if Being Chased is happening]where the guard was[otherwise]next to the guard[end if] is a small collection of tiny padlocks, each open."  The small collection of tiny padlocks are loose.  The description is "[if the player is Constance]Several tiny padlocks, each one opened.  Cheap light metal that could easily be bent open, so you suppose their only purpose is to serve as notice that 'rezrov' was activated[otherwise]A collection of tiny, cheap 'padlocks', each designed to close and open and that's it--useless for actually holding anything together, but perfect for detecting the wave of magic from the rezrov scroll when its capsa opens.  You wonder if similar detection systems could be used to detect the waves of magic from other scrolls.  Maybe all magic flows outward at the same rate, but maybe not?  You don't think anyone's ever tried to measure it before[end if].";
 
-Golden razors are worn by the lone guard.  The description is "The golden razors increase the Queen's Guard fighting abilities, allowing them to slash with their beaks as well as sharpening their bite."
+Silvered knives are worn by the lone guard.  The description is "[if the player is Constance]Silvered knives, retracted now, but extendable at will[otherwise]The silvered knives the Ikniq warrior wears are basically the same design as they've been for a century.  And as effective as they've been for a century[end if]."  Understand "silver/retracted/retractable/extendable" as silvered knives.
+
+Golden razors are worn by the lone guard.  The description is "[if the player is Constance]The golden razors increase the Queen's Guard fighting abilities, allowing them to slash with their beaks as well as sharpening their bite[otherwise]The golden razors worn on the guard's beak look impressive, but they only work well with a particular fighting style.  You'd guess they'll only be in fashion for a few years, before people realize that if you have to fight in a highly-constrained way, it's much easier to learn how to defend yourself against it[end if]."
 
 After dropping the small collection of tiny padlocks:
 	if the location is the Librum Landing Cradle and the lone guard is in the location:
@@ -316,22 +369,40 @@ asking the lone guard about something is talking your way past.
 asking the lone guard for something is talking your way past.
 
 instead of talking your way past:
-	say "If you spoke at all, she would be on you in a heartbeat.";
+	if the player is Constance:
+		say "If you spoke at all, she would be on you in a heartbeat.";
+	otherwise:
+		say "You have plenty of stories to tell this young woman, but they aren't endless.  Better to wait until Constance is ready to take advantage of you distracting her, before she gets bored and starts watching the mist again.";
 
 Instead of attacking the lone guard:
-	say "Against those talons?  Not a good idea.";
+	if the player is Constance:
+		say "Against those talons?  Not a good idea.";
+	otherwise:
+		say "Even in your youth, you wouldn't have lasted long against a trained warrior.";
 
 Instead of kissing the lone guard:
-	say "You're not a huge fan of getting your beak slashed by razors.";
+	if the player is Constance:
+		say "You're not a huge fan of getting your beak slashed by razors.";
+	otherwise:
+		say "You do give off a grandfatherly aura, but the sharpness of her gaze tells you it wouldn't be nearly enough.";
 
 Instead of showing something to the lone guard:
-	say "If you showed yourself at all, she would be on you in a heartbeat.";
+	if the player is Constance:
+		say "If you showed yourself at all, she would be on you in a heartbeat.";
+	otherwise:
+		say "You'd rather hold off on your distraction arsenal until Constance is ready to take advantage of it.";
 
 Instead of giving something to the lone guard:
-	say "If you showed yourself at all, she would be on you in a heartbeat.";
+	if the player is Constance:
+		say "If you showed yourself at all, she would be on you in a heartbeat.";
+	otherwise:
+		say "You'd rather hold off on your distraction arsenal until Constance is ready to take advantage of it.";
 
 Instead of waking the lone guard:
-	say "She's... not asleep?  I suppose you could awaken her to the idea of your presence, though that seems decidedly unhelpful.";
+	if the player is Constance:
+		say "She's... not asleep?  I suppose you could awaken her to the idea of your presence, though that seems decidedly unhelpful.";
+	otherwise:
+		say "She's plenty alert already!"
 
 
 Librum Itself is a room.  The printed name is "Librum".  "The librum contains two levels of scrolls and books, with easy access to all of the curving shelves, and plenty of reading roosts with natural and artificial lighting.  You know from your childhood where the best roosts are, and what sections contain the most exciting stories.  In the center of the lower room is a lavish display case, now hastily boarded over, which three days ago held the purple, gold, and red capsae.  The [Librum door] is back up at the top level."
@@ -354,9 +425,11 @@ Instead of opening the display case:
 
 Section Royal Gardens
 
-Royal Gardens is a room. It is north of Great Hall Landing Cradle, and northwest of Librum Landing Cradle.  "The royal gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the [garden door] to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards. 
+Royal Gardens is a room. It is north of Great Hall Landing Cradle, and northwest of Librum Landing Cradle.  "[if the player is Constance]The Royal Gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in its only appropriate spot.  The landing cradle next to the [garden door] to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards. 
 
-From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.  The door to the very-guarded Royal Quarters is to the north."
+From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.  The door to the very-guarded Royal Quarters is to the north[otherwise]All the vegetation throughout the Royal Garden is much, much more vibrant than you remember it being a decade ago.  But things are subtly off-kilter:  a rose bush with too-large roses that has to be propped up with almost-hidden forked sticks.  A roost canted at an odd angle from its tree bending south.  Fireball bromeliads threatening to strangle their host hickory trees, despite signs of agressive pruning.  You felt taclor being moved to the Royal Quarters a little over a year ago, and it's been active ever sense.  The foliage is out of balance.
+
+The Great Hall is south of here; the Librum southeast.  Above, Constance circles in the fog, and the forest floor is beneath[end if]."
 
 Up from Royal Gardens is High Above.
 Down from Royal Gardens is in_forest.
@@ -368,29 +441,44 @@ Instead of going nowhere from Royal Gardens:
 	otherwise:
 		say "From here, you can fly south to the Great Hall, or southeast to the Librum. You can also fly up to the skies, or down to the forest."
 
-The royal landing cradle is scenery in Royal Gardens.  The description is "The cradle's aesthetics have suffered somewhat from having to be re-grown every time the royal insignia changes, but it's still tastefully lavish."  Understand "aesthetics/insignia/opulent" as the royal landing cradle.
+The royal landing cradle is scenery in Royal Gardens.  The description is "[if the player is Constance]The cradle's aesthetics have suffered somewhat from having to be re-grown every time the royal insignia changes, but it's still tastefully lavish[otherwise]The royal insignia on the cradle is an interesting amalgamation of of the traditional Red Wing crest, overlaid on elements of several other clan crests, conveying that the Red Wings are over but also supported and held up by a large diverse community of people[end if]."  Understand "aesthetics/insignia/opulent" as the royal landing cradle.
 
-The poplar trunks are scenery in Royal Gardens.  The description is "The poplars around the landing cradle contain five guards that you can see (since you know where to look), and almost certainly another five that you cannot (since you know where you can't look)."  Understand "arcs/shaded/inviting/roosts/guards/guard/eight/five/ten" as the poplar trunks.
+The poplar trunks are scenery in Royal Gardens.  The printed name is "[if the player is Constance]poplar trunks[otherwise]foliage[end if]".  The description is "[if the player is Constance]The poplars around the landing cradle contain five guards that you can see (since you know where to look), and almost certainly another five that you cannot (since you know where you can't look)[otherwise]The foliage is overgrowing and out of balance.  But it's undeniably vibrant[end if]."  Understand "arcs/shaded/inviting/roosts/guards/guard/eight/five/ten/rose/roost/tree/Fireball/bromeliads/bush/pruning" as the poplar trunks.
 
-The garden door is a door in Royal Gardens.  It is closed and locked.  It is inside from Royal Gardens and outside from Palace.  The description is "A canted [if open]open[otherwise]closed[end if] hatch to the Royal Quarters, nestled in the center of the garden.  Absolutely surrounded by guards."
+The garden door is a door in Royal Gardens.  It is closed and locked.  It is inside from Royal Gardens and outside from Palace.  The description is "[garden_door_desc]."
+
+To say garden_door_desc:
+	if the player is Constance:
+		say "A canted [if open]open[otherwise]closed[end if] hatch to the Royal Quarters, nestled in the center of the garden.  Absolutely surrounded by guards";
+	otherwise:
+		say "Beyond the canted hatch is taclor, tantalizingly closer than it's been in years.  But you'll need Constance's help.";
 
 First Check opening a closed Garden Door:
-	say "There are way too many guards for that to have any chance of working." instead;
+	if the player is Constance:
+		say "There are way too many guards for that to have any chance of working." instead;
+	otherwise:
+		say "Even if the guards were in the habit of admitting locked-up heretics into the Royal Quarters, what then?  The queen would still hold taclor.  You need Constance.";
 
 First Check unlocking a locked Garden Door with:
-	say "There are way too many guards for that to have any chance of working." instead;
+	if the player is Constance:
+		say "There are way too many guards for that to have any chance of working." instead;
+	otherwise:
+		say "Even if the guards were in the habit of admitting locked-up heretics into the Royal Quarters, what then?  The queen would still hold taclor.  You need Constance.";
 
 Before going inside from Royal Gardens:
 	try entering Garden Door instead;
 
 Last Check going Garden Door:
-	If Being Chased is happening:
-		say "You fly through the door, and immediately regret your decision.  Not only does the Raven Guard who were chasing you follow, but so do the guards that stayed behind to guard, well, this door.";
-		end the story saying "You have been captured.";
-	otherwise if Sneaking is not happening:
-		say "No way.  It wouldn't matter how fast you were or how thick the mist was.  You just can't get in there as you are without someone seeing you." instead;
-	otherwise if the hunting cloak is purple:
-		say "Not only would you be caught, but you'd be humiliated for your entire life for being caught walking, wearing an ancient purple cloak." instead;
+	if the player is Constance:
+		If Being Chased is happening:
+			say "You fly through the door, and immediately regret your decision.  Not only does the Raven Guard who were chasing you follow, but so do the guards that stayed behind to guard, well, this door.";
+			end the story saying "You have been captured.";
+		otherwise if Sneaking is not happening:
+			say "No way.  It wouldn't matter how fast you were or how thick the mist was.  You just can't get in there as you are without someone seeing you." instead;
+		otherwise if the hunting cloak is purple:
+			say "Not only would you be caught, but you'd be humiliated for your entire life for being caught walking, wearing an ancient purple cloak." instead;
+	otherwise:
+		say "You think you can make it in, but only with Constance, igram, and the cloaks.  Constance first.";
 
 After going Garden Door:
 	say "OK.  Walking.  Right.  You raise yourself up on the tips of your talons, feeling ridiculous, but not wanting to flatten the grass with your (shudder) footsteps and give yourself away.  You wait for one of the guards to pass, then carefully take cautious steps towards the door.  Nobody reacts.  Hardly daring to breathe, you proceed further, antsy and ready to take to the skies any second.  Which wouldn't work, because you have this damn cloak on.  Whatever.  Two more steps.  You reach the door.  You hop (shudder) across the lintel.
@@ -460,11 +548,11 @@ To say You and aubrey:
 
 Section Forest Below
 
-in_forest is a room.  It is below Great Hall Landing Cradle.  The printed name is "In the Forest".  "The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation."
+in_forest is a room.  It is below Great Hall Landing Cradle.  The printed name is "In the Forest".  "[if the player is Constance]The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation[otherwise]The tightly-growing trees and [horatio mist density] fog surround you tightly.  It would be oppressive, but for the echo of the Throckwright song you can just sense, flowing through the veins of these trees still.  That, and the fact that you've been confined to a single room for a decade, so any contrast is welcome[end if]."
 
-tree_varieties are scenery in in_forest.  The printed name is "trees".  The description is "Birch, pine, redwood, alder, ash, elm, poplar, and probably several other types as well."  Understand "Birch/pine/redwood/alder/ash/elm/poplar" as the tree_varieties.
+tree_varieties are scenery in in_forest.  The printed name is "trees".  The description is "[if the player is Constance]Birch, pine, redwood, alder, ash, elm, poplar, and probably several other types as well[otherwise]A wide variety of tree types grow up to the Aerie above, each lending its own strength, suppleness, and color to the Royal Aerie grown above[end if]."  Understand "Birch/pine/redwood/alder/ash/elm/poplar" as the tree_varieties.
 
-A fine net is here.  It is fixed in place.  "Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below."  The description is "A fine, strong net, stretched between and among the trees.  It wasn't here three days ago, which means they spent a lot of effort... to keep you on the Aerie-side of it.  You grin to yourself."
+A fine net is here.  It is fixed in place.  "[if the player is Constance]Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below[otherwise]The net that caught you stretches in every direction, preventing both entrance to and egress from the rest of the forest[end if]."  The description is "[if the player is Constance]A fine, strong net, stretched between and among the trees.  It wasn't here three days ago, which means they spent a lot of effort... to keep you on the Aerie-side of it.  You grin to yourself[otherwise]Even in your cell, you could hear the work being done to install this net.  For all the good it did them.[end if]."
 
 Check taking the net:
 	say "Besides being way too large to carry, the net is attached firmly to the trees and branches, not allowing anything larger than a feathers-length through it[if cell door is open].  Though not, you notice, with knots that could be undone by the scroll of Opening.  Everything is just... folded.  Very deliberately[end if]." instead.
@@ -475,36 +563,45 @@ East from in_forest is Librum Landing Cradle.
 
 Instead of going nowhere from in_forest:
 	if the noun is down:
-		say "The net prevents you from reaching the forest floor.  Fortunately, you're already where you want to be.";
+		say "The net prevents you from reaching the forest floor.  Fortunately, [if the player is Constance]you're already where you want to be[otherwise]your quarry is above the Aerie, not below it[end if].";
 	otherwise:
 		say "The net prevents you from reaching the forest floor from here, but you can go straight up to the Great Hall, east (and up) to the Librum, or north (and up) to the Royal Quarters and Gardens.";
 
 After going from in_forest:
-	say "You gracefully flit between the trees back up [if the noun is north]north [otherwise if the noun is east]east [end if]above the canopy.";
+	say "[going_from_forest].";
 	continue the action;
 
-After going to in_forest:
-	If Constance is super-fast:
-		say "Your wings tighten close to your body as you rocket through the mist, your keen eyesight only barely sufficient to keep you from crashing into branches and trees[first time].
-		
-		It is, without a doubt, the most thrilling dive of your entire life.
-		
-		At the last second, you flare your wings, and feel like they're about to rip off of your shoulders.  You skim over the netting, your curved talons juddering across the lines, making your whole body tremble until you pull up again to dodge more tree trunks.  You allow yourself a triumphant cry, safe in the knowledge that nobody could catch you at these speeds.  Nobody[only].";
-		continue the action;
+To say going_from_forest:
+	if the player is Constance:
+		say "You gracefully flit between the trees back up [if the noun is north]north [otherwise if the noun is east]east [end if]above the canopy";
 	otherwise:
-		if Constance is speeding:
-			now Constance is super-fast;
+		say "Forcing your tired wings to flap again, you rise above the forest floor, past the level of your cell, up [if the noun is north]north [otherwise if the noun is east]east [end if]above the canopy"
+
+After going to in_forest:
+	if the player is Constance:
+		If Constance is super-fast:
+			say "Your wings tighten close to your body as you rocket through the mist, your keen eyesight only barely sufficient to keep you from crashing into branches and trees[first time].
+			
+			It is, without a doubt, the most thrilling dive of your entire life.
+			
+			At the last second, you flare your wings, and feel like they're about to rip off of your shoulders.  You skim over the netting, your curved talons juddering across the lines, making your whole body tremble until you pull up again to dodge more tree trunks.  You allow yourself a triumphant cry, safe in the knowledge that nobody could catch you at these speeds.  Nobody[only].";
+			continue the action;
 		otherwise:
-			now Constance is speeding;
-			if go go go is happening:
+			if Constance is speeding:
 				now Constance is super-fast;
-				say "You dive into and through the forest, twisting expertly as you dodge trees and branches.  The fog closes behind you with a quiet 'shhhhmp', leaving no record of your passing.";
-			otherwise if the player encloses an open gold capsa:
-				say "You descend towards the forest floor, though it feels like you're flying upwards, against the pull of the scroll of down.";
-				now Constance is cruising;
 			otherwise:
-				say "You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.";
-		continue the action;
+				now Constance is speeding;
+				if go go go is happening:
+					now Constance is super-fast;
+					say "You dive into and through the forest, twisting expertly as you dodge trees and branches.  The fog closes behind you with a quiet 'shhhhmp', leaving no record of your passing.";
+				otherwise if the player encloses an open gold capsa:
+					say "You descend towards the forest floor, though it feels like you're flying upwards, against the pull of the scroll of down.";
+					now Constance is cruising;
+				otherwise:
+					say "You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.";
+			continue the action;
+	otherwise:
+		say "Wings splayed to their full extent, you coast in wide circles, back down to the forest floor.  Or, as close to the forest floor as the net allows.";
 
 Map ends here.
 

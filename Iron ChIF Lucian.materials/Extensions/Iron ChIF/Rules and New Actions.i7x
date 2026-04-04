@@ -211,12 +211,35 @@ Section Summoning mist
 A room can be cloudy or clear.  A room is usually cloudy.
 A room can be indoors or outdoors.  A room is usually outdoors.  Forgotten Brig is indoors.  Disused Hallway is indoors.  Librum Itself is indoors.  Upper Great Hall is indoors.  Lower Great Hall is indoors.  Palace is indoors.  Nursery_door is indoors.  Nursery_itself is indoors.
 
-The grey mist is a backdrop.  [It is not scenery.  "[describe the grey mist]."]  The description is "[if the location is outdoors]A [mist density] grey mist swirls and surrounds you, covering you like a blanket[otherwise]Even a Bostrat can't make it truly foggy inside[end if]."  Understand "cloud/clouds/gray/fog" as the grey mist.
+The grey mist is a backdrop.  [It is not scenery.  "[describe the grey mist]."]  The description is "[grey_mist_desc].".  Understand "cloud/clouds/gray/fog/thin/soft/rolling/heavy/thick/choking/impenetrable" as the grey mist.
+
+To say grey_mist_desc:
+	if the player is Constance:
+		if the location is outdoors:
+			say "A [mist density] grey mist swirls and surrounds you, covering you like a blanket";
+		otherwise:
+			say "Even a Bostrat can't make it truly foggy inside";
+	otherwise:
+		if the location is outdoors:
+			say "A [horatio mist density] grey mist swirls around you, turning the landscape into a collection of vague shapes[first time].  You suppose that as a Falcon Clan, Constance's sharp vision lets her see much better than you[only]";
+		otherwise:
+			say "Constance's summoned mist fortunately doesn't penetrate inside";
 
 When play begins:
     move the grey mist backdrop to all cloudy rooms.
 
 The grey mist has a number called thickness.  The thickness of the grey mist is 1.
+
+To say horatio mist density:
+	if the thickness of the grey mist is less than 6:
+		say "thick";
+	otherwise if the thickness of the grey mist is less than 11:
+		say "heavy";
+	otherwise if the thickness of the grey mist is less than 16:
+		say "choking";
+	otherwise:
+		say "impenetrable";
+
 
 To say mist density:
 	if the thickness of the grey mist is less than 6:
@@ -314,7 +337,7 @@ After looking during hanging out:
 				if Constance is cruising:
 					say "You circle through the [mist density] mist, observing but hidden from view.";
 			otherwise:
-				say "A [mist density] mist surrounds you, summoned by your quarry.";
+				say "A [horatio mist density] mist surrounds you, summoned by your quarry.";
 
 Section stuff that can fall
 

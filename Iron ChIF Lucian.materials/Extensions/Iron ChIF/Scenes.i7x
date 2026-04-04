@@ -32,11 +32,13 @@ Actually Recovering ends when Constance is not wounded.
 
 When Actually Recovering begins:
 	[Perhaps eventually check to see if the capsa of Health is open, but the premise of the game is that it's open the entire time; we'd have to let the player close it and then get wounded for this to not happen.]
+	[Never had to worry about this!  Grabbing the capsa of health triggers the end-game, so it's literally always open.]
 	now Constance is not wounded;
 	say "You feel your skin prickle where you were wounded, and look down.  To your amazement, your wound has closed and the bleeding stopped.  As you watch, even the line from the cut disappears, and the feathers around it fluff out again.
 	
 	It's the scroll of Health.  It [i]has[r] to be.  It's actually here!  And active.  Hmm."
 	[We'd need different text if the player gets wounded more than once, but right now, they can't even get wounded once, so let's just leave it for now.]
+	[Nor this!  Eventually added a thing that will knock Constance out if she was wounded, but there's always only ever two levels: fine or wounded]
 
 Sneaking is a recurring scene.  Sneaking begins when the player is wearing the hunting cloak.  Sneaking ends when the player is not wearing the hunting cloak.
 
@@ -49,9 +51,9 @@ Check going down during Sneaking:
 Ash_chat is a scene.  Ash_chat begins when the player is in the Nursery_itself for the first time.
 
 When Ash_chat begins:
-	say "Perched on the open window looking out over the forest is a fledgling Red Wing Clan.  As you enter, they turn and their face and feathers light up with delight.  'Aunty Constance!' they chirrup, and dash across the room to bury their face in your downfeathers.
+	say "Perched on the open window looking out over the forest is a fledgling Red Wing Clan.  As you enter, they turn and their face and feathers perk up with delight.  'Aunty Constance!' they chirrup, and dash across the room to bury their face in your downfeathers.
 	
-	You stroke the feathers on their head gently.  The feathers crackle worryingly.  'Hi, Ash,' you say.  It's good to see you, too.'
+	You stroke the feathers on their head gently.  The feathers crackle worryingly.  'Hi, Ash,' you say.  'It's good to see you, too.'
 	
 	Their face sufficiently smothered, Ash pops out again excitedly.  'It's been so long!  Did you know there's a whole new wing of the southwest aerie?  Momma took me there just the other day, and...'"
 
@@ -114,7 +116,7 @@ When Finale begins:
 
 F1 is a page.  The description is "[one of]You hold the capsa of health in your hands, turning it over and looking at it from all sides.  It's what you came here for.  To take it back home and save your mother.  Your people.  Is it still that simple?
 
-'You are now the holder of the scroll of taclor' says Horatio, as Ash continues to tell you about what it was like to see a real jaguar that one time.  'Will you have me read it?'[or]Horatio looks at you expectantly.[stopping]"
+'You are now the holder of the scroll of taclor' says Horatio, as Ash continues to tell you about what it was like to see a real jaguar this one time.  'Will you have me read it?'[or]Horatio looks at you expectantly.[stopping]"
 
 F2a is a dead-end.  It is for F1.  It is one-off.
 The cdesc is "'Ash was holding it before.  Why can't they make the decision?'"

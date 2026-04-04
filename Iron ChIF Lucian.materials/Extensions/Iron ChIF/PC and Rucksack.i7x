@@ -343,7 +343,7 @@ When Everything Falls ends:
 			say "The wooden bar is ripped from your talons and falls!";
 			try dropping the wooden bar;
 
-Check taking when the player is Horatio:
+Last Check taking when the player is Horatio:
 	say "You don't need anything.  You just need to find the prodigal." instead;
 
 
