@@ -242,7 +242,9 @@ A page-toggle rule for F5A:
 
 F5B is a page.  It is for F5.
 The cdesc is "Stay to talk with the queen.".
-The description is "You watch Contance go, and steel yourself.  Sure enough, the queen bursts into the room scant minutes later.  When she sees you and not Ash nor the capsa of health, she screams and flies at you, knocking you to the floor, talon on your neck.  'Where are they?' she shrieks.
+The description is "'I will stay,' you tell her.  Contance holds your gaze for a moment, then nods and launches herself into the mist.
+
+You steel yourself.  Sure enough, the queen bursts into the room scant minutes later.  When she sees you and not Ash nor the capsa of health, she screams and flies at you, knocking you to the floor, talon on your neck.  'Where are they?' she shrieks.
 
 Crap.";
 
@@ -258,13 +260,8 @@ The description is "There's nothing you can say that will divert this force of n
 
 Which doesn't come.  The pressure from the talons relents, there's commotion and rattling and the Pounding of woodpeckers, and by the time you open your eyes, the room is filling with guards and the queen is staring out the window at the thinning fog."
 
-[When play begins:
-	say "[war_party_desc][course_correction]";
-	say "Now we switch to cyoa.";
-	switch to cyoa at F5B3;
-]
 
-F5B3 is a page.  It is for F5B and F5B1.
+F5B3 is a page.  It is for F5B and F5B1.  It flips to F5B4.
 The cdesc is "Offer to lead her to them."
 The description is "'I can sense... capsae' you wheeze.  'Lead you... taclor'
 
@@ -272,8 +269,10 @@ The queen lets you up, and you gasp.  She stabs a button, and woodpeckers somewh
 
 'Gather arms,' she tells them.  'We strike the Falcon clan tonight.'
 
-[bstars]
-All too soon, you're flying at the front of a well armed war party.  Constance's mist has long since evaporated, and a full moon and a thousand stars light your way over the forest.  For far too long, the capsa of health stays in one place, and your guidance is hardly needed--they knew where the Falcons nested.  And then--thank the gods--the capsa moves again.  You breathe a quiet prayer to Stohleblanc, and bank to the south.
+[bstars]";
+
+F5B4 is a page.
+The description is "All too soon, you're flying at the front of a well armed war party.  Constance's mist has long since evaporated, and a full moon and a thousand stars light your way over the forest.  For far too long, the capsa of health stays in one place, and your guidance is hardly needed--they knew where the Falcons nested.  And then--thank the gods--the capsa moves again.  You breathe a quiet prayer to Stohleblanc, and bank to the south.
 
 'What?' the queen demands, suspicious.
 
@@ -286,17 +285,18 @@ You shrug.  'I cannot say who left and who didn't.  I only know the capsa of hea
 Eventually, the dispatched guards join you again, reporting that the Falcon nests were indeed abandoned.  You continue your trek south, and feel the capsa gradually getting further and further away to the north.   You'll never get to read it.  But maybe it can do some good.";
 
 
-
-[A page-toggle rule for F5B3:
+A page-toggle rule for F5B4:
 	move world_change to the Trophy Room;
 	write out achievements;
-	end the story finally saying "Taclor is no longer hoarded.";]
+	end the story finally saying "Taclor is no longer hoarded.";
 
 F5C is a page.  It is for F5.
 The cdesc is "Stay, but wear the cloak of invisibility.".
-The description is "You disappear under the cloak, as you watch Contance gather herself on the window ledge, accompanied by excited noises from Ash, then disappear with him into the mist.
+The description is "'I will stay,' you tell her, 'but I doubt she will listen right away.  I will wait for the right moment.'  
 
-Less than a minute later, the queen rushes in to the room.  'Ash!' she cries.  'Ash!'  Then her eyes fall on the empty desk where taclor sat, and a high, thin warbling cry escapes her throat.  Her legs buckle, and she collapses to the floor, her keening only broken when she plucks at her feathers in distress.
+Contance nods.  'Thank you,' she says.  'For everything.'  Then she turns and launches herself into the mist.
+
+You disappear under the cloak, and turn to the door.  But before you can leave the room to find a quiet spot in the castle to hide, the queen rushes in to the room.  'Ash!' she cries.  'Ash!'  Then her eyes fall on the empty desk where taclor sat, and a high, thin warbling cry escapes her throat.  Her legs buckle, and she collapses to the floor, her keening only broken when she plucks at her feathers in distress.
 
 You can't stay here and watch without her knowing you're here.  You had hoped to wait a few days, for the shock to pass.  But you simply can't.  You pull back the hood, and let the cloak fall behind you.  She doesn't see you.  She isn't seeing anything.
 
