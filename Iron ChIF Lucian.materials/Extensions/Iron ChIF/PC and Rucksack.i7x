@@ -5,7 +5,13 @@ Book Cast
 
 Section Constance
 
-Constance is a woman in High Above.  "Constance, a powerful Falcon Clan female, is here, her large black eyes watching you with fierce intensity."  The description of Constance is "As a member of the Falcon Clan, [your] most striking features are [your] large black eyes, offset with yellow, and slightly recessed under a grey-feathered scalp.  The grey blends from [your] head, mottling along [your] back and the backside of [your] wings, while [your] front, throat, and underwings are feathered white with brown striations[if the player is Constance].  A close encounter with a Raven during [your] previous mission left a few missing contour feathers and some down, but not enough to hinder movement or flight[end if]."  Understand "constance/powerful/falcon/clan/large/black/eyes/yellow/scalp/mottling/wings/throat/underwings/brown/striations/talons" as Constance.
+Constance is a woman in High Above.  "Constance, a powerful Falcon Clan female, is here, her large black eyes watching you with fierce intensity."  The description of Constance is "[Constance_desc]."  Understand "constance/powerful/falcon/clan/large/black/eyes/yellow/scalp/mottling/wings/throat/underwings/brown/striations/talons" as Constance.
+
+To say Constance_desc:
+	if the cloak is worn and the black capsa is open:
+		say "Right now, you don't look like anything: you're completely invisible in this ridiculous cloak.  It covers your wings, though, and you can't fly at all.";
+	otherwise:
+		say "As a member of the Falcon Clan, [your] most striking features are [your] large black eyes, offset with yellow, and slightly recessed under a grey-feathered scalp.  The grey blends from [your] head, mottling along [your] back and the backside of [your] wings, while [your] front, throat, and underwings are feathered white with brown striations[if the player is Constance].  A close encounter with a Raven during [your] previous mission left a few missing contour feathers and some down, but not enough to hinder movement or flight[end if]";
 
 To say your:
 	if the player is Constance:
@@ -210,7 +216,7 @@ After dropping the gold capsa during Everything Falls:
 			now hall_open is helped;
 		say "You put on a burst of speed to temporarily disappear from view in the mist, then toss the gold capsa one direction and fly off the opposite direction (easy enough to tell:  it's 'straight up') while it drifts into the mist.  It works:  you feel 'down' shift direction as the Raven Guard plow into it, and in the confusion, you disappear further into the fog.
 		
-		They take it with them all over the aerie as they search for you, maybe hoping you'll fall into them, but you've practiced enough back in the village to know how to adjust your flight to stay aloft.  [if the great hall doors are barred]You hear some commotion as they search for you near the Great Hall.  You can't make out the words, but it has the cadence of an argument about who's to blame for something.  [end if]Finally, gravity rights itself again--they've given up!  They have the gold capsa, but they've given up chasing you.";
+		They take it with them all over the Aerie as they search for you, maybe hoping you'll fall into them, but you've practiced enough back in the village to know how to adjust your flight to stay aloft.  [if the great hall doors are barred]You hear some commotion as they search for you near the Great Hall.  You can't make out the words, but it has the cadence of an argument about who's to blame for something.  [end if]Finally, gravity rights itself again--they've given up!  They have the gold capsa, but they've given up chasing you.";
 		now the great hall doors are not barred;
 		if the purple capsa is open:
 			now the great hall doors are open;
@@ -362,6 +368,8 @@ The red capsa of hasten is a capsa in the rucksack.  The description is "The red
 A scroll of quiste is a scroll in the red capsa.  The name is "QUISTE".  Understand "haste/hasten" as the scroll of quiste.
 
 [quiste: quick + haste]
+
+Does the player mean examining the red capsa: it is likely.
 
 Go go go is a recurring scene.  Go go go begins when the red capsa is open.  Go go go ends when the red capsa is closed.
 

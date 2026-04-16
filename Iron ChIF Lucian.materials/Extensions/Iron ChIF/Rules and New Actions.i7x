@@ -71,7 +71,7 @@ Section about
 Abouting is an action out of world applying to nothing.  Understand "about" as abouting.
 
 Carry out abouting:
-	say "Thank you for playing 'course correction'!  A quick word about design philosophy.  The game has many obviously-bad endings, but by design they are all avoidable with a single >UNDO.  So, if anything happens that naturally takes more than one turn, it's probably something you'll have to deal with at some point.  There may be bugs that circumvent that design!  So keep multi-undo and/or save files at the ready.  There is also some choice-based branching in the game, containing some alternate endings that similarly can be explored with single >UNDO.
+	say "Thank you for playing 'course correction'!  A quick word about design philosophy.  The game has many obviously-bad endings, but by design they are all avoidable with a single >UNDO.  So, if anything happens that naturally takes more than one turn, it's probably something you'll have to deal with at some point.  There may be bugs that circumvent that design!  So keep multi-undo and/or save files at the ready.  There is also some choice-based branching in the game.  At the end of the game, a single >UNDO will no longer be sufficient to reach every ending.  If you're the kind of player that prefers to stick with the first ending you find, hopefully you'll find yours satisfying!  If you like exploring, multi-undo and save files are your friend.
 
 	In honor of the many ways to solve a couple of the main puzzles of the game, 'course correction' has achievements!  You can list the ones you've gotten with >ACHIEVEMENTS, or list all possible achievements with >ACHIEVEMENTS FULL.  By default, you won't be notified when you get an achievement, but if you want to know, you can turn on (or off) notifications with >ACHIEVEMENTS ON/OFF.  Achievements persist across play sessions, but if you wish to start over from scratch, >ACHIEVEMENTS RESET will remove them all again.
 	
@@ -409,10 +409,11 @@ Carry out unlocking keylessly:
 	say "You've never had the keys for anything around here."
 
 First Check opening an open door:
-	say "You opened this door with the scroll of opening already." instead;
+	say "The door is already open." instead;
 
 First Check unlocking an unlocked door with:
 	say "As far as you know, the door is already unlocked." instead;
 
+Does the player mean taking something enclosed by the player: it is unlikely.
 
 Rules and New Actions ends here.
