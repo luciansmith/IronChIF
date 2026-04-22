@@ -58,6 +58,7 @@ After going from High Above:
 	if Starting Off is happening:
 		say "You descend in wide circles, pulling mist down with you in what you hope is a sufficiently unsuspicious manner, trusting your memorization of the air currents to tell you where you're going...";
 	otherwise if the player encloses an open gold capsa:
+		now Constance is cruising;
 		say "You descend towards the Aerie, though it feels like you're flying upwards, against the pull of the scroll of down.";
 	otherwise if go go go is happening:
 		now Constance is super-fast;
@@ -171,7 +172,7 @@ Instead of going nowhere from upper great hall:
 	otherwise if the noun is east:
 		Try entering the Great Hall doors;
 	otherwise:
-		say "From here you can go down, or back out to the west.";
+		say "From here you can go down, or back out to the east.";
 
 
 Down from Upper Great Hall is Lower Great Hall.
@@ -579,7 +580,11 @@ To say going_from_forest:
 
 After going to in_forest:
 	if the player is Constance:
-		If Constance is super-fast:
+		If Everything Falls is happening:
+			say "You descend towards the forest floor, though it feels like you're flying upwards, against the pull of the scroll of down.";
+			now Constance is cruising;
+			continue the action;
+		Otherwise If Constance is super-fast:
 			say "Your wings tighten close to your body as you rocket through the mist, your keen eyesight only barely sufficient to keep you from crashing into branches and trees[first time].
 			
 			It is, without a doubt, the most thrilling dive of your entire life.
@@ -594,9 +599,6 @@ After going to in_forest:
 				if go go go is happening:
 					now Constance is super-fast;
 					say "You dive into and through the forest, twisting expertly as you dodge trees and branches.  The fog closes behind you with a quiet 'shhhhmp', leaving no record of your passing.";
-				otherwise if the player encloses an open gold capsa:
-					say "You descend towards the forest floor, though it feels like you're flying upwards, against the pull of the scroll of down.";
-					now Constance is cruising;
 				otherwise:
 					say "You tuck in your wings and dive down into the forest below the Aerie, dodging tightly-spaced trees with acrobatic precision.";
 			continue the action;
