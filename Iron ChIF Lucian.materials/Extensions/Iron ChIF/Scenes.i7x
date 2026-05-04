@@ -31,7 +31,7 @@ Actually Recovering begins when Constance is wounded and the capsa of opening is
 Actually Recovering ends when Constance is not wounded.
 
 When Actually Recovering begins:
-	[Perhaps eventually check to see if the capsa of Health is open, but the premise of the game is that it's open the entire time; we'd have to let the player close it and then get wounded for this to not happen.]
+	[Perhaps eventually check to see if the capsa of health is open, but the premise of the game is that it's open the entire time; we'd have to let the player close it and then get wounded for this to not happen.]
 	[Never had to worry about this!  Grabbing the capsa of health triggers the end-game, so it's literally always open.]
 	now Constance is not wounded;
 	say "You feel your skin prickle where you were wounded, and look down.  To your amazement, your wound has closed and the bleeding stopped.  As you watch, even the line from the cut disappears, and the feathers around it fluff out again.
@@ -67,6 +67,7 @@ answering the Ash that something is chit-chat.
 telling the Ash about something is chit-chat.
 asking the Ash about something is chit-chat.
 asking the Ash for something is chit-chat.
+chatting the Ash is chit-chat.
 
 instead of chit-chat:
 	say "There's no way you're getting a word in edgewise in this chatterfall.";
@@ -267,7 +268,7 @@ The description is "'I can sense... capsae' you wheeze.  'Lead you... taclor'
 
 The queen lets you up, and you gasp.  She stabs a button, and woodpeckers somewhere in the complex pound out a message.  In seconds, guards fill the room.
 
-'Gather arms,' she tells them.  'We strike the Falcon clan tonight.'
+'Gather arms,' she tells them.  'We strike the Falcon Clan tonight.'
 
 [bstars]";
 
@@ -313,7 +314,7 @@ F5C1 is a page.  It is for F5C.  It flips to F5_cellEnd.
 The cdesc is "'Indeed.'"
 The description is "Aubrey glares intently at you, then releases your chest to stab at a hidden button with a talon.  Distant woodpeckers rattle some sort of call in their Pounding dialect, which you never learned, but can guess what it must mean.  'Please--' you start, but Aubrey cuts you off.  In seconds, the room fills up with guards."
 
-F5_cellEnd is a page.  The description is "'Take this one back to his cell,' she tells them.  'Then gather arms.  We hit the Falcon clan tonight.'
+F5_cellEnd is a page.  The description is "'Take this one back to his cell,' she tells them.  'Then gather arms.  We hit the Falcon Clan tonight.'
 
 [bstars]
 It's hard to gather any information from your cell, but the fact that you continue to feel taclor moving in the distance tells you what you most wanted to know.  It never returns to the Aerie.  And you never hear the name 'Ash' again."

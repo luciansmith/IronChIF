@@ -20,12 +20,13 @@ Woodpeckers are people in the Void.  The description is "I dunno if you'll ever 
 Woodpeckers can be activated. Woodpeckers are not activated.
 Woodpeckers have a number called reset state. The reset state of the Woodpeckers is 5.
 
-The Raven Guard are people in the Void.  "Several members of the Raven Guard fly at you, as you dodge and circle to avoid them."  The description is "Black as night, apart from the silvered knives they wear on their talons, and the golden razors that line their beaks[if the librum landing cradle is visited].  It looks like the lone guard from the Librum has joined them: the [end if]."  Understand "guards/black/silvered/knives/talons/golden/razors/beaks/ravens/squad" as the raven guard.
+The Raven Guard are people in the Void.  "Several members of the Raven Guard fly at you, as you dodge and circle to avoid them."  The description is "Black as night, apart from the silvered knives they wear on their talons, and the golden razors that line their beaks[if the Librum landing cradle is visited].  It looks like the lone guard from the Librum has joined them, too[end if]."  Understand "guards/black/silvered/knives/talons/golden/razors/beaks/ravens/squad/lone" as the raven guard.
 
 answering the raven guard that something is talking your way out.
 telling the raven guard about something is talking your way out.
 asking the raven guard about something is talking your way out.
 asking the raven guard for something is talking your way out.
+chatting the raven guard is talking your way out.
 
 instead of talking your way out:
 	say "The Raven Guard will be happy to 'discuss things' with you after you are safely captured.";
@@ -54,7 +55,7 @@ When being chased begins:
 	Now the starting_line of Being Chased is the location;
 	Move the lone guard to the Void;
 	Now the sense_of_duty of the lone guard is 0;
-	say "From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  [if Everything Falls is happening and Everything Falls is not grounded]'Intruder!  The enemy is DOWN. Repeat!  The enemy is DOWN.'  You realize that creating a gravity well pointing straight at you might not have been the wisest move[otherwise]'Intruder! Estimated direction is...' and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, as the frequencies are all different from each other.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies.
+	say "From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  [if Everything Falls is happening and Everything Falls is not grounded]'Intruder!  The enemy is DOWN. Repeat!  The enemy is DOWN.'  You realize that creating a gravity well pointing straight at you makes you an easy target to find[otherwise]'Intruder! Estimated direction is...' and then each one individually seems to be telegraphing the direction from them to you.  You can't discern any one drummer from any other drummer, but you can at least tell that each seems to be drumming on sheets of metal that differ from each other, so every frequency is unique.  That makes the information somewhat useless to you, because you've not been trained to distinguish Pounding at different frequencies.  And because you already know where you are.  Sadly, the Raven Guards are indeed trained to distinguish Pounding frequencies.
 	
 	And if they didn't know where you were, they do now[end if].";
 
@@ -100,7 +101,7 @@ Every turn during Being Chased:
 					say "Your ascent brings you right into a squad of Raven Guards, on their way to accost you.  You see them only barely before they see you, and it's just enough to mostly avoid them.  Still, a slash from a Raven Guard beak catches you in the side as you twist past.";
 					Now Constance is wounded;
 				Otherwise:
-					say "You've barely left [the starting_line of Being Chased] when a squad of Raven Guards wheels in from behind, hot on your tail!";
+					say "You've barely left the [the starting_line of Being Chased] when a squad of Raven Guards wheels in from behind, hot on your tail!";
 			Otherwise:
 				say "A squad of Raven Guards appears, and their war cries exalt as they spot you.  You weave through the air, tumbling and twisting as you try to avoid them.";
 			Now the starting_line of Being Chased is the location;

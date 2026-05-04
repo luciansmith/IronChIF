@@ -27,9 +27,28 @@ The player is Constance.
 
 Constance can be wounded.  Constance is not wounded.
 
+The wound is in the Void.  The description is "[if the player is Constance]Your wound isn't incredibly serious, but you don't want to get hit again[otherwise]Constance seems to be lightly wounded, but it's not affecting her movement or agility in the slightest[end if]."  Understand "cut/bleeding/blood/flow/flowing/ache/bleed/lightly/light/" as the wound.  Understand "open wound" as the wound.
+
+Instead of doing anything with the wound:
+	if the current action is closing:
+		say "Unfortunately, you didn't bring a first-aid kit with you.";
+	otherwise if the current action is examining:
+		continue the action;
+	otherwise:
+		say "Messing with the wound is not going to help.  It'll heal on its own eventually.  You hope.";
+
+Slice is a recurring scene.  Slice begins when Constance is wounded.  Slice ends when Constance is not wounded.
+
+When Slice begins:
+	move the wound to Constance;
+	now the wound is part of Constance;
+
+When Slice ends:
+	move the wound to the Void;
+
 [The carrying capacity of Constance is 1.][Not sure about this--it would be strong motivation to turn off rezrov, though!]
 
-A leather rucksack is a player's holdall worn by the Constance.  Understand "sack" as leather rucksack.  The leather rucksack is loose.
+A leather rucksack is a player's holdall worn by the Constance.  Understand "sack/backpack/pack/bag" as leather rucksack.  The leather rucksack is loose.
 
 Section capsae and scrolls
 
@@ -40,10 +59,10 @@ Does the player mean taking a capsa:
 
 Check taking something:
 	if the noun is inside a capsa:
-		say "Like all of the Ancient Scrolls, the scroll is inextricably tied to its capsa, and you can't extricate it." instead.
+		say "Like all of the Ancient Scrolls, the scroll is inextricably tied to its capsa." instead.
 
 Check removing something from a capsa:
-    say "Like all of the Ancient Scrolls, the scroll is inextricably tied to its capsa, and you can't extricate it." instead;
+    say "Like all of the Ancient Scrolls, the scroll is inextricably tied to its capsa." instead;
 
 A scroll is a kind of a thing.  A scroll has a text called name.  The name of a scroll is usually "FOO".
 
@@ -60,6 +79,10 @@ Section rezrov
 A purple capsa of opening is a capsa in the rucksack.  The description is "The purple capsa turned out to contain a scroll of opening[first time], as became evident when every buckle and lock in your village flew open when you opened the capsa to investigate[only].  It is [if the purple capsa of opening is closed]closed, preventing the power of the scroll from affecting the area[otherwise]open, allowing the scroll's power to open and hold open any closed object in the area[end if]."  Understand "rezrov" as the purple capsa of opening.
 
 A scroll of rezrov is a scroll in the purple capsa of opening.  The name is "REZROV".  Understand "opening" as the scroll of rezrov.
+
+Last check opening the purple capsa for the first time:
+	say "You take a deep breath.  If you're going to get past any of the doors here, this is the only way.";
+	continue the action;
 
 Everything Opens is a recurring scene.  Everything Opens begins when the purple capsa of opening is open.  Everything Opens ends when the purple capsa of opening is closed.
 
@@ -190,7 +213,10 @@ To decide whether cannot-close:
     decide no.
 
 Check taking during Being Chased:
-	if the noun is not following and go go go is not happening and the noun is not enclosed by the player:
+	if the noun is the rucksack:
+		say "You snag the straps of your rucksack as you swoop by.";
+		continue the action;
+	otherwise if the noun is not following and go go go is not happening and the noun is not enclosed by the player:
 		say "You don't have time to grab things!" instead;
 
 Check taking the small collection of tiny padlocks:
@@ -198,7 +224,7 @@ Check taking the small collection of tiny padlocks:
 		if sneaking is happening and the hunting cloak is invisible:
 			say "Even when you're invisible, if you take something right from under the guard's beak, she's going to notice.  And when you're (shudder) walking, you wouldn't be able to get away." instead;
 		otherwise:
-			say "You are pretty sneaky, but not sneaky enough to snag a pile of padlocks from undernath the lone guard's beak." instead;
+			say "You are pretty sneaky, but not sneaky enough to snag a pile of padlocks from underneath the lone guard's beak." instead;
 		
 
 
@@ -320,7 +346,7 @@ Every turn during Everything Falls:
 			now the wooden bar is following;
 			now the closeness of Being Chased is 2;
 			say "Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  You turn and weave, managing to keep it from hitting you.  The Raven Guard fall back as the spinning bar careens through the air!";
-	if location is Librum Landing Cradle and the gold capsa is enclosed by the player and the black capsa is enclosed by the Librum itself and the librum door is open and black_escape is 4:
+	if location is Librum Landing Cradle and the gold capsa is enclosed by the player and the black capsa is enclosed by the Librum itself and the Librum door is open and black_escape is 4:
 		say "A black capsa flies through the doors of the Librum, up towards you!";
 		move the black capsa to the location;
 		now the black capsa is following;
@@ -333,7 +359,9 @@ When Everything Falls ends:
 	Now Everything Falls is offline;
 	Now is_now_up is the Void;
 	if the woodpeckers are activated:
-		say "You twist and right yourself as 'down' returns to its normal state[if the closeness of Being Chased is at least 2].  The Raven Guards struggle to right themselves again, but recover and continue their pursuit[end if].";
+		say "You twist and right yourself as 'down' returns to its normal state[if the closeness of Being Chased is at least 2].  The Raven Guards struggle to right themselves again, and take a moment to recover[end if].";
+		if the closeness of Being Chased is greater than 2:
+			now the closeness of Being Chased is 2;
 	otherwise:
 		say "You steady yourself as 'down' returns to its normal state.";
 	repeat with X running through loose things:

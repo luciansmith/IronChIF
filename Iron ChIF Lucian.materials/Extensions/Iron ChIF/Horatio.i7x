@@ -11,7 +11,7 @@ cell_contents is scenery in Forgotten Brig.  The printed name is "cell contents"
 
 Does the player mean examining cell_contents: it is likely;
 
-Horatio is a man in Forgotten Brig.  "[Horatio room desc]."  The description is "[Horatio_desc]."
+Horatio is a man in Forgotten Brig.  "[Horatio room desc]."  The description is "[Horatio_desc]."  Understand "buzzard/bald/head/talons/hunched/shoulders/mottled/black/brown/feathers/wing/wings/neck/sage" as horatio.  Understand "red head" as horatio.  Understand "red talons" as horatio.
 
 To say Horatio room desc:
 	If the location is the Librum Landing Cradle:
@@ -126,13 +126,13 @@ Before going from Librum Landing Cradle during Everything Falls:
 	otherwise if black_escape is 3:
 		if the noun is entry black_escape of librum_directions:
 			say "You loop under a tree branch and head [noun], but before you get very far, ";
-			if the librum door is open:
-				say "a black capsa flies out through the librum doors, following you!";
+			if the Librum door is open:
+				say "a black capsa flies out through the Librum doors, following you!";
 				move the black capsa to the location;
 				now the black capsa is following;
 				now the most_recent of the Trophy Room is no_reading;
 			otherwise:
-				say "you hear something whap against the librum door behind you.  Something almost escaped from in there.";
+				say "you hear something whap against the Librum door behind you.  Something almost escaped from in there.";
 			now black_escape is 4;
 
 no_reading is an achievement in the Void. The printed name is "If Constance Will Not Come To The Capsa...".  The description is "Get the black capsa out of the Librum without actually entering the Librum[if not helped] (and without Horatio's help)[end if].".  no_reading can be helped. no_reading is helped.
@@ -341,7 +341,7 @@ Horatio flinches.  That's right, he knew you when you and the now-Queen were... 
 
 'I'll take it around the world!' you declare.  'I'll take it to every village in this kingdom; wherever the need is greatest.  I'll take it to other kingdoms!'
 
-Horatio nods.  'When you are the holder, you may do as you wish,' he says, simply.  'But first, you must become the holder.  And for that, you will need igram.  [if the black capsa is enclosed by the player]Which you have.  So we'll need something from the Great Hall[otherwise]It's in the librum[end if]."
+Horatio nods.  'When you are the holder, you may do as you wish,' he says, simply.  'But first, you must become the holder.  And for that, you will need igram.  [if the black capsa is enclosed by the player]Which you have.  So we'll need something from the Great Hall[otherwise]It's in the Librum[end if]."
 
 C5b is a page.  It is for C4b.
 The cdesc is "You need more details."
@@ -413,7 +413,7 @@ When Horatio tries to make zgi less ridiculous begins:
 		say "With a solemn nod to you, Horatio tells you to meet him in the Great Hall with the black capsa, then turns and glides away.";
 		move Horatio to Lower Great Hall;
 
-Horatio can be stage one or stage two or stage three.  Horatio is stage one.
+Horatio can be stage one or stage two or stage three or stage four.  Horatio is stage one.
 
 Every turn during Horatio tries to make zgi less ridiculous:
 	If Horatio is stage one and the location is not Librum Landing Cradle and Horatio is not in the Lower Great Hall:
@@ -422,14 +422,27 @@ Every turn during Horatio tries to make zgi less ridiculous:
 				say "Where is Horatio?  Didn't he say to get the capsa of igram, and then you'd both go in the Royal Quarters?";
 		otherwise:
 			say "Horatio glides out of the mist and circles near you.  He nods at the black capsa.  'Excellent work.  Now, we need something from the Great Hall.'[lb]";
-			Move Horatio to the Lower Great Hall;
-			Now Horatio is stage two;
-			if the location is the Great Hall Landing Cradle:
-				say "Horatio glides through the open double doors of the Great Hall.";
+			if the Great Hall doors are closed:
+				Move Horatio to the Great Hall Landing Cradle;
+				Now Horatio is stage two;
+				if the location is not the Great Hall Landing Cradle:
+					say "Horatio glides away, heading towards the Great Hall.";
+				otherwise:
+					say "Horatio looks at the double doors.  'After you get them open, of course,' he amends.";
 			otherwise:
-				say "Horatio glides away, heading towards the Great Hall.";
-	Otherwise if Horatio is stage two and the location is Lower Great Hall:
-		now Horatio is stage three;
+				Move Horatio to the Lower Great Hall;
+				Now Horatio is stage three;
+				if the location is the Great Hall Landing Cradle:
+					say "Horatio glides through the open double doors of the Great Hall.";
+				otherwise:
+					say "Horatio glides away, heading towards the Great Hall.";
+	Otherwise if Horatio is stage two and the Great Hall doors are open:
+		Now Horatio is stage three;
+		Move Horatio to the Lower Great Hall;
+		If the location is the Great Hall Landing Cradle:
+			say "With a nod to you, Horatio heads inside the Great Hall.";
+	Otherwise if Horatio is stage three and the location is Lower Great Hall:
+		now Horatio is stage four;
 		say "You circle down and land near Horatio.  'So.  [i]Now[r] will you tell me what igram does and why it's so important?' you ask.
 		
 		'It is better to show you,' he replies.  'Try it.'
@@ -458,5 +471,35 @@ When Horatio tries to make zgi less ridiculous ends:
 	'Wait,' you sputter, trying to push down the hysteria.  'How will you follow me?  I'll be invisible!'
 	
 	'I can sense the capsae.  I will know where you are,' he replies, and with a deep breath, he gathers himself and flies up and out of the Great Hall.";
+
+
+answering the Horatio that something is Horatio_talk.
+telling the Horatio about something is Horatio_talk.
+asking the Horatio about something is Horatio_talk.
+asking the Horatio for something is Horatio_talk.
+
+Instead of Horatio_talk:
+	if Horatio distracts the guard is happening:
+		say "Horatio is chatting with the guard right now; it would be rude to interrrupt.  And potentially lethal.";
+	otherwise:
+		say "You've already had an in-depth conversation with Horatio, but if you want to talk about your current situation, just >TALK TO HORATIO.";
+
+Carry out chatting Horatio:
+	if Horatio distracts the guard is happening:
+		say "Horatio is chatting with the guard right now; it would be rude to interrrupt.  And potentially lethal.";
+	otherwise if Horatio is stage one:
+		say "Horatio is chatting with the guard right now; it would be rude to interrrupt.  And potentially lethal.";
+	otherwise if Horatio is stage two:
+		say "Horatio says 'You'll need to get this door open.  I assume they've barred it shut from the inside, but fortunately, you have the capsae you need.'";
+	otherwise if Horatio is stage three:
+		if the cloak posts are in the Lower Great Hall:
+			say "You ask Horatio, 'So what do I do now?'
+
+			'Go ahead and take one,' he says.  If he thought this was obvious, it doesn't show on his face.";
+		otherwise:
+			say "Slightly exasperated, you ask Horatio, 'What do you want me to do now?'
+
+			'You have igram.  Try it here, and see what happens,' he replies.";
+	stop the action;
 
 Horatio ends here.

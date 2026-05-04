@@ -225,9 +225,6 @@ To say grey_mist_desc:
 		otherwise:
 			say "Constance's summoned mist fortunately doesn't penetrate inside";
 
-When play begins:
-    move the grey mist backdrop to all cloudy rooms.
-
 The grey mist has a number called thickness.  The thickness of the grey mist is 1.
 
 To say horatio mist density:
@@ -339,6 +336,12 @@ After looking during hanging out:
 			otherwise:
 				say "A [horatio mist density] mist surrounds you, summoned by your quarry.";
 
+The surrounding forest is a backdrop.  The description is "The natural forest in this area is mixed deciduous, but several non-native trees have been added to the mix by the Royal Throckwrights in charge of growing the aerie." Understand "forest/trees/woods" as the surrounding forest.
+
+When play begins:
+    move the grey mist backdrop to all cloudy rooms;
+	move the surrounding forest backdrop to all outdoors rooms;
+
 Section stuff that can fall
 
 A thing can be loose.  A thing is usually not loose.
@@ -415,5 +418,33 @@ First Check unlocking an unlocked door with:
 	say "As far as you know, the door is already unlocked." instead;
 
 Does the player mean taking something enclosed by the player: it is unlikely.
+
+Section new defaults
+
+Chatting is an action applying to one thing.  Understand "talk to [something]" as chatting.
+
+Carry out chatting:
+	if the noun is not a person:
+		say "You try to explain your current situation to [the noun].  It often helps you figure out what to do next.";
+	otherwise:
+		say "You don't have anything new to say to [the noun] right now.";
+
+First check throwing something at:
+	say "[i]Throwing things at other things is not necessary in this game[r].";
+	stop the action;
+
+Instead of asking people to try doing something: 
+	say "Nobody is going to just do what you tell them to do."
+
+Before dropping something enclosed by the player:
+	if the player is not the holder of the noun:
+		say "(first taking [the noun] from [the holder of the noun])";
+		try taking the noun;
+		if the noun is held:
+			say "(and now dropping it)";
+			continue the action;
+		otherwise:
+			stop the action;
+
 
 Rules and New Actions ends here.
