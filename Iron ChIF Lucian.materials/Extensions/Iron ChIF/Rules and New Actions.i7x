@@ -421,7 +421,7 @@ Does the player mean taking something enclosed by the player: it is unlikely.
 
 Section new defaults
 
-Chatting is an action applying to one thing.  Understand "talk to [something]" as chatting.
+Chatting is an action applying to one thing.  Understand "talk to [something]" as chatting.  Understand "talk [something]" as chatting.
 
 Carry out chatting:
 	if the noun is not a person:
