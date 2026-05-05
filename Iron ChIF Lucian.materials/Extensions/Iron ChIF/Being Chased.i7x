@@ -69,7 +69,7 @@ First check opening a closed door during Being Chased:
 	say "The Raven Guard is not going to stop chasing you to give you enough time to open [the noun].  Though perhaps if you explained that you only wanted to go into an enclosed space so they could better surround and capture you, they'd consider it?" instead;
 
 Every turn during Being Chased:
-	If the current action is not examining:
+	If the current action is not examining and the current action is not taking inventory:
 		Increase the closeness of Being Chased by 1;
 		[say "closeness: [the closeness of being chased].";]
 		If the closeness of Being Chased is 1:
@@ -115,7 +115,7 @@ Every turn during Being Chased:
 				say "The guards try to reach you, but keep getting blocked by the large spinning wooden bar.";
 				now the closeness of Being Chased is 2;
 			Otherwise if the closeness of Being Chased is 3:
-				say "The guards charge, but you manage to evade their uncoordinated attack.";
+				say "The guards charge, but you manage to evade their attack.";
 			Otherwise if the closeness of Being Chased is 4:
 				say "Two guards snap at you, and while both touch nothing but feathers, a third slashes you with his silvered talons.  They're about to overwhelm you.";
 				Now Constance is wounded;
