@@ -225,6 +225,8 @@ To say grey_mist_desc:
 		otherwise:
 			say "Constance's summoned mist fortunately doesn't penetrate inside";
 
+Does the player mean examining the grey mist: it is likely.
+
 The grey mist has a number called thickness.  The thickness of the grey mist is 1.
 
 To say horatio mist density:

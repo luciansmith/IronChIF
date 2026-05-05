@@ -450,8 +450,8 @@
   </item>
   <item nodeId="node-50">
     <command xml:space="preserve">u</command>
-    <result xml:space="preserve">Forcing your tired wings to flap again, you rise above the forest floor, past the level of your cell, up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of the Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve">Forcing your tired wings to flap again, you rise above the forest floor, past the level of your cell, up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of the Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</commentary>
+    <result xml:space="preserve">Forcing your tired wings to flap again, you rise above the forest floor, past the level of your cell, up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of a Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve">Forcing your tired wings to flap again, you rise above the forest floor, past the level of your cell, up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of a Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-51"/>
@@ -477,8 +477,8 @@
   </item>
   <item nodeId="node-53">
     <command xml:space="preserve">x nooks</command>
-    <result xml:space="preserve">You could spend weeks in here if you were allowed, just cataloguing and recording your impressions of all the artifacts that fill the nooks surrounding the floor.  But right now, all you wanted to do was check to make sure the cloaks are still here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve">You could spend weeks in here if you were allowed, just cataloguing and recording your impressions of all the artifacts that fill the nooks surrounding the floor.  But right now, all you wanted to do was check to make sure the cloaks are still here.&#x000A;&#x000A;&gt;</commentary>
+    <result xml:space="preserve">You could spend weeks in here if you were allowed, just cataloguing and recording your impressions of all the artifacts that fill the nooks surrounding the floor.  But right now, all you wanted to do was check to make sure the cloaks were still here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve">You could spend weeks in here if you were allowed, just cataloguing and recording your impressions of all the artifacts that fill the nooks surrounding the floor.  But right now, all you wanted to do was check to make sure the cloaks were still here.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-54"/>
@@ -490,19 +490,73 @@
     <commentary xml:space="preserve">Upper Great Hall&#x000A;The small platform just inside the huge double doors of the Great Hall overlooks the hall below, with plenty of space for people of all sizes and shapes to comfortably launch themselves from a smoothly-grown mahogany branch, wrapping around the whole platform.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-525"/>
+    </children>
+  </item>
+  <item nodeId="node-525">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of a Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of a Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-531"/>
+    </children>
+  </item>
+  <item nodeId="node-531">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;For the last ten years, this place has been the focus of your subconscious.  Always knowing where capsae are can be wearing when you're this close for so long.  Every time one would be taken out for training, every time one would be moved for cleaning, every time their display case was bumped, it was a little "ding" for your subconscious mind to notice, and probably pass up to your conscious mind, because, let's face it, there wasn't a lot else to notice from that cell.  The Librum was always the focus.  Until Constance.&#x000A;&#x000A;From here, the Great Hall is west, the Royal Quarters northwest, and the Librum Door east (though guarded).  Or you could fly off again, either up or down.&#x000A;&#x000A;A lone Raven guard stands in front of the door, dark eyes shifting as she watches the mist.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve">Librum Landing Cradle&#x000A;For the last ten years, this place has been the focus of your subconscious.  Always knowing where capsae are can be wearing when you're this close for so long.  Every time one would be taken out for training, every time one would be moved for cleaning, every time their display case was bumped, it was a little "ding" for your subconscious mind to notice, and probably pass up to your conscious mind, because, let's face it, there wasn't a lot else to notice from that cell.  The Librum was always the focus.  Until Constance.&#x000A;&#x000A;From here, the Great Hall is west, the Royal Quarters northwest, and the Librum Door east (though guarded).  Or you could fly off again, either up or down.&#x000A;&#x000A;A lone Raven guard stands in front of the door, dark eyes shifting as she watches the mist.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-526"/>
+    </children>
+  </item>
+  <item nodeId="node-526">
+    <command xml:space="preserve">x guard</command>
+    <result xml:space="preserve">You wouldn't be surprised if this lovely young dangerous woman was a fledgling when you arrived, lo these ages past.  Now she's doing a bang-up job of keeping you and Constance out of the Librum.  Fortunately, she looks polite, like she wouldn't arrest a kindly old buzzard for talking her ear off while a certain Falcon Clan slips in to the Librum behind her.  You're kind of glad you won't have to exploit her like that, as Constance seems to have extricated the black capsa on her own already.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve">You wouldn't be surprised if this lovely young dangerous woman was a fledgling when you arrived, lo these ages past.  Now she's doing a bang-up job of keeping you and Constance out of the Librum.  Fortunately, she looks polite, like she wouldn't arrest a kindly old buzzard for talking her ear off while a certain Falcon Clan slips in to the Librum behind her.  You're kind of glad you won't have to exploit her like that, as Constance seems to have extricated the black capsa on her own already.&#x000A;&#x000A;&gt;</commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-527"/>
+    </children>
+  </item>
+  <item nodeId="node-527">
+    <command xml:space="preserve">talk to guard</command>
+    <result xml:space="preserve">You have plenty of stories to tell this young woman, but they aren't endless.  Better to wait until Constance is ready to take advantage of you distracting her, before the guard gets bored and starts watching the mist again.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve">You have plenty of stories to tell this young woman, but they aren't endless.  Better to wait until Constance is ready to take advantage of you distracting her, before the guard gets bored and starts watching the mist again.&#x000A;&#x000A;&gt;</commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-528"/>
+    </children>
+  </item>
+  <item nodeId="node-528">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You spent so much time in the Librum those first few months, before the previous queen imprisoned you.  You'd love to return, to see what's changed; to revisit some of your favorite books.  Maybe soon, again?  For now, there's a guard.  She won't let you in.  You're going to have to get Constance to do it.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve">You spent so much time in the Librum those first few months, before the previous queen imprisoned you.  You'd love to return, to see what's changed; to revisit some of your favorite books.  Maybe soon, again?  For now, there's a guard.  She won't let you in.  You're going to have to get Constance to do it.&#x000A;&#x000A;&gt;</commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-529"/>
+    </children>
+  </item>
+  <item nodeId="node-529">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">Royal Gardens&#x000A;All the vegetation throughout the Royal Garden is much, much more vibrant than you remember it being a decade ago.  But things are subtly off-kilter:  a rose bush with too-large roses that has to be propped up with almost-hidden forked sticks.  A roost canted at an odd angle from its tree bending south.  Fireball bromeliads threatening to strangle their host hickory trees, despite signs of agressive pruning.  You felt taclor being moved to the Royal Quarters a little over a year ago, and it's been active ever sense.  The foliage is out of balance.&#x000A;&#x000A;The Great Hall is south of here, the Librum southeast, and the well-guarded garden door north.  Above, Constance circles in the fog, and the forest floor is beneath.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve">Royal Gardens&#x000A;All the vegetation throughout the Royal Garden is much, much more vibrant than you remember it being a decade ago.  But things are subtly off-kilter:  a rose bush with too-large roses that has to be propped up with almost-hidden forked sticks.  A roost canted at an odd angle from its tree bending south.  Fireball bromeliads threatening to strangle their host hickory trees, despite signs of agressive pruning.  You felt taclor being moved to the Royal Quarters a little over a year ago, and it's been active ever sense.  The foliage is out of balance.&#x000A;&#x000A;The Great Hall is south of here, the Librum southeast, and the well-guarded garden door north.  Above, Constance circles in the fog, and the forest floor is beneath.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-530"/>
+    </children>
+  </item>
+  <item nodeId="node-530">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You think you can make it in, but only with Constance, igram, and the cloaks.  Constance first.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve">You think you can make it in, but only with Constance, igram, and the cloaks.  Constance first.&#x000A;&#x000A;&gt;</commentary>
+    <changed>NO</changed>
+    <children>
       <child nodeId="node-55"/>
     </children>
   </item>
   <item nodeId="node-55">
-    <command xml:space="preserve">u</command>
-    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of the Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of the Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-56"/>
-    </children>
-  </item>
-  <item nodeId="node-56">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">High Above the Royal Aerie&#x000A;There's nothing to see here, this high above the Aerie; just a thick mist in every direction.  You would have never been able to find Constance if she hadn't been carrying a capsa or two.  You trust that if you circle down from here, you'll be able to find your way once you reach some landmarks.&#x000A;&#x000A;Constance, a powerful Falcon Clan female, is here, her large black eyes watching you with fierce intensity.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&#x000A;&#x000A;                                                              *    *    *</result>
     <commentary xml:space="preserve">High Above the Royal Aerie&#x000A;There's nothing to see here, this high above the Aerie; just a thick mist in every direction.  You would have never been able to find Constance if she hadn't been carrying a capsa or two.  You trust that if you circle down from here, you'll be able to find your way once you reach some landmarks.&#x000A;&#x000A;Constance, a powerful Falcon Clan female, is here, her large black eyes watching you with fierce intensity.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&#x000A;&#x000A;                                                              *    *    *</commentary>
@@ -933,8 +987,8 @@
   </item>
   <item nodeId="node-104">
     <command xml:space="preserve">test quick_horatio</command>
-    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] x cell&#x000A;(cell contents)&#x000A;A straight roost by a desk for writing, and a scooped roost for sleeping.  Enough space to spread your wings.  A rope wall for excercise.  Not bad.&#x000A;&#x000A;&gt;[2] x desk&#x000A;A straight roost by a desk for writing, and a scooped roost for sleeping.  Enough space to spread your wings.  A rope wall for excercise.  Not bad.&#x000A;&#x000A;&gt;[3] x cell door&#x000A;Ironwood-grown and maintained; your cell door is open.&#x000A;&#x000A;&gt;[4] w&#x000A;&#x000A;Disused Hallway&#x000A;The only time you ever saw anyone in this hallway was when Georg came to give you your meals, or clean the cell.  The living walls, still elegantly patterned, even here, self-replenish, and the floor carries away shed bark through the grate.  It leads west into the living area, and your old cell door leads east.&#x000A;&#x000A;&gt;[5] w&#x000A;Your place is not with the denizens of this Aerie, but with the prodigal daughter, now returned, and the capsa she seeks.&#x000A;&#x000A;&gt;[6] close grate&#x000A;You close the grate.&#x000A;&#x000A;&gt;[7] open grate&#x000A;You grasp the grate with your talons and carefully fold it upward, allowing access.&#x000A;&#x000A;&gt;[8] enter grate&#x000A;You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper a song to the veins of this place: "I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence."&#x000A;&#x000A;After a few moments, you feel an undulation in the slick rippled floor beneath you, and you are compressed even further, as its peristalsis slides you slowly, and then more rapidly, away from your only home for the last ten years.  Then with a sudden &gt;plop&lt;, you're ejected into space.&#x000A;&#x000A;You try to spread your wings, but your reaction time is not what it was, and you hit wirey netting before fully stopping yourself.&#x000A;&#x000A;No matter.&#x000A;&#x000A;In the Forest&#x000A;The tightly-growing trees and thick fog surround you tightly.  It would be oppressive, but for the echo of the Throckwright song you can just sense, flowing through the veins of these trees still.  That, and the fact that you've been confined to a single room for a decade, so any contrast is welcome.&#x000A;&#x000A;The net that caught you stretches in every direction, preventing both entrance to and egress from the rest of the forest.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;[9] u&#x000A;Forcing your tired wings to flap again, you rise above the forest floor, past the level of your cell, up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of the Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;[10] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;There's nothing to see here, this high above the Aerie; just a thick mist in every direction.  You would have never been able to find Constance if she hadn't been carrying a capsa or two.  You trust that if you circle down from here, you'll be able to find your way once you reach some landmarks.&#x000A;&#x000A;Constance, a powerful Falcon Clan female, is here, her large black eyes watching you with fierce intensity.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&#x000A;&#x000A;                                                              *    *    *</result>
-    <commentary xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] x cell&#x000A;(cell contents)&#x000A;A straight roost by a desk for writing, and a scooped roost for sleeping.  Enough space to spread your wings.  A rope wall for excercise.  Not bad.&#x000A;&#x000A;&gt;[2] x desk&#x000A;A straight roost by a desk for writing, and a scooped roost for sleeping.  Enough space to spread your wings.  A rope wall for excercise.  Not bad.&#x000A;&#x000A;&gt;[3] x cell door&#x000A;Ironwood-grown and maintained; your cell door is open.&#x000A;&#x000A;&gt;[4] w&#x000A;&#x000A;Disused Hallway&#x000A;The only time you ever saw anyone in this hallway was when Georg came to give you your meals, or clean the cell.  The living walls, still elegantly patterned, even here, self-replenish, and the floor carries away shed bark through the grate.  It leads west into the living area, and your old cell door leads east.&#x000A;&#x000A;&gt;[5] w&#x000A;Your place is not with the denizens of this Aerie, but with the prodigal daughter, now returned, and the capsa she seeks.&#x000A;&#x000A;&gt;[6] close grate&#x000A;You close the grate.&#x000A;&#x000A;&gt;[7] open grate&#x000A;You grasp the grate with your talons and carefully fold it upward, allowing access.&#x000A;&#x000A;&gt;[8] enter grate&#x000A;You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper a song to the veins of this place: "I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence."&#x000A;&#x000A;After a few moments, you feel an undulation in the slick rippled floor beneath you, and you are compressed even further, as its peristalsis slides you slowly, and then more rapidly, away from your only home for the last ten years.  Then with a sudden &gt;plop&lt;, you're ejected into space.&#x000A;&#x000A;You try to spread your wings, but your reaction time is not what it was, and you hit wirey netting before fully stopping yourself.&#x000A;&#x000A;No matter.&#x000A;&#x000A;In the Forest&#x000A;The tightly-growing trees and thick fog surround you tightly.  It would be oppressive, but for the echo of the Throckwright song you can just sense, flowing through the veins of these trees still.  That, and the fact that you've been confined to a single room for a decade, so any contrast is welcome.&#x000A;&#x000A;The net that caught you stretches in every direction, preventing both entrance to and egress from the rest of the forest.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;[9] u&#x000A;Forcing your tired wings to flap again, you rise above the forest floor, past the level of your cell, up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of the Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;[10] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;There's nothing to see here, this high above the Aerie; just a thick mist in every direction.  You would have never been able to find Constance if she hadn't been carrying a capsa or two.  You trust that if you circle down from here, you'll be able to find your way once you reach some landmarks.&#x000A;&#x000A;Constance, a powerful Falcon Clan female, is here, her large black eyes watching you with fierce intensity.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&#x000A;&#x000A;                                                              *    *    *</commentary>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] x cell&#x000A;(cell contents)&#x000A;A straight roost by a desk for writing, and a scooped roost for sleeping.  Enough space to spread your wings.  A rope wall for excercise.  Not bad.&#x000A;&#x000A;&gt;[2] x desk&#x000A;A straight roost by a desk for writing, and a scooped roost for sleeping.  Enough space to spread your wings.  A rope wall for excercise.  Not bad.&#x000A;&#x000A;&gt;[3] x cell door&#x000A;Ironwood-grown and maintained; your cell door is open.&#x000A;&#x000A;&gt;[4] w&#x000A;&#x000A;Disused Hallway&#x000A;The only time you ever saw anyone in this hallway was when Georg came to give you your meals, or clean the cell.  The living walls, still elegantly patterned, even here, self-replenish, and the floor carries away shed bark through the grate.  It leads west into the living area, and your old cell door leads east.&#x000A;&#x000A;&gt;[5] w&#x000A;Your place is not with the denizens of this Aerie, but with the prodigal daughter, now returned, and the capsa she seeks.&#x000A;&#x000A;&gt;[6] close grate&#x000A;You close the grate.&#x000A;&#x000A;&gt;[7] open grate&#x000A;You grasp the grate with your talons and carefully fold it upward, allowing access.&#x000A;&#x000A;&gt;[8] enter grate&#x000A;You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper a song to the veins of this place: "I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence."&#x000A;&#x000A;After a few moments, you feel an undulation in the slick rippled floor beneath you, and you are compressed even further, as its peristalsis slides you slowly, and then more rapidly, away from your only home for the last ten years.  Then with a sudden &gt;plop&lt;, you're ejected into space.&#x000A;&#x000A;You try to spread your wings, but your reaction time is not what it was, and you hit wirey netting before fully stopping yourself.&#x000A;&#x000A;No matter.&#x000A;&#x000A;In the Forest&#x000A;The tightly-growing trees and thick fog surround you tightly.  It would be oppressive, but for the echo of the Throckwright song you can just sense, flowing through the veins of these trees still.  That, and the fact that you've been confined to a single room for a decade, so any contrast is welcome.&#x000A;&#x000A;The net that caught you stretches in every direction, preventing both entrance to and egress from the rest of the forest.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;[9] u&#x000A;Forcing your tired wings to flap again, you rise above the forest floor, past the level of your cell, up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of a Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;[10] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;There's nothing to see here, this high above the Aerie; just a thick mist in every direction.  You would have never been able to find Constance if she hadn't been carrying a capsa or two.  You trust that if you circle down from here, you'll be able to find your way once you reach some landmarks.&#x000A;&#x000A;Constance, a powerful Falcon Clan female, is here, her large black eyes watching you with fierce intensity.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&#x000A;&#x000A;                                                              *    *    *</result>
+    <commentary xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] x cell&#x000A;(cell contents)&#x000A;A straight roost by a desk for writing, and a scooped roost for sleeping.  Enough space to spread your wings.  A rope wall for excercise.  Not bad.&#x000A;&#x000A;&gt;[2] x desk&#x000A;A straight roost by a desk for writing, and a scooped roost for sleeping.  Enough space to spread your wings.  A rope wall for excercise.  Not bad.&#x000A;&#x000A;&gt;[3] x cell door&#x000A;Ironwood-grown and maintained; your cell door is open.&#x000A;&#x000A;&gt;[4] w&#x000A;&#x000A;Disused Hallway&#x000A;The only time you ever saw anyone in this hallway was when Georg came to give you your meals, or clean the cell.  The living walls, still elegantly patterned, even here, self-replenish, and the floor carries away shed bark through the grate.  It leads west into the living area, and your old cell door leads east.&#x000A;&#x000A;&gt;[5] w&#x000A;Your place is not with the denizens of this Aerie, but with the prodigal daughter, now returned, and the capsa she seeks.&#x000A;&#x000A;&gt;[6] close grate&#x000A;You close the grate.&#x000A;&#x000A;&gt;[7] open grate&#x000A;You grasp the grate with your talons and carefully fold it upward, allowing access.&#x000A;&#x000A;&gt;[8] enter grate&#x000A;You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper a song to the veins of this place: "I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence."&#x000A;&#x000A;After a few moments, you feel an undulation in the slick rippled floor beneath you, and you are compressed even further, as its peristalsis slides you slowly, and then more rapidly, away from your only home for the last ten years.  Then with a sudden &gt;plop&lt;, you're ejected into space.&#x000A;&#x000A;You try to spread your wings, but your reaction time is not what it was, and you hit wirey netting before fully stopping yourself.&#x000A;&#x000A;No matter.&#x000A;&#x000A;In the Forest&#x000A;The tightly-growing trees and thick fog surround you tightly.  It would be oppressive, but for the echo of the Throckwright song you can just sense, flowing through the veins of these trees still.  That, and the fact that you've been confined to a single room for a decade, so any contrast is welcome.&#x000A;&#x000A;The net that caught you stretches in every direction, preventing both entrance to and egress from the rest of the forest.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;[9] u&#x000A;Forcing your tired wings to flap again, you rise above the forest floor, past the level of your cell, up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of a Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;[10] u&#x000A;&#x000A;High Above the Royal Aerie&#x000A;There's nothing to see here, this high above the Aerie; just a thick mist in every direction.  You would have never been able to find Constance if she hadn't been carrying a capsa or two.  You trust that if you circle down from here, you'll be able to find your way once you reach some landmarks.&#x000A;&#x000A;Constance, a powerful Falcon Clan female, is here, her large black eyes watching you with fierce intensity.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&#x000A;&#x000A;                                                              *    *    *</commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-105"/>
@@ -1758,8 +1812,8 @@
   </item>
   <item nodeId="node-196">
     <command xml:space="preserve">u</command>
-    <result xml:space="preserve">Forcing your tired wings to flap again, you rise above the forest floor, past the level of your cell, up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of the Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve">Forcing your tired wings to flap again, you rise above the forest floor, past the level of your cell, up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of the Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</commentary>
+    <result xml:space="preserve">Forcing your tired wings to flap again, you rise above the forest floor, past the level of your cell, up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of a Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve">Forcing your tired wings to flap again, you rise above the forest floor, past the level of your cell, up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of a Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-197"/>
@@ -2610,6 +2664,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-451"/>
+      <child nodeId="node-490"/>
     </children>
   </item>
   <item nodeId="node-451">
@@ -2640,6 +2695,318 @@
   <item nodeId="node-453">
     <command xml:space="preserve">x net</command>
     <result xml:space="preserve">A fine, strong net, stretched between and among the trees.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-490">
+    <command xml:space="preserve">open gold</command>
+    <result xml:space="preserve">You open the gold capsa of down, revealing a scroll of rudenj.&#x000A;&#x000A;Immediately, "down" now means "towards the gold capsa" instead of "towards the earth".  After a brief moment of disorientation, you right yourself, wings pulling you "up" with just enough force that you remain level.&#x000A;&#x000A;Note: for convenience, "down" and "up" comands will continue to work as they did, referencing ground-relative geography instead of gold capsa-relative geography.&#x000A;&#x000A;From... well, from everywhere in the Aerie, it seems, Woodpeckers start drumming out messages in their Pounding dialect:  "Intruder!  The enemy is DOWN. Repeat!  The enemy is DOWN."  You realize that creating a gravity well pointing straight at you makes you an easy target to find.&#x000A;&#x000A;As you swoop over the Great Hall, you hear a crash from the other side of the doors!&#x000A;&#x000A;You suddenly feel warmer, and hear an exultant song of the sun in the distance.  The queen must have Ikniq working for her, trained to try to burn away your fog.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-491"/>
+    </children>
+  </item>
+  <item nodeId="node-491">
+    <command xml:space="preserve">open purple</command>
+    <result xml:space="preserve">You take a deep breath.  If you're going to get past any of the doors here, this is the only way.&#x000A;&#x000A;You open the purple capsa of opening, revealing a scroll of rezrov.&#x000A;&#x000A;As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.&#x000A;&#x000A;The huge double doors of the Great Hall clicks as it unlocks!&#x000A;The magic of the red capsa of hasten prevents it from being opened.&#x000A;The double doors of the great hall fly open!&#x000A;The straps and buckles on your rucksack fly open and it falls!&#x000A;Fortunately, it hovers in midair due to the scroll of down, so you're able to immediately grab it again.&#x000A;&#x000A;Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  You turn and weave, managing to keep it from hitting you.  The Raven Guard fall back as the spinning bar careens through the air!&#x000A;&#x000A;The guards try to reach you, but keep getting blocked by the large spinning wooden bar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-492"/>
+    </children>
+  </item>
+  <item nodeId="node-492">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">High Above the Royal Aerie&#x000A;Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout,and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north and down, well defended by circling Raven clan guards.  The Librum to the east and down.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry.&#x000A;&#x000A;The wooden bar follows you from Great Hall Landing Cradle, spiraling towards the gold capsa of down.&#x000A;&#x000A;You dodge and weave and almost get away from your pursuers, but when "down" always points straight at you, even when they can't see you, they always know where you are.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-493"/>
+    </children>
+  </item>
+  <item nodeId="node-493">
+    <command xml:space="preserve">close gold</command>
+    <result xml:space="preserve">You close the gold capsa of down.&#x000A;&#x000A;You twist and right yourself as "down" returns to its normal state.  The Raven Guards struggle to right themselves again, and take a moment to recover.&#x000A;The wooden bar plummets down towards the Aerie.&#x000A;&#x000A;The guards charge, but you manage to evade their attack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-494"/>
+    </children>
+  </item>
+  <item nodeId="node-494">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You tuck in your wings and dive down towards the Aerie, thrilling to the misty wind streaming through your feathers.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning "in order of importance".&#x000A;&#x000A;The huge double doors of the Great Hall are on the west side of the landing cradle, and unguarded.  To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.&#x000A;&#x000A;The wooden bar that once held the Great Hall doors shut lies here, discarded.&#x000A;&#x000A;Your speed puts more distance between you and your pursuers, but it's not quite fast enough, or the mist isn't thick enough, or both, and your pursuers manage to keep you in sight.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-495"/>
+    </children>
+  </item>
+  <item nodeId="node-495">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">In the Forest&#x000A;The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation.&#x000A;&#x000A;Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below.&#x000A;&#x000A;You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.&#x000A;&#x000A;The Raven's frustrated caws echo in the thin mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.&#x000A;&#x000A;You plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.&#x000A;&#x000A;&#x000A;&#x000A;                                                              *    *    *</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-496"/>
+    </children>
+  </item>
+  <item nodeId="node-496">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">You wait, expectantly.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-497"/>
+    </children>
+  </item>
+  <item nodeId="node-497">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">Silently, your cell door unlocks, then swings open.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-498"/>
+    </children>
+  </item>
+  <item nodeId="node-498">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">Well above your cell, you sense quiste, rezrov, and rudenj settle in their movements until they make lazy circles, high above the Aerie. Igram and taclor remain in place, quiet.&#x000A;&#x000A;It is time.&#x000A;&#x000A;Forgotten Brig&#x000A;A small but cosy cell, grown with austerity but basic comfort in mind.  Your now-open cell door leads west.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-499"/>
+    </children>
+  </item>
+  <item nodeId="node-499">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Disused Hallway&#x000A;The only time you ever saw anyone in this hallway was when Georg came to give you your meals, or clean the cell.  The living walls, still elegantly patterned, even here, self-replenish, and the floor carries away shed bark through the grate.  It leads west into the living area, and your old cell door leads east.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-500"/>
+    </children>
+  </item>
+  <item nodeId="node-500">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper a song to the veins of this place: "I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence."&#x000A;&#x000A;After a few moments, you feel an undulation in the slick rippled floor beneath you, and you are compressed even further, as its peristalsis slides you slowly, and then more rapidly, away from your only home for the last ten years.  Then with a sudden &gt;plop&lt;, you're ejected into space.&#x000A;&#x000A;You try to spread your wings, but your reaction time is not what it was, and you hit wirey netting before fully stopping yourself.&#x000A;&#x000A;No matter.&#x000A;&#x000A;In the Forest&#x000A;The tightly-growing trees and thick fog surround you tightly.  It would be oppressive, but for the echo of the Throckwright song you can just sense, flowing through the veins of these trees still.  That, and the fact that you've been confined to a single room for a decade, so any contrast is welcome.&#x000A;&#x000A;The net that caught you stretches in every direction, preventing both entrance to and egress from the rest of the forest.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-501"/>
+    </children>
+  </item>
+  <item nodeId="node-501">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Forcing your tired wings to flap again, you rise above the forest floor, past the level of your cell, up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of a Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;The wooden bar that once held the Great Hall doors shut lies here, discarded.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-502"/>
+    </children>
+  </item>
+  <item nodeId="node-502">
+    <command xml:space="preserve">x bar</command>
+    <result xml:space="preserve">A large wooden mahogany bar, used to keep the double doors of the Great Hall closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-503"/>
+    </children>
+  </item>
+  <item nodeId="node-503">
+    <command xml:space="preserve">get bar</command>
+    <result xml:space="preserve">The wooden bar is much too heavy to lift by yourself.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-504"/>
+    </children>
+  </item>
+  <item nodeId="node-504">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Upper Great Hall&#x000A;The small platform just inside the huge double doors of the Great Hall overlooks the hall below, with plenty of space for people of all sizes and shapes to comfortably launch themselves from a smoothly-grown mahogany branch, wrapping around the whole platform.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-505"/>
+    </children>
+  </item>
+  <item nodeId="node-505">
+    <command xml:space="preserve">x platform</command>
+    <result xml:space="preserve">You touch the great mahogany branch and can just barely hear the echo of the song that grew it, still pulsing in its veins.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-506"/>
+    </children>
+  </item>
+  <item nodeId="node-506">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You spread your wings to their full extent before launching yourself downward.  You muscles protest, but even just being able to glide again is heavenly.&#x000A;&#x000A;Lower Great Hall&#x000A;The floor of the Great Hall is cleared of the myriad perches and decorations that are brought out for visiting delegations.  It breathes potential, bursting with what it could be, if only.  You wonder if there would even be enough staff to prepare it for a new delegation, with so many sick.  Not that delegations are common, nowadays.&#x000A;&#x000A;In the display nooks around the edges of the hall are all manner of artifacts from across many ages.&#x000A;&#x000A;In one of the nooks are two posts, designed for displaying ancient hunting cloaks.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-507"/>
+    </children>
+  </item>
+  <item nodeId="node-507">
+    <command xml:space="preserve">x cloaks</command>
+    <result xml:space="preserve">These hunting cloaks date back to aboriginal times, perhaps even earlier than the capsae and scrolls.  The tough dark purple hippotomai skins they're made of meant they were cumbersome to wear, but would last forever.  You believe several different clans had to cooperate to make them, as no one clan posessed the skills, dexterity, and toughness necessary to both hunt the hippotomai and put the cloaks together.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-508"/>
+    </children>
+  </item>
+  <item nodeId="node-508">
+    <command xml:space="preserve">get cloaks</command>
+    <result xml:space="preserve">You verify that the cloaks are actually here, but leave them alone.  With any luck, the drama of being able to see what igram does in person will cancel out the inherent ridiculousness of igram.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-509"/>
+    </children>
+  </item>
+  <item nodeId="node-509">
+    <command xml:space="preserve">get posts</command>
+    <result xml:space="preserve">They're fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-510"/>
+    </children>
+  </item>
+  <item nodeId="node-510">
+    <command xml:space="preserve">x nooks</command>
+    <result xml:space="preserve">You could spend weeks in here if you were allowed, just cataloguing and recording your impressions of all the artifacts that fill the nooks surrounding the floor.  But right now, all you wanted to do was check to make sure the cloaks were still here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-511"/>
+    </children>
+  </item>
+  <item nodeId="node-511">
+    <command xml:space="preserve">x artifacts</command>
+    <result xml:space="preserve">You could spend weeks in here if you were allowed, just cataloguing and recording your impressions of all the artifacts that fill the nooks surrounding the floor.  But right now, all you wanted to do was check to make sure the cloaks were still here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-512"/>
+    </children>
+  </item>
+  <item nodeId="node-512">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Lower Great Hall&#x000A;The floor of the Great Hall is cleared of the myriad perches and decorations that are brought out for visiting delegations.  It breathes potential, bursting with what it could be, if only.  You wonder if there would even be enough staff to prepare it for a new delegation, with so many sick.  Not that delegations are common, nowadays.&#x000A;&#x000A;In the display nooks around the edges of the hall are all manner of artifacts from across many ages.&#x000A;&#x000A;In one of the nooks are two posts, designed for displaying ancient hunting cloaks.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-513"/>
+    </children>
+  </item>
+  <item nodeId="node-513">
+    <command xml:space="preserve">x perches</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-514"/>
+    </children>
+  </item>
+  <item nodeId="node-514">
+    <command xml:space="preserve">x posts</command>
+    <result xml:space="preserve">Two posts for displaying cloaks.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-515"/>
+    </children>
+  </item>
+  <item nodeId="node-515">
+    <command xml:space="preserve">get them</command>
+    <result xml:space="preserve">They're fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-516"/>
+    </children>
+  </item>
+  <item nodeId="node-516">
+    <command xml:space="preserve">get a cloak</command>
+    <result xml:space="preserve">(the purple hunting cloak)&#x000A;You verify that the cloaks are actually here, but leave them alone.  With any luck, the drama of being able to see what igram does in person will cancel out the inherent ridiculousness of igram.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-517"/>
+    </children>
+  </item>
+  <item nodeId="node-517">
+    <command xml:space="preserve">x cloak</command>
+    <result xml:space="preserve">(the purple hunting cloak)&#x000A;These hunting cloaks date back to aboriginal times, perhaps even earlier than the capsae and scrolls.  The tough dark purple hippotomai skins they're made of meant they were cumbersome to wear, but would last forever.  You believe several different clans had to cooperate to make them, as no one clan posessed the skills, dexterity, and toughness necessary to both hunt the hippotomai and put the cloaks together.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-518"/>
+    </children>
+  </item>
+  <item nodeId="node-518">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Upper Great Hall&#x000A;The small platform just inside the huge double doors of the Great Hall overlooks the hall below, with plenty of space for people of all sizes and shapes to comfortably launch themselves from a smoothly-grown mahogany branch, wrapping around the whole platform.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-519"/>
+    </children>
+  </item>
+  <item nodeId="node-519">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of a Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;The wooden bar that once held the Great Hall doors shut lies here, discarded.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-520"/>
+    </children>
+  </item>
+  <item nodeId="node-520">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;For the last ten years, this place has been the focus of your subconscious.  Always knowing where capsae are can be wearing when you're this close for so long.  Every time one would be taken out for training, every time one would be moved for cleaning, every time their display case was bumped, it was a little "ding" for your subconscious mind to notice, and probably pass up to your conscious mind, because, let's face it, there wasn't a lot else to notice from that cell.  The Librum was always the focus.  Until Constance.&#x000A;&#x000A;From here, the Great Hall is west, the Royal Quarters northwest, and the Librum Door east (though guarded).  Or you could fly off again, either up or down.&#x000A;&#x000A;A lone Raven guard stands in front of the door, dark eyes shifting as she watches the mist.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-521"/>
+    </children>
+  </item>
+  <item nodeId="node-521">
+    <command xml:space="preserve">x raven</command>
+    <result xml:space="preserve">You wouldn't be surprised if this lovely young dangerous woman was a fledgling when you arrived, lo these ages past.  Now she's doing a bang-up job of keeping you and Constance out of the Librum.  Fortunately, she looks polite, like she wouldn't arrest a kindly old buzzard for talking her ear off while a certain Falcon Clan slips in to the Librum behind her.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-522"/>
+    </children>
+  </item>
+  <item nodeId="node-522">
+    <command xml:space="preserve">x mist</command>
+    <result xml:space="preserve">(the grey mist)&#x000A;A thick grey mist swirls around you, turning the landscape into a collection of vague shapes.  You suppose that as a Falcon Clan, Constance's sharp vision lets her see much better than you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-523"/>
+    </children>
+  </item>
+  <item nodeId="node-523">
+    <command xml:space="preserve">x thick mist</command>
+    <result xml:space="preserve">A thick grey mist swirls around you, turning the landscape into a collection of vague shapes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-524"/>
+    </children>
+  </item>
+  <item nodeId="node-524">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">You spent so much time in the Librum those first few months, before the previous queen imprisoned you.  You'd love to return, to see what's changed; to revisit some of your favorite books.  Maybe soon, again?  For now, there's a guard.  She won't let you in.  You're going to have to get Constance to do it.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -2723,11 +3090,12 @@
   </item>
   <item nodeId="node-443">
     <command xml:space="preserve"> </command>
-    <result xml:space="preserve">Well above your cell, you sense quiste, rezrov, rudenj, and quiste settle in their movements until they make lazy circles, high above the Aerie. Igram and taclor remain in place, quiet.&#x000A;&#x000A;It is time.&#x000A;&#x000A;Forgotten Brig&#x000A;A small but cosy cell, grown with austerity but basic comfort in mind.  Your now-open cell door leads west.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Well above your cell, you sense quiste, rezrov, and rudenj settle in their movements until they make lazy circles, high above the Aerie. Igram and taclor remain in place, quiet.&#x000A;&#x000A;It is time.&#x000A;&#x000A;Forgotten Brig&#x000A;A small but cosy cell, grown with austerity but basic comfort in mind.  Your now-open cell door leads west.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-444"/>
+      <child nodeId="node-479"/>
     </children>
   </item>
   <item nodeId="node-444">
@@ -2769,6 +3137,102 @@
   <item nodeId="node-448">
     <command xml:space="preserve">d</command>
     <result xml:space="preserve">You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper a song to the veins of this place: "I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence."&#x000A;&#x000A;After a few moments, you feel an undulation in the slick rippled floor beneath you, and you are compressed even further, as its peristalsis slides you slowly, and then more rapidly, away from your only home for the last ten years.  Then with a sudden &gt;plop&lt;, you're ejected into space.&#x000A;&#x000A;You try to spread your wings, but your reaction time is not what it was, and you hit wirey netting before fully stopping yourself.&#x000A;&#x000A;No matter.&#x000A;&#x000A;In the Forest&#x000A;The tightly-growing trees and thick fog surround you tightly.  It would be oppressive, but for the echo of the Throckwright song you can just sense, flowing through the veins of these trees still.  That, and the fact that you've been confined to a single room for a decade, so any contrast is welcome.&#x000A;&#x000A;The net that caught you stretches in every direction, preventing both entrance to and egress from the rest of the forest.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-479">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Disused Hallway&#x000A;The only time you ever saw anyone in this hallway was when Georg came to give you your meals, or clean the cell.  The living walls, still elegantly patterned, even here, self-replenish, and the floor carries away shed bark through the grate.  It leads west into the living area, and your old cell door leads east.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-480"/>
+    </children>
+  </item>
+  <item nodeId="node-480">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">You flatten yourself to the floor and, hearing your bones creak, roll into the space behind the grate.  Using your minimal throck ability, you whisper a song to the veins of this place: "I am extra.  I am not needed.  Take me from this place, which will renew itself through my absence."&#x000A;&#x000A;After a few moments, you feel an undulation in the slick rippled floor beneath you, and you are compressed even further, as its peristalsis slides you slowly, and then more rapidly, away from your only home for the last ten years.  Then with a sudden &gt;plop&lt;, you're ejected into space.&#x000A;&#x000A;You try to spread your wings, but your reaction time is not what it was, and you hit wirey netting before fully stopping yourself.&#x000A;&#x000A;No matter.&#x000A;&#x000A;In the Forest&#x000A;The tightly-growing trees and thick fog surround you tightly.  It would be oppressive, but for the echo of the Throckwright song you can just sense, flowing through the veins of these trees still.  That, and the fact that you've been confined to a single room for a decade, so any contrast is welcome.&#x000A;&#x000A;The net that caught you stretches in every direction, preventing both entrance to and egress from the rest of the forest.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-481"/>
+    </children>
+  </item>
+  <item nodeId="node-481">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Forcing your tired wings to flap again, you rise above the forest floor, past the level of your cell, up above the canopy.&#x000A;&#x000A;Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of the Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-482"/>
+    </children>
+  </item>
+  <item nodeId="node-482">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Librum Landing Cradle&#x000A;For the last ten years, this place has been the focus of your subconscious.  Always knowing where capsae are can be wearing when you're this close for so long.  Every time one would be taken out for training, every time one would be moved for cleaning, every time their display case was bumped, it was a little "ding" for your subconscious mind to notice, and probably pass up to your conscious mind, because, let's face it, there wasn't a lot else to notice from that cell.  The Librum was always the focus.  Until Constance.&#x000A;&#x000A;From here, the Great Hall is west and the Royal Quarters are northwest.  Or you could fly off again, either up or down.&#x000A;&#x000A;A lone Raven guard stands in front of the door, dark eyes shifting as she watches the mist.&#x000A;&#x000A;In the cradle next to the guard is a small collection of tiny padlocks, each open.&#x000A;&#x000A;You can also see a Librum Door here.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-483"/>
+    </children>
+  </item>
+  <item nodeId="node-483">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You spent so much time in the Librum those first few months, before the previous queen imprisoned you.  You'd love to return, to see what's changed; to revisit some of your favorite books.  Maybe soon, again?  For now, there's a guard.  She won't let you in.  You're going to have to get Constance to do it.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-484"/>
+    </children>
+  </item>
+  <item nodeId="node-484">
+    <command xml:space="preserve">guard, hi</command>
+    <result xml:space="preserve">You have plenty of stories to tell this young woman, but they aren't endless.  Better to wait until Constance is ready to take advantage of you distracting her, before the guard gets bored and starts watching the mist again.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-485"/>
+    </children>
+  </item>
+  <item nodeId="node-485">
+    <command xml:space="preserve">talk to guard</command>
+    <result xml:space="preserve">You have plenty of stories to tell this young woman, but they aren't endless.  Better to wait until Constance is ready to take advantage of you distracting her, before the guard gets bored and starts watching the mist again.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-486"/>
+    </children>
+  </item>
+  <item nodeId="node-486">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">Royal Gardens&#x000A;All the vegetation throughout the Royal Garden is much, much more vibrant than you remember it being a decade ago.  But things are subtly off-kilter:  a rose bush with too-large roses that has to be propped up with almost-hidden forked sticks.  A roost canted at an odd angle from its tree bending south.  Fireball bromeliads threatening to strangle their host hickory trees, despite signs of agressive pruning.  You felt taclor being moved to the Royal Quarters a little over a year ago, and it's been active ever sense.  The foliage is out of balance.&#x000A;&#x000A;The Great Hall is south of here; the Librum southeast.  Above, Constance circles in the fog, and the forest floor is beneath.&#x000A;&#x000A;You can see a garden door here.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-487"/>
+    </children>
+  </item>
+  <item nodeId="node-487">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You think you can make it in, but only with Constance, igram, and the cloaks.  Constance first.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-488"/>
+    </children>
+  </item>
+  <item nodeId="node-488">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Great Hall Landing Cradle&#x000A;The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of the Waterfowl delegation.  You were impressed by the huge double doors of the Great Hall, large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.&#x000A;&#x000A;To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.&#x000A;&#x000A;A thick mist surrounds you, summoned by your quarry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-489"/>
+    </children>
+  </item>
+  <item nodeId="node-489">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">(first opening the huge double doors of the Great Hall)&#x000A;You pull at the doors, but not only were they locked, but barred as well.  You vaguely remember the bar used to sit to one side of the doors inside the hall, gathering dust.  Rezrov doesn't unbar doors; you'll have to have Constance come back here with rudenj.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
