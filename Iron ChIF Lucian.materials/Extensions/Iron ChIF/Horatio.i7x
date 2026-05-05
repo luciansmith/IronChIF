@@ -28,7 +28,7 @@ To say Horatio room desc:
 
 To say Horatio_desc:
 	if the player is Horatio:
-		say "You're a member of the Buzzard Clan, and fit the stereotype fairly well: bald red head and red talons, hunched shoulders, mottled black and brown feathers.  You've balded down past your neck now, betraying your advanced age.";
+		say "You're a member of the Buzzard Clan, and fit the stereotype fairly well: bald red head and red talons, hunched shoulders, mottled black and brown feathers.  You've balded down past your neck now, betraying your advanced age";
 	Otherwise If Everything Falls is happening and Everything Falls is upended and black_escape is less than 4:
 		say "Horatio has his head cocked as if paying attention to something he can sense but not see.  He makes eye contact with you, and points to [the entry black_escape of librum_directions]";
 	otherwise:
@@ -42,9 +42,12 @@ A scroll of bostrat is a scroll in the blue capsa.  The name is "BOSTRAT".  Unde
 
 The description of the scroll of bostrat is "While '[name]' can be clearly read at the top of the scroll, the rest of the script has faded away[if the player is Constance].  That power now lives, in part, within your own being[end if]."
 
+Instead of dropping the blue capsa when the player is Horatio:
+	say "The queen and her advisors were unimpressed by the capsa, dismissing it as an obvious fake.  But you think you can use it to convince Constance.  Better hang on to it.";
+
 Disused Hallway is a room.  It is east of Nope.  "The only time you ever saw anyone in this hallway was when Georg came to give you your meals, or clean the cell.  The living walls, still elegantly patterned, even here, self-replenish, and the floor carries away shed bark through the [grate].  It leads west into the living area, and your old [cell door] leads east.";
 
-A grate is a closed openable enterable container in Disused Hallway.  The description is "The grate conveys unneeded materials to the outside, and the forest floor.  [if open]'Rezrov' has done its job there, too: it lies open[otherwise]The grate is folded down, closed[end if].";
+A grate is a closed openable enterable container in Disused Hallway.  The description is "The grate conveys unneeded materials to the outside, and the forest floor.  [if open]Rezrov has done its job there, too: it lies open[otherwise]The grate is folded down, closed[end if].";
 
 Check going west from Disused Hallway:
 	say "Your place is not with the denizens of this Aerie, but with the prodigal daughter, now returned, and the capsa she seeks." instead.
@@ -88,9 +91,9 @@ When Horatio's story begins:
 	wait for any key;
 	say "[lb]Silently, your cell door unlocks, then swings open.";
 	wait for any key;
-	say "[lb]Well above your cell, you sense rezrov, rudenj, and quiste settle in their movements until they make lazy circles, high above the Aerie";
+	say "[lb]Well above your cell, you sense [if the gold capsa is not in the Void]quiste, [end if]rezrov, and rudenj settle in their movements until they make lazy circles, high above the Aerie[if the gold capsa is in the Void].  Quiste follows a different path, and ends up inside the Royal Quarters, you think.  Unfortunate[end if]";
 	if the black capsa is enclosed by Constance:
-		say ".  Oh, and Igram is with them.  Resourceful girl.  Taclor remains in place, quiet";
+		say ".  Oh, and igram is with them.  Resourceful girl.  Taclor remains in place, quiet";
 	otherwise:
 		say ". Igram and taclor remain in place, quiet";
 	say ".[lb]It is time.";
@@ -227,7 +230,7 @@ You let her think, the lack of any contradiction from you enough of an encourage
 
 H3b is a page. It is for H3.
 The cdesc is "Wax poetical a bit."
-The description is "'I have read and felt what it was like to thunder across the plains as a gazelle from the scroll of izyuk.  I have read and felt the desperate yen of attraction from the scroll of obidil. From the scroll you now hold in your posession, I have read and felt what it is to be the very earth itself, spinning through the cosmos.'
+The description is "'I have read and felt what it was like to thunder across the plains as a gazelle from the scroll of izyuk.  I have read and felt the desperate yen of attraction from the scroll of obidil. From the scroll you now hold in your possession, I have read and felt what it is to be the very earth itself, spinning through the cosmos.'
 
 Constance looks at you.  A beat.  'So you don't know.'
 
@@ -252,14 +255,14 @@ The description is "'I will not know what it is I'm saying, but I have a guess a
 And no capsae holder I have yet met will risk such a thing,' you say."
 
 C1a is a page.  It is for H4.
-The cdesc is "[if the player is Horatio][i]{Switching to Constance}: [r][end if]Scoff at 'capsae holder'."
-The description is "You scoff.  'No Queen or King, you mean.'
+The cdesc is "[i]{Switching to Constance}: [r]Scoff at 'capsae holder'."
+The description is "You scoff.  'No queen or king, you mean.'
 
 'You personally currently hold three capsae, more than some kingdoms,' replies Horatio, 
 
 You laugh.  '[apostrophe]Cause I stole [apostrophe]em!  And they weren't even the one I wanted; I just didn't know what color I was after!'
 
-'Nevertheless,' you tell her, 'you are their holder. If you told me you wanted me to read one, I then could."
+'Nevertheless,' you tell her, 'you are their holder. If you told me you wanted me to read one, I then could.'"
 
 A page-toggle rule for C1a:
 	now the player is Constance;
@@ -271,7 +274,7 @@ The description is "'Wait.  So, I could order you to read a capsa?  And the magi
 
 'No.  I will not read one without the holder's permission, but I may refuse any order,' Horatio replies.
 
-'[apostrophe]Will not.[apostrophe]  So you're not compelled to do anything.  It's just a personal choice,' you say.
+'[apostrophe]Will not.[apostrophe]  So you're not compelled to follow instructions, but you're also not compelled to ask permission.  It's just a personal choice,' you say.
 
 Horatio winces slightly.  'I suppose, technically, you are correct.  It is a tradition among the Readers who know the history.'"
 
@@ -330,14 +333,14 @@ The description is "'So that's your heresy,' you conclude.  'You want to read a 
 'Not just any capsa.  The scroll of health.  Taclor.  Ten years ago, I would have been happy to read any.  Now, it must be that one.  But I will not make that choice on my own.  Every Reader like myself has the innate ability to Read a single scroll, and I will yield to the will of its holder, as my predecessors swore to do in the aftermath of the Great War.  But I will not waste my ability on anything else.'"
 
 C5a is a page.  It is for C4b and C5b.
-The cdesc is "You need the scroll for your mother!"
+The cdesc is "But you need the scroll for your mother!"
 The description is "'You can't read that scroll,' you say.  'I need it to save my mother.  To save the village.'
 
 'The whole world,' Horatio turns his head to face to you, 'could say the same.'
 
-'But [i]I'm here[r]!' you shout.  'I have [i]three capsae[r].  I didn't start any wars!  I didn't force people to live with their livestock and kickstart the Red Plague!  The Queen's hoarding the capsa for gods-know-what reason, probably so the selfish bastard could ensure she doesn't come down with it herself...'
+'But [i]I'm here[r]!' you shout.  'I have [i]three capsae[r].  I didn't start any wars!  I didn't force people to live with their livestock and kickstart the Red Plague!  The queen's hoarding the capsa for gods-know-what reason, probably so the selfish bastard could ensure she doesn't come down with it herself...'
 
-Horatio flinches.  That's right, he knew you when you and the now-Queen were... closer.  Inseparable.
+Horatio flinches.  That's right, he knew you when you and the now-queen were... closer.  Inseparable.
 
 'I'll take it around the world!' you declare.  'I'll take it to every village in this kingdom; wherever the need is greatest.  I'll take it to other kingdoms!'
 
