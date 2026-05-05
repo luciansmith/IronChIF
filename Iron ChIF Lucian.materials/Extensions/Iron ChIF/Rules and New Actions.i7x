@@ -368,6 +368,18 @@ Understand "fly [direction]" as going.
 Check jumping:
 	say "[if the player is Constance]Pfaugh![otherwise]Your old bones aren't what the used to be.[end if]  Jumping is for fledglings!" instead;
 
+Section song
+
+Singing is an action applying to nothing.  Understand "sing" as singing.
+Carry out singing:
+	if the player is Constance:
+		if Being Chased is happening:
+			say "You sing a cry of defiance, as you twist away from a Raven Guard.  He caws angrily back at you.";
+		otherwise:
+			say "You'll sing of today's exploits in tonight's evensong.  But right now, you're still trying to be stealthy.";
+	otherwise:
+		say "The minor songs of magic you can perform made you self-conscious about your normal singing voice.  You haven't sung just for fun in decades.";
+
 Section nostalgia
 
 Xyzzying is an action applying to nothing.  Understand "xyzzy" as xyzzying.
