@@ -263,6 +263,7 @@ Check summoning something:
 		say "You quietly sing a few notes of the song of bostrat, and a small trail of thin mist appears in front of you, twists gently, then dissipates." instead;
 
 Does the player mean summoning the grey mist: it is very likely.
+Does the player mean summoning the no_mist: it is very likely.
 
 Carry out summoning:
 	if no_mist is in the location:
@@ -271,7 +272,7 @@ Carry out summoning:
 		move no_mist to the Void;
 		say "[one of]Calling on your heritage as a Bostrat, you sing the ancient song of mist and rain and thunder, summoning moisture from the air.  It slowly coalesces into a creeping grey mist, obscuring you from sight.  In gentler times, you would be doing this to ensure the growth of the fields and forests; now you must use it to hide from prying eyes that would keep you from your quarry[or]You sing, summoning an obscuring grey mist to surround you and hide you from prying eyes[stopping].
 		
-		You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, though it would then start to dissipate.";
+		You stop at the natural inflection point for clouds given today's weather.  You could make it thicker still, though it will dissipate over time.";
 	otherwise:
 		if the location is indoors:
 			say "You sing, drawing the moisture from the room into a wisp of fog, but it twists into nothingness again as the echoes of your song fade.";
