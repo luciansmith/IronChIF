@@ -46,6 +46,9 @@ Instead of giving something to the raven Guard:
 Instead of waking the raven guard:
 	say "They are [i]most decidedly[r] not asleep.";
 
+Instead of touching the raven guard:
+	say "As tempting as it is to bonk one of them on the head as you skim by, you unfortunately are not quite that much better than they are.";
+
 Being Chased is a recurring scene.  Being Chased begins when the woodpeckers are activated.  Being chased ends when the woodpeckers are not activated.
 
 Being Chased has a number called closeness.  The closeness of Being Chased is 0.
@@ -173,7 +176,7 @@ To escape and recover:
 	Now the closeness of Being Chased is 0;
 	[Now the thickness of the grey mist is 1;]
 	Now Constance is cruising;
-	say "[lb]The Raven's frustrated caws echo in the [mist density] mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.";
+	say "[lb]The Ravens[apostrophe] frustrated caws echo in the [mist density] mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.";
 	if Horatio is not remembered:
 		if the rucksack is not enclosed by the player:
 			say "[lb]You retrieve your rucksack and any fallen capsae, and plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.";

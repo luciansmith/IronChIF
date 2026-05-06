@@ -135,7 +135,7 @@ First check opening a closed door during Being Chased:
 
 The Great Hall doors can be barred.  The great hall doors are barred.
 
-A wooden bar is in Upper Great Hall.  It is loose.  "The wooden bar that once held the Great Hall doors shut lies here, discarded.".  The description is "A large wooden mahogany bar, used to keep the double doors of the Great Hall closed."  Understand "large/mahogany" as the wooden bar.
+A wooden bar is in Upper Great Hall.  It is loose.  "The wooden bar that once held the Great Hall doors shut lies here, discarded.".  The description is "A large wooden oak bar, used to keep the double doors of the Great Hall closed."  Understand "large/oak" as the wooden bar.
 
 Check taking the wooden bar when Everything Falls is not happening:
 	say "The wooden bar is much too heavy to lift by yourself." instead;
@@ -204,6 +204,10 @@ In the display nooks around the edges of the hall are all manner of artifacts fr
 
 Various artifacts are scenery in Lower Great Hall.  The description is "[If the player is Constance]Old things, new things, distant things, close things[otherwise]You could spend weeks in here if you were allowed, just cataloguing and recording your impressions of all the artifacts that fill the nooks surrounding the floor.  But right now, all you wanted to do was check to make sure the cloaks were still here[end if]." Understand "old/things/new/distant/close/nooks/twenty" as various artifacts.
 
+Instead of going nowhere from lower great hall:
+	say "The only way out of here is to fly back up to the upper platform.";
+
+
 [LS DEBUG:  MAYBE allow 'various artifacts' to respond to 'cloaks' in case someone replaying the game tries to look for the cloaks before they show up.]
 
 The two cloak posts are fixed in place in Void.  They are plural-named.   Understand "ancient/hunting/post" as two cloak posts.  [The description is "[what's on the posts]"]
@@ -265,18 +269,18 @@ To snatch the cloak:
 
 
 
-The hunting cloak is a wearable object on the cloak posts.  The hunting cloak can be purple or invisible.  The hunting cloak is purple.  The description is "[hunting cloak description]."  Understand "hippo/hippotomai/dark/purple/variegation/camoflage/cloaks" as the hunting cloak.  The printed name of the hunting cloak is "[if the hunting cloak is purple]purple[otherwise]invisible[end if] hunting cloak".
+The hunting cloak is a wearable object on the cloak posts.  The hunting cloak can be purple or invisible.  The hunting cloak is purple.  The description is "[hunting cloak description]."  Understand "hippo/hippotomai/dark/purple/variegation/camouflage/camoflage/cloaks" as the hunting cloak.  The printed name of the hunting cloak is "[if the hunting cloak is purple]purple[otherwise]invisible[end if] hunting cloak".
 
 To say hunting cloak description:
 	if the player is Constance:
 		if the hunting cloak is on the cloak posts:
 			if the hunting cloak is purple:
-				say "A plaque by the cloaks claims that in prehistoric times, people made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camoflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot";
+				say "A plaque by the cloaks claims that in prehistoric times, people made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camouflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot";
 			otherwise:
 				say "The cloak posts appear to be empty";
 		otherwise:
 			if the hunting cloak is purple:
-				say "In prehistoric times, people apparently made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camoflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot.  On foot![nb]";
+				say "In prehistoric times, people apparently made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camouflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot.  On foot![nb]";
 			otherwise:
 				say "You can feel the supple folds of the cloak, but cannot see it at all";
 	otherwise:
@@ -432,7 +436,7 @@ Librum contents are scenery in Librum itself.  "The worst part about this room i
 The lavish display case is scenery in Librum Itself.  "The boarded-over display case, like many of the shelves, was grown here as a permanent fixture.  It hasn't always displayed capsae, but there was always something to show off.  Well.  Until now."  Understand "boarded/over/boarded-over/display/case/grown/permanent/fixture" as the lavish display case.
 
 Instead of going nowhere from the Librum Itself:
-	If the noun is up:
+	If the noun is up or the noun is west:
 		try entering the Librum Door instead;
 	otherwise:
 		say "You can exit the Librum by going up, out the door." instead;
@@ -522,7 +526,8 @@ After going Garden Door:
 	
 	Oh no.";
 	wait for any key;
-	Move Horatio to Nursery_door; 
+	Move Horatio to Nursery_door;
+	Now Horatio is stage five;
 	Move the player to Nursery_door;
 	now the most_recent of the Trophy Room is snuck_in;
 	stop the action;
@@ -545,6 +550,10 @@ Check going west from Nursery_door:
 After taking off cloak in Nursery_Door:
 	say "You take a deep breath and take off the cloak.  Next to you, Horatio takes his own cloak off as well.";
 	stop the action;
+
+After going west from Nursery_door:
+	move Horatio to the Nursery_itself;
+	continue the action;
 
 Snuck_in is an achievement in the Void.  The printed name is "The Old Cruising Grounds".  The description is "Make it back inside the Royal Quarters.";
 

@@ -22,7 +22,7 @@ To say Horatio room desc:
 				if black_escape is less than 4:
 					say ".  He seems to be trying to get your attention.  So, one more thing to worry about, in addition to the armed guard after you";
 		otherwise:
-			say "Horatio is talking [if go go go is happening]quickly[otherwise]slowly[end if] to the [lone guard] about [one of]the ethics of a monarchy[or]his grandchildren[or]regrettable fashion choices from the youth of today[or]whether the dot on the back of looks infected[or]how to get to zenostan (is that a real place?) from here[or]whether her mother was the Isabella he once knew[or]some meandering story about flying to the park[cycling], driving the guard quietly insane";
+			say "Horatio is talking [if go go go is happening]quickly[otherwise]slowly[end if] to the [lone guard] about [one of]the ethics of a monarchy[or]his grandchildren[or]regrettable fashion choices from the youth of today[or]whether the dot on the back of his neck looks infected[or]how to get to Zenostan (is that a real place?) from here[or]whether her mother was the Isabella he once knew[or]some meandering story about flying to the park[cycling], driving the guard quietly insane";
 	otherwise:
 		say "Horatio is here, watching you with quiet aplomb and patience"
 
@@ -416,7 +416,7 @@ When Horatio tries to make zgi less ridiculous begins:
 		say "With a solemn nod to you, Horatio tells you to meet him in the Great Hall with the black capsa, then turns and glides away.";
 		move Horatio to Lower Great Hall;
 
-Horatio can be stage one or stage two or stage three or stage four.  Horatio is stage one.
+Horatio can be stage one or stage two or stage three or stage four or stage five.  Horatio is stage one.
 
 Every turn during Horatio tries to make zgi less ridiculous:
 	If Horatio is stage one and the location is not Librum Landing Cradle and Horatio is not in the Lower Great Hall:
@@ -503,6 +503,10 @@ Carry out chatting Horatio:
 			say "Slightly exasperated, you ask Horatio, 'What do you want me to do now?'
 
 			'You have igram.  Try it here, and see what happens,' he replies.";
+	otherwise if Horatio is stage four:
+		say "'We are ready,' says Horatio.  'Taclor awaits within the Royal Quarters.'";
+	otherwise if Horatio is stage five:
+		say "'Taclor is here.  It's time to make a decision,' says Horatio.";
 	stop the action;
 
 Horatio ends here.

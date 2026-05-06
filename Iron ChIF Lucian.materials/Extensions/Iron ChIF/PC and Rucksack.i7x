@@ -344,8 +344,11 @@ Every turn during Everything Falls:
 		Otherwise if the the great hall doors are open and the wooden bar is in Upper Great hall:
 			move the wooden bar to the location;
 			now the wooden bar is following;
-			now the closeness of Being Chased is 2;
-			say "Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  You turn and weave, managing to keep it from hitting you.  The Raven Guard fall back as the spinning bar careens through the air!";
+			if the closeness of Being Chased is at least 2:
+				now the closeness of Being Chased is 2;
+				say "Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  You turn and weave, managing to keep it from hitting you.  The Raven Guard fall back as the spinning bar careens through the air!";
+			otherwise:
+				say "Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  You turn and weave, managing to keep it from hitting you.";
 	if location is Librum Landing Cradle and the gold capsa is enclosed by the player and the black capsa is enclosed by the Librum itself and the Librum door is open and black_escape is 4:
 		say "A black capsa flies through the doors of the Librum, up towards you!";
 		move the black capsa to the location;

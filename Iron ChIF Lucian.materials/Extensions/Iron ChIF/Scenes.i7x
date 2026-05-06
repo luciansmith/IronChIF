@@ -312,7 +312,7 @@ Reluctant understanding flashes across Aubrey's face, replaced quickly with grim
 
 F5C1 is a page.  It is for F5C.  It flips to F5_cellEnd.
 The cdesc is "'Indeed.'"
-The description is "Aubrey glares intently at you, then releases your chest to stab at a hidden button with a talon.  Distant woodpeckers rattle some sort of call in their Pounding dialect, which you never learned, but can guess what it must mean.  'Please--' you start, but Aubrey cuts you off.  In seconds, the room fills up with guards."
+The description is "Aubrey glares intently at you, then releases your chest to stab at a hidden button with a talon.  Distant woodpeckers rattle some sort of call in their Pounding dialect, which you never learned, but can guess what it must mean.  'Please--' you start, but Aubrey cuts you off with a look.  In seconds, the room fills up with guards."
 
 F5_cellEnd is a page.  The description is "'Take this one back to his cell,' she tells them.  'Then gather arms.  We hit the Falcon Clan tonight.'
 
@@ -322,7 +322,7 @@ It's hard to gather any information from your cell, but the fact that you contin
 A page-toggle rule for F5_cellEnd:
 	move world_change to the Trophy Room;
 	write out achievements;
-	end the story finally saying "Constance and taclor are free, but without Horatio.  {Need something better -LS DEBUG}"
+	end the story finally saying "Constance and taclor are free"
 
 F5C2 is a page.  It is for F5c.
 The cdesc is "Offer to take her to them, alone."
