@@ -96,7 +96,15 @@ Every turn during Being Chased:
 				say "The Raven Guard pour through the double doors, and you have nowhere to maneuver.";
 				end the story saying "You have been captured.";
 				stop the action;
-			If the location is not the starting_line of Being Chased:
+			If No More Purple is happening and the hunting cloak is worn:
+				if Everything Falls is happening and Everything Falls is not grounded:
+					say "The Raven Guard fly in, unable to see you, but flying 'down' straight at you.  Stuck in this cloak, you hardly have any mobility, and after the first confused guard crashes into you, it doesn't take the rest long to figure out where you are.";
+					end the story saying "You have been captured.";
+					stop the action;
+				otherwise:
+					say "You manage to hobble away from where you were just far enough that when the Raven Guard show up, you're no longer there.  You manage to remain silent while they fly in frustrated circles, unable to find you.";
+					escape and recover;
+			Otherwise if the location is not the starting_line of Being Chased:
 				If the starting_line of Being Chased is High Above:
 					say "You've dived straight into a squad of Raven Guards, on their way up to accost you.  Fortunately, your speed helped you avoid most of them, but one guard's talon catches you on your side as you twist by them.";
 					Now Constance is wounded;
@@ -197,7 +205,10 @@ To escape and recover:
 		Move the player to High Above, without printing a room description;
 
 After waiting during Being Chased:
-	say "You circle evasively, trying to avoid the Raven Guard." instead;
+	if the hunting cloak is worn:
+		say "You wait, anxiously skittish, and unable to fly." instead;
+	otherwise:
+		say "You circle evasively, trying to avoid the Raven Guard." instead;
 
 When Being Chased ends:
 	if cell door is open:

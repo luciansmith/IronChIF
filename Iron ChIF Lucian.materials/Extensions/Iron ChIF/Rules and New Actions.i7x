@@ -366,7 +366,9 @@ Before Descending:
 
 [Understand "fly" as going something.] [Well!  An I7 'abject failure' bug!  Woo!]
 Understand "fly" as going.
+Understand "glide" as going.
 Understand "fly [direction]" as going.
+Understand "glide [direction]" as going.
 
 Check jumping:
 	say "[if the player is Constance]Pfaugh![otherwise]Your old bones aren't what the used to be.[end if]  Jumping is for fledglings!" instead;

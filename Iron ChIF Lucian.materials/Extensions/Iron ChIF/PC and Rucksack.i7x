@@ -344,7 +344,11 @@ Every turn during Everything Falls:
 		Otherwise if the the great hall doors are open and the wooden bar is in Upper Great hall:
 			move the wooden bar to the location;
 			now the wooden bar is following;
-			if the closeness of Being Chased is at least 2:
+			if the hunting cloak is worn:
+				say "Suddenly the great wooden bar that had been holding the Great Hall doors closed tumbles towards you!  You instinctively try to spread your wings to fly out of the way, the cloak stops them, and you overbalance and fall over.  The finishes its trajectory and lands on you, leaving you unable to move.  [if the hunting cloak is invisible]The Raven Guard can't see you, but they have no trouble following 'down'.";
+				end the story saying "You have been captured.";
+				stop the action;
+			otherwise if the closeness of Being Chased is at least 2:
 				now the closeness of Being Chased is 2;
 				say "Suddenly the great wooden bar that had been holding the Great Hall doors closed gets dislodged, and flies at you!  You turn and weave, managing to keep it from hitting you.  The Raven Guard fall back as the spinning bar careens through the air!";
 			otherwise:

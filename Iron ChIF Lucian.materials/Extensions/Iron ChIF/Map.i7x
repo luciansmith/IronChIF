@@ -184,6 +184,9 @@ Upper Great Hall is a room. "[if the player is Constance]There is a small platfo
 
 The platform is scenery in Upper Great Hall.  "[if the player is Constance]The grown mahogany branch around the platform is a masterpiece of Throckwright engineering.  Not a single delegate or guest ever had problems looking regal as they launched themselves from an appropriate spot[otherwise]You touch the great mahogany branch at the edge of the platform and can just barely hear the echo of the song that grew it, still pulsing in its veins[end if]."  Understand "grown/mahogany/branch/masterpiece/spot/feet/grown-mahogany/elegant" as the platform.
 
+First check entering platform:
+	say "[if the player is Constance]You step forward and grip the branch with your talons at your favorite spot.  It's oddly satisfying, and reminds you of times as a kid you'd sneak up here and watch official ceremonies below[otherwise]You step forward to the branch, automatically gravitating to the same spot you launched yourself from the first time you visited.  It's a solid, reassuring spot[end if]." instead;
+
 Instead of going nowhere from upper great hall:
 	if the noun is up:
 		Try entering the Great Hall doors;
@@ -202,13 +205,21 @@ Lower Great Hall is a room.  "[if the player is Constance]When not prepared for 
 
 In the display nooks around the edges of the hall are all manner of artifacts from across many ages[end if]."
 
-Various artifacts are scenery in Lower Great Hall.  The description is "[If the player is Constance]Old things, new things, distant things, close things[otherwise]You could spend weeks in here if you were allowed, just cataloguing and recording your impressions of all the artifacts that fill the nooks surrounding the floor.  But right now, all you wanted to do was check to make sure the cloaks were still here[end if]." Understand "old/things/new/distant/close/nooks/twenty" as various artifacts.
+Various artifacts are scenery in Lower Great Hall.  The description is "[If the player is Constance]Old things, new things, distant things, close things[otherwise]You could spend weeks in here if you were allowed, just cataloguing and recording your impressions of all the artifacts that fill the nooks surrounding the floor.  But right now, all you wanted to do was check to make sure the cloaks were still here[end if]." Understand "old/things/new/distant/close/nook/nooks/twenty" as various artifacts.
+
+The exposed floor is scenery in Lower Great Hall.  The description is "[if the player is Constance]As a kid, you and the now-queen would come in here when it was cleared out like this and make up endless games to play on the patterned wood[otherwise]You don't think you've ever seen this floor exposed like it is now.  It's pretty[end if]."  Understand "exquisite/swooping/lines/starbursts/multicolored/woods/wood" as the exposed floor.
 
 Instead of going nowhere from lower great hall:
 	say "The only way out of here is to fly back up to the upper platform.";
 
+Instead of taking various artifacts:
+	say "[if the player is Constance]There's a lot of stuff here, but it's all ceremonial or decorative[otherwise]You would love to.  But just the cloaks.  When Constance is here[end if].";
 
-[LS DEBUG:  MAYBE allow 'various artifacts' to respond to 'cloaks' in case someone replaying the game tries to look for the cloaks before they show up.]
+Instead of entering various artifacts:
+	say "The nooks are designed to hold the artifacts, and don't have extra space.";
+
+Instead of searching various artifacts:
+	say "[if the player is Constance]You poke through the various artifacts, but don't see anything that seems immediately useful[otherwise]Your eyes wander regretfully over the treasure trove of history on display here.  If only you have more time[end if]."
 
 The two cloak posts are fixed in place in Void.  They are plural-named.   Understand "ancient/hunting/post" as two cloak posts.  [The description is "[what's on the posts]"]
 
@@ -287,6 +298,9 @@ To say hunting cloak description:
 		say "These hunting cloaks date back to aboriginal times, perhaps even earlier than the capsae and scrolls.  The tough dark purple hippotomai skins they're made of meant they were cumbersome to wear, but would last forever.  You believe several different clans had to cooperate to make them, as no one clan posessed the skills, dexterity, and toughness necessary to both hunt the hippotomai and put the cloaks together";
 
 Does the player mean doing anything with the hunting cloak:  it is very likely.
+
+Does the player mean opening the hunting cloak:  it is unlikely.
+Does the player mean closing the hunting cloak:  it is unlikely.
 
 Check wearing the cloak:
 	if the location is in_forest:
@@ -589,6 +603,9 @@ Check taking the net:
 	say "Besides being way too large to carry, the net is attached firmly to the trees and branches, not allowing anything larger than a feathers-length through it[if cell door is open].  Though not, you notice, with knots that could be undone by the scroll of Opening.  Everything is just... folded.  Very deliberately[end if]." instead.
 
 Check cutting the net:
+	say "Your beak isn't strong enough to cut through the net." instead;
+
+Check attacking the net:
 	say "Your beak isn't strong enough to cut through the net." instead;
 
 Up from in_forest is Great Hall Landing Cradle.
