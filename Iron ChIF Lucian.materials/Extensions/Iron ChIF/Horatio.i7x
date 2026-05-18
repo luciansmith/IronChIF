@@ -24,7 +24,10 @@ To say Horatio room desc:
 		otherwise:
 			say "Horatio is talking [if go go go is happening]quickly[otherwise]slowly[end if] to the [lone guard] about [one of]the ethics of a monarchy[or]his grandchildren[or]regrettable fashion choices from the youth of today[or]whether the dot on the back of his neck looks infected[or]how to get to Zenostan (is that a real place?) from here[or]whether her mother was the Isabella he once knew[or]some meandering story about flying to the park[cycling], driving the guard quietly insane";
 	otherwise:
-		say "Horatio is here, watching you with quiet aplomb and patience"
+		if the hunting cloak is worn and the hunting cloak is not purple:
+			say "Horatio is nearby.  You can sense him, though you can't see him";
+		otherwise:
+			say "Horatio is here, watching you with quiet aplomb and patience";
 
 To say Horatio_desc:
 	if the player is Horatio:
@@ -330,7 +333,7 @@ C4b is a page.  It is for C3a and C4a.
 The cdesc is "Pull everything together."
 The description is "'So that's your heresy,' you conclude.  'You want to read a capsa's scroll.  And change the world again.'
 
-'Not just any capsa.  The scroll of health.  Taclor.  Ten years ago, I would have been happy to read any.  Now, it must be that one.  But I will not make that choice on my own.  Every Reader like myself has the innate ability to Read a single scroll, and I will yield to the will of its holder, as my predecessors swore to do in the aftermath of the Great War.  But I will not waste my ability on anything else.'"
+'Not just any capsa.  The scroll of health.  Taclor.  Ten years ago, I would have been happy to read any.  Now, it must be that one.  But I will not make that choice on my own.  Every Reader like myself has the innate ability to Read a single scroll, and I will yield to the will of its holder, as my predecessors swore to do in the aftermath of the Great Wars.  But I will not waste my ability on anything else.'"
 
 C5a is a page.  It is for C4b and C5b.
 The cdesc is "But you need the scroll for your mother!"

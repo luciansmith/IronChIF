@@ -93,7 +93,7 @@ To carry out everything rezrovving:
 	say "As you open the purple capsa, an almost-palpable wave of force emanates from it, as the power of the revealed scroll of rezrov is released.[lb]";
 	if the lone guard is in the location:
 		if the tiny closed padlocks are enclosed by the lone guard:
-			say "As the shockwave of magic reaches the guard, the padlock on her uniform closest to you pops open.  Then in succession, all the other padlocks she's wearing pop open as well, in perfect concentric circles in order of how distant they are from the scroll.  As her eyes lock with yours, you realize, somewhat belatedly, that you've given her the ability to triangulate on your position.  Without hesitation, she sings a song of fire and leaps straight at you, before you even have time to let go of the capsa.
+			say "As the shockwave of magic reaches the guard, the padlock on her uniform closest to you pops open.  Then in succession, all the other padlocks she's wearing pop open as well, in perfect concentric circles in order of how distant they are from the scroll.  [if Sneaking is happening and No More Purple is happening]You[otherwise]As her eyes lock with yours, you[end if] realize, somewhat belatedly, that you've given her the ability to triangulate on your position[if Sneaking is happening and No More Purple is happening].  Even though you're invisible, she looks directly at you and leaps as she sings a song of fire[otherwise].  Without hesitation, she sings a song of fire and leaps straight at you[end if], before you even have time to let go of the capsa.
 			
 			The door behind her opens silently as your feathers crisp and she tackles you to the ground.";
 			end the story saying "You have been captured.";
@@ -189,8 +189,9 @@ Every turn during Doors Re-close:
 				say "The lone guard sighs, and slowly begins re-attaching the tiny padlocks to loops on her uniform.";
 			otherwise if the sense_of_duty of the lone guard is 4 and the player can see the lone guard:
 				say "The lone guard gets stuck trying to attach a recalcitrant padlock to her left shoulder strap, but finally gets it attached again.";
-			otherwise if the sense_of_duty of the lone guard is 5 and the player can see the lone guard:
-				say "The lone guard picks up the last of the tiny padlocks and attaches it to her belt with a definitive 'click'  Sighing, she resumes her post.";
+			otherwise if the sense_of_duty of the lone guard is 5:
+				if the player can see the lone guard:
+					say "The lone guard picks up the last of the tiny padlocks and attaches it to her belt with a definitive 'click'  Sighing, she resumes her post.";
 				move the collection of tiny padlocks to the Void;
 				move the tiny closed padlocks to the well-fitting uniform;
 			increase the sense_of_duty of the lone guard by 1;
@@ -345,7 +346,7 @@ Every turn during Everything Falls:
 			move the wooden bar to the location;
 			now the wooden bar is following;
 			if the hunting cloak is worn:
-				say "Suddenly the great wooden bar that had been holding the Great Hall doors closed tumbles towards you!  You instinctively try to spread your wings to fly out of the way, the cloak stops them, and you overbalance and fall over.  The finishes its trajectory and lands on you, leaving you unable to move.  [if the hunting cloak is invisible]The Raven Guard can't see you, but they have no trouble following 'down'.";
+				say "Suddenly the great wooden bar that had been holding the Great Hall doors closed tumbles towards you!  You instinctively try to spread your wings to fly out of the way, the cloak stops them, and you overbalance and fall over.  The bar finishes its trajectory and lands on you, leaving you unable to move.  [if the hunting cloak is invisible]The Raven Guard can't see you, but they have no trouble following 'down'.";
 				end the story saying "You have been captured.";
 				stop the action;
 			otherwise if the closeness of Being Chased is at least 2:
@@ -366,7 +367,7 @@ When Everything Falls ends:
 	Now Everything Falls is offline;
 	Now is_now_up is the Void;
 	if the woodpeckers are activated:
-		say "You twist and right yourself as 'down' returns to its normal state[if the closeness of Being Chased is at least 2].  The Raven Guards struggle to right themselves again, and take a moment to recover[end if].";
+		say "You [if Sneaking is happening]stagger[otherwise]twist and right yourself[end if] as 'down' returns to its normal state[if the closeness of Being Chased is at least 2].  The Raven Guards struggle to right themselves again, and take a moment to recover[end if].";
 		if the closeness of Being Chased is greater than 2:
 			now the closeness of Being Chased is 2;
 	otherwise:
@@ -414,7 +415,8 @@ When go go go begins:
 	From everywhere in the Aerie, you hear the drumming of Woodpeckers in the Pounding dialect:  'Target is quick, repeat, target is quick.  Remember you are too.'  Gah; of course they would have practiced flying in a hasted state.  You'll just have to rely on the fact that the increase is proportional.";
 
 When go go go ends:
-	say "From everywhere in the Aerie, you hear the drumming of Woodpeckers in the Pounding dialect: 'Target is slow again, repeat, target is slow.'  Just in case they couldn't tell they were slow themselves.  Actually, you do recall some Raven Guards from your childhood that would have needed to be told.  Ah, poor James.";
+	if the location is not Nursery_Door and the location is not Nursery_itself:
+		say "From everywhere in the Aerie, you hear the drumming of Woodpeckers in the Pounding dialect: 'Target is slow again, repeat, target is slow.'  Just in case they couldn't tell they were slow themselves.  Actually, you do recall some Raven Guards from your childhood that would have needed to be told.  Ah, poor James.";
 
 Section Zork Grand Inquisitor Live Forever
 

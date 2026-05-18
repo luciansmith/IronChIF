@@ -92,18 +92,23 @@ Every turn during Being Chased:
 				say "[one of].  Crap.  The queen must have Ikniq working for her now[or].  The queen's Ikniq warriors are after you again[stopping].";
 		Otherwise if the closeness of Being Chased is 2:
 			move the raven guard to the location;
-			if the location is Upper Great Hall:
+			If the hunting cloak is worn:
+				if No More Purple is happening:
+					if Everything Falls is happening and Everything Falls is not grounded:
+						say "The Raven Guard fly in, unable to see you, but flying 'down' straight at you.  Stuck in this cloak, you hardly have any mobility, and after the first confused guard crashes into you, it doesn't take the rest long to figure out where you are.";
+						end the story saying "You have been captured.";
+						stop the action;
+					otherwise:
+						say "[if the location is outdoors]You manage to hobble away from where you were just far enough that when the Raven Guard show up, you're no longer there.  You remain silent while they fly in frustrated circles, unable to find you[otherwise]You press yourself against the wall, barely daring to breathe as the Raven Guard fly in and search everywhere for you.  But they're not searching for anything invisible, and eventually give up in anger[end if].";
+						escape and recover;
+				otherwise:
+					say "The Raven Guard fly in, and see your purple cloak almost immediately against the foliage.";
+					end the story saying "You have been captured.";
+					stop the action;
+			Otherwise if the location is Upper Great Hall:
 				say "The Raven Guard pour through the double doors, and you have nowhere to maneuver.";
 				end the story saying "You have been captured.";
 				stop the action;
-			If No More Purple is happening and the hunting cloak is worn:
-				if Everything Falls is happening and Everything Falls is not grounded:
-					say "The Raven Guard fly in, unable to see you, but flying 'down' straight at you.  Stuck in this cloak, you hardly have any mobility, and after the first confused guard crashes into you, it doesn't take the rest long to figure out where you are.";
-					end the story saying "You have been captured.";
-					stop the action;
-				otherwise:
-					say "You manage to hobble away from where you were just far enough that when the Raven Guard show up, you're no longer there.  You manage to remain silent while they fly in frustrated circles, unable to find you.";
-					escape and recover;
 			Otherwise if the location is not the starting_line of Being Chased:
 				If the starting_line of Being Chased is High Above:
 					say "You've dived straight into a squad of Raven Guards, on their way up to accost you.  Fortunately, your speed helped you avoid most of them, but one guard's talon catches you on your side as you twist by them.";
@@ -152,7 +157,7 @@ To determine evasion:
 		say "You dodge and weave and almost get away from your pursuers, but when 'down' always points straight at you, even when they can't see you, they always know where you are.";
 	Otherwise if Super-Momentum is happening:
 		if go go go is happening:
-			say "Your extra speed from the capsa of haste lets you pull ahead, since your pursuers are only proportionally faster than they were.  You manage to use the extra distance to dodge behind a Poplar and plummet, out of view of any stray Raven.";
+			say "Your extra speed from the capsa of haste lets you pull ahead, since your pursuers are only proportionally faster than they were.  You manage to use the extra distance to dodge behind a poplar and plummet, out of view of any stray Raven.";
 			now the most_recent of the Trophy Room is go_go_go;
 		otherwise:
 			say "You expertly twist at breakneck speeds, weaving through three Ash trunks, over a branch, and around and behind a Redwood, where you halt, twist, and dive straight down the trunk, out of view of any stray Raven.";
@@ -184,7 +189,7 @@ To escape and recover:
 	Now the closeness of Being Chased is 0;
 	[Now the thickness of the grey mist is 1;]
 	Now Constance is cruising;
-	say "[lb]The Ravens[apostrophe] frustrated caws echo in the [mist density] mist.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.";
+	say "[lb]The Ravens[apostrophe] frustrated caws echo through the [mist density] mist as they fly off.  In time, the woodpeckers cease their drumming, and the cawing fades as well.  Protocol would dictate that they return to guarding priority items.  If there were any reserves left, they would be called up, but the Red Plague has affected the Raven Guard as sorely as your own community.";
 	if Horatio is not remembered:
 		if the rucksack is not enclosed by the player:
 			say "[lb]You retrieve your rucksack and any fallen capsae, and plot a now-unseen course back to the familiar currents above the Aerie to ponder your next move.";

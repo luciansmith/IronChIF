@@ -127,6 +127,10 @@ To say closed-great-doors:
 		say ".  The doors give slightly and the bar rattles, but the doors refuse to open.";
 
 Last Check going Great Hall doors during Being Chased:
+	if the location is Upper Great hall:
+		continue the action;
+	if the hunting cloak is worn:
+		continue the action;
 	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Guard has followed you, and you simply don't have any room to maneuver.";
 	end the story saying "You have been captured.";
 
@@ -303,18 +307,25 @@ Does the player mean opening the hunting cloak:  it is unlikely.
 Does the player mean closing the hunting cloak:  it is unlikely.
 
 Check wearing the cloak:
+	if Being Chased is happening:
+		say "You don't have time to land and put on the cloak while you're being chased.  And you wouldn't be able to fly afterwards!" instead;
 	if the location is in_forest:
 		say "You wouldn't be able to fly back up!" instead;
 	if the location is High Above:
 		say "Might I remind you that you can't fly with that cloak on?  And that you are currently [i]very high[r] in the air?" instead;
 
+Report wearing the cloak:
+	if the location is outdoors:
+		say "You land and put on the cloak, itching to get back to the skies.";
+		stop the action;
+
 Section Librum
 
-Librum Landing Cradle is east of Great Hall Landing Cradle.  "[if the player is Constance]The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The [Librum Door] leads inward to the Librum itself.
+Librum Landing Cradle is east of Great Hall Landing Cradle.  "[if the player is Constance]The Landing Cradle of the Librum is beautifully set with interlocking redwood and pine, suggesting shelves of books.  The [Librum door] leads inward to the Librum itself.
 
 To the west is the Great Hall, and to the northwest is the Royal Quarters and Gardens.  You can also re-ascend to the skies or descend to the forest below.  The door to the Librum is to the east[otherwise]For the last ten years, this place has been the focus of your subconscious.  Always knowing where capsae are can be wearing when you're this close for so long.  Every time one would be taken out for training, every time one would be moved for cleaning, every time their display case was bumped, it was a little 'ding' for your subconscious mind to notice, and probably pass up to your conscious mind, because, let's face it, there wasn't a lot else to notice from that cell.  The Librum was always the focus.  Until Constance.
 
-From here, the Great Hall is west, the Royal Quarters northwest, and the [Librum Door] east (though guarded).  Or you could fly off again, either up or down[end if]."
+From here, the Great Hall is west, the Royal Quarters northwest, and the [Librum door] east (though guarded).  Or you could fly off again, either up or down[end if]."
 
 Up from Librum Landing Cradle is High Above.
 Down from Librum Landing Cradle is in_forest.
@@ -322,20 +333,20 @@ East from High Above is Librum Landing Cradle.
 
 Instead of going nowhere from Librum Landing Cradle:
 	if the noun is east:
-		try entering Librum Door;
+		try entering Librum door;
 	Otherwise:
 		say "From here, the Great Hall is to the west, the Royal Quarters and Gardens are to the northwest, and the doors to the Librum are east.  You can also fly up again, or descend to the forest below."
 
-The Librum Door is a door in Librum Landing Cradle.  It is closed and locked.  It is inside from Librum Landing Cradle and outside from Librum Itself.  The description is "A canted [if open]open[otherwise]closed[end if] hatch to the Librum, on the east side of the landing cradle."
+The Librum door is a door in Librum Landing Cradle.  It is closed and locked.  It is inside from Librum Landing Cradle and outside from Librum Itself.  The description is "A canted [if open]open[otherwise]closed[end if] hatch to the Librum, on the east side of the landing cradle."
 
-First Check opening a closed Librum Door:
+First Check opening a closed Librum door:
 	if the lone guard is in the location:
 		if the player is Constance:
 			say "The guard is entirely too watchful to let you do that[if Momentum is happening], even going as fast as you are[end if]." instead;
 		otherwise:
 			say "Right.  An old buzzard, facing off against a fresh-beaked Raven Guard, and an Ikniq, at that.  You'll leave opening the door to rezrov."
 
-First Check unlocking a locked Librum Door with:
+First Check unlocking a locked Librum door with:
 	if the lone guard is in the location:
 		if the player is Constance:
 			say "The guard is entirely too watchful to let you do that." instead;
@@ -343,14 +354,18 @@ First Check unlocking a locked Librum Door with:
 			say "Right.  An old buzzard, facing off against a fresh-beaked Raven Guard, and an Ikniq, at that.  You'll leave opening the door to rezrov."
 
 Before going inside from Librum Landing Cradle:
-	try entering Librum Door instead;
+	try entering Librum door instead;
 
-Last Check going Librum Door during Being Chased:
+Last Check going Librum door during Being Chased:
+	if the location is Librum itself:
+		continue the action;
+	if the hunting cloak is worn:
+		continue the action;
 	say "You fly through the door, and immediately regret your decision.  In an instant, the Raven Guard has followed you, and you simply don't have any room to maneuver.";
 	end the story saying "You have been captured.";
 
 
-Check entering Librum Door:
+Last Check going Librum door:
 	if the player is Constance:
 		if the lone guard is in the location:
 			if Horatio is in the location:
@@ -365,7 +380,10 @@ Check entering Librum Door:
 				otherwise:
 					say "Horatio is distracting the guard by discussing [one of]the ethics of a monarchy[or]his grandchildren[or]regrettable fashion choices from the youth of today[or]whether the dot on the back of looks infected[or]how to get to moncrepistan (is that a real place?) from here[or]whether her mother was the Isabella he once knew[or]some meandering story about flying to the park[cycling], but you can't just [i]glide in[r]." instead;
 			otherwise:
-				say "The guard is entirely too watchful to let you do that." instead;
+				if Sneaking is happening and No More Purple is happening:
+					say "Invisibly, you sneak behind the guard and through the doors.";
+				otherwise:
+					say "The guard is entirely too watchful to let you do that." instead;
 		otherwise if the location is Librum Itself:
 			[*Leaving* the Librum.  We'll assume the guard and Horatio are still outside.  And, sigh, not make this a puzzle.]
 			say "Listening to Horatio talk with the guard, you enter the shadows just inside the Librum door, where you can watch the guard but not be seen.  When the moment is right, you launch yourself through, and back up into the safety of the mist.";
@@ -382,7 +400,7 @@ A lone guard is a woman in Librum Landing Cradle.  "A lone Raven guard stands in
 
 To say lone_guard_desc:
 	if the player is Constance:
-		say "The raven guard wears the well-fitting uniform of the Queen's Guard, complete with a small red insignia on her shoulder.  The silvered knives on her talons are retracted while she stands, and golden razors line her beak[if the collection of tiny padlocks is in the Void].  Oddly, her uniform seems to be covered with... tiny closed padlocks?  That's not the insignia of any order you know[end if].";
+		say "The raven guard wears the well-fitting uniform of the Queen's Guard, complete with a small red insignia on her shoulder.  The silvered knives on her talons are retracted while she stands, and golden razors line her beak[if the collection of tiny padlocks is in the Void].  Oddly, her uniform seems to be covered with... tiny closed padlocks?  That's not the insignia of any order you know[end if]";
 	otherwise:
 		say "You wouldn't be surprised if this lovely young dangerous woman was a fledgling when you arrived, lo these ages past.  Now she's doing a bang-up job of keeping you and Constance out of the Librum.  Fortunately, she looks polite, like she wouldn't arrest a kindly old buzzard for talking her ear off while a certain Falcon Clan slips in to the Librum behind her[if the black capsa is not enclosed by the Librum itself].  You're kind of glad you won't have to exploit her like that, as Constance seems to have extricated the black capsa on her own already[end if]";
 
@@ -451,12 +469,12 @@ The lavish display case is scenery in Librum Itself.  "The boarded-over display 
 
 Instead of going nowhere from the Librum Itself:
 	If the noun is up or the noun is west:
-		try entering the Librum Door instead;
+		try entering the Librum door instead;
 	otherwise:
 		say "You can exit the Librum by going up, out the door." instead;
 
 Before going outside from the Librum Itself:
-	try entering the Librum Door instead;
+	try entering the Librum door instead;
 
 Instead of opening the display case:
 	say "[one of]On a whim, you pull back a board to see if anything's in the display case.  There is.  Jewels and money.  At an estimate, maybe a quarter of the queen's personal treasury.  You shake your head, disgusted.  Well, that's why this building was being guarded[or]You don't need [i]money[r].  What you're after is much more valuable to your community[stopping].";
@@ -510,6 +528,18 @@ Before going inside from Royal Gardens:
 
 Last Check going Garden Door:
 	if the player is Constance:
+		If Sneaking is happening:
+			if Being Chased is happening:
+				if the player encloses an open gold capsa:
+					say "You hold the gold capsa in front of you, and immediately start falling sideways across the roof of the Aerie, towards the door.  It's sort of like flying?  Except you can't stretch out your wings in this stupid cloak, so you have almost zero control over your trajectory.  You do still manage to aim yourself at the door, and expertly/accidentally twist at the last second, sending yourself catapulting straight into the Royal Quarters.  You made it!
+					
+					...and then, of course, the Raven Guard pour in through the door after you, because the gold capsa is still pointing at you.";
+					end the story saying "You have been captured.";
+					stop the action;
+				otherwise if the hunting cloak is purple:
+					say "You absolutely cannot make it across the open space between you and the door wearing a purple cloak that keeps you from flying." instead;
+				otherwise:
+					continue the action;
 		If Being Chased is happening:
 			say "You fly through the door, and immediately regret your decision.  Not only does the Raven Guard who were chasing you follow, but so do the guards that stayed behind to guard, well, this door.";
 			end the story saying "You have been captured." instead;
@@ -521,7 +551,7 @@ Last Check going Garden Door:
 		say "You think you can make it in, but only with Constance, igram, and the cloaks.  Constance first." instead;
 
 After going Garden Door:
-	say "OK.  Walking.  Right.  You raise yourself up on the tips of your talons, feeling ridiculous, but not wanting to flatten the grass with your (shudder) footsteps and give yourself away.  You wait for one of the guards to pass, then carefully take cautious steps towards the door.  Nobody reacts.  Hardly daring to breathe, you proceed further, antsy and ready to take to the skies any second.  Which wouldn't work, because you have this damn cloak on.  Whatever.  Two more steps.  You reach the door.  You hop (shudder) across the lintel.
+	say "OK.  Walking.  [if Being Chased is happening]While everyone's after you.  [end if]Right.  You raise yourself up on the tips of your talons, feeling ridiculous, but not wanting to flatten the grass with your (shudder) footsteps and give yourself away.  You wait for one of the guards to pass, then carefully take cautious steps towards the door.  [if being chased is happening]The Raven Guard fly past overhead, screeching in anger and frustration as they know you're close, but just can't seem to find you[otherwise]Nobody reacts[end if].  Hardly daring to breathe, you proceed further, antsy and ready to take to the skies any second.  Which wouldn't work, because you have this damn cloak on.  Whatever.  Two more steps.  You reach the door.  [if being chased is happening]More cawing overhead.  [end if]You hop (shudder) across the lintel.
 	
 	You're in.
 	
@@ -531,6 +561,12 @@ After going Garden Door:
 	
 	'I can't; I'm invisible.  I will tell you where to go, and follow you,' he replies.  Right.[bstars]";
 	wait for any key;
+	[In case Being Chased is happening:]
+	Now the woodpeckers are not activated;
+	Move the Raven Guard to the Void;
+	Move the Lone Guard to the Librum Landing Cradle;
+	Now the closeness of Being Chased is 0;
+	Now Constance is cruising;
 	clear the screen;
 	say "You make your way, with Horatio's direction, through the Royal Quarters.  A time or two Horatio leads you to a place you'd have to fly to get past, but you know this place well, and even though you never walked anywhere, you still know the walking ways.  There's fewer guards to avoid than you expected, meaning that the queen either has them all outside guarding the entrance, or she just doesn't have them to spare.
 	

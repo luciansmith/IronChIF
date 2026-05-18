@@ -334,7 +334,7 @@ After looking during hanging out:
 				say "Even though you're inside, the [mist density] fog outside makes the air in this room thicker, somehow.";
 		otherwise:
 			if the player is Constance:
-				if Constance is cruising:
+				if Constance is cruising and Sneaking is not happening:
 					say "You circle through the [mist density] mist, observing but hidden from view.";
 			otherwise:
 				say "A [horatio mist density] mist surrounds you, summoned by your quarry.";

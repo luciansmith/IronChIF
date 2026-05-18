@@ -48,6 +48,29 @@ Check going up during Sneaking:
 Check going down during Sneaking:
 	say "You can't fly with this damn cloak on!" instead.
 
+Last Check opening a capsa when the location is Nursery_itself or the location is Nursery_Door:
+	if the noun is the purple capsa:
+		say "All the doors are already open.  You made it." instead;
+	otherwise if the noun is the gold capsa:
+		say "There's no need." instead;
+	otherwise if the noun is the red capsa:
+		say "Things are already moving too quickly." instead;
+	[Don't worry about the green, black, or blue]
+
+Last Check closing a capsa when the location is Nursery_itself or the location is Nursery_Door:
+	if the noun is the purple capsa:
+		say "You're already past all the doors; you don't need to open or close them again." instead;
+	otherwise if the noun is the gold capsa:
+		[It shouldn't be possible to get here with an open capsa of down, but just in case]
+		now the gold capsa is closed;
+		say "You return gravity to its normal state." instead;
+	otherwise if the noun is the red capsa:
+		now the red capsa is closed;
+		say "You close the capsa of haste, hoping your beating heart will slow a bit.  It does not." instead;
+	otherwise if the noun is the green capsa:
+		say "No.  Ash needs it." instead;
+	[Don't worry about the black or blue]
+
 Ash_chat is a scene.  Ash_chat begins when the player is in the Nursery_itself for the first time.
 
 When Ash_chat begins:
@@ -264,7 +287,7 @@ Which doesn't come.  The pressure from the talons relents, there's commotion and
 
 F5B3 is a page.  It is for F5B and F5B1.  It flips to F5B4.
 The cdesc is "Offer to lead her to them."
-The description is "'I can sense... capsae' you wheeze.  'Lead you... taclor'
+The description is "'I can sense... capsae,' you wheeze.  'Lead you... taclor.'
 
 The queen lets you up, and you gasp.  She stabs a button, and woodpeckers somewhere in the complex pound out a message.  In seconds, guards fill the room.
 
@@ -322,7 +345,7 @@ It's hard to gather any information from your cell, but the fact that you contin
 A page-toggle rule for F5_cellEnd:
 	move world_change to the Trophy Room;
 	write out achievements;
-	end the story finally saying "Constance and taclor are free"
+	end the story finally saying "Constance and taclor are free."
 
 F5C2 is a page.  It is for F5c.
 The cdesc is "Offer to take her to them, alone."
