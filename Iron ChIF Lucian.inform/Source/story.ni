@@ -6,7 +6,7 @@ Release along with cover art and the source text and a file of "Rough outside ma
 
 The release number is 2.
 
-After printing the banner text, say "For more information, try ABOUT and CREDITS."
+After printing the banner text, say "For more information, try ABOUT and CREDITS." 
 
 Include Response Assistant by Aaron Reed.
 Include Version 7.1.1 of Hybrid Choices by AW Freyr.

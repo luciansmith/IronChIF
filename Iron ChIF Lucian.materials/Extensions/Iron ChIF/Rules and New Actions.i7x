@@ -112,7 +112,7 @@ When Gaining An Achievement begins:
 	if the gained is not in the Trophy Room:
 		move the gained to the Trophy Room;
 		if the Trophy Room is not off:
-			say "[i]Achievement unlocked: [gained].[first time] (To turn off achievement notification, enter >ACHIEVEMENTS OFF.  To see a list of your achievements, enter >ACHIEVEMENTS.)[only][r]";
+			say "[i]Achievement unlocked: [gained][first time] (To turn off achievement notification, enter >ACHIEVEMENTS OFF.  To see a list of your achievements, enter >ACHIEVEMENTS.)[only][r]";
 	now the most_recent of the Trophy Room is nothing;
 	write out achievements;
 
@@ -205,6 +205,16 @@ When play begins:
 After undoing an action:
 	load achievements;
 
+Report restoring the game:
+	write out achievements;
+	load achievements;
+
+Section help
+
+Requesting hints is an action out of world applying to nothing.  Understand "help" as requesting hints.  Understand "hint" as requesting hints.
+
+Carry out requesting hints:
+	say "'course correction' does not come with hints, but does reward experimentation.  Every bad ending you encounter can be undone with a single 'undo', until the very very end, and even there, multi-undo should let you back out of situations you don't want to be in any more.  If you're really stuck, you can ask for hints on https://intfiction.org/, or look at the source code at https://github.com/luciansmith/IronChIF/[pb]"
 
 Section Summoning mist
 
@@ -371,7 +381,7 @@ Understand "fly [direction]" as going.
 Understand "glide [direction]" as going.
 
 Check jumping:
-	say "[if the player is Constance]Pfaugh![otherwise]Your old bones aren't what the used to be.[end if]  Jumping is for fledglings!" instead;
+	say "[if the player is Constance]Pfaugh!  Jumping is for fledglings[otherwise]Your old bones aren't what they used to be.  Jumping is for fledglings[end if]!" instead;
 
 Section song
 
@@ -380,6 +390,8 @@ Carry out singing:
 	if the player is Constance:
 		if Being Chased is happening:
 			say "You sing a cry of defiance, as you twist away from a Raven Guard.  He caws angrily back at you.";
+		otherwise if the location is the Nursery_itself:
+			say "You sing a snatch of an old song you learned as a kid, and Ash immediately joins you.  After you finish, you grin at each other.";
 		otherwise:
 			say "You'll sing of today's exploits in tonight's evensong.  But right now, you're still trying to be stealthy.";
 	otherwise:
@@ -406,7 +418,7 @@ Understand "lock [something]" as locking keylessly. Locking keylessly is an acti
 
 Check locking keylessly:
 	if the noun is locked:
-		say "[The noun] is already locked.  Presumably by someone who had the actual key." instead;
+		say "[The noun] [are] already locked.  Presumably by someone who had the actual key." instead;
 	if the noun is not lockable:
 		say "[The noun] cannot be locked." instead;
 
@@ -416,6 +428,8 @@ Carry out locking keylessly:
 Understand "unlock [something]" as unlocking keylessly. Unlocking keylessly is an action applying to one thing.
 
 Check unlocking keylessly:
+	if the noun is the small collection of tiny padlocks:
+		say "They are, fortunately, already all unlocked." instead;
 	if the noun is not openable:
 		say "That's not something that opens, let alone locks." instead;
 	if the noun is not lockable:
@@ -462,6 +476,37 @@ Before dropping something enclosed by the player:
 			continue the action;
 		otherwise:
 			stop the action;
+
+Instead of waking up:
+	if the player is Constance:
+		say "It'd be great if the queen would wake up, but she's stuck in her fantasy.";
+	otherwise:
+		say "You're free for the first time in a decade.  It does indeed feel like waking up.";
+
+instead of sleeping:
+	if the player is Constance:
+		say "You are unlikely to be able to sleep any time soon.";
+	otherwise:
+		say "You've done a lot of sleeping over the past decade.  Not today.";
+
+Instead of climbing:
+	if the cloak is worn:
+		say "This cloak prevents you from that, too!";
+	otherwise:
+		say "You don't need to climb anything; you can fly.";
+
+Section getting rid of standard library verbs we don't need
+
+Understand nothing as burning.
+Understand nothing as tying it to.
+Understand nothing as swinging.
+Understand nothing as rubbing.
+Understand nothing as setting it to.
+Understand nothing as waving hands.
+Understand nothing as buying.
+Understand nothing as switching on.
+Understand nothing as switching off.
+Understand nothing as squeezing.
 
 
 Rules and New Actions ends here.

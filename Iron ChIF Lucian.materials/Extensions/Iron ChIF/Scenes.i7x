@@ -34,9 +34,9 @@ When Actually Recovering begins:
 	[Perhaps eventually check to see if the capsa of health is open, but the premise of the game is that it's open the entire time; we'd have to let the player close it and then get wounded for this to not happen.]
 	[Never had to worry about this!  Grabbing the capsa of health triggers the end-game, so it's literally always open.]
 	now Constance is not wounded;
-	say "You feel your skin prickle where you were wounded, and look down.  To your amazement, your wound has closed and the bleeding stopped.  As you watch, even the line from the cut disappears, and the feathers around it fluff out again.
+	say "You feel your skin prickle where you were wounded, and look down.  To your amazement, your wound has closed and the bleeding stopped.  As you watch, even the line from the cut disappears, and the feathers around it fluff out again[first time].
 	
-	It's the scroll of Health.  It [i]has[r] to be.  It's actually here!  And active.  Hmm."
+	It's the scroll of Health.  It [i]has[r] to be.  It's actually here!  And active.  Hmm[only]."
 	[We'd need different text if the player gets wounded more than once, but right now, they can't even get wounded once, so let's just leave it for now.]
 	[Nor this!  Eventually added a thing that will knock Constance out if she was wounded, but there's always only ever two levels: fine or wounded]
 
@@ -56,6 +56,12 @@ Last Check opening a capsa when the location is Nursery_itself or the location i
 	otherwise if the noun is the red capsa:
 		say "Things are already moving too quickly." instead;
 	[Don't worry about the green, black, or blue]
+
+Check wearing the hunting cloak when the location is Nursery_itself:
+	say "No, not with Ash here." instead;
+
+Before giving the green capsa to someone:
+	say "You're going to need to take it first.  And decide what to do with it." instead;
 
 Last Check closing a capsa when the location is Nursery_itself or the location is Nursery_Door:
 	if the noun is the purple capsa:
@@ -81,7 +87,7 @@ When Ash_chat begins:
 	Their face sufficiently smothered, Ash pops out again excitedly.  'It's been so long!  Did you know there's a whole new wing of the southwest aerie?  Momma took me there just the other day, and...'"
 
 Every turn during Ash_chat:
-	say "Ash prattles happily, telling you [one of]about how they're putting in a huge room just for sick people[or]about meeting a Throckwright, and getting to see his pouch of seeds[or]about a model treehouse they made out of sticks[or]a long convoluted story about drama between their stuffed animals[or]about a flock of wild birds that lived beneath her window for a whole season[or]that they secretly dislike dust baths[or]how they need to build another treehouse because Mr. Featherstick doesn't like the first one[or]about a song they're trying to learn[or]that Loudbeak Threewings can't go anywhere without her special stash of dried fruits for snacks[cycling]."
+	say "Ash prattles happily, telling you [one of]about how they're putting in a huge room just for sick people[or]about meeting a Throckwright, and getting to see his pouch of seeds[or]about a model treehouse they made out of sticks[or]a long convoluted story about drama between their stuffed animals[or]about a flock of wild birds that lived beneath their window for a whole season[or]that they secretly dislike dust baths[or]how they need to build another treehouse because Mr. Featherstick doesn't like the first one[or]about a song they're trying to learn[or]that Loudbeak Threewings can't go anywhere without her special stash of dried fruits for snacks[cycling]."
 
 Ash is a person in Nursery_itself.  "Ash doesn't look particularly healthy, but they're in high spirits."  The description is "Ash's flight feathers are starting to come in, though they won't be able to actually fly for at least another year.  Worryingly, the feathers are drooping and seem brittle; early signs of the Red Plague.  It's not a stage of the plague you've ever seen before; maybe the capsa halted the disease's progression, but didn't cure it?  How long have they been like this?"
 
@@ -167,7 +173,7 @@ The description is "The feathers on Horatio's neck ruffle.  'She has already den
 
 F3 is a page.  It is for F1.
 The cdesc is "Leave without the capsa."
-The description is "[i]Switching to Horatio.[r]
+The description is "[i]{Switching to Horatio.}[r]
 
 You watch as the struggle plays out across Constance's face, while Ash happily prattles behind her.  Slowly, she sets the capsa back down on the desk, and just stares at it.  'I can't do it,' she finally says.  'I can't condemn Ash for the sake of my people.  I can't condemn anyone for the sake of a fairy-tale promise.'"
 
@@ -200,7 +206,7 @@ F3_1A is a page.  It is for F3_1.
 The cdesc is "Ask her to let you read the scroll."
 The description is "'You are, once again, the holder of taclor,' you say.  'Will you let me read it, and release its power to everyone, as the Gods intended?'
 
-Aubrey stares out at the impenetrable mist.  At nothing; at everything; at Constance.  She's actually considering the question, perhaps for the first time in years.  Ash looks up at her, a question and the beginnings of understanding on his face.  'Ask me again tomorrow,' she finally says, eyes fixed on the mist; Ash under her wing.
+Aubrey stares out at the impenetrable mist.  At nothing; at everything; at Constance.  She's actually considering the question, perhaps for the first time in years.  Ash looks up at her, a question and the beginnings of understanding on their face.  'Ask me again tomorrow,' she finally says, eyes fixed on the mist; Ash under her wing.
 
 'Indeed,' you reply."
 
@@ -217,7 +223,7 @@ Aubrey sighs.  'Your imprisonment is rescinded.  You're obviously safe.  And if 
 
 'I will do my best to protect and teach the child,' you promise.  'What I know.  And what I believe.'
 
-Aubrey nods absently, still looking out the window.  Ash closes his eyes, and rests his head under her wing."
+Aubrey nods absently, still looking out the window.  Ash closes their eyes, and rests their head under her wing."
 
 A page-toggle rule for F3_1B:
 	move world_change to the Trophy Room;
@@ -237,7 +243,7 @@ But not Ash.  You have to find another way."
 
 F5 is a page.  It is for F1.
 The cdesc is "Leave with the capsa, and take Ash with you."
-The description is "[i]Switching to Horatio.[r]
+The description is "[i]{Switching to Horatio.}[r]
 
 Constance closes her eyes and sighs.  'I can't do it,' she says.  'I can't condemn Ash for the sake of my people.  I can't condemn my people for the sake of Ash.  I can't condemn both for the sake of a fairy-tale promise.'  You wince at that; you had hoped you had been [i]slightly[r] more convincing.  But before you can object, Constance has moved on.
 

@@ -15,15 +15,15 @@ To say high_above_desc:
 			say "Your summoned mist both obscures you and blocks you from seeing the Royal Aerie.  But you've already memorized its layout,";
 		otherwise:
 			say "You drift in lazy circles well above the Royal Aerie below.  Your acute eyesight lets you see the entire layout,";
-		say "and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north and down, well defended by circling Raven clan guards.  The Librum to the east and down.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry";
+		say " and how it relates to today's air currents, winds, and thermals.  Royal Quarters to the north and down, well defended by circling Raven clan guards.  The Librum to the east and down.  In the center of the Aerie (and directly below you) is the Great Hall.  Other royal aeries dot the forest in the distance, but this complex holds your quarry";
 	otherwise:
-		say "There's nothing to see here, this high above the Aerie; just a thick mist in every direction.  You would have never been able to find Constance if she hadn't been carrying a capsa or two.  You trust that if you circle down from here, you'll be able to find your way once you reach some landmarks";
+		say "There's nothing to see here, this high above the Aerie; just a thick mist in every direction.  You would have never been able to find [Constance] if she hadn't been carrying a capsa or two.  You trust that if you circle down from here, you'll be able to find your way once you reach some landmarks";
 
 distant_aerie is scenery in high above.  The printed name is "Royal Aerie".  The description is "[if the grey mist is in the location]As you recall, the[otherwise]The[end if] Royal Aerie was grown and shaped by generations of Throckwrights, and now towers over the surrounding forest canopy.  Lush shades of browns and reds, often woven together in intricate patterns or pictures, cover every landing cradle, wall, and roof."  Understand "royal/aerie/lush/brown/browns/red/reds/woven/patterns/pictures" as distant_aerie.
 
 distant_quarters is scenery in high above.  The printed name is "Royal Quarters".  The description is "[if the grey mist is in the location]As you recall, the[otherwise]The[end if] Royal Quarters is where the queen and her family, servants, and certain privileged royalty live.  Every huge common room; every small or large individual apartment is awash in greenery that looks incredibly inviting and imperially homey, and is in reality subtly precisely hostile to the uninvited.  Every roof pitch is too steep; no branch nor ridge is graspable by talons of any size.  The single landing cradle in the middle of the gardens is surrounded by stern and beautiful tree crowns, beset with nooks and crevices for unseen guards and archers: attempting to land there would mean instant death for any but those who belong."  Understand "royal/quarters/queen/family/servants/royalty/common/room/apartment/small/large/roof/pitch/branch/ridge/landing/cradle" as distant_quarters.
 
-distant_guards are scenery in high above.  They are people.  The printed name is "circling guards".  The description is "The last time you were here, the Aerie was not nearly on such high alert.  Now there's guards everywhere, but especially focused on circling the Royal Quarters.".  Understand "raven/circling/guards" as distant_guards.  Understand "raven clan" as distant_guards.
+distant_guards are scenery in high above.  They are people.  They are plural-named.  The printed name is "circling guards".  The description is "The last time you were here, the Aerie was not nearly on such high alert.  Now there's guards everywhere, but especially focused on circling the Royal Quarters.".  Understand "raven/circling/guards" as distant_guards.  Understand "raven clan" as distant_guards.
 
 Instead of doing something other than examining with distant_guards:
 	say "The guards are too far away.  And, you know, hostile.";
@@ -108,9 +108,15 @@ Section Great Hall
 
 Great Hall Landing Cradle is below High Above.  "[if the player is Constance]The Landing Cradle of the Great Hall spreads out over nearly a quarter of the vast building.  During your time here, you learned this was so that when a number of important guests and their retinues arrive at the same time, they can land simultaneously, instead of one after the other, which some would invariably take as meaning 'in order of importance'.
 
-The [Great Hall doors] are on the west side of the landing cradle, and unguarded.  To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.[otherwise]The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of a Waterfowl delegation.  You were impressed by the [Great Hall doors], large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.
+The [GHD-open] [Great Hall doors] are on the west side of the landing cradle, and unguarded.  To the north is the Royal Quarters and Gardens, the Librum to the east, and as always, you can return to the skies or descend to the forest.[otherwise]The Landing Cradle of the Great Hall was the first you ever saw of this Aerie, when you arrived ten years ago in the entourage of a Waterfowl delegation.  You were impressed by the [Great Hall doors], large enough to comfortably accomodate even the largest of your distant kin, and the diversity of clans here to meet you was equally fascinating.
 
 To the north is the Royal Quarters and Gardens, the Librum is to the east, the doors to the Great Hall are west, and if your wings are up for it, you could return to the skies and fly up (where Constance circles) or back down to the forest floor.";
+
+To say GHD-open:
+	if the Great Hall Doors are open:
+		say "open";
+	otherwise:
+		say "closed";
 
 The Great Hall doors are doors in Great Hall Landing Cradle.  They are plural-named.  The printed name is "huge double doors of the Great Hall".  They are closed and locked.  They are inside from Great Hall Landing Cradle and outside from Upper Great Hall.  The description is "The huge [if open]open[otherwise]closed[end if] double doors are canted hatches that lead from the giant landing cradle into the Great Hall itself.  They are adorned with fine scrollwork[if the player is Constance] whose broad swoops and curls branch off into even finer swoops and curls, even down to the level of detail that only a Falcon Clan like yourself could see.  The Throckwright who grew this must have been an archmaster[end if]."  Understand "huge/door/double/canted/hatch/hatches/fine/scrollwork/broad/swoops/curls/finer/giant/landing/cradle" as the Great Hall doors.
 
@@ -295,7 +301,7 @@ To say hunting cloak description:
 				say "The cloak posts appear to be empty";
 		otherwise:
 			if the hunting cloak is purple:
-				say "In prehistoric times, people apparently made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camouflage.  You couldn't fly with them on, but some prey had gotten extremely adept and spotting flying enemies, so hunters took to sneaking up on foot.  On foot![nb]";
+				say "In prehistoric times, people apparently made these cloaks out of hippotomai skins to mask their scent.  The dark purple variegation also helped with camouflage.  You couldn't fly with them on, but some prey had gotten extremely adept at spotting flying enemies, so hunters took to sneaking up on foot.  On foot!  You shake your head";
 			otherwise:
 				say "You can feel the supple folds of the cloak, but cannot see it at all";
 	otherwise:
@@ -344,14 +350,14 @@ First Check opening a closed Librum door:
 		if the player is Constance:
 			say "The guard is entirely too watchful to let you do that[if Momentum is happening], even going as fast as you are[end if]." instead;
 		otherwise:
-			say "Right.  An old buzzard, facing off against a fresh-beaked Raven Guard, and an Ikniq, at that.  You'll leave opening the door to rezrov."
+			say "Right.  An old buzzard, facing off against a fresh-beaked Raven Guard, and an Ikniq, at that.  You'll leave opening the door to rezrov." instead;
 
 First Check unlocking a locked Librum door with:
 	if the lone guard is in the location:
 		if the player is Constance:
 			say "The guard is entirely too watchful to let you do that." instead;
 		otherwise:
-			say "Right.  An old buzzard, facing off against a fresh-beaked Raven Guard, and an Ikniq, at that.  You'll leave opening the door to rezrov."
+			say "Right.  An old buzzard, facing off against a fresh-beaked Raven Guard, and an Ikniq, at that.  You'll leave opening the door to rezrov." instead;
 
 Before going inside from Librum Landing Cradle:
 	try entering Librum door instead;
@@ -408,7 +414,16 @@ The well-fitting uniform is worn by the lone guard.  The description is "[if the
 
 Tiny closed padlocks are part of the well-fitting uniform.  The description is "[if the player is Constance]Yes, those are definitely tiny padlocks, each attached to small leather loops stitched to her uniform.  You peer more intently.  The stitching where the loops attach is definitely newer than the stitching on the rest of the uniform.  They must have been added recently[otherwise]Those tiny padlocks must be a rezrov-detection system.  The queen must have had her top people working on it, knowing Constance would return[end if]."  Understand "stitching/loops/attach/padlock" as the tiny closed padlocks.
 
+Instead of doing anything other than examining to the tiny closed padlocks:
+	if the player is Constance:
+		say "You're not getting anywhere near the guard's uniform if you can help it.";
+	otherwise:
+		say "Even if you were trying to distract her, that doesn't seem wise.";
+
 A small collection of tiny padlocks are in the Void.  They are plural-named.  "In the cradle [if Being Chased is happening]where the guard was[otherwise]next to the guard[end if] is a small collection of tiny padlocks, each open."  The small collection of tiny padlocks are loose.  The description is "[if the player is Constance]Several tiny padlocks, each one opened.  Cheap light metal that could easily be bent open, so you suppose their only purpose is to serve as notice that rezrov was activated[otherwise]A collection of tiny, cheap 'padlocks', each designed to close and open and that's it--useless for actually holding anything together, but perfect for detecting the wave of magic from the rezrov scroll when its capsa opens.  You wonder if similar detection systems could be used to detect the waves of magic from other scrolls.  Maybe all magic flows outward at the same rate, but maybe not?  You don't think anyone's ever tried to measure it before[end if].".  Understand "padlock/light/metal/lock/locks" as the small collection of tiny padlocks.
+
+Instead of locking or unlocking or opening or closing or locking keylessly the small collection of tiny padlocks:
+	say "Doing that to the entire collection would be both tedious and pointless.";
 
 Silvered knives are worn by the lone guard.  The description is "[if the player is Constance]Silvered knives, retracted now, but extendable at will[otherwise]The silvered knives the Ikniq warrior wears are basically the same design as they've been for a century.  And as effective as they've been for a century[end if]."  Understand "silver/retracted/retractable/extendable" as silvered knives.
 
@@ -465,7 +480,10 @@ Librum Itself is a room.  The printed name is "Librum".  "The Librum contains tw
 
 Librum contents are scenery in Librum itself.  "The worst part about this room is the shadows of all the memories spent here in the company of the now-queen."  Understand "two/levels/scrolls/books/access/curving/shelves/reading/roosts/natural/artificial/lighting/childhood/sections/exciting/stories/worst/shadows/memories/queen/now-queen" as the Librum contents.
 
-The lavish display case is scenery in Librum Itself.  "The boarded-over display case, like many of the shelves, was grown here as a permanent fixture.  It hasn't always displayed capsae, but there was always something to show off.  Well.  Until now."  Understand "boarded/over/boarded-over/display/case/grown/permanent/fixture" as the lavish display case.
+Instead of taking librum contents:
+	say "As much as you'd love to grab a book and lose yourself in a fantastical story about another world, right now you have responsibilities.";
+
+The lavish display case is scenery in Librum Itself.  "The boarded-over display case, like many of the shelves, was grown here as a permanent fixture.  It hasn't always displayed capsae, but there was always something to show off.  Well.  Until now."  Understand "boarded/over/boarded-over/display/case/grown/permanent/fixture/jewels/money/treasury" as the lavish display case.
 
 Instead of going nowhere from the Librum Itself:
 	If the noun is up or the noun is west:
@@ -476,14 +494,14 @@ Instead of going nowhere from the Librum Itself:
 Before going outside from the Librum Itself:
 	try entering the Librum door instead;
 
-Instead of opening the display case:
+Instead of opening or taking the display case:
 	say "[one of]On a whim, you pull back a board to see if anything's in the display case.  There is.  Jewels and money.  At an estimate, maybe a quarter of the queen's personal treasury.  You shake your head, disgusted.  Well, that's why this building was being guarded[or]You don't need [i]money[r].  What you're after is much more valuable to your community[stopping].";
 
 Section Royal Gardens
 
 Royal Gardens is a room. It is north of Great Hall Landing Cradle, and northwest of Librum Landing Cradle.  "[if the player is Constance]The Royal Gardens is the most lavishly opulent and sensuous entrance to any aerie you've seen in your life.  Trees, vines, and flowers of every variety spring up from everywhere, each seemingly placed in the exactly appropriate spot.  The landing cradle next to the [garden door] to the Royal Quarters themselves is nestled between gracious arcs of poplar trunks, each bedecked with shaded and inviting roosts.  Which, as you know from your childhood days swooping and laughing through these gardens, invariably contain at least eight guards.  Probably ten or more today.
 
-From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.  The door to the very-guarded Royal Quarters is to the north[otherwise]All the vegetation throughout the Royal Garden is much, much more vibrant than you remember it being a decade ago.  But things are subtly off-kilter:  a rose bush with too-large roses that has to be propped up with almost-hidden forked sticks.  A roost canted at an odd angle from its tree bending south.  Fireball bromeliads threatening to strangle their host hickory trees, despite signs of agressive pruning.  You felt taclor being moved to the Royal Quarters a little over a year ago, and it's been active ever sense.  The foliage is out of balance.
+From here, you can return to the skies or descend to the forest.  The Great Hall is to the south, and the Librum to the southeast.  The door to the very-guarded Royal Quarters is to the north[otherwise]All the vegetation throughout the Royal Garden is much, much more vibrant than you remember it being a decade ago.  But things are subtly off-kilter:  a rose bush with too-large roses that has to be propped up with almost-hidden forked sticks.  A roost canted at an odd angle from its tree bending south.  Fireball bromeliads threatening to strangle their host hickory trees, despite signs of agressive pruning.  You felt taclor being moved to the Royal Quarters a little over a year ago, and it's been active ever since.  The foliage is out of balance.
 
 The Great Hall is south of here, the Librum southeast, and the well-guarded [garden door] north.  Above, Constance circles in the fog, and the forest floor is beneath[end if]."
 
@@ -499,7 +517,9 @@ Instead of going nowhere from Royal Gardens:
 
 The royal landing cradle is scenery in Royal Gardens.  The description is "[if the player is Constance]The cradle's aesthetics have suffered somewhat from having to be re-grown every time the royal insignia changes, but it's still tastefully lavish[otherwise]The royal insignia on the cradle is an interesting amalgamation of of the traditional Red Wing crest, overlaid on elements of several other clan crests, conveying that the Red Wings are over but also supported and held up by a large diverse community of people[end if]."  Understand "aesthetics/insignia/opulent" as the royal landing cradle.
 
-The poplar trunks are scenery in Royal Gardens.  The printed name is "[if the player is Constance]poplar trunks[otherwise]foliage[end if]".  The description is "[if the player is Constance]The poplars around the landing cradle contain five guards that you can see (since you know where to look), and almost certainly at least another five that you cannot (since you know where you can't look)[otherwise]The foliage is overgrowing and out of balance.  But it's undeniably vibrant[end if]."  Understand "arcs/shaded/inviting/roosts/guards/guard/eight/five/ten/rose/roost/tree/trees/Fireball/bromeliads/bush/pruning" as the poplar trunks.
+The poplar trunks are scenery in Royal Gardens.  They are plural-named.  The printed name is "[if the player is Constance]poplar trunks[otherwise]foliage[end if]".  The description is "[if the player is Constance]The poplars around the landing cradle contain five guards that you can see (since you know where to look), and almost certainly at least another five that you cannot (since you know where you can't look)[otherwise]The foliage is overgrowing and out of balance.  But it's undeniably vibrant[end if]."  Understand "arcs/shaded/inviting/roosts/rose/roost/tree/trees/Fireball/bromeliads/hickory/bush/pruning/foliage/rose/bush/bushes/vegetation" as the poplar trunks.
+
+Some guards are scenery in Royal Gardens.  They are plural-named.  They are people.  The description is "[if the player is Constance]The guards here get this job by being the best.  They've vigilant and highly skilled[otherwise]The guards here seem much more watchful than the one assigned to you[end if]."  Understand "guards/guard/eight/five/ten/vigilant/skilled" as some guards.
 
 The flowers_and_vines are scenery in Royal Gardens.  The printed name is "flowers and vines".  The description is "The particular varieties of flowers have changed over the years, but not their beauty."  Understand "flower/flowers/vine/vines/quarters/garden/gardens" as the flowers_and_vines.  Understand "flowers and vines" as the flowers_and_vines.
 
@@ -515,13 +535,13 @@ First Check opening a closed Garden Door:
 	if the player is Constance:
 		say "There are way too many guards for that to have any chance of working." instead;
 	otherwise:
-		say "Even if the guards were in the habit of admitting locked-up heretics into the Royal Quarters, what then?  The queen would still hold taclor.  You need Constance.";
+		say "Even if the guards were in the habit of admitting locked-up heretics into the Royal Quarters, what then?  The queen would still hold taclor.  You need Constance." instead;
 
 First Check unlocking a locked Garden Door with:
 	if the player is Constance:
 		say "There are way too many guards for that to have any chance of working." instead;
 	otherwise:
-		say "Even if the guards were in the habit of admitting locked-up heretics into the Royal Quarters, what then?  The queen would still hold taclor.  You need Constance.";
+		say "Even if the guards were in the habit of admitting locked-up heretics into the Royal Quarters, what then?  The queen would still hold taclor.  You need Constance." instead;
 
 Before going inside from Royal Gardens:
 	try entering Garden Door instead;
@@ -612,9 +632,9 @@ Snuck_in is an achievement in the Void.  The printed name is "The Old Cruising G
 
 Nursery_itself is a room.  It is west of Nursery_door.  It is northwest of Nursery_door.  The printed name is "Nursery".  "The Nursery is not exactly how you remember it.  It was set up to grow new walls and furniture over time, to keep any occupant engaged and growing.  But the rhythm of it is baked into your bones.  The place for the roosts, along the north wall.  The [desk], grown to the size of the user.  The endless parade of ropes and balls and other toys along the south, some grown and some brought in.  The giant [window] to the west, overlooking the beautiful, beautiful forest."
 
-The roosts are scenery in Nursery_itself.  The description is "[You and aubrey] would swing from roost to roost, competing to see who could make the most jumps without opening your wings at all."  Understand "roost/north/wall" as roosts.
+Some roosts are scenery in Nursery_itself.  They are supporters and enterable.  The description is "[You and aubrey] would swing from roost to roost, competing to see who could make the most jumps without opening your wings at all."  Understand "roost/north/wall" as roosts.
 
-The_toys are scenery in Nursery_itself.  The description is "[You and aubrey] cycled through so many, many toys.  You would break one by accident, and she would imperiously demand new ones of the guards."  Understand "ropes/balls/rope/ball/south" as the_toys.
+Some The_toys are scenery in Nursery_itself.  The description is "[You and aubrey] cycled through so many, many toys.  You would break one by accident, and she would imperiously demand new ones of the guards."  Understand "ropes/balls/rope/ball/south/toy/toys" as the_toys.  The printed name of the_toys is "toys".
 
 The window is an enterable supporter in Nursery_itself.  The description is "Absolutely the best view anywhere.  [You and aubrey] could watch a storm roll in across the sky for hours.  You learned how to enhance the storm to make it more dramatic based on Aubrey's excited trills." Understand "view/best/beautiful/forest" as the window.
 
@@ -629,11 +649,11 @@ To say You and aubrey:
 
 Section Forest Below
 
-in_forest is a room.  It is below Great Hall Landing Cradle.  The printed name is "In the Forest".  "[if the player is Constance]The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation[otherwise]The tightly-growing trees and [horatio mist density] fog surround you tightly.  It would be oppressive, but for the echo of the Throckwright song you can just sense, flowing through the veins of these trees still.  That, and the fact that you've been confined to a single room for a decade, so any contrast is welcome[end if]."
+in_forest is a room.  It is below Great Hall Landing Cradle.  The printed name is "In the Forest".  "[if the player is Constance]The trees below the Royal Aerie grow more closely together than in the rest of the forest, and include a wider variety, so that differently-colored woods could be incorporated into the buildings above.  This makes it harder to navigate down here--or it would if you weren't so amazing at navigation[otherwise]The tightly-growing trees and [horatio mist density] fog surround you.  It would be oppressive, but for the echo of the Throckwright song you can just sense, flowing through the veins of these trees still.  That, and the fact that you've been confined to a single room for a decade, so any contrast is welcome[end if]."
 
 tree_varieties are scenery in in_forest.  The printed name is "trees".  The description is "[if the player is Constance]Birch, pine, redwood, alder, ash, elm, poplar, and probably several other types as well[otherwise]A wide variety of tree types grow up to the Aerie above, each lending its own strength, suppleness, and color to the Royal Aerie grown above[end if]."  Understand "Birch/pine/redwood/alder/ash/elm/poplar" as the tree_varieties.
 
-A fine net is here.  It is fixed in place.  "[if the player is Constance]Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below[otherwise]The net that caught you stretches in every direction, preventing both entrance to and egress from the rest of the forest[end if]."  The description is "[if the player is Constance]A fine, strong net, stretched between and among the trees[first time].  It wasn't here three days ago, which means they spent a lot of effort... to keep you on the Aerie-side of it.  You grin to yourself[only][otherwise]Even in your cell, you could hear the work being done to install this net.  For all the good it did them.[end if]."
+A fine net is here.  It is fixed in place.  "[if the player is Constance]Even through the mist, your sharp eyes spot a fine net, stretched between the trees.  It seems to be set to prevent anyone from coming up from the forest below[otherwise]The net that caught you stretches in every direction, preventing both entrance to and egress from the rest of the forest[end if]."  The description is "[if the player is Constance]A fine, strong net, stretched between and among the trees[first time].  It wasn't here three days ago, which means they spent a lot of effort... to keep you on the Aerie-side of it.  You grin to yourself[only][otherwise]Even in your cell, you could hear the work being done to install this net.  For all the good it did them[end if]."
 
 Check taking the net:
 	say "Besides being way too large to carry, the net is attached firmly to the trees and branches, not allowing anything larger than a feathers-length through it[if cell door is open].  Though not, you notice, with knots that could be undone by the scroll of Opening.  Everything is just... folded.  Very deliberately[end if]." instead.

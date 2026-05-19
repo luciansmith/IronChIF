@@ -3,9 +3,12 @@ Use authorial modesty.
 
 Horatio's story is a scene.  Horatio's story begins when Horatio is remembered.  Horatio's story ends when the location is High Above.
 
-Forgotten Brig is a room.  "A small but cosy cell, grown with austerity but basic comfort in mind.  Your now-open [cell door] leads west."
+Forgotten Brig is a room.  "A small but cosy cell, grown with austerity but basic comfort in mind.  Your now-unlocked [cell door] leads west."
 
-The cell door is a door.  It is west of Forgotten Brig and east of Disused Hallway.  It is closed and locked.  The description is "Ironwood-grown and maintained; your cell door is [if closed]closed[otherwise]open[end if]."
+Instead of going nowhere from Forgotten Brig:
+	say "Your cell door is west.  There are no other exits.";
+
+The cell door is a door.  It is west of Forgotten Brig and east of Disused Hallway.  It is closed and locked.  The description is "Ironwood-grown and maintained; your cell door is [if the cell door is closed]closed[otherwise]open[end if]."
 
 cell_contents is scenery in Forgotten Brig.  The printed name is "cell contents".  The description is "A straight roost by a desk for writing, and a scooped roost for sleeping.  Enough space to spread your wings.  A rope wall for excercise.  Not bad."  Understand "cell/contents/austerity/comfort/straight/scooped/roost/space/spread/rope/wall/desk" as cell_contents;
 
@@ -17,7 +20,7 @@ To say Horatio room desc:
 	If the location is the Librum Landing Cradle:
 		if Being Chased is happening:
 			say "Horatio is perched clutching a redwood branch on the edge of the cradle, watching you";
-			if Everything Falls is upended:
+			if Everything Falls is happening and Everything Falls is upended:
 				say ", and swaying different directions as you pass by overhead and the gold scroll pulls him around";
 				if black_escape is less than 4:
 					say ".  He seems to be trying to get your attention.  So, one more thing to worry about, in addition to the armed guard after you";
@@ -147,7 +150,7 @@ Section The Chat
 
 H1 is a page.
 The cdesc is "Start a new conversation with Horatio."
-The description is "'Good job, Constance,' you say as you approach to fly adjacent to her broad circling.
+The description is "'Hello, Constance,' you say as you approach to fly adjacent to her broad circling.  'Good job.'
 
 She peers at you, and you know she can make out every barb on each of your feathers.  Patiently, you wait.
 
@@ -258,7 +261,7 @@ The description is "'I will not know what it is I'm saying, but I have a guess a
 And no capsae holder I have yet met will risk such a thing,' you say."
 
 C1a is a page.  It is for H4.
-The cdesc is "[i]{Switching to Constance}: [r]Scoff at 'capsae holder'."
+The cdesc is "[if the player is Horatio][i]{Switching to Constance}: [end if][r]Scoff at 'capsae holder'."
 The description is "You scoff.  'No queen or king, you mean.'
 
 'You personally currently hold three capsae, more than some kingdoms,' replies Horatio, 
@@ -293,9 +296,9 @@ A page-toggle rule for C1b:
 	now the player is Constance;
 
 C3 is a page.
-The description is "In response, Horatio offers you the blue capsa he's holding.  It's closed, and you cock your head questioningly at him.  'It is safe.  Nothing will happen when you open it.'
+The description is "In response, Horatio offers you the blue capsa he's holding.  It's [if the blue capsa is open]open[otherwise]closed[end if], and you cock your head questioningly at him.  'It is safe.  Nothing happens when you open it.'
 
-Weird trap if it was a trap.  Fine.  You open the blue capsa, bracing yourself... and nothing happens.  You look at the scroll, which seems to have no symbols on it at all apart from the title:  'BOSTRAT'."
+Weird trap if it was a trap.  Fine.  You [if the blue capsa is open]close and [end if]open the blue capsa, bracing yourself... and nothing happens.  You look at the scroll, which seems to have no symbols on it at all apart from the title:  'BOSTRAT'."
 
 A page-toggle rule for C3:
 	move the blue capsa to the rucksack;
@@ -312,7 +315,7 @@ The description is "'Wow,' you say, amazed by the implication.
 
 'And now... any Bostrat anywhere in the world can bring rain,' you conclude.  'If they work together,' you amend.
 
-Horatio nods, seriously.  'In the past, this scroll could alter its surroundings.  When it was finally read, it [i]changed the world[r].
+Horatio nods, seriously.  'In the past, this scroll could alter its surroundings.  When it was finally read, it [i]changed the world[r].'
 
 You gaze in wonder at the capsa.  Your heritage.  You can't say for sure it's genuine any more than Horatio can, but you feel the stirrings of some sort of pull towards it."
 
@@ -400,6 +403,7 @@ start_over flips to H1.
 A page-toggle rule for start_over:
 	repeat with X running through every page:
 		now X is not previously displayed;
+	now the player is Horatio;
 
 Instead of touching Horatio:
 	switch to cyoa at H1.
@@ -422,7 +426,7 @@ When Horatio tries to make zgi less ridiculous begins:
 Horatio can be stage one or stage two or stage three or stage four or stage five.  Horatio is stage one.
 
 Every turn during Horatio tries to make zgi less ridiculous:
-	If Horatio is stage one and the location is not Librum Landing Cradle and Horatio is not in the Lower Great Hall:
+	If Horatio is stage one and the location is not Librum Landing Cradle and Horatio is not in the Lower Great Hall and the location is outdoors:
 		if the location is Royal Gardens:
 			if a random chance of one in three succeeds:
 				say "Where is Horatio?  Didn't he say to get the capsa of igram, and then you'd both go in the Royal Quarters?";
@@ -485,31 +489,50 @@ asking the Horatio about something is Horatio_talk.
 asking the Horatio for something is Horatio_talk.
 
 Instead of Horatio_talk:
-	if Horatio distracts the guard is happening:
-		say "Horatio is chatting with the guard right now; it would be rude to interrrupt.  And potentially lethal.";
+	if the player is Constance:
+		if being chased is happening:
+			say "While Horatio seems willing to distract a guard or two, you're not going to draw the guards[apostrophe] attention to him just to try to escape them.";
+		otherwise if Horatio distracts the guard is happening:
+			say "Horatio is chatting with the guard right now; it would be rude to interrupt.  And potentially lethal.";
+		otherwise:
+			say "You've already had an in-depth conversation with Horatio, but if you want to talk about your current situation, just >TALK TO HORATIO.";
 	otherwise:
-		say "You've already had an in-depth conversation with Horatio, but if you want to talk about your current situation, just >TALK TO HORATIO.";
+		say "'OK.  We have a chance, here,' you tell yourself.";
 
 Carry out chatting Horatio:
-	if Horatio distracts the guard is happening:
-		say "Horatio is chatting with the guard right now; it would be rude to interrrupt.  And potentially lethal.";
-	otherwise if Horatio is stage one:
-		say "Horatio is chatting with the guard right now; it would be rude to interrrupt.  And potentially lethal.";
-	otherwise if Horatio is stage two:
-		say "Horatio says 'You'll need to get this door open.  I assume they've barred it shut from the inside, but fortunately, you have the capsae you need.'";
-	otherwise if Horatio is stage three:
-		if the cloak posts are in the Lower Great Hall:
-			say "You ask Horatio, 'So what do I do now?'
+	if the player is Constance:
+		if being chased is happening:
+			say "While Horatio seems willing to distract a guard or two, you're not going to draw the guards[apostrophe] attention to him just to try to escape them.";
+		otherwise if Horatio distracts the guard is happening:
+			say "Horatio is chatting with the guard right now; it would be rude to interrupt.  And potentially lethal.";
+		otherwise if Horatio is stage one:
+			say "Horatio is chatting with the guard right now; it would be rude to interrupt.  And potentially lethal.";
+		otherwise if Horatio is stage two:
+			say "Horatio says 'You'll need to get this door open.  I assume they've barred it shut from the inside, but fortunately, you have the capsae you need.'";
+		otherwise if Horatio is stage three:
+			if the cloak posts are in the Lower Great Hall:
+				say "You ask Horatio, 'So what do I do now?'
 
-			'Go ahead and take one,' he says.  If he thought this was obvious, it doesn't show on his face.";
-		otherwise:
-			say "Slightly exasperated, you ask Horatio, 'What do you want me to do now?'
+				'Go ahead and take one,' he says.  If he thought this was obvious, it doesn't show on his face.";
+			otherwise:
+				say "Slightly exasperated, you ask Horatio, 'What do you want me to do now?'
 
-			'You have igram.  Try it here, and see what happens,' he replies.";
-	otherwise if Horatio is stage four:
-		say "'We are ready,' says Horatio.  'Taclor awaits within the Royal Quarters.'";
-	otherwise if Horatio is stage five:
-		say "'Taclor is here.  It's time to make a decision,' says Horatio.";
+				'You have igram.  Try it here, and see what happens,' he replies.";
+		otherwise if Horatio is stage four:
+			say "'We are ready,' says Horatio.  'Taclor awaits within the Royal Quarters.'";
+		otherwise if Horatio is stage five:
+			say "'Taclor is here.  It's time to make a decision,' says Horatio.";
+	otherwise:
+		say "'OK.  We have a chance, here,' you tell yourself.";
 	stop the action;
+	
+
+Instead of giving something to Horatio:
+	if being chased is happening:
+		say "While Horatio seems willing to distract a guard or two, you're not going to draw the guards[apostrophe] attention to him just to try to escape them.";
+	otherwise if Horatio distracts the guard is happening:
+		say "Horatio is chatting with the guard right now.";
+	otherwise:
+		say "Horatio shakes his head.  'It is yours,' he says."
 
 Horatio ends here.

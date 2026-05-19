@@ -20,7 +20,7 @@ Woodpeckers are people in the Void.  The description is "I dunno if you'll ever 
 Woodpeckers can be activated. Woodpeckers are not activated.
 Woodpeckers have a number called reset state. The reset state of the Woodpeckers is 5.
 
-The Raven Guard are people in the Void.  "Several members of the Raven Guard fly at you, as you dodge and circle to avoid them."  The description is "Black as night, apart from the silvered knives they wear on their talons, and the golden razors that line their beaks[if the Librum landing cradle is visited].  It looks like the lone guard from the Librum has joined them, too[end if]."  Understand "guards/black/silvered/knives/talons/golden/razors/beaks/ravens/squad/lone" as the raven guard.
+The Raven Guard are people in the Void.  They are plural-named.  "Several members of the Raven Guard fly at you, as you dodge and circle to avoid them."  The description is "Black as night, apart from the silvered knives they wear on their talons, and the golden razors that line their beaks[if the Librum landing cradle is visited].  It looks like the lone guard from the Librum has joined them, too[end if]."  Understand "guards/black/silvered/knives/talons/golden/razors/beaks/ravens/squad/lone" as the raven guard.
 
 answering the raven guard that something is talking your way out.
 telling the raven guard about something is talking your way out.
@@ -46,7 +46,7 @@ Instead of giving something to the raven Guard:
 Instead of waking the raven guard:
 	say "They are [i]most decidedly[r] not asleep.";
 
-Instead of touching the raven guard:
+Instead of touching or pushing or pulling or rubbing the raven guard:
 	say "As tempting as it is to bonk one of them on the head as you skim by, you unfortunately are not quite that much better than they are.";
 
 Being Chased is a recurring scene.  Being Chased begins when the woodpeckers are activated.  Being chased ends when the woodpeckers are not activated.

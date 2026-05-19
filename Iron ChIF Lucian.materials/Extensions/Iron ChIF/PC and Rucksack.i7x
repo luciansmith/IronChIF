@@ -64,6 +64,9 @@ Check taking something:
 Check removing something from a capsa:
     say "Like all of the Ancient Scrolls, the scroll is inextricably tied to its capsa." instead;
 
+Check inserting something into a capsa:
+	say "Nothing goes into a capsa other than the scroll placed there by the gods." instead;
+
 A scroll is a kind of a thing.  A scroll has a text called name.  The name of a scroll is usually "FOO".
 
 Does the player mean doing something to a scroll:  it is likely.
@@ -132,7 +135,7 @@ To carry out everything rezrovving:
 			try dropping the rucksack;
 	if the location is Librum Landing Cradle:
 		now the closeness of Being Chased is 1;
-		if the small collection of tiny padlocks is not in the location or the sense_of_duty of the lone guard is less than 4:
+		if (the small collection of tiny padlocks is not in the location or the sense_of_duty of the lone guard is less than 4) and the reset state of the woodpeckers is 5:
 			say "[lb]The guard takes off into the sky, calling her squad mates to join her.";
 	if the lone guard encloses the tiny closed padlocks and the Librum Landing Cradle encloses the lone guard:
 		move the tiny closed padlocks to the Void;
@@ -194,6 +197,7 @@ Every turn during Doors Re-close:
 					say "The lone guard picks up the last of the tiny padlocks and attaches it to her belt with a definitive 'click'  Sighing, she resumes her post.";
 				move the collection of tiny padlocks to the Void;
 				move the tiny closed padlocks to the well-fitting uniform;
+				now the tiny closed padlocks are part of the well-fitting uniform;
 			increase the sense_of_duty of the lone guard by 1;
 		otherwise if the small collection of tiny padlocks is not in the Void:
 			if the player can see the lone guard:
@@ -410,7 +414,7 @@ Does the player mean examining the red capsa: it is likely.
 Go go go is a recurring scene.  Go go go begins when the red capsa is open.  Go go go ends when the red capsa is closed.
 
 When go go go begins:
-	say "You speed up, and so does the wind.  You wriggle, feeling the delightfully fast responses from every muscle in your body.
+	say "You speed up, and so does the wind[if the location is librum landing cradle and horatio distracts the guard is happening], and Horatio's chatter[end if].  You wriggle, feeling the delightfully fast responses from every muscle in your body.
 	
 	From everywhere in the Aerie, you hear the drumming of Woodpeckers in the Pounding dialect:  'Target is quick, repeat, target is quick.  Remember you are too.'  Gah; of course they would have practiced flying in a hasted state.  You'll just have to rely on the fact that the increase is proportional.";
 
@@ -422,7 +426,7 @@ Section Zork Grand Inquisitor Live Forever
 
 A black capsa is a capsa in the Librum Itself.  "[if black_escape is 0]In the back of the lower level, in a storage cupboard, you find the black capsa, just as Horatio described to you.  You wonder how he managed to find out where it was, but suppose the man has his conversational tricks[otherwise if black_escape is 1]In the back of the lower level, the storage cupboard Horatio told you about has fallen over, but the black capsa is in it, just as he said it would be[otherwise if black_escape is 2]You find the storage cupboard Horatio told you about, but it's fallen over, and the drawers have been pulled out.  You do see the black capsa in a corner of an open drawer[otherwise if black_escape is 3]The storage cupboard Horatio told you about has fallen over and looks like it was sacked--there's random detritus all over the Librum.  Fortunately, you also see the black capsa in a corner of the upper level[otherwise]The black capsa is sitting right at the base of the Librum door.  If the door had been open when you flew by with the gold capsa activated, you're sure it would have just flown out the door[end if]."  The black capsa can be explained.  The black capsa is not explained.  The description is "[igram_description].".  Understand "igram" as the black capsa.
 
-A storage cupboard is scenery in the Librum Itself.  The description is "A disused storage cupboard sits in a corner of the lower level.  It's the one Horatio told you the black capsa would be[if black_escape is greater than 0].  Of course, that was before you flew by with 'down' on, and basically looted the place remotely[end if]."  Understand "drawer/drawers/fallen/over/pulled/open/sacked/detritus" as the storage cupboard.
+A storage cupboard is scenery in the Librum Itself.  It is an open openable container.  The description is "A disused storage cupboard sits in a corner of the lower level.  It's the one Horatio told you the black capsa would be[if black_escape is greater than 0].  Of course, that was before you flew by with 'down' on, and basically looted the place remotely[end if]."  Understand "drawer/drawers/fallen/over/pulled/open/sacked/detritus" as the storage cupboard.
 
 The black capsa can be named.  The black capsa is not named.
 
