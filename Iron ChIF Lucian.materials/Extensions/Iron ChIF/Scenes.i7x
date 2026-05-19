@@ -372,7 +372,7 @@ A page-toggle rule for F5C2:
 
 F6 is a page.  It is for F1.
 The cdesc is "Let Horatio read the scroll of taclor."
-The description is "'I can't do it,' you say.  'There's no good solution here.  Even the scroll itself only halts the disease; it doesn't cure it.  Nobody wins.'
+The description is "'I can't do it,' you say.  'I can't take the scroll for only myself.  There's no good solution here.  Even the scroll itself only halts the disease; it doesn't cure it.  Nobody wins.'
 
 You turn to Horatio.  'And maybe nobody I care about wins if you read this, but lots of people I don't know win.  And maybe we win anyway.  Or maybe you're just crazy.  It's a risk.  Life is risk.  In the balance, maybe that's enough.'
 
