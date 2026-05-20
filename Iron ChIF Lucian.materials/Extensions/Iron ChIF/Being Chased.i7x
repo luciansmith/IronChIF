@@ -202,8 +202,10 @@ To escape and recover:
 			move the red capsa to the rucksack;
 		if the gold capsa is open:
 			now the gold capsa is closed;
-		if the gold capsa is not enclosed by the player:
+		if the gold capsa is not enclosed by the player and the gold capsa is not in the Void:
 			move the gold capsa to the rucksack;
+		if the black capsa is not enclosed by the player and the black capsa is not in the Librum itself:
+			move the black capsa to the rucksack;
 		move the rucksack to the player;
 		move the purple capsa of opening to the rucksack;
 		move the red capsa to the rucksack;

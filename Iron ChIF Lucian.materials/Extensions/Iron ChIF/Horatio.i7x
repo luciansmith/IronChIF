@@ -51,6 +51,9 @@ The description of the scroll of bostrat is "While '[name]' can be clearly read 
 Instead of dropping the blue capsa when the player is Horatio:
 	say "The queen and her advisors were unimpressed by the capsa, dismissing it as an obvious fake.  But you think you can use it to convince Constance.  Better hang on to it.";
 
+Instead of inserting the blue capsa into something when the player is Horatio:
+	say "The queen and her advisors were unimpressed by the capsa, dismissing it as an obvious fake.  But you think you can use it to convince Constance.  Better hang on to it.";
+
 Disused Hallway is a room.  It is east of Nope.  "The only time you ever saw anyone in this hallway was when Georg came to give you your meals, or clean the cell.  The living walls, still elegantly patterned, even here, self-replenish, and the floor carries away shed bark through the [grate].  It leads west into the living area, and your old [cell door] leads east.";
 
 A grate is a closed openable enterable container in Disused Hallway.  The description is "The grate conveys unneeded materials to the outside, and the forest floor.  [if open]Rezrov has done its job there, too: it lies open[otherwise]The grate is folded down, closed[end if].";
@@ -534,5 +537,37 @@ Instead of giving something to Horatio:
 		say "Horatio is chatting with the guard right now.";
 	otherwise:
 		say "Horatio shakes his head.  'It is yours,' he says."
+
+Section sensing capsae
+
+Some distant_capsae are a backdrop. They are not scenery.  "Distant capsae pull at your senses."  The description is "[all the capsae locations]." Understand "distant/capsa/capsae/rezrov/rudenj/quiste/bostrat/igram/taclor/" as the distant_capsae.
+
+To say all the capsae locations:
+	if the gold capsa is in the Void:
+		if the black capsa is enclosed by Constance:
+			say "Rezrov, quiste, and igram circle high above you.  Rudenj and taclor are within the Royal Quarters to the north, though separate from each other.  And you carry bostrat";
+		otherwise:
+			say "Rezrov and quiste circle high above you.  Igram remains in the Librum.  Rudenj and taclor are within the Royal Quarters to the north, though separate from each other.  And you carry bostrat";
+	otherwise:
+		if the black capsa is enclosed by Constance:
+			say "Rezrov, quiste, rudenj, and igram circle high above you.  Taclor remains within the Royal Quarters to the north.  And you carry bostrat";
+		otherwise:
+			say "Rezrov, quiste, and rudenj circle high above you.  Igram remains in the Librum, and taclor remains in the Royal Quarters.  And you carry bostrat";
+
+Some capsae across the world are a backdrop.  They are undescribed.  The description is "Once a capsa is far enough away, it's usually dim enough that you have to focus to sense it.  But they're out there.  The spent scroll of ikniq, buried in the Sirroc Desert.  Xyzzy, continuing to travel from place to place.  Espnis, in the Catacombs of Miznia.  Cogthrix and Finna, in the port of Tirathmia.  Countless others.".  Understand "ikniq/xyzzy/espnis/cogthrix/finna/catacombs/miznia/tirathmia" as some capsae across the world.
+
+Being Horatio is a recurring scene.  Being Horatio begins when the player is Horatio.  Being Horatio ends when the player is not Horatio.
+
+When Being Horatio begins:
+    now the distant_capsae are everywhere;
+	now the capsae across the world are everywhere;
+
+When Being Horatio ends:
+	now the distant_capsae are nowhere;
+	now the capsae across the world are nowhere;
+
+Every turn during Being Horatio:
+	If the time since Being Horatio began is 50 minutes:
+		say "A twitch, in the distance.  Xyzzy on the move again.";
 
 Horatio ends here.
